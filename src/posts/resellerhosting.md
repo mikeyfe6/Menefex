@@ -5,6 +5,8 @@ date: "2019-02-12"
 
 I just launched a new website!
 
+![Waterfall](../images/waterfall.jpg)
+
 ## Hoofdstukken behandeld
 
 1. Siteground
