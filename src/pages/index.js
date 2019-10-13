@@ -12,7 +12,8 @@ const IndexPage = () => {
       <h1>Hello.</h1>
       <h2>I'm Michael from Gimmix</h2>
       <p>
-        Heb je een developer nodig? <Link to="/contact">klik hier</Link>
+        Heb je een fantastische webdeveloper nodig?{" "}
+        <Link to="/contact">klik hier</Link>
       </p>
     </Layout>
   )

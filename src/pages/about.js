@@ -9,8 +9,8 @@ const AboutPage = () => {
     <Layout>
       <SEO title="About" />
       <h1>About Gimmix</h1>
-      <p>Wat informatie over het bedrijf</p>
-      <p>Blablabla</p>
+      <h3>Wat informatie over het bedrijf</h3>
+      <p>Blablabla met wat nuttigheid!</p>
     </Layout>
   )
 }
