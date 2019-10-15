@@ -1,5 +1,31 @@
-.header {
+header {
   padding: 1rem 0 3rem;
+}
+
+// .main-inner {
+//   display: flex;
+// }
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 2rem;
+}
+
+.logo {
+  width: 300px;
+  padding: 20px;
 }
 
 .title {
@@ -8,16 +34,9 @@
   text-decoration: none;
 }
 
-.nav-list {
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-}
-
-.nav-item {
+ul li a {
   color: grey;
-  font-size: 0.9rem;
-  margin-right: 1.3rem;
+  font-size: 1.5rem;
   text-decoration: none;
 
   &:hover {

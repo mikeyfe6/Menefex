@@ -13,6 +13,7 @@ module.exports = {
   siteMetadata: {
     title: "Gimmix",
     author: "Michael Fransman",
+    description: "test",
   },
 
   plugins: [
