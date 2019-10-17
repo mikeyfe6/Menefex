@@ -43,7 +43,7 @@ const Blog = props => {
   )
 }
 
-// // query the individual blog pages with MD
+// ! query the individual blog pages with MD
 // export const query = graphql`
 //   query($slug: String!) {
 //     markdownRemark(fields: { slug: { eq: $slug } }) {

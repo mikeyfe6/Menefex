@@ -1,24 +1,26 @@
 import React from "react"
-import { Link, graphql, useStaticQuery } from "gatsby"
+import { Link } from "gatsby"
+
+// graphql, useStaticQuery
 
 import headerDesign from "../styles/modules/header.module.scss"
 import logo from "../logo/Gimmix-logo.svg"
 
 const Header = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+  // const data = useStaticQuery(graphql`
+  //   query {
+  //     site {
+  //       siteMetadata {
+  //         title
+  //       }
+  //     }
+  //   }
+  // `)
 
   return (
     <header>
       <div className={headerDesign.mainInner}>
-        <ul>
+        <nav>
           <li>
             <Link activeClassName={headerDesign.activeNavItem} to="/">
               Home
@@ -30,7 +32,9 @@ const Header = () => {
             </Link>
           </li>
 
-          <img className={headerDesign.logo} src={logo} alt="Gimmix Logo" />
+          <Link to="/">
+            <img className={headerDesign.logo} src={logo} alt="Gimmix Logo" />{" "}
+          </Link>
 
           <li>
             <Link activeClassName={headerDesign.activeNavItem} to="/about">
@@ -42,12 +46,12 @@ const Header = () => {
               Contact
             </Link>
           </li>
-        </ul>
+        </nav>
       </div>
 
-      <Link className={headerDesign.title} to="/">
+      {/* <Link className={headerDesign.title} to="/">
         {data.site.siteMetadata.title}
-      </Link>
+      </Link> */}
     </header>
   )
 }

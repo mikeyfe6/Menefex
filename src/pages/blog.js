@@ -42,7 +42,7 @@ const BlogPage = () => {
     </Layout>
   )
 
-  // MARKDOWN: blogposts genereren grapqhl
+  // ! MARKDOWN: blogposts genereren grapqhl
   // const BlogPage = () => {
   //   const data = useStaticQuery(graphql`
   //     query {
@@ -64,7 +64,7 @@ const BlogPage = () => {
 
   // console.log(data)
 
-  // MARKDOWN blog posts weergeven
+  // ! MARKDOWN blog posts weergeven
   // return (
   //   <Layout>
   //     <h1>Blog Posts</h1>
