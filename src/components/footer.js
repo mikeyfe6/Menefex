@@ -15,16 +15,16 @@ const Footer = () => {
     }
   `)
 
+  const today = new Date()
+
   return (
     <footer className={footerDesign.footer}>
       <p>
         Created by {data.site.siteMetadata.author} also known as Mr.{" "}
-        {data.site.siteMetadata.title}. {today.getFullYear()} ©{" "}
+        {data.site.siteMetadata.title} {today.getFullYear()} ©
       </p>
     </footer>
   )
 }
-
-const today = new Date()
 
 export default Footer

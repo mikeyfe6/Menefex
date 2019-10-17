@@ -10,9 +10,9 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Welkom" />
       <h1>Hello.</h1>
-      <h2>I'm Michael from Gimmix</h2>
+      <h2>I&apos;m Michael from Gimmix</h2>
       <p>
-        Heb je een fantastische webdeveloper nodig?{" "}
+        Heb je een fantastische webdeveloper nodig?
         <Link to="/contact">klik hier</Link>
       </p>
     </Layout>

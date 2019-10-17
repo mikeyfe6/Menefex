@@ -9,7 +9,7 @@ import "../styles/index.scss"
 import "normalize.css"
 import LayoutDesign from "../styles/modules/layout.module.scss"
 
-//layout
+// layout
 const Layout = props => {
   return (
     <div className={LayoutDesign.container}>

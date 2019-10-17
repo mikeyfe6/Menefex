@@ -25,15 +25,15 @@ module.exports.createPages = async ({ graphql, actions }) => {
     })
   })
 
-  //// MD locale post weergeven
+  //  ! MD locale post weergeven
   // module.exports.onCreateNode = ({ node, actions }) => {
   //   const { createNode, createNodeField } = actions
 
   //   if (node.internal.type === "MarkdownRemark") {
-  ////    geeft de md files aan
+  //  ! geeft de md files aan
   //     const slug = path.basename(node.fileAbsolutePath, ".md")
 
-  ////     geeft alleen slugnaam weer voor md files
+  //  ! geeft alleen slugnaam weer voor md files
   //     createNodeField({
   //       node,
   //       name: "slug",
@@ -42,7 +42,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
   //   }
   // }
 
-  //// creeer nieuwe pagina's met MD
+  //  ! creeer nieuwe pagina's met MD
   // module.exports.createPages = async ({ graphql, actions }) => {
   //   const { createPage } = actions
   //   const blogTemplate = path.resolve("./src/templates/blogs.js")
@@ -60,7 +60,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
   //     }
   //   `)
 
-  //// wat moet createPage doen? met MD
+  //  ! wat moet createPage doen? met MD
   // res.data.allMarkdownRemark.edges.forEach(edge => {
   //   createPage({
   //     component: blogTemplate,

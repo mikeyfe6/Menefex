@@ -10,7 +10,7 @@ const ContactPage = () => {
       <SEO title="Contact" />
       <h1>Contact Us</h1>
       <p>
-        Beste manier om mij te bereiken is via{" "}
+        Beste manier om mij te bereiken is via
         <a
           href="https://twitter.com/mikeyfe"
           target="_blank"
