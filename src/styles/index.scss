@@ -1,8 +1,10 @@
-$font-stack: 'Archivo Black', sans-serif;
 $primary-color: #656565;
 $secondary-color: #f0c410;
-$textbase-color: #282828;
-$onhover-color: grey;
+$third-color: #c0c0c0;
+
+$textbase-color: #323232;
+// $onhover-color: grey;
+
 $head-font: 'Quando', serif;
 $para-font: 'Lato', sans-serif;
 
@@ -11,6 +13,10 @@ $para-font: 'Lato', sans-serif;
 
 // Lato Fonts
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+  outline: none;
+}
 
 html {
   height: 100%;

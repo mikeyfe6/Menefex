@@ -1,0 +1,101 @@
+@import '../index.scss';
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $para-font;
+  margin: 3rem 0;
+  font-size: 1.2rem;
+}
+
+label {
+  width: 900px;
+}
+
+.contact-form {
+  background: rgba(0, 0, 0, 0);
+  padding: 50px;
+  border-radius: 5px;
+
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+  background-color: $third-color;
+  width: 70%;
+}
+
+.input-fields {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-fields,
+.msg {
+  width: 50%;
+}
+
+.input-fields .input,
+.msg textarea {
+  margin: 15px 5px;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid $secondary-color;
+  width: 30%;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.msg textarea {
+  width: 97%;
+  height: 140px;
+  resize: none;
+}
+
+button {
+  background: $secondary-color;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+  color: fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 100%;
+
+  &:hover {
+    background: $secondary-color;
+  }
+}
+
+::placeholder {
+  color: white;
+}
+
+input,
+textarea {
+  color: $textbase-color;
+  line-height: 1.6;
+}
+
+select {
+  background-color: $primary-color;
+  color: white;
+  width: 31%;
+  margin: 15px 5px;
+  padding: 5px;
+}
+
+// MEDIA QUERIESSS
+
+@media screen and (max-width: 600px) {
+  .contact-form {
+    flex-direction: column;
+  }
+  .msg textarea {
+    height: 120px;
+  }
+  .input-fields,
+  .msg {
+    width: 100%;
+  }
+}

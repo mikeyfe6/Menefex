@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
 
-// import formDesign from '../styles/modules/form.module.scss';
+import formDesign from '../styles/modules/form.module.scss';
 
 const Form = () => {
   //   const today = new Date()
@@ -9,33 +9,66 @@ const Form = () => {
   return (
     <div>
       <h2>Form Testing With netlify</h2>
-      <form
-        name="contact"
-        method="post"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
-      >
-        <input type="hidden" name="form-name" value="contact" />
-        <p>
-          <label>
-            Your Name: <input type="text" name="name" />
-          </label>
-        </p>
-        <p>
-          <label>
-            Your Email: <input type="email" name="email" />
-          </label>
-        </p>
-        <p>
-          <label>
-            Message:{' '}
-            <textarea name="message">MESSAGE! #waynesbrothersvoice</textarea>
-          </label>
-        </p>
-        <p>
-          <button type="submit">Send</button>
-        </p>
-      </form>
+      <div className={formDesign.wrapper}>
+        <form
+          className={formDesign.contactForm}
+          name="contact"
+          method="post"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+        >
+          <div className={formDesign.inputFields}>
+            <input type="hidden" name="form-name" value="contact" />
+
+            <label>
+              <input
+                type="text"
+                name="name"
+                placeholder="Voornaam &amp; Achternaam"
+                className={formDesign.input}
+              />
+            </label>
+
+            <label>
+              <input
+                type="email"
+                name="email"
+                placeholder="E-mailadres"
+                className={formDesign.input}
+              />
+            </label>
+
+            <label>
+              <input
+                type="tel"
+                name="email"
+                placeholder="Telefoonnumer"
+                className={formDesign.input}
+              />
+            </label>
+
+            <label>
+              <select name="onderwerp" form="contact">
+                <option value="" disabled selected>
+                  Wat wilt u vragen?
+                </option>
+                <option value="website">Website bouwen</option>
+                <option value="seo">SEO aan -/ toepassen</option>
+                <option value="update">Website updaten</option>
+                <option value="hosting">Vragen over Hosting</option>
+                <option value="overig">Ik heb een andere vraag!</option>
+              </select>
+            </label>
+          </div>
+          <div className={formDesign.msg}>
+            <label>
+              <textarea name="message" placeholder="Bericht" />
+            </label>
+
+            <button type="submit">Versturen</button>
+          </div>
+        </form>
+      </div>
     </div>
   );
 };
