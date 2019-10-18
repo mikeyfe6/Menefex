@@ -1,25 +1,28 @@
-import React from "react"
+import React from 'react';
 
 // components
-import Header from "./header"
-import Footer from "./footer"
+import Header from './header';
+import Footer from './footer';
+import Quote from './quote';
 
 // styles
-import "../styles/index.scss"
-import "normalize.css"
-import LayoutDesign from "../styles/modules/layout.module.scss"
+import '../styles/index.scss';
+import 'normalize.css';
+
+import LayoutDesign from '../styles/modules/layout.module.scss';
 
 // layout
-const Layout = props => {
+const Layout = (props) => {
   return (
-    <div className={LayoutDesign.container}>
-      <div className={LayoutDesign.content}>
+    <div>
+      <body>
         <Header />
-        {props.children}
-      </div>
-      <Footer />
+        <Quote />
+        <div className={LayoutDesign.container}>{props.children}</div>
+        <Footer />
+      </body>
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

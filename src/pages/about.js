@@ -1,8 +1,8 @@
-import React from "react"
+import React from 'react';
 
-import Layout from "../components/layout"
+import Layout from '../components/layout';
 
-import SEO from "../components/seo"
+import SEO from '../components/seo';
 
 const AboutPage = () => {
   return (
@@ -12,7 +12,7 @@ const AboutPage = () => {
       <h3>Wat informatie over het bedrijf</h3>
       <p>Blablabla met wat nuttigheid!</p>
     </Layout>
-  )
-}
+  );
+};
 
-export default AboutPage
+export default AboutPage;

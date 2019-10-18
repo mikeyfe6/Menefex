@@ -1,10 +1,10 @@
-import React from "react"
-import { Link, graphql, useStaticQuery } from "gatsby"
+import React from 'react';
+import { Link, graphql, useStaticQuery } from 'gatsby';
 
-import Layout from "../components/layout"
-import blogDesign from "../styles/modules/blog.module.scss"
+import Layout from '../components/layout';
+import blogDesign from '../styles/modules/blog.module.scss';
 
-import SEO from "../components/seo"
+import SEO from '../components/seo';
 
 // CONTENTFUL blogposts genereren
 const BlogPage = () => {
@@ -20,7 +20,7 @@ const BlogPage = () => {
         }
       }
     }
-  `)
+  `);
 
   // CONTENTFUL blogposts genereren
   return (
@@ -28,7 +28,7 @@ const BlogPage = () => {
       <SEO title="Blog" />
       <h1>Blog Posts</h1>
       <ol className={blogDesign.posts}>
-        {data.allContentfulBlogPost.edges.map(edge => {
+        {data.allContentfulBlogPost.edges.map((edge) => {
           return (
             <li className={blogDesign.post}>
               <Link to={`/blogs/${edge.node.slug}`}>
@@ -36,11 +36,11 @@ const BlogPage = () => {
                 <p>{edge.node.publishedDate}</p>
               </Link>
             </li>
-          )
+          );
         })}
       </ol>
     </Layout>
-  )
+  );
 
   // ! MARKDOWN: blogposts genereren grapqhl
   // const BlogPage = () => {
@@ -82,6 +82,6 @@ const BlogPage = () => {
   //     </ol>
   //   </Layout>
   // )
-}
+};
 
-export default BlogPage
+export default BlogPage;

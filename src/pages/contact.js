@@ -1,8 +1,8 @@
-import React from "react"
+import React from 'react';
 
-import Layout from "../components/layout"
+import Layout from '../components/layout';
 
-import SEO from "../components/seo"
+import SEO from '../components/seo';
 
 const ContactPage = () => {
   return (
@@ -10,7 +10,7 @@ const ContactPage = () => {
       <SEO title="Contact" />
       <h1>Contact Us</h1>
       <p>
-        Beste manier om mij te bereiken is via
+        Beste manier om mij te bereiken is via{' '}
         <a
           href="https://twitter.com/mikeyfe"
           target="_blank"
@@ -20,7 +20,7 @@ const ContactPage = () => {
         </a>
       </p>
     </Layout>
-  )
-}
+  );
+};
 
-export default ContactPage
+export default ContactPage;

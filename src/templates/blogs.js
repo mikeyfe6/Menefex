@@ -1,10 +1,10 @@
-import React from "react"
-import { graphql } from "gatsby"
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import React from 'react';
+import { graphql, Link } from 'gatsby';
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
-import Layout from "../components/layout"
+import Layout from '../components/layout';
 
-import SEO from "../components/seo"
+import SEO from '../components/seo';
 
 export const query = graphql`
   query($slug: String!) {
@@ -16,32 +16,36 @@ export const query = graphql`
       }
     }
   }
-`
+`;
+
+// TODO: Add 'author' & fix the blogpost page accordingly to Traversy Media
 
 // show the individual blog pages & DSIH laat alles zien
-const Blog = props => {
+const Blog = (props) => {
   const options = {
     renderNode: {
-      "embedded-asset-block": node => {
-        const alt = node.data.target.fields.title["en-US"]
-        const url = node.data.target.fields.file["en-US"].url
-        return <img alt={alt} src={url} />
+      'embedded-asset-block': (node) => {
+        const alt = node.data.target.fields.title['en-US'];
+        const url = node.data.target.fields.file['en-US'].url;
+        return <img alt={alt} src={url} />;
       },
     },
-  }
+  };
 
   return (
     <Layout>
       <SEO title={props.data.contentfulBlogPost.title} />
+      <Link to="/blog">Ga Terug</Link>
+      <hr />
       <h1>{props.data.contentfulBlogPost.title}</h1>
       <p>{props.data.contentfulBlogPost.publishedDate}</p>
       {documentToReactComponents(
         props.data.contentfulBlogPost.body.json,
-        options
+        options,
       )}
     </Layout>
-  )
-}
+  );
+};
 
 // ! query the individual blog pages with MD
 // export const query = graphql`
@@ -56,4 +60,4 @@ const Blog = props => {
 //   }
 // `
 
-export default Blog
+export default Blog;

@@ -1,7 +1,9 @@
-import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import React from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
 
-import footerDesign from "../styles/modules/footer.module.scss"
+import footerDesign from '../styles/modules/footer.module.scss';
+
+// TODO: https://www.youtube.com/watch?v=z9gMLjoMTik for footer adjustments
 
 const Footer = () => {
   const data = useStaticQuery(graphql`
@@ -13,18 +15,18 @@ const Footer = () => {
         }
       }
     }
-  `)
+  `);
 
-  const today = new Date()
+  const today = new Date();
 
   return (
     <footer className={footerDesign.footer}>
       <p>
-        Created by {data.site.siteMetadata.author} also known as Mr.{" "}
+        Created by {data.site.siteMetadata.author} also known as Mr.{' '}
         {data.site.siteMetadata.title} {today.getFullYear()} ©
       </p>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

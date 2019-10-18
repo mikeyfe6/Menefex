@@ -1,4 +1,24 @@
-$font-stack: "Archivo Black", sans-serif;
+$font-stack: 'Archivo Black', sans-serif;
 $primary-color: #656565;
 $secondary-color: #f0c410;
 $onhover-color: grey;
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: lato;
+  font-size: 1em;
+  line-height: 1.6;
+  background: #f5f5f5;
+
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  max-width: 1200px;
+  margin: 0 auto !important;
+  float: none !important;
+}

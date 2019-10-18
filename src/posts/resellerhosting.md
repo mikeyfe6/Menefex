@@ -1,6 +1,6 @@
 ---
-title: "De periode waarin hosting populair was"
-date: "2019-02-12"
+title: 'De periode waarin hosting populair was'
+date: '2019-02-12'
 ---
 
 I just launched a new website!

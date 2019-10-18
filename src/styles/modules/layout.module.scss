@@ -1,19 +1,11 @@
-* {
-  font-family: lato;
+.container {
+  padding: 3rem;
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 1200px;
-  padding: 2rem;
-
-  // sticky footer begin ---
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+h1 {
+  color: green;
 }
 
 .content {
-  flex-grow: 1;
 }
 // sticky footer einde ---

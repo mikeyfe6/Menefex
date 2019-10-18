@@ -1,8 +1,8 @@
-const path = require("path")
+const path = require('path');
 
 module.exports.createPages = async ({ graphql, actions }) => {
-  const { createPage } = actions
-  const blogTemplate = path.resolve("./src/templates/blogs.js")
+  const { createPage } = actions;
+  const blogTemplate = path.resolve('./src/templates/blogs.js');
   const res = await graphql(`
     query {
       allContentfulBlogPost {
@@ -13,17 +13,17 @@ module.exports.createPages = async ({ graphql, actions }) => {
         }
       }
     }
-  `)
+  `);
 
-  res.data.allContentfulBlogPost.edges.forEach(edge => {
+  res.data.allContentfulBlogPost.edges.forEach((edge) => {
     createPage({
       component: blogTemplate,
       path: `/blogs/${edge.node.slug}`,
       context: {
         slug: edge.node.slug,
       },
-    })
-  })
+    });
+  });
 
   //  ! MD locale post weergeven
   // module.exports.onCreateNode = ({ node, actions }) => {
@@ -70,4 +70,4 @@ module.exports.createPages = async ({ graphql, actions }) => {
   //     },
   //   })
   // })
-}
+};

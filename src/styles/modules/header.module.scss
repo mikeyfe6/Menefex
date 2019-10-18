@@ -1,16 +1,16 @@
-@import "../index.scss";
+@import '../index.scss';
 
 header {
-  padding: 3rem 0 3rem;
+  padding: 5rem 0 0 0;
 
-  nav {
+  nav ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  nav li a {
+  nav ul li a {
     font-size: 1.1rem;
     color: $primary-color;
     font-weight: bold;
@@ -34,7 +34,7 @@ header {
   a:after {
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
-    content: "";
+    content: '';
     display: block;
     height: 3px;
     left: 50%;
