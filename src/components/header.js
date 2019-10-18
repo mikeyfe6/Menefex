@@ -23,12 +23,16 @@ const Header = () => {
         <nav>
           <ul>
             <li>
-              <Link activeClassName={headerDesign.activeNavItem} to="/">
-                Home
+              <Link to="/" activeClassName={headerDesign.activeNavItem}>
+                Portfolio
               </Link>
             </li>
             <li>
-              <Link activeClassName={headerDesign.activeNavItem} to="/blog">
+              <Link
+                to="/blog"
+                activeClassName={headerDesign.activeNavItem}
+                partiallyActive="true"
+              >
                 Blog
               </Link>
             </li>
@@ -38,18 +42,17 @@ const Header = () => {
             </Link>
 
             <li>
-              <Link activeClassName={headerDesign.activeNavItem} to="/about">
+              <Link to="/about" activeClassName={headerDesign.activeNavItem}>
                 About
               </Link>
             </li>
             <li>
-              <Link activeClassName={headerDesign.activeNavItem} to="/contact">
+              <Link to="/contact" activeClassName={headerDesign.activeNavItem}>
                 Contact
               </Link>
             </li>
           </ul>
         </nav>
-        <hr />
       </div>
 
       {/* <Link className={headerDesign.title} to="/">

@@ -15,7 +15,7 @@ const BlogPage = () => {
           node {
             title
             slug
-            publishedDate(formatString: "dddd D MMMM YYYY")
+            publishedDate(formatString: "dddd D MMMM YYYY", locale: "nl")
           }
         }
       }
@@ -33,7 +33,7 @@ const BlogPage = () => {
             <li className={blogDesign.post}>
               <Link to={`/blogs/${edge.node.slug}`}>
                 <h2>{edge.node.title}</h2>
-                <p>{edge.node.publishedDate}</p>
+                <p> Gepost op {edge.node.publishedDate}</p>
               </Link>
             </li>
           );

@@ -10,7 +10,9 @@ const Quote = () => {
       <div className={quoteDesign.content}>
         <p className={quoteDesign.quotetext}>
           {' '}
-          Dit is wat er in de wrapper komt
+          Gimmix is een digitaal webmediabedrijf die zich inzet digitale
+          oplossingen te creeën voor bestaande problemen. Wij helpen u met
+          websites, SEO, hosting etc..
         </p>
       </div>
     </div>

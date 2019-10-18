@@ -1,3 +1,5 @@
+@import '../index.scss';
+
 .posts {
   list-style-type: none;
   margin: 0;
@@ -8,6 +10,8 @@
 
   a {
     background: #e8e8e8;
+    color: $textbase-color;
+
     color: black;
     display: block;
     padding: 1rem;

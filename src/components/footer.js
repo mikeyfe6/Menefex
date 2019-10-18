@@ -22,8 +22,8 @@ const Footer = () => {
   return (
     <footer className={footerDesign.footer}>
       <p>
-        Created by {data.site.siteMetadata.author} also known as Mr.{' '}
-        {data.site.siteMetadata.title} {today.getFullYear()} ©
+        Created by <span>{data.site.siteMetadata.author}</span> also known as
+        Mr. <span>{data.site.siteMetadata.title}</span> {today.getFullYear()} ©
       </p>
     </footer>
   );

@@ -1,5 +1,10 @@
+@import '../index.scss';
+
 .footer {
   text-align: center;
   margin-top: auto;
-  color: blue;
+  color: $primary-color;
+}
+span {
+  color: $secondary-color;
 }
