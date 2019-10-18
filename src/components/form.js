@@ -9,7 +9,12 @@ const Form = () => {
   return (
     <div>
       <h2>Form Testing With netlify</h2>
-      <form name="contact" method="POST" data-netlify="true">
+      <form
+        name="contact"
+        method="post"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+      >
         <p>
           <label>
             Your Name: <input type="text" name="name" />
@@ -22,16 +27,8 @@ const Form = () => {
         </p>
         <p>
           <label>
-            Your Role:{' '}
-            <select name="role[]" multiple>
-              <option value="leader">Leader</option>
-              <option value="follower">Follower</option>
-            </select>
-          </label>
-        </p>
-        <p>
-          <label>
-            Message: <textarea name="message">What is your message?</textarea>
+            Message:{' '}
+            <textarea name="message">MESSAGE! #waynesbrothersvoice</textarea>
           </label>
         </p>
         <p>
