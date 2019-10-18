@@ -41,8 +41,8 @@ const Form = () => {
             <label>
               <input
                 type="tel"
-                name="email"
-                placeholder="Telefoonnumer"
+                name="tel"
+                placeholder="Telefoonnummer"
                 className={formDesign.input}
               />
             </label>
