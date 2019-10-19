@@ -2,20 +2,16 @@
 
 .wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   font-family: $para-font;
   margin: 3rem 0;
   font-size: 1.2rem;
 }
 
-label {
-  width: 900px;
-}
-
 .contact-form {
   background: rgba(0, 0, 0, 0);
-  padding: 50px;
+  padding: 3em;
   border-radius: 5px;
 
   display: flex;
@@ -32,7 +28,7 @@ label {
 
 .input-fields,
 .msg {
-  width: 50%;
+  width: 55%;
 }
 
 .input-fields .input,
@@ -41,7 +37,7 @@ label {
   background: transparent;
   border: 0;
   border-bottom: 2px solid $secondary-color;
-  width: 30%;
+  width: 25%;
   border-radius: 3px;
   padding: 5px;
 }
@@ -80,7 +76,7 @@ textarea {
 select {
   background-color: $primary-color;
   color: white;
-  width: 31%;
+  width: 27%;
   margin: 15px 5px;
   padding: 5px;
 }

@@ -50,5 +50,15 @@ module.exports = {
         ],
       },
     },
+    `gatsby-plugin-typescript`,
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /\.inline\.svg$/,
+        },
+      },
+    },
+    'gatsby-plugin-root-import',
   ],
 };

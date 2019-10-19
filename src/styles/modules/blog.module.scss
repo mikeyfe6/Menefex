@@ -18,17 +18,19 @@
     text-decoration: none;
 
     &:hover {
-      background: #e8e8e8;
+      background: #d3d3d3;
     }
   }
 
   h2 {
     margin-bottom: 0;
+    padding: 0 0 0 10px;
   }
 
   p {
     color: #777777;
     font-size: 0.8rem;
     font-style: italic;
+    padding: 0 0 0 20px;
   }
 }
