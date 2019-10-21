@@ -1,15 +1,6 @@
 @import '../index.scss';
 
-.wrapper {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  font-family: $para-font;
-  margin: 3rem 0;
-  font-size: 1.2rem;
-}
-
-.contact-form {
+form {
   background: rgba(0, 0, 0, 0);
   padding: 3em;
   border-radius: 5px;
@@ -19,6 +10,10 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0);
   background-color: $third-color;
   width: 70%;
+
+  font-family: $para-font;
+  font-size: 1.1rem;
+  margin: 50px auto;
 }
 
 .input-fields {
