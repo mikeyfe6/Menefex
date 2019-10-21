@@ -13,12 +13,12 @@ const Form = () => {
       <h2>Hier kan je ons bereiken.</h2>
       <div className={formDesign.wrapper}>
         <form
-          className={formDesign.contactForm}
           name="contact"
           method="post"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
         >
+          <input type="hidden" name="form-name" value="contact" />
           <div className={formDesign.inputFields}>
             <div className={formDesign.contactInfo}>
               <p>
@@ -62,7 +62,7 @@ const Form = () => {
               <input
                 type="tel"
                 name="email"
-                placeholder="Telefoonnumer"
+                placeholder="Telefoonnummer"
                 className={formDesign.input}
               />
             </label>
