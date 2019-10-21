@@ -1,6 +1,6 @@
-import React from "react"
-import { Helmet } from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import { useStaticQuery, graphql } from 'gatsby';
 
 const SEO = ({ title }) => {
   const data = useStaticQuery(graphql`
@@ -11,24 +11,24 @@ const SEO = ({ title }) => {
         }
       }
     }
-  `)
+  `);
 
   return (
     <Helmet
       title={`${title} | ${data.site.siteMetadata.title}`}
       meta={[
         {
-          name: "description",
-          content: "Webdevelopment die schiet naar de toekomst",
+          name: 'description',
+          content: 'Webdevelopment die schiet naar de toekomst',
         },
         {
-          name: "keywords",
+          name: 'keywords',
           content:
-            "gimmix, webdevelopment, gatsby, amsterdam, website, bouwen, freelancer",
+            'gimmix, webdevelopment, gatsby, amsterdam, website, bouwen, freelancer',
         },
       ]}
     />
-  )
-}
+  );
+};
 
-export default SEO
+export default SEO;

@@ -7,12 +7,16 @@ $textbase-color: #323232;
 
 $head-font: 'Quando', serif;
 $para-font: 'Lato', sans-serif;
+$spec-font: 'Baloo Bhai', cursive;
 
 // Quando Fonts
 @import url('https://fonts.googleapis.com/css?family=Quando&display=swap');
 
 // Lato Fonts
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+// Baloo Bai
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap');
 
 * {
   outline: none;
@@ -45,6 +49,7 @@ h2 {
   font-family: $head-font;
 }
 
-p {
+p,
+a {
   font-family: $para-font;
 }

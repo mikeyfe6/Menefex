@@ -11,16 +11,6 @@ const ContactPage = () => {
     <Layout>
       <SEO title="Contact" />
       <h1>Contact Us</h1>
-      <p>
-        Beste manier om mij te bereiken is via{' '}
-        <a
-          href="https://twitter.com/mikeyfe"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          @mikeyfe6
-        </a>
-      </p>
 
       <Form />
     </Layout>
@@ -28,3 +18,9 @@ const ContactPage = () => {
 };
 
 export default ContactPage;
+
+/* <a
+          href="https://twitter.com/mikeyfe"
+          target="_blank"
+          rel="noopener noreferrer"
+        ></a> */

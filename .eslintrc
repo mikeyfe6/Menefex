@@ -1,31 +1,32 @@
 {
   "parser": "babel-eslint",
-  "rules": {
-    "react/destructuring-assignment": 0,
-    "react/jsx-key": 0,
-    "react/jsx-one-expression-per-line": 0,
-    "react/prop-types": 0,
-    "react/jsx-closing-bracket-location": 0,
-    "react/jsx-closing-tag-location": 0,
-    "react/jsx-curly-newline": 0,
-    "react/jsx-curly-spacing": 0,
-    "react/jsx-equals-spacing": 0,
-    "react/jsx-first-prop-new-line": 0,
-    "react/jsx-indent": 0,
-    "react/jsx-indent-props": 0,
-    "react/jsx-max-props-per-line": 0,
-    "react/jsx-props-no-multi-spaces": 0,
-    "react/jsx-tag-spacing": 0,
-    "react/jsx-wrap-multilines": 0,
-    "strict": 0,
-    "react/display-name": 0,
-    "prefer-destructuring": ["error", { "object": false, "array": false }],
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "sourceType": "module"
   },
-  "extends": [
-    "airbnb",
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "prettier"
-  ]
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "extends": ["airbnb", "prettier", "plugin:react/recommended"],
+  "plugins": ["prettier", "react"],
+  "rules": {
+    "prettier/prettier": "error",
+    "no-unused-vars": "warn",
+    "no-console": "off",
+    "func-names": "off",
+    "no-process-exit": "off",
+    "object-shorthand": "off",
+    "class-methods-use-this": "off",
+    "prefer-destructuring": "warn",
+    "react/jsx-one-expression-per-line": "off",
+    "react/destructuring-assignment": 1,
+    "react/prop-types": 1,
+    "react/jsx-key": 1,
+    "react/display-name": 1,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+  }
 }
