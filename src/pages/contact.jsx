@@ -11,8 +11,10 @@ const ContactPage = () => {
     <Layout>
       <SEO title="Contact" />
 
-      <h1>Contact Us</h1>
+      <div className="whitespace" />
+      <div className="whitespace" />
       <div className="container">
+        <h1>Contact Us</h1>
         <div className="hero-content">
           <br />
           <br />
@@ -33,8 +35,8 @@ const ContactPage = () => {
             </div>
           </div>
         </div>
+        <Form />
       </div>
-      <Form />
     </Layout>
   );
 };

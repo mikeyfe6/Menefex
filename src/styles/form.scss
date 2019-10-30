@@ -1,5 +1,8 @@
+@import './index.scss';
+
 #contact-form {
   margin: 5% 1.4%;
+  margin-left: -10%;
 
   ul {
     list-style: none;
@@ -48,7 +51,7 @@ input:focus {
   text-transform: uppercase;
   padding: 20px 30px;
   background: transparent;
-  color: #dfdfdf;
+  background-color: $third-color;
   font-size: 14px;
   letter-spacing: 2px;
 

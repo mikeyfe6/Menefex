@@ -1,7 +1,9 @@
+@import './index.scss';
+
 .line {
   top: 50%;
   margin: auto;
-  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  border-right: 3px solid $secondary-color;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
@@ -9,8 +11,8 @@
 }
 
 .anim-typewriter {
-  animation: typewriter 4s steps(40) 1s 1 normal both,
-    blinkTextCursor 500ms steps(40) infinite normal;
+  animation: typewriter 5s steps(40) 3.5s 1 normal both,
+    blinkTextCursor 1300ms steps(40) infinite normal;
 }
 
 @keyframes typewriter {
@@ -24,7 +26,7 @@
 
 @keyframes blinkTextCursor {
   from {
-    border-right-color: rgba(255, 255, 255, 0.75);
+    border-right-color: $secondary-color;
   }
   to {
     border-right-color: transparent;

@@ -16,18 +16,34 @@ const IndexPage = () => {
       <SEO title="Welkom" />
 
       <Hero />
+      <div className="vertical" />
+
+      <div className="whitespace" />
+      <br />
+      <br />
+
+      <h1 className="hometitles">Services</h1>
       <Quote />
 
-      <h1>Welkom bij Gimmix</h1>
-      <h2>Ik ben Michael Fransman</h2>
-      <p>
-        Heb je een fantastische webdeveloper nodig?{' '}
-        <Link to="/contact">Klik hier</Link>
-      </p>
+      <div className="whitespace" />
+      <div className="vertical" />
 
+      <div className="whitespace" />
+      <br />
+
+      <h1 className="hometitles">Projects</h1>
       <Swiper />
+
+      <div className="whitespace" />
     </Layout>
   );
 };
 
 export default IndexPage;
+
+/* <h1>Welkom bij Gimmix</h1>
+<h2>Ik ben Michael Fransman</h2>
+<p>
+  Heb je een fantastische webdeveloper nodig?{' '}
+  <Link to="/contact">Klik hier</Link>
+</p> */

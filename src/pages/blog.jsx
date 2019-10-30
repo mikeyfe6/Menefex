@@ -26,20 +26,23 @@ const BlogPage = () => {
   return (
     <Layout>
       <SEO title="Blog" />
-      <h1>Blog Posts</h1>
-      <div className="whitespace" />
-      <ol className="posts">
-        {data.allContentfulBlogPost.edges.map((edge) => {
-          return (
-            <li className="post">
-              <Link to={`/blogs/${edge.node.slug}`}>
-                <h2>{edge.node.title}</h2>
-                <p> Gepost op {edge.node.publishedDate}</p>
-              </Link>
-            </li>
-          );
-        })}
-      </ol>
+      <div className="container">
+        <div className="whitespace" />
+        <div className="whitespace" />
+        <h1>Blog Posts</h1>
+        <ol className="posts">
+          {data.allContentfulBlogPost.edges.map((edge) => {
+            return (
+              <li className="post">
+                <Link to={`/blogs/${edge.node.slug}`}>
+                  <h2>{edge.node.title}</h2>
+                  <p> Gepost op {edge.node.publishedDate}</p>
+                </Link>
+              </li>
+            );
+          })}
+        </ol>
+      </div>
     </Layout>
   );
 

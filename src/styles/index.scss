@@ -1,6 +1,8 @@
 $primary-color: #656565;
 $secondary-color: #f0c410;
 $third-color: #c0c0c0;
+$fourth-color: #dadada;
+$link-color: #008cd2;
 
 $textbase-color: #323232;
 // $onhover-color: grey;
@@ -8,6 +10,7 @@ $textbase-color: #323232;
 $head-font: 'Quando', serif;
 $para-font: 'Lato', sans-serif;
 $spec-font: 'Baloo Bhai', cursive;
+$extra-font: 'Montserrat', sans-serif;
 
 // Quando Fonts
 @import url('https://fonts.googleapis.com/css?family=Quando&display=swap');
@@ -17,6 +20,9 @@ $spec-font: 'Baloo Bhai', cursive;
 
 // Baloo Bai
 @import url('https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap');
+
+// Montserrat
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 * {
   outline: none;
@@ -32,6 +38,7 @@ body {
 
 a {
   text-decoration: none;
+  color: $link-color;
 
   &:hover {
     text-decoration: none;
@@ -45,4 +52,28 @@ a {
 
 .hero-content p {
   color: grey;
+}
+
+progress[value] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: 'green';
+}
+
+.hometitles {
+  text-align: center;
+  padding: 1%;
+  text-decoration: underline;
+  text-decoration-color: $secondary-color;
+}
+
+.vertical {
+  margin-top: 40px;
+  border-left: 5px solid $third-color;
+  height: 80px;
+  position: absolute;
+  left: 50%;
 }

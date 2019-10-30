@@ -28,10 +28,16 @@ const SEO = ({ title }) => {
         },
       ]}
     >
-      <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css" />
+      <script src="https://unpkg.com/react-id-swiper@2.3.2/lib/react-id-swiper.js" />
+      <script src="https://unpkg.com/react-id-swiper@2.3.2/lib/react-id-swiper.min.js" />
+
       <link
         rel="stylesheet"
-        href="https://unpkg.com/swiper/css/swiper.min.css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css"
+      />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css"
       />
     </Helmet>
   );

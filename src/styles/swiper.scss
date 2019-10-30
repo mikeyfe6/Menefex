@@ -1,6 +1,59 @@
+@import './index.scss';
+
 .swiper-container {
-  width: 600px;
-  height: 300px;
+  width: 1200px;
+  height: 700px;
+  border: 0.7px solid $primary-color;
+  border-radius: 25px;
+}
+
+.swiper-wrapper {
+  position: relative;
+}
+
+.swiper-content {
+  position: absolute;
+  background: #fff;
+  bottom: 30px;
+  right: 20px;
+  font-size: 0.7rem;
+  width: 35%;
+  height: 22%;
+  border: 2px solid $secondary-color;
+  border-radius: 7px;
+}
+
+.beschrijving {
+  padding: 4%;
+
+  .project-link {
+    position: absolute;
+    top: 13%;
+    right: 8%;
+  }
+
+  h5 {
+    color: $textbase-color;
+    font-family: $spec-font;
+  }
+
+  p {
+    font-family: $para-font;
+    color: $textbase-color;
+  }
+
+  .informatie {
+    padding-top: 2%;
+  }
+
+  .geschreven {
+    font-size: 0.9em;
+    padding-top: 3%;
+
+    span {
+      text-decoration: underline;
+    }
+  }
 }
 
 .project-slide {
@@ -9,11 +62,49 @@
 }
 
 .swiper-slide {
-  text-align: center;
+  // text-align: center;
   font-size: 18px;
-  background: #fff;
 
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.slide1 {
+  background: url('../img/projects/Eternitydrum-screen.png') no-repeat 50% 0%;
+  background-size: cover;
+}
+
+.slide2 {
+  background: url('../img/projects/hout.jpg') no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.slide3 {
+  background: url('../img/projects/itwomen.jpg') no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.slide4 {
+  background: url('../img/projects/teamwork.jpg') no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.slide5 {
+  background: url('../img/projects/visual.jpg') no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.swiper-button-next {
+  filter: hue-rotate(700deg);
+  margin-left: 10px;
+}
+
+.swiper-button-prev {
+  filter: hue-rotate(700deg);
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: $secondary-color !important;
 }

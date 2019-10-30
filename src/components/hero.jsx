@@ -15,9 +15,8 @@ const Hero = () => {
             u mee van dienst zijn?
           </h1>
         </div>
+        <div className="scroll-down" />
       </div>
-
-      <div className="scroll-down" />
     </div>
   );
 };
