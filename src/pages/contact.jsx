@@ -10,8 +10,30 @@ const ContactPage = () => {
   return (
     <Layout>
       <SEO title="Contact" />
-      <h1>Contact Us</h1>
 
+      <h1>Contact Us</h1>
+      <div className="container">
+        <div className="hero-content">
+          <br />
+          <br />
+
+          <div className="row">
+            <div className="col-lg-8">
+              <h3 className="wow fadeInUp" data-wow-delay="1s">
+                say hello.👋🏾
+              </h3>
+
+              <p className="wow fadeInUp" data-wow-delay="1.2s">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptate voluptatum repellat cumque harum pariatur, distinctio
+                quod nemo ab asperiores blanditiis iure iste labore! Eaque,
+                sapiente eveniet! A, deserunt quod eos, non dicta illum quae
+                veritatis nisi voluptatum vel pariatur, commodi eveniet tempore.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
       <Form />
     </Layout>
   );

@@ -1,8 +1,10 @@
-@import '../index.scss';
+@import './index.scss';
 
 .posts {
   list-style-type: none;
-  margin: 0;
+  width: 90%;
+  margin: 0 auto;
+  padding-left: 0;
 }
 
 .post {

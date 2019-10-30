@@ -27,7 +27,13 @@ const SEO = ({ title }) => {
             'gimmix, webdevelopment, gatsby, amsterdam, website, bouwen, freelancer',
         },
       ]}
-    />
+    >
+      <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css" />
+      <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper/css/swiper.min.css"
+      />
+    </Helmet>
   );
 };
 

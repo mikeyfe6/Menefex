@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 
 import Layout from '../components/layout';
-import blogDesign from '../styles/modules/blog.module.scss';
+import '../styles/blog.scss';
 
 import SEO from '../components/seo';
 
@@ -27,10 +27,11 @@ const BlogPage = () => {
     <Layout>
       <SEO title="Blog" />
       <h1>Blog Posts</h1>
-      <ol className={blogDesign.posts}>
+      <div className="whitespace" />
+      <ol className="posts">
         {data.allContentfulBlogPost.edges.map((edge) => {
           return (
-            <li className={blogDesign.post}>
+            <li className="post">
               <Link to={`/blogs/${edge.node.slug}`}>
                 <h2>{edge.node.title}</h2>
                 <p> Gepost op {edge.node.publishedDate}</p>

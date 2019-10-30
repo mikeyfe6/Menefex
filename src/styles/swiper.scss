@@ -1,0 +1,19 @@
+.swiper-container {
+  width: 600px;
+  height: 300px;
+}
+
+.project-slide {
+  margin: 0 auto;
+  width: 75%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

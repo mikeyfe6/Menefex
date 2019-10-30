@@ -14,6 +14,13 @@ const Quote = () => {
           oplossingen te creeën voor bestaande problemen. Wij helpen u met
           websites, SEO, hosting etc..
         </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+          illo quod temporibus eaque, unde ut! Accusamus fugit dolores aut non
+          pariatur voluptas error et corrupti quibusdam dignissimos nemo itaque
+          illo quisquam atque deserunt quaerat alias eos beatae consectetur,
+          quasi iste?
+        </p>
       </div>
     </div>
   );
