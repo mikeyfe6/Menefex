@@ -8,6 +8,7 @@ const AboutPage = () => {
   return (
     <Layout>
       <SEO title="About" />
+      <div className="whitespace" />
       <div className="container">
         <div className="hero-content">
           <br />
@@ -15,7 +16,7 @@ const AboutPage = () => {
           <div className="row">
             <div className="col-lg-12">
               <div className="whitespace" />
-              <h3 className="wow fadeInUp">about me.</h3>
+              <h2 className="wow fadeInUp">About me.</h2>
               <br />
 
               <p className="wow fadeInUp">

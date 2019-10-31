@@ -3,19 +3,28 @@ import React from 'react';
 import '../styles/hero.scss';
 import '../styles/typewriter.scss';
 
+import mini from '../logo/Gimmix-mini.svg';
+
+import '../styles/mini-logo.scss';
+
 const Hero = () => {
   //   const today = new Date()
 
   return (
     <div>
-      <div className="hero">
-        <div className="header">
+      <div className="container-fluid">
+        <div className="hero">
+          <img className="mini" src={mini} alt="Gimmix Mini Logo" />
           <h1 className="line anim-typewriter">
             Welkom! Namens het team van webmediabedrijf Gimmix. Waar kunnen wij
-            u mee van dienst zijn?
+            u mee van dienst zijn?{' '}
           </h1>
+          <br />
+          <span>
+            <a href>lees meer</a>
+          </span>
+          <div className="scroll-down" />
         </div>
-        <div className="scroll-down" />
       </div>
     </div>
   );

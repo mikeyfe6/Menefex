@@ -3,6 +3,7 @@ import { graphql, Link } from 'gatsby';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
 import Layout from '../components/layout';
+import '../styles/blogpost.scss';
 
 import SEO from '../components/seo';
 
@@ -34,15 +35,24 @@ const Blog = (props) => {
 
   return (
     <Layout>
-      <SEO title={props.data.contentfulBlogPost.title} />
-      <Link to="/blog">Ga Terug</Link>
-      <hr />
-      <h1>{props.data.contentfulBlogPost.title}</h1>
-      <p>Gepost op {props.data.contentfulBlogPost.publishedDate}</p>
-      {documentToReactComponents(
-        props.data.contentfulBlogPost.body.json,
-        options,
-      )}
+      <div className="whitespace" />
+      <div className="whitespace" />
+      <div className="container">
+        <SEO title={props.data.contentfulBlogPost.title} />
+        <Link to="/blog">Ga Terug</Link>
+        <hr />
+        <h1 className="post-title">{props.data.contentfulBlogPost.title}</h1>
+        <p className="post-date">
+          {' '}
+          Gepost op {props.data.contentfulBlogPost.publishedDate}
+        </p>
+        <p className="post-content">
+          {documentToReactComponents(
+            props.data.contentfulBlogPost.body.json,
+            options,
+          )}
+        </p>
+      </div>
     </Layout>
   );
 };

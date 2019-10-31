@@ -11,16 +11,14 @@ const ContactPage = () => {
     <Layout>
       <SEO title="Contact" />
 
-      <div className="whitespace" />
-      <div className="whitespace" />
       <div className="container">
-        <h1>Contact Us</h1>
+        <div className="whitespace" />
+        <div className="whitespace" />
+        <h2>Contact Us</h2>
         <div className="hero-content">
-          <br />
-          <br />
-
           <div className="row">
             <div className="col-lg-8">
+              <br />
               <h3 className="wow fadeInUp" data-wow-delay="1s">
                 say hello.👋🏾
               </h3>

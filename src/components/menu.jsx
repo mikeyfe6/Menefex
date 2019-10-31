@@ -17,42 +17,42 @@ const Menu = () => {
 
   return (
     <div>
-      <nav>
-        <span id="brand">
+      <nav id="topnavbar">
+        <div id="brand">
           <Link to="/" activeClassName="activeNavItem">
             <img className={headerLogo.logo} src={logo} alt="Gimmix Logo" />
           </Link>
-        </span>
+        </div>
 
         <ul id="menu">
           <li>
             <Link to="/" activeClassName="activeNavItem">
               home
-              <span>.</span>
+              <span className="dots">.</span>
             </Link>
           </li>
           <li>
             <Link to="/work" activeClassName="activeNavItem">
               work
-              <span>.</span>
+              <span className="dots">.</span>
             </Link>
           </li>
           <li>
             <Link to="/blog" activeClassName="activeNavItem">
               blog
-              <span>.</span>
+              <span className="dots">.</span>
             </Link>
           </li>
           <li>
             <Link to="/about" activeClassName="activeNavItem">
               about
-              <span>.</span>
+              <span className="dots">.</span>
             </Link>
           </li>
           <li>
             <Link to="/contact" activeClassName="activeNavItem">
               contact
-              <span>.</span>
+              <span className="dots">.</span>
             </Link>
           </li>
         </ul>
@@ -75,35 +75,36 @@ const Menu = () => {
           <li>
             <Link to="/" activeClassName="activeNavItem">
               home
-              <span>.</span>
+              <span className="dots">.</span>
             </Link>
           </li>
           <li>
             <Link to="/work" activeClassName="activeNavItem">
               work
-              <span>.</span>
+              <span className="dots">.</span>
             </Link>
           </li>
           <li>
             <Link to="/blog" activeClassName="activeNavItem">
               blog
-              <span>.</span>
+              <span className="dots">.</span>
             </Link>
           </li>
           <li>
             <Link to="/about" activeClassName="activeNavItem">
               about
-              <span>.</span>
+              <span className="dots">.</span>
             </Link>
           </li>
           <li>
             <Link to="/contact" activeClassName="activeNavItem">
               contact
-              <span>.</span>
+              <span className="dots">.</span>
             </Link>
           </li>
         </ul>
       </div>
+      <div className="clr" />
     </div>
   );
 };

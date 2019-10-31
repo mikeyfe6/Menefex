@@ -46,9 +46,9 @@ const Footer = () => {
         <div className="info">
           <div className="row">
             <div className="col-lg-4" id="personal">
-              <p className="wow fadeInUp">connect with me</p>
+              <p className="wow fadeInUp">connect with us</p>
               <h4 className="wow fadeInUp" data-wow-delay="0.2s">
-                ig @mikeyfe6
+                <a href="mailto:contact@gimmix.nl">contact@gimmix.nl</a>
               </h4>
             </div>
 
@@ -59,16 +59,49 @@ const Footer = () => {
 
               <ul>
                 <li id="fb" className="wow fadeInUp" data-wow-delay="0.4s">
-                  fb
+                  <a
+                    href="https://www.facebook.com/MikeyFE"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    fb
+                  </a>
                 </li>
                 <li id="ig" className="wow fadeInUp" data-wow-delay="0.6s">
-                  ig
+                  <a
+                    href="https://www.instagram.com/mikeyfe"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    ig
+                  </a>
                 </li>
                 <li id="tw" className="wow fadeInUp" data-wow-delay="0.8s">
-                  tw
+                  <a
+                    href="https://www.twitter.com/mikeyfe"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    tw
+                  </a>
                 </li>
-                <li id="yt" className="wow fadeInUp" data-wow-delay="1.0s">
-                  yt
+                <li id="li" className="wow fadeInUp" data-wow-delay="1.0s">
+                  <a
+                    href="https://www.linkedin.com/in/michaelfransman"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    li
+                  </a>
+                </li>
+                <li id="gh" className="wow fadeInUp" data-wow-delay="1.0s">
+                  <a
+                    href="https://github.com/mikeyfe6"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    gh
+                  </a>
                 </li>
               </ul>
 
@@ -78,16 +111,19 @@ const Footer = () => {
 
             <div className="col-lg-4" id="address">
               <p className="wow fadeInUp" data-wow-delay="0s">
-                say hello
+                straight from
               </p>
               <h4 className="wow fadeInUp" data-wow-delay="0.2s">
-                mikeyfe6@gimmix.nl
+                <span className="amsterdam">xxx</span> amsterdam
               </h4>
               <br />
               <br />
             </div>
           </div>
         </div>
+        <span className="termscods">
+          terms & conditions | Gimmix LLC. 2019 &copy; | all rights reserved
+        </span>
       </div>
     </footer>
   );

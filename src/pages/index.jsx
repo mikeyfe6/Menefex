@@ -30,8 +30,9 @@ const IndexPage = () => {
 
       <div className="whitespace" />
       <br />
+      <br />
 
-      <h1 className="hometitles">Projects</h1>
+      <h1 className="hometitles">Projecten</h1>
       <Swiper />
 
       <div className="whitespace" />

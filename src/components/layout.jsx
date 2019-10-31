@@ -3,7 +3,13 @@ import React from 'react';
 
 // FontAwesome icons
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faPhoneSquareAlt, faAt } from '@fortawesome/free-solid-svg-icons';
+import {
+  faPhoneSquareAlt,
+  faAt,
+  faSearchLocation,
+  faGlobe,
+  faMobile,
+} from '@fortawesome/free-solid-svg-icons';
 
 // components
 import Menu from './menu';
@@ -14,7 +20,7 @@ import '../styles/index.scss';
 import 'normalize.css';
 import '../styles/layout.scss';
 
-library.add(faPhoneSquareAlt, faAt);
+library.add(faPhoneSquareAlt, faAt, faSearchLocation, faGlobe, faMobile);
 
 // layout
 const Layout = (props) => {

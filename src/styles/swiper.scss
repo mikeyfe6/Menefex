@@ -3,12 +3,11 @@
 .swiper-container {
   width: 1200px;
   height: 700px;
-  border: 0.7px solid $primary-color;
-  border-radius: 25px;
+  border: 1px ridge $third-color;
+  border-radius: 15px;
 }
 
 .swiper-wrapper {
-  position: relative;
 }
 
 .swiper-content {
@@ -19,7 +18,7 @@
   font-size: 0.7rem;
   width: 35%;
   height: 22%;
-  border: 2px solid $secondary-color;
+  border: 2px ridge $secondary-color;
   border-radius: 7px;
 }
 
@@ -57,17 +56,9 @@
 }
 
 .project-slide {
-  margin: 0 auto;
-  width: 75%;
 }
 
 .swiper-slide {
-  // text-align: center;
-  font-size: 18px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .slide1 {
@@ -97,7 +88,6 @@
 
 .swiper-button-next {
   filter: hue-rotate(700deg);
-  margin-left: 10px;
 }
 
 .swiper-button-prev {

@@ -20,9 +20,10 @@ const workPage = () => {
 
           <div className="row">
             <div className="col-lg-8">
-              <h3 className="wow fadeInUp" data-wow-delay="1s">
+              <h2 className="wow fadeInUp" data-wow-delay="1s">
                 Work.
-              </h3>
+              </h2>
+              <br />
 
               <p className="wow fadeInUp" data-wow-delay="1.2s">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.

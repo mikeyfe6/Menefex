@@ -1,0 +1,14 @@
+@import './index.scss';
+
+.post-title {
+  font-family: $spec-font;
+  margin: 5% 0;
+}
+
+.post-date {
+  color: $secondary-color;
+}
+
+.post-content {
+  color: blue;
+}

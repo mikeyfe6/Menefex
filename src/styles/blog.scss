@@ -13,8 +13,6 @@
   a {
     background: #e8e8e8;
     color: $textbase-color;
-
-    color: black;
     display: block;
     padding: 1rem;
     text-decoration: none;
@@ -24,9 +22,11 @@
     }
   }
 
-  h2 {
+  h4 {
     margin-bottom: 0;
     padding: 0 0 0 10px;
+    font-family: $spec-font;
+    font-weight: 50;
   }
 
   p {

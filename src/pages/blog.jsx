@@ -29,13 +29,14 @@ const BlogPage = () => {
       <div className="container">
         <div className="whitespace" />
         <div className="whitespace" />
-        <h1>Blog Posts</h1>
+        <h2>Blog Posts</h2>
+        <br />
         <ol className="posts">
           {data.allContentfulBlogPost.edges.map((edge) => {
             return (
               <li className="post">
                 <Link to={`/blogs/${edge.node.slug}`}>
-                  <h2>{edge.node.title}</h2>
+                  <h4>{edge.node.title}</h4>
                   <p> Gepost op {edge.node.publishedDate}</p>
                 </Link>
               </li>

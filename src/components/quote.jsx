@@ -1,4 +1,5 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import '../styles/quote.scss';
 
@@ -8,27 +9,34 @@ const Quote = () => {
   return (
     <div className="quote-container">
       <div className="quote-wrapper">
-        <p className="quote-text">
-          {' '}
-          Gimmix is een digitaal webmediabedrijf die zich inzet digitale
-          oplossingen te creeën voor bestaande problemen. Wij helpen u met
-          websites, SEO, hosting etc..
-        </p>
-        <p className="quote-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-          illo quod temporibus eaque, unde ut! Accusamus fugit dolores aut non
-          pariatur voluptas error et corrupti quibusdam dignissimos nemo itaque
-          illo quisquam atque deserunt quaerat alias eos beatae consectetur,
-          quasi iste?
-        </p>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam nisi
-          sint saepe consequatur dolorum accusantium optio est, ipsum, molestiae
-          quibusdam labore, rerum fuga. Iste aliquid, aperiam, nemo neque totam
-          ad fugiat quaerat dolorem ipsam soluta atque quidem explicabo error!
-          Nihil excepturi dolorem aliquid vitae quam sequi voluptas quod
-          repellat dolores?
-        </p>
+        <section id="services">
+          <FontAwesomeIcon icon="globe" size="3x" color="#f0c410" />
+          <h2>Websites</h2>
+          <p className="quote-text">
+            Gimmix is een digitaal webmediabedrijf die zich inzet digitale
+            oplossingen te creeën voor bestaande problemen. Wij helpen u met
+            websites, SEO, hosting etc..
+          </p>
+        </section>
+        <section id="services">
+          <FontAwesomeIcon icon="mobile" size="3x" color="#f0c410" />
+          <h2>Apps</h2>
+          <p className="quote-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam,
+            adipisci quasi quidem iusto facilis maiores enim voluptates eligendi
+            dolorum incidunt mollitia voluptatibus et eos commodi accusantium
+            eaque, tempore beatae doloribus.
+          </p>
+        </section>
+        <section id="services">
+          <FontAwesomeIcon icon="search-location" size="3x" color="#f0c410" />
+          <h2>SEO</h2>
+          <p className="quote-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+            repellendus minus nulla nihil deleniti tempora consectetur fugit
+            porro eum voluptatum.
+          </p>
+        </section>
       </div>
     </div>
   );
