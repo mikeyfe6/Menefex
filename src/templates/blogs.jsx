@@ -39,20 +39,25 @@ const Blog = (props) => {
       <div className="whitespace" />
       <div className="container">
         <SEO title={props.data.contentfulBlogPost.title} />
-        <Link to="/blog">Ga Terug</Link>
+        <Link to="/blog" className="goback">
+          Ga Terug
+        </Link>
         <hr />
         <h1 className="post-title">{props.data.contentfulBlogPost.title}</h1>
         <p className="post-date">
           {' '}
-          Gepost op {props.data.contentfulBlogPost.publishedDate}
+          - Gepost op {props.data.contentfulBlogPost.publishedDate}
         </p>
-        <p className="post-content">
-          {documentToReactComponents(
-            props.data.contentfulBlogPost.body.json,
-            options,
-          )}
-        </p>
+        <blockquote>
+          <p className="post-content">
+            {documentToReactComponents(
+              props.data.contentfulBlogPost.body.json,
+              options,
+            )}
+          </p>
+        </blockquote>
       </div>
+      <div className="whitespace" />
     </Layout>
   );
 };

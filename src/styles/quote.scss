@@ -17,16 +17,24 @@
     margin: 3%;
   }
 
-  h2 {
+  .quote-head {
     display: inline-block;
     padding-left: 5%;
+    font-family: $extra-font;
+    font-weight: bold;
   }
 
-  p {
-    margin-top: 3%;
+  .quote-text {
+    margin-top: 7%;
     font-family: $para-font;
     line-height: 1.7em;
     letter-spacing: 0.05em;
+  }
+
+  .thick {
+    margin: 0;
+    width: 23%;
+    border: 3px solid $fifth-color;
   }
 }
 

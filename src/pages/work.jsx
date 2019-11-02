@@ -1,8 +1,12 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { Link } from 'gatsby';
 
 import Layout from '../components/layout';
 import '../styles/work.scss';
+
+import eternity from '../img/projects/Eternitydrum-screen.png';
+import comingsoon from '../img/projects/comingsoon.jpg';
 
 import SEO from '../components/seo';
 
@@ -13,15 +17,13 @@ const workPage = () => {
 
       <div className="container">
         <div className="hero-content">
-          <br />
-          <br />
           <div className="whitespace" />
           <div className="whitespace" />
 
           <div className="row">
             <div className="col-lg-8">
-              <h2 className="wow fadeInUp" data-wow-delay="1s">
-                Work.
+              <h2 className="page-title wow fadeInUp" data-wow-delay="1s">
+                Projecten.
               </h2>
               <br />
 
@@ -35,10 +37,119 @@ const workPage = () => {
             </div>
           </div>
         </div>
+
+        <div className="whitespace" />
+
+        <div className="projects">
+          <div className="item">
+            <a href="#!">
+              <img src={eternity} alt="Eternity Drum" />
+            </a>
+            <div className="project-info">
+              <p>
+                <b>
+                  Dit project is een puur informatieve website gebouwd in
+                  samenwerking met Eternity Drum uit Amsterdam.
+                </b>
+                <br />
+                <br />
+                <span>Client:</span>
+                Eternity Percussion
+                <br />
+                <br />
+                <span>Tools:</span>
+                Wordpress, Custom Field Types, Elementor Pro
+              </p>
+            </div>
+            <a href="#!" className="btn-light">
+              <FontAwesomeIcon
+                icon="eye"
+                color="#f0c410"
+                className="workicon"
+              />{' '}
+              Go to Project
+            </a>
+            <a href="#!" className="btn-dark">
+              <FontAwesomeIcon
+                icon="code-branch"
+                color="#f0c410"
+                className="workicon"
+              />{' '}
+              View on Github
+            </a>
+          </div>
+
+          <div className="item">
+            <a href="#!">
+              <img src={comingsoon} alt="Eternity Drum" />
+            </a>
+            <a href="#!" className="btn-light">
+              <FontAwesomeIcon
+                icon="eye"
+                color="#f0c410"
+                className="workicon"
+              />{' '}
+              Go to Project
+            </a>
+            <a href="#!" className="btn-dark">
+              <FontAwesomeIcon
+                icon="code-branch"
+                color="#f0c410"
+                className="workicon"
+              />{' '}
+              View on Github
+            </a>
+          </div>
+
+          <div className="item">
+            <a href="#!">
+              <img src={comingsoon} alt="Eternity Drum" />
+            </a>
+            <a href="#!" className="btn-light">
+              <FontAwesomeIcon
+                icon="eye"
+                color="#f0c410"
+                className="workicon"
+              />{' '}
+              Go to Project
+            </a>
+            <a href="#!" className="btn-dark">
+              <FontAwesomeIcon
+                icon="code-branch"
+                color="#f0c410"
+                className="workicon"
+              />{' '}
+              View on Github
+            </a>
+          </div>
+
+          <div className="item">
+            <a href="#!">
+              <img src={comingsoon} alt="Eternity Drum" />
+            </a>
+            <a href="#!" className="btn-light">
+              <FontAwesomeIcon
+                icon="eye"
+                color="#f0c410"
+                className="workicon"
+              />{' '}
+              Go to Project
+            </a>
+            <a href="#!" className="btn-dark">
+              <FontAwesomeIcon
+                icon="code-branch"
+                color="#f0c410"
+                className="workicon"
+              />{' '}
+              View on Github
+            </a>
+          </div>
+        </div>
+        <div className="whitespace" />
       </div>
 
-      <div className="container-fluid">
-        <br />
+      {/* <div className="container-fluid"> */}
+      {/* <br />
         <br />
         <br />
 
@@ -81,8 +192,8 @@ const workPage = () => {
           <div className="col-lg-6" />
 
           <div className="whitespace" />
-        </div>
-      </div>
+        </div> */}
+      {/* </div> */}
     </Layout>
   );
 };

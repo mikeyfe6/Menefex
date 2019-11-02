@@ -28,7 +28,11 @@ const Footer = () => {
           <div className="row">
             <div className="col-lg-12">
               <p className="wow fadeInUp">
-                Eindelijk weer een Paragraph waar ik overzicht heb..
+                <i>
+                  &quot;to live a creative life, we must lose our fear of being
+                  wrong&quot;
+                </i>{' '}
+                - <b>Joseph Chilton Pearce</b>
               </p>
             </div>
           </div>

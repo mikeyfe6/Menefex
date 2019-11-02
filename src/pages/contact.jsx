@@ -14,7 +14,7 @@ const ContactPage = () => {
       <div className="container">
         <div className="whitespace" />
         <div className="whitespace" />
-        <h2>Contact Us</h2>
+        <h2 className="page-title">Contact.</h2>
         <div className="hero-content">
           <div className="row">
             <div className="col-lg-8">
@@ -35,6 +35,7 @@ const ContactPage = () => {
         </div>
         <Form />
       </div>
+      <div className="whitespace" />
     </Layout>
   );
 };

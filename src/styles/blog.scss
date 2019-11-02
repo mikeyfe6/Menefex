@@ -14,11 +14,13 @@
     background: #e8e8e8;
     color: $textbase-color;
     display: block;
-    padding: 1rem;
+    padding: 1.5rem;
     text-decoration: none;
+    border: 2px solid $third-color;
 
     &:hover {
       background: #d3d3d3;
+      color: $link-color;
     }
   }
 
@@ -30,9 +32,10 @@
   }
 
   p {
-    color: #777777;
+    color: $primary-color;
     font-size: 0.8rem;
     font-style: italic;
     padding: 0 0 0 20px;
+    margin-top: 1%;
   }
 }

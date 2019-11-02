@@ -2,11 +2,11 @@ $primary-color: #656565;
 $secondary-color: #f0c410;
 $third-color: #c0c0c0;
 $fourth-color: #dadada;
+$fifth-color: #a9a9a9;
 $link-color: #008cd2;
 $spec-color: #f8e491;
 
 $textbase-color: #323232;
-// $onhover-color: grey;
 
 $head-font: 'Quando', serif;
 $para-font: 'Lato', sans-serif;
@@ -34,16 +34,15 @@ body {
   height: 100vh;
   background: #fff !important;
   color: #656565 !important;
-  font-family: 'Roboto Mono', monospace !important;
+  font-family: 'Roboto Mono', monospace;
 }
 
 a {
   text-decoration: none;
-  color: $link-color;
 
   &:hover {
     text-decoration: none;
-    transition: all 0.7s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 }
 
@@ -81,5 +80,10 @@ progress[value]::-webkit-progress-bar {
 }
 
 .hero-content p {
-  color: $primary-color;
+  // color: $primary-color;
+  font-family: $para-font;
+}
+
+.page-title {
+  font-family: $head-font;
 }

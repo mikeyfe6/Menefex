@@ -9,6 +9,9 @@ import {
   faSearchLocation,
   faGlobe,
   faMobile,
+  faEye,
+  faFileCode,
+  faCodeBranch,
 } from '@fortawesome/free-solid-svg-icons';
 
 // components
@@ -20,7 +23,16 @@ import '../styles/index.scss';
 import 'normalize.css';
 import '../styles/layout.scss';
 
-library.add(faPhoneSquareAlt, faAt, faSearchLocation, faGlobe, faMobile);
+library.add(
+  faPhoneSquareAlt,
+  faAt,
+  faSearchLocation,
+  faGlobe,
+  faMobile,
+  faEye,
+  faFileCode,
+  faCodeBranch,
+);
 
 // layout
 const Layout = (props) => {

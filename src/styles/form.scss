@@ -20,8 +20,8 @@
 
   label {
     display: block;
-    font-size: 0.8em;
-    color: #999;
+    font-size: 0.9em;
+    color: $fifth-color;
     padding-left: 5px;
   }
 
@@ -32,7 +32,6 @@
     border: none;
     resize: vertical;
     background: transparent;
-    color: #fff;
     font-weight: bolder;
   }
 }
@@ -43,7 +42,7 @@ input:focus {
 }
 
 .textarea {
-  border-bottom: 1px solid #dfdfdf;
+  border-bottom: 1px solid $fourth-color;
 }
 
 .send {
@@ -51,13 +50,16 @@ input:focus {
   text-transform: uppercase;
   padding: 20px 30px;
   background: transparent;
-  background-color: $third-color;
+  color: $primary-color;
+  background-color: $fourth-color;
+  font-weight: bold;
   font-size: 14px;
   letter-spacing: 2px;
+  border: 0.5px solid $fifth-color;
 
   &:hover {
-    background: #dfdfdf;
-    color: #101010;
+    color: $link-color;
+    transition: all 0.3s ease-in-out;
   }
 }
 

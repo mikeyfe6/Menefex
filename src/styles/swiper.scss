@@ -1,16 +1,18 @@
 @import './index.scss';
 
 .swiper-container {
-  width: 1200px;
-  height: 700px;
+  width: 100%;
   border: 1px ridge $third-color;
   border-radius: 15px;
+  height: 500px;
 }
 
-.swiper-wrapper {
+.swiper-whole {
+  margin: 0 auto;
+  width: 40%;
 }
 
-.swiper-content {
+.slider-content {
   position: absolute;
   background: #fff;
   bottom: 30px;
@@ -55,14 +57,8 @@
   }
 }
 
-.project-slide {
-}
-
-.swiper-slide {
-}
-
 .slide1 {
-  background: url('../img/projects/Eternitydrum-screen.png') no-repeat 50% 0%;
+  background: url('../img/projects/Eternitydrum-screen.png') no-repeat 50% 50%;
   background-size: cover;
 }
 

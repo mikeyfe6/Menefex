@@ -29,7 +29,7 @@ const BlogPage = () => {
       <div className="container">
         <div className="whitespace" />
         <div className="whitespace" />
-        <h2>Blog Posts</h2>
+        <h2 className="page-title">Blog.</h2>
         <br />
         <ol className="posts">
           {data.allContentfulBlogPost.edges.map((edge) => {
@@ -44,6 +44,7 @@ const BlogPage = () => {
           })}
         </ol>
       </div>
+      <div className="whitespace" />
     </Layout>
   );
 

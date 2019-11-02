@@ -11,12 +11,10 @@ const AboutPage = () => {
       <div className="whitespace" />
       <div className="container">
         <div className="hero-content">
-          <br />
-          <br />
           <div className="row">
             <div className="col-lg-12">
               <div className="whitespace" />
-              <h2 className="wow fadeInUp">About me.</h2>
+              <h2 className="page-title wow fadeInUp">Wij zijn wij?</h2>
               <br />
 
               <p className="wow fadeInUp">
