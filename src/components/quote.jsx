@@ -16,9 +16,8 @@ const Quote = () => {
           <br />
           <hr className="thick" />
           <p className="quote-text">
-            Gimmix is een digitaal webmediabedrijf die zich inzet digitale
-            oplossingen te creeën voor bestaande problemen. Wij helpen u met
-            websites, SEO, hosting etc..
+            Bij Gimmix bouwen we functionele en effiente websites volledig in
+            afstemming met de klant
           </p>
           <hr />
           <ul>
@@ -49,7 +48,11 @@ const Quote = () => {
           </ol>
         </section>
         <section id="services">
-          <FontAwesomeIcon icon="search-location" size="3x" color="#f0c410" />
+          <FontAwesomeIcon
+            icon={['fab', 'searchengin']}
+            size="3x"
+            color="#f0c410"
+          />
           <h3 className="quote-head">SEO</h3>
           <br />
           <br />

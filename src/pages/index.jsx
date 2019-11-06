@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
+import { Animated } from 'react-animated-css';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Layout from '../components/layout';
@@ -23,6 +25,7 @@ const IndexPage = () => {
       <br />
 
       <h1 className="hometitles">Services</h1>
+
       <Quote />
 
       <div className="whitespace" />
@@ -48,3 +51,9 @@ export default IndexPage;
   Heb je een fantastische webdeveloper nodig?{' '}
   <Link to="/contact">Klik hier</Link>
 </p> */
+
+/* <Animated
+  animationIn="bounceInLeft"
+  animationOut="fadeOut"
+  isVisible={true}
+></Animated>; */

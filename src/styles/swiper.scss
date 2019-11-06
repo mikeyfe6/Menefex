@@ -2,9 +2,10 @@
 
 .swiper-container {
   width: 100%;
-  border: 1px ridge $third-color;
-  border-radius: 15px;
   height: 500px;
+  border-radius: 5px;
+  border-bottom: 5px solid $secondary-color;
+  border-top: 1.5px solid $link-color;
 }
 
 .swiper-whole {
@@ -18,14 +19,18 @@
   bottom: 30px;
   right: 20px;
   font-size: 0.7rem;
-  width: 35%;
-  height: 22%;
+  width: 40%;
+  height: 30%;
   border: 2px ridge $secondary-color;
   border-radius: 7px;
 }
 
 .beschrijving {
   padding: 4%;
+
+  a {
+    color: $link-color;
+  }
 
   .project-link {
     position: absolute;

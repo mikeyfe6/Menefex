@@ -15,8 +15,9 @@ h6 {
     border-radius: 10px;
 
     &:hover {
-      opacity: 0.8;
+      opacity: 0.7;
       border-color: $link-color;
+      @include smoothtrans;
     }
   }
 
@@ -57,6 +58,7 @@ h6 {
     &:hover {
       background: $secondary-color;
       border: 2px solid $primary-color;
+      @include smoothtrans;
 
       .workicon {
         color: $primary-color;

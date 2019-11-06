@@ -8,20 +8,18 @@ import '../styles/swiper.scss';
 
 const ProjectSlide = () => {
   const params = {
-    autoplay: {
-      delay: 15000,
-      disableOnInteraction: true,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    spaceBetween: 30,
+    // pagination: {
+    //   el: '.swiper-pagination',
+    //   type: 'progressbar',
+    // },
+    // navigation: {
+    //   nextEl: '.swiper-button-next',
+    //   prevEl: '.swiper-button-prev',
+    // },
+    // autoplay: {
+    //   delay: 3000,
+    //   disableOnInteraction: true,
+    // },
   };
 
   return (
@@ -34,7 +32,13 @@ const ProjectSlide = () => {
                 <div className="beschrijving">
                   <h5>Eternity Drum</h5>
                   <span className="project-link">
-                    <Link to="/http://eternitydrum.com">bekijk website!</Link>
+                    <a
+                      href="https://eternitydrum.com"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      bekijk website!
+                    </a>
                   </span>
                   <p className="informatie">
                     Deze website is gebouwd in opdracht van Stichting Eternity
@@ -46,7 +50,9 @@ const ProjectSlide = () => {
                 </div>
               </div>
             </div>
-            <div className="swiper-slide slide2" data-hash="slide2">
+            {
+              // * EXTRA PROJECTEN TOEVOEGEN
+              /* <div className="swiper-slide slide2" data-hash="slide2">
               Slide 2
             </div>
             <div className="swiper-slide slide3" data-hash="slide3">
@@ -57,7 +63,8 @@ const ProjectSlide = () => {
             </div>
             <div className="swiper-slide slide5" data-hash="slide5">
               Slide 5
-            </div>
+            </div> */
+            }
           </Swiper>
         </div>
       </div>

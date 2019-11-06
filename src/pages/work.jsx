@@ -71,7 +71,7 @@ const workPage = () => {
             </a>
             <a href="#!" className="btn-dark">
               <FontAwesomeIcon
-                icon="code-branch"
+                icon={['fab', 'github']}
                 color="#f0c410"
                 className="workicon"
               />{' '}
@@ -79,8 +79,12 @@ const workPage = () => {
             </a>
           </div>
 
+          {/* 
+          // * EXTRA PROJECTEN BIJVOEGEN HIERONDER!
+          */}
+
           <div className="item">
-            <a href="#!">
+            {/* <a href="#!">
               <img src={comingsoon} alt="Eternity Drum" />
             </a>
             <a href="#!" className="btn-light">
@@ -93,16 +97,16 @@ const workPage = () => {
             </a>
             <a href="#!" className="btn-dark">
               <FontAwesomeIcon
-                icon="code-branch"
+                icon={['fab', 'github']}
                 color="#f0c410"
                 className="workicon"
               />{' '}
               View on Github
-            </a>
+            </a> */}
           </div>
 
           <div className="item">
-            <a href="#!">
+            {/* <a href="#!">
               <img src={comingsoon} alt="Eternity Drum" />
             </a>
             <a href="#!" className="btn-light">
@@ -115,16 +119,16 @@ const workPage = () => {
             </a>
             <a href="#!" className="btn-dark">
               <FontAwesomeIcon
-                icon="code-branch"
+                icon={['fab', 'github']}
                 color="#f0c410"
                 className="workicon"
               />{' '}
               View on Github
-            </a>
+            </a> */}
           </div>
 
           <div className="item">
-            <a href="#!">
+            {/* <a href="#!">
               <img src={comingsoon} alt="Eternity Drum" />
             </a>
             <a href="#!" className="btn-light">
@@ -137,12 +141,12 @@ const workPage = () => {
             </a>
             <a href="#!" className="btn-dark">
               <FontAwesomeIcon
-                icon="code-branch"
+                icon={['fab', 'github']}
                 color="#f0c410"
                 className="workicon"
               />{' '}
               View on Github
-            </a>
+            </a> */}
           </div>
         </div>
         <div className="whitespace" />

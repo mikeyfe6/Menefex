@@ -1,17 +1,14 @@
 import React from 'react';
-// import $ from 'jquery';
 
 // FontAwesome icons
 import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
 import {
   faPhoneSquareAlt,
-  faAt,
-  faSearchLocation,
   faGlobe,
   faMobile,
   faEye,
-  faFileCode,
-  faCodeBranch,
+  faBackward,
 } from '@fortawesome/free-solid-svg-icons';
 
 // components
@@ -23,16 +20,7 @@ import '../styles/index.scss';
 import 'normalize.css';
 import '../styles/layout.scss';
 
-library.add(
-  faPhoneSquareAlt,
-  faAt,
-  faSearchLocation,
-  faGlobe,
-  faMobile,
-  faEye,
-  faFileCode,
-  faCodeBranch,
-);
+library.add(fab, faPhoneSquareAlt, faGlobe, faMobile, faEye, faBackward);
 
 // layout
 const Layout = (props) => {
@@ -47,18 +35,5 @@ const Layout = (props) => {
     </div>
   );
 };
-
-// ----- SCROLL NA ONDER begin ----- //
-
-// $('button').click(function() {
-//   $('html,body').animate(
-//     {
-//       scrollTop: $('.second').offset().top,
-//     },
-//     'slow',
-//   );
-// });
-
-// ----- SCROLL NA ONDER end ----- //
 
 export default Layout;

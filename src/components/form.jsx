@@ -16,18 +16,20 @@ const Form = () => {
             <form
               name="contact-form"
               id="contact-form"
-              method="post"
-              action="post"
+              method="POST"
+              action="/success"
+              data-netlify="true"
             >
+              <input type="hidden" name="form-name" value="contact-form" />
               <ul>
                 <li className="wow fadeInUp" data-wow-delay="1.4s">
                   <label htmlFor="contact-name">Name :</label>
                   <div className="textarea">
                     <input
                       type="text"
-                      name="contact-name"
+                      name="name"
                       id="contact-name"
-                      value=""
+                      defaultValue=""
                       required
                     />
                   </div>
@@ -37,9 +39,9 @@ const Form = () => {
                   <div className="textarea">
                     <input
                       type="email"
-                      name="contact-email"
+                      name="email"
                       id="contact-email"
-                      value=""
+                      defaultValue=""
                       required
                     />
                   </div>
@@ -48,20 +50,21 @@ const Form = () => {
                   <label htmlFor="contact-project">Message :</label>
                   <div className="textarea">
                     <textarea
-                      type="email"
-                      name="contact-project"
+                      type="text"
+                      name="message"
                       id="contact-project"
                       rows="6"
-                      value=""
+                      defaultValue=""
                       required
                     />
                   </div>
                 </li>
               </ul>
 
+              <div data-netlify-recaptcha="true" />
               <button
                 type="submit"
-                name="contact-submit"
+                name="submit"
                 id="contact-submit"
                 className="send wow fadeInUp"
               >

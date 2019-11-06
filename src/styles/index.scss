@@ -1,3 +1,7 @@
+@mixin smoothtrans {
+  transition: 0.3s ease-in-out;
+}
+
 $primary-color: #656565;
 $secondary-color: #f0c410;
 $third-color: #c0c0c0;
@@ -42,7 +46,7 @@ a {
 
   &:hover {
     text-decoration: none;
-    transition: all 0.3s ease-in-out;
+    @include smoothtrans;
   }
 }
 

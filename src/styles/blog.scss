@@ -16,11 +16,14 @@
     display: block;
     padding: 1.5rem;
     text-decoration: none;
-    border: 2px solid $third-color;
+    border: 2px solid $fourth-color;
+    border-radius: 10px;
 
     &:hover {
-      background: #d3d3d3;
+      opacity: 0.7;
       color: $link-color;
+      border: 2px solid $link-color;
+      @include smoothtrans;
     }
   }
 
@@ -29,10 +32,11 @@
     padding: 0 0 0 10px;
     font-family: $spec-font;
     font-weight: 50;
+    color: $primary-color;
   }
 
   p {
-    color: $primary-color;
+    color: $link-color;
     font-size: 0.8rem;
     font-style: italic;
     padding: 0 0 0 20px;

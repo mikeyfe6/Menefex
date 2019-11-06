@@ -48,6 +48,8 @@ const BlogPage = () => {
     </Layout>
   );
 
+  // TODO: build a EXCERPT QUERY for showing small text in the blogpostpage
+
   // ! MARKDOWN: blogposts genereren grapqhl
   // const BlogPage = () => {
   //   const data = useStaticQuery(graphql`

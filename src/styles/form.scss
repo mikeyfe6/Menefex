@@ -59,7 +59,7 @@ input:focus {
 
   &:hover {
     color: $link-color;
-    transition: all 0.3s ease-in-out;
+    @include smoothtrans;
   }
 }
 

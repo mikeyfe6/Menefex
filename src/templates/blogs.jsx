@@ -2,6 +2,8 @@ import React from 'react';
 import { graphql, Link } from 'gatsby';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import Layout from '../components/layout';
 import '../styles/blogpost.scss';
 
@@ -40,7 +42,7 @@ const Blog = (props) => {
       <div className="container">
         <SEO title={props.data.contentfulBlogPost.title} />
         <Link to="/blog" className="goback">
-          Ga Terug
+          <FontAwesomeIcon icon="backward" /> Ga Terug
         </Link>
         <hr />
         <h1 className="post-title">{props.data.contentfulBlogPost.title}</h1>
