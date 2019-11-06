@@ -3,8 +3,6 @@ import React from 'react';
 
 import '../styles/footer.scss';
 
-// TODO: https://www.youtube.com/watch?v=z9gMLjoMTik for footer adjustments
-
 const Footer = () => {
   // const data = useStaticQuery(graphql`
   //   query {
@@ -50,7 +48,7 @@ const Footer = () => {
         <div className="info">
           <div className="row">
             <div className="col-lg-4" id="personal">
-              <p className="wow fadeInUp">connect with us</p>
+              <p className="wow fadeInUp">connect with us ..</p>
               <h4 className="wow fadeInUp" data-wow-delay="0.2s">
                 <a href="mailto:contact@gimmix.nl">contact@gimmix.nl</a>
               </h4>
@@ -58,7 +56,7 @@ const Footer = () => {
 
             <div className="col-lg-4" id="media">
               <p className="wow fadeInUp" data-wow-delay="2s">
-                follow me
+                follow us on ..
               </p>
 
               <ul>
@@ -115,7 +113,7 @@ const Footer = () => {
 
             <div className="col-lg-4" id="address">
               <p className="wow fadeInUp" data-wow-delay="0s">
-                straight from
+                straight from ..
               </p>
               <h4 className="wow fadeInUp" data-wow-delay="0.2s">
                 <span className="amsterdam">xxx</span> amsterdam

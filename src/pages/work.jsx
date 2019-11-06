@@ -23,16 +23,15 @@ const workPage = () => {
           <div className="row">
             <div className="col-lg-8">
               <h2 className="page-title wow fadeInUp" data-wow-delay="1s">
-                Projecten.
+                Recente Projecten.
               </h2>
               <br />
 
               <p className="wow fadeInUp" data-wow-delay="1.2s">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Voluptate voluptatum repellat cumque harum pariatur, distinctio
-                quod nemo ab asperiores blanditiis iure iste labore! Eaque,
-                sapiente eveniet! A, deserunt quod eos, non dicta illum quae
-                veritatis nisi voluptatum vel pariatur, commodi eveniet tempore.
+                <b>
+                  Wij zijn trots op ons werk en showcasen dat ook graag! <br />
+                  Neem een kijkje in ons archief van recente projecten:
+                </b>
               </p>
             </div>
           </div>

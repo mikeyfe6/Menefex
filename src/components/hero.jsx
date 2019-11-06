@@ -7,9 +7,11 @@ import mini from '../logo/Gimmix-mini.svg';
 
 import '../styles/mini-logo.scss';
 
+// TODO: 'lees meer' naar de volgende section laten scrollen
+
 const Hero = () => {
   //   const today = new Date()
-
+  // TODO:
   return (
     <div>
       <div className="container-fluid">

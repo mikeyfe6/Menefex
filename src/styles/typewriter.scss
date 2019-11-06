@@ -11,8 +11,8 @@
 }
 
 .anim-typewriter {
-  animation: typewriter 6s steps(50) 3.5s 1 normal both,
-    blinkTextCursor 1300ms steps(50) infinite normal;
+  animation: typewriter 7s steps(60) 3.5s 1 normal both,
+    blinkTextCursor 1200ms steps(60) infinite normal;
 }
 
 @keyframes typewriter {

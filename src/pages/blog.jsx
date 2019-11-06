@@ -6,6 +6,8 @@ import '../styles/blog.scss';
 
 import SEO from '../components/seo';
 
+// TODO: build a EXCERPT QUERY for showing small text in the blogpostpage
+
 // CONTENTFUL blogposts genereren
 const BlogPage = () => {
   const data = useStaticQuery(graphql`
@@ -31,6 +33,8 @@ const BlogPage = () => {
         <div className="whitespace" />
         <h2 className="page-title">Blog.</h2>
         <br />
+        <p className="excerpt">What comes through our mind?</p>
+
         <ol className="posts">
           {data.allContentfulBlogPost.edges.map((edge) => {
             return (
@@ -47,8 +51,6 @@ const BlogPage = () => {
       <div className="whitespace" />
     </Layout>
   );
-
-  // TODO: build a EXCERPT QUERY for showing small text in the blogpostpage
 
   // ! MARKDOWN: blogposts genereren grapqhl
   // const BlogPage = () => {

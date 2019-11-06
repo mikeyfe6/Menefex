@@ -9,6 +9,8 @@ import '../styles/blogpost.scss';
 
 import SEO from '../components/seo';
 
+// TODO: Add 'author' & fix the blogpost page accordingly to Traversy Media
+
 export const query = graphql`
   query($slug: String!) {
     contentfulBlogPost(slug: { eq: $slug }) {
@@ -20,8 +22,6 @@ export const query = graphql`
     }
   }
 `;
-
-// TODO: Add 'author' & fix the blogpost page accordingly to Traversy Media
 
 // show the individual blog pages & DSIH laat alles zien
 const Blog = (props) => {

@@ -25,7 +25,7 @@ const AboutPage = () => {
                 en/of ambities van de client.
               </p>
               <br />
-              <h3 className="overtitle">Wat is ons doel?</h3>
+              <h3 className="overtitle">Wat zijn onze doelen en streven?</h3>
               <p claclassNamess="wow fadeInUp" data-wow-descapeelay="0.2s">
                 Wij staan voor efficientie, innovatie, gebruiksvriendelijkheid
                 en misschien wel één onze belangrijkste aspecten; &apos; de
@@ -34,7 +34,7 @@ const AboutPage = () => {
                 ultieme ervaring.
               </p>
               <br />
-              <h3 className="overtitle">Wat maakt ons Gimmix?</h3>
+              <h3 className="overtitle">Wat maakt Gimmix zo uniek?</h3>
               <p>
                 Wat Gimmix uniek maakt is dat we sterk meedenken met de
                 client/klant. Wj werken het liefst met eigen design (geen

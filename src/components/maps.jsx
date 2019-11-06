@@ -14,7 +14,7 @@ import '../styles/maps.scss';
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
-// TODO: Zorgen dat onclick informatie tevoren komt.
+// TODO: Zorgen dat on click pop-up adresinformatie tevoren komt over Gimmix.
 
 class SimpleMap extends Component {
   static defaultProps = {

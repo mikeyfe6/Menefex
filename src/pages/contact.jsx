@@ -22,17 +22,13 @@ const ContactPage = () => {
             <div className="col-lg-8">
               <br />
               <ScrollAnimation animateIn="fadeInUp" delay={1000}>
-                <h3>say hello.👋🏾</h3>
+                <h3>Zeg 'ns hallo 👋🏾</h3>
               </ScrollAnimation>
 
               <ScrollAnimation animateIn="fadeInUp" delay={1200}>
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Voluptate voluptatum repellat cumque harum pariatur,
-                  distinctio quod nemo ab asperiores blanditiis iure iste
-                  labore! Eaque, sapiente eveniet! A, deserunt quod eos, non
-                  dicta illum quae veritatis nisi voluptatum vel pariatur,
-                  commodi eveniet tempore.
+                  Aarzel niet een berichtje achter te laten. Wilt u een offerte
+                  opstellen, mag dat ook altijd. Wij staan 24/7 voor u klaar.
                 </p>
               </ScrollAnimation>
             </div>

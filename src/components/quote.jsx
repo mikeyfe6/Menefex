@@ -17,13 +17,24 @@ const Quote = () => {
           <hr className="thick" />
           <p className="quote-text">
             Bij Gimmix bouwen we functionele en effiente websites volledig in
-            afstemming met de klant
-          </p>
+            afstemming met de klant.
+          </p>{' '}
+          <br />
           <hr />
+          <br />
+          <p>
+            Waar we vooral op letten tijdens het bouwen van{' '}
+            <b>
+              <u>websites</u>
+            </b>
+            ?
+          </p>
           <ul>
-            <li>websites 1</li>
-            <li>websites 2</li>
-            <li>websites 3</li>
+            <li>Snelheid</li>
+            <li>Efficientie</li>
+            <li>Vindbaarheid</li>
+            <li>Design & User Interface & Experience</li>
+            <li>Web Crossplatform voor alle populaire devices</li>
           </ul>
         </section>
         <section id="services">
@@ -33,19 +44,27 @@ const Quote = () => {
           <br />
           <hr className="thick" />
           <p className="quote-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam,
-            adipisci quasi quidem iusto facilis maiores enim voluptates eligendi
-            dolorum incidunt mollitia voluptatibus et eos commodi accusantium
-            eaque, tempore beatae doloribus.
+            Onze apps bouwen we met de zelfde methode als het bouwen van
+            websites. Met de rise van digitalisering en mobiliteit is er steeds
+            meer vraag naar (web)apps.
           </p>
           <br />
           <hr />
           <br />
-          <ol>
-            <li>apps A</li>
-            <li>apps B</li>
-            <li>apps C</li>
-          </ol>
+          <p>
+            Waar we extra op letten bij het bouwen van{' '}
+            <b>
+              <u>apps</u>
+            </b>
+            ?
+          </p>
+          <ul>
+            <li>Snelheid</li>
+            <li>UI & UX priority</li>
+            <li>Offline ability</li>
+            <li>Optimized for all devices</li>
+            <li>Vindbaarheid</li>
+          </ul>
         </section>
         <section id="services">
           <FontAwesomeIcon
@@ -58,10 +77,53 @@ const Quote = () => {
           <br />
           <hr className="thick" />
           <p className="quote-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-            repellendus minus nulla nihil deleniti tempora consectetur fugit
-            porro eum voluptatum.
+            Wij zorgen ook voor geoptimaliseerde vindbaarheid in de
+            zoekmachines. Door middel van duidelijke content/keywords is de
+            gebruker in staat de website sneller te vinden.
           </p>
+          <br />
+          <hr />
+          <br />
+          <p>
+            Wat zijn de grootste voordelen van{' '}
+            <b>
+              <u>SEO</u>
+            </b>
+            ?
+          </p>
+          <ul>
+            <li>Vindbaarheid op zoekmachines</li>
+            <li>Content wordt sneller gevonden</li>
+          </ul>
+        </section>
+        <section id="services">
+          <FontAwesomeIcon
+            icon={['fab', 'searchengin']}
+            size="3x"
+            color="#f0c410"
+          />
+          <h3 className="quote-head">Content Creating</h3>
+          <br />
+          <br />
+          <hr className="thick" />
+          <p className="quote-text">
+            Content is misschien wel één van de belangrijkste aspecten voor
+            vindbaarheid in zoekmachine.
+          </p>
+          <br />
+          <hr />
+          <br />
+          <p>
+            Wat zijn de grootste voordelen van uitgebreide en professionele{' '}
+            <b>
+              <u>content</u>
+            </b>
+            ?
+          </p>
+          <ul>
+            <li>Vindbaarheid op zoekmachines</li>
+            <li>Content wordt sneller gevonden</li>
+          </ul>
         </section>
       </div>
     </div>

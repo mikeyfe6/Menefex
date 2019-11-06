@@ -10,6 +10,8 @@ import logo from '../logo/Gimmix-logo.svg';
 
 import headerLogo from '../styles/modules/headerLogo.module.scss';
 
+// TODO: Animations & dergelijke toepassen
+
 const Menu = () => {
   function toggleNav() {
     document.getElementById('resize').classList.toggle('active');
