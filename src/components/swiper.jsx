@@ -2,7 +2,7 @@
 /* eslint-disable import/extensions */
 import React from 'react';
 import Swiper from 'react-id-swiper';
-import { Link } from 'gatsby';
+// import { Link } from 'gatsby';
 
 import '../styles/swiper.scss';
 
@@ -40,12 +40,14 @@ const ProjectSlide = () => {
                       bekijk website!
                     </a>
                   </span>
+
                   <p className="informatie">
                     Deze website is gebouwd in opdracht van Stichting Eternity
                     Drum. Met oog naar snelheid, overzicht en duidelijkheid
                   </p>
                   <p className="geschreven">
-                    Geschreven in: <span>Wordpress, PHP & custom types</span>
+                    Geschreven in: <u>Wordpress</u>, <u>PHP</u> &{' '}
+                    <u>custom types</u>
                   </p>
                 </div>
               </div>

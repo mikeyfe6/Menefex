@@ -17,6 +17,14 @@ const BlogPage = () => {
           node {
             title
             slug
+            subtitle
+            author
+            image {
+              title
+              file {
+                url
+              }
+            }
             publishedDate(formatString: "dddd D MMMM YYYY", locale: "nl")
           }
         }
@@ -39,9 +47,21 @@ const BlogPage = () => {
           {data.allContentfulBlogPost.edges.map((edge) => {
             return (
               <li className="post">
-                <Link to={`/blogs/${edge.node.slug}`}>
+                <Link to={`/blog/${edge.node.slug}`}>
+                  <img
+                    src={edge.node.image.file.url}
+                    alt={edge.node.image.title}
+                  />
                   <h4>{edge.node.title}</h4>
-                  <p> Gepost op {edge.node.publishedDate}</p>
+                  <p>
+                    {' '}
+                    * Gepost op <strong>{edge.node.publishedDate}</strong>,{' '}
+                    geschreven door <strong>{edge.node.author}</strong>{' '}
+                  </p>
+
+                  <span className="contsubtext"> {edge.node.subtitle}</span>
+
+                  <div className="clr" />
                 </Link>
               </li>
             );

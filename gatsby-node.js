@@ -18,7 +18,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
   res.data.allContentfulBlogPost.edges.forEach((edge) => {
     createPage({
       component: blogTemplate,
-      path: `/blogs/${edge.node.slug}`,
+      path: `/blog/${edge.node.slug}`,
       context: {
         slug: edge.node.slug,
       },

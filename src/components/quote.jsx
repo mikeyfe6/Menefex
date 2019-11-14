@@ -22,20 +22,20 @@ const Quote = () => {
           <br />
           <hr />
           <br />
-          <p>
+          <p className="quote-text">
             Waar we vooral op letten tijdens het bouwen van{' '}
             <b>
               <u>websites</u>
             </b>
             ?
+            <ul>
+              <li>Snelheid</li>
+              <li>Efficientie</li>
+              <li>Vindbaarheid</li>
+              <li>Design & User Interface & Experience</li>
+              <li>Web Crossplatform voor alle populaire devices</li>
+            </ul>
           </p>
-          <ul>
-            <li>Snelheid</li>
-            <li>Efficientie</li>
-            <li>Vindbaarheid</li>
-            <li>Design & User Interface & Experience</li>
-            <li>Web Crossplatform voor alle populaire devices</li>
-          </ul>
         </section>
         <section id="services">
           <FontAwesomeIcon icon="mobile" size="3x" color="#f0c410" />
@@ -51,20 +51,20 @@ const Quote = () => {
           <br />
           <hr />
           <br />
-          <p>
+          <p className="quote-text">
             Waar we extra op letten bij het bouwen van{' '}
             <b>
               <u>apps</u>
             </b>
             ?
+            <ul>
+              <li>Snelheid</li>
+              <li>UI & UX priority</li>
+              <li>Offline ability</li>
+              <li>Optimized for all devices</li>
+              <li>Vindbaarheid</li>
+            </ul>
           </p>
-          <ul>
-            <li>Snelheid</li>
-            <li>UI & UX priority</li>
-            <li>Offline ability</li>
-            <li>Optimized for all devices</li>
-            <li>Vindbaarheid</li>
-          </ul>
         </section>
         <section id="services">
           <FontAwesomeIcon
@@ -84,23 +84,25 @@ const Quote = () => {
           <br />
           <hr />
           <br />
-          <p>
+          <p className="quote-text">
             Wat zijn de grootste voordelen van{' '}
             <b>
               <u>SEO</u>
             </b>
             ?
+            <ul>
+              <li>Vindbaarheid op zoekmachines</li>
+              <li>Content wordt sneller gevonden</li>
+            </ul>
           </p>
-          <ul>
-            <li>Vindbaarheid op zoekmachines</li>
-            <li>Content wordt sneller gevonden</li>
-          </ul>
         </section>
-        <section id="services">
+        {
+          // * EXTRA section
+          /* <section id="services">
           <FontAwesomeIcon
             icon={['fab', 'searchengin']}
             size="3x"
-            color="#f0c410"
+            color="#f8e491"
           />
           <h3 className="quote-head">Content Creating</h3>
           <br />
@@ -124,7 +126,8 @@ const Quote = () => {
             <li>Vindbaarheid op zoekmachines</li>
             <li>Content wordt sneller gevonden</li>
           </ul>
-        </section>
+        </section> */
+        }
       </div>
     </div>
   );

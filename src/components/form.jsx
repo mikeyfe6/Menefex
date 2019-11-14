@@ -23,7 +23,7 @@ const Form = () => {
               <input type="hidden" name="form-name" value="contact-form" />
               <ul>
                 <li className="wow fadeInUp" data-wow-delay="1.4s">
-                  <label htmlFor="contact-name">Name :</label>
+                  <label htmlFor="contact-name">* Naam</label>
                   <div className="textarea">
                     <input
                       type="text"
@@ -35,7 +35,7 @@ const Form = () => {
                   </div>
                 </li>
                 <li className="wow fadeInUp" data-wow-delay="1.6s">
-                  <label htmlFor="contact-email">Email :</label>
+                  <label htmlFor="contact-email">* Email</label>
                   <div className="textarea">
                     <input
                       type="email"
@@ -47,7 +47,7 @@ const Form = () => {
                   </div>
                 </li>
                 <li className="wow fadeInUp" data-wow-delay="1.6s">
-                  <label htmlFor="contact-project">Message :</label>
+                  <label htmlFor="contact-project">* Bericht</label>
                   <div className="textarea">
                     <textarea
                       type="text"

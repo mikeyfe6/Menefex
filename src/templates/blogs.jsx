@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Layout from '../components/layout';
 import '../styles/blogpost.scss';
+import mini from '../logo/Gimmix-mini.svg';
 
 import SEO from '../components/seo';
 
@@ -15,6 +16,7 @@ export const query = graphql`
   query($slug: String!) {
     contentfulBlogPost(slug: { eq: $slug }) {
       title
+      subtitle
       publishedDate(formatString: "dddd D MMMM YYYY, H:m", locale: "nl")
       body {
         json
@@ -45,19 +47,23 @@ const Blog = (props) => {
           <FontAwesomeIcon icon="backward" /> Ga Terug
         </Link>
         <hr />
+
+        <img className="blog-mini" src={mini} alt="Gimmix Mini Logo" />
         <h1 className="post-title">{props.data.contentfulBlogPost.title}</h1>
         <p className="post-date">
           {' '}
-          - Gepost op {props.data.contentfulBlogPost.publishedDate}
+          Gepost op {props.data.contentfulBlogPost.publishedDate}
         </p>
-        <blockquote>
-          <p className="post-content">
-            {documentToReactComponents(
-              props.data.contentfulBlogPost.body.json,
-              options,
-            )}
-          </p>
-        </blockquote>
+
+        <h5 className="post-subtitle">
+          {props.data.contentfulBlogPost.subtitle}
+        </h5>
+        <p className="post-content">
+          {documentToReactComponents(
+            props.data.contentfulBlogPost.body.json,
+            options,
+          )}
+        </p>
       </div>
       <div className="whitespace" />
     </Layout>

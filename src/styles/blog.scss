@@ -20,22 +20,20 @@
     background: #e8e8e8;
     color: $textbase-color;
     display: block;
-    padding: 1.5rem;
+    padding: 2rem;
     text-decoration: none;
-    border: 2px solid $fourth-color;
+    border: 5px solid $fourth-color;
     border-radius: 10px;
 
     &:hover {
       opacity: 0.7;
       color: $link-color;
-      border: 2px solid $link-color;
+      border: 5px solid $link-color;
       @include smoothtrans;
     }
   }
 
   h4 {
-    margin-bottom: 0;
-    padding: 0 0 0 10px;
     font-family: $spec-font;
     font-weight: 50;
     color: $primary-color;
@@ -43,9 +41,27 @@
 
   p {
     color: $link-color;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     font-style: italic;
-    padding: 0 0 0 20px;
     margin-top: 1%;
+    margin-left: 0.5%;
+  }
+
+  .contsubtext {
+    color: $primary-color;
+    display: block;
+    font-family: $extra-font;
+    font-weight: bold;
+    margin-top: 2%;
+  }
+
+  img {
+    width: 20%;
+    float: right;
+    margin-bottom: 1%;
+    margin-right: 1%;
+    margin-top: 1%;
+    border: 3px solid $fourth-color;
+    border-radius: 25px;
   }
 }

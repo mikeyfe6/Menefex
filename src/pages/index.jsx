@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link } from 'gatsby';
+// import { Link } from 'gatsby';
 
-import { Animated } from 'react-animated-css';
+// import { Animated } from 'react-animated-css';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -19,23 +19,26 @@ const IndexPage = () => {
 
       <Hero />
       <div className="vertical" />
-
-      <div className="whitespace" />
       <br />
       <br />
 
+      <div id="servicescroll" className="whitespace" />
+
+      <br />
       <h1 className="hometitles">Services</h1>
 
       <Quote />
 
       <div className="whitespace" />
       <div className="vertical" />
-
-      <div className="whitespace" />
       <br />
       <br />
 
+      <div id="projectscroll" className="whitespace" />
+
+      <br />
       <h1 className="hometitles">Projecten</h1>
+
       <Swiper />
 
       <div className="whitespace" />

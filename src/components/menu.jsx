@@ -1,7 +1,8 @@
-// /* eslint-disable react/no-this-in-sfc */
+/* eslint-disable react/no-this-in-sfc */
 /* eslint-disable no-undef */
 import React from 'react';
 import { Link } from 'gatsby';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // graphql, useStaticQuery
 
@@ -21,41 +22,68 @@ const Menu = () => {
     <div>
       <nav id="topnavbar">
         <div id="brand">
-          <Link to="/" activeClassName="activeNavItem">
+          <Link to="/">
             <img className={headerLogo.logo} src={logo} alt="Gimmix Logo" />
           </Link>
         </div>
 
         <ul id="menu">
           <li>
-            <Link to="/" activeClassName="activeNavItem">
+            <Link to="/" activeClassName="activePage" className="underline">
               home
               <span className="dots">.</span>
             </Link>
           </li>
           <li>
-            <Link to="/work" activeClassName="activeNavItem">
+            <Link to="/work" activeClassName="activePage" className="underline">
               work
               <span className="dots">.</span>
             </Link>
           </li>
           <li>
-            <Link to="/blog" activeClassName="activeNavItem">
+            <Link
+              to="/blog"
+              activeClassName="activePage"
+              className="underline"
+              partiallyActive
+            >
               blog
               <span className="dots">.</span>
             </Link>
           </li>
           <li>
-            <Link to="/about" activeClassName="activeNavItem">
+            <Link
+              to="/about"
+              activeClassName="activePage"
+              className="underline"
+            >
               about
               <span className="dots">.</span>
             </Link>
           </li>
           <li>
-            <Link to="/contact" activeClassName="activeNavItem">
+            <Link
+              to="/contact"
+              activeClassName="activePage"
+              className="underline"
+            >
               contact
               <span className="dots">.</span>
             </Link>
+          </li>
+          <li>
+            <a
+              href="https://api.whatsapp.com/send?phone=0031628213134"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <FontAwesomeIcon
+                icon={['fab', 'whatsapp']}
+                size="2x"
+                color="#656565"
+                className="whapp"
+              />
+            </a>
           </li>
         </ul>
 
@@ -75,31 +103,31 @@ const Menu = () => {
 
         <ul id="menu">
           <li>
-            <Link to="/" activeClassName="activeNavItem">
+            <Link to="/">
               home
               <span className="dots">.</span>
             </Link>
           </li>
           <li>
-            <Link to="/work" activeClassName="activeNavItem">
+            <Link to="/work">
               work
               <span className="dots">.</span>
             </Link>
           </li>
           <li>
-            <Link to="/blog" activeClassName="activeNavItem">
+            <Link to="/blog">
               blog
               <span className="dots">.</span>
             </Link>
           </li>
           <li>
-            <Link to="/about" activeClassName="activeNavItem">
+            <Link to="/about">
               about
               <span className="dots">.</span>
             </Link>
           </li>
           <li>
-            <Link to="/contact" activeClassName="activeNavItem">
+            <Link to="/contact">
               contact
               <span className="dots">.</span>
             </Link>

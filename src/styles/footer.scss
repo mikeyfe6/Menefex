@@ -18,12 +18,12 @@ footer {
 
 .hr {
   background: $secondary-color;
-  height: 3px;
+  height: 10px;
 }
 
 .info {
   h4 {
-    font-size: 18px;
+    font-size: 21px;
     font-weight: bold;
 
     .amsterdam {
@@ -41,13 +41,12 @@ footer {
 
   p {
     color: $fifth-color;
-    font-family: $spec-font;
-    font-size: 0.8em;
-    text-decoration: underline;
+    font-family: $extra-font;
+    font-size: 0.85em;
   }
 
   li {
-    font-size: 18px;
+    font-size: 21px;
     padding-left: 20px;
     font-weight: bold;
   }
@@ -113,10 +112,19 @@ footer {
 
 #media {
   text-align: center;
+  font-family: $spec-font;
+  letter-spacing: 1.5px;
 }
 
 #address {
   text-align: right;
+  font-family: $spec-font;
+  letter-spacing: 1.5px;
+}
+
+#personal {
+  font-family: $spec-font;
+  letter-spacing: 1.5px;
 }
 
 #media ul {

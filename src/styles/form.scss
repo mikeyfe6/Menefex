@@ -1,17 +1,17 @@
 @import './index.scss';
 
 #contact-form {
-  margin: 5% 1.4%;
-  margin-left: -10%;
+  margin: 7% 1.4%;
+  margin-left: -9%;
 
   ul {
     list-style: none;
-    border-radius: 5px;
     margin-bottom: 40px;
   }
 
   li {
     padding: 10px;
+    // padding-top: 3%;
 
     &:last-of-type {
       border-bottom: none;
@@ -20,21 +20,24 @@
 
   label {
     display: block;
-    font-size: 0.9em;
     color: $fifth-color;
-    padding-left: 5px;
-    font-weight: 600;
+    font-family: $spec-font;
+    margin-top: 2%;
   }
 
   input,
   textarea {
     width: 100%;
-    padding: 5px;
+    margin-top: 1%;
+
+    margin-bottom: 3%;
     border: none;
     resize: vertical;
     background: transparent;
     font-weight: bolder;
     color: $primary-color;
+    font-family: $para-font;
+    font-size: 1.1em;
   }
 }
 
@@ -64,6 +67,7 @@ textarea:focus {
   &:hover {
     color: $link-color;
     @include smoothtrans;
+    border: 1px solid $link-color;
   }
 }
 

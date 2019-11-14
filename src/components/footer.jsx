@@ -44,11 +44,12 @@ const Footer = () => {
 
         <br />
         <br />
+        <br />
 
         <div className="info">
           <div className="row">
             <div className="col-lg-4" id="personal">
-              <p className="wow fadeInUp">connect with us ..</p>
+              <p className="wow fadeInUp">connect with us</p>
               <h4 className="wow fadeInUp" data-wow-delay="0.2s">
                 <a href="mailto:contact@gimmix.nl">contact@gimmix.nl</a>
               </h4>
@@ -56,7 +57,7 @@ const Footer = () => {
 
             <div className="col-lg-4" id="media">
               <p className="wow fadeInUp" data-wow-delay="2s">
-                follow us on ..
+                follow us on
               </p>
 
               <ul>
@@ -113,13 +114,12 @@ const Footer = () => {
 
             <div className="col-lg-4" id="address">
               <p className="wow fadeInUp" data-wow-delay="0s">
-                straight from ..
+                straight from
               </p>
               <h4 className="wow fadeInUp" data-wow-delay="0.2s">
                 <span className="amsterdam">xxx</span> amsterdam
               </h4>
-              <br />
-              <br />
+              <div className="whitespace" />
             </div>
           </div>
         </div>

@@ -2,7 +2,7 @@
 
 .hero {
   height: 100vh;
-  width: 60%;
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,22 +13,45 @@
     position: relative;
   }
 
-  h1 {
-    letter-spacing: -2px;
+  .tpwriter {
+    letter-spacing: -1.5px;
     line-height: 58px;
-    font-size: 1.5em;
+    font-size: 2em;
+    font-family: $head-font;
   }
 
-  span {
+  .scroll-head {
     display: block;
-    padding-bottom: 4%;
+    padding-bottom: 20%;
+    font-size: 1.2em;
+
+    a {
+      font-family: $spec-font;
+      color: $third-color;
+
+      &:hover {
+        color: $link-color;
+      }
+    }
   }
+}
+.hero-head {
+  color: $secondary-color;
+  position: relative;
+  letter-spacing: 1px;
+  display: inline-block;
+  top: -650%;
+  font-family: $spec-font;
+  text-align: center;
+  font-size: 3em;
+  font-style: italic;
+  text-align: center;
 }
 
 .scroll-down {
   position: absolute;
   left: 49.2%;
-  top: 30%;
+  top: 29%;
   display: block;
   text-align: center;
   font-size: 20px;
@@ -40,7 +63,7 @@
   border-bottom: 5px solid $secondary-color;
   border-right: 5px solid $primary-color;
   transform: translate(-50%, 0) rotate(45deg);
-  animation: fade_move_down 3s cubic-bezier(0.19, 1, 0.22, 1) infinite;
+  animation: fade_move_down 1.5s cubic-bezier(0.19, 1, 0.22, 1) infinite;
 }
 
 @keyframes fade_move_down {

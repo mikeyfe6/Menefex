@@ -2,24 +2,46 @@
 
 .post-title {
   font-family: $spec-font;
-  margin: 5% 0 0;
+  margin: 3% 3% 0;
+  display: inline-block;
+}
+
+.post-subtitle {
+  font-family: $para-font;
+  margin-left: 5%;
+  margin-top: 5%;
+  font-weight: bold;
 }
 
 .post-date {
   color: $secondary-color;
-  margin-left: 5%;
+  margin-left: 13%;
   font-style: italic;
 }
 
 .post-content {
   // color: blue;
-  margin: 5% 3% 0;
+  margin: 3% 5% 0;
   font-family: $para-font;
+  opacity: 0.9;
 }
 
 .goback {
   color: $link-color;
   font-weight: bold;
+}
+
+.gobackextra {
+  color: $link-color;
+  font-weight: bold;
+  text-align: right;
+}
+
+.blog-mini {
+  width: 7%;
+  margin-left: 1%;
+  margin-bottom: -5%;
+  margin-top: -5%;
 }
 
 // .vertical-line {

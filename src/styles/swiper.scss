@@ -19,7 +19,7 @@
   bottom: 30px;
   right: 20px;
   font-size: 0.7rem;
-  width: 40%;
+  width: 38%;
   height: 30%;
   border: 2px ridge $secondary-color;
   border-radius: 7px;
@@ -30,11 +30,16 @@
 
   a {
     color: $link-color;
+
+    &:hover {
+      color: $hover-color;
+      text-decoration: underline;
+    }
   }
 
   .project-link {
     position: absolute;
-    top: 13%;
+    top: 11%;
     right: 8%;
   }
 
@@ -55,10 +60,6 @@
   .geschreven {
     font-size: 0.9em;
     padding-top: 3%;
-
-    span {
-      text-decoration: underline;
-    }
   }
 }
 

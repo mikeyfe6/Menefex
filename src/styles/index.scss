@@ -1,5 +1,5 @@
 @mixin smoothtrans {
-  transition: 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 $primary-color: #656565;
@@ -8,6 +8,8 @@ $third-color: #c0c0c0;
 $fourth-color: #dadada;
 $fifth-color: #a9a9a9;
 $link-color: #008cd2;
+$hover-color: #1f57ad;
+
 $spec-color: #f8e491;
 
 $textbase-color: #323232;
@@ -29,8 +31,15 @@ $extra-font: 'Montserrat', sans-serif;
 // Montserrat
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
+// Hover Effects
+@import url('/node_modules/hover.css/css/hover-min.css');
+
 * {
   outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -69,6 +78,7 @@ progress[value]::-webkit-progress-bar {
   padding: 1%;
   text-decoration: underline;
   text-decoration-color: $secondary-color;
+  font-family: $head-font;
 }
 
 .vertical {
