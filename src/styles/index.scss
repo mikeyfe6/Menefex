@@ -1,68 +1,11 @@
-@mixin smoothtrans {
-  transition: all 0.4s ease-in-out;
-}
+@import './customs/colors';
+@import './customs/fonts';
+@import './customs/imports';
+@import './customs/functions';
+@import './customs/resets';
 
-$primary-color: #656565;
-$secondary-color: #f0c410;
-$third-color: #c0c0c0;
-$fourth-color: #dadada;
-$fifth-color: #a9a9a9;
-$link-color: #008cd2;
-$hover-color: #1f57ad;
-
-$spec-color: #f8e491;
-
-$textbase-color: #323232;
-
-$head-font: 'Quando', serif;
-$para-font: 'Lato', sans-serif;
-$spec-font: 'Baloo Bhai', cursive;
-$extra-font: 'Montserrat', sans-serif;
-
-// Quando Fonts
-@import url('https://fonts.googleapis.com/css?family=Quando&display=swap');
-
-// Lato Fonts
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
-
-// Baloo Bai
-@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap');
-
-// Montserrat
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-
-// Hover Effects
-@import url('/node_modules/hover.css/css/hover-min.css');
-
-* {
-  outline: none;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  width: 100%;
-  height: 100vh;
-  background: #fff !important;
-  color: #656565 !important;
-  font-family: 'Roboto Mono', monospace;
-}
-
-a {
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: none;
-    @include smoothtrans;
-  }
-}
-
-.whitespace {
-  width: 100%;
-  height: 100px;
-}
+// TODO: 1. SWIPER color put in swiper scss
+// TODO: 2. Push all pages to modules
 
 progress[value] {
   -webkit-appearance: none;
@@ -87,17 +30,4 @@ progress[value]::-webkit-progress-bar {
   height: 80px;
   position: absolute;
   left: 50%;
-}
-
-.clr {
-  clear: both;
-}
-
-.hero-content p {
-  // color: $primary-color;
-  font-family: $para-font;
-}
-
-.page-title {
-  font-family: $head-font;
 }

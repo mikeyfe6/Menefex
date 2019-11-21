@@ -7,6 +7,7 @@
   height: 50px;
   user-select: none;
   transform: translate(-50%, -50%);
+  cursor: 'pointer';
 
   &:hover {
     z-index: 1;

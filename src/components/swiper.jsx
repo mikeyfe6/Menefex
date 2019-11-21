@@ -1,5 +1,3 @@
-/* eslint-disable react/jsx-props-no-spreading */
-/* eslint-disable import/extensions */
 import React from 'react';
 import Swiper from 'react-id-swiper';
 // import { Link } from 'gatsby';
@@ -23,29 +21,28 @@ const ProjectSlide = () => {
   };
 
   return (
-    <div className="swiper-whole">
-      <div className="swiper-container">
-        <div className="swiper-wrapper">
+    <div className='swiper-whole'>
+      <div className='swiper-container'>
+        <div className='swiper-wrapper'>
           <Swiper {...params}>
-            <div className="swiper-slide slide1" data-hash="slide1">
-              <div className="slider-content">
-                <div className="beschrijving">
+            <div className='swiper-slide slide1' data-hash='slide1'>
+              <div className='slider-content'>
+                <div className='beschrijving'>
                   <h5>Eternity Drum</h5>
-                  <span className="project-link">
+                  <span className='project-link'>
                     <a
-                      href="https://eternitydrum.com"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                    >
+                      href='https://eternitydrum.com'
+                      rel='noopener noreferrer'
+                      target='_blank'>
                       bekijk website!
                     </a>
                   </span>
 
-                  <p className="informatie">
+                  <p className='informatie'>
                     Deze website is gebouwd in opdracht van Stichting Eternity
                     Drum. Met oog naar snelheid, overzicht en duidelijkheid
                   </p>
-                  <p className="geschreven">
+                  <p className='geschreven'>
                     Geschreven in: <u>Wordpress</u>, <u>PHP</u> &{' '}
                     <u>custom types</u>
                   </p>

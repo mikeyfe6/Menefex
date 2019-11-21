@@ -13,21 +13,20 @@ import SEO from '../components/seo';
 const workPage = () => {
   return (
     <Layout>
-      <SEO title="Projecten" />
+      <SEO title='Projecten' />
 
-      <div className="container">
-        <div className="hero-content">
-          <div className="whitespace" />
-          <div className="whitespace" />
+      <div className='container'>
+        <div className='hero-content'>
+          <div className='whitespace' />
 
-          <div className="row">
-            <div className="col-lg-8">
-              <h2 className="page-title wow fadeInUp" data-wow-delay="1s">
+          <div className='row'>
+            <div className='col-lg-8'>
+              <h2 className='page-title wow fadeInUp' data-wow-delay='1s'>
                 Recente Projecten.
               </h2>
               <br />
 
-              <p className="wow fadeInUp" data-wow-delay="1.2s">
+              <p className='wow fadeInUp' data-wow-delay='1.2s'>
                 <b>
                   Wij zijn trots op ons werk en showcasen dat ook graag! <br />
                   Neem een kijkje in ons archief van recente projecten:
@@ -37,14 +36,14 @@ const workPage = () => {
           </div>
         </div>
 
-        <div className="whitespace" />
+        <div className='whitespace' />
 
-        <div className="projects">
-          <div className="item">
-            <a href="#!">
-              <img src={eternity} alt="Eternity Drum" />
+        <div className='projects'>
+          <div className='item'>
+            <a href='#!'>
+              <img src={eternity} alt='Eternity Drum' />
             </a>
-            <div className="project-info">
+            <div className='project-info'>
               <p>
                 <b>
                   Dit project is een puur informatieve website gebouwd in
@@ -60,19 +59,19 @@ const workPage = () => {
                 Wordpress, Custom Field Types, Elementor Pro
               </p>
             </div>
-            <a href="#!" className="btn-light">
+            <a href='#!' className='btn-light'>
               <FontAwesomeIcon
-                icon="eye"
-                color="#f0c410"
-                className="workicon"
+                icon='eye'
+                color='#f0c410'
+                className='workicon'
               />{' '}
               Go to Project
             </a>
-            <a href="#!" className="btn-dark">
+            <a href='#!' className='btn-dark'>
               <FontAwesomeIcon
                 icon={['fab', 'github']}
-                color="#f0c410"
-                className="workicon"
+                color='#f0c410'
+                className='workicon'
               />{' '}
               View on Github
             </a>
@@ -82,7 +81,7 @@ const workPage = () => {
           // * EXTRA PROJECTEN BIJVOEGEN HIERONDER!
           */}
 
-          <div className="item">
+          <div className='item'>
             {/* <a href="#!">
               <img src={comingsoon} alt="Eternity Drum" />
             </a>
@@ -104,7 +103,7 @@ const workPage = () => {
             </a> */}
           </div>
 
-          <div className="item">
+          <div className='item'>
             {/* <a href="#!">
               <img src={comingsoon} alt="Eternity Drum" />
             </a>
@@ -126,7 +125,7 @@ const workPage = () => {
             </a> */}
           </div>
 
-          <div className="item">
+          <div className='item'>
             {/* <a href="#!">
               <img src={comingsoon} alt="Eternity Drum" />
             </a>
@@ -148,7 +147,7 @@ const workPage = () => {
             </a> */}
           </div>
         </div>
-        <div className="whitespace" />
+        <div className='whitespace' />
       </div>
 
       {/* <div className="container-fluid"> */}

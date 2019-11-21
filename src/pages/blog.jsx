@@ -6,7 +6,7 @@ import '../styles/blog.scss';
 
 import SEO from '../components/seo';
 
-// TODO: build a EXCERPT QUERY for showing small text in the blogpostpage
+// TODO: images moeten in hun frame komen
 
 // CONTENTFUL blogposts genereren
 const BlogPage = () => {
@@ -35,18 +35,17 @@ const BlogPage = () => {
   // CONTENTFUL blogposts genereren
   return (
     <Layout>
-      <SEO title="Blog" />
-      <div className="container">
-        <div className="whitespace" />
-        <div className="whitespace" />
-        <h2 className="page-title">Blog.</h2>
+      <SEO title='Blog' />
+      <div className='container'>
+        <div className='whitespace' />
+        <h2 className='page-title'>Blog.</h2>
         <br />
-        <p className="excerpt">What comes through our mind?</p>
+        <p className='excerpt'>What comes through our mind?</p>
 
-        <ol className="posts">
+        <ol className='posts'>
           {data.allContentfulBlogPost.edges.map((edge) => {
             return (
-              <li className="post">
+              <li className='post'>
                 <Link to={`/blog/${edge.node.slug}`}>
                   <img
                     src={edge.node.image.file.url}
@@ -59,16 +58,14 @@ const BlogPage = () => {
                     geschreven door <strong>{edge.node.author}</strong>{' '}
                   </p>
 
-                  <span className="contsubtext"> {edge.node.subtitle}</span>
-
-                  <div className="clr" />
+                  <span className='contsubtext'> {edge.node.subtitle}</span>
                 </Link>
               </li>
             );
           })}
         </ol>
       </div>
-      <div className="whitespace" />
+      <div className='whitespace' />
     </Layout>
   );
 

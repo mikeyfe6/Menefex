@@ -19,13 +19,13 @@ const Footer = () => {
 
   return (
     <footer>
-      <div className="container">
+      <div className='container'>
         <br />
         <br />
-        <div className="collab">
-          <div className="row">
-            <div className="col-lg-12">
-              <p className="wow fadeInUp">
+        <div className='collab'>
+          <div className='row'>
+            <div className='col-lg-12'>
+              <p className='wow fadeInUp'>
                 <i>
                   &quot;to live a creative life, we must lose our fear of being
                   wrong&quot;
@@ -38,71 +38,66 @@ const Footer = () => {
 
         <br />
 
-        <div className="hr">
-          <div className="row" />
+        <div className='hr'>
+          <div className='row' />
         </div>
 
         <br />
         <br />
         <br />
 
-        <div className="info">
-          <div className="row">
-            <div className="col-lg-4" id="personal">
-              <p className="wow fadeInUp">connect with us</p>
-              <h4 className="wow fadeInUp" data-wow-delay="0.2s">
-                <a href="mailto:contact@gimmix.nl">contact@gimmix.nl</a>
+        <div className='info'>
+          <div className='row'>
+            <div className='col-lg-4' id='personal'>
+              <p className='wow fadeInUp'>connect with us</p>
+              <h4 className='wow fadeInUp' data-wow-delay='0.2s'>
+                <a href='mailto:contact@gimmix.nl'>contact@gimmix.nl</a>
               </h4>
             </div>
 
-            <div className="col-lg-4" id="media">
-              <p className="wow fadeInUp" data-wow-delay="2s">
+            <div className='col-lg-4' id='media'>
+              <p className='wow fadeInUp' data-wow-delay='2s'>
                 follow us on
               </p>
 
               <ul>
-                <li id="fb" className="wow fadeInUp" data-wow-delay="0.4s">
+                <li id='fb' className='wow fadeInUp' data-wow-delay='0.4s'>
                   <a
-                    href="https://www.facebook.com/MikeyFE"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
+                    href='https://www.facebook.com/MikeyFE'
+                    rel='noopener noreferrer'
+                    target='_blank'>
                     fb
                   </a>
                 </li>
-                <li id="ig" className="wow fadeInUp" data-wow-delay="0.6s">
+                <li id='ig' className='wow fadeInUp' data-wow-delay='0.6s'>
                   <a
-                    href="https://www.instagram.com/mikeyfe"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
+                    href='https://www.instagram.com/mikeyfe'
+                    rel='noopener noreferrer'
+                    target='_blank'>
                     ig
                   </a>
                 </li>
-                <li id="tw" className="wow fadeInUp" data-wow-delay="0.8s">
+                <li id='tw' className='wow fadeInUp' data-wow-delay='0.8s'>
                   <a
-                    href="https://www.twitter.com/mikeyfe"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
+                    href='https://www.twitter.com/mikeyfe'
+                    rel='noopener noreferrer'
+                    target='_blank'>
                     tw
                   </a>
                 </li>
-                <li id="li" className="wow fadeInUp" data-wow-delay="1.0s">
+                <li id='li' className='wow fadeInUp' data-wow-delay='1.0s'>
                   <a
-                    href="https://www.linkedin.com/in/michaelfransman"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
+                    href='https://www.linkedin.com/in/michaelfransman'
+                    rel='noopener noreferrer'
+                    target='_blank'>
                     li
                   </a>
                 </li>
-                <li id="gh" className="wow fadeInUp" data-wow-delay="1.0s">
+                <li id='gh' className='wow fadeInUp' data-wow-delay='1.0s'>
                   <a
-                    href="https://github.com/mikeyfe6"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
+                    href='https://github.com/mikeyfe6'
+                    rel='noopener noreferrer'
+                    target='_blank'>
                     gh
                   </a>
                 </li>
@@ -112,18 +107,18 @@ const Footer = () => {
               <br />
             </div>
 
-            <div className="col-lg-4" id="address">
-              <p className="wow fadeInUp" data-wow-delay="0s">
+            <div className='col-lg-4' id='address'>
+              <p className='wow fadeInUp' data-wow-delay='0s'>
                 straight from
               </p>
-              <h4 className="wow fadeInUp" data-wow-delay="0.2s">
-                <span className="amsterdam">xxx</span> amsterdam
+              <h4 className='wow fadeInUp' data-wow-delay='0.2s'>
+                <span className='amsterdam'>xxx</span> amsterdam
               </h4>
-              <div className="whitespace" />
+              <div className='whitespace' />
             </div>
           </div>
         </div>
-        <span className="termscods">
+        <span className='termscods'>
           terms & conditions | Gimmix LLC. 2019 &copy; | all rights reserved
         </span>
       </div>

@@ -1,0 +1,32 @@
+@import '../customs/imports';
+@import '../customs/functions';
+@import '../customs/colors';
+@import '../customs/fonts';
+@import '../customs/resets';
+
+.toggle-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 30px;
+  width: 40px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  box-sizing: border-box;
+
+  &:focus {
+    outline: none;
+  }
+
+  &__line {
+    width: 40px;
+    height: 6px;
+    background: $primary-color;
+
+    &:hover {
+      background-color: $secondary-color;
+    }
+  }
+}

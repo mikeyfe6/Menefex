@@ -1,0 +1,24 @@
+// Quando Fonts
+@import url('https://fonts.googleapis.com/css?family=Quando&display=swap');
+
+// Lato Fonts
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+// Baloo Bai
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap');
+
+// Montserrat
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+$head-font: 'Quando', serif;
+$para-font: 'Lato', sans-serif;
+$spec-font: 'Baloo Bhai', cursive;
+$extra-font: 'Montserrat', sans-serif;
+
+.hero-content p {
+  font-family: $para-font;
+}
+
+.page-title {
+  font-family: $head-font;
+}

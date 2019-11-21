@@ -1,0 +1,84 @@
+@import '../customs/imports';
+@import '../customs/functions';
+@import '../customs/colors';
+@import '../customs/fonts';
+@import '../customs/resets';
+
+.side-bar {
+  height: 100%;
+  opacity: 0.9;
+  color: black;
+  background: linear-gradient(to right, $third-color, white);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  // max-width: 400px;
+  z-index: 200;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-out;
+
+  &.open {
+    transform: translateX(0);
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    list-style: none;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  li {
+    margin: 0.7rem 0;
+  }
+
+  a {
+    color: $primary-color;
+    text-decoration: none;
+    font-family: $spec-font;
+    font-size: 1.2em;
+    text-shadow: -10px 0 $spec-color, 0 10px $spec-color, 10px 0 $spec-color,
+      0 -10px $spec-color;
+
+    &:hover,
+    &:active {
+      color: $textbase-color;
+      text-shadow: -15px 0 $third-color, 0 15px $third-color,
+        15px 0 $third-color, 0 -15px $third-color;
+
+      .dots {
+        color: $spec-color;
+      }
+    }
+
+    .dots {
+      color: $secondary-color;
+      font-size: 50px;
+    }
+  }
+
+  .activePage {
+    font-size: 1.7em;
+    color: $textbase-color;
+
+    text-shadow: -10px 0 $secondary-color, 0 10px $secondary-color,
+      10px 0 $secondary-color, 0 -10px $secondary-color;
+
+    .dots {
+      color: $third-color;
+    }
+
+    @include smoothtrans;
+  }
+}
+
+@media (min-width: 769px) {
+  .side-bar {
+    display: none;
+  }
+}

@@ -8,14 +8,27 @@
     "sourceType": "module"
   },
   "env": {
+    "browser": true,
+    "commonjs": true,
     "es6": true,
     "node": true
   },
-  "extends": ["airbnb", "prettier", "plugin:react/recommended"],
+  "extends": [
+    "airbnb",
+    "prettier",
+    "plugin:react/recommended",
+    "prettier/react",
+    "prettier/flowtype",
+    "prettier/react",
+    "prettier/standard",
+    "plugin:prettier/recommended"
+  ],
   "plugins": ["prettier", "react"],
   "rules": {
-    "prettier/prettier": "error",
+    "prettier/prettier": "off",
     "no-unused-vars": "warn",
+    "quote-props": "warn",
+    "semi": "error",
     "no-console": "off",
     "func-names": "off",
     "no-process-exit": "off",

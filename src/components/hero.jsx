@@ -1,60 +1,48 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import ScrollAnimation from 'react-animate-on-scroll';
 import { Animated } from 'react-animated-css';
 
-import '../styles/hero.scss';
+import heroDesign from '../styles/modules/hero.module.scss';
 import '../styles/typewriter.scss';
 
 import mini from '../logo/Gimmix-mini.svg';
 
-import '../styles/mini-logo.scss';
-
 // TODO: 'lees meer' naar de volgende section laten scrollen
+// TODO: fix the elements on px's for fixed
 
 const Hero = () => {
   //   const today = new Date()
-  // TODO:
   return (
     <div>
-      <div className="container-fluid">
-        <div className="hero">
-          <img className="mini" src={mini} alt="Gimmix Mini Logo" />
-          <h1 className="tpwriter line anim-typewriter">
+      <div className={heroDesign.containerFluid}>
+        <div className={heroDesign.hero}>
+          <img className={heroDesign.mini} src={mini} alt='Gimmix Mini Logo' />
+          <h1 className='tpwriter line anim-typewriter'>
             Welkom! Namens het team van webmediabedrijf Gimmix.
           </h1>
           <Animated
-            animationIn="fadeInUp"
-            isVisible={true}
+            animationIn='fadeInUp'
             animationInDelay={10000}
-            animationInDuration={1900}
-          >
-            <h1 className="hero-head">
-              Web-, <span className="hero-head-spec">Appdevelopment</span> & SEO
-            </h1>
+            animationInDuration={1900}>
+            <h1 className={heroDesign.heroHead}>Web-, Appdevelopment & SEO</h1>
           </Animated>
-          <br />
           <Animated
-            animationIn="slideInUp"
-            isVisible={true}
+            animationIn='zoomIn'
             animationInDelay={12000}
-            animationInDuration={1000}
-          >
-            <span className="scroll-head">
-              <Link to="/#servicescroll">services</Link> |{' '}
-              <Link to="/#projectscroll">projects</Link>
+            animationInDuration={1500}>
+            <div className={heroDesign.scrollDown} />
+          </Animated>
+          <Animated
+            animationIn='slideInUp'
+            animationInDelay={12000}
+            animationInDuration={1000}>
+            <span className={heroDesign.scrollHead}>
+              <Link to='/#servicescroll'>services</Link> |{' '}
+              <Link to='/#projectscroll'>projects</Link>
             </span>{' '}
           </Animated>
-          <Animated
-            animationIn="zoomIn"
-            isVisible={true}
-            animationInDelay={12000}
-            animationInDuration={1500}
-          >
-            <div className="scroll-down" />
-          </Animated>
         </div>
-        <div className="whitespace" />
+        <div className='whitespace' />
       </div>
     </div>
   );
