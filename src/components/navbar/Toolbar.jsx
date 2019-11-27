@@ -18,55 +18,57 @@ const toolbar = (props) => (
       </div>
       <div className={headerDesign.spacerTwo} />
       <div>
-        <Link to='/'>
-          <img className={headLogo.logo} src={logo} alt='Gimmix Logo' />
+        <Link to="/">
+          <img className={headLogo.logo} src={logo} alt="Gimmix Logo" />
         </Link>
       </div>
       <div className={headerDesign.spacer} />
       <div className={headerDesign.toolbar_navigationItems}>
         <ul>
           <li>
-            <Link to='/' activeClassName={headerDesign.activePage}>
+            <Link to="/" activeClassName={headerDesign.activePage}>
               home
               <span className={headerDesign.dots}>.</span>
             </Link>
           </li>
           <li>
-            <Link to='/work' activeClassName={headerDesign.activePage}>
+            <Link to="/work" activeClassName={headerDesign.activePage}>
               work
               <span className={headerDesign.dots}>.</span>
             </Link>
           </li>
           <li>
             <Link
-              to='/blog'
+              to="/blog"
               activeClassName={headerDesign.activePage}
-              partiallyActive>
+              partiallyActive
+            >
               blog
               <span className={headerDesign.dots}>.</span>
             </Link>
           </li>
           <li>
-            <Link to='/about' activeClassName={headerDesign.activePage}>
+            <Link to="/about" activeClassName={headerDesign.activePage}>
               about
               <span className={headerDesign.dots}>.</span>
             </Link>
           </li>
           <li>
-            <Link to='/contact' activeClassName={headerDesign.activePage}>
+            <Link to="/contact" activeClassName={headerDesign.activePage}>
               contact
               <span className={headerDesign.dots}>.</span>
             </Link>
           </li>
           <li>
             <a
-              href='https://api.whatsapp.com/send?phone=0031628213134'
-              rel='noopener noreferrer'
-              target='_blank'>
+              href="https://api.whatsapp.com/send?phone=0031628213134"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <FontAwesomeIcon
                 icon={['fab', 'whatsapp']}
-                size='2x'
-                color='#656565'
+                size="2x"
+                color="#656565"
                 className={headerDesign.whapp}
               />
             </a>
@@ -74,7 +76,7 @@ const toolbar = (props) => (
         </ul>
       </div>
     </nav>
-    <div className='clr' />
+    <div className="clr" />
   </header>
 );
 

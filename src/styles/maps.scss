@@ -1,4 +1,8 @@
-@import './index.scss';
+@import './customs/colors';
+@import './customs/fonts';
+@import './customs/imports';
+@import './customs/functions';
+@import './customs/resets';
 
 .mapwrapper {
   filter: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="g"><feColorMatrix type="matrix" values="0.3 0.3 0.3 0 0 0.3 0.3 0.3 0 0 0.3 0.3 0.3 0 0 0 0 0 1 0"/></filter></svg>#g');

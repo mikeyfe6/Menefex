@@ -1,4 +1,8 @@
-@import './index.scss';
+@import '../customs/imports';
+@import '../customs/functions';
+@import '../customs/colors';
+@import '../customs/fonts';
+@import '../customs/resets';
 
 footer {
   position: absolute;
@@ -53,9 +57,8 @@ footer {
 }
 
 .termscods {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 3%;
+  text-align: center;
+  margin-bottom: 25px;
   font-size: 0.7em;
   color: $fifth-color;
 }

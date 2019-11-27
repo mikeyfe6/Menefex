@@ -35,13 +35,17 @@
     }
 
     li {
-      padding: 0 1rem;
+      padding: 0 0.7rem;
     }
 
     .activePage {
       color: white;
       font-size: 1.3em;
       @include smoothtrans;
+
+      &:hover {
+        color: white;
+      }
     }
 
     a {
@@ -53,7 +57,7 @@
 
       &:hover {
         @include smoothtrans;
-        color: #4c4c4c;
+        color: $textbase-color;
       }
 
       &:active {
@@ -66,7 +70,7 @@
       }
 
       .whapp {
-        margin-left: 10%;
+        padding-bottom: 10px;
 
         &:hover {
           color: #1ca111;

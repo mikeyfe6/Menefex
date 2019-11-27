@@ -1,4 +1,8 @@
-@import './index.scss';
+@import '../customs/imports';
+@import '../customs/functions';
+@import '../customs/colors';
+@import '../customs/fonts';
+@import '../customs/resets';
 
 .line {
   top: 50%;

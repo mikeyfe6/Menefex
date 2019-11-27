@@ -1,49 +1,47 @@
 import React from 'react';
+import Layout from '../components/layout';
 // import { Link } from 'gatsby';
+
+import SEO from '../components/seo';
 
 // import { Animated } from 'react-animated-css';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-import Layout from '../components/layout';
 import Hero from '../components/hero';
 import Quote from '../components/quote';
 import Swiper from '../components/swiper';
-
-import SEO from '../components/seo';
 
 // TODO: pagina helemaal responsive maken
 
 const IndexPage = () => {
   return (
     <Layout>
-      <SEO title='Welkom' />
+      <SEO title="Welkom" />
 
       <Hero />
-      <div className='vertical' />
+      <div className="vertical" />
       <br />
       <br />
 
-      <div id='servicescroll' className='whitespace' />
+      <div id="servicescroll" className="whitespace" />
 
       <br />
-      <h1 className='hometitles'>Services</h1>
+      <h1 className="hometitles">Services</h1>
 
       <Quote />
 
-      <div className='whitespace' />
-      <div className='vertical' />
+      <div className="whitespace" />
+      <div className="vertical" />
       <br />
       <br />
 
-      <div id='projectscroll' className='whitespace' />
+      <div id="projectscroll" className="whitespace" />
 
       <br />
-      <h1 className='hometitles'>Projecten</h1>
+      <h1 className="hometitles">Projecten</h1>
 
       <Swiper />
 
-      <div className='whitespace' />
+      <div className="whitespace" />
     </Layout>
   );
 };

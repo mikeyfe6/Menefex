@@ -16,6 +16,7 @@
   "extends": [
     "airbnb",
     "prettier",
+    "airbnb/hooks",
     "plugin:react/recommended",
     "prettier/react",
     "prettier/flowtype",

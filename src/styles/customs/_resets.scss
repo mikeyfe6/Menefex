@@ -1,29 +1,3 @@
-* {
-  outline: none;
-}
-
-html {
-  scroll-behavior: smooth;
-  height: 100%;
-}
-
-body {
-  width: 100%;
-  height: 100vh;
-  background: #fdfbf8 !important;
-  color: #656565 !important;
-  font-family: 'Roboto Mono', monospace;
-}
-
-a {
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: none;
-    @include smoothtrans;
-  }
-}
-
 .whitespace {
   width: 100%;
   height: 100px;

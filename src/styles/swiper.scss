@@ -1,11 +1,14 @@
-@import './index.scss';
+@import './customs/imports';
+@import './customs/functions';
+@import './customs/colors';
+@import './customs/fonts';
+@import './customs/resets';
 
 .swiper-container {
   width: 100%;
   height: 500px;
   border-radius: 5px;
   border-bottom: 5px solid $secondary-color;
-  border-top: 1.5px solid $link-color;
 }
 
 .swiper-whole {
@@ -69,22 +72,22 @@
 }
 
 .slide2 {
-  background: url('../img/projects/hout.jpg') no-repeat 50% 50%;
+  // background: url('../img/projects/hout.jpg') no-repeat 50% 50%;
   background-size: cover;
 }
 
 .slide3 {
-  background: url('../img/projects/itwomen.jpg') no-repeat 50% 50%;
+  // background: url('../img/projects/itwomen.jpg') no-repeat 50% 50%;
   background-size: cover;
 }
 
 .slide4 {
-  background: url('../img/projects/teamwork.jpg') no-repeat 50% 50%;
+  // background: url('../img/projects/teamwork.jpg') no-repeat 50% 50%;
   background-size: cover;
 }
 
 .slide5 {
-  background: url('../img/projects/visual.jpg') no-repeat 50% 50%;
+  // background: url('../img/projects/visual.jpg') no-repeat 50% 50%;
   background-size: cover;
 }
 

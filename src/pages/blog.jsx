@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
-
 import Layout from '../components/layout';
-import '../styles/blog.scss';
 
 import SEO from '../components/seo';
+
+import blogDesign from '../styles/modules/blog.module.scss';
 
 // TODO: images moeten in hun frame komen
 
@@ -35,37 +35,41 @@ const BlogPage = () => {
   // CONTENTFUL blogposts genereren
   return (
     <Layout>
-      <SEO title='Blog' />
-      <div className='container'>
-        <div className='whitespace' />
-        <h2 className='page-title'>Blog.</h2>
-        <br />
-        <p className='excerpt'>What comes through our mind?</p>
+      <SEO title="Blog" />
 
-        <ol className='posts'>
+      <div className="container">
+        <div className="whitespace" />
+        <h2 className={blogDesign.pageTitle}>Blog.</h2>
+        <br />
+        <p className={blogDesign.excerpt}>What comes through our mind?</p>
+
+        <ol className={blogDesign.posts}>
           {data.allContentfulBlogPost.edges.map((edge) => {
             return (
-              <li className='post'>
+              <li className={blogDesign.post}>
                 <Link to={`/blog/${edge.node.slug}`}>
                   <img
                     src={edge.node.image.file.url}
                     alt={edge.node.image.title}
                   />
                   <h4>{edge.node.title}</h4>
-                  <p>
+                  <p className={blogDesign.bloggepost}>
                     {' '}
                     * Gepost op <strong>{edge.node.publishedDate}</strong>,{' '}
                     geschreven door <strong>{edge.node.author}</strong>{' '}
                   </p>
 
-                  <span className='contsubtext'> {edge.node.subtitle}</span>
+                  <span className={blogDesign.contsubtext}>
+                    {' '}
+                    {edge.node.subtitle}
+                  </span>
                 </Link>
               </li>
             );
           })}
         </ol>
       </div>
-      <div className='whitespace' />
+      <div className="whitespace" />
     </Layout>
   );
 

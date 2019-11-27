@@ -1,5 +1,8 @@
 import React from 'react';
 
+// Bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 // FontAwesome icons
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
@@ -49,8 +52,8 @@ class Layout extends React.Component {
       backdrop = <Backdrop click={this.backdropClickHandler} />;
     }
     return (
-      <div id='page-container'>
-        <div id='content-wrap'>
+      <div id="page-container">
+        <div id="content-wrap">
           <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
           <SideDrawer show={this.state.sideDrawerOpen} />
           {backdrop}

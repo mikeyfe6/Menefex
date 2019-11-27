@@ -1,4 +1,8 @@
-@import './index.scss';
+@import './customs/colors';
+@import './customs/fonts';
+@import './customs/imports';
+@import './customs/functions';
+@import './customs/resets';
 
 .post-title {
   font-family: $spec-font;
