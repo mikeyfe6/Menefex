@@ -9,6 +9,7 @@ import SEO from '../components/seo';
 import workDesign from '../styles/modules/work.module.scss';
 
 import eternity from '../img/projects/Eternitydrum-screen.png';
+import blackharmony from '../img/projects/Blackharmony-screen.png';
 // import comingsoon from '../img/projects/comingsoon.jpg';
 
 const workPage = () => {
@@ -36,20 +37,22 @@ const workPage = () => {
             </div>
           </div>
         </div>
-
-        <div className="whitespace" />
+        <br />
+        <br />
 
         <div className={workDesign.projects}>
-          <div className={workDesign.item}>
+          <div className="item">
             <a href="#!">
               <img src={eternity} alt="Eternity Drum" />
             </a>
             <div className={workDesign.projectInfo}>
               <p>
                 <b>
-                  Dit project is een puur informatieve website gebouwd in
-                  samenwerking met Eternity Drum uit Amsterdam.
+                  Deze website is gebouwd in opdracht van{' '}
+                  <u>Stichting Eternity Drum</u>. Met oog naar snelheid,
+                  overzicht en duidelijkheid.
                 </b>
+                <br />
                 <br />
                 <br />
                 <span>Client:</span>
@@ -83,73 +86,47 @@ const workPage = () => {
           */}
 
           <div className="item">
-            {/* <a href="#!">
-              <img src={comingsoon} alt="Eternity Drum" />
+            <a href="#!">
+              <img src={blackharmony} alt="Black Harmony" />
             </a>
-            <a href="#!" className="btn-light">
+            <div className={workDesign.projectInfo}>
+              <p>
+                <b>
+                  Deze website is gebouwd in opdracht van <u>Black Harmony</u>,
+                  een getalenteerde zanggroep uit Amsterdam. Deze website bevat
+                  informatie, media en interactieve social media toepassingen.
+                </b>
+                <br />
+                <br />
+                <span>Client:</span>
+                Black Harmony
+                <br />
+                <br />
+                <span>Tools:</span>
+                Wordpress, Additional CSS, Advanced Custom Field Types,
+                Elementor Pro
+              </p>
+            </div>
+            <a href="#!" className={workDesign.btnLight}>
               <FontAwesomeIcon
                 icon="eye"
                 color="#f0c410"
-                className="workicon"
+                className={workDesign.workicon}
               />{' '}
               Go to Project
             </a>
-            <a href="#!" className="btn-dark">
+            <a href="#!" className={workDesign.btnDark}>
               <FontAwesomeIcon
                 icon={['fab', 'github']}
                 color="#f0c410"
-                className="workicon"
+                className={workDesign.workicon}
               />{' '}
               View on Github
-            </a> */}
-          </div>
-
-          <div className="item">
-            {/* <a href="#!">
-              <img src={comingsoon} alt="Eternity Drum" />
             </a>
-            <a href="#!" className="btn-light">
-              <FontAwesomeIcon
-                icon="eye"
-                color="#f0c410"
-                className="workicon"
-              />{' '}
-              Go to Project
-            </a>
-            <a href="#!" className="btn-dark">
-              <FontAwesomeIcon
-                icon={['fab', 'github']}
-                color="#f0c410"
-                className="workicon"
-              />{' '}
-              View on Github
-            </a> */}
-          </div>
-
-          <div className="item">
-            {/* <a href="#!">
-              <img src={comingsoon} alt="Eternity Drum" />
-            </a>
-            <a href="#!" className="btn-light">
-              <FontAwesomeIcon
-                icon="eye"
-                color="#f0c410"
-                className="workicon"
-              />{' '}
-              Go to Project
-            </a>
-            <a href="#!" className="btn-dark">
-              <FontAwesomeIcon
-                icon={['fab', 'github']}
-                color="#f0c410"
-                className="workicon"
-              />{' '}
-              View on Github
-            </a> */}
           </div>
         </div>
-        <div className="whitespace" />
       </div>
+      <div className="whitespace" />
 
       {/* <div className="container-fluid"> */}
       {/* <br />

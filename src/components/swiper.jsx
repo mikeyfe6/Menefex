@@ -6,18 +6,15 @@ import '../styles/swiper.scss';
 
 const ProjectSlide = () => {
   const params = {
-    // pagination: {
-    //   el: '.swiper-pagination',
-    //   type: 'progressbar',
-    // },
-    // navigation: {
-    //   nextEl: '.swiper-button-next',
-    //   prevEl: '.swiper-button-prev',
-    // },
-    // autoplay: {
-    //   delay: 3000,
-    //   disableOnInteraction: true,
-    // },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true,
+    },
+    autoplay: {
+      delay: 7000,
+      disableOnInteraction: true,
+    },
   };
 
   return (
@@ -41,11 +38,37 @@ const ProjectSlide = () => {
 
                   <p className="informatie">
                     Deze website is gebouwd in opdracht van Stichting Eternity
-                    Drum. Met oog naar snelheid, overzicht en duidelijkheid
+                    Drum. Met oog naar snelheid, overzicht en duidelijkheid.
                   </p>
                   <p className="geschreven">
-                    Geschreven in: <u>Wordpress</u>, <u>PHP</u> &{' '}
-                    <u>custom types</u>
+                    Geschreven in: <u>Wordpress</u>, <u>additional CSS</u>,{' '}
+                    <u>ACF</u> & <u>Brizy</u>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="swiper-slide slide2" data-hash="slide2">
+              <div className="slider-content">
+                <div className="beschrijving">
+                  <h5>Black Harmony</h5>
+                  <span className="project-link">
+                    <a
+                      href="https://blackharmony.nl"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      bekijk website!
+                    </a>
+                  </span>
+
+                  <p className="informatie">
+                    Deze website is gebouwd in opdracht van Black Harmony,
+                    zanggroep uit Amsterdam. Deze website bevat informatie,
+                    media en interactieve social media toepassingen.
+                  </p>
+                  <p className="geschreven">
+                    Geschreven in: <u>Wordpress</u>, <u>additional CSS</u>,{' '}
+                    <u>ACF</u> & <u>Elementor</u>
                   </p>
                 </div>
               </div>

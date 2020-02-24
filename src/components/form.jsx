@@ -9,7 +9,6 @@ const Form = () => {
   //   const today = new Date()
 
   return (
-    // <div className='container-fluid'>
     <div className="row">
       <div className="col-lg-8">
         <form
@@ -69,10 +68,10 @@ const Form = () => {
           >
             Stuur Bericht
           </button>
+          <div className="clr" />
         </form>
       </div>
     </div>
-    // </div>
   );
 };
 

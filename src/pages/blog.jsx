@@ -39,7 +39,7 @@ const BlogPage = () => {
 
       <div className="container">
         <div className="whitespace" />
-        <h2 className={blogDesign.pageTitle}>Blog.</h2>
+        <h2 className="page-title">Blog.</h2>
         <br />
         <p className={blogDesign.excerpt}>What comes through our mind?</p>
 

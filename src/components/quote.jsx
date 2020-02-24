@@ -12,99 +12,116 @@ const Quote = () => {
   return (
     <div className={quoteDesign.quoteContainer}>
       <div className={quoteDesign.quoteWrapper}>
-        <section id={quoteDesign.services}>
-          <FontAwesomeIcon icon="globe" size="3x" color="#f0c410" />
-          <h3 className={quoteDesign.quoteHead}>Websites</h3>
-          <br />
-          <br />
-          <hr className={quoteDesign.thick} />
-          <p className={quoteDesign.quoteText}>
-            <strong>
-              {' '}
-              Bij Gimmix bouwen we functionele en effiente websites volledig in
-              afstemming met de klant.
-            </strong>
-          </p>{' '}
-          <br />
-          <hr />
-          <br />
-          <p className={quoteDesign.quoteText}>
-            Waar we vooral op letten tijdens het bouwen van{' '}
-            <b>
-              <u>websites</u>
-            </b>
-            ?
-          </p>
-          <ul>
-            <li>Snelheid</li>
-            <li>Efficientie</li>
-            <li>Vindbaarheid</li>
-            <li>Design & User Interface & Experience</li>
-            <li>Web Crossplatform voor alle populaire devices</li>
-          </ul>
-        </section>
-        <section id={quoteDesign.services}>
-          <FontAwesomeIcon icon="mobile" size="3x" color="#f0c410" />
-          <h3 className={quoteDesign.quoteHead}>Apps</h3>
-          <br />
-          <br />
-          <hr className={quoteDesign.thick} />
-          <p className={quoteDesign.quoteText}>
-            Onze apps bouwen we met de zelfde methode als het bouwen van
-            websites. Met de rise van digitalisering en mobiliteit is er steeds
-            meer vraag naar (web)apps.
-          </p>
-          <br />
-          <hr />
-          <br />
-          <p className={quoteDesign.quoteText}>
-            Waar we extra op letten bij het bouwen van{' '}
-            <b>
-              <u>apps</u>
-            </b>
-            ?
-          </p>
-          <ul>
-            <li>Snelheid</li>
-            <li>UI & UX priority</li>
-            <li>Offline ability</li>
-            <li>Optimized for all devices</li>
-            <li>Vindbaarheid</li>
-          </ul>
-        </section>
-        <section id={quoteDesign.services}>
-          <FontAwesomeIcon
-            icon={['fab', 'searchengin']}
-            size="3x"
-            color="#f0c410"
-          />
-          <h3 className={quoteDesign.quoteHead}>SEO</h3>
-          <br />
-          <br />
-          <hr className={quoteDesign.thick} />
-          <p className={quoteDesign.quoteText}>
-            Wij zorgen ook voor geoptimaliseerde vindbaarheid in de
-            zoekmachines. Door middel van duidelijke content/keywords is de
-            gebruker in staat de website sneller te vinden.
-          </p>
-          <br />
-          <hr />
-          <br />
-          <p className={quoteDesign.quoteText}>
-            Wat zijn de grootste voordelen van{' '}
-            <b>
-              <u>SEO</u>
-            </b>
-            ?
-          </p>
-          <ul>
-            <li>Vindbaarheid op zoekmachines</li>
-            <li>Content wordt sneller gevonden</li>
-          </ul>
-        </section>
-        {
-          // * EXTRA section
-          /* <section id="services">
+        <div className="row">
+          <section id={quoteDesign.services} className="col-md-3">
+            <FontAwesomeIcon icon="globe" size="3x" color="#f0c410" />
+            <h3 className={quoteDesign.quoteHead}>Websites</h3>
+            <br />
+            <br />
+            <hr className={quoteDesign.thick} />
+            <p className={quoteDesign.quoteText}>
+              <strong>
+                {' '}
+                <b>
+                  Wij als Gimmix bouwen functionele en efficiënte websites
+                  volledig in afstemming met de klant. We zorgen daarin zoveel
+                  mogelijk dat we alle technische wensen voldoen en zo werken
+                  naar een uitstekend eindproduct.
+                </b>
+              </strong>
+            </p>{' '}
+            <br />
+            <hr className={quoteDesign.thin} />
+            <p className={quoteDesign.quoteText}>
+              Waar we op letten tijdens het bouwen van{' '}
+              <b>
+                <u>websites</u>
+              </b>{' '}
+              (?)
+            </p>
+            <ul>
+              <li>Snelheid</li>
+              <li>Efficiëntie</li>
+              <li>Vindbaarheid</li>
+              <li>Design</li>
+              <li>User Interface & Experience</li>
+              <li>Web Crossplatform voor alle populaire apparaten</li>
+            </ul>
+            <br />
+          </section>
+          <section id={quoteDesign.services} className="col-md-3">
+            <FontAwesomeIcon icon="mobile" size="3x" color="#f0c410" />
+            <h3 className={quoteDesign.quoteHead}>Apps</h3>
+            <br />
+            <br />
+            <hr className={quoteDesign.thick} />
+            <p className={quoteDesign.quoteText}>
+              <b>
+                Onze apps bouwen we met het oog naar kwaliteit, design en
+                gebruiksgemak.
+                <br />
+                <br />
+                Met de rise van digitalisering en mobiliteit is er steeds meer
+                vraag naar (web)apps.
+              </b>
+            </p>
+            <br />
+            <hr className={quoteDesign.thin} />
+            <p className={quoteDesign.quoteText}>
+              Bij het bouwen van{' '}
+              <b>
+                <u>apps</u>
+              </b>{' '}
+              letten wij extra op (?)
+            </p>
+            <ul>
+              <li>Snelheid</li>
+              <li>Efficiëntie</li>
+              <li>User Interface & Experience</li>
+              <li>Offline ability</li>
+              <li>Geoptimialiseerd voor alle apparaten</li>
+            </ul>
+            <br />
+          </section>
+          <section id={quoteDesign.services} className="col-md-3">
+            <FontAwesomeIcon
+              icon={['fab', 'searchengin']}
+              size="3x"
+              color="#f0c410"
+            />
+            <h3 className={quoteDesign.quoteHead}>SEO</h3>
+            <br />
+            <br />
+            <hr className={quoteDesign.thick} />
+            <p className={quoteDesign.quoteText}>
+              <b>
+                Wij zorgen ook voor geoptimaliseerde vindbaarheid in de
+                zoekmachines.
+                <br />
+                <br />
+                Door middel van duidelijke content en keywords zijn uw
+                potentiele klanten in staat u en uw website sneller te vinden op
+                Google, Bing, Yahoo, noem maar op.
+              </b>
+            </p>
+            <br />
+            <hr className={quoteDesign.thin} />
+            <p className={quoteDesign.quoteText}>
+              Wat zijn de grootste voordelen van goede en geoptimaliseerde{' '}
+              <b>
+                <u>SEO</u>
+              </b>{' '}
+              (?)
+            </p>
+            <ul>
+              <li>Vindbaarheid op zoekmachines</li>
+              <li>Content wordt sneller gevonden</li>
+            </ul>
+            <br />
+          </section>
+          {
+            // * EXTRA section
+            /* <section id="services">
 		<FontAwesomeIcon
 		icon={['fab', 'searchengin']}
 		size="3x"
@@ -133,7 +150,8 @@ const Quote = () => {
 		<li>Content wordt sneller gevonden</li>
 		</ul>
 	</section> */
-        }
+          }
+        </div>
       </div>
     </div>
   );

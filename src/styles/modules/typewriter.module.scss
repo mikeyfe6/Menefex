@@ -15,7 +15,7 @@
 }
 
 .anim-typewriter {
-  animation: typewriter 7s steps(60) 2s 1 normal both,
+  animation: typewriter 6s steps(50) 2s 1 normal both,
     blinkTextCursor 1200ms steps(60) infinite normal;
 }
 
@@ -24,7 +24,7 @@
     width: 0;
   }
   to {
-    width: 100%;
+    width: 595px;
   }
 }
 
@@ -43,4 +43,10 @@
   line-height: 58px;
   font-size: 2em;
   font-family: $head-font;
+}
+
+@media (max-width: 768px) {
+  .tpwriter {
+    display: none;
+  }
 }

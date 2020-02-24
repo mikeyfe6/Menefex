@@ -25,8 +25,8 @@ class SimpleMap extends Component {
   render() {
     return (
       // Important! Always set the container height explicitly
-      <div className='mapwrapper'>
-        <div style={{ height: '500px', width: '100%' }}>
+      <div className="mapwrapper">
+        <div style={{ height: '300px', width: '100%' }}>
           <GoogleMapReact
             bootstrapURLKeys={{
               key: 'AIzaSyB-LLOszJXI8hOeyYggUS19IPlcOeX8Anc',
@@ -35,12 +35,13 @@ class SimpleMap extends Component {
             defaultCenter={this.props.center}
             defaultZoom={this.props.zoom}
             onChildMouseEnter={this.onChildMouseEnter}
-            onChildMouseLeave={this.onChildMouseLeave}>
+            onChildMouseLeave={this.onChildMouseLeave}
+          >
             <Marker
               lat={52.316764}
               lng={4.982555}
-              name='Gimmix'
-              text='Gimmix'
+              name="Gimmix"
+              text="Gimmix"
             />
           </GoogleMapReact>
         </div>

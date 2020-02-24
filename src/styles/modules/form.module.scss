@@ -5,12 +5,12 @@
 @import '../customs/resets';
 
 #contact-form {
-  margin: 7% 1.4%;
-  margin-left: -9%;
+  margin: 5% 0;
 
   ul {
     list-style: none;
     margin-bottom: 40px;
+    border-left: 1px $fourth-color dotted;
   }
 
   li {
@@ -33,7 +33,6 @@
   textarea {
     width: 100%;
     margin-top: 1%;
-
     margin-bottom: 3%;
     border: none;
     resize: vertical;
@@ -53,11 +52,11 @@ textarea:focus {
 }
 
 .textarea {
-  border-bottom: 1.5px solid $secondary-color;
+  border-bottom: 1.5px solid $spec-color;
 }
 
 .send {
-  margin-left: 50px;
+  float: right;
   text-transform: uppercase;
   padding: 20px 30px;
   background: transparent;
@@ -67,6 +66,7 @@ textarea:focus {
   font-size: 14px;
   letter-spacing: 2px;
   border: 0.5px solid $fifth-color;
+  margin-left: 7.5%;
 
   &:hover {
     color: $link-color;
@@ -77,7 +77,7 @@ textarea:focus {
 
 @media (max-width: 768px) {
   #contact-form {
-    margin: 5% -8%;
+    margin: 10% -5%;
     width: 98%;
   }
 }

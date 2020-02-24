@@ -16,19 +16,26 @@ const Hero = () => {
     <div className="container-fluid">
       <div className={heroDesign.hero}>
         <img className={heroDesign.mini} src={mini} alt="Gimmix Mini Logo" />
+        <div>
+          {' '}
+          <h1
+            className={`${typewriterDesign.tpwriter} ${typewriterDesign.line} ${typewriterDesign.animTypewriter}`}
+          >
+            Webmediabedrijf Gimmix. Welkom!
+          </h1>
+          <h1 className={heroDesign.ipvtpwriter}>
+            <span className={heroDesign.ipvtpwriterwmb}>Webmediabedrijf</span>{' '}
+            Gimmix. Welkom!
+          </h1>
+          <Animated
+            animationIn="fadeInUp"
+            animationInDelay={10000}
+            animationInDuration={1900}
+          >
+            <h1 className={heroDesign.heroHead}>Web-, Appdevelopment & SEO</h1>
+          </Animated>
+        </div>
 
-        <h1
-          className={`${typewriterDesign.tpwriter} ${typewriterDesign.line} ${typewriterDesign.animTypewriter}`}
-        >
-          Welkom! Namens het team van webmediabedrijf Gimmix.
-        </h1>
-        <Animated
-          animationIn="fadeInUp"
-          animationInDelay={10000}
-          animationInDuration={1900}
-        >
-          <h1 className={heroDesign.heroHead}>Web-, Appdevelopment & SEO</h1>
-        </Animated>
         <Animated
           animationIn="zoomIn"
           animationInDelay={12000}
@@ -46,6 +53,7 @@ const Hero = () => {
             <Link to="/#projectscroll">projects</Link>
           </span>{' '}
         </Animated>
+        <div className="clr" />
       </div>
     </div>
   );

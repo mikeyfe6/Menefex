@@ -4,6 +4,8 @@ import Layout from '../components/layout';
 
 import SEO from '../components/seo';
 
+import contactDesign from '../styles/modules/contact.module.scss';
+
 import Form from '../components/form';
 import Maps from '../components/gmaps/maps';
 
@@ -21,13 +23,13 @@ const ContactPage = () => {
             <div className="col-lg-8">
               <br />
               <ScrollAnimation animateIn="fadeInUp" delay={1000}>
-                <h3>Zeg 'ns hallo 👋🏾</h3>
+                <h3 className={contactDesign.contacttitle}>Zeg 'ns hallo 👋🏾</h3>
               </ScrollAnimation>
 
               <ScrollAnimation animateIn="fadeInUp" delay={1200}>
                 <p>
-                  Aarzel niet een berichtje achter te laten. Wilt u een offerte
-                  opstellen, mag dat ook altijd. Wij staan 24/7 voor u klaar.
+                  Aarzel niet een berichtje achter te laten. Wij zorgen zo dan
+                  spoedig contact met u op te nemen.
                 </p>
               </ScrollAnimation>
             </div>

@@ -26,6 +26,7 @@ const IndexPage = () => {
 
       <br />
       <h1 className="hometitles">Services</h1>
+      <br />
 
       <Quote />
 
@@ -38,6 +39,7 @@ const IndexPage = () => {
 
       <br />
       <h1 className="hometitles">Projecten</h1>
+      <br />
 
       <Swiper />
 
