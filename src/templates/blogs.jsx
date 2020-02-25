@@ -39,32 +39,32 @@ const Blog = (props) => {
 
   return (
     <Layout>
-      <div className='whitespace' />
-      <div className='container'>
+      <div className="whitespace" />
+      <div className="container">
         <SEO title={props.data.contentfulBlogPost.title} />
-        <Link to='/blog' className='goback'>
-          <FontAwesomeIcon icon='backward' /> Ga Terug
+        <Link to="/blog" className="goback">
+          <FontAwesomeIcon icon="backward" /> Ga Terug
         </Link>
         <hr />
 
-        <img className='blog-mini' src={mini} alt='Gimmix Mini Logo' />
-        <h1 className='post-title'>{props.data.contentfulBlogPost.title}</h1>
-        <p className='post-date'>
+        <img className="blog-mini" src={mini} alt="Gimmix Mini Logo" />
+        <h1 className="post-title">{props.data.contentfulBlogPost.title}</h1>
+        <p className="post-date">
           {' '}
           Gepost op {props.data.contentfulBlogPost.publishedDate}
         </p>
 
-        <h5 className='post-subtitle'>
+        <h5 className="post-subtitle">
           {props.data.contentfulBlogPost.subtitle}
         </h5>
-        <p className='post-content'>
+        <p className="post-content">
           {documentToReactComponents(
             props.data.contentfulBlogPost.body.json,
             options,
           )}
         </p>
       </div>
-      <div className='whitespace' />
+      <div className="whitespace" />
     </Layout>
   );
 };
