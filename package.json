@@ -42,7 +42,6 @@
     "jquery": "^3.4.1",
     "node": "^13.8.0",
     "node-sass": "^4.13.1",
-    "npm": "^6.14.0",
     "react": "^16.12.0",
     "react-animate-on-scroll": "^2.1.5",
     "react-animated-css": "^1.2.1",
