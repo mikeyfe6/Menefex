@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-key */
+
 import React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 import Layout from '../components/layout';

@@ -8,8 +8,8 @@ import SEO from '../components/seo';
 
 import workDesign from '../styles/modules/work.module.scss';
 
-import eternity from '../img/projects/Eternitydrum-screen.png';
-import blackharmony from '../img/projects/Blackharmony-screen.png';
+import eternity from '../img/projects/Eternitydrum-screen.jpg';
+import blackharmony from '../img/projects/Blackharmony-screen.jpg';
 // import comingsoon from '../img/projects/comingsoon.jpg';
 
 const workPage = () => {

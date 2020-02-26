@@ -1,3 +1,6 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/destructuring-assignment */
+
 import React from 'react';
 import { Link } from 'gatsby';
 
@@ -13,34 +16,35 @@ const sideDrawer = (props) => {
     <nav className={drawerClasses}>
       <ul>
         <li>
-          <Link to='/' activeClassName={sidebarDesign.activePage}>
+          <Link to="/" activeClassName={sidebarDesign.activePage}>
             home
             <span className={sidebarDesign.dots}>.</span>
           </Link>
         </li>
         <li>
-          <Link to='/work' activeClassName={sidebarDesign.activePage}>
+          <Link to="/work" activeClassName={sidebarDesign.activePage}>
             work
             <span className={sidebarDesign.dots}>.</span>
           </Link>
         </li>
         <li>
           <Link
-            to='/blog'
+            to="/blog"
             activeClassName={sidebarDesign.activePage}
-            partiallyActive>
+            partiallyActive
+          >
             blog
             <span className={sidebarDesign.dots}>.</span>
           </Link>
         </li>
         <li>
-          <Link to='/about' activeClassName={sidebarDesign.activePage}>
+          <Link to="/about" activeClassName={sidebarDesign.activePage}>
             about
             <span className={sidebarDesign.dots}>.</span>
           </Link>
         </li>
         <li>
-          <Link to='/contact' activeClassName={sidebarDesign.activePage}>
+          <Link to="/contact" activeClassName={sidebarDesign.activePage}>
             contact
             <span className={sidebarDesign.dots}>.</span>
           </Link>

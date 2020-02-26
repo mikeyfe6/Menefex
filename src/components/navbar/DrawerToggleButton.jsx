@@ -1,12 +1,16 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/destructuring-assignment */
+
 import React from 'react';
 
 import hamburgerDesign from '../../styles/modules/hamburger.module.scss';
 
 const drawerToggleButton = (props) => (
   <button
-    type='button'
+    type="button"
     className={hamburgerDesign.toggleButton}
-    onClick={props.click}>
+    onClick={props.click}
+  >
     <div className={hamburgerDesign.toggleButton__line} />
     <div className={hamburgerDesign.toggleButton__line} />
     <div className={hamburgerDesign.toggleButton__line} />

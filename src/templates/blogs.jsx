@@ -1,3 +1,7 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable react/display-name */
+
 import React from 'react';
 import { graphql, Link } from 'gatsby';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
@@ -31,6 +35,7 @@ const Blog = (props) => {
     renderNode: {
       'embedded-asset-block': (node) => {
         const alt = node.data.target.fields.title['en-US'];
+        // eslint-disable-next-line prefer-destructuring
         const url = node.data.target.fields.file['en-US'].url;
         return <img alt={alt} src={url} />;
       },
