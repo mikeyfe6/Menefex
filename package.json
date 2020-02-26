@@ -72,6 +72,11 @@
   "keywords": [
     "gimmix"
   ],
+  "files": [
+    "/dist",
+    "/lib",
+    "/utils"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/mikeyfe6/gimmix"
