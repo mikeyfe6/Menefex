@@ -36,7 +36,7 @@
     "gatsby-source-filesystem": "^2.1.48",
     "gatsby-transformer-remark": "^2.6.53",
     "gatsby-transformer-sharp": "^2.3.14",
-    "google-map-react": "^1.1.6",
+    "google-map-react": "^1.1.5",
     "gsap": "^3.2.0",
     "hover.css": "^2.3.2",
     "jquery": "^3.4.1",
@@ -71,11 +71,6 @@
   "homepage": "https://gimmix.nl",
   "keywords": [
     "gimmix"
-  ],
-  "files": [
-    "/dist",
-    "/lib",
-    "/utils"
   ],
   "repository": {
     "type": "git",
