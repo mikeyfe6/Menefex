@@ -42,7 +42,11 @@ const workPage = () => {
 
         <div className={workDesign.projects}>
           <div className="item">
-            <a href="#!">
+            <a
+              href="https://eternitydrum.com"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <img src={eternity} alt="Eternity Drum" />
             </a>
             <div className={workDesign.projectInfo}>
@@ -63,7 +67,12 @@ const workPage = () => {
                 Wordpress, Custom Field Types, Elementor Pro
               </p>
             </div>
-            <a href="#!" className={workDesign.btnLight}>
+            <a
+              href="https://eternitydrum.com"
+              rel="noopener noreferrer"
+              target="_blank"
+              className={workDesign.btnLight}
+            >
               <FontAwesomeIcon
                 icon="eye"
                 color="#f0c410"
@@ -77,7 +86,7 @@ const workPage = () => {
                 color="#f0c410"
                 className={workDesign.workicon}
               />{' '}
-              View on Github
+              Coming soon on Github
             </a>
           </div>
 
@@ -86,7 +95,11 @@ const workPage = () => {
           */}
 
           <div className="item">
-            <a href="#!">
+            <a
+              href="https://blackharmony.nl"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <img src={blackharmony} alt="Black Harmony" />
             </a>
             <div className={workDesign.projectInfo}>
@@ -107,7 +120,12 @@ const workPage = () => {
                 Elementor Pro
               </p>
             </div>
-            <a href="#!" className={workDesign.btnLight}>
+            <a
+              href="https://blackharmony.nl"
+              rel="noopener noreferrer"
+              target="_blank"
+              className={workDesign.btnLight}
+            >
               <FontAwesomeIcon
                 icon="eye"
                 color="#f0c410"
@@ -121,7 +139,7 @@ const workPage = () => {
                 color="#f0c410"
                 className={workDesign.workicon}
               />{' '}
-              View on Github
+              Coming soon on Github
             </a>
           </div>
         </div>
