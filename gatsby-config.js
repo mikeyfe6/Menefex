@@ -16,14 +16,15 @@ module.exports = {
     description: 'Websites bouwen met gevoel voor detail',
   },
   plugins: [
-    `gatsby-plugin-catch-links`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // replace "UA-XXXXXXXXX-X" with your own Tracking ID
         trackingId: 'UA-120057209-5',
+        head: true,
       },
     },
+    `gatsby-plugin-catch-links`,
     {
       resolve: 'gatsby-plugin-eslint',
       options: {
