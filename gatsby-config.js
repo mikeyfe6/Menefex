@@ -3,19 +3,27 @@
  *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
-require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV}`,
-});
+const dotenv = require('dotenv');
+
+if (process.env.NODE_ENV !== 'production') {
+  dotenv.config();
+}
 
 module.exports = {
   siteMetadata: {
     title: 'Gimmix',
     author: 'Michael Fransman',
-    description: 'test',
+    description: 'Websites bouwen met gevoel voor detail',
   },
-
   plugins: [
     `gatsby-plugin-catch-links`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // replace "UA-XXXXXXXXX-X" with your own Tracking ID
+        trackingId: 'UA-120057209-5',
+      },
+    },
     {
       resolve: 'gatsby-plugin-eslint',
       options: {
