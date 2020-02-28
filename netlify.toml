@@ -1,0 +1,6 @@
+[[redirects]]
+  from = "/"
+  to = "https://www.gimmix.nl"
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}
