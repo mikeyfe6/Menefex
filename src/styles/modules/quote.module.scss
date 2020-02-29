@@ -35,7 +35,7 @@
     margin-top: 15%;
     font-family: $para-font;
     line-height: 1.7em;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.03em;
   }
 
   .thick {
@@ -52,6 +52,10 @@
 @media (max-width: 768px) {
   .quote-container {
     width: 90%;
+  }
+
+  .quote-head {
+    font-size: 1.7em !important;
   }
 }
 // color #d0d0d0;

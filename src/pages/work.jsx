@@ -24,7 +24,7 @@ const workPage = () => {
           <div className="row">
             <div className="col-lg-12">
               <h2 className="page-title" data-wow-delay="1s">
-                Recente Projecten.
+                Recente Projecten<span className="headdots">.</span>
               </h2>
               <br />
 
@@ -47,7 +47,11 @@ const workPage = () => {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <img src={eternity} alt="Eternity Drum" />
+              <img
+                src={eternity}
+                alt="Eternity Drum"
+                className={workDesign.workimg}
+              />
             </a>
             <div className={workDesign.projectInfo}>
               <p>
@@ -100,7 +104,11 @@ const workPage = () => {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <img src={blackharmony} alt="Black Harmony" />
+              <img
+                src={blackharmony}
+                alt="Black Harmony"
+                className={workDesign.workimg}
+              />
             </a>
             <div className={workDesign.projectInfo}>
               <p>

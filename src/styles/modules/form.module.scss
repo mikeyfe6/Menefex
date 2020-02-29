@@ -27,6 +27,7 @@
     color: $fifth-color;
     font-family: $spec-font;
     margin-top: 2%;
+    letter-spacing: 1px;
   }
 
   input,
@@ -66,7 +67,8 @@ textarea:focus {
   font-size: 14px;
   letter-spacing: 2px;
   border: 0.5px solid $fifth-color;
-  margin-left: 7.5%;
+  margin-right: -100px;
+  border-radius: 2px;
 
   &:hover {
     color: $link-color;
@@ -79,5 +81,9 @@ textarea:focus {
   #contact-form {
     margin: 10% -5%;
     width: 98%;
+  }
+
+  .send {
+    margin-right: 0px;
   }
 }

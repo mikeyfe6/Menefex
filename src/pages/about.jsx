@@ -15,7 +15,9 @@ const AboutPage = () => {
         <div className="hero-content">
           <div className="row">
             <div className="col-lg-12">
-              <h2 className="page-title">Over Gimmix</h2>
+              <h2 className="page-title">
+                Over Gimmix<span className="headdots">.</span>
+              </h2>
               <br />
 
               <h3 className={aboutDesign.overtitle}>Wie zijn wij?</h3>

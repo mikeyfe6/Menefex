@@ -20,7 +20,9 @@ const ContactPage = () => {
       <div className="container">
         <div className="whitespace" />
 
-        <h2 className="page-title">Contact.</h2>
+        <h2 className="page-title">
+          Contact<span className="headdots">.</span>
+        </h2>
         <div className="hero-content">
           <div className="row">
             <div className="col-lg-8">

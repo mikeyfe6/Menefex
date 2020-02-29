@@ -13,19 +13,18 @@
 .post-subtitle {
   font-family: $spec-font;
   margin-left: 5%;
-  margin-top: 5%;
+  margin-top: 7%;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 .post-date {
   color: $secondary-color;
-  margin-left: 13%;
+  margin-left: 17%;
   font-style: italic;
 }
 
 .post-content {
-  // color: blue;
   margin: 5% 5% 0;
   font-family: $para-font;
   opacity: 0.9;
@@ -43,14 +42,15 @@
 }
 
 .blog-mini {
-  width: 7%;
-  margin-left: 1%;
+  height: 100px;
+  margin-left: 4%;
   margin-bottom: -5%;
   margin-top: -5%;
 }
 
 .img-resize {
-  padding: 2.5% 0 5%;
+  padding: 2.5% 0 2.5%;
+  margin: 10px 0px;
   width: 75%;
 }
 
@@ -60,19 +60,25 @@
   }
 
   .blog-mini {
-    width: 13%;
     margin-left: 5%;
     height: 75px !important;
   }
 
   .post-title {
     font-size: 1.5em;
+    margin-left: 5%;
+  }
+
+  .post-subtitle {
+    margin-top: 10%;
+    font-size: 2em;
   }
 
   .post-date {
     color: $secondary-color;
-    margin-left: 23%;
+    margin-left: 28%;
     font-style: italic;
+    font-size: 0.8em;
   }
 
   .post-content {

@@ -64,3 +64,15 @@ progress[value]::-webkit-progress-bar {
   position: absolute;
   left: 50%;
 }
+
+@media (max-width: 768px) {
+  .hometitles {
+    font-size: 2em;
+  }
+}
+
+span.headdots {
+  color: $secondary-color;
+  font-size: 50px;
+  line-height: 1;
+}

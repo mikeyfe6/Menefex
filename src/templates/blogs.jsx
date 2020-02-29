@@ -50,8 +50,10 @@ const Blog = (props) => {
         <Link to="/blog" className="goback">
           <FontAwesomeIcon icon="backward" /> Ga Terug
         </Link>
+        <br />
+        <br />
         <hr />
-
+        <br />
         <img className="blog-mini" src={mini} alt="Gimmix Mini Logo" />
         <h1 className="post-title">{props.data.contentfulBlogPost.title}</h1>
         <p className="post-date">

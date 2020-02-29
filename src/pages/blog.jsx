@@ -41,7 +41,9 @@ const BlogPage = () => {
 
       <div className="container">
         <div className="whitespace" />
-        <h2 className="page-title">Blog.</h2>
+        <h2 className="page-title">
+          Blog<span className="headdots">.</span>
+        </h2>
         <br />
         <p className={blogDesign.excerpt}>What comes through our mind?</p>
         <ol className={blogDesign.posts}>
@@ -52,6 +54,7 @@ const BlogPage = () => {
                   <img
                     src={edge.node.image.file.url}
                     alt={edge.node.image.title}
+                    className={blogDesign.blogimg}
                   />
                   <h4>{edge.node.title}</h4>
                   <p className={blogDesign.bloggepost}>
