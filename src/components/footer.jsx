@@ -146,7 +146,7 @@ const Footer = () => {
           </div>
         </div>
         <p className={footerStyles.termscods}>
-          terms & conditions <span className="speccol">|</span> Gimmix LLC. 2019
+          terms & conditions <span className="speccol">|</span> Gimmix LLC. 2020
           &copy; <span className="speccol">|</span> all rights reserved
           <br />
           KvK <span className="speccol">#</span> 76045315 | BTW{' '}
