@@ -38,7 +38,7 @@ const AboutPage = () => {
               </p>
               <br />
               <h3 className={aboutDesign.overtitle}>
-                Wat maakt Gimmix zo uniek?
+                Wat maakt ons als Gimmix zo uniek?
               </h3>
               <p>
                 Wat Gimmix uniek maakt is dat we sterk meedenken met de
