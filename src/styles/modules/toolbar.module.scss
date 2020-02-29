@@ -40,7 +40,7 @@
 
     .activePage {
       color: white;
-      font-size: 1.3em;
+      // text-decoration: overline;
       @include smoothtrans;
 
       &:hover {
@@ -51,7 +51,7 @@
     a {
       color: $primary-color;
       font-family: $spec-font;
-      font-size: 1.35em;
+      font-size: 1.4em;
 
       opacity: 0.7;
 

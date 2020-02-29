@@ -43,7 +43,7 @@ const ProjectSlide = () => {
                     Drum. Met oog naar snelheid, overzicht en duidelijkheid.
                   </p>
                   <p className="geschreven">
-                    Geschreven in: <u>Wordpress</u>, <u>additional CSS</u>,{' '}
+                    Technologiën: <u>Wordpress</u>, <u>additional CSS</u>,{' '}
                     <u>ACF</u> & <u>Brizy</u>
                   </p>
                 </div>
@@ -69,7 +69,7 @@ const ProjectSlide = () => {
                     media en interactieve social media toepassingen.
                   </p>
                   <p className="geschreven">
-                    Geschreven in: <u>Wordpress</u>, <u>additional CSS</u>,{' '}
+                    Technologiën: <u>Wordpress</u>, <u>additional CSS</u>,{' '}
                     <u>ACF</u> & <u>Elementor</u>
                   </p>
                 </div>

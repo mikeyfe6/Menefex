@@ -25,7 +25,7 @@
     display: block;
     padding: 1.5rem;
     text-decoration: none;
-    border: 5px solid $fourth-color;
+    border: 3px solid $fourth-color;
     border-radius: 10px;
     overflow: auto;
 
@@ -57,15 +57,16 @@
     font-family: $extra-font;
     font-weight: bold;
     margin-top: 2%;
-    font-size: 0.75em;
+    padding-left: 1%;
+    font-size: 0.9em;
   }
 
   .blogimg {
     // height:100%;
-    width: 17%;
+    height: 125px;
     float: right;
-    border: 3px solid $fourth-color;
-    border-radius: 25px;
+    border: 2px solid $fourth-color;
+    border-radius: 5px;
     margin-left: 2%;
   }
 }
@@ -73,5 +74,17 @@
 @media (max-width: 768px) {
   .excerpt {
     margin-bottom: 5%;
+  }
+
+  .posts {
+    width: 97%;
+  }
+
+  h4 {
+    font-size: 1.3em;
+  }
+
+  .bloggepost {
+    font-size: 0.6em !important;
   }
 }
