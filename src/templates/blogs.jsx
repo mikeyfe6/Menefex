@@ -60,6 +60,7 @@ const Blog = (props) => {
           {' '}
           Gepost op {props.data.contentfulBlogPost.publishedDate}
         </p>
+        <div className="clr" />
 
         <h5 className="post-subtitle">
           {props.data.contentfulBlogPost.subtitle}

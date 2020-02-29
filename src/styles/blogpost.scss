@@ -6,8 +6,9 @@
 
 .post-title {
   font-family: $head-font;
-  margin: 3% 3% 0;
   display: inline-block;
+  margin-left: 3%;
+  margin-top: 1%;
 }
 
 .post-subtitle {
@@ -20,8 +21,8 @@
 
 .post-date {
   color: $secondary-color;
-  margin-left: 17%;
   font-style: italic;
+  margin-left: 17%;
 }
 
 .post-content {
@@ -44,8 +45,7 @@
 .blog-mini {
   height: 100px;
   margin-left: 4%;
-  margin-bottom: -5%;
-  margin-top: -5%;
+  float: left;
 }
 
 .img-resize {
@@ -66,17 +66,17 @@
 
   .post-title {
     font-size: 1.5em;
-    margin-left: 5%;
+    padding-left: 2% !important;
   }
 
   .post-subtitle {
     margin-top: 10%;
-    font-size: 2em;
+    font-size: 1.5em;
   }
 
   .post-date {
     color: $secondary-color;
-    margin-left: 28%;
+    padding-left: 12.5% !important;
     font-style: italic;
     font-size: 0.8em;
   }

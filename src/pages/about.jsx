@@ -44,7 +44,7 @@ const AboutPage = () => {
               </h3>
               <p>
                 Wat Gimmix uniek maakt is dat we sterk meedenken met de
-                client/klant. Wj werken met de nieuwste en meest stabiele
+                client/klant. Wij werken met de nieuwste en meest stabiele
                 software, zodat u product veilig en duurzaam blijft. Bij al onze
                 websites is er tot op de laatste pixel over nagedacht. Bovendien
                 zijn er geen grenzen aan de ondersteuning die wij bieden.
