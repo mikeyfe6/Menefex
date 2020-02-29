@@ -31,7 +31,7 @@ const AboutPage = () => {
               </h3>
               <p>
                 Wij staan voor efficientie, innovatie, gebruiksvriendelijkheid
-                en misschien wel één onze belangrijkste aspecten; &apos; de
+                en misschien wel één van onze belangrijkste aspecten; &apos; de
                 design &apos;. Wij zijn van mening dat de functionaliteit in
                 balans moet zijn met de visuele aspecten van de website voor een
                 ultieme ervaring.
@@ -42,9 +42,10 @@ const AboutPage = () => {
               </h3>
               <p>
                 Wat Gimmix uniek maakt is dat we sterk meedenken met de
-                client/klant. Wj werken het liefst met eigen design (geen
-                wordpress). Alle websites/apps zijn bij ons tot op de laatste
-                pixel gecodeerd
+                client/klant. Wj werken met de nieuwste en meest stabiele
+                software, zodat u product veilig en duurzaam blijft. Bij al onze
+                websites is er tot op de laatste pixel over nagedacht. Bovendien
+                zijn er geen grenzen aan de ondersteuning die wij bieden.
               </p>
             </div>
           </div>
