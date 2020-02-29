@@ -5,6 +5,7 @@
 @import '../customs/resets';
 
 .hero {
+  position: relative;
   height: 100vh;
   width: 90%;
   display: flex;
@@ -13,7 +14,7 @@
   justify-content: space-evenly;
 
   .mini {
-    margin: 75px auto 0px;
+    margin: 50px auto 0px;
     width: 175px;
   }
 
@@ -29,8 +30,8 @@
   .ipvtpwriter {
     text-align: center;
     font-family: $head-font;
-    font-size: 1.5em;
-    line-height: 58px;
+    font-size: 1.2em;
+    line-height: 25px;
   }
 
   span.ipvtpwriterwmb {
@@ -56,6 +57,8 @@
   }
 
   .scroll-down {
+    position: relative;
+    top: 100px;
     margin: 0 auto;
     font-size: 20px;
     z-index: 0;
@@ -86,7 +89,20 @@
 
 @media (max-width: 768px) {
   .hero-head {
-    font-size: 1.5em !important;
+    font-size: 1.2em !important;
+  }
+
+  .mini {
+    margin: 10px auto 0px !important;
+    width: 100px !important;
+  }
+
+  .scroll-down {
+    top: 0 !important;
+  }
+
+  .scroll-head {
+    top: 0 !important;
   }
 }
 

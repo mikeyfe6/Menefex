@@ -58,7 +58,7 @@ footer {
 
 .termscods {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 15px;
   font-size: 0.7em;
   color: $fifth-color;
 }
@@ -154,5 +154,9 @@ footer {
   .info ul {
     margin: 0 0 0 -22px;
     padding: 0;
+  }
+
+  .termscods {
+    margin-bottom: 50px;
   }
 }

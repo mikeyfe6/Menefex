@@ -5,16 +5,17 @@
 @import './customs/resets';
 
 .post-title {
-  font-family: $spec-font;
+  font-family: $head-font;
   margin: 3% 3% 0;
   display: inline-block;
 }
 
 .post-subtitle {
-  font-family: $para-font;
+  font-family: $spec-font;
   margin-left: 5%;
   margin-top: 5%;
   font-weight: bold;
+  font-size: 2em;
 }
 
 .post-date {
@@ -25,7 +26,7 @@
 
 .post-content {
   // color: blue;
-  margin: 3% 5% 0;
+  margin: 5% 5% 0;
   font-family: $para-font;
   opacity: 0.9;
 }
@@ -53,11 +54,31 @@
   width: 75%;
 }
 
-// .vertical-line {
-//   width: 50%;
-//   margin: auto;
-//   margin-top: 50%;
-//   margin-bottom: 50%;
-//   transform: rotate(90deg);
-//   border-color: purple;
-// }
+@media (max-width: 768px) {
+  .excerpt {
+    margin-bottom: 5%;
+  }
+
+  .blog-mini {
+    width: 13%;
+    margin-left: 5%;
+    height: 75px !important;
+  }
+
+  .post-title {
+    font-size: 1.5em;
+  }
+
+  .post-date {
+    color: $secondary-color;
+    margin-left: 23%;
+    font-style: italic;
+  }
+
+  .post-content {
+    // color: blue;
+    margin: 10% 3% 0;
+    font-family: $para-font;
+    opacity: 0.9;
+  }
+}

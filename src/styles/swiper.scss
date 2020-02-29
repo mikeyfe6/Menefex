@@ -116,16 +116,16 @@
 
   .slider-content {
     position: absolute;
-    bottom: 20px;
+    bottom: 30px;
     right: 10px;
-    font-size: 0.7rem;
-    width: 60%;
-    height: 60%;
+    font-size: 0.6rem;
+    width: 75%;
+    height: 45%;
     border: 2px ridge $secondary-color;
   }
 
   .beschrijving {
-    padding: 4%;
+    padding: 3%;
 
     a {
       color: $link-color;
@@ -152,13 +152,8 @@
       color: $textbase-color;
     }
 
-    .informatie {
-      padding-top: 2%;
-    }
-
     .geschreven {
       font-size: 0.9em;
-      padding-top: 3%;
     }
 
     .project-link {

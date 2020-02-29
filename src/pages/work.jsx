@@ -22,7 +22,7 @@ const workPage = () => {
           <div className="whitespace" />
 
           <div className="row">
-            <div className="col-lg-8">
+            <div className="col-lg-12">
               <h2 className="page-title" data-wow-delay="1s">
                 Recente Projecten.
               </h2>
@@ -30,8 +30,8 @@ const workPage = () => {
 
               <p data-wow-delay="1.2s">
                 <b>
-                  Wij zijn trots op ons werk en showcasen dat ook graag! <br />
-                  Neem een kijkje in ons archief van recente projecten:
+                  Wij zijn trots op ons werk en showcasen dat ook graag! Neem
+                  een kijk in ons archief van recente projecten:
                 </b>
               </p>
             </div>
@@ -86,7 +86,7 @@ const workPage = () => {
                 color="#f0c410"
                 className={workDesign.workicon}
               />{' '}
-              Coming soon on Github
+              Not on Github*
             </a>
           </div>
 
@@ -139,7 +139,7 @@ const workPage = () => {
                 color="#f0c410"
                 className={workDesign.workicon}
               />{' '}
-              Coming soon on Github
+              Not on Github*
             </a>
           </div>
         </div>

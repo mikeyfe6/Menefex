@@ -51,6 +51,7 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
+      <div className="whitespace" />
     </Layout>
   );
 };

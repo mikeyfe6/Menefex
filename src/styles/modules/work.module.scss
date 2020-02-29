@@ -27,14 +27,12 @@ h6 {
   }
 
   .project-info {
-    // background: red;
     padding: 0.5rem 1rem;
     border: 0.5px solid $secondary-color;
     margin-top: 2em;
     margin-bottom: 1em;
     border-bottom: none;
     border-top: none;
-    // border-radius: 10px;
 
     span {
       font-family: $spec-font;
@@ -45,8 +43,6 @@ h6 {
     p {
       font-family: $para-font;
       font-size: 0.9em;
-      // text-decoration: underline;
-      // font-weight: 100;
     }
   }
 
@@ -70,6 +66,10 @@ h6 {
       }
     }
 
+    .workicon {
+      margin-right: 2%;
+    }
+
     &-dark {
       @extend .btn;
       background: $primary-color;
@@ -89,6 +89,10 @@ h6 {
 @media (max-width: 768px) {
   .projects {
     grid-template-columns: 1fr;
+  }
+
+  img {
+    height: 250px !important;
   }
 }
 

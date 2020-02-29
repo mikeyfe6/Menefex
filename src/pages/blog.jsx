@@ -44,7 +44,6 @@ const BlogPage = () => {
         <h2 className="page-title">Blog.</h2>
         <br />
         <p className={blogDesign.excerpt}>What comes through our mind?</p>
-
         <ol className={blogDesign.posts}>
           {data.allContentfulBlogPost.edges.map((edge) => {
             return (
