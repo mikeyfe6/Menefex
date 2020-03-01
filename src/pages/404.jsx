@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
+
 import Layout from '../components/layout';
 
 import SEO from '../components/seo';
@@ -8,11 +9,17 @@ const NotFound = () => {
   return (
     <Layout>
       <SEO title="404" />
-
-      <h1>Pagina niet gevonden. Dat is nou jammer..</h1>
-      <p>
+      <div className="container">
+        <div className="whitespace" />
+        <h3>
+          Ojee<span className="speccol">..</span> Pagina niet gevonden
+          <span className="speccol">.</span> Dat is nou jammer
+          <span className="speccol">..</span>
+        </h3>
+        <br />
         <Link to="/">Ga terug naar de hoofdpagina!</Link>
-      </p>
+        <hr />
+      </div>
     </Layout>
   );
 };

@@ -11,6 +11,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = {
   siteMetadata: {
+    siteUrl: `https://www.gimmix.nl`,
     title: 'Gimmix',
     author: 'Michael Fransman',
     description: 'Websites bouwen met gevoel voor detail',
@@ -45,6 +46,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-catch-links`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: 'gatsby-plugin-eslint',
       options: {

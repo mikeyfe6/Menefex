@@ -1,0 +1,23 @@
+import React from 'react';
+import { Link } from 'gatsby';
+
+import SEO from '../components/seo';
+
+import Layout from '../components/layout';
+
+const ThankYouPage = () => (
+  <Layout>
+    <SEO title="Thankyou" />
+    <div className="container">
+      <div className="whitespace" />
+      <hr />
+      <br />
+      <h2>Bedankt voor u bericht.</h2>
+      <p>Wij nemen zo spoeding mogelijk contact met u op!</p>
+      <br />
+      <Link to="/">Ga terug naar de hoofdpagina!</Link>
+    </div>
+  </Layout>
+);
+
+export default ThankYouPage;

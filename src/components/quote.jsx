@@ -25,8 +25,8 @@ const Quote = () => {
                 <b>
                   Wij als Gimmix bouwen functionele en efficiënte websites
                   volledig in afstemming met de klant. We zorgen daarin zoveel
-                  mogelijk dat we alle technische wensen voldoen en zo werken
-                  naar een uitstekend eindproduct.
+                  mogelijk dat we aan alle technische wensen voldoen en zo
+                  werken naar een uitstekend eindproduct.
                 </b>
               </strong>
             </p>{' '}

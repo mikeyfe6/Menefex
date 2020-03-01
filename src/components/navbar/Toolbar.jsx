@@ -35,14 +35,14 @@ const toolbar = (props) => (
             </Link>
           </li>
           <li>
-            <Link to="/work" activeClassName={headerDesign.activePage}>
+            <Link to="/work/" activeClassName={headerDesign.activePage}>
               work
               <span className={headerDesign.dots}>.</span>
             </Link>
           </li>
           <li>
             <Link
-              to="/blog"
+              to="/blog/"
               activeClassName={headerDesign.activePage}
               partiallyActive
             >
@@ -51,13 +51,13 @@ const toolbar = (props) => (
             </Link>
           </li>
           <li>
-            <Link to="/about" activeClassName={headerDesign.activePage}>
+            <Link to="/about/" activeClassName={headerDesign.activePage}>
               about
               <span className={headerDesign.dots}>.</span>
             </Link>
           </li>
           <li>
-            <Link to="/contact" activeClassName={headerDesign.activePage}>
+            <Link to="/contact/" activeClassName={headerDesign.activePage}>
               contact
               <span className={headerDesign.dots}>.</span>
             </Link>

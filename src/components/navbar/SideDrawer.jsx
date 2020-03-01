@@ -22,14 +22,14 @@ const sideDrawer = (props) => {
           </Link>
         </li>
         <li>
-          <Link to="/work" activeClassName={sidebarDesign.activePage}>
+          <Link to="/work/" activeClassName={sidebarDesign.activePage}>
             work
             <span className={sidebarDesign.dots}>.</span>
           </Link>
         </li>
         <li>
           <Link
-            to="/blog"
+            to="/blog/"
             activeClassName={sidebarDesign.activePage}
             partiallyActive
           >
@@ -38,13 +38,13 @@ const sideDrawer = (props) => {
           </Link>
         </li>
         <li>
-          <Link to="/about" activeClassName={sidebarDesign.activePage}>
+          <Link to="/about/" activeClassName={sidebarDesign.activePage}>
             about
             <span className={sidebarDesign.dots}>.</span>
           </Link>
         </li>
         <li>
-          <Link to="/contact" activeClassName={sidebarDesign.activePage}>
+          <Link to="/contact/" activeClassName={sidebarDesign.activePage}>
             contact
             <span className={sidebarDesign.dots}>.</span>
           </Link>

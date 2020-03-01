@@ -10,6 +10,8 @@
   border-radius: 5px;
   border-bottom: 5px solid $secondary-color;
   border-top: 1px solid grey;
+  border-right: 1px solid grey;
+  border-left: 1px solid grey;
 }
 
 .swiper-whole {
@@ -24,8 +26,8 @@
   bottom: 30px;
   right: 20px;
   font-size: 0.7rem;
-  width: 40%;
-  height: 33%;
+  width: 45%;
+  height: 29%;
   border: 2px ridge $secondary-color;
   border-radius: 7px;
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import Layout from '../components/layout';
 
 // import { Link } from 'gatsby';
@@ -68,7 +69,7 @@ const workPage = () => {
                 <br />
                 <br />
                 <span>Tools:</span>
-                Wordpress, Custom Field Types, Elementor Pro
+                Wordpress, Advanced Custom Field Types, Brizy
               </p>
             </div>
             <a

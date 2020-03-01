@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
+
 import Layout from '../components/layout';
 
 import SEO from '../components/seo';
@@ -50,7 +51,7 @@ const BlogPage = () => {
           {data.allContentfulBlogPost.edges.map((edge) => {
             return (
               <li className={blogDesign.post}>
-                <Link to={`/blog/${edge.node.slug}`}>
+                <Link to={`/blog/${edge.node.slug}/`}>
                   <img
                     src={edge.node.image.file.url}
                     alt={edge.node.image.title}
