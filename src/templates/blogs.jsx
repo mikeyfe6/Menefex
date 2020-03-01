@@ -55,11 +55,12 @@ const Blog = (props) => {
         <hr />
         <br />
         <img className="blog-mini" src={mini} alt="Gimmix Mini Logo" />
-        <h1 className="post-title">{props.data.contentfulBlogPost.title}</h1>
-        <p className="post-date">
-          {' '}
-          Gepost op {props.data.contentfulBlogPost.publishedDate}
-        </p>
+        <div className="nexttologo">
+          <h1 className="post-title">{props.data.contentfulBlogPost.title}</h1>
+          <p className="post-date">
+            Gepost op {props.data.contentfulBlogPost.publishedDate}
+          </p>
+        </div>
         <div className="clr" />
 
         <h5 className="post-subtitle">

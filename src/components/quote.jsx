@@ -38,15 +38,19 @@ const Quote = () => {
                 <u>websites</u>
               </b>{' '}
               (?)
+              <br />
+              <br />
+              <ul>
+                <li>Snelheid</li>
+                <li>Efficiëntie</li>
+                <li>Vindbaarheid</li>
+                <li>Design</li>
+                <li>User Interface & Experience</li>
+                <li>Web Crossplatform voor alle populaire apparaten</li>
+              </ul>
             </p>
-            <ul>
-              <li>Snelheid</li>
-              <li>Efficiëntie</li>
-              <li>Vindbaarheid</li>
-              <li>Design</li>
-              <li>User Interface & Experience</li>
-              <li>Web Crossplatform voor alle populaire apparaten</li>
-            </ul>
+            <br />
+            <hr />
             <br />
           </section>
           <section id={quoteDesign.services} className="col-md-3">
@@ -73,14 +77,18 @@ const Quote = () => {
                 <u>apps</u>
               </b>{' '}
               letten wij extra op (?)
+              <br />
+              <br />
+              <ul>
+                <li>Snelheid</li>
+                <li>Efficiëntie</li>
+                <li>User Interface & Experience</li>
+                <li>Offline ability</li>
+                <li>Geoptimialiseerd voor alle apparaten</li>
+              </ul>
             </p>
-            <ul>
-              <li>Snelheid</li>
-              <li>Efficiëntie</li>
-              <li>User Interface & Experience</li>
-              <li>Offline ability</li>
-              <li>Geoptimialiseerd voor alle apparaten</li>
-            </ul>
+            <br />
+            <hr />
             <br />
           </section>
           <section id={quoteDesign.services} className="col-md-3">
@@ -112,11 +120,15 @@ const Quote = () => {
                 <u>SEO</u>
               </b>{' '}
               (?)
+              <br />
+              <br />
+              <ul>
+                <li>Vindbaarheid op zoekmachines</li>
+                <li>Content wordt sneller gevonden</li>
+              </ul>
             </p>
-            <ul>
-              <li>Vindbaarheid op zoekmachines</li>
-              <li>Content wordt sneller gevonden</li>
-            </ul>
+            <br />
+            <hr />
             <br />
           </section>
           {

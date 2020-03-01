@@ -6,9 +6,6 @@
 
 .post-title {
   font-family: $head-font;
-  display: inline-block;
-  margin-left: 3%;
-  margin-top: 1%;
 }
 
 .post-subtitle {
@@ -16,13 +13,19 @@
   margin-left: 5%;
   margin-top: 7%;
   font-weight: bold;
-  font-size: 2.5em;
+  font-size: 2em;
+}
+
+.nexttologo {
+  display: inline-block;
+  margin-top: 1%;
 }
 
 .post-date {
   color: $secondary-color;
   font-style: italic;
-  margin-left: 17%;
+  margin-left: 1%;
+  white-space: nowrap;
 }
 
 .post-content {
@@ -45,7 +48,9 @@
 .blog-mini {
   height: 100px;
   margin-left: 4%;
+  margin-right: 3%;
   float: left;
+  display: block;
 }
 
 .img-resize {
@@ -55,18 +60,21 @@
 }
 
 @media (max-width: 768px) {
+  .nexttologo {
+    margin-top: 2%;
+  }
+
   .excerpt {
     margin-bottom: 5%;
   }
 
   .blog-mini {
-    margin-left: 5%;
     height: 75px !important;
   }
 
   .post-title {
-    font-size: 1.5em;
-    padding-left: 2% !important;
+    font-size: 1.3em;
+    // padding-left: 2% !important;
   }
 
   .post-subtitle {
@@ -76,14 +84,14 @@
 
   .post-date {
     color: $secondary-color;
-    padding-left: 12.5% !important;
+    // padding-left: 12.5% !important;
     font-style: italic;
     font-size: 0.8em;
   }
 
   .post-content {
     // color: blue;
-    margin: 10% 3% 0;
+    margin: 10% 5% 0;
     font-family: $para-font;
     opacity: 0.9;
   }
