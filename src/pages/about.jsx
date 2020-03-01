@@ -8,7 +8,12 @@ import aboutDesign from '../styles/modules/about.module.scss';
 const AboutPage = () => {
   return (
     <Layout>
-      <SEO title="About" />
+      <SEO
+        title="About"
+        description="Kom meer te weten over Gimmix"
+        keywords="over, gimmix, doelen, uniek, ondersteuning"
+        pathname="/about/"
+      />
 
       <div className="whitespace" />
       <div className="container">

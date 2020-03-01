@@ -1,87 +1,151 @@
-/* eslint-disable react/prop-types */
-
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { useStaticQuery, graphql } from 'gatsby';
+import PropTypes from 'prop-types';
+import { StaticQuery, graphql } from 'gatsby';
 
-const SEO = ({ title }) => {
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-        }
+const query = graphql`
+  query SEO {
+    site {
+      siteMetadata {
+        defaultTitle: title
+        titleTemplate
+        defaultDescription: description
+        siteUrl: url
+        defaultImage: image
+        twitterUsername
       }
     }
-  `);
+  }
+`;
 
-  return (
-    <Helmet
-      title={`${title} | ${data.site.siteMetadata.title}`}
-      meta={[
-        {
-          name: 'description',
-          content: 'Webdevelopment die schiet naar de toekomst',
+const SEO = ({
+  title,
+  description,
+  image,
+  pathname,
+  article,
+  lang,
+  keywords,
+}) => (
+  <StaticQuery
+    query={query}
+    render={({
+      site: {
+        siteMetadata: {
+          defaultTitle,
+          titleTemplate,
+          defaultDescription,
+          siteUrl,
+          defaultImage,
+          twitterUsername,
         },
-        {
-          name: 'keywords',
-          content:
-            'gimmix, webdevelopment, gatsby, amsterdam, website, bouwen, freelancer',
-        },
-      ]}
-    >
-      {/* Scripts: Extentions & Plugins */}
+      },
+    }) => {
+      const seo = {
+        title: title || defaultTitle,
+        description: description || defaultDescription,
+        image: `${siteUrl}${image || defaultImage}`,
+        url: `${siteUrl}${pathname || '/'}`,
+        keywords: keywords || `webmediabedrijf, gimmix, amsterdam`,
+      };
+      return (
+        <>
+          <Helmet
+            htmlAttributes={{
+              lang,
+            }}
+            title={seo.title}
+            titleTemplate={titleTemplate}
+          >
+            <meta name="description" content={seo.description} />
+            <meta name="image" content={seo.image} />
+            <meta name="keywords" content={seo.keywords} />
 
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" />
+            {seo.url && <meta property="og:url" content={seo.url} />}
+            {(article ? true : null) && (
+              <meta property="og:type" content="website" />
+            )}
+            {seo.title && <meta property="og:title" content={seo.title} />}
+            {seo.description && (
+              <meta property="og:description" content={seo.description} />
+            )}
+            {seo.image && <meta property="og:image" content={seo.image} />}
+            <meta name="twitter:card" content="summary_large_image" />
+            {twitterUsername && (
+              <meta name="twitter:creator" content={twitterUsername} />
+            )}
+            {seo.title && <meta name="twitter:title" content={seo.title} />}
+            {seo.description && (
+              <meta name="twitter:description" content={seo.description} />
+            )}
+            {seo.image && <meta name="twitter:image" content={seo.image} />}
 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js" />
+            {/* Scripts: Extentions & Plugins */}
 
-      <script src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/gsap.min.js" />
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" />
 
-      {/* Links Rel: Fonts */}
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js" />
 
-      <link
-        href="https://fonts.googleapis.com/css?family=Quando&display=swap"
-        rel="stylesheet"
-      />
-      <link
-        href="https://fonts.googleapis.com/css?family=Lato&display=swap"
-        rel="stylesheet"
-      />
-      <link
-        href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap"
-        rel="stylesheet"
-      />
-      <link
-        href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
-        rel="stylesheet"
-      />
+            <script src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/gsap.min.js" />
 
-      {/* Links Rel: Extentions & Plugins */}
+            {/* Links Rel: Fonts */}
 
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css"
-      />
+            <link
+              href="https://fonts.googleapis.com/css?family=Quando&display=swap"
+              rel="stylesheet"
+            />
+            <link
+              href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+              rel="stylesheet"
+            />
+            <link
+              href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap"
+              rel="stylesheet"
+            />
+            <link
+              href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+              rel="stylesheet"
+            />
 
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css"
-      />
+            {/* Links Rel: Extentions & Plugins */}
 
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
-      />
+            <link
+              rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css"
+            />
 
-      {/* <link
-        rel="stylesheet"
-        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-        crossOrigin="anonymous"
-      /> */}
-    </Helmet>
-  );
-};
+            <link
+              rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css"
+            />
+
+            <link
+              rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+            />
+          </Helmet>
+        </>
+      );
+    }}
+  />
+);
 
 export default SEO;
+SEO.propTypes = {
+  lang: PropTypes.string,
+  title: PropTypes.string,
+  description: PropTypes.string,
+  image: PropTypes.string,
+  pathname: PropTypes.string,
+  article: PropTypes.bool,
+  keywords: PropTypes.string,
+};
+SEO.defaultProps = {
+  lang: `nl`,
+  title: null,
+  description: null,
+  image: null,
+  pathname: null,
+  keywords: null,
+  article: true,
+};

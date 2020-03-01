@@ -12,9 +12,13 @@ if (process.env.NODE_ENV !== 'production') {
 module.exports = {
   siteMetadata: {
     siteUrl: `https://www.gimmix.nl`,
+    url: 'https://www.gimmix.nl',
+    image: 'src/img/Gimmix-applogosm.png',
     title: 'Gimmix',
+    titleTemplate: '%s · Gimmix',
     author: 'Michael Fransman',
     description: 'Websites bouwen met gevoel voor detail',
+    twitterUsername: '@GimmixL',
   },
   plugins: [
     {
@@ -45,7 +49,6 @@ module.exports = {
         // dataLayerName: "YOUR_DATA_LAYER_NAME",
       },
     },
-    `gatsby-plugin-catch-links`,
     `gatsby-plugin-sitemap`,
     {
       resolve: 'gatsby-plugin-eslint',
@@ -60,6 +63,28 @@ module.exports = {
       },
     },
     'gatsby-plugin-react-helmet',
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://www.gimmix.nl`,
+      },
+    },
+    `gatsby-plugin-catch-links`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Gimmix`,
+        short_name: `Gimmix`,
+        description: `Websites bouwen met gevoel voor detail`,
+        start_url: `/`,
+        background_color: `#a9a9a9`,
+        lang: `nl`,
+        theme_color: `#f0c410`,
+        display: `standalone`,
+        icon: 'src/img/Gimmix-applogosm.png',
+      },
+    },
+    'gatsby-plugin-offline',
     {
       resolve: 'gatsby-source-contentful',
       options: {

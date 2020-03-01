@@ -16,7 +16,12 @@ import blackharmony from '../img/projects/Blackharmony-screen.jpg';
 const workPage = () => {
   return (
     <Layout>
-      <SEO title="Projecten" />
+      <SEO
+        title="Projecten"
+        description="Een archief van onze recente afgeronde projecten"
+        keywords="work, website, app, projecten, eternity, black harmony, wordpress, react, gatsby, freelance, elementor, github"
+        pathname="/work/"
+      />
 
       <div className="container">
         <div className="hero-content">

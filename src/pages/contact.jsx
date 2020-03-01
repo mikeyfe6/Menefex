@@ -15,7 +15,12 @@ import Maps from '../components/gmaps/maps';
 const ContactPage = () => {
   return (
     <Layout>
-      <SEO title="Contact" />
+      <SEO
+        title="Contact"
+        description="Samenwerking of gewoon gedag zeggen. Neem contact met ons op!"
+        keywords="contact, gimmix, michael fransman, mikeyfe6"
+        pathname="/contact/"
+      />
 
       <div className="container">
         <div className="whitespace" />

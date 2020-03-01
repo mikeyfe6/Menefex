@@ -38,7 +38,12 @@ const BlogPage = () => {
   // CONTENTFUL blogposts genereren
   return (
     <Layout>
-      <SEO title="Blog" />
+      <SEO
+        title="Blog"
+        description="Our views on life, technology and culture."
+        keywords="blog, posts, views, nieuws"
+        pathname="/blog/"
+      />
 
       <div className="container">
         <div className="whitespace" />

@@ -7,7 +7,11 @@ import Layout from '../components/layout';
 
 const ThankYouPage = () => (
   <Layout>
-    <SEO title="Thankyou" />
+    <SEO
+      title="Thankyou"
+      description="Success! Uw bericht is aangekomen."
+      pathname="/success/"
+    />
     <div className="container">
       <div className="whitespace" />
       <hr />

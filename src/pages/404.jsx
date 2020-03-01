@@ -8,7 +8,11 @@ import SEO from '../components/seo';
 const NotFound = () => {
   return (
     <Layout>
-      <SEO title="404" />
+      <SEO
+        title="404"
+        description="oepss.. Pagina niet gevonden!"
+        pathname="/404/"
+      />
       <div className="container">
         <div className="whitespace" />
         <h3>

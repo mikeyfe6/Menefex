@@ -16,7 +16,11 @@ import Swiper from '../components/swiper';
 const IndexPage = () => {
   return (
     <Layout>
-      <SEO title="Welkom" />
+      <SEO
+        title="Welkom"
+        description="Webmediabedrijf Gimmix staat garant voor al webgerelateerde wensen"
+        keywords="work, website, app, projecten, wordpress, react, gatsby, freelance, elementor, michael fransman, amsterdam, zuidoost, portfolio, web developer, ondernemer, entrepeneur, mikey, mikeyfe, mikeyfe6"
+      />
 
       <Hero />
       <div className="vertical" />
