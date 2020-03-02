@@ -70,7 +70,7 @@ const Form = () => {
               className={formStyles.send}
               action="../pages/success.jsx"
             >
-              Stuur Bericht
+              Versturen
             </button>
             <div className="clr" />
           </form>
