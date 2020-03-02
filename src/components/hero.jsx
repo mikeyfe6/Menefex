@@ -29,7 +29,7 @@ const Hero = () => {
           </h1>
           <Animated
             animationIn="fadeInUp"
-            animationInDelay={10000}
+            animationInDelay={9000}
             animationInDuration={1900}
           >
             <h1 className={heroDesign.heroHead}>Web-, Appdevelopment & SEO</h1>
@@ -38,7 +38,7 @@ const Hero = () => {
 
         <Animated
           animationIn="zoomIn"
-          animationInDelay={12000}
+          animationInDelay={10000}
           animationInDuration={1500}
         >
           <div className={heroDesign.scrollDown} />

@@ -24,7 +24,6 @@ const ContactPage = () => {
 
       <div className="container">
         <div className="whitespace" />
-
         <h2 className="page-title">
           Contact<span className="headdots">.</span>
         </h2>
@@ -45,7 +44,11 @@ const ContactPage = () => {
             </div>
           </div>
         </div>
+
+        <br />
         <Form />
+        <br />
+        <br />
         <Maps />
       </div>
       <div className="whitespace" />

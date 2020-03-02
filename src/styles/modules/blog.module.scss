@@ -6,7 +6,7 @@
 
 .posts {
   list-style-type: none;
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
   padding-left: 0;
   margin-top: 3%;
@@ -32,7 +32,7 @@
     &:hover {
       opacity: 0.7;
       color: $link-color;
-      border: 5px solid $link-color;
+      border: 3px solid $link-color;
       @include smoothtrans;
     }
   }
@@ -76,19 +76,24 @@
     margin-bottom: 5%;
   }
 
+  .contsubtext {
+    font-size: 0.7em !important;
+  }
+
   .posts {
     width: 97%;
+    margin-top: 7%;
   }
 
   h4 {
-    font-size: 1.3em;
+    font-size: 1.1em;
   }
 
   .bloggepost {
-    font-size: 0.6em !important;
+    font-size: 0.5em !important;
   }
 
   .blogimg {
-    height: 100px !important;
+    height: 75px !important;
   }
 }
