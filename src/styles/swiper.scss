@@ -70,12 +70,12 @@
 }
 
 .slide1 {
-  background: url('../img/projects/Eternitydrum-screen.jpg') no-repeat;
+  background: url('../img/projects/Eternitydrum-screen.jpg') no-repeat 50% 50%;
   background-size: cover;
 }
 
 .slide2 {
-  background: url('../img/projects/Blackharmony-screen.jpg') no-repeat;
+  background: url('../img/projects/Blackharmony-screen.jpg') no-repeat 50% 50%;
   background-size: cover;
 }
 
@@ -121,8 +121,8 @@
     bottom: 30px;
     right: 10px;
     font-size: 0.6rem;
-    width: 65%;
-    height: 55%;
+    width: 67%;
+    height: 50%;
     border: 2px ridge $secondary-color;
   }
 
@@ -145,17 +145,15 @@
     }
 
     h5 {
-      color: $textbase-color;
-      font-family: $spec-font;
+      font-size: 1.6em;
     }
 
     p {
-      font-family: $para-font;
-      color: $textbase-color;
+      font-size: 0.9em;
     }
 
     .geschreven {
-      font-size: 0.9em;
+      font-size: 0.8em;
     }
 
     .project-link {
