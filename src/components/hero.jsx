@@ -15,21 +15,19 @@ const Hero = () => {
   return (
     <div className="container-fluid">
       <div className={heroDesign.hero}>
-        <img className={heroDesign.mini} src={mini} alt="Gimmix Mini Logo" />
-        <div className={heroDesign.hwrapper}>
+        <div className={heroDesign.fleximage}>
+          <img className={heroDesign.mini} src={mini} alt="Gimmix Mini Logo" />{' '}
+        </div>
+        <div className={heroDesign.flexhead}>
           {' '}
           <h1
             className={`${typewriterDesign.tpwriter} ${typewriterDesign.line} ${typewriterDesign.animTypewriter}`}
           >
             Webmediabedrijf Gimmix. Welkom!
           </h1>
-          <br />
-          <br />
           <h1 className={heroDesign.ipvtpwriter}>
             Webmediabedrijf <br /> Gimmix <span className="speccol">.</span>{' '}
           </h1>{' '}
-          <br />
-          <br />
           <Animated
             animationIn="fadeInUp"
             animationInDelay={9000}
@@ -46,16 +44,19 @@ const Hero = () => {
         >
           <div className={heroDesign.scrollDown} />
         </Animated>
-        <Animated
-          animationIn="fadeInDown"
-          animationInDelay={11000}
-          animationInDuration={2000}
-        >
-          <span className={heroDesign.scrollHead}>
-            <Link to="/#servicescroll">services</Link> |{' '}
-            <Link to="/#projectscroll">projecten</Link>
-          </span>{' '}
-        </Animated>
+        <div className={heroDesign.flexancors}>
+          <Animated
+            animationIn="fadeInDown"
+            animationInDelay={11000}
+            animationInDuration={2000}
+          >
+            <span className={heroDesign.scrollHead}>
+              <Link to="/#servicescroll">services</Link>{' '}
+              <span className="speccol">|</span>{' '}
+              <Link to="/#projectscroll">projecten</Link>
+            </span>{' '}
+          </Animated>
+        </div>
         <div className="clr" />
       </div>
     </div>

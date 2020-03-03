@@ -60,6 +60,16 @@ progress[value]::-webkit-progress-bar {
   font-size: 2em;
 }
 
+span.headdots {
+  color: $secondary-color;
+  font-size: 50px;
+  line-height: 1;
+}
+
+span.speccol {
+  color: $secondary-color;
+}
+
 .vertical {
   margin-top: 50px;
   border-left: 3px solid $spec-color;
@@ -73,14 +83,7 @@ progress[value]::-webkit-progress-bar {
   .hometitles {
     font-size: 2em;
   }
-}
-
-span.headdots {
-  color: $secondary-color;
-  font-size: 50px;
-  line-height: 1;
-}
-
-span.speccol {
-  color: $secondary-color;
+  .hero-content p {
+    font-size: 0.8em;
+  }
 }

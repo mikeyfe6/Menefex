@@ -5,28 +5,34 @@
 @import '../customs/resets';
 
 .hero {
-  position: relative;
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
-  width: 90%;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
   justify-content: space-evenly;
 
-  .mini {
-    margin: 50px auto 0px;
-    width: 175px;
+  .fleximage {
+    margin: 0 auto;
   }
 
-  .hwrapper {
-    display: block;
+  .mini {
+    width: 175px;
+    height: 250px;
+  }
+
+  .ipvtpwriter {
+    text-align: center;
+    font-family: $head-font;
+    font-size: 1.5em;
+    line-height: 40px;
+  }
+
+  .flexhead {
+    height: 350px;
   }
 
   .hero-head {
     text-align: center;
-    position: relative;
-    bottom: 100px;
     color: $secondary-color;
     letter-spacing: 1px;
     font-family: $extra-font;
@@ -34,21 +40,25 @@
     font-style: italic;
   }
 
-  .ipvtpwriter {
-    position: relative;
-    bottom: 100px;
-    text-align: center;
-    font-family: $head-font;
-    font-size: 1.5em;
-    line-height: 40px;
+  .scroll-down {
+    margin: 0 auto;
+    z-index: 0;
+    text-decoration: none;
+    text-shadow: 0;
+    width: 25px;
+    height: 25px;
+    border-bottom: 5px solid $secondary-color;
+    border-right: 5px solid $primary-color;
+    transform: translate(-50%, 0) rotate(45deg);
+    animation: fade_move_down 1.5s cubic-bezier(0.19, 1, 0.22, 1) infinite;
+  }
+
+  .flexancors {
+    margin: 0 auto;
   }
 
   .scroll-head {
-    font-size: 1.2em;
-    display: block;
-    text-align: center;
-    position: relative;
-    top: 75px;
+    font-size: 1em;
 
     a {
       font-family: $head-font;
@@ -58,22 +68,6 @@
         color: $link-color;
       }
     }
-  }
-
-  .scroll-down {
-    position: relative;
-    top: 100px;
-    margin: 0 auto;
-    font-size: 20px;
-    z-index: 0;
-    text-decoration: none;
-    text-shadow: 0;
-    width: 30px;
-    height: 30px;
-    border-bottom: 5px solid $secondary-color;
-    border-right: 5px solid $primary-color;
-    transform: translate(-50%, 0) rotate(45deg);
-    animation: fade_move_down 1.5s cubic-bezier(0.19, 1, 0.22, 1) infinite;
   }
 }
 
@@ -94,25 +88,25 @@
 @media (max-width: 768px) {
   .hero-head {
     font-size: 1em !important;
-    bottom: 10px !important;
   }
 
   .mini {
-    margin: 10px auto 0px !important;
     width: 100px !important;
+    height: 100px !important;
   }
 
   .ipvtpwriter {
-    bottom: 0 !important;
-    top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .flexhead {
+    height: 150px !important;
   }
 
   .scroll-down {
-    top: -35px !important;
   }
 
   .scroll-head {
-    top: -35px !important;
   }
 }
 
