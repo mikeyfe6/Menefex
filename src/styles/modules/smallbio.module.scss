@@ -16,15 +16,16 @@
 }
 
 .smallbio-wrapper {
-  padding: 5%;
+  padding: 3% 5%;
 
   .smallbio-text {
     margin-top: 3%;
     font-family: $extra-font;
     line-height: 1.7em;
     letter-spacing: 0.02em;
-    font-weight: 500;
+    font-weight: 600;
     color: $primary-color;
+    font-size: 0.9em;
   }
 
   .thick {
