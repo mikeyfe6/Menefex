@@ -99,24 +99,25 @@
 @media (max-width: 768px) {
   .hero-head {
     font-size: 1.2em !important;
-    bottom: 0 !important;
+    bottom: 10px !important;
   }
 
   .mini {
     margin: 10px auto 0px !important;
-    width: 125px !important;
+    width: 100px !important;
   }
 
   .ipvtpwriter {
     bottom: 0 !important;
+    top: 10px;
   }
 
   .scroll-down {
-    top: 0px !important;
+    top: -35px !important;
   }
 
   .scroll-head {
-    top: 0px !important;
+    top: -35px !important;
   }
 }
 
