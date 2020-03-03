@@ -56,13 +56,13 @@ const AboutPage = () => {
               Wat maakt ons als Gimmix zo uniek?
             </h3>
             <p className={aboutDesign.aboutText}>
-              <b>Gimmix</b> biedt het nodige hulp, service en communicatiebehoud
-              vóór, tijdens en ná het bouwproces van uw product op een hoog
-              plateau staan. Wij denken sterk mee met de klant. Wij werken met
-              de nieuwste en meest stabiele software, zodat u product veilig en
-              duurzaam blijft. Bij Gimmix respecteren we essentiële details en
-              is niks onmogelijk. Er wordt er tot over de laatste pixel
-              nagedacht.
+              <b>Gimmix</b> biedt de nodige hulp, service en communicatie vóór,
+              tijdens en ná het bouwproces van uw product en heeft deze op een
+              hoog plateau staan. Wij denken sterk mee met de klant. Wij werken
+              met de nieuwste en meest stabiele software, zodat u product veilig
+              en duurzaam blijft. Bij Gimmix respecteren we essentiële details
+              en is niks onmogelijk. Er wordt bij het bouwen tot over de laatste
+              pixel nagedacht.
             </p>
             <br />
             <h3 className={aboutDesign.overtitle}>
@@ -72,9 +72,9 @@ const AboutPage = () => {
               <b>Gimmix</b> heeft als drijfveren de interesse in de diversiteit
               van software en de oneindige mogelijkheden die technologie deze
               tijd biedt. Bovendien motiveert het ons als we onze tevreden
-              klanten een digitale brug kunnen bieden en hun ambities als een
-              product wereldwijd op de kaart kunnen zetten door middel van een
-              website of webapplicatie.
+              klanten een digitale brug kunnen bieden en hun ambities verpakt
+              een digitaal product wereldwijd op de kaart kunnen zetten door
+              middel van een website of webapplicatie.
             </p>
           </div>
         </div>
