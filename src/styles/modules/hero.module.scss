@@ -7,6 +7,7 @@
 .hero {
   position: relative;
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -20,6 +21,8 @@
 
   .hero-head {
     text-align: center;
+    position: relative;
+    bottom: 100px;
     color: $secondary-color;
     letter-spacing: 1px;
     font-family: $spec-font;
@@ -28,9 +31,11 @@
   }
 
   .ipvtpwriter {
+    position: relative;
+    bottom: 100px;
     text-align: center;
     font-family: $head-font;
-    font-size: 1.2em;
+    font-size: 1.3em;
     line-height: 25px;
   }
 
@@ -88,21 +93,25 @@
 }
 
 @media (max-width: 768px) {
+  .hero {
+    min-height: -webkit-fill-available !important;
+  }
+
   .hero-head {
     font-size: 1.2em !important;
   }
 
   .mini {
     margin: 10px auto 0px !important;
-    width: 150px !important;
+    width: 125px !important;
   }
 
   .scroll-down {
-    top: -35px !important;
+    // top: -35px !important;
   }
 
   .scroll-head {
-    top: -35px !important;
+    // top: -35px !important;
   }
 }
 

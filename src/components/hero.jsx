@@ -23,10 +23,16 @@ const Hero = () => {
           >
             Webmediabedrijf Gimmix. Welkom!
           </h1>
+          <br />
+          <br />
           <h1 className={heroDesign.ipvtpwriter}>
-            <span className={heroDesign.ipvtpwriterwmb}>Webmediabedrijf</span>{' '}
-            Gimmix. Welkom!
+            <span className={heroDesign.ipvtpwriterwmb}>
+              Webmediabedrijf Gimmix.{' '}
+            </span>
+            <br /> <b>Welkom!</b>
           </h1>
+          <br />
+          <br />
           <Animated
             animationIn="fadeInUp"
             animationInDelay={9000}
