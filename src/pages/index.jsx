@@ -24,13 +24,12 @@ const IndexPage = () => {
       />
 
       <Hero />
-      <div className="whitespace" />
       <div className="vertical" />
       <div className="whitespace" />
       <div className="whitespace" />
 
       <br />
-      <h1 className="hometitles">Bio</h1>
+      <h1 className="hometitles">Biografie</h1>
       <br />
 
       <Smallbio />
@@ -40,7 +39,7 @@ const IndexPage = () => {
       <br />
       <br />
 
-      <div id="servicescroll" className="whitespace" />
+      <div id="servicescroll" className="extrawhitespace" />
 
       <br />
       <h1 className="hometitles">Services</h1>
@@ -53,7 +52,7 @@ const IndexPage = () => {
       <br />
       <br />
 
-      <div id="projectscroll" className="whitespace" />
+      <div id="projectscroll" className="extrawhitespace" />
 
       <br />
       <h1 className="hometitles">Projecten</h1>
