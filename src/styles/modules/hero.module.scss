@@ -40,8 +40,9 @@
     color: $secondary-color;
     letter-spacing: 1px;
     font-family: $extra-font;
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-style: italic;
+    font-weight: 900;
   }
 
   .scroll-down {
@@ -61,6 +62,7 @@
 
   .flexancors {
     margin: 0 auto;
+    height: 0px;
   }
 
   .scroll-head {
