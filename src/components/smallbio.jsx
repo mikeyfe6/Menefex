@@ -12,7 +12,7 @@ const Smallbio = () => {
       <div className={smallbioDesign.smallbioWrapper}>
         <br />
         <hr className={smallbioDesign.thick} />
-        <br />
+
         <p className={smallbioDesign.smallbioText}>
           <b>Gimmix</b> is een jong webmediabedrijf, opgericht door{' '}
           <a
@@ -29,9 +29,10 @@ const Smallbio = () => {
           mogelijk kan relativeren met het eindproduct.
           <br />
           <br />
+          <br />
           <Link to="/about/">Meer over Gimmix..</Link>
         </p>
-        <br />
+
         <hr className={smallbioDesign.thin} />
       </div>
     </div>
