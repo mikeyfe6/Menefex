@@ -6,6 +6,7 @@
 
 .post-title {
   font-family: $head-font;
+  font-size: 2em;
 }
 
 .post-subtitle {
@@ -18,7 +19,7 @@
 
 .nexttologo {
   display: inline-block;
-  margin-top: 1%;
+  margin-top: 2%;
 }
 
 .post-date {
@@ -30,7 +31,7 @@
 
 .post-content {
   margin: 5% 5% 0;
-  font-family: $para-font;
+  font-family: $extra-font !important;
   opacity: 0.9;
 }
 
@@ -92,7 +93,7 @@
   .post-content {
     // color: blue;
     margin: 10% 5% 0;
-    font-family: $para-font;
     opacity: 0.9;
+    font-size: 0.8em;
   }
 }

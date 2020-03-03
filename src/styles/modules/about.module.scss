@@ -14,3 +14,13 @@
   font-family: $extra-font;
   font-weight: 500;
 }
+
+@media (max-width: 768px) {
+  .overtitle {
+    font-size: 1.3em;
+  }
+
+  .about-text {
+    font-size: 0.8em;
+  }
+}

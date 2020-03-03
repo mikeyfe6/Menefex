@@ -56,7 +56,9 @@ const Blog = (props) => {
         <br />
         <img className="blog-mini" src={mini} alt="Gimmix Mini Logo" />
         <div className="nexttologo">
-          <h1 className="post-title">{props.data.contentfulBlogPost.title}</h1>
+          <h1 className="post-title">
+            | {props.data.contentfulBlogPost.title}
+          </h1>
           <p className="post-date">
             Gepost op {props.data.contentfulBlogPost.publishedDate}
           </p>
@@ -64,8 +66,9 @@ const Blog = (props) => {
         <div className="clr" />
 
         <h5 className="post-subtitle">
-          {props.data.contentfulBlogPost.subtitle}
+          * {props.data.contentfulBlogPost.subtitle}
         </h5>
+
         <p className="post-content">
           {documentToReactComponents(
             props.data.contentfulBlogPost.body.json,
