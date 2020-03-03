@@ -12,11 +12,6 @@
   margin-top: 3%;
 }
 
-.excerpt {
-  font-family: $para-font;
-  font-weight: bold;
-}
-
 .post {
   margin: 1rem 0;
   a {
@@ -72,10 +67,6 @@
 }
 
 @media (max-width: 768px) {
-  .excerpt {
-    margin-bottom: 5%;
-  }
-
   .contsubtext {
     font-size: 0.7em !important;
   }

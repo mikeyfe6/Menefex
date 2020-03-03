@@ -22,12 +22,11 @@ const Footer = () => {
   return (
     <footer>
       <div className="container">
-        <br />
-        <br />
+        <div className="whitespace" />
         <div className={footerStyles.collab}>
           <div className="row">
             <div className="col-lg-12">
-              <p className="wow fadeInUp">
+              <p className={footerStyles.sayin}>
                 <i>
                   &quot;to live a creative life, we must lose our fear of being
                   wrong&quot;
@@ -44,8 +43,7 @@ const Footer = () => {
           <div className="row" />
         </div>
 
-        <br />
-        <br />
+        <div className="whitespace" />
         <br />
 
         <div className={footerStyles.info}>

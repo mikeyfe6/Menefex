@@ -11,6 +11,10 @@ footer {
   height: 2.5rem; /* Footer height */
 }
 
+.sayin {
+  font-size: 0.9em;
+}
+
 .collab {
   text-align: right;
 
@@ -37,6 +41,7 @@ footer {
 
   a {
     color: $primary-color;
+    font-size: 0.9em;
 
     &:hover {
       color: $link-color;

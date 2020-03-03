@@ -27,14 +27,16 @@
     padding-left: 5%;
     font-family: $extra-font;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1.5em;
   }
 
   .quote-text {
     margin-top: 15%;
-    font-family: $para-font;
+    font-family: $extra-font;
     line-height: 1.7em;
     letter-spacing: 0.03em;
+    font-size: 0.9em;
+    font-weight: 500;
   }
 
   .thick {
@@ -65,4 +67,9 @@
     font-size: 0.9em !important;
   }
 }
-// color #d0d0d0;
+
+@media (min-width: 769px) {
+  .endline {
+    display: none;
+  }
+}

@@ -13,7 +13,7 @@ const Quote = () => {
     <div className={quoteDesign.quoteContainer}>
       <div className={quoteDesign.quoteWrapper}>
         <div className="row">
-          <section id={quoteDesign.services} className="col-md-3">
+          <section id={quoteDesign.services} className="col-lg-3">
             <FontAwesomeIcon icon="globe" size="3x" color="#f0c410" />
             <h3 className={quoteDesign.quoteHead}>Websites</h3>
             <br />
@@ -24,9 +24,10 @@ const Quote = () => {
                 {' '}
                 <b>
                   Wij als Gimmix bouwen functionele en efficiënte websites
-                  volledig in afstemming met de klant. We zorgen daarin zoveel
-                  mogelijk dat we aan alle technische wensen voldoen en zo
-                  werken naar een uitstekend eindproduct.
+                  volledig in afstemming met de klant. <br />
+                  <br />
+                  We zorgen daarin zoveel mogelijk dat we aan alle technische
+                  wensen voldoen en zo werken naar een uitstekend eindproduct.
                 </b>
               </strong>
             </p>{' '}
@@ -50,18 +51,18 @@ const Quote = () => {
               </ul>
             </p>
             <br />
-            <hr />
+            <hr className={quoteDesign.endline} />
             <br />
           </section>
-          <section id={quoteDesign.services} className="col-md-3">
+          <section id={quoteDesign.services} className="col-lg-3">
             <FontAwesomeIcon icon="mobile" size="3x" color="#f0c410" />
-            <h3 className={quoteDesign.quoteHead}>Apps</h3>
+            <h3 className={quoteDesign.quoteHead}>Webapplicaties</h3>
             <br />
             <br />
             <hr className={quoteDesign.thick} />
             <p className={quoteDesign.quoteText}>
               <b>
-                Onze apps bouwen we met het oog naar kwaliteit, design en
+                Onze webapps bouwen we met het oog naar kwaliteit, design en
                 gebruiksgemak.
                 <br />
                 <br />
@@ -74,7 +75,7 @@ const Quote = () => {
             <p className={quoteDesign.quoteText}>
               Bij het bouwen van{' '}
               <b>
-                <u>apps</u>
+                <u>webapps</u>
               </b>{' '}
               letten wij extra op (?)
               <br />
@@ -88,10 +89,10 @@ const Quote = () => {
               </ul>
             </p>
             <br />
-            <hr />
+            <hr className={quoteDesign.endline} />
             <br />
           </section>
-          <section id={quoteDesign.services} className="col-md-3">
+          <section id={quoteDesign.services} className="col-lg-3">
             <FontAwesomeIcon
               icon={['fab', 'searchengin']}
               size="3x"
@@ -128,7 +129,7 @@ const Quote = () => {
               </ul>
             </p>
             <br />
-            <hr />
+            <hr className={quoteDesign.endline} />
             <br />
           </section>
           {

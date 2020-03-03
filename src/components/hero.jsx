@@ -26,11 +26,8 @@ const Hero = () => {
           <br />
           <br />
           <h1 className={heroDesign.ipvtpwriter}>
-            <span className={heroDesign.ipvtpwriterwmb}>
-              Webmediabedrijf Gimmix.{' '}
-            </span>
-            <br /> <b>Welkom!</b>
-          </h1>
+            Webmediabedrijf <br /> Gimmix <span className="speccol">.</span>{' '}
+          </h1>{' '}
           <br />
           <br />
           <Animated
@@ -56,7 +53,7 @@ const Hero = () => {
         >
           <span className={heroDesign.scrollHead}>
             <Link to="/#servicescroll">services</Link> |{' '}
-            <Link to="/#projectscroll">projects</Link>
+            <Link to="/#projectscroll">projecten</Link>
           </span>{' '}
         </Animated>
         <div className="clr" />

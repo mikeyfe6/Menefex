@@ -10,6 +10,7 @@ import SEO from '../components/seo';
 import Hero from '../components/hero';
 import Quote from '../components/quote';
 import Swiper from '../components/swiper';
+import Smallbio from '../components/smallbio';
 
 // TODO: pagina helemaal responsive maken
 
@@ -23,6 +24,18 @@ const IndexPage = () => {
       />
 
       <Hero />
+      <div className="whitespace" />
+      <div className="vertical" />
+      <div className="whitespace" />
+      <div className="whitespace" />
+
+      <br />
+      <h1 className="hometitles">Bio</h1>
+      <br />
+
+      <Smallbio />
+
+      <div className="whitespace" />
       <div className="vertical" />
       <br />
       <br />

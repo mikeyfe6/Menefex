@@ -33,7 +33,9 @@ a {
 }
 
 .hero-content p {
-  font-family: $para-font;
+  font-family: $extra-font;
+  font-size: 0.95em;
+  font-weight: 700;
 }
 
 .page-title {
@@ -55,14 +57,16 @@ progress[value]::-webkit-progress-bar {
   text-decoration: underline;
   text-decoration-color: $secondary-color;
   font-family: $head-font;
+  font-size: 2em;
 }
 
 .vertical {
-  margin-top: 40px;
-  border-left: 2px solid $secondary-color;
-  height: 80px;
+  margin-top: 50px;
+  border-left: 3px solid $spec-color;
+  height: 60px;
   position: absolute;
   left: 50%;
+  opacity: 0.5;
 }
 
 @media (max-width: 768px) {

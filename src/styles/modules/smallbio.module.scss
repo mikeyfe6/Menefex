@@ -1,0 +1,54 @@
+@import '../customs/imports';
+@import '../customs/functions';
+@import '../customs/colors';
+@import '../customs/fonts';
+@import '../customs/resets';
+
+.smallbio-container {
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 1%;
+  background-color: $spec-color;
+  opacity: 0.9;
+  box-shadow: 1px 3px 7px rgba(209, 209, 209, 0.767);
+  border: 1px solid $fourth-color;
+  border-radius: 2.5px;
+}
+
+.smallbio-wrapper {
+  padding: 5%;
+
+  .smallbio-text {
+    margin-top: 3%;
+    font-family: $extra-font;
+    line-height: 1.7em;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    color: $primary-color;
+  }
+
+  .thick {
+    margin: 0;
+    width: 10%;
+    border: 3px solid $third-color;
+  }
+
+  .thin {
+    border: 1px solid white;
+  }
+}
+
+@media (max-width: 768px) {
+  .smallbio-wrapper {
+    padding: 5%;
+  }
+
+  .smallbio-container {
+    width: 90%;
+  }
+
+  .smallbio-text {
+    font-size: 0.8em !important;
+  }
+}
+// color #d0d0d0;
