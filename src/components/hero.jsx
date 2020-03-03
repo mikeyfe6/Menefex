@@ -16,7 +16,7 @@ const Hero = () => {
     <div className="container-fluid">
       <div className={heroDesign.hero}>
         <img className={heroDesign.mini} src={mini} alt="Gimmix Mini Logo" />
-        <div>
+        <div className={heroDesign.hwrapper}>
           {' '}
           <h1
             className={`${typewriterDesign.tpwriter} ${typewriterDesign.line} ${typewriterDesign.animTypewriter}`}

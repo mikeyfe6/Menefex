@@ -19,6 +19,10 @@
     width: 175px;
   }
 
+  .hwrapper {
+    display: block;
+  }
+
   .hero-head {
     text-align: center;
     position: relative;
@@ -95,11 +99,16 @@
 @media (max-width: 768px) {
   .hero-head {
     font-size: 1.2em !important;
+    bottom: 0 !important;
   }
 
   .mini {
     margin: 10px auto 0px !important;
     width: 125px !important;
+  }
+
+  .ipvtpwriter {
+    bottom: 0 !important;
   }
 
   .scroll-down {
