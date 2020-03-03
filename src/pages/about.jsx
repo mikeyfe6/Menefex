@@ -48,7 +48,8 @@ const AboutPage = () => {
               Wij bouwen onze softwareproducten op maatwerk en zorgen dat de
               klant zich zoveel mogelijk kan relativeren met het eindproduct.
               Wij zijn van mening dat de functionaliteit in balans moet zijn met
-              de visuele aspecten van de website voor een ultieme ervaring.
+              de visuele aspecten van de website/webapplicatie voor een ultieme
+              ervaring.
             </p>
             <br />
             <h3 className={aboutDesign.overtitle}>

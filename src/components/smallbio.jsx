@@ -24,7 +24,10 @@ const Smallbio = () => {
           </a>
           , die zich inzet en gespecialiseerd is in het uitdenken en ontwikkelen
           van websites en webapplicaties. Wij zorgen dat de ambities van de
-          klant en het eindproduct tot één komen. <br />
+          klant en het eindproduct tot één komen. Wij bouwen onze
+          softwareproducten op maatwerk en zorgen dat de klant zich zoveel
+          mogelijk kan relativeren met het eindproduct.
+          <br />
           <br />
           <Link to="/about/">Meer over Gimmix..</Link>
         </p>
