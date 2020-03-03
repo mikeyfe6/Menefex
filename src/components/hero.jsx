@@ -36,15 +36,15 @@ const Hero = () => {
             <h1 className={heroDesign.heroHead}>Web-, Appdevelopment & SEO</h1>
           </Animated>
         </div>
-
-        <Animated
-          animationIn="zoomIn"
-          animationInDelay={10000}
-          animationInDuration={2000}
-        >
-          <div className={heroDesign.scrollDown} />
-        </Animated>
         <div className={heroDesign.flexancors}>
+          <Animated
+            animationIn="zoomIn"
+            animationInDelay={10000}
+            animationInDuration={2000}
+          >
+            <div className={heroDesign.scrollDown} />
+          </Animated>
+
           <Animated
             animationIn="fadeInDown"
             animationInDelay={11000}

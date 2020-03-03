@@ -41,6 +41,8 @@
   }
 
   .scroll-down {
+    position: relative;
+    bottom: 75px;
     margin: 0 auto;
     z-index: 0;
     text-decoration: none;
@@ -90,9 +92,14 @@
     font-size: 1em !important;
   }
 
+  .fleximage {
+    margin: 0 auto;
+    height: 25px;
+  }
+
   .mini {
-    width: 100px !important;
-    height: 100px !important;
+    // width: 125px !important;
+    height: 125px !important;
   }
 
   .ipvtpwriter {
@@ -100,7 +107,10 @@
   }
 
   .flexhead {
-    height: 150px !important;
+    height: 100px !important;
+  }
+
+  .flexancors {
   }
 
   .scroll-down {
