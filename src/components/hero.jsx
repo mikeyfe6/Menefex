@@ -42,14 +42,14 @@ const Hero = () => {
         <Animated
           animationIn="zoomIn"
           animationInDelay={10000}
-          animationInDuration={1500}
+          animationInDuration={2000}
         >
           <div className={heroDesign.scrollDown} />
         </Animated>
         <Animated
-          animationIn="slideInUp"
-          animationInDelay={12000}
-          animationInDuration={1000}
+          animationIn="fadeInDown"
+          animationInDelay={11000}
+          animationInDuration={2000}
         >
           <span className={heroDesign.scrollHead}>
             <Link to="/#servicescroll">services</Link> |{' '}
