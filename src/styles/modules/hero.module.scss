@@ -94,7 +94,7 @@
 
 @media (max-width: 768px) {
   .hero {
-    min-height: -webkit-fill-available !important;
+    min-height: 100px !important;
   }
 
   .hero-head {
@@ -107,11 +107,11 @@
   }
 
   .scroll-down {
-    // top: -35px !important;
+    top: 0px !important;
   }
 
   .scroll-head {
-    // top: -35px !important;
+    top: 0px !important;
   }
 }
 
