@@ -23,8 +23,12 @@
   .ipvtpwriter {
     text-align: center;
     font-family: $head-font;
-    font-size: 1.5em;
+    font-size: 1.8em;
     line-height: 40px;
+
+    span.spechead {
+      font-size: 1.5em !important;
+    }
   }
 
   .flexhead {
@@ -89,7 +93,7 @@
 
 @media (max-width: 768px) {
   .hero-head {
-    font-size: 1em !important;
+    font-size: 0.8em !important;
   }
 
   .fleximage {
@@ -107,13 +111,17 @@
   }
 
   .flexhead {
-    height: 100px !important;
+    height: 150px !important;
   }
 
   .flexancors {
+    font-size: 0.8em;
   }
 
   .scroll-down {
+    bottom: 55px !important;
+    width: 17px !important;
+    height: 17px !important;
   }
 
   .scroll-head {

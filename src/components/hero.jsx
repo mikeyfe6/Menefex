@@ -26,7 +26,9 @@ const Hero = () => {
             Webmediabedrijf Gimmix. Welkom!
           </h1>
           <h1 className={heroDesign.ipvtpwriter}>
-            Webmediabedrijf <br /> Gimmix <span className="speccol">.</span>{' '}
+            Webmediabedrijf <br />{' '}
+            <span className={heroDesign.spechead}> Gimmix</span>{' '}
+            <span className="speccol">.</span>{' '}
           </h1>{' '}
           <Animated
             animationIn="fadeInUp"
