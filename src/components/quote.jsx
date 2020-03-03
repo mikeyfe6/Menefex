@@ -26,8 +26,9 @@ const Quote = () => {
                   Wij als Gimmix bouwen functionele en efficiënte websites
                   volledig in afstemming met de klant. <br />
                   <br />
-                  We zorgen daarin zoveel mogelijk dat we aan alle technische
-                  wensen voldoen en zo werken naar een uitstekend eindproduct.
+                  We zorgen daarin zoveel mogelijk dat we aan alle
+                  web-technische wensen voldoen en werken zo naar een uitstekend
+                  eindproduct.
                 </b>
               </strong>
             </p>{' '}
@@ -70,6 +71,8 @@ const Quote = () => {
                 vraag naar (web)apps.
               </b>
             </p>
+            <br />
+            <br />
             <br />
             <hr className={quoteDesign.thin} />
             <p className={quoteDesign.quoteText}>
@@ -114,6 +117,7 @@ const Quote = () => {
               </b>
             </p>
             <br />
+            <br />
             <hr className={quoteDesign.thin} />
             <p className={quoteDesign.quoteText}>
               Wat zijn de grootste voordelen van goede en geoptimaliseerde{' '}
@@ -126,6 +130,7 @@ const Quote = () => {
               <ul>
                 <li>Vindbaarheid op zoekmachines</li>
                 <li>Content wordt sneller gevonden</li>
+                <li>Product(en) krijgen meer aanzien</li>
               </ul>
             </p>
             <br />
