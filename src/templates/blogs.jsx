@@ -47,7 +47,7 @@ const Blog = (props) => {
       <div className="whitespace" />
       <div className="container">
         <SEO title={props.data.contentfulBlogPost.title} />
-        <Link to="/blog" className="goback">
+        <Link to="/blog/" className="goback">
           <FontAwesomeIcon icon="backward" /> Ga Terug
         </Link>
         <br />
