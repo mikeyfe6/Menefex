@@ -93,7 +93,7 @@ const Footer = () => {
                   data-wow-delay="0.8s"
                 >
                   <a
-                    href="https://www.twitter.com/GimmixL"
+                    href="https://www.twitter.com/GimmixWMB"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
@@ -144,7 +144,7 @@ const Footer = () => {
           </div>
         </div>
         <p className={footerStyles.termscods}>
-          terms & conditions <span className="speccol">|</span> Gimmix LLC. 2020
+          terms & conditions <span className="speccol">|</span> Gimmix WMB. 2020
           &copy; <span className="speccol">|</span> all rights reserved
           <br />
           KvK <span className="speccol">#</span> 76045315 | BTW{' '}
