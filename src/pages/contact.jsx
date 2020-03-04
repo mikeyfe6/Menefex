@@ -37,9 +37,8 @@ const ContactPage = () => {
 
               <ScrollAnimation animateIn="fadeInUp" delay={1200}>
                 <p>
-                  Vraag, opmerking, samenwerking? Aarzel niet een berichtje
-                  achter te laten. Wij zorgen dan zo spoedig contact met u op te
-                  nemen.
+                  Vraag, opmerking, samenwerking? Aarzel niet een bericht achter
+                  te laten. Wij zorgen dan zo spoedig contact met u op te nemen.
                 </p>
               </ScrollAnimation>
             </div>

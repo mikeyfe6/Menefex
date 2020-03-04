@@ -76,7 +76,6 @@ const workPage = () => {
                 <span>Tools:</span>
                 Wordpress, Advanced Custom Field Types, Brizy
               </p>
-              <br />
             </div>
             <a
               href="https://eternitydrum.com"
