@@ -85,6 +85,12 @@
   .toolbar_navigation-items {
     display: none;
   }
+
+  .toolbar {
+    &__navigation {
+      padding: 0 1.5rem !important;
+    }
+  }
 }
 
 @media (max-width: 768px) {
