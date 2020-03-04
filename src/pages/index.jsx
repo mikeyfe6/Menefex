@@ -18,7 +18,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO
-        title="Welkom"
+        title="Home"
         description="Webmediabedrijf Gimmix staat garant voor al webgerelateerde wensen en ambities."
         keywords="website, webapp, app, webapplicatie, projecten, portfolio, wordpress, react, gatsby, javascript, freelance, zzp, elementor, michael fransman, amsterdam, zuidoost, portfolio, web developer, ondernemer, entrepeneur, mikey, mikeyfe, mikeyfe6, webmedia, gimmix"
       />
