@@ -51,7 +51,7 @@ const Blog = (props) => {
           <FontAwesomeIcon icon="backward" /> Ga Terug
         </Link>
         <br />
-        <br />
+
         <hr />
         <br />
         <img className="blog-mini" src={mini} alt="Gimmix Mini Logo" />
@@ -64,11 +64,9 @@ const Blog = (props) => {
           </p>
         </div>
         <div className="clr" />
-
         <h5 className="post-subtitle">
           * {props.data.contentfulBlogPost.subtitle}
         </h5>
-
         <p className="post-content">
           {documentToReactComponents(
             props.data.contentfulBlogPost.body.json,

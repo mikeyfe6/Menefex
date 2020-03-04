@@ -30,7 +30,9 @@ const Smallbio = () => {
           <br />
           <br />
           <br />
-          <Link to="/about/">Meer over Gimmix..</Link>
+          <b>
+            <Link to="/about/">Meer over Gimmix ..</Link>
+          </b>
         </p>
 
         <hr className={smallbioDesign.thin} />

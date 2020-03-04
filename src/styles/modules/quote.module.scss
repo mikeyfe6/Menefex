@@ -25,16 +25,21 @@
   .quote-head {
     display: inline-block;
     padding-left: 5%;
+    margin-bottom: 7.5%;
     font-family: $extra-font;
     font-weight: bold;
     font-size: 1.5em;
+  }
+
+  .quote-kwali {
+    padding-left: 7.5%;
   }
 
   .quote-text {
     margin-top: 15%;
     font-family: $extra-font;
     line-height: 1.7em;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.02em;
     font-size: 0.9em;
     font-weight: 500;
   }
@@ -60,11 +65,11 @@
   }
 
   .quote-head {
-    font-size: 1.6em !important;
+    font-size: 1.35em !important;
   }
 
   .quote-text {
-    font-size: 0.8em !important;
+    font-size: 0.75em !important;
   }
 }
 

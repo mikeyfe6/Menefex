@@ -23,7 +23,7 @@
   .ipvtpwriter {
     text-align: center;
     font-family: $head-font;
-    font-size: 1.8em;
+    font-size: 1.5em;
     line-height: 40px;
 
     span.spechead {
@@ -100,12 +100,14 @@
 
   .fleximage {
     margin: 0 auto;
-    height: 50px;
+    height: 75px;
   }
 
   .mini {
     // width: 125px !important;
     height: 125px !important;
+    width: 112.5px !important;
+    margin-top: -25px;
   }
 
   .ipvtpwriter {

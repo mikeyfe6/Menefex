@@ -14,10 +14,8 @@ const Quote = () => {
       <div className={quoteDesign.quoteWrapper}>
         <div className="row">
           <section id={quoteDesign.services} className="col-lg-3">
-            <FontAwesomeIcon icon="globe" size="3x" color="#f0c410" />
+            <FontAwesomeIcon icon="globe" size="2x" color="#f0c410" />
             <h3 className={quoteDesign.quoteHead}>Websites</h3>
-            <br />
-            <br />
             <hr className={quoteDesign.thick} />
             <p className={quoteDesign.quoteText}>
               <strong>
@@ -42,7 +40,7 @@ const Quote = () => {
               (?)
               <br />
               <br />
-              <ul>
+              <ul className={quoteDesign.quoteKwali}>
                 <li>Snelheid</li>
                 <li>Efficiëntie</li>
                 <li>Vindbaarheid</li>
@@ -56,10 +54,8 @@ const Quote = () => {
             <br />
           </section>
           <section id={quoteDesign.services} className="col-lg-3">
-            <FontAwesomeIcon icon="mobile" size="3x" color="#f0c410" />
+            <FontAwesomeIcon icon="mobile" size="2x" color="#f0c410" />
             <h3 className={quoteDesign.quoteHead}>Webapplicaties</h3>
-            <br />
-            <br />
             <hr className={quoteDesign.thick} />
             <p className={quoteDesign.quoteText}>
               <b>
@@ -83,7 +79,7 @@ const Quote = () => {
               letten wij extra op (?)
               <br />
               <br />
-              <ul>
+              <ul className={quoteDesign.quoteKwali}>
                 <li>Snelheid</li>
                 <li>Efficiëntie</li>
                 <li>User Interface & Experience</li>
@@ -98,16 +94,14 @@ const Quote = () => {
           <section id={quoteDesign.services} className="col-lg-3">
             <FontAwesomeIcon
               icon={['fab', 'searchengin']}
-              size="3x"
+              size="2x"
               color="#f0c410"
             />
             <h3 className={quoteDesign.quoteHead}>SEO</h3>
-            <br />
-            <br />
             <hr className={quoteDesign.thick} />
             <p className={quoteDesign.quoteText}>
               <b>
-                Wij zorgen ook voor geoptimaliseerde vindbaarheid in de
+                Wij zorgen voor geoptimaliseerde vindbaarheid in de
                 zoekmachines.
                 <br />
                 <br />
@@ -127,8 +121,8 @@ const Quote = () => {
               (?)
               <br />
               <br />
-              <ul>
-                <li>Vindbaarheid op zoekmachines</li>
+              <ul className={quoteDesign.quoteKwali}>
+                <li>Vindbaarheid in zoekmachines</li>
                 <li>Content wordt sneller gevonden</li>
                 <li>Product(en) krijgen meer aanzien</li>
               </ul>

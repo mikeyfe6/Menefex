@@ -13,6 +13,8 @@ footer {
 
 .sayin {
   font-size: 0.9em;
+  text-align: end;
+  padding-right: 7.5%;
 }
 
 .collab {
@@ -163,5 +165,10 @@ footer {
 
   .termscods {
     padding-bottom: 25px;
+  }
+
+  .sayin {
+    font-size: 0.8em;
+    padding-right: 0;
   }
 }

@@ -38,6 +38,7 @@
 .goback {
   color: $link-color;
   font-weight: bold;
+  padding-bottom: 1000px;
 }
 
 .gobackextra {
@@ -62,7 +63,7 @@
 
 @media (max-width: 768px) {
   .nexttologo {
-    margin-top: 2%;
+    margin-top: 3.5%;
   }
 
   .excerpt {
@@ -74,7 +75,7 @@
   }
 
   .post-title {
-    font-size: 1.3em;
+    font-size: 1.1em;
     // padding-left: 2% !important;
   }
 
@@ -87,12 +88,12 @@
     color: $secondary-color;
     // padding-left: 12.5% !important;
     font-style: italic;
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
 
   .post-content {
     // color: blue;
-    margin: 10% 5% 0;
+    margin: 10% 3% 0;
     opacity: 0.9;
     font-size: 0.8em;
   }

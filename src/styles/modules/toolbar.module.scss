@@ -10,7 +10,7 @@
   left: 0;
   position: fixed;
   background: $third-color;
-  height: 120px;
+  height: 100px;
   z-index: 300;
   border-top: 5px solid $secondary-color;
   border-bottom: 3px solid $fourth-color;
@@ -70,7 +70,7 @@
       }
 
       .whapp {
-        padding-bottom: 10px;
+        padding-bottom: 7.5px;
 
         &:hover {
           color: #1ca111;

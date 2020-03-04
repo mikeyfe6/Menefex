@@ -43,13 +43,43 @@ const Form = () => {
                     type="email"
                     name="email"
                     id="contact-email"
+                    maxLength="35"
                     defaultValue=""
                     required
                   />
                 </div>
               </li>
               <li>
-                <label htmlFor="contact-project">* Bericht</label>
+                <label htmlFor="contact-tel">* Telefoon</label>
+                <div className={formStyles.textarea}>
+                  <input
+                    type="tel"
+                    name="tel"
+                    id="contact-tel"
+                    maxLength="15"
+                    defaultValue=""
+                    required
+                  />
+                </div>
+              </li>
+              <li>
+                <label htmlFor="contact-msg">* Selecteer onderwerp</label>
+                <div>
+                  <select
+                    name="onderwerp[]"
+                    className={formStyles.choosing}
+                    required
+                  >
+                    <option value="samenwerking">Samenwerking</option>
+                    <option value="opmerking">Vraag / Opmerking</option>
+                    <option value="hulp">Hulp & Probleemoplossing</option>
+                  </select>
+                </div>
+              </li>
+              <li>
+                <label htmlFor="contact-project">
+                  * Type uw bericht hieronder
+                </label>
                 <div className={formStyles.textarea}>
                   <textarea
                     type="text"

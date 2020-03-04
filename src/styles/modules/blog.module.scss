@@ -18,7 +18,7 @@
     background: linear-gradient(to right, $fourth-color, #f2f2f2);
     color: $textbase-color;
     display: block;
-    padding: 1.5rem;
+    padding: 1.25rem;
     text-decoration: none;
     border: 3px solid $fourth-color;
     border-radius: 10px;
@@ -35,14 +35,16 @@
   h4 {
     font-family: $spec-font;
     font-weight: 50;
+    font-size: 1.35em;
     color: $primary-color;
+    padding-left: 1%;
+    padding-top: 1%;
   }
 
   .bloggepost {
     color: $link-color;
     font-size: 0.8rem;
     font-style: italic;
-    margin-top: 1%;
     margin-left: 0.5%;
   }
 
@@ -85,6 +87,6 @@
   }
 
   .blogimg {
-    height: 75px !important;
+    height: 80px !important;
   }
 }
