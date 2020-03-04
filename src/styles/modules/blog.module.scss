@@ -83,10 +83,16 @@
   }
 
   .bloggepost {
-    font-size: 0.3em !important;
+    font-size: 0.4em !important;
   }
 
   .blogimg {
     height: 80px !important;
+  }
+
+  .post {
+    a {
+      padding: 0.7rem;
+    }
   }
 }
