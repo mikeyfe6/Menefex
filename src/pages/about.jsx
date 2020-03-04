@@ -27,7 +27,8 @@ const AboutPage = () => {
 
             <h3 className={aboutDesign.overtitle}>Wie zijn wij?</h3>
             <p className={aboutDesign.aboutText}>
-              <b>Gimmix</b> is een jong webmediabedrijf, opgericht door{' '}
+              <b>Gimmix</b> is een jong en modern webmediabedrijf, opgericht
+              door{' '}
               <a
                 href="https://www.linkedin.com/in/michaelfransman"
                 rel="noopener noreferrer"

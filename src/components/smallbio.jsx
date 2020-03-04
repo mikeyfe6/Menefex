@@ -14,7 +14,7 @@ const Smallbio = () => {
         <hr className={smallbioDesign.thick} />
 
         <p className={smallbioDesign.smallbioText}>
-          <b>Gimmix</b> is een jong webmediabedrijf, opgericht door{' '}
+          <b>Gimmix</b> is een jong modern webmediabedrijf, opgericht door{' '}
           <a
             href="https://www.linkedin.com/in/michaelfransman"
             rel="noopener noreferrer"
