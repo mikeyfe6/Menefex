@@ -10,7 +10,7 @@ const AboutPage = () => {
     <Layout>
       <SEO
         title="About"
-        description="Kom meer te weten over Gimmix"
+        description="Kom meer te weten over Gimmix."
         keywords="over, gimmix, doelen, uniek, ondersteuning"
         pathname="/about/"
       />

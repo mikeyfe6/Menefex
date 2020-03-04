@@ -13,11 +13,12 @@ module.exports = {
   siteMetadata: {
     siteUrl: `https://www.gimmix.nl`,
     url: 'https://www.gimmix.nl',
-    image: 'src/img/Gimmix-applogosm.png',
+    image: '/src/img/Gimmix-applogosm.png',
     title: 'Gimmix',
     titleTemplate: '%s · Gimmix',
     author: 'Michael Fransman',
-    description: 'Websites bouwen met gevoel voor detail',
+    description:
+      'Website of Webapp? Webmediabedrijf Gimmix uit Amsterdam staat garant voor al webgerelateerde wensen en ambities',
     twitterUsername: '@GimmixL',
   },
   plugins: [

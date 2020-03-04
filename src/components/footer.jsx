@@ -67,7 +67,7 @@ const Footer = () => {
                   data-wow-delay="0.4s"
                 >
                   <a
-                    href="https://www.facebook.com/MikeyFE"
+                    href="https://www.facebook.com/GimmixWMB"
                     rel="noopener noreferrer"
                     target="_blank"
                   >

@@ -40,7 +40,7 @@ const BlogPage = () => {
     <Layout>
       <SEO
         title="Blog"
-        description="Our views on life, technology and culture."
+        description="Our views on life, technology, culture & the future."
         keywords="blog, posts, views, nieuws"
         pathname="/blog/"
       />
