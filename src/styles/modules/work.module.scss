@@ -34,6 +34,13 @@ h6 {
     border-bottom: none;
     border-top: none;
 
+    .project-text {
+      font-family: $extra-font;
+      letter-spacing: 0.5px;
+      font-size: 0.75em;
+      font-weight: 500;
+    }
+
     span {
       font-family: $spec-font;
       margin-right: 2%;
