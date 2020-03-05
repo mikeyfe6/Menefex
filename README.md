@@ -18,7 +18,7 @@ Die zich inzet en gespecialiseerd is in het uitdenken en ontwikkelen van website
 
 🙋🏾‍♂️ Author: Michael Fransman
 
-## ✒️ Licence
+## Licence ✒️
 
 GNU AGPLv3, all rights reserved, Gimmix WMB 2020 ©
 

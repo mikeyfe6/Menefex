@@ -47,11 +47,14 @@ const Blog = (props) => {
       <div className="whitespace" />
       <div className="container">
         <SEO title={props.data.contentfulBlogPost.title} />
-        <Link to="/blog/" className="goback">
-          <FontAwesomeIcon icon="backward" /> Ga Terug
-        </Link>
+        <button type="button" className="gobackbtn">
+          <Link to="/blog/" className="goback">
+            <FontAwesomeIcon icon="backward" />{' '}
+            <span className="gobacktext">Blogposts</span>
+          </Link>
+        </button>
         <br />
-
+        <br />
         <hr />
         <br />
         <img className="blog-mini" src={mini} alt="Gimmix Mini Logo" />
