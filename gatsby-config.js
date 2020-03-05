@@ -18,7 +18,7 @@ module.exports = {
     titleTemplate: '%s · Gimmix',
     author: 'Michael Fransman',
     description:
-      'Website of Webapp? Webmediabedrijf Gimmix uit Amsterdam staat garant voor al uw webgerelateerde wensen en ambities',
+      'Website of Webapp? Webmediabedrijf Gimmix uit Amsterdam staat garant voor al uw webgerelateerde wensen en ambities.',
     twitterUsername: '@GimmixWMB',
   },
   plugins: [

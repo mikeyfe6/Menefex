@@ -10,7 +10,7 @@
   border: 1px solid $fourth-color;
   border-radius: 2.5px;
   padding: 25px 50px 50px 50px;
-  width: 75%;
+  width: 65%;
 }
 
 // .rcpth {
@@ -131,19 +131,20 @@ textarea:focus {
   letter-spacing: 2px;
   border: 0.5px solid $fifth-color;
   border-radius: 2px;
+  margin-right: 1.5%;
 
   &:hover {
     color: $link-color;
     @include smoothtrans;
-    border: 1px solid $link-color;
+    border: 0.5px solid $link-color;
   }
 }
 
 @media (max-width: 768px) {
   .formwrapper {
-    width: 95%;
+    width: 97% !important;
     margin: 0 auto;
-    padding: 15px 30px 30px 25px;
+    padding: 10px 15px 25px 15px;
   }
 
   .choosing {
