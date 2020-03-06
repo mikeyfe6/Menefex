@@ -63,7 +63,6 @@ module.exports = {
         },
       },
     },
-    'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
@@ -135,6 +134,8 @@ module.exports = {
       },
     },
     `gatsby-plugin-netlify`,
+    `gatsby-plugin-robots-txt`,
+    'gatsby-plugin-react-helmet',
     'gatsby-plugin-offline',
   ],
 };
