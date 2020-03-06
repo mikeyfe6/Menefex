@@ -41,8 +41,7 @@
     color: $primary-color;
     text-decoration: none;
     font-family: $spec-font;
-    text-shadow: -10px 0 $spec-color, 0 10px $spec-color, 10px 0 $spec-color,
-      0 -10px $spec-color;
+    text-shadow: -5px 0 #cccccc, 0 5px #cccccc, 5px 0 #cccccc, 0 -5px #cccccc;
 
     &:hover,
     &:active {

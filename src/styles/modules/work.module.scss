@@ -36,20 +36,15 @@ h6 {
 
     .project-text {
       font-family: $extra-font;
-      letter-spacing: 0.5px;
+      letter-spacing: 0.02em;
       font-size: 0.75em;
-      font-weight: 500;
+      font-weight: 900;
     }
 
     span {
       font-family: $spec-font;
       margin-right: 2%;
       font-size: 0.9rem;
-    }
-
-    p {
-      font-family: $para-font;
-      font-size: 0.9em;
     }
   }
 
@@ -100,6 +95,11 @@ h6 {
 
   .workimg {
     height: 250px !important;
+  }
+
+  .project-text {
+    font-family: $extra-font;
+    letter-spacing: 0.01em !important;
   }
 }
 

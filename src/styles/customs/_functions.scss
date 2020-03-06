@@ -1,3 +1,15 @@
 @mixin smoothtrans {
   transition: all 0.4s ease-in-out;
 }
+
+@mixin fontslg {
+  letter-spacing: 0.02em;
+  font-size: 0.9em;
+  line-height: 1.7em;
+  font-weight: 500;
+}
+
+@mixin fontsmb {
+  letter-spacing: 0.01em !important;
+  font-size: 0.75em !important;
+}

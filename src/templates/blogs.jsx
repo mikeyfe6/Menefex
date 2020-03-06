@@ -50,7 +50,10 @@ const Blog = (props) => {
         <button type="button" className="gobackbtn">
           <Link to="/blog/" className="goback">
             <FontAwesomeIcon icon="backward" />{' '}
-            <span className="gobacktext">Blogposts</span>
+            <span className="gobacktext">
+              {' '}
+              TERUG NAAR &apos;BLOGPOSTS&apos;
+            </span>
           </Link>
         </button>
         <br />

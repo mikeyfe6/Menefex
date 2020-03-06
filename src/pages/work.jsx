@@ -34,7 +34,7 @@ const workPage = () => {
               </h2>
               <br />
 
-              <p data-wow-delay="1.2s">
+              <p className="page-sub">
                 <b>
                   Wij zijn trots op ons werk en showcasen dat ook graag! Neem
                   een kijk in ons archief van recente projecten:
@@ -65,16 +65,17 @@ const workPage = () => {
                 <u>Eternity Percussion</u>
                 <br />
                 <br />
+                Eternity Percussion/Drum is een culturele instelling die
+                bijdrage levert aan talentontwikkeling, cultuurparticipatie en
+                visieverbreding van jongeren. Door middel van ondere andere
+                muziekeducatie en inzet van jongeren in eigen organisatie biedt
+                Eternity jongeren de gelegenheid om cultureel te ondernemen en
+                participeren binnen de Nederlandse samenleving.
+                <br />
+                <br />
                 <b>
-                  Eternity Percussion/Drum is een culturele instelling die
-                  bijdrage levert aan talentontwikkeling, cultuurparticipatie en
-                  visieverbreding van jongeren. Door middel van ondere andere
-                  muziekeducatie en inzet van jongeren in eigen organisatie
-                  biedt Eternity jongeren de gelegenheid om cultureel te
-                  ondernemen en participeren binnen de Nederlandse samenleving.
-                  <br />
-                  <br />* Deze website is gebouwd met oog naar snelheid,
-                  overzicht en duidelijkheid.
+                  * Deze website is gebouwd met oog naar snelheid, overzicht en
+                  duidelijkheid.
                 </b>
                 <br />
                 <br />
@@ -127,15 +128,16 @@ const workPage = () => {
                 <u>Black Harmony</u>
                 <br />
                 <br />
+                Black Harmony is een populaire en getalenteerde zanggroep uit
+                Amsterdam. Deze muziekorganisatie wilt een bijdrage leveren aan
+                de positionering van de traditionele muziek genaamd Apinti
+                Kawina. Black harmony wilt fungeren als ambassadeur als het gaat
+                om traditionele Afro-Surinaamse muziek.
+                <br />
+                <br />
                 <b>
-                  Black Harmony is een populaire en getalenteerde zanggroep uit
-                  Amsterdam. Deze muziekorganisatie wilt een bijdrage leveren
-                  aan de positionering van de traditionele muziek genaamd Apinti
-                  Kawina. Black harmony wilt fungeren als ambassadeur als het
-                  gaat om traditionele Afro-Surinaamse muziek.
-                  <br />
-                  <br />* Deze website bevat informatie, media en interactieve
-                  social media toepassingen.
+                  * Deze website bevat informatie, media en interactieve social
+                  media toepassingen.
                 </b>
                 <br />
                 <br />

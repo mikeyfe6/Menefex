@@ -52,7 +52,7 @@ const BlogPage = () => {
             Blog<span className="headdots">.</span>
           </h2>
           <br />
-          <p>What comes through our mind?</p>
+          <p className="page-sub">What comes through our mind..</p>
           <ol className={blogDesign.posts}>
             {data.allContentfulBlogPost.edges.map((edge) => {
               return (

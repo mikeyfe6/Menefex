@@ -16,8 +16,10 @@ const ThankYouPage = () => (
       <div className="whitespace" />
       <hr />
       <br />
-      <h2>Bedankt voor u bericht.</h2>
-      <p>Wij nemen zo spoeding mogelijk contact met u op!</p>
+      <h2 className="page-title">Bedankt voor u bericht.</h2>
+      <p className="page-sub">
+        Wij nemen zo spoeding mogelijk contact met u op!
+      </p>
       <br />
       <Link to="/">Ga terug naar de hoofdpagina!</Link>
     </div>

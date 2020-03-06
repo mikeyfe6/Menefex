@@ -42,6 +42,10 @@ a {
   font-family: $head-font;
 }
 
+.page-sub {
+  letter-spacing: -0.2px;
+}
+
 progress[value] {
   -webkit-appearance: none;
   appearance: none;

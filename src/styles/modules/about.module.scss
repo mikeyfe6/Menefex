@@ -10,17 +10,16 @@
 }
 
 .about-text {
-  font-size: 1em;
   font-family: $extra-font;
-  font-weight: 500;
+  @include fontslg;
 }
 
 @media (max-width: 768px) {
   .overtitle {
-    font-size: 1.3em;
+    font-size: 1.25em;
   }
 
   .about-text {
-    font-size: 0.8em;
+    @include fontsmb;
   }
 }

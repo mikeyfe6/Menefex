@@ -36,12 +36,10 @@
   }
 
   .quote-text {
+    @include fontslg;
     margin-top: 15%;
     font-family: $extra-font;
     line-height: 1.7em;
-    letter-spacing: 0.02em;
-    font-size: 0.9em;
-    font-weight: 500;
   }
 
   .thick {
@@ -69,7 +67,7 @@
   }
 
   .quote-text {
-    font-size: 0.75em !important;
+    @include fontsmb;
   }
 }
 

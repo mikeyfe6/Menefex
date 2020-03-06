@@ -9,8 +9,9 @@
   box-shadow: 1px 3px 7px rgba(209, 209, 209, 0.767);
   border: 1px solid $fourth-color;
   border-radius: 2.5px;
-  padding: 25px 50px 50px 50px;
+  padding: 50px;
   width: 65%;
+  margin: 10px 0px;
 }
 
 // .rcpth {
@@ -40,7 +41,7 @@
 
   .choosing {
     display: block;
-    font-size: 0.9em;
+    font-size: 0.75em;
     font-family: $spec-font;
     // font-weight: 100 !important;
     color: grey !important;
@@ -85,7 +86,7 @@
     font-family: $spec-font;
     margin-top: 2%;
     letter-spacing: 1px;
-    font-size: 1em;
+    font-size: 0.85em;
   }
 
   input,
@@ -99,7 +100,7 @@
     font-weight: bolder;
     color: $primary-color;
     font-family: $para-font;
-    font-size: 0.95em;
+    font-size: 0.9em;
     padding-left: 10px;
   }
 
@@ -127,7 +128,7 @@ textarea:focus {
   color: $primary-color;
   background-color: $fourth-color;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 12.5px;
   letter-spacing: 2px;
   border: 0.5px solid $fifth-color;
   border-radius: 5px;
@@ -144,7 +145,7 @@ textarea:focus {
   .formwrapper {
     width: 97% !important;
     margin: 0 auto;
-    padding: 10px 15px 25px 15px;
+    padding: 25px;
   }
 
   .choosing {
