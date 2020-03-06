@@ -42,7 +42,6 @@ const ContactPage = () => {
             </ScrollAnimation>
           </div>
         </div>
-        =
         <br />
         <Form />
         <br />
