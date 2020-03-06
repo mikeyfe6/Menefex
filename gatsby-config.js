@@ -11,8 +11,8 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://www.gimmix.nl`,
-    url: 'https://www.gimmix.nl',
+    siteUrl: `https://gimmix.nl`,
+    url: 'https://gimmix.nl',
     image: '/static/Gimmix-logo.png',
     title: 'Gimmix',
     titleTemplate: '%s · Gimmix',
@@ -50,7 +50,7 @@ module.exports = {
         // dataLayerName: "YOUR_DATA_LAYER_NAME",
       },
     },
-    `gatsby-plugin-sitemap`,
+    'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-plugin-eslint',
       options: {
@@ -66,22 +66,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://www.gimmix.nl`,
-      },
-    },
-    `gatsby-plugin-catch-links`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Gimmix`,
-        short_name: `Gimmix`,
-        description: `Websites bouwen met gevoel voor detail`,
-        start_url: `/`,
-        background_color: `#a9a9a9`,
-        lang: `nl`,
-        theme_color: `#f0c410`,
-        display: `standalone`,
-        icon: 'src/img/Gimmix-applogo.png',
+        siteUrl: `https://gimmix.nl`,
       },
     },
     {
@@ -133,9 +118,29 @@ module.exports = {
         showSpinner: true,
       },
     },
-    `gatsby-plugin-netlify`,
-    `gatsby-plugin-robots-txt`,
-    'gatsby-plugin-react-helmet',
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
+    },
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-catch-links`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Gimmix`,
+        short_name: `Gimmix`,
+        description: `Websites bouwen met gevoel voor detail`,
+        start_url: `/`,
+        background_color: `#a9a9a9`,
+        lang: `nl`,
+        theme_color: `#f0c410`,
+        display: `standalone`,
+        icon: 'src/img/Gimmix-applogo.png',
+      },
+    },
     'gatsby-plugin-offline',
+    `gatsby-plugin-netlify`,
   ],
 };
