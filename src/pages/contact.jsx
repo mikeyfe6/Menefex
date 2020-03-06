@@ -27,24 +27,22 @@ const ContactPage = () => {
         <h2 className="page-title">
           Contact<span className="headdots">.</span>
         </h2>
-        <div className="hero-content">
-          <div className="row">
-            <div className="col-lg-8">
-              <br />
-              <ScrollAnimation animateIn="fadeInUp" delay={1000}>
-                <h3 className={contactDesign.contacttitle}>Zeg 'ns hallo 👋🏾</h3>
-              </ScrollAnimation>
+        <div className="row">
+          <div className="col-lg-8">
+            <br />
+            <ScrollAnimation animateIn="fadeInUp" delay={1000}>
+              <h3 className={contactDesign.contacttitle}>Zeg 'ns hallo 👋🏾</h3>
+            </ScrollAnimation>
 
-              <ScrollAnimation animateIn="fadeInUp" delay={1200}>
-                <p className="page-sub">
-                  Vraag, opmerking, samenwerking? Aarzel niet een bericht achter
-                  te laten. Wij zorgen dan zo spoedig contact met u op te nemen.
-                </p>
-              </ScrollAnimation>
-            </div>
+            <ScrollAnimation animateIn="fadeInUp" delay={1200}>
+              <p className="page-sub">
+                Vraag, opmerking, samenwerking? Aarzel niet een bericht achter
+                te laten. Wij zorgen dan zo spoedig contact met u op te nemen.
+              </p>
+            </ScrollAnimation>
           </div>
         </div>
-
+        =
         <br />
         <Form />
         <br />

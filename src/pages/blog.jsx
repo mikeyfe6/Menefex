@@ -46,40 +46,39 @@ const BlogPage = () => {
       />
 
       <div className="container">
-        <div className="hero-content">
-          <div className="whitespace" />
-          <h2 className="page-title">
-            Blog<span className="headdots">.</span>
-          </h2>
-          <br />
-          <p className="page-sub">What comes through our mind..</p>
-          <ol className={blogDesign.posts}>
-            {data.allContentfulBlogPost.edges.map((edge) => {
-              return (
-                <li className={blogDesign.post}>
-                  <Link to={`/blog/${edge.node.slug}/`}>
-                    <img
-                      src={edge.node.image.file.url}
-                      alt={edge.node.image.title}
-                      className={blogDesign.blogimg}
-                    />
-                    <h4>{edge.node.title}</h4>
-                    <p className={blogDesign.bloggepost}>
-                      {' '}
-                      * Gepost op <strong>{edge.node.publishedDate}</strong>,
-                      door <strong>{edge.node.author}</strong>{' '}
-                    </p>
+        <div className="whitespace" />
+        <h2 className="page-title">
+          Blog<span className="headdots">.</span>
+        </h2>
+        <br />
+        <p className="page-sub">What comes through our mind..</p>
+        <ol className={blogDesign.posts}>
+          {data.allContentfulBlogPost.edges.map((edge) => {
+            return (
+              <li className={blogDesign.post}>
+                <Link to={`/blog/${edge.node.slug}/`}>
+                  <img
+                    src={edge.node.image.file.url}
+                    alt={edge.node.image.title}
+                    className={blogDesign.blogimg}
+                  />
+                  <h4>{edge.node.title}</h4>
+                  <p className={blogDesign.bloggepost}>
+                    {' '}
+                    * Gepost op <strong>{edge.node.publishedDate}</strong>, door{' '}
+                    <strong>{edge.node.author}</strong>{' '}
+                  </p>
 
-                    <span className={blogDesign.contsubtext}>
-                      {' '}
-                      {edge.node.subtitle}
-                    </span>
-                  </Link>
-                </li>
-              );
-            })}
-          </ol>
-        </div>
+                  <span className={blogDesign.contsubtext}>
+                    {' '}
+                    {edge.node.subtitle}
+                  </span>
+                </Link>
+              </li>
+            );
+          })}
+        </ol>
+
         <div className="whitespace" />
       </div>
     </Layout>

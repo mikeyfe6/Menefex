@@ -24,23 +24,20 @@ const workPage = () => {
       />
 
       <div className="container">
-        <div className="hero-content">
-          <div className="whitespace" />
+        <div className="whitespace" />
+        <div className="row">
+          <div className="col-lg-12">
+            <h2 className="page-title" data-wow-delay="1s">
+              Recente Projecten<span className="headdots">.</span>
+            </h2>
+            <br />
 
-          <div className="row">
-            <div className="col-lg-12">
-              <h2 className="page-title" data-wow-delay="1s">
-                Recente Projecten<span className="headdots">.</span>
-              </h2>
-              <br />
-
-              <p className="page-sub">
-                <b>
-                  Wij zijn trots op ons werk en showcasen dat ook graag! Neem
-                  een kijk in ons archief van recente projecten:
-                </b>
-              </p>
-            </div>
+            <p className="page-sub">
+              <b>
+                Wij zijn trots op ons werk en showcasen dat ook graag! Neem een
+                kijk in ons archief van recente projecten:
+              </b>
+            </p>
           </div>
         </div>
         <br />
@@ -62,7 +59,9 @@ const workPage = () => {
             <div className={workDesign.projectInfo}>
               <p className={workDesign.projectText}>
                 <span>Client:</span>
-                <u>Eternity Percussion</u>
+                <u>
+                  <b>Eternity Percussion</b>
+                </u>
                 <br />
                 <br />
                 Eternity Percussion/Drum is een culturele instelling die
@@ -125,7 +124,9 @@ const workPage = () => {
             <div className={workDesign.projectInfo}>
               <p className={workDesign.projectText}>
                 <span>Client:</span>
-                <u>Black Harmony</u>
+                <u>
+                  <b>Black Harmony</b>
+                </u>
                 <br />
                 <br />
                 Black Harmony is een populaire en getalenteerde zanggroep uit

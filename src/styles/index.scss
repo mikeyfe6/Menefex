@@ -33,18 +33,15 @@ a {
   }
 }
 
-.hero-content p {
-  font-family: $extra-font;
-  font-size: 0.95em;
-  font-weight: 700;
-}
-
 .page-title {
   font-family: $head-font;
 }
 
 .page-sub {
+  font-family: $extra-font;
+  font-weight: 500;
   letter-spacing: -0.2px;
+  font-size: 0.9em;
 }
 
 progress[value] {
@@ -88,7 +85,8 @@ span.speccol {
   .hometitles {
     font-size: 2em;
   }
-  .hero-content p {
-    font-size: 0.8em;
+
+  .page-sub {
+    font-size: 0.85em;
   }
 }
