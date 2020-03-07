@@ -4,45 +4,13 @@
 @import './customs/functions';
 @import './customs/resets';
 
-.disqussion {
-  width: 95%;
-  margin: 0 auto;
-}
-
-.post-title {
-  font-family: $head-font;
-  font-size: 2em;
-}
-
-.post-subtitle {
-  font-family: $spec-font;
-  margin-left: 5%;
-  margin-top: 7%;
-  font-weight: bold;
-  font-size: 2em;
-}
-
-.nexttologo {
-  display: inline-block;
-  margin-top: 2%;
-}
-
-.post-date {
-  color: $secondary-color;
-  font-style: italic;
-  margin-left: 1%;
-  white-space: nowrap;
-}
-
-.post-content {
-  margin: 2.5% 5% 0;
-  font-family: $extra-font !important;
-  opacity: 0.9;
+.gobacktext {
+  font-size: 0.9em;
 }
 
 .gobackbtn {
   text-transform: uppercase;
-  padding: 12.5px 20px;
+  padding: 12.5px 15px;
   background: transparent;
   color: $primary-color;
   background-color: $fourth-color;
@@ -51,7 +19,7 @@
   letter-spacing: 1px;
   border: 0.5px solid $fifth-color;
   border-radius: 5px;
-  margin-right: 1.5%;
+  margin-bottom: 3%;
 
   &:hover {
     color: $link-color;
@@ -60,13 +28,68 @@
   }
 }
 
+.postcenterit {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.blog-mini {
+  height: 80px;
+  margin-left: 1%;
+  margin-right: 3%;
+  float: left;
+  display: block;
+}
+
+.nexttologo {
+  display: inline-block;
+  margin-top: 1.5%;
+  margin-bottom: 22.5px;
+}
+
+.thick {
+  margin: 0;
+  width: 100%;
+  border-radius: 25px;
+  border: 2.5px solid $spec-color;
+}
+
+.thin {
+  border: 10px solid $fourth-color;
+  width: 25%;
+  border-radius: 3px;
+  margin: 0;
+}
+
+.post-title {
+  font-family: $extra-font;
+  font-size: 1.35em;
+}
+
+.post-subtitle {
+  font-family: $spec-font;
+  margin-top: 7.5%;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.post-date {
+  color: $secondary-color;
+  font-style: italic;
+  margin-left: 1%;
+  white-space: nowrap;
+  font-size: 0.75em;
+}
+
+.post-content {
+  font-family: $extra-font !important;
+  opacity: 0.9;
+}
+
 .goback {
   color: $link-color;
   font-weight: bold;
   margin-bottom: 100px;
-}
-
-.gobacktext {
 }
 
 .gobackextra {
@@ -75,31 +98,36 @@
   text-align: right;
 }
 
-.blog-mini {
-  height: 100px;
-  margin-left: 4%;
-  margin-right: 3%;
-  float: left;
-  display: block;
-}
-
 .img-resize {
   padding: 2.5% 0 2.5%;
   margin: 10px 0px;
   width: 75%;
 }
 
+.disqussion {
+  width: 90%;
+  // margin: 0 auto;
+}
+
 @media (max-width: 768px) {
+  .blog-mini {
+    height: 60px !important;
+  }
   .nexttologo {
-    margin-top: 3.5%;
+    margin-top: 1%;
+  }
+
+  .postcenterit {
+    width: 100%;
+  }
+
+  .post-content {
+    opacity: 0.9;
+    font-size: 0.8em;
   }
 
   .excerpt {
     margin-bottom: 5%;
-  }
-
-  .blog-mini {
-    height: 75px !important;
   }
 
   .post-title {
@@ -114,15 +142,12 @@
 
   .post-date {
     color: $secondary-color;
-    // padding-left: 12.5% !important;
     font-style: italic;
-    font-size: 0.7em;
+    font-size: 0.55em;
   }
 
-  .post-content {
-    // color: blue;
-    margin: 2.5% 5% 0;
-    opacity: 0.9;
-    font-size: 0.8em;
+  .disqussion {
+    width: 100%;
+    // margin: 0 auto;
   }
 }

@@ -67,32 +67,37 @@ const Blog = (props) => {
             </span>
           </Link>
         </button>
+
+        <hr className="thick" />
         <br />
-        <br />
-        <hr />
-        <br />
-        <img className="blog-mini" src={mini} alt="Gimmix Mini Logo" />
-        <div className="nexttologo">
-          <h1 className="post-title">
-            | {props.data.contentfulBlogPost.title}
-          </h1>
-          <p className="post-date">
-            Gepost op {props.data.contentfulBlogPost.publishedDate}
+        <div className="postcenterit">
+          <img className="blog-mini" src={mini} alt="Gimmix Mini Logo" />
+          <div className="nexttologo">
+            <h1 className="post-title">
+              <b>| {props.data.contentfulBlogPost.title}</b>
+            </h1>
+            <p className="post-date">
+              Gepost op {props.data.contentfulBlogPost.publishedDate}
+            </p>
+          </div>
+          <div className="clr" />
+
+          <hr className="thin" />
+
+          <h5 className="post-subtitle">
+            * {props.data.contentfulBlogPost.subtitle}
+          </h5>
+
+          <p className="post-content">
+            {documentToReactComponents(
+              props.data.contentfulBlogPost.body.json,
+              options,
+            )}
           </p>
-        </div>
-        <div className="clr" />
-        <h5 className="post-subtitle">
-          * {props.data.contentfulBlogPost.subtitle}
-        </h5>
-        <p className="post-content">
-          {documentToReactComponents(
-            props.data.contentfulBlogPost.body.json,
-            options,
-          )}
-        </p>
-        <div className="whitespace" />
-        <div className="disqussion">
-          <DiscussionEmbed {...disqusConfig} />
+          <div className="whitespace" />
+          <div className="disqussion">
+            <DiscussionEmbed {...disqusConfig} />
+          </div>
         </div>
       </div>
       <div className="whitespace" />
