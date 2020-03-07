@@ -22,7 +22,7 @@ export const query = graphql`
   query($slug: String!) {
     contentfulBlogPost(slug: { eq: $slug }) {
       title
-      slug
+      id
       subtitle
       publishedDate(formatString: "dddd D MMMM YYYY, H:m", locale: "nl")
       body {
@@ -48,7 +48,7 @@ const Blog = (props) => {
   const disqusConfig = {
     shortname: process.env.GATSBY_DISQUS_NAME,
     config: {
-      identifier: props.data.contentfulBlogPost.slug,
+      identifier: props.data.contentfulBlogPost.id,
       title: props.data.contentfulBlogPost.title,
     },
   };
