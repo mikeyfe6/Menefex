@@ -46,7 +46,7 @@ const Blog = (props) => {
   };
 
   const disqusConfig = {
-    shortname: process.env.GATSBY_DISQUS_NAME,
+    shortname: 'gimmix',
     config: {
       identifier: props.data.contentfulBlogPost.id,
       title: props.data.contentfulBlogPost.title,
