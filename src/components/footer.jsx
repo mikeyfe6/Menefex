@@ -26,13 +26,15 @@ const Footer = () => {
         <div className={footerStyles.collab}>
           <div className="row">
             <div className="col-lg-12">
-              <p className={footerStyles.sayin}>
-                <i>
-                  &quot;to live a creative life, we must lose our fear of being
-                  wrong&quot;
-                </i>{' '}
-                - <b>Joseph Chilton Pearce</b>
-              </p>
+              <blockquote>
+                <p className={footerStyles.sayin}>
+                  <i>
+                    &quot;to live a creative life, we must lose our fear of
+                    being wrong&quot;
+                  </i>{' '}
+                  - <b>Joseph Chilton Pearce</b>
+                </p>
+              </blockquote>
             </div>
           </div>
         </div>

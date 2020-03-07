@@ -4,6 +4,11 @@
 @import './customs/functions';
 @import './customs/resets';
 
+.disqussion {
+  width: 95%;
+  margin: 0 auto;
+}
+
 .post-title {
   font-family: $head-font;
   font-size: 2em;

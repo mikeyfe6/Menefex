@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable react/prop-types */
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable react/display-name */
@@ -5,6 +6,7 @@
 import React from 'react';
 import { graphql, Link } from 'gatsby';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import { DiscussionEmbed } from 'disqus-react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -20,6 +22,7 @@ export const query = graphql`
   query($slug: String!) {
     contentfulBlogPost(slug: { eq: $slug }) {
       title
+      slug
       subtitle
       publishedDate(formatString: "dddd D MMMM YYYY, H:m", locale: "nl")
       body {
@@ -39,6 +42,14 @@ const Blog = (props) => {
         const url = node.data.target.fields.file['en-US'].url;
         return <img alt={alt} src={url} className="img-resize" />;
       },
+    },
+  };
+
+  const disqusConfig = {
+    shortname: process.env.GATSBY_DISQUS_NAME,
+    config: {
+      identifier: props.data.contentfulBlogPost.slug,
+      title: props.data.contentfulBlogPost.title,
     },
   };
 
@@ -79,7 +90,12 @@ const Blog = (props) => {
             options,
           )}
         </p>
+        <div className="whitespace" />
+        <div className="disqussion">
+          <DiscussionEmbed {...disqusConfig} />
+        </div>
       </div>
+      <div className="whitespace" />
       <div className="whitespace" />
     </Layout>
   );
