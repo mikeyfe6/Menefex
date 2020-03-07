@@ -55,7 +55,7 @@
 }
 
 .thin {
-  border: 10px solid $fourth-color;
+  border: 7.5px solid $fourth-color;
   width: 25%;
   border-radius: 3px;
   margin: 0;
@@ -110,6 +110,10 @@
 }
 
 @media (max-width: 768px) {
+  .gobackbtn {
+    margin-bottom: 7.5%;
+  }
+
   .blog-mini {
     height: 60px !important;
   }
