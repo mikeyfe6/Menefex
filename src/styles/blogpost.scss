@@ -110,6 +110,10 @@
 }
 
 @media (max-width: 768px) {
+  .gobacktext {
+    font-size: 0.8em;
+  }
+
   .gobackbtn {
     margin-bottom: 7.5%;
   }
@@ -140,7 +144,7 @@
   }
 
   .post-subtitle {
-    margin-top: 10%;
+    margin-top: 12.5%;
     font-size: 1.5em;
   }
 
