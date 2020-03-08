@@ -45,6 +45,7 @@
   display: inline-block;
   margin-top: 1.5%;
   margin-bottom: 22.5px;
+  width: 75%;
 }
 
 .thick {
@@ -69,8 +70,10 @@
 .post-subtitle {
   font-family: $spec-font;
   margin-top: 7.5%;
+  margin-bottom: 3.5%;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 1.7em;
+  padding-left: 5px;
 }
 
 .post-date {
@@ -84,6 +87,9 @@
 .post-content {
   font-family: $extra-font !important;
   opacity: 0.9;
+  width: 80%;
+  padding-left: 5px;
+  font-size: 0.9em;
 }
 
 .goback {
@@ -99,13 +105,15 @@
 }
 
 .img-resize {
-  padding: 2.5% 0 2.5%;
-  margin: 10px 0px;
+  margin-left: 2%;
+  margin-top: 7.5%;
+  margin-bottom: 7.5%;
+  border-radius: 15px;
   width: 75%;
 }
 
 .disqussion {
-  width: 90%;
+  width: 85%;
   // margin: 0 auto;
 }
 
@@ -132,6 +140,7 @@
   .post-content {
     opacity: 0.9;
     font-size: 0.8em;
+    width: 97%;
   }
 
   .excerpt {
@@ -139,13 +148,13 @@
   }
 
   .post-title {
-    font-size: 1.1em;
+    font-size: 1em;
     // padding-left: 2% !important;
   }
 
   .post-subtitle {
     margin-top: 12.5%;
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
 
   .post-date {
