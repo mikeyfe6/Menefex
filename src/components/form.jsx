@@ -72,6 +72,7 @@ const Form = () => {
                   >
                     <option value="samenwerking">Samenwerking</option>
                     <option value="opmerking">Vraag / Opmerking</option>
+                    <option value="feedback">Klacht / Feedback</option>
                     <option value="hulp">Hulp & Probleemoplossing</option>
                   </select>
                 </div>
