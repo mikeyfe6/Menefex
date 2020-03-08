@@ -148,7 +148,7 @@ const Footer = () => {
           </div>
         </div>
         <p className={footerStyles.termscods}>
-          Gimmix WMB. 2020 &copy; <span className="speccol">|</span>
+          <u>Gimmix</u> w.m.b. 2020 &copy; <span className="speccol">|</span>
           <Link to="/privacy-policy/"> privacy policy</Link>{' '}
           <span className="speccol">|</span>{' '}
           <Link to="/terms-conditions/"> terms & conditions</Link>{' '}
