@@ -1,9 +1,27 @@
+/* eslint-disable prefer-template */
+/* eslint-disable no-use-before-define */
+/* eslint-disable no-var */
+/* eslint-disable vars-on-top */
+/* eslint-disable one-var */
+/* eslint-disable semi */
+/* eslint-disable no-unused-expressions */
+
 import React from 'react';
 import { Link } from 'gatsby';
 
 import SEO from '../components/seo';
 
 import Layout from '../components/layout';
+
+// eslint-disable-next-line prefer-template
+function gaOptout() {
+  (document.cookie =
+    disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC;path=/'),
+    (window[disableStr] = !0);
+}
+var gaProperty = 'UA-XXXXXXXX-X',
+  disableStr = 'ga-disable-' + gaProperty;
+document.cookie.indexOf(disableStr + '=true') > -1 && (window[disableStr] = !0);
 
 const PrivacyPolicy = () => (
   <Layout>
@@ -39,7 +57,8 @@ const PrivacyPolicy = () => (
         Met het voortzetten van het bezoek van deze website accepteert u de
         volgende gebruikersvoorwaarden. U accepteert het gebruik van cookies en
         andere tracking systems. Indien u dit gebruik wenst te weigeren dient u
-        op de volgende link te klikken "javascript:gaOptout();".
+        op de volgende link te klikken{' '}
+        <a href={gaOptout()}>Google Analytics uitschakelen</a>
       </p>
       <p>
         De huidige op de website beschikbare versie van de privacy policy is de
