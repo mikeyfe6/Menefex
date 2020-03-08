@@ -24,6 +24,13 @@ export const query = graphql`
       title
       id
       subtitle
+      slug
+      keywords
+      image {
+        fluid {
+          src
+        }
+      }
       publishedDate(formatString: "dddd D MMMM YYYY, H:m", locale: "nl")
       body {
         json
@@ -57,7 +64,12 @@ const Blog = (props) => {
     <Layout>
       <div className="whitespace" />
       <div className="container">
-        <SEO title={props.data.contentfulBlogPost.title} />
+        <SEO
+          title={props.data.contentfulBlogPost.title}
+          description={props.data.contentfulBlogPost.subtitle}
+          keywords={props.data.contentfulBlogPost.keywords}
+          pathname={`/${props.data.contentfulBlogPost.slug}/`}
+        />
         <button type="button" className="gobackbtn">
           <Link to="/blog/" className="goback">
             <FontAwesomeIcon icon="backward" />{' '}
