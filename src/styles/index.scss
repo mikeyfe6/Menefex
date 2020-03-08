@@ -11,6 +11,11 @@
   outline: none;
 }
 
+.termscondit,
+.privacypol {
+  font-size: 0.8em;
+}
+
 html {
   scroll-behavior: smooth;
   overflow-y: scroll;
@@ -88,5 +93,9 @@ span.speccol {
 
   .page-sub {
     font-size: 0.85em;
+  }
+
+  .page-title {
+    font-size: 2em;
   }
 }

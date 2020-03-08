@@ -1,4 +1,6 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
+import { Link } from 'gatsby';
 // import { graphql, useStaticQuery } from 'gatsby';
 
 import footerStyles from '../styles/modules/footer.module.scss';
@@ -146,11 +148,15 @@ const Footer = () => {
           </div>
         </div>
         <p className={footerStyles.termscods}>
-          terms & conditions <span className="speccol">|</span> Gimmix WMB. 2020
-          &copy; <span className="speccol">|</span> all rights reserved
+          Gimmix WMB. 2020 &copy; <span className="speccol">|</span>
+          <Link to="/privacy-policy/"> privacy policy</Link>{' '}
+          <span className="speccol">|</span>{' '}
+          <Link to="/terms-conditions/"> terms & conditions</Link>{' '}
+          <span className="speccol">|</span> all rights reserved
           <br />
-          KvK <span className="speccol">#</span> 76045315 | BTW{' '}
-          <span className="speccol">#</span> NL003040579B17
+          KvK <span className="speccol">#</span> 76045315 | Btw{' '}
+          <span className="speccol">#</span> NL 003040579B17 | Bank{' '}
+          <span className="speccol">#</span> NL10 BUNQ 2038 8619 94
         </p>
       </div>
     </footer>
