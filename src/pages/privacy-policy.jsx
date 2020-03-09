@@ -18,7 +18,7 @@ const PrivacyPolicy = () => (
       <div className="whitespace" />
       <hr />
       <br />
-      <h2 className="page-title">PRIVACY VERKLARING</h2> 
+      <h2 className="page-title">PRIVACYBELEID - Gimmix</h2> 
       <p>
         Gimmix respecteert de privacy van de bezoekers van haar website, in het
         bijzonder de rechten van bezoekers met betrekking tot de

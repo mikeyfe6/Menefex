@@ -150,10 +150,10 @@ const Footer = () => {
         <p className={footerStyles.termscods}>
           <span className="speccol">&copy;</span> 2020, <u>Gimmix</u>{' '}
           <span className="speccol">|</span>
-          <Link to="/privacy-policy/"> privacy policy</Link>{' '}
+          <Link to="/privacy-policy/"> privacybeleid</Link>{' '}
           <span className="speccol">|</span>{' '}
-          <Link to="/terms-conditions/"> terms & conditions</Link>{' '}
-          <span className="speccol">|</span> all rights reserved
+          <Link to="/terms-conditions/"> algemene voorwaarden</Link>{' '}
+          <span className="speccol">|</span> alle rechten voorbehouden.
           <br />
           KvK <span className="speccol">#</span> 76045315 | Btw{' '}
           <span className="speccol">#</span> NL 003040579B17 | Bank{' '}
