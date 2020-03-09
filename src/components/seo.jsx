@@ -86,7 +86,6 @@ const SEO = ({
             <meta property="og:locale" content="nl_NL" />
             <meta property="og:image:width" content="512" />
             {/* <meta property="og:image:height" content="512" /> */}
-            <meta property="og:locale" content="nl_NL" />
             <meta name="twitter:card" content="summary_large_image" />
 
             {twitterUsername && (
