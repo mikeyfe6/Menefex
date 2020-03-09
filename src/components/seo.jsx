@@ -61,12 +61,17 @@ const SEO = ({
             title={seo.title}
             titleTemplate={titleTemplate}
           >
+            <meta
+              name="viewport"
+              content="width=device-width,initial-scale=1,shrink-to-fit=no,viewport-fit=cover"
+            />
+
             <meta name="description" content={seo.description} />
             <meta name="image" content={seo.image} />
             <meta name="keywords" content={seo.keywords} />
 
             {seo.url && <meta property="og:url" content={seo.url} />}
-            {seo.url && <meta property="twitter:url" content={seo.url} />}
+            {/* {seo.url && <meta property="twitter:site" content={seo.url} />} */}
 
             {(article ? (
               false
@@ -86,7 +91,9 @@ const SEO = ({
             <meta property="og:locale" content="nl_NL" />
             <meta property="og:image:width" content="512" />
             {/* <meta property="og:image:height" content="512" /> */}
+
             <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:site" content={twitterUsername} />
 
             {twitterUsername && (
               <meta name="twitter:creator" content={twitterUsername} />
