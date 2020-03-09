@@ -259,7 +259,8 @@ const TermsConditions = () => (
         aangegaan, bevat deze voor Gimmix enkel inspanningsverplichtingen, geen
         resultaatsverplichtingen.
       </p>
-       <h5>Uitvoering van de overeenkomst </h5>
+      <br />
+      <h5>Uitvoering van de overeenkomst </h5>
       <ol>
         <li>
           Gimmix voert de overeenkomst naar beste inzicht en vermogen en

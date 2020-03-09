@@ -20,7 +20,7 @@ const IndexPage = () => {
       <SEO
         title="Home"
         description="Website of Webapp? Webmediabedrijf Gimmix uit Amsterdam staat garant voor al uw webgerelateerde wensen en ambities."
-        keywords="website, webapp, app, webapplicatie, projecten, portfolio, wordpress, react, gatsby, javascript, freelance, zzp, elementor, michael fransman, amsterdam, zuidoost, portfolio, web developer, ondernemer, entrepeneur, mikey, mikeyfe, mikeyfe6, webmedia, gimmix"
+        keywords="website laten maken, webapp, apps, webapplicatie, projecten, portfolio, wordpress website, reactjs, gatsby, javascript, freelance, zzp, elementor, michael fransman, amsterdam, amsterdam zuidoost, web developer, ondernemer, entrepeneur, mikey, mikeyfe, mikeyfe6, webmediabedrijf, gimmix"
       />
 
       <Hero />

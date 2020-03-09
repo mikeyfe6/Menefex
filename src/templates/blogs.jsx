@@ -27,8 +27,8 @@ export const query = graphql`
       slug
       keywords
       image {
-        fluid {
-          src
+        file {
+          url
         }
       }
       publishedDate(formatString: "dddd D MMMM YYYY, H:m", locale: "nl")
@@ -69,6 +69,8 @@ const Blog = (props) => {
           description={props.data.contentfulBlogPost.subtitle}
           keywords={props.data.contentfulBlogPost.keywords}
           pathname={`/${props.data.contentfulBlogPost.slug}/`}
+          custom={`https:${props.data.contentfulBlogPost.image.file.url}`}
+          article
         />
         <button type="button" className="gobackbtn">
           <Link to="/blog/" className="goback">

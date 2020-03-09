@@ -13,7 +13,7 @@ module.exports = {
   siteMetadata: {
     siteUrl: `https://gimmix.nl`,
     url: 'https://gimmix.nl',
-    image: '/src/img/Gimmix-logo.png',
+    image: '/Gimmix-logo.png',
     title: 'Gimmix',
     titleTemplate: '%s · Gimmix',
     author: 'Michael Fransman',

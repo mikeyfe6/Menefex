@@ -26,6 +26,7 @@ const SEO = ({
   article,
   lang,
   keywords,
+  custom,
 }) => (
   <StaticQuery
     query={query}
@@ -44,9 +45,12 @@ const SEO = ({
       const seo = {
         title: title || defaultTitle,
         description: description || defaultDescription,
-        image: `${siteUrl}${image || defaultImage}`,
+        custom: custom,
+        image: custom || `${siteUrl}${image || defaultImage}`,
         url: `${siteUrl}${pathname || '/'}`,
-        keywords: keywords || `webmediabedrijf, gimmix, amsterdam`,
+        keywords:
+          keywords ||
+          `webmediabedrijf, gimmix, amsterdam, website laten maken, wordpress, reactjs`,
       };
       return (
         <>
@@ -62,22 +66,36 @@ const SEO = ({
             <meta name="keywords" content={seo.keywords} />
 
             {seo.url && <meta property="og:url" content={seo.url} />}
-            {(article ? true : null) && (
+            {seo.url && <meta property="twitter:url" content={seo.url} />}
+
+            {(article ? (
+              false
+            ) : (
               <meta property="og:type" content="website" />
-            )}
+            )) || <meta property="og:type" content="article" />}
+
             {seo.title && <meta property="og:title" content={seo.title} />}
+
             {seo.description && (
               <meta property="og:description" content={seo.description} />
             )}
+
             {seo.image && <meta property="og:image" content={seo.image} />}
+
+            <meta property="og:site_name" content="Gimmix" />
+            <meta property="og:locale" content="nl_NL" />
             <meta name="twitter:card" content="summary_large_image" />
+
             {twitterUsername && (
               <meta name="twitter:creator" content={twitterUsername} />
             )}
+
             {seo.title && <meta name="twitter:title" content={seo.title} />}
+
             {seo.description && (
               <meta name="twitter:description" content={seo.description} />
             )}
+
             {seo.image && <meta name="twitter:image" content={seo.image} />}
 
             {/* Scripts: Extentions & Plugins */}
@@ -139,6 +157,7 @@ SEO.propTypes = {
   pathname: PropTypes.string,
   article: PropTypes.bool,
   keywords: PropTypes.string,
+  custom: PropTypes.string,
 };
 SEO.defaultProps = {
   lang: `nl`,
@@ -146,6 +165,7 @@ SEO.defaultProps = {
   description: null,
   image: null,
   pathname: null,
+  custom: null,
   keywords: null,
-  article: true,
+  article: false,
 };
