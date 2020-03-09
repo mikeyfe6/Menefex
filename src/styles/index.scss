@@ -20,6 +20,27 @@ html {
   scroll-behavior: smooth;
   overflow-y: scroll;
   overflow-x: hidden;
+  width: 100%;
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: $third-color;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $secondary-color;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #f8e491;
+  }
 }
 
 body {
