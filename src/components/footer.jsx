@@ -110,7 +110,7 @@ const Footer = () => {
                   data-wow-delay="1.0s"
                 >
                   <a
-                    href="https://www.linkedin.com/in/michaelfransman"
+                    href="https://www.linkedin.com/company/gimmixwmb/"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
