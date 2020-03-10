@@ -32,7 +32,11 @@ const PrivacyPolicy = () => (
         Voor alle aanvullende informatie over de bescherming van
         persoonsgegevens kunt u terecht op de website van de Autoriteit
         persoonsgegevens: 
-        <a href="https://autoriteitpersoonsgegevens.nl/nl">
+        <a
+          href="https://autoriteitpersoonsgegevens.nl/nl"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
           https://autoriteitpersoonsgegevens.nl/nl
         </a>
         .
@@ -250,7 +254,11 @@ const PrivacyPolicy = () => (
           Voor meer informatie over het gebruik, het beheer en het verwijderen
           van cookies voor elk besturingstype, nodigen wij u uit om de volgende
           link te raadplegen:{' '}
-          <a href="https://autoriteitpersoonsgegevens.nl/nl/onderwerpen/internet-telefoon-tv-en-post/cookies#faq">
+          <a
+            href="https://autoriteitpersoonsgegevens.nl/nl/onderwerpen/internet-telefoon-tv-en-post/cookies#faq"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             https://autoriteitpersoonsgegevens.nl/nl/onderwerpen/internet-telefoon-tv-en-post/cookies#faq
           </a>
         </li>
@@ -273,7 +281,13 @@ const PrivacyPolicy = () => (
       <p>
         Voor vragen, productinformatie of informatie over de website zelf, kunt
         u zich richten tot: Michael Fransman, 
-        <a href="mailto:michaelfransman@gimmix.nl">michaelfransman@gimmix.nl</a>
+        <a
+          href="mailto:michaelfransman@gimmix.nl"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          michaelfransman@gimmix.nl
+        </a>
         , <a href="tel:0628213134">+316 28 213 134</a>.
       </p>
       <br />
