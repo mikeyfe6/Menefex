@@ -288,7 +288,7 @@ const PrivacyPolicy = () => (
         >
           michaelfransman@gimmix.nl
         </a>
-        , <a href="tel:0628213134">+316 28 213 134</a>.
+        , <a href="tel:0611054318">+31 6 11 05 43 18</a>.
       </p>
       <br />
       <Link to="/">Ga terug naar de hoofdpagina!</Link>
