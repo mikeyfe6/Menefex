@@ -142,17 +142,18 @@ textarea:focus {
 }
 
 .contactbox {
-  margin-left: 20px;
+  margin-left: 30px;
   margin-top: 10%;
   background-color: #e7e3cf;
-  opacity: 0.85;
-  width: 95%;
-  padding-top: 20px;
-  padding-bottom: 10px;
+  opacity: 0.8;
+  width: 90%;
+  padding-top: 25px;
+  padding-bottom: 15px;
   padding-right: 10px;
-  padding-left: 20px;
-  border-radius: 5px;
-  border: 0.5px solid $fifth-color;
+  padding-left: 25px;
+  border-radius: 7px;
+  box-shadow: 1px 3px 7px rgba(209, 209, 209, 0.767);
+  border: 0.3px solid $fifth-color;
   font-family: $extra-font;
 }
 
@@ -198,7 +199,9 @@ textarea:focus {
   }
 
   .contactbox {
-    width: 90%;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 3%;
     // margin-top: 10px;
   }
 }
