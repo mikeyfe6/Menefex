@@ -34,7 +34,7 @@ const Smallbio = () => {
           <br />
           <br />
           <b>
-            <Link to="/about/">Meer over Gimmix .. </Link>
+            <Link to="/about/">Nog meer over Gimmix .. </Link>
           </b>
         </p>
 

@@ -29,7 +29,7 @@ const IndexPage = () => {
       <div className="whitespace" />
 
       <br />
-      <h1 className="hometitles">Biografie</h1>
+      <h1 className="hometitles">Korte Biografie</h1>
       <br />
 
       <Smallbio />
@@ -42,7 +42,7 @@ const IndexPage = () => {
       <div id="servicescroll" className="extrawhitespace" />
 
       <br />
-      <h1 className="hometitles">Services</h1>
+      <h1 className="hometitles">Services & Diensten</h1>
       <br />
 
       <Quote />
@@ -55,7 +55,7 @@ const IndexPage = () => {
       <div id="projectscroll" className="extrawhitespace" />
 
       <br />
-      <h1 className="hometitles">Projecten</h1>
+      <h1 className="hometitles"> Recente Projecten</h1>
       <br />
 
       <Swiper />
