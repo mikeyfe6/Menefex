@@ -62,7 +62,7 @@ const sideDrawer = (props) => {
               size="lg"
               color="#1ca111"
             />
-            &nbsp; W&apos;APP ONS
+            <span className={sidebarDesign.wapp}>&nbsp; W&apos;APP ONS</span>
             <span className={sidebarDesign.dots}>.</span>
           </a>
         </li>
