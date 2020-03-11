@@ -144,20 +144,21 @@ textarea:focus {
 .contactbox {
   margin-left: 20px;
   margin-top: 10%;
-  background-color: $fourth-color;
-  width: 40%;
+  background-color: #e7e3cf;
+  opacity: 0.8;
+  width: 95%;
   padding-top: 20px;
   padding-bottom: 10px;
   padding-right: 10px;
   padding-left: 20px;
   border-radius: 5px;
-  border: 1px solid $fifth-color;
+  border: 0.5px solid $fifth-color;
+  font-family: $extra-font;
 }
 
 .contacttel {
   display: inline-block;
   padding-left: 12.5px;
-  font-family: $extra-font;
   font-size: 0.9em;
   font-weight: bold;
   font-style: oblique;
@@ -167,11 +168,22 @@ textarea:focus {
 .contactmail {
   display: inline-block;
   padding-left: 7.5px;
-  font-family: $extra-font;
   font-size: 0.9em;
   font-weight: bold;
   font-style: oblique;
   color: $primary-color;
+}
+
+.contactgev {
+  font-size: 0.9em;
+}
+
+.opentijd {
+  font-size: 0.9em;
+}
+
+.gimmixgev {
+  font-size: 0.8em;
 }
 
 @media (max-width: 768px) {
@@ -186,7 +198,7 @@ textarea:focus {
   }
 
   .contactbox {
-    width: 80%;
+    width: 90%;
     // margin-top: 10px;
   }
 }
