@@ -55,7 +55,17 @@ const Footer = () => {
             <div className="col-lg-4" id={footerStyles.personal}>
               <p className="wow fadeInUp">connect with us</p>
               <h4 className="wow fadeInUp" data-wow-delay="0.2s">
-                <a href="mailto:contact@gimmix.nl">contact@gimmix.nl</a>
+                <a href="mailto:contact@gimmix.nl">
+                  {' '}
+                  <span className={footerStyles.mailfoot}>m:</span>{' '}
+                  contact@gimmix.nl
+                </a>{' '}
+                ∙
+                <a href="tel:0611054318">
+                  {' '}
+                  <span className={footerStyles.telfoot}>t:</span> +31 6 11 05
+                  43 18
+                </a>
               </h4>
             </div>
 
@@ -141,7 +151,8 @@ const Footer = () => {
                 straight from
               </p>
               <h4 className="wow fadeInUp" data-wow-delay="0.2s">
-                <span className={footerStyles.amsterdam}>xxx</span> amsterdam
+                <span className={footerStyles.amsterdam}>xxx</span> amsterdam,
+                netherlands
               </h4>
               <div className="whitespace" />
             </div>

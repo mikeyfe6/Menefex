@@ -37,10 +37,18 @@ footer {
   margin-right: -50vw;
 }
 
+.mailfoot {
+  color: #74aece;
+}
+
+.telfoot {
+  color: #1ca111;
+}
+
 .info {
   h4 {
-    font-size: 21px;
     font-weight: bold;
+    font-size: 16px;
 
     .amsterdam {
       color: red;
@@ -59,11 +67,11 @@ footer {
   p {
     color: $fifth-color;
     font-family: $extra-font;
-    font-size: 0.85em;
+    font-size: 0.9em;
   }
 
   li {
-    font-size: 21px;
+    font-size: 17px;
     padding-left: 20px;
     font-weight: bold;
   }
@@ -167,6 +175,14 @@ footer {
   .info ul {
     margin: 0 0 0 -22px;
     padding: 0;
+  }
+
+  .info li {
+    font-size: 15px !important;
+  }
+
+  .info h4 {
+    font-size: 14px !important;
   }
 
   .termscods {
