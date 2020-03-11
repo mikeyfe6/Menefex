@@ -24,10 +24,12 @@ const IndexPage = () => {
       />
 
       <Hero />
-      <div className="vertical" />
-      <div className="whitespace" />
-      <div className="whitespace" />
 
+      <div className="specvertical" />
+      <br />
+      <br />
+      <div className="extrawhitespace" />
+      <br />
       <br />
       <h1 className="hometitles">Korte Biografie</h1>
       <br />
@@ -37,11 +39,9 @@ const IndexPage = () => {
       <div className="whitespace" />
       <div className="vertical" />
       <br />
-      <br />
 
       <div id="servicescroll" className="extrawhitespace" />
 
-      <br />
       <h1 className="hometitles">Services & Diensten</h1>
       <br />
 
@@ -49,12 +49,9 @@ const IndexPage = () => {
 
       <div className="whitespace" />
       <div className="vertical" />
-      <br />
-      <br />
 
       <div id="projectscroll" className="extrawhitespace" />
 
-      <br />
       <h1 className="hometitles"> Recente Projecten</h1>
       <br />
 

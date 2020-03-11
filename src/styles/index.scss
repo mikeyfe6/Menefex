@@ -99,9 +99,16 @@ span.speccol {
 }
 
 .vertical {
-  margin-top: 50px;
   border-left: 3px solid $spec-color;
-  height: 60px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  opacity: 0.65;
+}
+
+.specvertical {
+  border-left: 3px solid $spec-color;
+  height: 175px;
   position: absolute;
   left: 50%;
   opacity: 0.65;
