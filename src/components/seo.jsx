@@ -60,6 +60,7 @@ const SEO = ({
             }}
             title={seo.title}
             titleTemplate={titleTemplate}
+            defer
           >
             <meta
               name="viewport"
