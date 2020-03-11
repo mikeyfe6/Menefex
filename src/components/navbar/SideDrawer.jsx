@@ -3,6 +3,7 @@
 
 import React from 'react';
 import { Link } from 'gatsby';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import sidebarDesign from '../../styles/modules/sidebar.module.scss';
 
@@ -48,6 +49,22 @@ const sideDrawer = (props) => {
             contact
             <span className={sidebarDesign.dots}>.</span>
           </Link>
+        </li>
+
+        <li>
+          <a
+            href="https://api.whatsapp.com/send?phone=0031611054318"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <FontAwesomeIcon
+              icon={['fab', 'whatsapp']}
+              size="lg"
+              color="#1ca111"
+            />
+            &nbsp; W&apos;APP ONS
+            <span className={sidebarDesign.dots}>.</span>
+          </a>
         </li>
       </ul>
     </nav>
