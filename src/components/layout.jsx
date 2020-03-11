@@ -15,6 +15,7 @@ import {
   faMobile,
   faEye,
   faBackward,
+  faPaperPlane,
 } from '@fortawesome/free-solid-svg-icons';
 
 // components
@@ -27,7 +28,15 @@ import Footer from './footer';
 import '../styles/index.scss';
 import '../styles/layout.scss';
 
-library.add(fab, faPhoneSquareAlt, faGlobe, faMobile, faEye, faBackward);
+library.add(
+  fab,
+  faPhoneSquareAlt,
+  faGlobe,
+  faMobile,
+  faEye,
+  faBackward,
+  faPaperPlane,
+);
 
 // TODO: container & content=wrap kunnen weg
 

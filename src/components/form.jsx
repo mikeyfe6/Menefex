@@ -25,7 +25,9 @@ const Form = () => {
             <input type="hidden" name="form-name" value="contact-form" />
             <ul>
               <li>
-                <label htmlFor="contact-name">* Naam</label>
+                <label htmlFor="contact-name">
+                  <span className="speccol">*</span> Naam
+                </label>
                 <div className={formStyles.textarea}>
                   <input
                     type="text"
@@ -37,7 +39,9 @@ const Form = () => {
                 </div>
               </li>
               <li>
-                <label htmlFor="contact-email">* Email</label>
+                <label htmlFor="contact-email">
+                  <span className="speccol">*</span> Email
+                </label>
                 <div className={formStyles.textarea}>
                   <input
                     type="email"
@@ -50,7 +54,9 @@ const Form = () => {
                 </div>
               </li>
               <li>
-                <label htmlFor="contact-tel">* Telefoon</label>
+                <label htmlFor="contact-tel">
+                  <span className="speccol">*</span> Telefoon
+                </label>
                 <div className={formStyles.textarea}>
                   <input
                     type="tel"
@@ -63,7 +69,9 @@ const Form = () => {
                 </div>
               </li>
               <li>
-                <label htmlFor="contact-msg">* Selecteer onderwerp</label>
+                <label htmlFor="contact-msg">
+                  <span className="speccol">*</span> Selecteer onderwerp
+                </label>
                 <div>
                   <select
                     name="onderwerp[]"
@@ -79,7 +87,7 @@ const Form = () => {
               </li>
               <li>
                 <label htmlFor="contact-project">
-                  * Type uw bericht hieronder
+                  <span className="speccol">*</span> Type uw bericht hieronder
                 </label>
                 <div className={formStyles.textarea}>
                   <textarea
@@ -103,6 +111,21 @@ const Form = () => {
             >
               Versturen
             </button>
+            <br />
+            <div>
+              <div className={formStyles.contactbox}>
+                &nbsp;
+                <FontAwesomeIcon icon="mobile" size="lg" color="#656565" />
+                <p className={formStyles.contacttel}>
+                  <a href="tel:0611054318">: +31 6 11 05 43 18</a>
+                </p>
+                <br />
+                <FontAwesomeIcon icon="paper-plane" size="lg" color="#656565" />
+                <p className={formStyles.contactmail}>
+                  <a href="mailto:contact@gimmix.nl">: contact@gimmix.nl</a>
+                </p>
+              </div>
+            </div>
             <div className="clr" />
           </form>
         </div>
