@@ -141,7 +141,7 @@ const Form = () => {
                     &nbsp;
                     <FontAwesomeIcon icon="mobile" size="lg" color="#656565" />
                     <p className={formStyles.contacttel}>
-                      : <a href="tel:0611054318">+31 6 11 05 43 18</a>
+                      <a href="tel:0611054318">+31 6 11 05 43 18</a>
                     </p>
                     <br />
                     <FontAwesomeIcon
@@ -150,7 +150,7 @@ const Form = () => {
                       color="#656565"
                     />
                     <p className={formStyles.contactmail}>
-                      : <a href="mailto:contact@gimmix.nl">contact@gimmix.nl</a>
+                      <a href="mailto:contact@gimmix.nl">contact@gimmix.nl</a>
                     </p>
                     <br />
                     <br />
@@ -158,15 +158,21 @@ const Form = () => {
                       <b>Gimmix Webmediabedrijf</b> <br />
                       <span className={formStyles.gimmixgev}>
                         <u>Kamer van koophandel-nummer:</u> <br />{' '}
-                        <i>76045315</i>
+                        <i>
+                          <b>76045315</b>
+                        </i>
                         <br />
                         <u>BTW-nummer: </u>
                         <br />
-                        <i>NL 003040579B17</i>
+                        <i>
+                          <b>NL 003040579B17</b>
+                        </i>
                         <br />
                         <u>BANK-nummer: </u>
                         <br />
-                        <i>NL10 BUNQ 2038 8619 94</i>
+                        <i>
+                          <b>NL10 BUNQ 2038 8619 94</b>
+                        </i>
                       </span>
                     </p>
                   </div>

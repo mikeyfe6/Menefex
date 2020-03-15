@@ -17,6 +17,12 @@
   transform: translateY(-100%);
   transition: transform 0.5s ease-in-out;
 
+  .menuline {
+    margin: 0;
+    width: 50%;
+    border: 1px solid $secondary-color;
+  }
+
   &.open {
     transform: translateY(0);
   }
@@ -29,13 +35,13 @@
     height: 100%;
     list-style: none;
     font-size: 1.35rem;
-    margin-top: 3rem;
+    margin-top: 2.5rem;
     letter-spacing: 3px;
   }
 
-  li {
-    margin: 0.0001rem 0;
-  }
+  // li {
+  //   margin: 0.0001rem 0;
+  // }
 
   a {
     color: $primary-color;

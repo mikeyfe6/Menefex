@@ -50,7 +50,8 @@ const sideDrawer = (props) => {
             <span className={sidebarDesign.dots}>.</span>
           </Link>
         </li>
-
+        <br />
+        <hr className={sidebarDesign.menuline} />
         <li>
           <a
             href="https://api.whatsapp.com/send?phone=0031611054318"
@@ -62,7 +63,7 @@ const sideDrawer = (props) => {
               size="lg"
               color="#1ca111"
             />
-            <span className={sidebarDesign.wapp}>&nbsp; W&apos;APP ONS</span>
+            <span className={sidebarDesign.wapp}>&nbsp;whatsapp&apos; ons</span>
             <span className={sidebarDesign.dots}>.</span>
           </a>
         </li>
