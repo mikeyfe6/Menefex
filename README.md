@@ -17,7 +17,7 @@ Die zich inzet en gespecialiseerd is in het uitdenken en ontwikkelen van website
 
 ---
 
-**Deze site is gebouwd met GatsbyJS, ReactJS, Contentful, GrapQl & Netlify.**
+**Deze site is gebouwd met GatsbyJS, ReactJS, Contentful, GraphQl & Netlify.**
 
 🙋🏾‍♂️ Author: Michael Fransman
 
