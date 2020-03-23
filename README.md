@@ -13,7 +13,7 @@ Gimmix is een jong en modern webmediabedrijf, opgericht door [Michael Fransman](
 
 Die zich inzet en gespecialiseerd is in het uitdenken en ontwikkelen van websites en webapplicaties. Wij zorgen dat de ambities van de klant en het eindproduct tot één komen.
 
-- _Bekijk ook onze website / Also check our website: [Gimmix Webmediabedrijf](https://www.gimmix.nl/)_
+- _Bekijk ook onze website / Also check our website: [Gimmix Webmediabedrijf](https://gimmix.nl/)_
 
 ---
 
