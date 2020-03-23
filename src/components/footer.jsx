@@ -159,7 +159,7 @@ const Footer = () => {
           </div>
         </div>
         <p className={footerStyles.termscods}>
-          <span className="speccol">&copy;</span> 2020, <u>Gimmix</u>{' '}
+          <span className="speccol">&copy;</span> 2020 <u>Gimmix</u>{' '}
           <span className="speccol">|</span>
           <Link to="/privacy-policy/"> privacybeleid</Link>{' '}
           <span className="speccol">|</span>{' '}
