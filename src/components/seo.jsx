@@ -110,11 +110,17 @@ const SEO = ({
 
             {/* Scripts: Extentions & Plugins */}
 
-            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" />
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" async />
 
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js" />
+            <script
+              src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"
+              async
+            />
 
-            <script src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/gsap.min.js" />
+            <script
+              src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/gsap.min.js"
+              async
+            />
 
             {/* Links Rel: Fonts */}
 
