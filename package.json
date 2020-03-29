@@ -2,7 +2,7 @@
   "name": "gimmix",
   "private": true,
   "description": "Webdevelopment die schiet naar de toekomst",
-  "version": "1.0.0",
+  "version": "1.0.7",
   "author": "Michael Fransman <mikeyfe6@gimmix.nl>",
   "license": "MIT",
   "scripts": {
