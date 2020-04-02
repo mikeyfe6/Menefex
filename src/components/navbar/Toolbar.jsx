@@ -64,7 +64,7 @@ const toolbar = (props) => (
           </li>
           <li>
             <a
-              href="https://api.whatsapp.com/send?phone=0031611054318"
+              href="https://wa.me/31611054318"
               rel="noopener noreferrer"
               target="_blank"
             >

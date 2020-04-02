@@ -54,7 +54,7 @@ const sideDrawer = (props) => {
         <hr className={sidebarDesign.menuline} />
         <li>
           <a
-            href="https://api.whatsapp.com/send?phone=0031611054318"
+            href="https://wa.me/31611054318"
             rel="noopener noreferrer"
             target="_blank"
           >
