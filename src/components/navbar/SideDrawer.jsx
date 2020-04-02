@@ -53,11 +53,7 @@ const sideDrawer = (props) => {
         <br />
         <hr className={sidebarDesign.menuline} />
         <li>
-          <a
-            href="https://wa.me/31611054318"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
+          <a href="https://wa.me/31611054318">
             <FontAwesomeIcon
               icon={['fab', 'whatsapp']}
               size="lg"

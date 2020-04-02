@@ -63,11 +63,7 @@ const toolbar = (props) => (
             </Link>
           </li>
           <li>
-            <a
-              href="https://wa.me/31611054318"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
+            <a href="https://wa.me/31611054318">
               <FontAwesomeIcon
                 icon={['fab', 'whatsapp']}
                 size="2x"
