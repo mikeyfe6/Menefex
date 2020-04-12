@@ -36,8 +36,11 @@ const ContactPage = () => {
 
             <ScrollAnimation animateIn="fadeInUp" delay={1200}>
               <p className="page-sub">
-                Vraag, opmerking, samenwerking? Aarzel niet een bericht achter
-                te laten. Wij zorgen dan zo spoedig contact met u op te nemen.
+                Jouw website of webapp laten bouwen door <b>Gimmix</b>? Vraag
+                een offerte aan! <br /> <br />
+                Heb je anders een <u>vraag of opmerking</u>, aarzel niet een
+                bericht hieronder achter te laten. <br />
+                <br /> Wij zorgen dan spoedig contact met u op te nemen.
               </p>
             </ScrollAnimation>
           </div>

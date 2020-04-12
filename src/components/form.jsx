@@ -78,7 +78,8 @@ const Form = () => {
                     className={formStyles.choosing}
                     required
                   >
-                    <option value="samenwerking">Samenwerking</option>
+                    <option value="website">Offerte aanvragen</option>
+                    <option value="samenwerking">Samenwerking aangaan</option>
                     <option value="opmerking">Vraag / Opmerking</option>
                     <option value="feedback">Klacht / Feedback</option>
                     <option value="hulp">Hulp & Probleemoplossing</option>
