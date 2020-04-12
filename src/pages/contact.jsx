@@ -33,7 +33,7 @@ const ContactPage = () => {
             <ScrollAnimation animateIn="fadeInUp" delay={1000}>
               <h3 className={contactDesign.contacttitle}>Zeg 'ns hallo 👋🏾</h3>
             </ScrollAnimation>
-
+            <br />
             <ScrollAnimation animateIn="fadeInUp" delay={1200}>
               <p className="page-sub">
                 Jouw website of webapp laten bouwen door <b>Gimmix</b>? Vraag
