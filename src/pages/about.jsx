@@ -89,7 +89,7 @@ const AboutPage = () => {
                 src="https://open.spotify.com/embed/playlist/08UGoWTjvpuooABCWyPx0m"
                 width="100%"
                 height="300"
-                frameBorder="0"
+                frameBorder="1"
                 allowtransparency="true"
                 allow="encrypted-media"
               />
