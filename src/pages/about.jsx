@@ -4,6 +4,7 @@ import SEO from '../components/seo';
 
 import Layout from '../components/layout';
 import aboutDesign from '../styles/modules/about.module.scss';
+import spotiDesign from '../styles/modules/spoti.module.scss';
 
 const AboutPage = () => {
   return (
@@ -77,6 +78,31 @@ const AboutPage = () => {
               een digitaal product wereldwijd op de kaart kunnen zetten door
               middel van een website of webapplicatie.
             </p>
+
+            <br />
+            <br />
+
+            <div className={spotiDesign.spotcont}>
+              {' '}
+              <iframe
+                title="Gimmix Fav' Playlist"
+                src="https://open.spotify.com/embed/playlist/08UGoWTjvpuooABCWyPx0m"
+                width="100%"
+                height="300"
+                frameBorder="0"
+                allowtransparency="true"
+                allow="encrypted-media"
+              />
+              <p className={spotiDesign.spotext}>
+                {' '}
+                <br />
+                <b>
+                  WE ❤︎ MUSIC. Daarom delen we onze favoriete{' '}
+                  <u>work, chill & vibe</u> playlist. Geniet ervan en volg ons
+                  voor updates.
+                </b>
+              </p>
+            </div>
           </div>
         </div>
       </div>

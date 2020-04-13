@@ -1,0 +1,22 @@
+@import '../customs/imports';
+@import '../customs/functions';
+@import '../customs/colors';
+@import '../customs/fonts';
+@import '../customs/resets';
+
+.spotcont {
+  text-align: center;
+  background-color: $secondary-color;
+  padding: 25px;
+  margin: 5px;
+  border: 2px $primary-color solid;
+  border-radius: 2.5px;
+}
+
+.spotext {
+  font-family: $extra-font;
+  letter-spacing: 0.02em;
+  font-size: 0.7em;
+  line-height: 1.7em;
+  font-weight: 500;
+}
