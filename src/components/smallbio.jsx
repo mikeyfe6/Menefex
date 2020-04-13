@@ -36,6 +36,9 @@ const Smallbio = () => {
           <b>
             <Link to="/about/">Nog meer over Gimmix .. </Link>
           </b>
+          <br /> <br />
+          (voor de muziekliefhebbers vind je er ook onze{' '}
+          <u>work, chill & vibe</u> Spotify-playlist ♫)
         </p>
 
         <hr className={smallbioDesign.thin} />
