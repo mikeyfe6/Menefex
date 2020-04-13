@@ -88,7 +88,7 @@ const AboutPage = () => {
                 title="Gimmix Fav' Playlist"
                 src="https://open.spotify.com/embed/playlist/08UGoWTjvpuooABCWyPx0m"
                 width="100%"
-                height="300"
+                height="333"
                 frameBorder="1"
                 allowtransparency="true"
                 allow="encrypted-media"
