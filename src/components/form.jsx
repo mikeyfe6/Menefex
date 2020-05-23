@@ -121,18 +121,18 @@ const Form = () => {
                     <p>
                       <u>Wij zijn bereikbaar van:</u> <br /> <br />
                       <span className={formStyles.opentijd}>
-                        ma: &nbsp; 9:00 - 19:00
+                        ma: &nbsp; <b>9:00 - 19:00</b>
                         <br />
-                        di: &nbsp; 9:00 - 19:00
+                        di: &nbsp; <b>9:00 - 19:00</b>
                         <br />
-                        wo: &nbsp; 9:00 - 19:00
+                        wo: &nbsp; <b>9:00 - 19:00</b>
                         <br />
-                        do: &nbsp; 9:00 - 19:00
+                        do: &nbsp; <b>9:00 - 19:00</b>
                         <br />
-                        vri: &nbsp; 9:00 - 19:00
+                        vri: &nbsp; <b>9:00 - 19:00</b>
                         <br />
                         <br />
-                        <b>za - zo: &nbsp; gesloten</b>
+                        za - zo: &nbsp; <b>gesloten</b>
                         <br />
                         <br />
                       </span>

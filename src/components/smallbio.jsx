@@ -37,7 +37,7 @@ const Smallbio = () => {
             <Link to="/about/">Nog meer over Gimmix .. </Link>
           </b>
           <br /> <br />
-          Voor de muziekliefhebbers, check ook onze <u>
+          Voor onze muziekliefhebbers, check ook de <u>
             work, chill & vibe
           </u>{' '}
           <a

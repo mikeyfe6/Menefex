@@ -22,41 +22,25 @@ const IndexPage = () => {
         description="Website of Webapp? Webmediabedrijf Gimmix uit Amsterdam staat garant voor al uw webgerelateerde wensen en ambities."
         keywords="website laten maken, webapp, apps, webapplicatie, projecten, portfolio, wordpress website, reactjs, gatsby, javascript, freelance, zzp, elementor, michael fransman, amsterdam, amsterdam zuidoost, web developer, ondernemer, entrepeneur, mikey, mikeyfe, mikeyfe6, webmediabedrijf, gimmix"
       />
-
       <Hero />
-
       <div className="specvertical" />
-      <br />
-      <br />
       <div className="extrawhitespace" />
       <br />
+      <h1 className="hometitles">Biografie</h1>
       <br />
-      <h1 className="hometitles">Korte Biografie</h1>
-      <br />
-
       <Smallbio />
-
-      <div className="whitespace" />
+      <div className="extrawhitespace" />
       <div className="vertical" />
-      <br />
-
       <div id="servicescroll" className="extrawhitespace" />
-
       <h1 className="hometitles">Services & Diensten</h1>
       <br />
-
       <Quote />
-
-      <div className="whitespace" />
+      <div className="extrawhitespace" />
       <div className="vertical" />
-
       <div id="projectscroll" className="extrawhitespace" />
-
       <h1 className="hometitles"> Recente Projecten</h1>
       <br />
-
       <Swiper />
-
       <div className="whitespace" />
     </Layout>
   );

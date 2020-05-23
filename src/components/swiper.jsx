@@ -40,7 +40,8 @@ const ProjectSlide = () => {
 
                   <p className="informatie">
                     Deze website is gebouwd in opdracht van Stichting Eternity
-                    Drum. Met oog naar snelheid, overzicht en duidelijkheid.
+                    Percussion uit Amsterdam. Met oog naar snelheid, overzicht
+                    en duidelijkheid.
                   </p>
                   <p className="geschreven">
                     Technologiën: <u>Wordpress</u>, <u>ACF</u> & <u>Brizy</u>
