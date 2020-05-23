@@ -135,8 +135,15 @@ const Form = () => {
                         za - zo: &nbsp; <b>gesloten</b>
                         <br />
                         <br />
+                        <span className={formStyles.covid}>
+                          * (COVID-19 heeft <u>geen invloed</u> gehad op onze
+                          werkzaamheden)
+                        </span>
                       </span>
+                      <br /> <br />
+                      _____________
                     </p>
+                    <br />
                   </div>
                   <div className="col-md">
                     &nbsp;
@@ -156,20 +163,25 @@ const Form = () => {
                     <br />
                     <br />
                     <p className={formStyles.contactgev}>
-                      <b>Gimmix Webmediabedrijf</b> <br />
+                      <b>Gimmix Webmediabedrijf,</b> <br />
+                      gevestigd in Amsterdam.
+                      <br />
                       <span className={formStyles.gimmixgev}>
-                        <u>Kamer van koophandel-nummer:</u> <br />{' '}
+                        <br />
+                        <u>Kamer van koophandel-nummer</u> <br />
                         <i>
                           <b>76045315</b>
                         </i>
                         <br />
-                        <u>BTW-nummer: </u>
+                        <br />
+                        <u>BTW-nummer</u>
                         <br />
                         <i>
                           <b>NL 003040579B17</b>
                         </i>
                         <br />
-                        <u>BANK-nummer: </u>
+                        <br />
+                        <u>BANK-nummer</u>
                         <br />
                         <i>
                           <b>NL10 BUNQ 2038 8619 94</b>
