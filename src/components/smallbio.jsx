@@ -17,7 +17,7 @@ const Smallbio = () => {
           <b>
             <u>Gimmix</u>
           </b>{' '}
-          is een jong modern webmediabedrijf, opgericht door{' '}
+          is een jong en modern webmediabedrijf, opgericht door{' '}
           <a
             href="https://www.linkedin.com/in/michaelfransman"
             rel="noopener noreferrer"
@@ -25,19 +25,20 @@ const Smallbio = () => {
           >
             Michael Fransman
           </a>
-          , die zich inzet en gespecialiseerd is in het uitdenken en ontwikkelen
-          van <u>websites en webapplicaties</u>. Wij zorgen dat de ambities van
-          de klant en het eindproduct tot één komen. Wij bouwen onze
-          softwareproducten <u>op maatwerk</u> en zorgen dat de klant zich
-          zoveel mogelijk kan relativeren met het eindproduct.
+          , die zich inzet en gespecialiseerd is in het in- en uitdenken en
+          ontwikkelen van <u>websites en webapplicaties</u>. Wij zorgen dat uw
+          digitale ambities en wensen tot één komen. Wij bouwen onze
+          softwareproducten <u>op maatwerk</u> en zorgen dat u zich zoveel
+          mogelijk kan relativeren met uw eigen website of webapplicatie als
+          eindproduct.
           <br />
           <br />
           <br />
           <b>
-            <Link to="/about/">Nog meer over Gimmix .. </Link>
+            <Link to="/about/">Meer over Gimmix .. </Link>
           </b>
           <br /> <br />
-          Voor onze muziekliefhebbers, check ook de <u>
+          Voor onze muziekliefhebbers, check ook onze <u>
             work, chill & vibe
           </u>{' '}
           <a

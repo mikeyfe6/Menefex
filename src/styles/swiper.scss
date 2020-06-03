@@ -6,12 +6,12 @@
 
 .swiper-container {
   width: 100%;
-  height: 425px;
+  height: 450px;
   border-radius: 5px;
   border-bottom: 5px solid $secondary-color;
-  border-top: 1px solid grey;
-  border-right: 1px solid grey;
-  border-left: 1px solid grey;
+  border-top: 1px solid $third-color;
+  border-right: 1px solid $third-color;
+  border-left: 1px solid $third-color;
 }
 
 .swiper-whole {

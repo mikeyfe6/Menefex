@@ -31,7 +31,7 @@ const ContactPage = () => {
           <div className="col-lg-8">
             <br />
             <ScrollAnimation animateIn="fadeInUp" delay={1000}>
-              <h3 className={contactDesign.contacttitle}>Zeg 'ns hallo 👋🏾</h3>
+              <h3 className={contactDesign.contacttitle}>Zeg 'ns hallo 👋</h3>
             </ScrollAnimation>
             <br />
             <ScrollAnimation animateIn="fadeInUp" delay={1200}>

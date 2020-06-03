@@ -18,18 +18,13 @@ const Quote = () => {
             <h3 className={quoteDesign.quoteHead}>Websites</h3>
             <hr className={quoteDesign.thick} />
             <p className={quoteDesign.quoteText}>
-              <strong>
-                {' '}
-                <b>
-                  Wij als Gimmix bouwen functionele en efficiënte websites
-                  volledig in afstemming met de klant. <br />
-                  <br />
-                  We zorgen daarin zoveel mogelijk dat we aan alle
-                  web-technische wensen voldoen en werken zo naar een uitstekend
-                  eindproduct.
-                </b>
-              </strong>
-            </p>{' '}
+              {' '}
+              <b>
+                Wij bouwen functionele en efficiënte websites op maat. Daarin
+                zorgen wij dat we aan alle web-technische wensen voldoen en zo
+                werken wij naar een uitstekend en compleet eindproduct.
+              </b>
+            </p>
             <br />
             <hr className={quoteDesign.thin} />
             <p className={quoteDesign.quoteText}>
@@ -43,10 +38,8 @@ const Quote = () => {
               <ul className={quoteDesign.quoteKwali}>
                 <li>Snelheid</li>
                 <li>Efficiëntie</li>
-                <li>Vindbaarheid</li>
                 <li>Design</li>
-                <li>User Interface & Experience</li>
-                <li>Web Crossplatform voor alle populaire apparaten</li>
+                <li>Web Crossplatform voor alle populaire browsers</li>
               </ul>
             </p>
             <br />
@@ -59,16 +52,11 @@ const Quote = () => {
             <hr className={quoteDesign.thick} />
             <p className={quoteDesign.quoteText}>
               <b>
-                Onze webapps bouwen we met het oog naar kwaliteit, design en
-                gebruiksgemak.
-                <br />
-                <br />
                 Met de rise van digitalisering en mobiliteit is er steeds meer
-                vraag naar (web)apps.
+                vraag naar (web)apps. Het grootste verschil tussen een website
+                en webapp zijn de ingebouwde functies.
               </b>
             </p>
-            <br />
-            <br />
             <br />
             <hr className={quoteDesign.thin} />
             <p className={quoteDesign.quoteText}>
@@ -80,8 +68,6 @@ const Quote = () => {
               <br />
               <br />
               <ul className={quoteDesign.quoteKwali}>
-                <li>Snelheid</li>
-                <li>Efficiëntie</li>
                 <li>User Interface & Experience</li>
                 <li>Offline ability</li>
                 <li>Geoptimialiseerd voor alle apparaten</li>
@@ -101,16 +87,11 @@ const Quote = () => {
             <hr className={quoteDesign.thick} />
             <p className={quoteDesign.quoteText}>
               <b>
-                Wij zorgen voor geoptimaliseerde vindbaarheid in de
-                zoekmachines.
-                <br />
-                <br />
-                Door middel van duidelijke content en keywords zijn uw
-                potentiele klanten in staat u en uw website sneller te vinden op
-                Google, Bing, Yahoo, noem maar op.
+                Wij zorgen dat uw website bovenaan te vinden is in Google, Bing,
+                Yahoo, noem maar op. Uw potentiele bezoekers zullen in staat
+                zijn u en uw website sneller te vinden.
               </b>
             </p>
-            <br />
             <br />
             <hr className={quoteDesign.thin} />
             <p className={quoteDesign.quoteText}>

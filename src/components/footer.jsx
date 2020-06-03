@@ -31,22 +31,19 @@ const Footer = () => {
               <blockquote>
                 <p className={footerStyles.sayin}>
                   <i>
-                    &quot;to live a creative life, we must lose our fear of
-                    being wrong&quot;
+                    &quot;Instead of thinking outside of the box, get rid of the
+                    box&quot;
                   </i>{' '}
-                  - <b>Joseph Chilton Pearce</b>
+                  - <b>Deepak Chopra</b>
                 </p>
               </blockquote>
             </div>
           </div>
         </div>
-
         <br />
-
         <div className={footerStyles.hr}>
           <div className="row" />
         </div>
-
         <div className="whitespace" />
         <br />
 
@@ -159,7 +156,7 @@ const Footer = () => {
           </div>
         </div>
         <p className={footerStyles.termscods}>
-          <span className="speccol">&copy;</span> 2020 <u>Gimmix</u>{' '}
+          <span className="speccol">&copy;</span> 2019 - 2020 <u>Gimmix</u>{' '}
           <span className="speccol">|</span>
           <Link to="/privacy-policy/"> privacybeleid</Link>{' '}
           <span className="speccol">|</span>{' '}

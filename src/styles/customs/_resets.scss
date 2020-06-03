@@ -18,7 +18,10 @@ ul {
 
 @media (max-width: 768px) {
   .whitespace {
-    width: 100%;
     height: 50px;
+  }
+
+  .extrawhitespace {
+    height: 100px;
   }
 }

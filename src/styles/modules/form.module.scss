@@ -10,7 +10,7 @@
   border: 1px solid $fourth-color;
   border-radius: 2.5px;
   padding: 50px;
-  width: 65%;
+  width: 70%;
   margin: 10px 0px;
 }
 
@@ -41,7 +41,7 @@
 
   .choosing {
     display: block;
-    font-size: 0.75em;
+    font-size: 0.8em;
     font-family: $spec-font;
     // font-weight: 100 !important;
     color: grey !important;
@@ -144,7 +144,6 @@ textarea:focus {
 .contactbox {
   margin-top: 10%;
   background-color: $spec-color;
-  opacity: 0.9;
   padding-top: 25px;
   padding-bottom: 15px;
   padding-right: 10px;
