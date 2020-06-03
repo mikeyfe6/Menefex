@@ -39,11 +39,17 @@
     }
 
     .activePage {
-      color: white;
+      color: $secondary-color;
+      text-shadow: -1px 1px 0 $textbase-color, 1px 1px 0 $textbase-color,
+        1px -1px 0 $textbase-color, -1px -1px 0 $textbase-color;
       // text-decoration: overline;
       @include smoothtrans;
 
       &:hover {
+        color: $spec-color;
+      }
+
+      .dots {
         color: white;
       }
     }
@@ -66,7 +72,7 @@
       }
 
       .dots {
-        color: $spec-color;
+        color: $secondary-color;
       }
 
       .whapp {
