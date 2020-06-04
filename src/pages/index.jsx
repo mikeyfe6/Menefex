@@ -26,8 +26,7 @@ const IndexPage = () => {
 
       <div className="specvertical" />
       <br />
-      <br />
-      <div className="whitespace" />
+      <div className="extrawhitespace" />
 
       <h1 className="hometitles">Biografie</h1>
       <br />
