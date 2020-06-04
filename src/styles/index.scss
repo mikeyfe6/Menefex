@@ -99,24 +99,27 @@ span.speccol {
 }
 
 .vertical {
-  border-left: 2px solid $spec-color;
-  height: 75px;
+  border-left: 3px solid $secondary-color;
+  height: 70px;
   position: absolute;
   left: 50%;
-  opacity: 0.7;
+  opacity: 0.5;
+  border-radius: 25px;
 }
 
 .specvertical {
-  border-left: 2px solid $spec-color;
-  height: 100px;
+  border-left: 3px solid $secondary-color;
+  height: 90px;
   position: absolute;
   left: 50%;
-  opacity: 0.7;
+  opacity: 0.5;
+  border-radius: 25px;
 }
 
 @media (max-width: 768px) {
   .hometitles {
     font-size: 1.5em;
+    margin-top: 3%;
   }
 
   .page-sub {

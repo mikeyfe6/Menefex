@@ -23,24 +23,37 @@ const IndexPage = () => {
         keywords="website laten maken, webapp, apps, webapplicatie, projecten, portfolio, wordpress website, reactjs, gatsby, javascript, freelance, zzp, elementor, michael fransman, amsterdam, amsterdam zuidoost, web developer, ondernemer, entrepeneur, mikey, mikeyfe, mikeyfe6, webmediabedrijf, gimmix"
       />
       <Hero />
+
       <div className="specvertical" />
-      <div className="extrawhitespace" />
       <br />
+      <br />
+      <div className="whitespace" />
+
       <h1 className="hometitles">Biografie</h1>
       <br />
+
       <Smallbio />
+
       <div className="extrawhitespace" />
       <div className="vertical" />
+
       <div id="servicescroll" className="extrawhitespace" />
+
       <h1 className="hometitles">Services & Diensten</h1>
       <br />
+
       <Quote />
+
       <div className="extrawhitespace" />
       <div className="vertical" />
+
       <div id="projectscroll" className="extrawhitespace" />
+
       <h1 className="hometitles"> Recente Projecten</h1>
       <br />
+
       <Swiper />
+
       <div className="whitespace" />
     </Layout>
   );
