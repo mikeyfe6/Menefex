@@ -125,8 +125,8 @@ textarea:focus {
   text-transform: uppercase;
   padding: 12.5px 45px;
   background: transparent;
-  color: $textbase-color;
-  background-color: $fourth-color;
+  color: white;
+  background-color: $primary-color;
   font-weight: bolder;
   font-size: 12.5px;
   letter-spacing: 2px;
@@ -135,7 +135,7 @@ textarea:focus {
   margin-right: 1.5%;
 
   &:hover {
-    color: $link-color;
+    // color: $secondary-color;
     @include smoothtrans;
     border: 3px solid $link-color;
   }
