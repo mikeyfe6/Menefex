@@ -39,6 +39,12 @@ const sideDrawer = (props) => {
           </Link>
         </li>
         <li>
+          <Link to="/prices/" activeClassName={sidebarDesign.activePage}>
+            prices
+            <span className={sidebarDesign.dots}>.</span>
+          </Link>
+        </li>
+        <li>
           <Link to="/about/" activeClassName={sidebarDesign.activePage}>
             about
             <span className={sidebarDesign.dots}>.</span>
@@ -59,7 +65,9 @@ const sideDrawer = (props) => {
               size="lg"
               color="#1ca111"
             />
-            <span className={sidebarDesign.wapp}>&nbsp;whatsapp&apos; ons</span>
+            <span className={sidebarDesign.wapp}>
+              &nbsp;Stuur een whatsapp&apos; bericht
+            </span>
             <span className={sidebarDesign.dots}>.</span>
           </a>
         </li>

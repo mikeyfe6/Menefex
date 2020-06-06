@@ -123,21 +123,21 @@ textarea:focus {
 .send {
   float: right;
   text-transform: uppercase;
-  padding: 12.5px 22.5px;
+  padding: 12.5px 45px;
   background: transparent;
-  color: $primary-color;
+  color: $textbase-color;
   background-color: $fourth-color;
-  font-weight: bold;
+  font-weight: bolder;
   font-size: 12.5px;
   letter-spacing: 2px;
-  border: 0.5px solid $fifth-color;
+  border: 3px solid $secondary-color;
   border-radius: 5px;
   margin-right: 1.5%;
 
   &:hover {
     color: $link-color;
     @include smoothtrans;
-    border: 0.5px solid $link-color;
+    border: 3px solid $link-color;
   }
 }
 
@@ -148,9 +148,9 @@ textarea:focus {
   padding-bottom: 15px;
   padding-right: 10px;
   padding-left: 25px;
-  border-radius: 7px;
+  border-radius: 5px;
   box-shadow: 1px 3px 7px rgba(209, 209, 209, 0.767);
-  border: 0.3px solid $fifth-color;
+  border: 1px solid $third-color;
   font-family: $extra-font;
 }
 

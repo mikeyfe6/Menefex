@@ -11,8 +11,8 @@ const Form = () => {
   //   const today = new Date()
 
   return (
-    <div className="row">
-      <div className="container">
+    <div className="container">
+      <div className="row">
         <div className={formStyles.formwrapper}>
           <form
             name="contact-form"

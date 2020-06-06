@@ -36,7 +36,7 @@ const toolbar = (props) => (
           </li>
           <li>
             <Link to="/work/" activeClassName={headerDesign.activePage}>
-              work
+              portfolio
               <span className={headerDesign.dots}>.</span>
             </Link>
           </li>
@@ -47,6 +47,12 @@ const toolbar = (props) => (
               partiallyActive
             >
               blog
+              <span className={headerDesign.dots}>.</span>
+            </Link>
+          </li>
+          <li>
+            <Link to="/prices/" activeClassName={headerDesign.activePage}>
+              prices
               <span className={headerDesign.dots}>.</span>
             </Link>
           </li>
