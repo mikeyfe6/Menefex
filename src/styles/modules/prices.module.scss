@@ -16,16 +16,21 @@
   text-decoration: underline;
   font-weight: bolder;
   font-family: $spec-font;
+  margin-bottom: 5%;
 }
 
 .pricecap {
   font-size: 1.6em;
   text-align: center;
+  font-family: $spec-font;
+  font-weight: lighter;
+  opacity: 0.8;
 }
 
 .pricedisc {
   text-decoration: line-through;
   font-size: 0.5em;
+  font-family: $para-font;
 }
 
 .priceaction {
