@@ -64,7 +64,7 @@
 .pricelist li {
   list-style: none;
   text-align: center;
-  border-bottom: 1px $secondary-color solid;
+  border-bottom: 1.2px $secondary-color solid;
   padding: 10px;
 }
 
@@ -74,6 +74,6 @@
   }
 
   .pricehead {
-    font-size: 1.7em !important;
+    font-size: 1.5em !important;
   }
 }

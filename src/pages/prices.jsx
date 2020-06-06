@@ -24,7 +24,7 @@ const Prices = () => {
         <br />
         <p className="page-sub">
           Hier ziet u een indicatie van onze scherpe prijzen. Heeft u liever een
-          georienteerd gesprek, neem <Link to="/contact/">contact</Link> met ons
+          georiënteerd gesprek, neem <Link to="/contact/">contact</Link> met ons
           op!{' '}
         </p>
         <br />
@@ -39,7 +39,7 @@ const Prices = () => {
                   <span className={pricesDesign.pricebtw}>(excl. btw)</span>
                 </sup>{' '}
               </p>
-              <p className={pricesDesign.priceaction}>*(50% korting)</p>
+              <p className={pricesDesign.priceaction}>ACTIE: *(50% korting)</p>
               <br />
               <ul className={pricesDesign.pricelist}>
                 <li>1 - 5 pagina&apos;s</li>
@@ -76,7 +76,7 @@ const Prices = () => {
                   <span className={pricesDesign.pricebtw}>(excl. btw)</span>
                 </sup>{' '}
               </p>
-              <p className={pricesDesign.priceaction}>*(50% korting)</p>
+              <p className={pricesDesign.priceaction}>ACTIE: *(50% korting)</p>
               <br />
               <ul className={pricesDesign.pricelist}>
                 <li>± 10 pagina&apos;s</li>
@@ -114,7 +114,7 @@ const Prices = () => {
                   <span className={pricesDesign.pricebtw}>(excl. btw)</span>
                 </sup>{' '}
               </p>
-              <p className={pricesDesign.priceaction}>*(50% korting)</p>
+              <p className={pricesDesign.priceaction}>ACTIE: *(50% korting)</p>
               <br />
               <ul className={pricesDesign.pricelist}>
                 <li>∞ pagina&apos;s</li>
