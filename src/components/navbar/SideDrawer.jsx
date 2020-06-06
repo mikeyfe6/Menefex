@@ -24,7 +24,7 @@ const sideDrawer = (props) => {
         </li>
         <li>
           <Link to="/work/" activeClassName={sidebarDesign.activePage}>
-            work
+            portfolio
             <span className={sidebarDesign.dots}>.</span>
           </Link>
         </li>
