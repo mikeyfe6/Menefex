@@ -17,7 +17,7 @@ const workPage = () => {
   return (
     <Layout>
       <SEO
-        title="Projecten"
+        title="Portfolio"
         description="Een archief van onze recente afgeronde projecten."
         keywords="work, website, app, projecten, eternity, black harmony, wordpress, react, gatsby, freelance, elementor, github"
         pathname="/work/"

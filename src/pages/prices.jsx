@@ -42,7 +42,7 @@ const Prices = () => {
               <p className={pricesDesign.priceaction}>*(50% korting)</p>
               <br />
               <ul className={pricesDesign.pricelist}>
-                <li>1 - 5 pagina's</li>
+                <li>1 - 5 pagina&apos;s</li>
                 <li>Design op maatwerk</li>
                 <li>CMS</li>
                 <li>Foto Gallery</li>
@@ -79,7 +79,7 @@ const Prices = () => {
               <p className={pricesDesign.priceaction}>*(50% korting)</p>
               <br />
               <ul className={pricesDesign.pricelist}>
-                <li>± 10 pagina's</li>
+                <li>± 10 pagina&apos;s</li>
                 <li>Design op maatwerk</li>
                 <li>CMS</li>
                 <li>Foto Gallery</li>
@@ -117,7 +117,7 @@ const Prices = () => {
               <p className={pricesDesign.priceaction}>*(50% korting)</p>
               <br />
               <ul className={pricesDesign.pricelist}>
-                <li>∞ pagina's</li>
+                <li>∞ pagina&apos;s</li>
                 <li>Design op maatwerk</li>
                 <li>E-commerce (+Bank Integratie)</li>
                 <li>CMS</li>
