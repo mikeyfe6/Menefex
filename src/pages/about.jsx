@@ -79,8 +79,7 @@ const AboutPage = () => {
               middel van een website of webapplicatie.
             </p>
 
-            <br />
-            <br />
+            <div className="whitespace" />
 
             <div className={spotiDesign.spotcont}>
               {' '}
@@ -88,7 +87,7 @@ const AboutPage = () => {
                 title="Gimmix Fav' Playlist"
                 src="https://open.spotify.com/embed/playlist/08UGoWTjvpuooABCWyPx0m"
                 width="100%"
-                height="333"
+                height="444"
                 frameBorder="1"
                 allowtransparency="true"
                 allow="encrypted-media"
