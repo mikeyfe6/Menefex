@@ -5,7 +5,11 @@
 @import './customs/resets';
 
 .gobacktext {
-  font-size: 0.9em;
+  // font-size: 0.8em;
+
+  &:hover {
+    color: $link-color !important;
+  }
 }
 
 .gobackbtn {
@@ -17,14 +21,15 @@
   font-weight: bold;
   font-size: 12.5px;
   letter-spacing: 1px;
-  border: 0.5px solid $fifth-color;
+  border: 1.5px solid $fifth-color;
   border-radius: 5px;
   margin-bottom: 3%;
+  @include smoothtrans;
 
   &:hover {
-    color: $link-color;
+    color: $link-color !important;
     @include smoothtrans;
-    border: 0.5px solid $link-color;
+    border: 1.5px solid $link-color;
   }
 }
 
@@ -99,6 +104,10 @@
   color: $link-color;
   font-weight: bold;
   margin-bottom: 100px;
+
+  &:hover {
+    color: $link-color !important;
+  }
 }
 
 .gobackextra {

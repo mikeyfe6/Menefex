@@ -58,6 +58,7 @@
   letter-spacing: 2px;
   border: 3px solid $secondary-color;
   border-radius: 5px;
+  @include smoothtrans;
 
   &:hover {
     color: $link-color;

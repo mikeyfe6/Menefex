@@ -75,10 +75,7 @@ const Blog = (props) => {
         <button type="button" className="gobackbtn">
           <Link to="/blog/" className="goback">
             <FontAwesomeIcon icon="backward" />{' '}
-            <span className="gobacktext">
-              {' '}
-              TERUG NAAR &apos;BLOGPOSTS&apos;
-            </span>
+            <span className="gobacktext"> &nbsp;TERUG; ALLE BLOGPOSTS </span>
           </Link>
         </button>
 
