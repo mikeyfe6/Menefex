@@ -6,6 +6,7 @@ import Layout from '../components/layout';
 import pricesDesign from '../styles/modules/prices.module.scss';
 
 import SEO from '../components/seo';
+import Call from '../components/call';
 
 const Prices = () => {
   return (
@@ -25,7 +26,7 @@ const Prices = () => {
         <p className="page-sub">
           Hier ziet u een indicatie van onze scherpe prijzen. Heeft u liever een
           georiënteerd gesprek, neem <Link to="/contact/">contact</Link> met ons
-          op!{' '}
+          op of vraag een <Link to="#callscroll">terugbelverzoek</Link> aan.
         </p>
         <br />
         <div className="row">
@@ -143,6 +144,9 @@ const Prices = () => {
             </div>
           </div>
         </div>
+        <div className="whitespace" />
+        <div id="callscroll" />
+        <Call />
       </div>
       <div className="whitespace" />
     </Layout>

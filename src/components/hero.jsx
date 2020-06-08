@@ -53,9 +53,9 @@ const Hero = () => {
             animationInDuration={2000}
           >
             <span className={heroDesign.scrollHead}>
-              <Link to="/#servicescroll">services</Link>{' '}
+              <Link to="#servicescroll">services</Link>{' '}
               <span className="speccol">|</span>{' '}
-              <Link to="/#projectscroll">projecten</Link>
+              <Link to="#projectscroll">projecten</Link>
             </span>{' '}
           </Animated>
         </div>
