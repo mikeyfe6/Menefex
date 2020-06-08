@@ -11,7 +11,7 @@ const Prices = () => {
   return (
     <Layout>
       <SEO
-        title="Prices"
+        title="Prijzen & tarieven"
         description="Bekijk onze prijzen en tarieven."
         keywords="prijzen, tarieven, starter, established, business, plan"
         pathname="/prices/"

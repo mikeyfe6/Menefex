@@ -17,8 +17,8 @@ const ContactPage = () => {
     <Layout>
       <SEO
         title="Contact"
-        description="Samenwerking of gewoon gedag zeggen. Neem contact met ons op!"
-        keywords="contact, gimmix, michael fransman, mikeyfe6"
+        description="Offerte aanvragen? samenwerking of gewoon gedag zeggen. Neem contact met ons op!"
+        keywords="contact, gimmix, michael fransman, mikeyfe6, offerte, openingstijden"
         pathname="/contact/"
       />
 

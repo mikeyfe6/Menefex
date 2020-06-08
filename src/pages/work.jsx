@@ -19,7 +19,7 @@ const workPage = () => {
       <SEO
         title="Portfolio"
         description="Een archief van onze recente afgeronde projecten."
-        keywords="work, website, app, projecten, eternity, black harmony, wordpress, react, gatsby, freelance, elementor, github"
+        keywords="work, website, app, projecten, eternity, black harmony, wordpress, react, gatsby, freelance, elementor, github, portfolio"
         pathname="/work/"
       />
 

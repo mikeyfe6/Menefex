@@ -8,7 +8,7 @@ import Layout from '../components/layout';
 const ThankYouPage = () => (
   <Layout>
     <SEO
-      title="Thankyou"
+      title="Thankyou!"
       description="Success! Uw bericht is aangekomen."
       pathname="/success/"
     />
