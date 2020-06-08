@@ -20,7 +20,7 @@ const Call = () => {
         data-netlify="true"
         netlify-honeypot="bot-field"
       >
-        <input type="hidden" name="call-name" value="call-form" />
+        <input type="hidden" name="form-name" value="call-form" />
         <ul className={callStyles.fillareaone}>
           <li>
             <label htmlFor="call-name">
