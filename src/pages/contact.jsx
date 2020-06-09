@@ -40,7 +40,7 @@ const ContactPage = () => {
                 een offerte aan! <br /> <br />
                 Heb je anders een <u>vraag of opmerking</u>, aarzel niet een
                 bericht hieronder achter te laten. <br />
-                <br /> <b>Wij zorgen dan spoedig contact met u op te nemen.</b>
+                <br /> <b>Binnen één werkdag nemen wij contact met u op.</b>
               </p>
             </ScrollAnimation>
           </div>

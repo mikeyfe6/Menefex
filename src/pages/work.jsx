@@ -33,14 +33,12 @@ const workPage = () => {
             <br />
 
             <p className="page-sub">
-              <b>
-                Wij zijn trots op ons werk en showcasen dat ook graag! Neem een
-                kijk in ons archief van recente projecten:
-              </b>
+              Wij zijn trots op ons werk en showcasen dat ook graag! Neem een
+              kijk in ons archief van recente projecten:
             </p>
           </div>
         </div>
-        <br />
+
         <br />
 
         <div className={workDesign.projects}>

@@ -24,7 +24,6 @@ const AboutPage = () => {
               Over Gimmix<span className="headdots">.</span>
             </h2>
             <br />
-            <br />
 
             <h3 className={aboutDesign.overtitle}>Wie zijn wij?</h3>
             <p className={aboutDesign.aboutText}>
@@ -82,9 +81,17 @@ const AboutPage = () => {
             <div className="whitespace" />
 
             <div className={spotiDesign.spotcont}>
-              {' '}
+              <p className={spotiDesign.spotext}>
+                {' '}
+                <br />
+                <b>
+                  WE ❤︎ MUSIC ! Daarom delen we onze eigen{' '}
+                  <u>work, chill & vibe</u> playlist. Geniet ervan en volg ons
+                  voor updates.
+                </b>
+              </p>{' '}
               <iframe
-                title="Gimmix Fav' Playlist"
+                title="Gimmix' #STAYVIBIN Playlist"
                 src="https://open.spotify.com/embed/playlist/08UGoWTjvpuooABCWyPx0m"
                 width="100%"
                 height="444"
@@ -92,15 +99,6 @@ const AboutPage = () => {
                 allowtransparency="true"
                 allow="encrypted-media"
               />
-              <p className={spotiDesign.spotext}>
-                {' '}
-                <br />
-                <b>
-                  WE ❤︎ MUSIC. Daarom delen we onze eigen{' '}
-                  <u>work, chill & vibe</u> playlist. Geniet ervan en volg ons
-                  voor updates.
-                </b>
-              </p>
             </div>
           </div>
         </div>

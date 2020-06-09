@@ -11,7 +11,7 @@
   background-color: $spec-color;
   // opacity: 0.9;
   box-shadow: 1px 3px 7px rgba(209, 209, 209, 0.767);
-  border: 1px solid $fourth-color;
+  border: 5px solid $fourth-color;
   border-radius: 2.5px;
 }
 
@@ -22,7 +22,8 @@
     @include fontslg;
     margin-top: 3%;
     font-family: $extra-font;
-    color: $primary-color;
+    color: $textbase-color;
+    opacity: 0.65;
     padding: 10px 0;
   }
 
@@ -44,6 +45,7 @@
 
   .smallbio-container {
     width: 90%;
+    border: 3px solid $fourth-color;
   }
 
   .smallbio-text {

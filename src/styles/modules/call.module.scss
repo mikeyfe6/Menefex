@@ -7,7 +7,7 @@
 .formwrapper {
   background-color: #f5f5f5;
   box-shadow: 1px 3px 7px rgba(209, 209, 209, 0.767);
-  border: 1px solid $fourth-color;
+  border: 7.5px solid $fourth-color;
   border-radius: 2.5px;
   padding: 50px;
   width: 100%;
@@ -212,7 +212,7 @@ textarea:focus {
   }
 
   .choosing {
-    width: 66% !important;
+    width: 75% !important;
   }
 
   #call-form {
@@ -227,7 +227,7 @@ textarea:focus {
   }
 
   .send {
-    padding: 12.5px 50px;
+    padding: 12.5px 30px;
 
     margin-right: 1%;
     @include smoothtrans;

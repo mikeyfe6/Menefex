@@ -10,7 +10,7 @@
   margin-bottom: 1%;
   background-color: #f5f5f5;
   box-shadow: 1px 3px 7px rgba(209, 209, 209, 0.767);
-  border: 1px solid $fourth-color;
+  border: 7.5px solid $fourth-color;
   border-radius: 2.5px;
 }
 
@@ -53,6 +53,15 @@
   }
 }
 
+.endline {
+  border-width: 5px;
+  border-color: $primary-color;
+  opacity: 0.75;
+  border-radius: 25px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 @media (max-width: 768px) {
   .quote-wrapper {
     padding: 5%;
@@ -60,6 +69,7 @@
 
   .quote-container {
     width: 90%;
+    border: 7.5px solid $fourth-color;
   }
 
   .quote-head {

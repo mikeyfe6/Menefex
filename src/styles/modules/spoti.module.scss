@@ -7,9 +7,9 @@
 .spotcont {
   text-align: center;
   background-color: $secondary-color;
-  padding: 30px;
+  padding: 20px;
   margin: 5px;
-  border: 2px $primary-color solid;
+  border: 3px $fourth-color solid;
   border-radius: 5px;
 }
 
@@ -19,4 +19,7 @@
   font-size: 0.7em;
   line-height: 1.7em;
   font-weight: 500;
+  margin-bottom: 5%;
+  color: $textbase-color;
+  opacity: 0.7;
 }
