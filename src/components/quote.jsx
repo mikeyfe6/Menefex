@@ -21,8 +21,8 @@ const Quote = () => {
               {' '}
               <b>
                 Wij bouwen functionele en efficiënte websites op maat. Daarin
-                zorgen wij dat we aan alle web-technische wensen voldoen en zo
-                werken wij naar een uitstekend en compleet eindproduct.
+                zorgen wij dat uw website aan alle moderne technische wensen
+                voldoet en zo werken wij naar een compleet eindproduct.
               </b>
             </p>
             <br />
