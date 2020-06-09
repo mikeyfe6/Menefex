@@ -39,6 +39,19 @@ const Form = () => {
                 </div>
               </li>
               <li>
+                <label htmlFor="contact-company">
+                  <span className="speccol">*</span> Bedrijfsnaam (optioneel)
+                </label>
+                <div className={formStyles.textarea}>
+                  <input
+                    type="text"
+                    name="company"
+                    id="contact-company"
+                    defaultValue=""
+                  />
+                </div>
+              </li>
+              <li>
                 <label htmlFor="contact-email">
                   <span className="speccol">*</span> Email
                 </label>

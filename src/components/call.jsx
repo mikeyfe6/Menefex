@@ -77,6 +77,7 @@ const Call = () => {
           <li>
             <label htmlFor="call-opmerking">
               <span className="speccol">*</span> Heeft u nog opmerkingen?
+              (optioneel)
             </label>
             <div className={callStyles.textarea}>
               <textarea
