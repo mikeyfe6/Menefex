@@ -6,7 +6,8 @@
 
 .spotcont {
   text-align: center;
-  background-color: $secondary-color;
+  background: linear-gradient(to bottom, white, $secondary-color);
+  // opacity: 0.85;
   padding: 20px;
   margin: 5px;
   border: 3px $fourth-color solid;
@@ -21,5 +22,5 @@
   font-weight: 500;
   margin-bottom: 5%;
   color: $textbase-color;
-  opacity: 0.7;
+  opacity: 0.8;
 }

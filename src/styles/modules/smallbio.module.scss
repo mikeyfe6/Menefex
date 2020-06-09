@@ -8,10 +8,11 @@
   width: 50%;
   margin: 0 auto;
   margin-bottom: 1%;
-  background-color: $spec-color;
+  background: linear-gradient(to bottom, white, $secondary-color);
+  // opacity: 0.8;
   // opacity: 0.9;
   box-shadow: 1px 3px 7px rgba(209, 209, 209, 0.767);
-  border: 5px solid $fourth-color;
+  border: 5px solid $third-color;
   border-radius: 2.5px;
 }
 
