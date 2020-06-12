@@ -56,7 +56,7 @@ const Hero = () => {
           >
             <span className={heroDesign.scrollHead}>
               <Link to="#servicescroll">services</Link>{' '}
-              <span className="speccol">|</span>{' '}
+              <span className="speccol">&nbsp;&nbsp;|&nbsp;&nbsp;</span>{' '}
               <Link to="#projectscroll">projecten</Link>
             </span>{' '}
           </Animated>
