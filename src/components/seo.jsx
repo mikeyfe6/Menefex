@@ -91,7 +91,7 @@ const SEO = ({
             <meta property="og:site_name" content="Gimmix" />
             <meta property="og:locale" content="nl_NL" />
             <meta property="og:image:width" content="512" />
-            {/* <meta property="og:image:height" content="512" /> */}
+            <meta property="og:image:height" content="512" />
 
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:site" content={twitterUsername} />
