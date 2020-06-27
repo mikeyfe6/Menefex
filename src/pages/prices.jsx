@@ -43,7 +43,9 @@ const Prices = () => {
               <p className={pricesDesign.priceaction}>ACTIE: *(50% korting)</p>
               <br />
               <ul className={pricesDesign.pricelist}>
-                <li>1 - 5 pagina&apos;s</li>
+                <strong>
+                  <li>1 - 5 pagina&apos;s</li>
+                </strong>
                 <li>Design op maatwerk</li>
                 <li>CMS</li>
                 <li>Foto Gallery</li>
@@ -54,7 +56,9 @@ const Prices = () => {
                 <li>Google Maps integratie</li>
                 <li>Google Statistieken / SEO</li>
                 <li>Gratis SSL</li>
-                <li>1 maand gratis support</li>
+                <strong>
+                  <li>1 maand gratis support</li>
+                </strong>
               </ul>
               <br />
               <button
@@ -80,14 +84,18 @@ const Prices = () => {
               <p className={pricesDesign.priceaction}>ACTIE: *(50% korting)</p>
               <br />
               <ul className={pricesDesign.pricelist}>
-                <li>± 10 pagina&apos;s</li>
+                <strong>
+                  <li>± 10 pagina&apos;s</li>
+                </strong>
                 <li>Design op maatwerk</li>
                 <li>CMS</li>
                 <li>Foto Gallery</li>
                 <li>Video Integratie</li>
                 <li>Responsive Design</li>
                 <li>Formulieren</li>
-                <li>Zoekmodule op website</li>
+                <strong>
+                  <li>Zoekmodule op website</li>
+                </strong>
                 <li>Testimonials</li>
                 <li>Google Maps integratie</li>
                 <li>Google Statistieken / SEO</li>
@@ -118,20 +126,28 @@ const Prices = () => {
               <p className={pricesDesign.priceaction}>ACTIE: *(50% korting)</p>
               <br />
               <ul className={pricesDesign.pricelist}>
-                <li>∞ pagina&apos;s</li>
+                <strong>
+                  <li>∞ pagina&apos;s</li>
+                </strong>
                 <li>Design op maatwerk</li>
-                <li>E-commerce (+Bank Integratie)</li>
+                <strong>
+                  <li>E-commerce (+Bank Integratie)</li>
+                </strong>
                 <li>CMS</li>
                 <li>Foto Gallery</li>
                 <li>Video Integratie</li>
                 <li>Responsive Design</li>
                 <li>Formulieren</li>
-                <li>Zoekmodule op website</li>
+                <strong>
+                  <li>Zoekmodule op website</li>
+                </strong>
                 <li>Testimonials</li>
                 <li>Google Maps integratie</li>
                 <li>Google Statistieken / SEO</li>
                 <li>Gratis SSL</li>
-                <li>3 maanden gratis support</li>
+                <strong>
+                  <li>3 maanden gratis support</li>
+                </strong>
               </ul>
               <br />
               <button
