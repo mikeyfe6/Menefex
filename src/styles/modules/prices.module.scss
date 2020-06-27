@@ -74,7 +74,14 @@
   padding: 10px;
   font-family: $extra-font;
   font-size: 0.9em;
-  font-weight: 300;
+  font-weight: 100;
+}
+
+.pricebold {
+  font-weight: 700 !important;
+  font-style: oblique;
+  background: rgba(240, 197, 14, 0.3);
+  border-radius: 3px;
 }
 
 @media (max-width: 768px) {

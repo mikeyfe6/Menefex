@@ -43,9 +43,8 @@ const Prices = () => {
               <p className={pricesDesign.priceaction}>ACTIE: *(50% korting)</p>
               <br />
               <ul className={pricesDesign.pricelist}>
-                <strong>
-                  <li>1 - 5 pagina&apos;s</li>
-                </strong>
+                <li className={pricesDesign.pricebold}>1 - 5 pagina&apos;s</li>
+
                 <li>Design op maatwerk</li>
                 <li>CMS</li>
                 <li>Foto Gallery</li>
@@ -56,9 +55,10 @@ const Prices = () => {
                 <li>Google Maps integratie</li>
                 <li>Google Statistieken / SEO</li>
                 <li>Gratis SSL</li>
-                <strong>
-                  <li>1 maand gratis support</li>
-                </strong>
+
+                <li className={pricesDesign.pricebold}>
+                  1 maand gratis support
+                </li>
               </ul>
               <br />
               <button
@@ -84,23 +84,25 @@ const Prices = () => {
               <p className={pricesDesign.priceaction}>ACTIE: *(50% korting)</p>
               <br />
               <ul className={pricesDesign.pricelist}>
-                <strong>
-                  <li>± 10 pagina&apos;s</li>
-                </strong>
+                <li className={pricesDesign.pricebold}>± 10 pagina&apos;s</li>
+
                 <li>Design op maatwerk</li>
                 <li>CMS</li>
                 <li>Foto Gallery</li>
                 <li>Video Integratie</li>
                 <li>Responsive Design</li>
                 <li>Formulieren</li>
-                <strong>
-                  <li>Zoekmodule op website</li>
-                </strong>
+                <li className={pricesDesign.pricebold}>
+                  Zoekmodule op website
+                </li>
+
                 <li>Testimonials</li>
                 <li>Google Maps integratie</li>
                 <li>Google Statistieken / SEO</li>
                 <li>Gratis SSL</li>
-                <li>2 maanden gratis support</li>
+                <li className={pricesDesign.pricebold}>
+                  2 maanden gratis support
+                </li>
               </ul>
               <br />
               <button
@@ -126,28 +128,29 @@ const Prices = () => {
               <p className={pricesDesign.priceaction}>ACTIE: *(50% korting)</p>
               <br />
               <ul className={pricesDesign.pricelist}>
-                <b>
-                  <li>∞ pagina&apos;s</li>
-                </b>
+                <li className={pricesDesign.pricebold}>∞ pagina&apos;s</li>
+
                 <li>Design op maatwerk</li>
-                <strong>
-                  <li>E-commerce (+Bank Integratie)</li>
-                </strong>
+                <li className={pricesDesign.pricebold}>
+                  E-commerce (+Bank Integratie)
+                </li>
+
                 <li>CMS</li>
                 <li>Foto Gallery</li>
                 <li>Video Integratie</li>
                 <li>Responsive Design</li>
                 <li>Formulieren</li>
-                <strong>
-                  <li>Zoekmodule op website</li>
-                </strong>
+                <li className={pricesDesign.pricebold}>
+                  Zoekmodule op website
+                </li>
+
                 <li>Testimonials</li>
                 <li>Google Maps integratie</li>
                 <li>Google Statistieken / SEO</li>
                 <li>Gratis SSL</li>
-                <strong>
-                  <li>3 maanden gratis support</li>
-                </strong>
+                <li className={pricesDesign.pricebold}>
+                  3 maanden gratis support
+                </li>
               </ul>
               <br />
               <button
