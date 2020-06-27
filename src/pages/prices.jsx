@@ -126,9 +126,9 @@ const Prices = () => {
               <p className={pricesDesign.priceaction}>ACTIE: *(50% korting)</p>
               <br />
               <ul className={pricesDesign.pricelist}>
-                <strong>
+                <b>
                   <li>∞ pagina&apos;s</li>
-                </strong>
+                </b>
                 <li>Design op maatwerk</li>
                 <strong>
                   <li>E-commerce (+Bank Integratie)</li>
