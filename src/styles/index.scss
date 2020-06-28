@@ -43,6 +43,17 @@ html {
   }
 }
 
+::-moz-selection {
+  /* Code for Firefox */
+  color: black;
+  background: $secondary-color;
+}
+
+::selection {
+  color: black;
+  background: $secondary-color;
+}
+
 body {
   width: 100%;
   background: white;
