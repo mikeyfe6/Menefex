@@ -20,7 +20,7 @@ const IndexPage = () => {
       <SEO
         title="#1 Website Specialist"
         description="Een nieuwe professionele, modern & duurzame website of webapp nodig? Tijdelijk vanaf €345,- | Webmediabedrijf Gimmix uit Amsterdam staat garant voor al uw webgerelateerde wensen en ambities."
-        keywords="website laten maken, webapp, apps, webapplicatie, projecten, portfolio, wordpress website, reactjs, gatsby, javascript, freelance, zzp, elementor, michael fransman, amsterdam, amsterdam zuidoost, web developer, ondernemer, entrepeneur, mikey, mikeyfe, mikeyfe6, webmediabedrijf, gimmix"
+        keywords="website laten maken, webapplicatie, websshop laten maken, projecten, portfolio, wordpress website laten maken, reactjs, gatsby, javascript, freelance, zzp, elementor, michael fransman, amsterdam, amsterdam zuidoost, web developer, ondernemer, entrepeneur, mikey, mikeyfe, mikeyfe6, webmediabedrijf, gimmix"
       />
       <Hero />
 
