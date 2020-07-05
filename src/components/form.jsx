@@ -171,7 +171,7 @@ const Form = () => {
                       color="#656565"
                     />
                     <p className={formStyles.contactmail}>
-                      <a href="mailto:contact@gimmix.nl">contact@gimmix.nl</a>
+                      <a href="mailto:info@gimmix.nl">info@gimmix.nl</a>
                     </p>
                     <br />
                     <br />

@@ -52,10 +52,10 @@ const Footer = () => {
             <div className="col-lg-4" id={footerStyles.personal}>
               <p className="wow fadeInUp">connect with us</p>
               <h4 className="wow fadeInUp" data-wow-delay="0.2s">
-                <a href="mailto:contact@gimmix.nl">
+                <a href="mailto:info@gimmix.nl">
                   {' '}
                   <span className={footerStyles.mailfoot}>m:</span>{' '}
-                  contact@gimmix.nl
+                  info@gimmix.nl
                 </a>{' '}
                 ∙
                 <a href="tel:0611054318">
