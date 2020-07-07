@@ -7,8 +7,8 @@
 .formwrapper {
   background-color: #f5f5f5;
   box-shadow: 1px 3px 7px rgba(209, 209, 209, 0.767);
-  border: 7.5px solid $fifth-color;
-  border-radius: 2.5px;
+  border: 3px solid $super-color;
+  border-radius: 3px;
   padding: 50px;
   width: 75%;
 }
@@ -142,7 +142,7 @@ textarea:focus {
 
 .contactbox {
   margin-top: 7%;
-  margin-left: -10px;
+  // margin-left: -10px;
   background: linear-gradient(to bottom, $secondary-color, white);
   opacity: 0.9;
   padding-top: 25px;
@@ -151,7 +151,7 @@ textarea:focus {
   padding-left: 30px;
   border-radius: 3px;
   box-shadow: 1px 3px 7px rgba(209, 209, 209, 0.767);
-  border: 5px solid $fifth-color;
+  border: 3px solid $super-color;
   font-family: $extra-font;
   width: 72.5%;
   // margin: 0 auto;

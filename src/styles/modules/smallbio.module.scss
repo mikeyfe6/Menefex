@@ -8,10 +8,10 @@
   width: 50%;
   margin: 0 auto;
   margin-bottom: 1%;
-  background: linear-gradient(to bottom, white, $secondary-color);
+  background: linear-gradient(to bottom, $super-color, $secondary-color);
   box-shadow: 1px 3px 7px rgba(209, 209, 209, 0.767);
-  border: 5px solid $fifth-color;
-  border-radius: 2.5px;
+  border: 3px solid $super-color;
+  border-radius: 3px;
   opacity: 0.9;
 }
 
@@ -30,11 +30,11 @@
   .thick {
     margin: 0;
     width: 10%;
-    border: 3px solid $third-color;
+    border: 3px solid $secondary-color;
   }
 
   .thin {
-    border: 1px solid $spec-color;
+    border: 1px solid $third-color;
   }
 }
 
