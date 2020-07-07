@@ -7,7 +7,7 @@
 .formwrapper {
   background-color: #f5f5f5;
   box-shadow: 1px 3px 7px rgba(209, 209, 209, 0.767);
-  border: 3px solid $super-color;
+  border: 2px solid $super-color;
   border-radius: 3px;
   padding: 50px;
   width: 75%;
@@ -151,8 +151,8 @@ textarea:focus {
   padding-left: 30px;
   border-radius: 3px;
   box-shadow: 1px 3px 7px rgba(209, 209, 209, 0.767);
-  border: 3px solid $super-color;
-  font-family: $extra-font;
+  border: 2px solid $super-color;
+  font-family: $para-font;
   width: 72.5%;
   // margin: 0 auto;
 }
@@ -164,6 +164,7 @@ textarea:focus {
   font-weight: bold;
   font-style: oblique;
   color: $textbase-color;
+  font-family: $spec-font;
 }
 
 .contactmail {
@@ -173,6 +174,7 @@ textarea:focus {
   font-weight: bold;
   font-style: oblique;
   color: $textbase-color;
+  font-family: $spec-font;
 }
 
 .contactgev {
@@ -184,10 +186,11 @@ textarea:focus {
 }
 
 .covid {
-  font-size: 0.7em;
+  font-size: 0.75em;
   color: red;
-  font-weight: bold;
+
   font-style: oblique;
+  font-family: $spec-font;
 }
 
 .gimmixgev {
