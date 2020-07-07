@@ -24,3 +24,9 @@
   color: $textbase-color;
   opacity: 0.85;
 }
+
+@media (max-width: 768px) {
+  .spotcont {
+    border-width: 1px;
+  }
+}

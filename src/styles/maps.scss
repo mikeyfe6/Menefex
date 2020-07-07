@@ -12,3 +12,9 @@
   border: 3px solid $super-color;
   margin-top: 3%;
 }
+
+@media (max-width: 768px) {
+  .mapwrapper {
+    border-width: 1px;
+  }
+}
