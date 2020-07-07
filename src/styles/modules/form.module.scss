@@ -143,7 +143,7 @@ textarea:focus {
 .contactbox {
   margin-top: 7%;
   // margin-left: -10px;
-  background: linear-gradient(to bottom, $secondary-color, white);
+  background: linear-gradient(to bottom, $spec-color, $secondary-color);
   opacity: 0.9;
   padding-top: 25px;
   padding-bottom: 15px;
@@ -154,6 +154,7 @@ textarea:focus {
   border: 2px solid $super-color;
   font-family: $para-font;
   width: 72.5%;
+  font-size: 0.9em;
   // margin: 0 auto;
 }
 
@@ -184,7 +185,7 @@ textarea:focus {
 }
 
 .covid {
-  font-size: 0.75em;
+  font-size: 0.8em;
   color: red;
 
   font-style: oblique;

@@ -95,9 +95,7 @@
   opacity: 0.9;
   width: 80%;
   padding-left: 5px;
-  font-size: 0.9em;
-  line-height: 1.7em;
-  letter-spacing: 0.01em;
+  @include fontslg;
 }
 
 .goback {
@@ -151,10 +149,8 @@
 
   .post-content {
     opacity: 0.9;
-    font-size: 0.85em;
     width: 97%;
-    letter-spacing: 0.02em;
-    line-height: 2em;
+    @include fontsmb;
   }
 
   .excerpt {

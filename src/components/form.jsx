@@ -175,7 +175,7 @@ const Form = () => {
               <br />
               <p className={formStyles.contactgev}>
                 <b>Gimmix Webmediabedrijf,</b> <br />
-                gevestigd in Amsterdam.
+                gevestigd in Amsterdam-Zuidoost.
                 <br />
                 <span className={formStyles.gimmixgev}>
                   <br />
