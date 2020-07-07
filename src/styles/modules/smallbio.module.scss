@@ -9,11 +9,10 @@
   margin: 0 auto;
   margin-bottom: 1%;
   background: linear-gradient(to bottom, white, $secondary-color);
-  // opacity: 0.8;
-  // opacity: 0.9;
   box-shadow: 1px 3px 7px rgba(209, 209, 209, 0.767);
-  border: 5px solid $third-color;
+  border: 5px solid $fifth-color;
   border-radius: 2.5px;
+  opacity: 0.9;
 }
 
 .smallbio-wrapper {
@@ -24,7 +23,7 @@
     margin-top: 3%;
     font-family: $extra-font;
     color: $textbase-color;
-    opacity: 0.65;
+    opacity: 0.75;
     padding: 10px 0;
   }
 
@@ -35,7 +34,7 @@
   }
 
   .thin {
-    border: 1px solid white;
+    border: 1px solid $spec-color;
   }
 }
 

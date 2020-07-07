@@ -7,7 +7,7 @@
 .formwrapper {
   background-color: #f5f5f5;
   box-shadow: 1px 3px 7px rgba(209, 209, 209, 0.767);
-  border: 7.5px solid $third-color;
+  border: 7.5px solid $fifth-color;
   border-radius: 2.5px;
   padding: 50px;
   width: 100%;
@@ -66,7 +66,7 @@
     margin-top: 2%;
     margin-left: 1%;
     margin-bottom: 2%;
-    border: 3px solid $spec-color;
+    border: 3px solid $secondary-color;
     border-radius: 0.5em;
     appearance: none;
     // color: black;
@@ -82,10 +82,9 @@
     @include smoothtrans;
   }
   .choosing:focus {
-    border-color: #aaa;
     box-shadow: 0 0 1px 2px $link-color;
     box-shadow: 0 0 0 2px -moz-mac-focusring;
-    color: grey;
+    color: $spectext-color;
     outline: none;
   }
   .choosing option {
@@ -96,7 +95,7 @@
 
   label {
     display: block;
-    color: $fifth-color;
+    color: #827f6e;
     font-family: $spec-font;
     margin-top: 2%;
     letter-spacing: 1px;

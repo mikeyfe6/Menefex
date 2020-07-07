@@ -126,86 +126,81 @@ const Form = () => {
               Versturen
             </button>
             <div className="clr" />
-
-            <div>
-              <div className={`${formStyles.contactbox}`}>
-                <div className="row">
-                  <div className="col-md">
-                    <p>
-                      <u>Wij zijn bereikbaar van:</u> <br /> <br />
-                      <span className={formStyles.opentijd}>
-                        ma: &nbsp; <b>9:00 - 19:00</b>
-                        <br />
-                        di: &nbsp; <b>9:00 - 19:00</b>
-                        <br />
-                        wo: &nbsp; <b>9:00 - 19:00</b>
-                        <br />
-                        do: &nbsp; <b>9:00 - 19:00</b>
-                        <br />
-                        vri: &nbsp; <b>9:00 - 19:00</b>
-                        <br />
-                        <br />
-                        za - zo: &nbsp; <b>gesloten</b>
-                        <br />
-                        <br />
-                        <span className={formStyles.covid}>
-                          * (COVID-19 heeft <u>geen invloed</u> gehad op onze
-                          werkzaamheden)
-                        </span>
-                      </span>
-                      <br /> <br />
-                      _____________
-                    </p>
-                    <br />
-                  </div>
-                  <div className="col-md">
-                    &nbsp;
-                    <FontAwesomeIcon icon="mobile" size="lg" color="#656565" />
-                    <p className={formStyles.contacttel}>
-                      <a href="tel:0611054318">+31 6 11 05 43 18</a>
-                    </p>
-                    <br />
-                    <FontAwesomeIcon
-                      icon="paper-plane"
-                      size="lg"
-                      color="#656565"
-                    />
-                    <p className={formStyles.contactmail}>
-                      <a href="mailto:info@gimmix.nl">info@gimmix.nl</a>
-                    </p>
-                    <br />
-                    <br />
-                    <p className={formStyles.contactgev}>
-                      <b>Gimmix Webmediabedrijf,</b> <br />
-                      gevestigd in Amsterdam.
-                      <br />
-                      <span className={formStyles.gimmixgev}>
-                        <br />
-                        <u>Kamer van koophandel-nummer</u> <br />
-                        <i>
-                          <b>76045315</b>
-                        </i>
-                        <br />
-                        <br />
-                        <u>BTW-nummer</u>
-                        <br />
-                        <i>
-                          <b>NL 003040579B17</b>
-                        </i>
-                        <br />
-                        <br />
-                        <u>BANK-nummer</u>
-                        <br />
-                        <i>
-                          <b>NL10 BUNQ 2038 8619 94</b>
-                        </i>
-                      </span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
           </form>
+        </div>
+      </div>
+      <div>
+        <div className={`${formStyles.contactbox}`}>
+          <div className="row">
+            <div className="col-md">
+              <p>
+                <u>Wij zijn bereikbaar van:</u> <br /> <br />
+                <span className={formStyles.opentijd}>
+                  ma: &nbsp; <b>9:00 - 19:00</b>
+                  <br />
+                  di: &nbsp; <b>9:00 - 19:00</b>
+                  <br />
+                  wo: &nbsp; <b>9:00 - 19:00</b>
+                  <br />
+                  do: &nbsp; <b>9:00 - 19:00</b>
+                  <br />
+                  vri: &nbsp; <b>9:00 - 19:00</b>
+                  <br />
+                  <br />
+                  za - zo: &nbsp; <b>gesloten</b>
+                  <br />
+                  <br />
+                  <span className={formStyles.covid}>
+                    * (COVID-19 heeft <u>geen invloed</u> gehad op onze
+                    werkzaamheden)
+                  </span>
+                </span>
+                <br /> <br />
+                _____________
+              </p>
+              <br />
+            </div>
+            <div className="col-md">
+              &nbsp;
+              <FontAwesomeIcon icon="mobile" size="lg" color="#656565" />
+              <p className={formStyles.contacttel}>
+                <a href="tel:0611054318">+31 6 11 05 43 18</a>
+              </p>
+              <br />
+              <FontAwesomeIcon icon="paper-plane" size="lg" color="#656565" />
+              <p className={formStyles.contactmail}>
+                <a href="mailto:info@gimmix.nl">info@gimmix.nl</a>
+              </p>
+              <br />
+              <br />
+              <p className={formStyles.contactgev}>
+                <b>Gimmix Webmediabedrijf,</b> <br />
+                gevestigd in Amsterdam.
+                <br />
+                <span className={formStyles.gimmixgev}>
+                  <br />
+                  <u>Kamer van koophandel-nummer</u> <br />
+                  <i>
+                    <b>76045315</b>
+                  </i>
+                  <br />
+                  <br />
+                  <u>BTW-nummer</u>
+                  <br />
+                  <i>
+                    <b>NL 003040579B17</b>
+                  </i>
+                  <br />
+                  <br />
+                  <u>BANK-nummer</u>
+                  <br />
+                  <i>
+                    <b>NL10 BUNQ 2038 8619 94</b>
+                  </i>
+                </span>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
