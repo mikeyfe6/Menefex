@@ -7,8 +7,8 @@
 .swiper-container {
   margin: 0 auto;
   width: 950px;
-  height: 550px;
-  border-radius: 5px;
+  height: 540px;
+  border-radius: 10px 10px 3px 3px;
   background: $secondary-color;
   border-bottom: 5px solid $secondary-color;
   border-top: 2px solid $super-color;
@@ -16,14 +16,6 @@
   border-left: 2px solid $super-color;
   box-shadow: 1px 3px 7px rgba(209, 209, 209, 0.767);
 }
-
-.swiper-wrapper {
-}
-
-// .swiper-slide {
-//   background-size: cover;
-//   height: 100%;
-// }
 
 .slider-content {
   position: absolute;
