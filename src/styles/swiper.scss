@@ -5,30 +5,37 @@
 @import './customs/resets';
 
 .swiper-container {
-  width: 100%;
-  height: 450px;
+  width: 950px;
+  height: 550px;
   border-radius: 5px;
+  background: $secondary-color;
   border-bottom: 5px solid $secondary-color;
-  border-top: 2px solid $fourth-color;
-  border-right: 2px solid $fourth-color;
-  border-left: 2px solid $fourth-color;
+  border-top: 2px solid $super-color;
+  border-right: 2px solid $super-color;
+  border-left: 2px solid $super-color;
+  box-shadow: 1px 3px 7px rgba(209, 209, 209, 0.767);
 }
 
-.swiper-whole {
-  margin: 0 auto;
-  width: 750px;
-}
+// .swiper-slide {
+//   color: red;
+//   background-color: red;
+// }
+
+// .swiper-whole {
+//   margin: 0 auto;
+//   width: 750px;
+// }
 
 .slider-content {
   position: absolute;
   background: #fff;
-  opacity: 0.9;
-  bottom: 30px;
-  right: 20px;
-  font-size: 0.7rem;
-  width: 43%;
-  height: 33%;
-  border: 2px ridge $secondary-color;
+  opacity: 0.8;
+  bottom: 15px;
+  right: 15px;
+  font-size: 0.725rem;
+  width: 375px;
+  height: 150px;
+  border: 1.5px ridge $secondary-color;
   border-radius: 7px;
 }
 
@@ -36,18 +43,22 @@
   padding: 4%;
 
   a {
-    color: $link-color;
+    color: white;
 
     &:hover {
       color: $hover-color;
-      text-decoration: underline;
+      // text-decoration: underline;
     }
   }
 
   .project-link {
     position: absolute;
-    top: 11%;
-    right: 8%;
+    background: $secondary-color;
+    padding: 1.5%;
+    border: $spec-color solid 1px;
+    border-radius: 5px;
+    top: 7%;
+    right: 3%;
     font-weight: bolder;
     font-size: 1.1em;
   }
@@ -55,11 +66,14 @@
   h5 {
     color: $textbase-color;
     font-family: $spec-font;
+    margin-bottom: 5%;
+    display: block;
   }
 
   p {
     font-family: $para-font;
     color: $textbase-color;
+    display: block;
   }
 
   // .informatie {
@@ -70,17 +84,21 @@
     font-size: 0.9em;
     margin-top: -5px;
     font-style: oblique;
+    display: block;
+    font-weight: 600;
   }
 }
 
 .slide1 {
-  background: url('../img/projects/Eternitydrum-screen.jpg') no-repeat 50% 50%;
+  background: url('../img/projects/Eternitydrum-screen.jpg');
   background-size: cover;
+  height: 100%;
 }
 
 .slide2 {
-  background: url('../img/projects/Blackharmony-screen.jpg') no-repeat 50% 50%;
+  background: url('../img/projects/Blackharmony-screen.jpg');
   background-size: cover;
+  height: 100%;
 }
 
 .slide3 {
@@ -113,51 +131,51 @@
 
 @media (max-width: 768px) {
   .swiper-container {
-    height: 237.5px;
+    width: 95%;
+    height: 250px;
   }
 
-  .swiper-whole {
-    width: 90%;
-  }
+  // .swiper-slide {
+  //   width: 100%;
+  //   height: 100%;
+  // }
+
+  // .swiper-whole {
+  //   width: 90%;
+  // }
 
   .slider-content {
     position: absolute;
     bottom: 30px;
     right: 10px;
-    font-size: 0.6rem;
-    width: 67%;
-    height: 55%;
+    font-size: 0.65rem;
+    width: 225px;
+    height: 130px;
   }
 
   .beschrijving {
-    padding: 3%;
-
-    a {
-      color: $link-color;
-
-      &:hover {
-        color: $hover-color;
-        text-decoration: underline;
-      }
-    }
+    padding: 5%;
 
     h5 {
-      font-size: 1.6em;
+      font-size: 1.4em;
     }
 
     p {
-      font-size: 0.9em;
+      font-size: 0.8em;
     }
 
     .geschreven {
-      font-size: 0.8em;
+      font-size: 0.7em;
     }
 
     .project-link {
       position: absolute;
-      top: 5.5%;
-      right: 8%;
-      font-size: 1em;
+      top: 5%;
+      right: 3%;
+      font-size: 0.9em;
     }
   }
+}
+
+@media screen and (max-width: 992px) {
 }

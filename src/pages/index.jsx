@@ -9,7 +9,7 @@ import SEO from '../components/seo';
 
 import Hero from '../components/hero';
 import Quote from '../components/quote';
-import Swiper from '../components/swiper';
+import Projects from '../components/swiper';
 import Smallbio from '../components/smallbio';
 
 // TODO: pagina helemaal responsive maken
@@ -51,7 +51,7 @@ const IndexPage = () => {
       <h1 className="hometitles"> Recente Projecten</h1>
       <br />
 
-      <Swiper />
+      <Projects />
 
       <div className="whitespace" />
     </Layout>

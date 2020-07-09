@@ -122,9 +122,6 @@ const SEO = ({
               async
             />
 
-            <script src="https://unpkg.com/swiper/swiper-bundle.js" async />
-            <script src="https://unpkg.com/swiper/swiper-bundle.min.js" async />
-
             {/* Links Rel: Fonts */}
 
             <link
@@ -145,16 +142,6 @@ const SEO = ({
             />
 
             {/* Links Rel: Extentions & Plugins */}
-
-            <link
-              rel="stylesheet"
-              href="https://unpkg.com/swiper/swiper-bundle.css"
-            />
-
-            <link
-              rel="stylesheet"
-              href="https://unpkg.com/swiper/swiper-bundle.min.css"
-            />
 
             <link
               rel="stylesheet"
