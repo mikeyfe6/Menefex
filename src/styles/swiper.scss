@@ -5,6 +5,9 @@
 @import './customs/resets';
 
 .swiper-container {
+  margin: 0 auto;
+  width: 950px;
+  height: 550px;
   border-radius: 5px;
   background: $secondary-color;
   border-bottom: 5px solid $secondary-color;
