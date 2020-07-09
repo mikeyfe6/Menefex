@@ -122,6 +122,9 @@ const SEO = ({
               async
             />
 
+            <script src="https://unpkg.com/react-id-swiper@3.0.0/lib/react-id-swiper.js" />
+            <script src="https://unpkg.com/react-id-swiper@3.0.0/lib/react-id-swiper.min.js" />
+
             {/* Links Rel: Fonts */}
 
             <link
