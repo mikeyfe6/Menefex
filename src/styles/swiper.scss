@@ -17,15 +17,21 @@
   box-shadow: 1px 3px 7px rgba(209, 209, 209, 0.767);
 }
 
-// .swiper-slide {
-//   color: red;
-//   background-color: red;
-// }
+.swiper-slide {
+  height: 100%;
+  width: 100%;
+}
 
-// .swiper-whole {
-//   margin: 0 auto;
-//   width: 750px;
-// }
+.swiper-wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.swiper-whole {
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+}
 
 .slider-content {
   position: absolute;

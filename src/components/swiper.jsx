@@ -19,72 +19,74 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
 
 const Projects = () => {
   return (
-    <Swiper
-      spaceBetween={5}
-      slidesPerView={1}
-      autoplay={{ delay: '7000', disableOnInteraction: true }}
-      // navigation
-      pagination={{ clickable: true }}
-      // scrollbar={{ draggable: true }}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log('slide change')}
-    >
-      <SwiperSlide>
-        <div className="slide1">
-          <div className="slider-content">
-            <div className="beschrijving">
-              <h5>Eternity Drum</h5>
-              <span className="project-link">
-                <a
-                  href="https://eternitydrum.com"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  bekijk website!
-                </a>
-              </span>
+    <div className="slider-whole">
+      <Swiper
+        spaceBetween={5}
+        slidesPerView={1}
+        autoplay={{ delay: '7000', disableOnInteraction: true }}
+        // navigation
+        pagination={{ clickable: true }}
+        // scrollbar={{ draggable: true }}
+        onSwiper={(swiper) => console.log(swiper)}
+        onSlideChange={() => console.log('slide change')}
+      >
+        <SwiperSlide>
+          <div className="slide1">
+            <div className="slider-content">
+              <div className="beschrijving">
+                <h5>Eternity Drum</h5>
+                <span className="project-link">
+                  <a
+                    href="https://eternitydrum.com"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    bekijk website!
+                  </a>
+                </span>
 
-              <p className="informatie">
-                Deze website is gebouwd in opdracht van Stichting Eternity
-                Percussion uit Amsterdam. Met oog naar snelheid, overzicht en
-                duidelijkheid.
-              </p>
-              <p className="geschreven">
-                Technologiën: <u>Wordpress</u>, <u>ACF</u> & <u>Brizy</u>
-              </p>
+                <p className="informatie">
+                  Deze website is gebouwd in opdracht van Stichting Eternity
+                  Percussion uit Amsterdam. Met oog naar snelheid, overzicht en
+                  duidelijkheid.
+                </p>
+                <p className="geschreven">
+                  Technologiën: <u>Wordpress</u>, <u>ACF</u> & <u>Brizy</u>
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className="slide2">
-          <div className="slider-content">
-            <div className="beschrijving">
-              <h5>Black Harmony</h5>
-              <span className="project-link">
-                <a
-                  href="https://blackharmony.nl"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  bekijk website!
-                </a>
-              </span>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="slide2">
+            <div className="slider-content">
+              <div className="beschrijving">
+                <h5>Black Harmony</h5>
+                <span className="project-link">
+                  <a
+                    href="https://blackharmony.nl"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    bekijk website!
+                  </a>
+                </span>
 
-              <p className="informatie">
-                Deze website is gebouwd in opdracht van Black Harmony, zanggroep
-                uit Amsterdam. Deze website bevat informatie, media en
-                interactieve social media toepassingen.
-              </p>
-              <p className="geschreven">
-                Technologiën: <u>Wordpress</u>, <u>Additional CSS</u>,{' '}
-                <u>ACF</u> & <u>Elementor Pro</u>
-              </p>
+                <p className="informatie">
+                  Deze website is gebouwd in opdracht van Black Harmony,
+                  zanggroep uit Amsterdam. Deze website bevat informatie, media
+                  en interactieve social media toepassingen.
+                </p>
+                <p className="geschreven">
+                  Technologiën: <u>Wordpress</u>, <u>Additional CSS</u>,{' '}
+                  <u>ACF</u> & <u>Elementor Pro</u>
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </SwiperSlide>
-    </Swiper>
+        </SwiperSlide>
+      </Swiper>
+    </div>
   );
 };
 
