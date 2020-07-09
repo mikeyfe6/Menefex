@@ -127,6 +127,8 @@ const SEO = ({
               async
             />
 
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js" />
+
             {/* Links Rel: Fonts */}
 
             <link
@@ -161,6 +163,11 @@ const SEO = ({
             <link
               rel="stylesheet"
               href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+            />
+
+            <link
+              rel="stylesheet"
+              href="https://unpkg.com/swiper/swiper-bundle.min.css"
             />
           </Helmet>
         </>
