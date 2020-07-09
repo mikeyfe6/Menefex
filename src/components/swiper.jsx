@@ -9,7 +9,7 @@ import SwiperCore, {
 import { Swiper, SwiperSlide } from 'swiper/react';
 // import { Link } from 'gatsby';
 
-import '../styles/swiper.scss';
+import '../styles/swipering.scss';
 import 'swiper/swiper.scss';
 import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/pagination/pagination.scss';
