@@ -9,7 +9,6 @@
   width: 950px;
   height: 550px;
   border-radius: 5px;
-  position: relative;
   background: $secondary-color;
   border-bottom: 5px solid $secondary-color;
   border-top: 2px solid $super-color;
@@ -21,10 +20,10 @@
 .swiper-wrapper {
 }
 
-.swiper-slide {
-  background-size: cover;
-  height: 100%;
-}
+// .swiper-slide {
+//   background-size: cover;
+//   height: 100%;
+// }
 
 .slider-content {
   position: absolute;
