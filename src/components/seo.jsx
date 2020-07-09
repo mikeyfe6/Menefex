@@ -122,6 +122,11 @@ const SEO = ({
               async
             />
 
+            <script
+              src="https://cdn.jsdelivr.net/npm/swiper@6.0.1/swiper.cjs.min.js"
+              async
+            />
+
             {/* Links Rel: Fonts */}
 
             <link
