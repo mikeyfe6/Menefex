@@ -141,6 +141,16 @@ const SEO = ({
               rel="stylesheet"
             />
 
+            <link
+              rel="stylesheet"
+              href="https://unpkg.com/swiper/css/swiper.css"
+            />
+
+            <link
+              rel="stylesheet"
+              href="https://unpkg.com/swiper/css/swiper.min.css"
+            />
+
             {/* Links Rel: Extentions & Plugins */}
 
             <link
