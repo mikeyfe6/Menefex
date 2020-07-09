@@ -7,6 +7,7 @@
 .swiper-container {
   width: 950px;
   height: 550px;
+  margin: auto 0;
   border-radius: 5px;
   background: $secondary-color;
   border-bottom: 5px solid $secondary-color;
@@ -67,13 +68,11 @@
     color: $textbase-color;
     font-family: $spec-font;
     margin-bottom: 5%;
-    display: block;
   }
 
   p {
     font-family: $para-font;
     color: $textbase-color;
-    display: block;
   }
 
   // .informatie {
@@ -84,7 +83,7 @@
     font-size: 0.9em;
     margin-top: -5px;
     font-style: oblique;
-    display: block;
+
     font-family: $spec-font;
   }
 }
@@ -145,7 +144,6 @@
   // }
 
   .slider-content {
-    position: absolute;
     bottom: 30px;
     right: 10px;
     font-size: 0.65rem;
@@ -169,7 +167,6 @@
     }
 
     .project-link {
-      position: absolute;
       top: 5%;
       right: 3%;
       font-size: 0.9em;
