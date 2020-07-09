@@ -9,12 +9,21 @@
   width: 950px;
   height: 550px;
   border-radius: 5px;
+  position: relative;
   background: $secondary-color;
   border-bottom: 5px solid $secondary-color;
   border-top: 2px solid $super-color;
   border-right: 2px solid $super-color;
   border-left: 2px solid $super-color;
   box-shadow: 1px 3px 7px rgba(209, 209, 209, 0.767);
+}
+
+.swiper-wrapper {
+}
+
+.swiper-slide {
+  background-size: cover;
+  height: 100%;
 }
 
 .slider-content {
