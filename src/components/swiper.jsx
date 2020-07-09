@@ -31,7 +31,7 @@ const Projects = () => {
         onSlideChange={() => console.log('slide change')}
       >
         <SwiperSlide>
-          <div className="slide1">
+          <div className="swiper-slide slide1">
             <div className="slider-content">
               <div className="beschrijving">
                 <h5>Eternity Drum</h5>
@@ -58,7 +58,7 @@ const Projects = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="slide2">
+          <div className="swiper-slide slide2">
             <div className="slider-content">
               <div className="beschrijving">
                 <h5>Black Harmony</h5>
