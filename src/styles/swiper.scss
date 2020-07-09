@@ -5,9 +5,6 @@
 @import './customs/resets';
 
 .swiper-container {
-  width: 950px;
-  height: 550px;
-  margin: auto 0;
   border-radius: 5px;
   background: $secondary-color;
   border-bottom: 5px solid $secondary-color;
@@ -15,20 +12,6 @@
   border-right: 2px solid $super-color;
   border-left: 2px solid $super-color;
   box-shadow: 1px 3px 7px rgba(209, 209, 209, 0.767);
-}
-
-.swiper-slide {
-  height: 100%;
-  width: 950px;
-}
-
-.swiper-wrapper {
-  height: 100%;
-  width: 100%;
-}
-
-.swiper-whole {
-  margin: 0 auto;
 }
 
 .slider-content {
