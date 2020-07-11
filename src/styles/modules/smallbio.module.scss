@@ -38,6 +38,29 @@
   }
 }
 
+.meerover {
+  float: right;
+  text-transform: uppercase;
+  padding: 12.5px 40px;
+  background: transparent;
+  color: white;
+  background-color: $primary-color;
+  font-weight: bolder;
+  font-size: 12.5px;
+  letter-spacing: 2px;
+  border: 3px solid $secondary-color;
+  border-radius: 5px;
+  // margin-right: 1%;
+  @include smoothtrans;
+  // margin-top: 50px;
+
+  &:hover {
+    // color: $secondary-color;
+    @include smoothtrans;
+    border: 3px solid $link-color;
+  }
+}
+
 @media (max-width: 768px) {
   .smallbio-wrapper {
     padding: 5%;
@@ -50,6 +73,12 @@
 
   .smallbio-text {
     @include fontsmb;
+  }
+
+  .meerover {
+    letter-spacing: 1.5px;
+    font-size: 11px;
+    padding: 12.5px 30px;
   }
 }
 // color #d0d0d0;

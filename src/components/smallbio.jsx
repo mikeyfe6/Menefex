@@ -32,15 +32,9 @@ const Smallbio = () => {
           mogelijk kan relativeren met uw eigen website of webapplicatie als
           eindproduct.
           <br />
+          <b>{/* <Link to="/about/">Meer over Gimmix .. </Link> */}</b>
           <br />
-          <br />
-          <b>
-            <Link to="/about/">Meer over Gimmix .. </Link>
-          </b>
-          <br /> <br />
-          Voor onze muziekliefhebbers, check ook onze <u>
-            work, chill & vibe
-          </u>{' '}
+          {/* <u>Work, chill & vibe</u>{' '}
           <a
             href="https://open.spotify.com/playlist/08UGoWTjvpuooABCWyPx0m?si=caXZyz28R8u8Ck683qLgQA"
             rel="noopener noreferrer"
@@ -48,8 +42,19 @@ const Smallbio = () => {
           >
             Spotify-playlist
           </a>{' '}
-          ♫
+          ♫ */}
         </p>
+        <Link to="/about/">
+          <button
+            type="button"
+            name="meerover"
+            // id="call-submit"
+            className={smallbioDesign.meerover}
+          >
+            Meer over Gimmix!
+          </button>
+        </Link>
+        <div className="clr" />
 
         <hr className={smallbioDesign.thin} />
       </div>

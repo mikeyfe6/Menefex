@@ -46,7 +46,9 @@ const Hero = () => {
             animationInDelay={10000}
             animationInDuration={2000}
           >
-            <div className={heroDesign.scrollDown} />
+            <Link to="#biografiescroll">
+              <div className={heroDesign.scrollDown} />
+            </Link>
           </Animated>
 
           <Animated

@@ -41,7 +41,7 @@
     color: $secondary-color;
     letter-spacing: 1px;
     font-family: $spec-font;
-    font-size: 1.4em;
+    font-size: 1.6em;
     font-style: italic;
     // font-weight: 100;
   }
@@ -97,7 +97,7 @@
 
 @media (max-width: 768px) {
   .hero-head {
-    font-size: 0.8em !important;
+    font-size: 1em !important;
   }
 
   .fleximage {

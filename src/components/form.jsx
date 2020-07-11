@@ -129,6 +129,9 @@ const Form = () => {
           </form>
         </div>
       </div>
+      <div className="whitespace" />
+      <hr className={formStyles.thick} />
+      <br />
       <div>
         <div className={`${formStyles.contactbox}`}>
           <div className="row">
@@ -203,6 +206,8 @@ const Form = () => {
           </div>
         </div>
       </div>
+      <div className="whitespace" />
+      <hr className={formStyles.thick} />
     </div>
   );
 };

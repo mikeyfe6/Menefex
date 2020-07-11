@@ -5,6 +5,8 @@ import { Link } from 'gatsby';
 
 import footerStyles from '../styles/modules/footer.module.scss';
 
+import mini from '../logo/Gimmix-mini.svg';
+
 // TODO: footer copryrights in het midden zetten
 
 const Footer = () => {
@@ -42,9 +44,20 @@ const Footer = () => {
         </div>
         <br />
         <div className={footerStyles.hr}>
+          <br />
+          <br />
+          <Link to="/">
+            <img
+              className={footerStyles.mini}
+              src={mini}
+              alt="Gimmix Mini Logo"
+            />
+          </Link>{' '}
           <div className="row" />
         </div>
         <div className="whitespace" />
+        <br />
+        <br />
         <br />
 
         <div className={footerStyles.info}>

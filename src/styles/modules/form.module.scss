@@ -10,7 +10,7 @@
   border: 2px solid $super-color;
   border-radius: 3px;
   padding: 50px;
-  width: 75%;
+  width: 70%;
 }
 
 // .rcpth {
@@ -140,11 +140,20 @@ textarea:focus {
   }
 }
 
+.thick {
+  margin: 0;
+  margin-left: -15px;
+  width: 50%;
+  border: 3px solid $spec-color;
+  opacity: 0.7;
+}
+
 .contactbox {
-  margin-top: 7%;
+  margin-top: 2.5em;
   // margin-left: -10px;
   background: linear-gradient(to bottom, $spec-color, $secondary-color);
   opacity: 0.9;
+  margin-left: -15px;
   padding-top: 25px;
   padding-bottom: 15px;
   padding-right: 30px;
@@ -153,7 +162,7 @@ textarea:focus {
   box-shadow: 1px 3px 7px rgba(209, 209, 209, 0.767);
   border: 2px solid $super-color;
   font-family: $para-font;
-  width: 72.5%;
+  width: 80%;
   font-size: 0.9em;
   // margin: 0 auto;
 }
@@ -208,8 +217,13 @@ textarea:focus {
     width: 75% !important;
   }
 
+  .thick {
+    margin: 0 auto;
+  }
+
   .contactbox {
     width: 100%;
     border-width: 1px;
+    margin-left: 0px;
   }
 }

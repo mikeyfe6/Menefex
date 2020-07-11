@@ -17,6 +17,13 @@ footer {
   padding-right: 7.5%;
 }
 
+.mini {
+  display: block;
+  width: 75px;
+  margin: 0 auto;
+  // opacity: 0.9;
+}
+
 .collab {
   text-align: right;
 
@@ -161,6 +168,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .mini {
+    width: 50px;
+  }
+
   .collab,
   #personal,
   #media,

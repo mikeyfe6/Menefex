@@ -79,7 +79,8 @@ const AboutPage = () => {
             </p>
 
             <div className="whitespace" />
-
+            <hr className={spotiDesign.thick} />
+            <div className="whitespace" />
             <div className={spotiDesign.spotcont}>
               <p className={spotiDesign.spotext}>
                 {' '}
