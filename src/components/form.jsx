@@ -173,7 +173,7 @@ const Form = () => {
                     className={formStyles.fbicon}
                   />
                 </a>
-                &nbsp;&nbsp;&nbsp;⌁&nbsp;&nbsp;&nbsp;
+                ⌁
                 <a
                   href="https://www.instagram.com/gimmixwmb/"
                   rel="noopener noreferrer"
@@ -186,7 +186,7 @@ const Form = () => {
                     className={formStyles.igicon}
                   />
                 </a>
-                &nbsp;&nbsp;&nbsp;⌁&nbsp;&nbsp;&nbsp;
+                ⌁
                 <a
                   href="https://www.twitter.com/GimmixWMB"
                   rel="noopener noreferrer"
@@ -199,7 +199,7 @@ const Form = () => {
                     className={formStyles.twicon}
                   />
                 </a>
-                &nbsp;&nbsp;&nbsp;⌁&nbsp;&nbsp;&nbsp;
+                ⌁
                 <a
                   href="https://www.linkedin.com/company/gimmixwmb/"
                   rel="noopener noreferrer"
@@ -212,7 +212,7 @@ const Form = () => {
                     className={formStyles.liicon}
                   />
                 </a>
-                &nbsp;&nbsp;&nbsp;⌁&nbsp;&nbsp;&nbsp;
+                ⌁
                 <a
                   href="https://github.com/mikeyfe6"
                   rel="noopener noreferrer"
@@ -225,7 +225,7 @@ const Form = () => {
                     className={formStyles.ghicon}
                   />
                 </a>
-                &nbsp;&nbsp;&nbsp;⌁&nbsp;&nbsp;&nbsp;
+                ⌁
                 <a
                   href="https://open.spotify.com/playlist/08UGoWTjvpuooABCWyPx0m?si=caXZyz28R8u8Ck683qLgQA"
                   rel="noopener noreferrer"
@@ -238,7 +238,7 @@ const Form = () => {
                     className={formStyles.waicon}
                   />
                 </a>
-                &nbsp;&nbsp;&nbsp;⌁&nbsp;&nbsp;&nbsp;
+                ⌁
                 <a
                   href="https://wa.me/31611054318"
                   rel="noopener noreferrer"

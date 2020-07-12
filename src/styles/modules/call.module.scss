@@ -133,7 +133,7 @@ textarea:focus {
   border-bottom: 2px solid $fourth-color;
 }
 
-.send {
+.callbtn {
   float: right;
   text-transform: uppercase;
   padding: 12.5px 50px;
@@ -228,12 +228,12 @@ textarea:focus {
     }
   }
 
-  .send {
-    padding: 12.5px 30px;
-
+  .callbtn {
+    padding: 12.5px 25px;
     margin-right: 1%;
-    @include smoothtrans;
     margin-top: 20px;
+    letter-spacing: 1.5px;
+    font-size: 11px;
   }
 
   .fillareatwo {

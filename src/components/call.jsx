@@ -95,7 +95,7 @@ const Call = () => {
           type="submit"
           name="submit"
           id="call-submit"
-          className={callStyles.send}
+          className={callStyles.callbtn}
           action="../pages/success.jsx"
         >
           Bel mij terug!

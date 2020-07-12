@@ -188,6 +188,17 @@ textarea:focus {
   white-space: nowrap;
 }
 
+.fbicon,
+.igicon,
+.twicon,
+.liicon,
+.ghicon,
+.waicon,
+.spicon {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
 .fbicon:hover {
   @include smoothtrans;
   color: #3b5998;
@@ -219,7 +230,7 @@ textarea:focus {
 
 .hrcont {
   width: 200%;
-  margin-top: 2.5em;
+  margin-top: 3em;
 }
 
 .contactgev {
@@ -251,8 +262,27 @@ textarea:focus {
     border-width: 1px;
   }
 
+  .send {
+    padding: 12.5px 27.5px;
+    margin-right: 1%;
+    margin-top: 20px;
+    letter-spacing: 1.5px;
+    font-size: 11px;
+  }
+
   .contacticons {
     text-align: center;
+  }
+
+  .fbicon,
+  .igicon,
+  .twicon,
+  .liicon,
+  .ghicon,
+  .waicon,
+  .spicon {
+    margin-left: 2%;
+    margin-right: 2%;
   }
 
   .hrcont {
