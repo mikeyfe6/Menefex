@@ -31,13 +31,15 @@ const ContactPage = () => {
           <div className="col-lg-8">
             <br />
             <ScrollAnimation animateIn="fadeInUp" delay={1000}>
-              <h3 className={contactDesign.contacttitle}>Zeg 'ns hallo 👋</h3>
+              <h3 className={contactDesign.contacttitle}>
+                Laten wij samen iets geweldigs creëeren ✨
+              </h3>
             </ScrollAnimation>
             <br />
             <ScrollAnimation animateIn="fadeInUp" delay={1200}>
               <p className="page-sub">
-                Jouw website of webapp laten bouwen door <b>Gimmix</b>? Vraag
-                een offerte aan! <br /> <br />
+                Jouw website, webshop of webapp laten bouwen door <b>Gimmix</b>?
+                Vraag een offerte aan! <br /> <br />
                 Heb je anders een <u>vraag of opmerking</u>, aarzel niet een
                 bericht hieronder achter te laten. <br />
                 <br /> <b>Binnen één werkdag nemen wij contact met u op.</b>

@@ -11,8 +11,9 @@ const Smallbio = () => {
     <div className={smallbioDesign.smallbioContainer}>
       <div className={smallbioDesign.smallbioWrapper}>
         <br />
-        <hr className={smallbioDesign.thick} />
 
+        <hr className={smallbioDesign.thick} />
+        <br />
         <p className={smallbioDesign.smallbioText}>
           <b>
             <u>Gimmix</u>

@@ -55,9 +55,7 @@ const Footer = () => {
           </Link>{' '}
           <div className="row" />
         </div>
-        <div className="whitespace" />
-        <br />
-        <br />
+        <div className="extrawhitespace" />
         <br />
 
         <div className={footerStyles.info}>

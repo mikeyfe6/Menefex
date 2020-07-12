@@ -158,19 +158,111 @@ const Form = () => {
                     werkzaamheden)
                   </span>
                 </span>
-                <br /> <br />
-                _____________
               </p>
-              <br />
+              __________________________ <br /> <br /> <br />
+              <div className={formStyles.contacticons}>
+                <a
+                  href="https://www.facebook.com/GimmixWMB"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <FontAwesomeIcon
+                    icon={['fab', 'facebook']}
+                    size="lg"
+                    color="#827f6e"
+                    className={formStyles.fbicon}
+                  />
+                </a>
+                &nbsp;&nbsp;&nbsp;⌁&nbsp;&nbsp;&nbsp;
+                <a
+                  href="https://www.instagram.com/gimmixwmb/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <FontAwesomeIcon
+                    icon={['fab', 'instagram']}
+                    size="lg"
+                    color="#827f6e"
+                    className={formStyles.igicon}
+                  />
+                </a>
+                &nbsp;&nbsp;&nbsp;⌁&nbsp;&nbsp;&nbsp;
+                <a
+                  href="https://www.twitter.com/GimmixWMB"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <FontAwesomeIcon
+                    icon={['fab', 'twitter']}
+                    size="lg"
+                    color="#827f6e"
+                    className={formStyles.twicon}
+                  />
+                </a>
+                &nbsp;&nbsp;&nbsp;⌁&nbsp;&nbsp;&nbsp;
+                <a
+                  href="https://www.linkedin.com/company/gimmixwmb/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <FontAwesomeIcon
+                    icon={['fab', 'linkedin']}
+                    size="lg"
+                    color="#827f6e"
+                    className={formStyles.liicon}
+                  />
+                </a>
+                &nbsp;&nbsp;&nbsp;⌁&nbsp;&nbsp;&nbsp;
+                <a
+                  href="https://github.com/mikeyfe6"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <FontAwesomeIcon
+                    icon={['fab', 'github']}
+                    size="lg"
+                    color="#827f6e"
+                    className={formStyles.ghicon}
+                  />
+                </a>
+                &nbsp;&nbsp;&nbsp;⌁&nbsp;&nbsp;&nbsp;
+                <a
+                  href="https://open.spotify.com/playlist/08UGoWTjvpuooABCWyPx0m?si=caXZyz28R8u8Ck683qLgQA"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <FontAwesomeIcon
+                    icon={['fab', 'spotify']}
+                    size="lg"
+                    color="#827f6e"
+                    className={formStyles.waicon}
+                  />
+                </a>
+                &nbsp;&nbsp;&nbsp;⌁&nbsp;&nbsp;&nbsp;
+                <a
+                  href="https://wa.me/31611054318"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <FontAwesomeIcon
+                    icon={['fab', 'whatsapp']}
+                    size="lg"
+                    color="#827f6e"
+                    className={formStyles.spicon}
+                  />
+                </a>
+              </div>
+              <hr className={formStyles.hrcont} />
             </div>
+            <br />
             <div className="col-md">
               &nbsp;
-              <FontAwesomeIcon icon="mobile" size="lg" color="#656565" />
+              <FontAwesomeIcon icon="mobile" size="lg" color="#827f6e" />
               <p className={formStyles.contacttel}>
                 <a href="tel:0611054318">+31 6 11 05 43 18</a>
               </p>
               <br />
-              <FontAwesomeIcon icon="paper-plane" size="lg" color="#656565" />
+              <FontAwesomeIcon icon="paper-plane" size="lg" color="#827f6e" />
               <p className={formStyles.contactmail}>
                 <a href="mailto:info@gimmix.nl">info@gimmix.nl</a>
               </p>

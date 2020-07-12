@@ -29,7 +29,7 @@
 
   .thick {
     margin: 0;
-    width: 10%;
+    width: 15%;
     border: 3px solid $secondary-color;
   }
 
@@ -57,7 +57,9 @@
   &:hover {
     // color: $secondary-color;
     @include smoothtrans;
+    background-color: $textbase-color;
     border: 3px solid $link-color;
+    font-weight: bold;
   }
 }
 

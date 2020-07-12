@@ -8,7 +8,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 // FontAwesome icons
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { fab } from '@fortawesome/free-brands-svg-icons';
+import {
+  fab,
+  faFacebookSquare,
+  faLinkedin,
+  faInstagramSquare,
+  faGithubSquare,
+  faWhatsappSquare,
+  faTwitterSquare,
+  faSpotify,
+} from '@fortawesome/free-brands-svg-icons';
 import {
   faPhoneSquareAlt,
   faGlobe,
@@ -36,6 +45,13 @@ library.add(
   faEye,
   faBackward,
   faPaperPlane,
+  faFacebookSquare,
+  faLinkedin,
+  faInstagramSquare,
+  faGithubSquare,
+  faWhatsappSquare,
+  faTwitterSquare,
+  faSpotify,
 );
 
 // TODO: container & content=wrap kunnen weg

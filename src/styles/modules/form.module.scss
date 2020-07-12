@@ -135,8 +135,10 @@ textarea:focus {
 
   &:hover {
     // color: $secondary-color;
+    background-color: $button-hover;
     @include smoothtrans;
     border: 3px solid $link-color;
+    font-weight: bold;
   }
 }
 
@@ -153,8 +155,8 @@ textarea:focus {
   background: linear-gradient(to bottom, $spec-color, $secondary-color);
   opacity: 0.9;
   margin-left: -15px;
-  padding-top: 25px;
-  padding-bottom: 15px;
+  padding-top: 35px;
+  padding-bottom: 20px;
   padding-right: 30px;
   padding-left: 30px;
   border-radius: 3px;
@@ -169,27 +171,64 @@ textarea:focus {
 .contacttel {
   display: inline-block;
   padding-left: 12.5px;
-  font-size: 0.9em;
+  // font-size: 0.9em;
   font-style: oblique;
-  color: $textbase-color;
   font-family: $spec-font;
 }
 
 .contactmail {
   display: inline-block;
   padding-left: 7.5px;
-  font-size: 0.9em;
+  // font-size: 0.9em;
   font-style: oblique;
-  color: $textbase-color;
   font-family: $spec-font;
 }
 
+.contacticons {
+  white-space: nowrap;
+}
+
+.fbicon:hover {
+  @include smoothtrans;
+  color: #3b5998;
+}
+.igicon:hover {
+  @include smoothtrans;
+  color: #dd2a7b;
+}
+.twicon:hover {
+  @include smoothtrans;
+  color: #55acee;
+}
+.liicon:hover {
+  @include smoothtrans;
+  color: #0177b5;
+}
+.ghicon:hover {
+  @include smoothtrans;
+  color: #24292e;
+}
+.waicon:hover {
+  @include smoothtrans;
+  color: #1ca111;
+}
+.spicon:hover {
+  @include smoothtrans;
+  color: #1db954;
+}
+
+.hrcont {
+  width: 200%;
+  margin-top: 2.5em;
+}
+
 .contactgev {
-  font-size: 0.9em;
+  margin-top: 1em;
+  font-size: 0.95em;
 }
 
 .opentijd {
-  font-size: 0.9em;
+  font-size: 0.95em;
 }
 
 .covid {
@@ -201,7 +240,7 @@ textarea:focus {
 }
 
 .gimmixgev {
-  font-size: 0.8em;
+  font-size: 0.95em;
 }
 
 @media (max-width: 768px) {
@@ -212,12 +251,25 @@ textarea:focus {
     border-width: 1px;
   }
 
+  .contacticons {
+    text-align: center;
+  }
+
+  .hrcont {
+    width: 100%;
+    margin-top: 3em;
+  }
+
   .choosing {
     width: 75% !important;
   }
 
   .thick {
     margin: 0 auto;
+  }
+
+  .contacttel {
+    margin-top: 1em;
   }
 
   .contactbox {
