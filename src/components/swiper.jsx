@@ -21,7 +21,7 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
 const Projects = () => {
   return (
     <Swiper
-      spaceBetween={5}
+      spaceBetween={3}
       slidesPerView={1}
       autoplay={{ delay: '7000', disableOnInteraction: true }}
       // navigation

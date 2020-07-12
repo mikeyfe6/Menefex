@@ -9,7 +9,7 @@
   width: 950px;
   height: 540px;
   border-radius: 10px 10px 3px 3px;
-  background: $secondary-color;
+  background: linear-gradient(to bottom, $super-color, $secondary-color);
   border-bottom: 5px solid $secondary-color;
   border-top: 2px solid $super-color;
   border-right: 2px solid $super-color;
