@@ -23,12 +23,17 @@ const Projects = () => {
     <Swiper
       spaceBetween={3}
       slidesPerView={1}
-      autoplay={{ delay: '7000', disableOnInteraction: true }}
+      autoplay={{
+        delay: '5000',
+        // disableOnhover: true,
+        // disableOnInteraction: true,
+        disableOnInteraction: true,
+      }}
       // navigation
       pagination={{ clickable: true }}
       // scrollbar={{ draggable: true }}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log('slide change')}
+      // onSwiper={(swiper) => console.log(swiper)}
+      // onSlideChange={() => console.log('slide change')}
     >
       <SwiperSlide>
         <div className="swiper-slide slide1">
