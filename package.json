@@ -58,7 +58,7 @@
     "react": "^16.13.1",
     "react-animate-on-scroll": "^2.1.5",
     "react-animated-css": "^1.2.1",
-    "react-bootstrap": "^1.2.1",
+    "react-bootstrap": "^1.2.2",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
     "react-id-swiper": "^4.0.0",
