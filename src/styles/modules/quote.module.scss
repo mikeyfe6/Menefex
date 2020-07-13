@@ -33,6 +33,17 @@
 
   .quote-kwali {
     padding-left: 7.5%;
+    list-style: none;
+
+    li::before {
+      content: '\203B'; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+      color: $secondary-color; /* Change the color */
+      font-weight: bold; /* If you want it to be bold */
+      display: inline-block; /* Needed to add space between the bullet and the text */
+      width: 1em; /* Also needed for space (tweak if needed) */
+      margin-left: -1em;
+      margin-right: 0.5em; /* Also needed for space (tweak if needed) */
+    }
   }
 
   .quote-text {
