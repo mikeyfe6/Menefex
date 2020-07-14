@@ -107,15 +107,14 @@ const Blog = (props) => {
               options,
             )}
           </p>
-          <div className="whitespace" />
+          <div className="smallwhitespace" />
           <GoogleAds slot="3266975443" />
-          <div className="whitespace" />
+          <div className="smallwhitespace" />
           <div className="disqussion">
             <DiscussionEmbed {...disqusConfig} />
           </div>
         </div>
       </div>
-      <div className="whitespace" />
       <div className="whitespace" />
     </Layout>
   );
