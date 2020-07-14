@@ -109,7 +109,7 @@ const Blog = (props) => {
           </p>
           <div className="smallwhitespace" />
           <GoogleAds slot="3266975443" />
-          <div className="smallwhitespace" />
+          <div className="specwhitespace" />
           <div className="disqussion">
             <DiscussionEmbed {...disqusConfig} />
           </div>
