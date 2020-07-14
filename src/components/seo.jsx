@@ -108,6 +108,52 @@ const SEO = ({
 
             {seo.image && <meta name="twitter:image" content={seo.image} />}
 
+            <script type="application/ld+json">
+              {`
+                {
+                  "@context": "https://schema.org",
+                  "@type": "LocalBusiness",
+                  "name": "Gimmix Webmediabedrijf",
+                  "image": "https://gimmix.nl/Gimmix-logo.png",
+                  "@id": "https://gimmix.nl",
+                  "url": "https://gimmix.nl",
+                  "telephone": "+31611054318",
+                  "priceRange": "$$",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Karspeldreef",
+                    "addressLocality": "Amsterdam",
+                    "postalCode": "1104SE",
+                    "addressCountry": "NL"
+                  },
+                  "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": 52.31482399999999,
+                    "longitude": 4.9755936
+                  },
+                  "openingHoursSpecification": {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                      "Monday",
+                      "Tuesday",
+                      "Wednesday",
+                      "Thursday",
+                      "Friday"
+                    ],
+                    "opens": "09:00",
+                    "closes": "19:00"
+                  },
+                  "sameAs": [
+                    "https://www.facebook.com/GimmixWMB",
+                    "https://www.twitter.com/GimmixWMB",
+                    "https://www.instagram.com/gimmixwmb/",
+                    "https://www.linkedin.com/company/gimmixwmb/",
+                    "https://github.com/mikeyfe6"
+                  ]
+                }
+              `}
+            </script>
+
             {/* Scripts: Extentions & Plugins */}
 
             <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" async />
