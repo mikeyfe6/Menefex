@@ -16,6 +16,8 @@ import mini from '../logo/Gimmix-mini.svg';
 
 import SEO from '../components/seo';
 
+import GoogleAds from '../components/ads';
+
 // TODO: Add 'author' & fix the blogpost page accordingly to Traversy Media
 
 export const query = graphql`
@@ -105,6 +107,8 @@ const Blog = (props) => {
               options,
             )}
           </p>
+          <div className="whitespace" />
+          <GoogleAds slot="3266975443" />
           <div className="whitespace" />
           <div className="disqussion">
             <DiscussionEmbed {...disqusConfig} />
