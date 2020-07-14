@@ -119,7 +119,7 @@ const SEO = ({
                   "founder": {
                     "@type": "Person",
                     "name": "Michael Fransman"
-                  }
+                  },
                   "image": "https://gimmix.nl/Gimmix-logo.png",
                   "@id": "https://gimmix.nl",
                   "url": "https://gimmix.nl",
