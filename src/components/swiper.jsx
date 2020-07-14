@@ -25,8 +25,6 @@ const Projects = () => {
       slidesPerView={1}
       autoplay={{
         delay: '5000',
-        // disableOnhover: true,
-        // disableOnInteraction: true,
         disableOnInteraction: true,
       }}
       // navigation
