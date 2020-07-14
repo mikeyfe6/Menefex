@@ -108,16 +108,23 @@ const SEO = ({
 
             {seo.image && <meta name="twitter:image" content={seo.image} />}
 
+            {/* Schema Markup Data */}
+
             <script type="application/ld+json">
               {`
                 {
                   "@context": "https://schema.org",
                   "@type": "LocalBusiness",
                   "name": "Gimmix Webmediabedrijf",
+                  "founder": {
+                    "@type": "Person",
+                    "name": "Michael Fransman"
+                  }
                   "image": "https://gimmix.nl/Gimmix-logo.png",
                   "@id": "https://gimmix.nl",
                   "url": "https://gimmix.nl",
                   "telephone": "+31611054318",
+                  "email": "info@gimmix.nl",
                   "priceRange": "$$",
                   "address": {
                     "@type": "PostalAddress",
