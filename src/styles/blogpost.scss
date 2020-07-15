@@ -92,7 +92,6 @@
 
 .post-content {
   font-family: $extra-font !important;
-  opacity: 0.9;
   width: 80%;
   padding-left: 5px;
   @include fontslg;
@@ -117,7 +116,7 @@
 .img-resize {
   margin-left: 0.1%;
   margin-top: 3%;
-  margin-bottom: 5%;
+  margin-bottom: 6%;
   border-radius: 15px;
   width: 95%;
 }
@@ -148,7 +147,6 @@
   }
 
   .post-content {
-    opacity: 0.9;
     width: 97%;
     @include fontsmb;
   }
