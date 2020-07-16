@@ -17,11 +17,11 @@
   padding: 12.5px 15px;
   background: transparent;
   color: $primary-color;
-  background-color: $fourth-color;
+  background: linear-gradient(to bottom, $super-color, $fourth-color);
   font-weight: bold;
   font-size: 12.5px;
   letter-spacing: 1px;
-  border: 1.5px solid $fourth-color;
+  border: 1.5px solid $third-color;
   border-radius: 5px;
   margin-bottom: 3%;
   @include smoothtrans;
@@ -30,6 +30,7 @@
     color: $link-color !important;
     @include smoothtrans;
     border: 1.5px solid $link-color;
+    filter: brightness(90%);
   }
 }
 
@@ -44,6 +45,11 @@
   margin-right: 3%;
   float: left;
   display: block;
+}
+
+.author-mini {
+  height: 30px;
+  width: 50px;
 }
 
 .nexttologo {
@@ -97,6 +103,32 @@
   @include fontslg;
 }
 
+.post-authorcont {
+  float: right;
+  display: flex;
+  opacity: 0.9;
+  border-radius: 5px;
+  border: 1.5px solid $secondary-color;
+  background: linear-gradient(to bottom, $fifth-color, $button-hover);
+  padding: 5px 0px 10px 20px;
+  margin-right: 1%;
+  box-shadow: 1px 3px 7px rgba(209, 209, 209, 0.767);
+}
+
+.post-author {
+  text-align: right;
+  color: white;
+  font-size: 0.7em;
+  line-height: 1.6;
+  white-space: nowrap;
+}
+
+.post-authorspec {
+  color: $spec-color;
+  font-weight: 600;
+  // text-decoration: underline;
+}
+
 .goback {
   color: $link-color;
   font-weight: bold;
@@ -114,11 +146,10 @@
 }
 
 .img-resize {
-  margin-left: 0.1%;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin: 5% auto 5% auto;
+  display: block;
   border-radius: 15px;
-  width: 95%;
+  width: 100%;
 }
 
 .disqussion {
@@ -138,6 +169,12 @@
   .blog-mini {
     height: 60px !important;
   }
+
+  .author-mini {
+    height: 23px;
+    width: 40px;
+  }
+
   .nexttologo {
     margin-top: 1%;
   }

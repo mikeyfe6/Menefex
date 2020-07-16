@@ -65,7 +65,7 @@ const BlogPage = () => {
                   <h4>{edge.node.title}</h4>
                   <p className={blogDesign.bloggepost}>
                     {' '}
-                    * Gepost op <strong>{edge.node.publishedDate}</strong>, door{' '}
+                    ⌁ Gepost op <strong>{edge.node.publishedDate}</strong>, door{' '}
                     <strong>{edge.node.author}</strong>{' '}
                   </p>
 

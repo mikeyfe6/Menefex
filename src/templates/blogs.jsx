@@ -28,12 +28,14 @@ export const query = graphql`
       subtitle
       slug
       keywords
+      author
       image {
         file {
           url
         }
       }
       publishedDate(formatString: "dddd D MMMM YYYY, H:m", locale: "nl")
+      updatedAt(formatString: "dddd D MMMM YYYY, H:m", locale: "nl")
       body {
         json
       }
@@ -87,10 +89,10 @@ const Blog = (props) => {
           <img className="blog-mini" src={mini} alt="Gimmix Mini Logo" />
           <div className="nexttologo">
             <h1 className="post-title">
-              <b>| {props.data.contentfulBlogPost.title}</b>
+              <strong>| {props.data.contentfulBlogPost.title}</strong>
             </h1>
             <p className="post-date">
-              Gepost op {props.data.contentfulBlogPost.publishedDate}
+              ⌁ Gepost op {props.data.contentfulBlogPost.publishedDate}
             </p>
           </div>
           <div className="clr" />
@@ -101,13 +103,26 @@ const Blog = (props) => {
             * {props.data.contentfulBlogPost.subtitle}
           </h5>
 
-          <p className="post-content">
+          <div className="post-content">
             {documentToReactComponents(
               props.data.contentfulBlogPost.body.json,
               options,
             )}
-          </p>
-          <div className="smallwhitespace" />
+            <div className="whitespace" />
+            <div className="post-authorcont">
+              <div className="post-author">
+                <span className="post-authorspec">Auteur</span>{' '}
+                {props.data.contentfulBlogPost.author}
+                <br />
+                <span className="post-authorspec">Laatst bijgewerkt</span>{' '}
+                {props.data.contentfulBlogPost.updatedAt}
+              </div>
+              <img className="author-mini" src={mini} alt="Gimmix Mini Logo" />
+              <div className="clr" />
+            </div>
+          </div>
+
+          <div className="whitespace" />
           <GoogleAds slot="3266975443" />
           <div className="specwhitespace" />
           <div className="disqussion">
