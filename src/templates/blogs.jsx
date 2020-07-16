@@ -34,8 +34,8 @@ export const query = graphql`
           url
         }
       }
-      publishedDate(formatString: "dddd D MMMM YYYY, H:m", locale: "nl")
-      updatedAt(formatString: "dddd D MMMM YYYY, H:m", locale: "nl")
+      publishedDate(formatString: "dddd D MMMM YYYY, HH:mm", locale: "nl")
+      updatedAt(formatString: "dddd D MMMM YYYY, HH:mm", locale: "nl")
       body {
         json
       }
