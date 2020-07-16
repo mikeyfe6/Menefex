@@ -108,7 +108,7 @@ const Blog = (props) => {
               props.data.contentfulBlogPost.body.json,
               options,
             )}
-            <div className="whitespace" />
+            <div className="smallwhitespace" />
             <div className="post-authorcont">
               <div className="post-author">
                 <span className="post-authorspec">Auteur</span>{' '}
@@ -122,7 +122,7 @@ const Blog = (props) => {
             </div>
           </div>
 
-          <div className="whitespace" />
+          <div className="extrawhitespace" />
           <GoogleAds slot="3266975443" />
           <div className="specwhitespace" />
           <div className="disqussion">
