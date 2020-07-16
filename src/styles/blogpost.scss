@@ -101,6 +101,24 @@
   width: 80%;
   padding-left: 5px;
   @include fontslg;
+
+  p {
+    margin-top: 2rem;
+    letter-spacing: 0.4px !important;
+
+    b {
+      color: $secondary-color;
+      font-weight: 900;
+    }
+  }
+
+  ol li {
+    margin-top: -1rem;
+  }
+
+  h6 {
+    margin-top: 3rem;
+  }
 }
 
 .post-authorcont {
@@ -146,7 +164,7 @@
 }
 
 .img-resize {
-  margin: 5% auto 5% auto;
+  margin: 7% auto 7% auto;
   display: block;
   border-radius: 15px;
   width: 100%;
@@ -186,6 +204,25 @@
   .post-content {
     width: 97%;
     @include fontsmb;
+
+    p {
+      margin-top: 1.5rem;
+      letter-spacing: 0.3px !important;
+
+      b {
+        color: $secondary-color;
+        font-weight: 900;
+      }
+    }
+
+    ol li {
+      margin-top: -1rem;
+    }
+
+    h6 {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
   }
 
   .excerpt {
