@@ -118,10 +118,9 @@ const Blog = (props) => {
                 {props.data.contentfulBlogPost.updatedAt}
               </div>
               <img className="author-mini" src={mini} alt="Gimmix Mini Logo" />
-              <div className="clr" />
             </div>
           </div>
-
+          <div className="clr" />
           <div className="specwhitespace" />
           <GoogleAds slot="3266975443" />
           <div className="specwhitespace" />
