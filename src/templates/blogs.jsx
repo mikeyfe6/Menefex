@@ -122,7 +122,7 @@ const Blog = (props) => {
             </div>
           </div>
 
-          <div className="extrawhitespace" />
+          <div className="specwhitespace" />
           <GoogleAds slot="3266975443" />
           <div className="specwhitespace" />
           <div className="disqussion">
