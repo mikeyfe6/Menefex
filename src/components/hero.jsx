@@ -35,9 +35,9 @@ const Hero = () => {
             animationInDelay={9000}
             animationInDuration={1900}
           >
-            <h1 className={heroDesign.heroHead}>
+            <h2 className={heroDesign.heroHead}>
               - Websites, webapplicaties & SEO -
-            </h1>
+            </h2>
           </Animated>
         </div>
         <div className={heroDesign.flexancors}>

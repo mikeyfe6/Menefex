@@ -20,9 +20,9 @@ const AboutPage = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-8">
-            <h2 className="page-title">
+            <h1 className="page-title">
               Over Gimmix<span className="headdots">.</span>
-            </h2>
+            </h1>
             <br />
 
             <h3 className={aboutDesign.overtitle}>Wie zijn wij?</h3>

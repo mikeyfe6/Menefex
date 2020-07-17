@@ -24,9 +24,9 @@ const ContactPage = () => {
 
       <div className="container">
         <div className="whitespace" />
-        <h2 className="page-title">
+        <h1 className="page-title">
           Contact<span className="headdots">.</span>
-        </h2>
+        </h1>
         <div className="row">
           <div className="col-lg-8">
             <br />

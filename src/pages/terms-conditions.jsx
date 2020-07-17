@@ -16,7 +16,7 @@ const TermsConditions = () => (
       <div className="whitespace" />
       <hr />
       <br />
-      <h2 className="page-title"> ALGEMENE VOORWAARDEN - Gimmix</h2>   
+      <h1 className="page-title"> ALGEMENE VOORWAARDEN - Gimmix</h1>   
       <h5>Definities</h5>
       <br />
       <ol>

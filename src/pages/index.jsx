@@ -28,7 +28,7 @@ const IndexPage = () => {
       <br />
       <div id="biografiescroll" className="extrawhitespace" />
 
-      <h1 className="hometitles">Biografie</h1>
+      <h3 className="hometitles">Biografie</h3>
       <br />
 
       <Smallbio />
@@ -38,7 +38,7 @@ const IndexPage = () => {
 
       <div id="servicescroll" className="extrawhitespace" />
 
-      <h1 className="hometitles">Services & Diensten</h1>
+      <h3 className="hometitles">Services & Diensten</h3>
       <br />
 
       <Quote />
@@ -48,7 +48,7 @@ const IndexPage = () => {
 
       <div id="projectscroll" className="extrawhitespace" />
 
-      <h1 className="hometitles"> Recente Projecten</h1>
+      <h3 className="hometitles"> Recente Projecten</h3>
       <br />
 
       <Projects />
@@ -59,16 +59,3 @@ const IndexPage = () => {
 };
 
 export default IndexPage;
-
-/* <h1>Welkom bij Gimmix</h1>
-<h2>Ik ben Michael Fransman</h2>
-<p>
-  Heb je een fantastische webdeveloper nodig?{' '}
-  <Link to="/contact">Klik hier</Link>
-</p> */
-
-/* <Animated
-  animationIn="bounceInLeft"
-  animationOut="fadeOut"
-  isVisible={true}
-></Animated>; */

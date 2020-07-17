@@ -19,9 +19,9 @@ const Prices = () => {
       />
       <div className="container">
         <div className="whitespace" />
-        <h2 className="page-title">
+        <h1 className="page-title">
           Prijzen & tarieven<span className="headdots">.</span>
-        </h2>
+        </h1>
         <br />
         <p className="page-sub">
           Hier ziet u een indicatie van onze scherpe prijzen. Heeft u liever een

@@ -47,9 +47,9 @@ const BlogPage = () => {
 
       <div className="container">
         <div className="whitespace" />
-        <h2 className="page-title">
+        <h1 className="page-title">
           Blog<span className="headdots">.</span>
-        </h2>
+        </h1>
         <br />
         <p className="page-sub">What comes through our mind..</p>
         <ol className={blogDesign.posts}>

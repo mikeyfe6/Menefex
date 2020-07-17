@@ -27,9 +27,9 @@ const workPage = () => {
         <div className="whitespace" />
         <div className="row">
           <div className="col-lg-12">
-            <h2 className="page-title" data-wow-delay="1s">
+            <h1 className="page-title" data-wow-delay="1s">
               Recente Projecten<span className="headdots">.</span>
-            </h2>
+            </h1>
             <br />
 
             <p className="page-sub">
