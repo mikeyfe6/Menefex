@@ -27,10 +27,10 @@ const Smallbio = () => {
             Michael Fransman
           </a>
           , die zich inzet en gespecialiseerd is in het in- en uitdenken en
-          ontwikkelen van <u>websites en webapplicaties</u>. Wij zorgen dat uw
-          digitale ambities en wensen tot één komen. Wij bouwen onze
-          softwareproducten <u>op maatwerk</u> en zorgen dat u zich zoveel
-          mogelijk kan relativeren met uw eigen website of webapplicatie als
+          ontwikkelen van <u>websites en webapplicaties</u>, voor zowel jonge
+          startups als gevestigde bedrijven. Wij zorgen dat uw digitale ambities
+          en wensen tot één komen. Wij bouwen onze softwareproducten{' '}
+          <u>op maatwerk</u> zodat u zich zoveel mogelijk kan relativeren met uw
           eindproduct.
           <br />
           <b>{/* <Link to="/about/">Meer over Gimmix .. </Link> */}</b>

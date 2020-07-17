@@ -58,9 +58,13 @@ const Hero = () => {
           >
             <span className={heroDesign.scrollHead}>
               <Link to="#biografiescroll">biografie</Link>{' '}
-              <span className="speccol">&nbsp;&nbsp;|&nbsp;&nbsp;</span>{' '}
+              <span className="speccol">
+                &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+              </span>{' '}
               <Link to="#servicescroll">services</Link>{' '}
-              <span className="speccol">&nbsp;&nbsp;|&nbsp;&nbsp;</span>{' '}
+              <span className="speccol">
+                &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+              </span>{' '}
               <Link to="#projectscroll">projecten</Link>
             </span>{' '}
           </Animated>

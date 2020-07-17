@@ -10,25 +10,26 @@
   margin-bottom: 1%;
   background: linear-gradient(to bottom, #f5f5f5, $fourth-color);
   box-shadow: 1px 3px 7px rgba(209, 209, 209, 0.767);
-  border: 2px solid $super-color;
+  border: 1.5px solid $super-color;
   border-radius: 2.5px;
 }
 
 .quote-wrapper {
-  padding: 3%;
+  padding: 1.75%;
 
   #services {
     width: 100%;
-    margin: 3%;
+    margin: 2%;
+    padding-right: 0.75% !important;
   }
 
   .quote-head {
     display: inline-block;
     padding-left: 5%;
-    margin-bottom: 7.5%;
-    font-family: $extra-font;
+    margin-bottom: 10%;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.4em;
+    letter-spacing: 1px;
   }
 
   .quote-kwali {
@@ -48,33 +49,53 @@
 
   .quote-text {
     @include fontslg;
+    font-size: 0.825em;
     margin-top: 15%;
     font-family: $extra-font;
   }
 
+  .quote-block {
+    height: 150px;
+  }
+
   .thick {
     margin: 0;
+    padding: 0;
     width: 23%;
     border: 3px solid $third-color;
+    border-radius: 1px;
   }
 
   .thin {
-    border: 0.5px solid $secondary-color;
+    border-color: $secondary-color;
+    padding: 0px;
+    margin: 0px;
+    width: 50%;
   }
 }
 
 .endline {
-  border-width: 5px;
+  border-width: 3px;
   border-color: $primary-color;
+  // border-style: dashed;
   opacity: 0.75;
-  border-radius: 25px;
   width: 100%;
-  margin: 0 auto;
+  border-radius: 25px;
 }
 
 @media (max-width: 768px) {
   .quote-wrapper {
     padding: 5%;
+
+    #services {
+      width: 100%;
+      margin: 2%;
+      padding-right: 5% !important;
+    }
+  }
+
+  .quote-block {
+    height: 60px !important;
   }
 
   .quote-container {
@@ -88,10 +109,17 @@
 
   .quote-text {
     @include fontsmb;
+    margin-top: 10% !important;
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
+  .quote-wrapper {
+    padding: 5%;
+  }
+}
+
+@media (min-width: 1200px) {
   .endline {
     display: none;
   }
