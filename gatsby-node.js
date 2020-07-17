@@ -9,7 +9,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
         edges {
           node {
             slug
-            updatedAt
+            updatedAt(formatString: "dddd D MMMM YYYY, HH:mm", locale: "nl")
           }
         }
       }
