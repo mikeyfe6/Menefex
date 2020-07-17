@@ -9,6 +9,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
         edges {
           node {
             slug
+            updatedAt
           }
         }
       }
@@ -21,6 +22,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
       path: `/blog/${edge.node.slug}/`,
       context: {
         slug: edge.node.slug,
+        updatedAt: edge.node.updatedAt.substring(0.1),
       },
     });
   });
