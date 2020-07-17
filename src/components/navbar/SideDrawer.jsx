@@ -40,13 +40,13 @@ const sideDrawer = (props) => {
         </li>
         <li>
           <Link to="/prices/" activeClassName={sidebarDesign.activePage}>
-            prices
+            prijzen
             <span className={sidebarDesign.dots}>.</span>
           </Link>
         </li>
         <li>
           <Link to="/about/" activeClassName={sidebarDesign.activePage}>
-            about
+            over
             <span className={sidebarDesign.dots}>.</span>
           </Link>
         </li>

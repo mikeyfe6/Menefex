@@ -52,13 +52,13 @@ const toolbar = (props) => (
           </li>
           <li>
             <Link to="/prices/" activeClassName={headerDesign.activePage}>
-              prices
+              prijzen
               <span className={headerDesign.dots}>.</span>
             </Link>
           </li>
           <li>
             <Link to="/about/" activeClassName={headerDesign.activePage}>
-              about
+              over
               <span className={headerDesign.dots}>.</span>
             </Link>
           </li>
