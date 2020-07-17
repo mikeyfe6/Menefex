@@ -27,7 +27,7 @@ const Quote = () => {
             </div>
             <br />
             <hr className={quoteDesign.thin} />
-            <p className={quoteDesign.quoteText}>
+            <div className={quoteDesign.quoteText}>
               <h6>Focus:</h6> <br />
               <ul className={quoteDesign.quoteKwali}>
                 <li>Snelheid</li>
@@ -35,7 +35,7 @@ const Quote = () => {
                 <li>User Interface & Experience</li>
                 <li>Web Cross-platform voor alle populaire browsers</li>
               </ul>
-            </p>
+            </div>
             <br />
             <hr className={quoteDesign.endline} />
             <br />
@@ -54,7 +54,7 @@ const Quote = () => {
             </div>
             <br />
             <hr className={quoteDesign.thin} />
-            <p className={quoteDesign.quoteText}>
+            <div className={quoteDesign.quoteText}>
               <h6>Focus:</h6> <br />
               <ul className={quoteDesign.quoteKwali}>
                 <li>Overzicht Assortiment</li>
@@ -62,7 +62,7 @@ const Quote = () => {
                 <li>24/7 Handelbaar</li>
                 <li>Automatisering</li>
               </ul>
-            </p>
+            </div>
             <br />
             <hr className={quoteDesign.endline} />
             <br />
@@ -80,7 +80,7 @@ const Quote = () => {
             </div>
             <br />
             <hr className={quoteDesign.thin} />
-            <p className={quoteDesign.quoteText}>
+            <div className={quoteDesign.quoteText}>
               <h6>Focus:</h6> <br />
               <ul className={quoteDesign.quoteKwali}>
                 <li>Offline mogelijkheden</li>
@@ -90,7 +90,7 @@ const Quote = () => {
                   gebruik)
                 </li>
               </ul>
-            </p>
+            </div>
             <br />
             <hr className={quoteDesign.endline} />
             <br />
@@ -113,14 +113,14 @@ const Quote = () => {
             </div>
             <br />
             <hr className={quoteDesign.thin} />
-            <p className={quoteDesign.quoteText}>
+            <div className={quoteDesign.quoteText}>
               <h6>Focus:</h6> <br />
               <ul className={quoteDesign.quoteKwali}>
                 <li>Vindbaarheid in zoekmachines</li>
                 <li>Content wordt sneller gevonden</li>
                 <li>Grafieken en statistieken</li>
               </ul>
-            </p>
+            </div>
             <br />
             <hr className={quoteDesign.endline} />
             <br />
