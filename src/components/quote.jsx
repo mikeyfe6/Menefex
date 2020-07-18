@@ -86,8 +86,8 @@ const Quote = () => {
                 <li>Offline mogelijkheden</li>
                 <li>Optimalisatie voor alle apparaten</li>
                 <li>
-                  Ingebouwde functies (bijv. camera, microfoon & locatie-
-                  gebruik)
+                  Ingebouwde functies (bijv. camera-, microfoon- &
+                  locatiegebruik)
                 </li>
               </ul>
             </div>
