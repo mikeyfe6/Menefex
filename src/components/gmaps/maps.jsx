@@ -35,6 +35,7 @@ class SimpleMap extends Component {
             bootstrapURLKeys={{
               key: 'AIzaSyB-LLOszJXI8hOeyYggUS19IPlcOeX8Anc',
               language: 'nl',
+              region: 'NL',
             }}
             defaultCenter={this.props.center}
             defaultZoom={this.props.zoom}
