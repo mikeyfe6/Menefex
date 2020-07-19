@@ -50,7 +50,7 @@
     "gatsby-transformer-sharp": "^2.5.10",
     "gatsby-transformer-sqip": "^2.3.18",
     "google-map-react": "^1.1.7",
-    "gsap": "^3.4.0",
+    "gsap": "^3.4.1",
     "hover.css": "^2.3.2",
     "jquery": "^3.5.1",
     "node-sass": "^4.14.1",
@@ -67,7 +67,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
-    "eslint": "^7.4.0",
+    "eslint": "^7.5.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-config-react-app": "^5.2.1",
