@@ -1,9 +1,11 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 
 import React from 'react';
 import '../../styles/marker.scss';
 
-const Marker = (color, name, id) => {
+const Marker = (props) => {
+  const { color, name, id } = props;
   return (
     <div
       className="marker"
