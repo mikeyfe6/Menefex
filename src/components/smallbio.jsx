@@ -15,23 +15,21 @@ const Smallbio = () => {
         <hr className={smallbioDesign.thick} />
         <br />
         <p className={smallbioDesign.smallbioText}>
+          <b>Gimmix</b> is een jong & modern webmediabedrijf, opgericht door{' '}
           <b>
-            <u>Gimmix</u>
-          </b>{' '}
-          is een jong en modern webmediabedrijf, opgericht door{' '}
-          <a
-            href="https://www.linkedin.com/in/michaelfransman"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Michael Fransman
-          </a>
-          , die zich inzet en gespecialiseerd is in het in- en uitdenken en
-          ontwikkelen van <u>websites en webapplicaties</u>, voor zowel jonge
-          startups als gevestigde bedrijven. Wij zorgen dat uw digitale ambities
-          en wensen tot één komen. Wij bouwen onze softwareproducten{' '}
-          <u>op maatwerk</u> zodat u zich zoveel mogelijk kan relativeren met uw
-          eindproduct.
+            <a
+              href="https://www.linkedin.com/in/michaelfransman"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Michael Fransman
+            </a>
+          </b>
+          , die zich inzet en gespecialiseerd is in het in- en uitdenken &
+          ontwikkelen van websites & webapplicaties, voor zowel jonge startups
+          als gevestigde bedrijven. Wij zorgen dat uw digitale ambities en
+          wensen tot één komen. Wij bouwen onze softwareproducten op maatwerk
+          zodat u zich zoveel mogelijk kan relativeren met uw eindproduct.
           <br />
           <b>{/* <Link to="/about/">Meer over Gimmix .. </Link> */}</b>
           <br />
