@@ -49,7 +49,7 @@ const Quote = () => {
               <p className={quoteDesign.quoteText}>
                 Webshops zijn deze tijd onmisbaar voor uw lokale bedrijf en
                 bieden een bredere netwerk, beter beschikbaarheid en uiteraard
-                meer productaanzien.
+                meer coversie en productaanzien.
               </p>
             </div>
             <br />
@@ -107,7 +107,7 @@ const Quote = () => {
               <p className={quoteDesign.quoteText}>
                 Met zoekmachineoptimalisatie, oftewel &apos;SEO&apos; zorgen wij
                 dat uw website bovenaan te vinden is in Google, Bing, Yahoo,
-                ect. Uw potentiele bezoekers zullen in staat zijn uw online
+                etc. Uw potentiele bezoekers zullen in staat zijn uw online
                 sneller te vinden.
               </p>
             </div>
