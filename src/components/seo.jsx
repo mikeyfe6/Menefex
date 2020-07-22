@@ -71,44 +71,6 @@ const SEO = ({
             <meta name="image" content={seo.image} />
             <meta name="keywords" content={seo.keywords} />
 
-            {seo.url && <meta property="og:url" content={seo.url} />}
-            {/* {seo.url && <meta property="twitter:site" content={seo.url} />} */}
-
-            {(article ? (
-              false
-            ) : (
-              <meta property="og:type" content="website" />
-            )) || <meta property="og:type" content="article" />}
-
-            {seo.title && <meta property="og:title" content={seo.title} />}
-
-            {seo.description && (
-              <meta property="og:description" content={seo.description} />
-            )}
-
-            {seo.image && <meta property="og:image" content={seo.image} />}
-
-            <meta property="og:site_name" content="Gimmix" />
-            <meta property="og:locale" content="nl_NL" />
-            <meta property="og:image:width" content="512" />
-            <meta property="og:image:height" content="512" />
-            <meta property="fb:app_id" content="388358162140938" />
-
-            <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:site" content={twitterUsername} />
-
-            {twitterUsername && (
-              <meta name="twitter:creator" content={twitterUsername} />
-            )}
-
-            {seo.title && <meta name="twitter:title" content={seo.title} />}
-
-            {seo.description && (
-              <meta name="twitter:description" content={seo.description} />
-            )}
-
-            {seo.image && <meta name="twitter:image" content={seo.image} />}
-
             {/* Schema Markup Data */}
 
             <script type="application/ld+json">
@@ -122,7 +84,7 @@ const SEO = ({
                     "name": "Michael Fransman"
                   },
                   "image": "https://gimmix.nl/Gimmix-logo.png",
-                  "@id": "https://gimmix.nl",
+                  "@id": "https://gimmix.nl/#localbusiness",
                   "url": "https://gimmix.nl",
                   "telephone": "+31611054318",
                   "email": "info@gimmix.nl",
@@ -161,6 +123,75 @@ const SEO = ({
                 }
               `}
             </script>
+            <script type="application/ld+json">
+              {`
+                {
+                  "@context": "http://schema.org",
+                  "@type": "WebPage",
+                  "@id": "https://gimmix.nl/#webpage",
+                  "url": "https://gimmix.nl",
+                  "name": "Gimmix Webmediabedrijf"
+                  }
+                `}
+            </script>
+            <script type="application/ld+json">
+              {`
+                {
+                  "@context": "http://schema.org",
+                  "@type": "BreadcrumbList",
+                  "itemListElement":
+                    [
+                      {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "item":
+                      {
+                        "@id": "https://gimmix.nl",
+                        "name": "Gimmix Webmediabedrijf"
+                        }
+                      }
+                    ]
+                  }
+                `}
+            </script>
+
+            {seo.url && <meta property="og:url" content={seo.url} />}
+            {/* {seo.url && <meta property="twitter:site" content={seo.url} />} */}
+
+            {(article ? (
+              false
+            ) : (
+              <meta property="og:type" content="website" />
+            )) || <meta property="og:type" content="article" />}
+
+            {seo.title && <meta property="og:title" content={seo.title} />}
+
+            {seo.description && (
+              <meta property="og:description" content={seo.description} />
+            )}
+
+            {seo.image && <meta property="og:image" content={seo.image} />}
+
+            <meta property="og:site_name" content="Gimmix" />
+            <meta property="og:locale" content="nl_NL" />
+            <meta property="og:image:width" content="512" />
+            <meta property="og:image:height" content="512" />
+            <meta property="fb:app_id" content="388358162140938" />
+
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:site" content={twitterUsername} />
+
+            {twitterUsername && (
+              <meta name="twitter:creator" content={twitterUsername} />
+            )}
+
+            {seo.title && <meta name="twitter:title" content={seo.title} />}
+
+            {seo.description && (
+              <meta name="twitter:description" content={seo.description} />
+            )}
+
+            {seo.image && <meta name="twitter:image" content={seo.image} />}
 
             {/* Scripts: Extentions & Plugins */}
 
