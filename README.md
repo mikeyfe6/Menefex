@@ -2,7 +2,7 @@
 <p align="center">
   <a href="https://gimmix.nl" rel="noopener noreferrer"
               target="_blank">
-    <img alt="Gimmix" src="http://images.ctfassets.net/nn38kx5zm1zj/5qYUKodBkVGWx7kyvegNhV/45b0fc3fc0b76abf899041ac75c70d41/Gimmix-LOGO-PNG-RESIZED.png" width="100" />
+    <img alt="Gimmix" src="https://i.postimg.cc/htmfNNP4/Gimmix-LOGO.png" width="200" />
   </a>
 </p>
 <h1 align="center">
