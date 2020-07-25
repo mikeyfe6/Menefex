@@ -6,7 +6,7 @@
   </a>
 </p>
 
-<h1 align="center">
+<h1>
   Gimmix Webmediabedrijf
 </h1>
 
