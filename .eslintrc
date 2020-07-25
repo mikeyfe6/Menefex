@@ -20,12 +20,24 @@
     "plugin:react/recommended",
     "prettier/react",
     "prettier/flowtype",
-    "prettier/react",
     "prettier/standard",
     "plugin:prettier/recommended"
+    // "eslint:recommended"
   ],
   "plugins": ["prettier", "react"],
   "rules": {
+    // "strict": 0,
+    // "import/extensions": ["error", { "jsx": "never" }],
+    // "import/no-extraneous-dependencies": [
+    //   "error",
+    //   {
+    //     "devDependencies": false,
+    //     "optionalDependencies": false,
+    //     "peerDependencies": false
+    //   }
+    // ],
+    // "import/no-unresolved": [1, { "commonjs": true, "amd": true }],
+    // "import/export": 1,
     "prettier/prettier": "off",
     "no-unused-vars": "warn",
     "quote-props": "warn",
@@ -42,5 +54,12 @@
     "react/jsx-key": 1,
     "react/display-name": 1,
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+    // },
+    // "settings": {
+    //   "import/resolver": {
+    //     "node": {
+    //       "extensions": [".js", ".jsx"]
+    //     }
+    //   }
   }
 }
