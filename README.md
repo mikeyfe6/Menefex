@@ -5,6 +5,7 @@
     <img alt="Gimmix" src="https://i.postimg.cc/htmfNNP4/Gimmix-LOGO.png" width="500" />
   </a>
 </p>
+
 <h1 align="center">
   Gimmix Webmediabedrijf
 </h1>
