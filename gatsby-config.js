@@ -22,25 +22,12 @@ module.exports = {
     twitterUsername: '@GimmixWMB',
   },
   plugins: [
-    // {
-    //   resolve: `gatsby-plugin-google-analytics`,
-    //   options: {
-    //     // replace "UA-XXXXXXXXX-X" with your own Tracking ID
-    //     trackingId: 'UA-120057209-5',
-    //     head: true,
-    //     anonymize: true,
-    //   },
-    // },
     {
-      resolve: `gatsby-plugin-cookiehub`,
+      resolve: `gatsby-plugin-google-analytics`,
       options: {
-        // your cookiehub widget ID
-        cookihubId: `744ed0be`,
-        // your google analytics tracking id
-        trackingId: `UA-120057209-5`,
-        // Puts tracking script in the head instead of the body
+        // replace "UA-XXXXXXXXX-X" with your own Tracking ID
+        trackingId: 'UA-120057209-5',
         head: true,
-        // enable ip anonymization
         anonymize: true,
       },
     },
