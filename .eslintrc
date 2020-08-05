@@ -14,52 +14,36 @@
     "node": true
   },
   "extends": [
+    "plugin:react/recommended",
     "airbnb",
     "prettier",
-    "airbnb/hooks",
-    "plugin:react/recommended",
-    "prettier/react",
-    "prettier/flowtype",
-    "prettier/standard",
-    "plugin:prettier/recommended"
-    // "eslint:recommended"
+    "prettier/react"
   ],
-  "plugins": ["prettier", "react"],
+  "plugins": ["react", "prettier"],
   "rules": {
-    // "strict": 0,
-    // "import/extensions": ["error", { "jsx": "never" }],
-    // "import/no-extraneous-dependencies": [
-    //   "error",
-    //   {
-    //     "devDependencies": false,
-    //     "optionalDependencies": false,
-    //     "peerDependencies": false
-    //   }
-    // ],
-    // "import/no-unresolved": [1, { "commonjs": true, "amd": true }],
-    // "import/export": 1,
     "prettier/prettier": "off",
-    "no-unused-vars": "warn",
-    "quote-props": "warn",
-    "semi": "error",
+    "no-unused-vars": "off",
     "no-console": "off",
     "func-names": "off",
     "no-process-exit": "off",
     "object-shorthand": "off",
     "class-methods-use-this": "off",
-    "prefer-destructuring": "warn",
-    "react/jsx-one-expression-per-line": "off",
-    "react/destructuring-assignment": 1,
-    "react/prop-types": 1,
-    "react/jsx-key": 1,
-    "react/display-name": 1,
+    "import/no-extraneous-dependencies": 0,
+    "import/no-absolute-path": 0,
+    "global-require": 0,
+    // "quote-props": "warn",
+    // "semi": "error",
+    // "prefer-destructuring": "warn",
+    // "react/jsx-one-expression-per-line": "off",
+    // "react/destructuring-assignment": 1,
+    // "react/jsx-key": 1,
+    // "react/display-name": 1,
+    "jsx-a11y/label-has-associated-control": 0,
+    "jsx-a11y/accessible-emoji": 0,
+    "react/static-property-placement": 0,
+    "react/jsx-props-no-spreading": 0,
+    "react/destructuring-assignment": 0,
+    "react/prop-types": 0,
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
-    // },
-    // "settings": {
-    //   "import/resolver": {
-    //     "node": {
-    //       "extensions": [".js", ".jsx"]
-    //     }
-    //   }
   }
 }

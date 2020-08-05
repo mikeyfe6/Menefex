@@ -1,5 +1,3 @@
-/* eslint-disable react/jsx-key */
-
 import React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 
@@ -51,7 +49,7 @@ const BlogPage = () => {
           Blog<span className="headdots">.</span>
         </h1>
         <br />
-        <p className="page-sub">What comes through our mind..</p>
+        <p className="page-sub">What goes through our mind..</p>
         <ol className={blogDesign.posts}>
           {data.allContentfulBlogPost.edges.map((edge) => {
             return (
@@ -63,16 +61,17 @@ const BlogPage = () => {
                     className={blogDesign.blogimg}
                   />
                   <h4>{edge.node.title}</h4>
-                  <p className={blogDesign.bloggepost}>
-                    {' '}
-                    ⌁ Gepost op <strong>{edge.node.publishedDate}</strong>, door{' '}
-                    <strong>{edge.node.author}</strong>{' '}
-                  </p>
 
                   <span className={blogDesign.contsubtext}>
                     {' '}
                     {edge.node.subtitle}
                   </span>
+
+                  <p className={blogDesign.bloggepost}>
+                    {' '}
+                    Gepost: <strong>{edge.node.publishedDate}</strong> | Auteur:{' '}
+                    <strong>{edge.node.author}</strong>{' '}
+                  </p>
                 </Link>
               </li>
             );

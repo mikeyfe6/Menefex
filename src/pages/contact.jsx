@@ -1,6 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
-/* eslint-disable jsx-a11y/accessible-emoji */
-
 import React from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import Layout from '../components/layout';

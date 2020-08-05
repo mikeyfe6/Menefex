@@ -1,8 +1,3 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable react/destructuring-assignment */
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/static-property-placement */
-
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
 

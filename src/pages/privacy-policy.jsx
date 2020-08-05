@@ -1,5 +1,3 @@
-/* eslint-disable no-script-url */
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import { Link } from 'gatsby';
 
@@ -45,8 +43,8 @@ const PrivacyPolicy = () => (
         Met het voortzetten van het bezoek van deze website accepteert u de
         volgende gebruikersvoorwaarden. U accepteert het gebruik van cookies en
         andere tracking systems. Indien u dit gebruik wenst te weigeren dient u
-        op de volgende link te klikken:{' '}
-        <a href="javascript:gaOptout();">Google Analytics uitschakelen</a>
+        op het tandwieletje linksonder in beeld te klikken en de cookies
+        handmatig uit te schakelen.
       </p>
       <p>
         De huidige op de website beschikbare versie van de privacy policy is de

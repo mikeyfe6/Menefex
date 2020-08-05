@@ -1,9 +1,4 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable jsx-a11y/label-has-associated-control */
-
 import React from 'react';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import callStyles from '../styles/modules/call.module.scss';
 

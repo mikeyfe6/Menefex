@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-indent */
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 

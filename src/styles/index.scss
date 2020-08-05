@@ -133,6 +133,12 @@ span.speccol {
   border-radius: 25px;
 }
 
+.ch2-style-light.ch2-icon a svg {
+  border: 2px solid $fourth-color !important;
+  fill: $secondary-color !important;
+  background: $primary-color !important;
+}
+
 @media (max-width: 768px) {
   .hometitles {
     font-size: 1.5em;
