@@ -134,26 +134,37 @@ const SEO = ({
                   }
                 `}
             </script>
-            {/* <script type="application/ld+json">
+            <script type="application/ld+json">
               {`
                 {
                   "@context": "http://schema.org",
                   "@type": "BreadcrumbList",
                   "itemListElement":
-                    [
+                  [
+                    {
+                      "@type": "ListItem",
+                      "position": 0,
+                      "item":
                       {
+                        "@type": "Website",
+                        "@id": "https://gimmix.nl",
+                        "name": "Home"
+                      }
+                    },
+                    {
                       "@type": "ListItem",
                       "position": 1,
                       "item":
                       {
-                        "@id": "https://gimmix.nl",
-                        "name": "Gimmix Webmediabedrijf"
-                        }
+                        "@type": "Blog",
+                        "@id": "https://gimmix.nl/blog",
+                        "name": "Blog"
                       }
-                    ]
-                  }
-                `}
-            </script> */}
+                    }  
+                  ]
+                }
+             `}
+            </script>
 
             {seo.url && <meta property="og:url" content={seo.url} />}
             {/* {seo.url && <meta property="twitter:site" content={seo.url} />} */}
