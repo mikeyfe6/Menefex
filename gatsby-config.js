@@ -22,14 +22,55 @@ module.exports = {
     twitterUsername: '@GimmixWMB',
   },
   plugins: [
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     // replace "UA-XXXXXXXXX-X" with your own Tracking ID
+    //     trackingId: 'UA-120057209-5',
+    //     head: true,
+    //     anonymize: true,
+    //   },
+    // },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-cookiehub-banner`,
       options: {
-        // replace "UA-XXXXXXXXX-X" with your own Tracking ID
+        // The ID is part of the CookieHub URL: https://cookiehub.net/cc/YOUR_COOKIEHUB_ID.js
+        cookieHubId: '744ed0be',
+        // Optional parameter (default false) - Use new v2 API.
+        cookieHubV2Api: true,
+        // Categories configured with CookieHub
+        categories: [
+          {
+            categoryName: 'analytics', // Unique id of the category which is set by Cookiehub.
+            cookieName: 'gatsby-plugin-google-analytics-gdpr_cookies-enabled', // Your custom cookie name
+          },
+          {
+            categoryName: 'marketing',
+            cookieName: 'marketing-enabled',
+          },
+        ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics-gdpr`,
+      options: {
+        // The property ID; the tracking code won't be generated without it.
         trackingId: 'UA-120057209-5',
         head: true,
-        anonymize: true,
         respectDNT: true,
+        // Optional parameter (default false) - Enable analytics in development mode.
+        enableDevelopment: false, // default false
+        // Optional parameter (default true) - Some countries (such as Germany) require you to use the _anonymizeIP function for Google Analytics. Otherwise you are not allowed to use it.
+        anonymizeIP: true,
+        // Optional parameter (default false) - Starts google analytics with cookies enabled. In some countries (such as Germany) this is not allowed.
+        autoStartWithCookiesEnabled: false,
+        // Optional parameter - Configuration for react-ga and google analytics
+        reactGaOptions: {
+          debug: true,
+          gaOptions: {
+            sampleRate: 10,
+          },
+        },
       },
     },
     {
@@ -183,46 +224,6 @@ module.exports = {
         theme_color: `#f0c410`,
         display: `standalone`,
         icon: 'src/img/Gimmix-applogo.png',
-      },
-    },
-    {
-      resolve: `gatsby-plugin-cookiehub-banner`,
-      options: {
-        // The ID is part of the CookieHub URL: https://cookiehub.net/cc/YOUR_COOKIEHUB_ID.js
-        cookieHubId: '744ed0be',
-        // Optional parameter (default false) - Use new v2 API.
-        cookieHubV2Api: true,
-        // Categories configured with CookieHub
-        categories: [
-          {
-            categoryName: 'analytics', // Unique id of the category which is set by Cookiehub.
-            cookieName: 'gatsby-plugin-google-analytics-gdpr_cookies-enabled', // Your custom cookie name
-          },
-          {
-            categoryName: 'marketing',
-            cookieName: 'marketing-enabled',
-          },
-        ],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics-gdpr`,
-      options: {
-        // The property ID; the tracking code won't be generated without it.
-        trackingId: 'UA-120057209-5',
-        // Optional parameter (default false) - Enable analytics in development mode.
-        enableDevelopment: true, // default false
-        // Optional parameter (default true) - Some countries (such as Germany) require you to use the _anonymizeIP function for Google Analytics. Otherwise you are not allowed to use it.
-        anonymizeIP: true,
-        // Optional parameter (default false) - Starts google analytics with cookies enabled. In some countries (such as Germany) this is not allowed.
-        autoStartWithCookiesEnabled: false,
-        // Optional parameter - Configuration for react-ga and google analytics
-        reactGaOptions: {
-          debug: true,
-          gaOptions: {
-            sampleRate: 10,
-          },
-        },
       },
     },
     'gatsby-plugin-offline',
