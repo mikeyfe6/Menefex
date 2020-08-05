@@ -69,7 +69,7 @@ const BlogPage = () => {
 
                   <p className={blogDesign.bloggepost}>
                     {' '}
-                    Gepost: <strong>{edge.node.publishedDate}</strong> | Auteur:{' '}
+                    Gepost: <strong>{edge.node.publishedDate}</strong> ⌁ Auteur:{' '}
                     <strong>{edge.node.author}</strong>{' '}
                   </p>
                 </Link>

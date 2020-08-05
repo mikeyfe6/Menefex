@@ -44,11 +44,11 @@
   .bloggepost {
     color: white;
     background: linear-gradient(to left, $link-color, $primary-color);
-    border: 1px solid $fourth-color;
+    border: 0.5px solid $fourth-color;
     box-shadow: 3px inset $link-color;
     // background-color: $link-color;
     border-radius: 5px;
-    font-size: 0.7rem;
+    font-size: 0.6em;
     padding: 0.4rem;
     opacity: 0.9;
     font-style: italic;
@@ -91,17 +91,17 @@
   }
 
   .contsubtext {
-    font-size: 0.5em !important;
+    font-size: 0.65em !important;
     letter-spacing: 0px !important;
   }
 
   .bloggepost {
-    font-size: 0.3em !important;
+    font-size: 0.35em !important;
     padding: 0.3rem !important;
   }
 
   .blogimg {
-    height: 90px !important;
+    height: 80px !important;
     margin: 1%;
     border-width: 1.5px !important;
   }
