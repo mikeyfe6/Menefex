@@ -32,43 +32,16 @@ module.exports = {
     //   },
     // },
     {
-      resolve: `gatsby-plugin-google-analytics-gdpr`,
+      resolve: `gatsby-plugin-cookiehub`,
       options: {
-        // The property ID; the tracking code won't be generated without it.
-        trackingId: 'UA-120057209-5',
-        // Optional parameter (default false) - Enable analytics in development mode.
-        enableDevelopment: false, // default false
-        // Optional parameter (default true) - Some countries (such as Germany) require you to use the _anonymizeIP function for Google Analytics. Otherwise you are not allowed to use it.
-        anonymizeIP: true,
-        // Optional parameter (default false) - Starts google analytics with cookies enabled. In some countries (such as Germany) this is not allowed.
-        autoStartWithCookiesEnabled: false,
-        // Optional parameter - Configuration for react-ga and google analytics
-        reactGaOptions: {
-          debug: true,
-          gaOptions: {
-            sampleRate: 10,
-          },
-        },
-      },
-    },
-    {
-      resolve: `gatsby-plugin-cookiehub-banner`,
-      options: {
-        // The ID is part of the CookieHub URL: https://cookiehub.net/cc/YOUR_COOKIEHUB_ID.js
-        cookieHubId: '744ed0be',
-        // Optional parameter (default false) - Use new v2 API.
-        cookieHubV2Api: true,
-        // Categories configured with CookieHub
-        categories: [
-          {
-            categoryName: 'analytics', // Unique id of the category which is set by Cookiehub.
-            cookieName: 'gatsby-plugin-google-analytics-gdpr_cookies-enabled', // Your custom cookie name
-          },
-          {
-            categoryName: 'marketing',
-            cookieName: 'marketing-enabled',
-          },
-        ],
+        // your cookiehub widget ID
+        cookihubId: `744ed0be`,
+        // your google analytics tracking id
+        trackingId: `UA-120057209-5`,
+        // Puts tracking script in the head instead of the body
+        head: true,
+        // enable ip anonymization
+        anonymize: true,
       },
     },
     {
