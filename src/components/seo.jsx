@@ -134,7 +134,7 @@ const SEO = ({
                   }
                 `}
             </script>
-            <script type="application/ld+json">
+            {/* <script type="application/ld+json">
               {`
                 {
                   "@context": "http://schema.org",
@@ -153,7 +153,7 @@ const SEO = ({
                     ]
                   }
                 `}
-            </script>
+            </script> */}
 
             {seo.url && <meta property="og:url" content={seo.url} />}
             {/* {seo.url && <meta property="twitter:site" content={seo.url} />} */}
