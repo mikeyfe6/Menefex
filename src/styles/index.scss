@@ -139,8 +139,9 @@ span.speccol {
 //   background: $primary-color !important;
 // }
 
-#hs-eu-cookie-confirmation-inner {
-  background-color: $super-color !important;
+#hs-eu-cookie-confirmation {
+  background: linear-gradient(to right, $fourth-color, $third-color);
+  opacity: 0.95;
 }
 
 @media (max-width: 768px) {
