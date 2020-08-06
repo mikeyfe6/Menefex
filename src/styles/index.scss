@@ -133,10 +133,14 @@ span.speccol {
   border-radius: 25px;
 }
 
-.ch2-style-light.ch2-icon a svg {
-  border: 2px solid $fourth-color !important;
-  fill: $secondary-color !important;
-  background: $primary-color !important;
+// .ch2-style-light.ch2-icon a svg {
+//   border: 2px solid $fourth-color !important;
+//   fill: $secondary-color !important;
+//   background: $primary-color !important;
+// }
+
+#hs-eu-cookie-confirmation-inner {
+  background-color: $super-color !important;
 }
 
 @media (max-width: 768px) {
