@@ -144,6 +144,17 @@ span.speccol {
   opacity: 0.95 !important;
 }
 
+#hs-eu-cookie-confirmation-inner {
+  background: transparent !important;
+}
+
+#hs-eu-cookie-confirmation
+  #hs-eu-cookie-confirmation-inner
+  #hs-eu-decline-button {
+  border: 1px solid #f8e491 !important;
+  color: white !important;
+}
+
 @media (max-width: 768px) {
   .hometitles {
     font-size: 1.5em;
