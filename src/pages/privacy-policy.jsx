@@ -43,8 +43,18 @@ const PrivacyPolicy = () => (
         Met het voortzetten van het bezoek van deze website accepteert u de
         volgende gebruikersvoorwaarden. U accepteert het gebruik van cookies en
         andere tracking systems. Indien u dit gebruik wenst te weigeren dient u
-        op het tandwieletje linksonder in beeld te klikken en de cookies
-        handmatig uit te schakelen.
+        op{' '}
+        <button
+          type="button"
+          id="hs_remove_cookie_button"
+          onClick="(function removeCookies(){
+    var _hsp = window._hsp = window._hsp || [];
+    _hsp.push(['revokeCookieConsent']);
+  })()"
+        >
+          verwijder alle cookies
+        </button>{' '}
+        te klikken.
       </p>
       <p>
         De huidige op de website beschikbare versie van de privacy policy is de
