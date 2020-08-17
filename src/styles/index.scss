@@ -140,7 +140,11 @@ span.speccol {
 // }
 
 #hs-eu-cookie-confirmation {
-  background: linear-gradient(to right, $fourth-color, $third-color) !important;
+  background: linear-gradient(
+    to right,
+    $textbase-color,
+    $primary-color
+  ) !important;
   opacity: 0.95 !important;
 }
 
@@ -148,11 +152,36 @@ span.speccol {
   background: transparent !important;
 }
 
-#hs-eu-cookie-confirmation
-  #hs-eu-cookie-confirmation-inner
-  #hs-eu-decline-button {
-  border: 1px solid #f8e491 !important;
-  color: white !important;
+div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner p {
+  color: $fourth-color !important;
+}
+
+div#hs-eu-cookie-confirmation
+  div#hs-eu-cookie-confirmation-inner
+  a#hs-eu-confirmation-button {
+  color: $button-hover !important;
+  transition: 1s ease-in-out !important;
+}
+
+div#hs-eu-cookie-confirmation
+  div#hs-eu-cookie-confirmation-inner
+  a#hs-eu-confirmation-button:hover {
+  background: #f1da7a !important;
+  transition: 1s ease-in-out !important;
+}
+
+div#hs-eu-cookie-confirmation
+  div#hs-eu-cookie-confirmation-inner
+  a#hs-eu-decline-button {
+  opacity: 0.7;
+  transition: 1s ease-in-out !important;
+}
+
+div#hs-eu-cookie-confirmation
+  div#hs-eu-cookie-confirmation-inner
+  a#hs-eu-decline-button:hover {
+  opacity: 1;
+  transition: 1s ease-in-out !important;
 }
 
 @media (max-width: 768px) {

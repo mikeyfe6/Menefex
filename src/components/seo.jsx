@@ -143,7 +143,7 @@ const SEO = ({
                   [
                     {
                       "@type": "ListItem",
-                      "position": 0,
+                      "position": 1,
                       "item":
                       {
                         "@type": "Website",
@@ -153,7 +153,7 @@ const SEO = ({
                     },
                     {
                       "@type": "ListItem",
-                      "position": 1,
+                      "position": 2,
                       "item":
                       {
                         "@type": "Blog",
