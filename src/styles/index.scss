@@ -28,7 +28,7 @@ html {
   }
 
   ::-webkit-scrollbar:hover {
-    width: 15px;
+    // width: 15px !important;
   }
 
   /* Track */
@@ -39,7 +39,6 @@ html {
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: $secondary-color;
-    border-radius: 50px;
   }
 
   /* Handle on hover */
