@@ -31,7 +31,6 @@
     border-top: none;
 
     .project-text {
-      font-family: $extra-font;
       letter-spacing: 0.02em;
       line-height: 1.6em;
       font-size: 0.75em;
@@ -39,8 +38,9 @@
     }
 
     span {
-      font-family: $spec-font;
+      font-family: $barrie-font;
       margin-right: 2%;
+      color: $secondary-color;
       font-size: 0.9rem;
     }
   }
@@ -54,6 +54,7 @@
     width: 48%;
     border-radius: 10px;
     font-size: 0.9em;
+    font-family: $alata-font;
 
     &:hover {
       background: $secondary-color;
@@ -95,7 +96,6 @@
   }
 
   .project-text {
-    font-family: $extra-font;
     letter-spacing: 0.03em !important;
   }
 }

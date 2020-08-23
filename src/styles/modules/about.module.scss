@@ -5,12 +5,11 @@
 @import '../customs/resets';
 
 .overtitle {
-  font-family: $spec-font;
+  font-family: $barrie-font;
   font-size: 1.5em;
 }
 
 .about-text {
-  font-family: $extra-font;
   @include fontslg;
 }
 

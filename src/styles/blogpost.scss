@@ -16,6 +16,7 @@
   text-transform: uppercase;
   padding: 12.5px 15px;
   background: transparent;
+  font-weight: 700;
   color: $primary-color;
   background: linear-gradient(to bottom, $super-color, $fourth-color);
   font-weight: bold;
@@ -55,7 +56,7 @@
 .nexttologo {
   display: inline-block;
   margin-top: 1.5%;
-  margin-bottom: 22.5px;
+  margin-bottom: 2.5%;
   width: 75%;
 }
 
@@ -74,12 +75,11 @@
 }
 
 .post-title {
-  font-family: $extra-font;
-  font-size: 1.2em;
+  font-weight: 700;
+  font-size: 1.5em;
 }
 
 .post-subtitle {
-  font-family: $spec-font;
   margin-top: 7.5%;
   margin-bottom: 3.5%;
   font-weight: bold;
@@ -90,15 +90,14 @@
 .post-date {
   color: $secondary-color;
   font-style: italic;
-  margin-left: 3%;
+  margin-left: 2.5%;
   white-space: nowrap;
   font-size: 0.75em;
   letter-spacing: 0.75px;
 }
 
 .post-content {
-  font-family: $extra-font !important;
-  width: 80%;
+  width: 75%;
   padding-left: 5px;
   @include fontslg;
 
@@ -117,7 +116,7 @@
   }
 
   h6 {
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
 }
 
@@ -185,7 +184,7 @@
   }
 
   .blog-mini {
-    height: 60px !important;
+    height: 50px !important;
   }
 
   .author-mini {
@@ -195,6 +194,7 @@
 
   .nexttologo {
     margin-top: 1%;
+    margin-bottom: 1%;
   }
 
   .postcenterit {
@@ -220,7 +220,7 @@
     }
 
     h6 {
-      margin-top: 2rem;
+      margin-top: 1.2rem;
       font-size: 0.9rem;
     }
   }
@@ -230,13 +230,13 @@
   }
 
   .post-title {
-    font-size: 1em;
+    font-size: 0.9em;
     // padding-left: 2% !important;
   }
 
   .post-subtitle {
     margin-top: 12.5%;
-    font-size: 1.2em;
+    font-size: 1em;
   }
 
   .post-date {

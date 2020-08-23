@@ -23,8 +23,8 @@
 
   .ipvtpwriter {
     text-align: center;
-    font-family: $head-font;
-    font-size: 1.5em;
+    font-weight: 700;
+    font-size: 1.75em;
     line-height: 40px;
 
     span.spechead {
@@ -40,15 +40,16 @@
     text-align: center;
     color: $secondary-color;
     letter-spacing: 1px;
-    font-family: $spec-font;
-    font-size: 1.6em;
-    font-style: italic;
+    font-family: $barrie-font;
+    // font-weight: 700 !important;
+    font-size: 3.5em;
+    // font-style: italic;
     // font-weight: 100;
   }
 
   .scroll-down {
     position: relative;
-    bottom: 75px;
+    top: -50px;
     margin: 0 auto;
     z-index: 0;
     text-decoration: none;
@@ -63,15 +64,11 @@
 
   .flexancors {
     margin: 0 auto;
-    height: 0px;
   }
 
   .scroll-head {
-    font-size: 1em;
-    margin-left: 13px;
-
+    font-size: 1.111em;
     a {
-      font-family: $head-font;
       color: $third-color;
 
       &:hover {
@@ -132,6 +129,7 @@
 
   .scroll-head {
     margin-left: 10px !important;
+    top: 0px !important;
   }
 }
 

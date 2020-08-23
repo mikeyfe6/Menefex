@@ -33,10 +33,9 @@
   }
 
   h4 {
-    font-family: $spec-font;
     font-weight: 50;
     font-size: 1.25em;
-    color: $primary-color;
+    color: $button-hover;
     padding-left: 1%;
     padding-top: 1%;
   }
@@ -53,7 +52,6 @@
     opacity: 0.9;
     font-style: italic;
     margin-left: 1%;
-    font-family: $extra-font;
     letter-spacing: -0.125px !important;
     display: inline;
   }
@@ -61,7 +59,6 @@
   .contsubtext {
     color: $primary-color;
     display: block;
-    font-family: $extra-font;
     font-weight: bold;
     margin-top: 1%;
     margin-bottom: 3%;

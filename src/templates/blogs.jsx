@@ -74,7 +74,7 @@ const Blog = (props) => {
         <button type="button" className="gobackbtn">
           <Link to="/blog/" className="goback">
             <FontAwesomeIcon icon="backward" />{' '}
-            <span className="gobacktext"> &nbsp;TERUG; ALLE BLOGPOSTS </span>
+            <span className="gobacktext"> &nbsp;ALLE BLOGPOSTS </span>
           </Link>
         </button>
 
@@ -84,7 +84,7 @@ const Blog = (props) => {
           <img className="blog-mini" src={mini} alt="Gimmix Mini Logo" />
           <div className="nexttologo">
             <h1 className="post-title">
-              <strong>| {props.data.contentfulBlogPost.title}</strong>
+              | {props.data.contentfulBlogPost.title}
             </h1>
             <p className="post-date">
               ⌁ Gepost op {props.data.contentfulBlogPost.publishedDate}

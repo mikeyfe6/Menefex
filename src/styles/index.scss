@@ -62,7 +62,7 @@ body {
   width: 100%;
   background: white;
   color: #656565;
-  font-family: 'Lato', sans-serif;
+  font-family: $poppins-font;
 }
 
 a {
@@ -75,12 +75,11 @@ a {
 }
 
 .page-title {
-  font-family: $head-font;
+  font-family: $barrie-font;
   font-size: 2.25rem;
 }
 
 .page-sub {
-  font-family: $extra-font;
   font-weight: 500;
   letter-spacing: -0.2px;
   font-size: 0.9em;
@@ -100,7 +99,7 @@ progress[value]::-webkit-progress-bar {
   padding: 1%;
   text-decoration: underline;
   text-decoration-color: $secondary-color;
-  font-family: $head-font;
+  font-family: $barrie-font;
   font-size: 1.75em;
 }
 

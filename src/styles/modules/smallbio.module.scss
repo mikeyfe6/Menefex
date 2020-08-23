@@ -5,23 +5,29 @@
 @import '../customs/resets';
 
 .smallbio-container {
-  width: 50%;
-  margin: 0 auto;
   margin-bottom: 1%;
-  background: linear-gradient(to bottom, $super-color, $secondary-color);
-  box-shadow: 1px 3px 7px rgba(209, 209, 209, 0.767);
-  border: 2px solid $super-color;
-  border-radius: 3px;
+  background: linear-gradient(to right, $spec-color, white);
+  // border-left: solid 5px $primary-color;
+  // border-right: solid 5px $primary-color;
+  // box-shadow: 1px 3px 7px rgba(209, 209, 209, 0.767);
+  // border: 2px solid $super-color;
+  // background: $secondary-color;
+  height: 100%;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
   opacity: 0.9;
 }
 
 .smallbio-wrapper {
-  padding: 2% 5%;
+  padding: 2% 17.5%;
 
   .smallbio-text {
     @include fontslg;
     margin-top: 3%;
-    font-family: $extra-font;
     color: $textbase-color;
     opacity: 0.75;
     padding: 10px 0;
@@ -41,6 +47,7 @@
 .meerover {
   float: right;
   text-transform: uppercase;
+  font-family: $alata-font;
   padding: 12.5px 35px;
   background: transparent;
   color: white;
@@ -50,7 +57,7 @@
   letter-spacing: 2px;
   border: 3px solid $secondary-color;
   border-radius: 5px;
-  // margin-right: 1%;
+  margin-bottom: 2%;
   @include smoothtrans;
   // margin-top: 50px;
 

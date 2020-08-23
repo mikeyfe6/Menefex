@@ -73,7 +73,7 @@ footer {
 
   p {
     color: $fifth-color;
-    font-family: $extra-font;
+    font-family: $poppins-font;
     font-size: 0.9em;
   }
 
@@ -143,18 +143,18 @@ footer {
 
 #media {
   text-align: center;
-  font-family: $spec-font;
+  font-family: $barrie-font;
   letter-spacing: 1.5px;
 }
 
 #address {
   text-align: right;
-  font-family: $spec-font;
+  font-family: $barrie-font;
   letter-spacing: 1.5px;
 }
 
 #personal {
-  font-family: $spec-font;
+  font-family: $barrie-font;
   letter-spacing: 1.5px;
 }
 
@@ -202,7 +202,7 @@ footer {
   }
 
   .sayin {
-    font-size: 0.8em;
+    font-size: 0.75em;
     padding-right: 0;
   }
 }

@@ -127,7 +127,7 @@ const Form = () => {
         </div>
       </div>
       <div className="whitespace" />
-      <hr className={formStyles.thick} />
+      {/* <hr className={formStyles.thick} /> */}
       <br />
       <div>
         <div className={`${formStyles.contactbox}`}>
@@ -156,7 +156,7 @@ const Form = () => {
                   </span>
                 </span>
               </p>
-              __________________________ <br /> <br /> <br />
+              <br /> <br />
               <div className={formStyles.contacticons}>
                 <a
                   href="https://www.facebook.com/GimmixWMB"
@@ -165,12 +165,12 @@ const Form = () => {
                 >
                   <FontAwesomeIcon
                     icon={['fab', 'facebook']}
-                    size="lg"
+                    size="2x"
                     color="#827f6e"
                     className={formStyles.fbicon}
                   />
                 </a>
-                ⌁
+
                 <a
                   href="https://www.instagram.com/gimmixwmb/"
                   rel="noopener noreferrer"
@@ -178,12 +178,12 @@ const Form = () => {
                 >
                   <FontAwesomeIcon
                     icon={['fab', 'instagram']}
-                    size="lg"
+                    size="2x"
                     color="#827f6e"
                     className={formStyles.igicon}
                   />
                 </a>
-                ⌁
+
                 <a
                   href="https://www.twitter.com/GimmixWMB"
                   rel="noopener noreferrer"
@@ -191,12 +191,12 @@ const Form = () => {
                 >
                   <FontAwesomeIcon
                     icon={['fab', 'twitter']}
-                    size="lg"
+                    size="2x"
                     color="#827f6e"
                     className={formStyles.twicon}
                   />
                 </a>
-                ⌁
+
                 <a
                   href="https://www.linkedin.com/company/gimmixwmb/"
                   rel="noopener noreferrer"
@@ -204,12 +204,12 @@ const Form = () => {
                 >
                   <FontAwesomeIcon
                     icon={['fab', 'linkedin']}
-                    size="lg"
+                    size="2x"
                     color="#827f6e"
                     className={formStyles.liicon}
                   />
                 </a>
-                ⌁
+
                 <a
                   href="https://github.com/mikeyfe6"
                   rel="noopener noreferrer"
@@ -217,12 +217,12 @@ const Form = () => {
                 >
                   <FontAwesomeIcon
                     icon={['fab', 'github']}
-                    size="lg"
+                    size="2x"
                     color="#827f6e"
                     className={formStyles.ghicon}
                   />
                 </a>
-                ⌁
+
                 <a
                   href="https://open.spotify.com/playlist/08UGoWTjvpuooABCWyPx0m?si=caXZyz28R8u8Ck683qLgQA"
                   rel="noopener noreferrer"
@@ -230,12 +230,12 @@ const Form = () => {
                 >
                   <FontAwesomeIcon
                     icon={['fab', 'spotify']}
-                    size="lg"
+                    size="2x"
                     color="#827f6e"
                     className={formStyles.waicon}
                   />
                 </a>
-                ⌁
+
                 <a
                   href="https://wa.me/31611054318"
                   rel="noopener noreferrer"
@@ -243,7 +243,7 @@ const Form = () => {
                 >
                   <FontAwesomeIcon
                     icon={['fab', 'whatsapp']}
-                    size="lg"
+                    size="2x"
                     color="#827f6e"
                     className={formStyles.spicon}
                   />
@@ -296,7 +296,7 @@ const Form = () => {
         </div>
       </div>
       <div className="whitespace" />
-      <hr className={formStyles.thick} />
+      {/* <hr className={formStyles.thick} /> */}
     </div>
   );
 };

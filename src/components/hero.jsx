@@ -36,7 +36,7 @@ const Hero = () => {
             animationInDuration={1900}
           >
             <h2 className={heroDesign.heroHead}>
-              - Websites, webapplicaties & SEO -
+              Websites, webapplicaties & SEO
             </h2>
           </Animated>
         </div>

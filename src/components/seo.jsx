@@ -231,19 +231,17 @@ const SEO = ({
             {/* Links Rel: Fonts */}
 
             <link
-              href="https://fonts.googleapis.com/css?family=Quando&display=swap"
+              href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
               rel="stylesheet"
             />
+
             <link
-              href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+              href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,700&display=swap"
               rel="stylesheet"
             />
+
             <link
-              href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap"
-              rel="stylesheet"
-            />
-            <link
-              href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+              href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap"
               rel="stylesheet"
             />
 
