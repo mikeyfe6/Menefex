@@ -15,6 +15,10 @@ footer {
   font-size: 0.9em;
   text-align: end;
   padding-right: 7.5%;
+
+  span {
+    font-weight: 700;
+  }
 }
 
 .mini {
@@ -28,7 +32,6 @@ footer {
   text-align: right;
 
   p {
-    font-weight: lighter !important;
     margin-bottom: 20px;
   }
 }
@@ -80,7 +83,6 @@ footer {
   li {
     font-size: 17px;
     padding-left: 20px;
-    font-weight: bold;
   }
 }
 

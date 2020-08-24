@@ -7,7 +7,6 @@ import SEO from '../components/seo';
 import contactDesign from '../styles/modules/contact.module.scss';
 
 import Form from '../components/form';
-import Maps from '../components/gmaps/maps';
 
 const ContactPage = () => {
   return (
@@ -48,7 +47,6 @@ const ContactPage = () => {
         <Form />
         <br />
         <br />
-        <Maps />
       </div>
       <div className="whitespace" />
     </Layout>

@@ -71,12 +71,13 @@ const Blog = (props) => {
           custom={`https:${props.data.contentfulBlogPost.image.file.url}`}
           article
         />
-        <button type="button" className="gobackbtn">
-          <Link to="/blog/" className="goback">
+
+        <Link to="/blog/">
+          <button type="button" className="gobackbtn">
             <FontAwesomeIcon icon="backward" />{' '}
             <span className="gobacktext"> &nbsp;ALLE BLOGPOSTS </span>
-          </Link>
-        </button>
+          </button>
+        </Link>
 
         <hr className="thick" />
         <br />

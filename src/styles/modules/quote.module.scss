@@ -35,7 +35,7 @@
     padding-left: 5%;
     margin-bottom: 10%;
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 1.25em;
     letter-spacing: 1px;
     font-family: $barrie-font;
   }
@@ -59,6 +59,10 @@
     @include fontslg;
     font-size: 0.825em;
     margin-top: 15%;
+
+    h6 {
+      font-weight: 700;
+    }
   }
 
   .quote-block {

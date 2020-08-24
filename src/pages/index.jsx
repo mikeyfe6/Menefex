@@ -25,6 +25,7 @@ const IndexPage = () => {
       <Hero />
 
       <div className="specvertical" />
+
       <br />
       <div id="biografiescroll" className="extrawhitespace" />
 

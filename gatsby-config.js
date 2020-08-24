@@ -108,20 +108,10 @@ module.exports = {
               linkImagesToOriginal: false,
             },
           },
-          // {
-          //   resolve: `gatsby-remark-embedder`,
-          //   options: {
-          //     customTransformers: [
-          //       // Your custom transformers
-          //     ],
-          //     services: {
-          //       // The service-specific options by the name of the service
-          //     },
-          //   },
-          // },
         ],
       },
     },
+    `gatsby-plugin-smoothscroll`,
     {
       resolve: `gatsby-plugin-nprogress`,
       options: {

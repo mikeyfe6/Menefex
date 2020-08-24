@@ -77,7 +77,7 @@ const workPage = () => {
                 <br />
                 <br />
                 <span>Tools:</span>
-                <u>Wordpress, Advanced Custom Field Types, Brizy</u>
+                Wordpress, Advanced Custom Field Types, Brizy
               </p>
             </div>
             <a
@@ -141,10 +141,8 @@ const workPage = () => {
                 <br />
                 <br />
                 <span>Tools:</span>
-                <u>
-                  Wordpress, Additional CSS, Advanced Custom Field Types,
-                  Elementor Pro
-                </u>
+                Wordpress, Additional CSS, Advanced Custom Field Types,
+                Elementor Pro
               </p>
             </div>
             <a

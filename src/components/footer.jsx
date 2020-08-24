@@ -32,10 +32,12 @@ const Footer = () => {
               <blockquote>
                 <p className={footerStyles.sayin}>
                   <i>
-                    &quot;Instead of thinking outside of the box, get rid of the
-                    box&quot;
+                    <span>
+                      &quot;Instead of thinking outside of the box, get rid of
+                      the box&quot;
+                    </span>
                   </i>{' '}
-                  - <b>Deepak Chopra</b>
+                  - Deepak Chopra
                 </p>
               </blockquote>
             </div>

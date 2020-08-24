@@ -35,7 +35,7 @@ const Prices = () => {
               <h4 className={pricesDesign.pricehead}>STARTER PLAN</h4>
               <p className={pricesDesign.pricecap}>
                 <span className={pricesDesign.pricedisc}>€695,-</span> &nbsp;
-                <b>€345,-</b>&nbsp;
+                €345,-&nbsp;
                 <sup>
                   <span className={pricesDesign.pricebtw}>(excl. btw)</span>
                 </sup>{' '}
@@ -76,7 +76,7 @@ const Prices = () => {
               <h4 className={pricesDesign.pricehead}>ESTABLISHED PLAN</h4>
               <p className={pricesDesign.pricecap}>
                 <span className={pricesDesign.pricedisc}>€1125,-</span> &nbsp;
-                <b>€555,-</b>&nbsp;
+                €555,-&nbsp;
                 <sup>
                   <span className={pricesDesign.pricebtw}>(excl. btw)</span>
                 </sup>{' '}
@@ -120,7 +120,7 @@ const Prices = () => {
               <h4 className={pricesDesign.pricehead}>BUSINESS PLAN</h4>
               <p className={pricesDesign.pricecap}>
                 <span className={pricesDesign.pricedisc}>€1675,-</span> &nbsp;
-                <b>€835,-</b>&nbsp;
+                €835,-&nbsp;
                 <sup>
                   <span className={pricesDesign.pricebtw}>(excl. btw)</span>
                 </sup>{' '}

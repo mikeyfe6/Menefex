@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { Animated } from 'react-animated-css';
 
+import scrollTo from 'gatsby-plugin-smoothscroll';
+
 import heroDesign from '../styles/modules/hero.module.scss';
 import typewriterDesign from '../styles/modules/typewriter.module.scss';
 
@@ -46,9 +48,7 @@ const Hero = () => {
             animationInDelay={10000}
             animationInDuration={2000}
           >
-            <Link to="#biografiescroll">
-              <div className={heroDesign.scrollDown} />
-            </Link>
+            <div className={heroDesign.scrollDown} />
           </Animated>
 
           <Animated
@@ -57,15 +57,29 @@ const Hero = () => {
             animationInDuration={2000}
           >
             <span className={heroDesign.scrollHead}>
-              <Link to="#biografiescroll">biografie</Link>{' '}
-              <span className="speccol">
-                &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-              </span>{' '}
-              <Link to="#servicescroll">services</Link>{' '}
-              <span className="speccol">
-                &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-              </span>{' '}
-              <Link to="#projectscroll">projecten</Link>
+              <button
+                type="button"
+                className={heroDesign.scrollBtn}
+                onClick={() => scrollTo('#biografiescroll')}
+              >
+                biografie
+              </button>{' '}
+              <span className="speccol">&nbsp;|&nbsp;</span>{' '}
+              <button
+                type="button"
+                className={heroDesign.scrollBtn}
+                onClick={() => scrollTo('#servicescroll')}
+              >
+                services
+              </button>{' '}
+              <span className="speccol">&nbsp;|&nbsp;</span>{' '}
+              <button
+                type="button"
+                className={heroDesign.scrollBtn}
+                onClick={() => scrollTo('#projectscroll')}
+              >
+                portfolio
+              </button>{' '}
             </span>{' '}
           </Animated>
         </div>

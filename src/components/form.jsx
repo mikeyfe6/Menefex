@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import formStyles from '../styles/modules/form.module.scss';
 
+import Maps from './gmaps/maps';
+
 const Form = () => {
   //   const today = new Date()
 
@@ -156,7 +158,8 @@ const Form = () => {
                   </span>
                 </span>
               </p>
-              <br /> <br />
+
+              <div className={formStyles.socials}>Blijf up to date!</div>
               <div className={formStyles.contacticons}>
                 <a
                   href="https://www.facebook.com/GimmixWMB"
@@ -256,12 +259,12 @@ const Form = () => {
               &nbsp;
               <FontAwesomeIcon icon="mobile" size="lg" color="#827f6e" />
               <p className={formStyles.contacttel}>
-                <a href="tel:0611054318">+31 6 11 05 43 18</a>
+                - <a href="tel:0611054318">+31 6 11 05 43 18</a>
               </p>
               <br />
               <FontAwesomeIcon icon="paper-plane" size="lg" color="#827f6e" />
               <p className={formStyles.contactmail}>
-                <a href="mailto:info@gimmix.nl">info@gimmix.nl</a>
+                - <a href="mailto:info@gimmix.nl">info@gimmix.nl</a>
               </p>
               <br />
               <br />
@@ -293,6 +296,8 @@ const Form = () => {
               </p>
             </div>
           </div>
+          <br />
+          <Maps />
         </div>
       </div>
       <div className="whitespace" />

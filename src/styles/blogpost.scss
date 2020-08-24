@@ -5,7 +5,9 @@
 @import './customs/resets';
 
 .gobacktext {
-  // font-size: 0.8em;
+  font-size: 0.9em;
+  font-family: $alata-font;
+  font-weight: bolder;
 
   &:hover {
     color: $link-color !important;
@@ -16,10 +18,8 @@
   text-transform: uppercase;
   padding: 12.5px 15px;
   background: transparent;
-  font-weight: 700;
   color: $primary-color;
   background: linear-gradient(to bottom, $super-color, $fourth-color);
-  font-weight: bold;
   font-size: 12.5px;
   letter-spacing: 1px;
   border: 1.5px solid $third-color;
@@ -76,13 +76,13 @@
 
 .post-title {
   font-weight: 700;
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 
 .post-subtitle {
   margin-top: 7.5%;
   margin-bottom: 3.5%;
-  font-weight: bold;
+  // font-weight: 700;
   font-size: 1.3em;
   padding-left: 5px;
 }
@@ -107,12 +107,14 @@
 
     b {
       color: $secondary-color;
-      font-weight: 900;
+      font-weight: 700;
     }
   }
 
   ol li {
     margin-top: -1rem;
+    color: $primary-color;
+    font-weight: 700;
   }
 
   h6 {
@@ -144,22 +146,6 @@
   color: $spec-color;
   font-weight: 600;
   // text-decoration: underline;
-}
-
-.goback {
-  color: $link-color;
-  font-weight: bold;
-  margin-bottom: 100px;
-
-  &:hover {
-    color: $link-color !important;
-  }
-}
-
-.gobackextra {
-  color: $link-color;
-  font-weight: bold;
-  text-align: right;
 }
 
 .img-resize {
@@ -208,11 +194,6 @@
     p {
       margin-top: 1.5rem;
       letter-spacing: 0.3px !important;
-
-      b {
-        color: $secondary-color;
-        font-weight: 900;
-      }
     }
 
     ol li {

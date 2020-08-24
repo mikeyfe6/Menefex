@@ -100,7 +100,7 @@ const Quote = () => {
               size="2x"
               color="#f0c410"
             />
-            <h3 className={quoteDesign.quoteHead}>SEO</h3>
+            <h3 className={quoteDesign.quoteHead}>Zoekmachineoptimalisatie</h3>
             <hr className={quoteDesign.thick} />
             <div className={quoteDesign.quoteBlock}>
               <p className={quoteDesign.quoteText}>
