@@ -45,8 +45,6 @@ const ContactPage = () => {
         </div>
         <br />
         <Form />
-        <br />
-        <br />
       </div>
       <div className="whitespace" />
     </Layout>
