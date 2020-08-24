@@ -159,7 +159,9 @@ const Form = () => {
                 </span>
               </p>
 
-              <div className={formStyles.socials}>Blijf up to date!</div>
+              <div className={formStyles.socials}>
+                Volg onze voetsporen of kom in contact:
+              </div>
               <div className={formStyles.contacticons}>
                 <a
                   href="https://www.facebook.com/GimmixWMB"
@@ -300,8 +302,6 @@ const Form = () => {
           <Maps />
         </div>
       </div>
-      <div className="whitespace" />
-      {/* <hr className={formStyles.thick} /> */}
     </div>
   );
 };
