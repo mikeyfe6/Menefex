@@ -90,6 +90,13 @@
   input,
   textarea {
     width: 100%;
+
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    
     margin-top: 1%;
     margin-bottom: 3%;
     border: none;
@@ -97,8 +104,15 @@
     background: transparent;
     color: $primary-color;
 
+    resize: initial;
     font-size: 0.9em;
     padding-left: 15px;
+  }
+
+  input:focus, textarea:focus{
+    box-shadow: 0 0 5px 7px $very-color;
+    background-color: $very-color;
+    transition: all 0.5s ease-in-out;
   }
 
   textarea {
@@ -114,7 +128,7 @@ textarea:focus {
 }
 
 .textarea {
-  border-bottom: 1.5px solid $fourth-color;
+  border-bottom: 1.5px solid $sixth-color;
 }
 
 .send {
