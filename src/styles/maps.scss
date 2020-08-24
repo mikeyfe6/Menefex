@@ -9,11 +9,11 @@
   -webkit-filter: grayscale(75%);
   filter: grayscale(75%);
   filter: progid:DXImageTransform.Microsoft.BasicImage(grayScale=1);
-  border: 2px solid $secondary-color;
+  border: 1px solid $primary-color;
 }
 
 @media (max-width: 768px) {
   .mapwrapper {
-    border-width: 1px;
+    // border-width: 3px;
   }
 }
