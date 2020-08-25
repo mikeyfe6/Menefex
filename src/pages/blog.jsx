@@ -54,7 +54,7 @@ const BlogPage = () => {
         <p className="page-sub">What goes through our mind..</p>
         <Animated
           animationIn="fadeIn"
-          animationInDelay={1000}
+          animationInDelay={750}
           animationInDuration={2000}
         >
           <ol className={blogDesign.posts}>

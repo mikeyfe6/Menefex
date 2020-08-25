@@ -35,7 +35,7 @@ const Prices = () => {
           <div className="col-md-4">
             <Animated
               animationIn="fadeInUp"
-              animationInDelay={1000}
+              animationInDelay={750}
               animationInDuration={1500}
             >
               <div className={pricesDesign.pricecon}>
@@ -86,7 +86,7 @@ const Prices = () => {
             {' '}
             <Animated
               animationIn="fadeInUp"
-              animationInDelay={1750}
+              animationInDelay={1500}
               animationInDuration={1500}
             >
               <div className={pricesDesign.pricecon}>
@@ -138,7 +138,7 @@ const Prices = () => {
             {' '}
             <Animated
               animationIn="fadeInUp"
-              animationInDelay={2500}
+              animationInDelay={2250}
               animationInDuration={1500}
             >
               <div className={pricesDesign.pricecon}>

@@ -44,7 +44,7 @@ const workPage = () => {
         <br />
 
         <div className={workDesign.projects}>
-          <ScrollAnimation animateIn="fadeIn" delay={1000} duration={2}>
+          <ScrollAnimation animateIn="fadeIn" delay={750} duration={2}>
             <div className="item">
               <a
                 href="https://eternitydrum.com"
@@ -110,7 +110,7 @@ const workPage = () => {
           {/* 
           // * EXTRA PROJECTEN BIJVOEGEN HIERONDER!
           */}
-          <ScrollAnimation animateIn="fadeIn" delay={1000} duration={2}>
+          <ScrollAnimation animateIn="fadeIn" delay={750} duration={2}>
             <div className="item">
               <a
                 href="https://blackharmony.nl"

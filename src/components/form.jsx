@@ -268,7 +268,7 @@ const Form = () => {
             <br />
             <div className="col-md">
               &nbsp;
-              <FontAwesomeIcon icon="mobile" size="lg" color="#1ca111" />
+              <FontAwesomeIcon icon="mobile" size="lg" color="#1db954" />
               <p className={formStyles.contacttel}>
                 · <a href="tel:0611054318">+31 6 11 05 43 18</a>
               </p>
