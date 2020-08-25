@@ -19,7 +19,7 @@
 html {
   scroll-behavior: smooth;
   overflow-y: scroll;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   width: 100%;
   word-wrap: break-word;
 

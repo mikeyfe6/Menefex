@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import Layout from '../components/layout';
 // import { Link } from 'gatsby';
@@ -24,35 +25,51 @@ const IndexPage = () => {
       />
       <Hero />
 
-      <div className="specvertical" />
+      <ScrollAnimation animateIn="zoomIn" delay={100}>
+        <div className="specvertical" />
+      </ScrollAnimation>
 
       <br />
+
       <div id="biografiescroll" className="extrawhitespace" />
 
-      <h3 className="hometitles">Biografie</h3>
-      <br />
+      <ScrollAnimation animateIn="fadeInLeft" delay={500}>
+        <h3 className="hometitles">Biografie</h3>
 
-      <Smallbio />
+        <br />
+
+        <Smallbio />
+      </ScrollAnimation>
 
       <div className="extrawhitespace" />
-      <div className="vertical" />
+
+      <ScrollAnimation animateIn="zoomIn" delay={100}>
+        <div className="vertical" />
+      </ScrollAnimation>
 
       <div id="servicescroll" className="extrawhitespace" />
 
-      <h3 className="hometitles">Services & Diensten</h3>
-      <br />
+      <ScrollAnimation animateIn="fadeInRight" delay={500}>
+        <h3 className="hometitles">Services & Diensten</h3>
 
-      <Quote />
+        <br />
+
+        <Quote />
+      </ScrollAnimation>
 
       <div className="extrawhitespace" />
-      <div className="vertical" />
+      <ScrollAnimation animateIn="zoomIn" delay={100}>
+        <div className="vertical" />
+      </ScrollAnimation>
 
       <div id="projectscroll" className="extrawhitespace" />
 
-      <h3 className="hometitles"> Recente Projecten</h3>
-      <br />
+      <ScrollAnimation animateIn="fadeInUp" delay={500}>
+        <h3 className="hometitles"> Recente Projecten</h3>
+        <br />
 
-      <Projects />
+        <Projects />
+      </ScrollAnimation>
 
       <div className="whitespace" />
     </Layout>

@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 
+import { Animated } from 'react-animated-css';
+
 import Layout from '../components/layout';
 
 import SEO from '../components/seo';
@@ -50,34 +52,39 @@ const BlogPage = () => {
         </h1>
         <br />
         <p className="page-sub">What goes through our mind..</p>
-        <ol className={blogDesign.posts}>
-          {data.allContentfulBlogPost.edges.map((edge) => {
-            return (
-              <li className={blogDesign.post}>
-                <Link to={`/blog/${edge.node.slug}/`}>
-                  <img
-                    src={edge.node.image.file.url}
-                    alt={edge.node.image.title}
-                    className={blogDesign.blogimg}
-                  />
-                  <h4>{edge.node.title}</h4>
+        <Animated
+          animationIn="fadeIn"
+          animationInDelay={1000}
+          animationInDuration={2000}
+        >
+          <ol className={blogDesign.posts}>
+            {data.allContentfulBlogPost.edges.map((edge) => {
+              return (
+                <li className={blogDesign.post}>
+                  <Link to={`/blog/${edge.node.slug}/`}>
+                    <img
+                      src={edge.node.image.file.url}
+                      alt={edge.node.image.title}
+                      className={blogDesign.blogimg}
+                    />
+                    <h4>{edge.node.title}</h4>
 
-                  <span className={blogDesign.contsubtext}>
-                    {' '}
-                    {edge.node.subtitle}
-                  </span>
+                    <span className={blogDesign.contsubtext}>
+                      {' '}
+                      {edge.node.subtitle}
+                    </span>
 
-                  <p className={blogDesign.bloggepost}>
-                    {' '}
-                    Gepost: <strong>{edge.node.publishedDate}</strong> ⌁ Auteur:{' '}
-                    <strong>{edge.node.author}</strong>{' '}
-                  </p>
-                </Link>
-              </li>
-            );
-          })}
-        </ol>
-
+                    <p className={blogDesign.bloggepost}>
+                      {' '}
+                      Gepost: <strong>{edge.node.publishedDate}</strong> ⌁
+                      Auteur: <strong>{edge.node.author}</strong>{' '}
+                    </p>
+                  </Link>
+                </li>
+              );
+            })}
+          </ol>
+        </Animated>
         <div className="whitespace" />
       </div>
     </Layout>

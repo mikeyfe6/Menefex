@@ -41,11 +41,17 @@
     color: $secondary-color;
     letter-spacing: 1px;
     font-family: $barrie-font;
-    // font-weight: 700 !important;
     font-size: 3.25em;
-    // font-style: italic;
-    // font-weight: 100;
     height: 300px;
+  }
+
+  .hero-headMB {
+    font-size: 1.25em;
+    height: 25px;
+    text-align: center;
+    color: $secondary-color;
+    letter-spacing: 1px;
+    font-family: $barrie-font;
   }
 
   .scroll-down {
@@ -63,11 +69,28 @@
     animation: fade_move_down 1.5s cubic-bezier(0.19, 1, 0.22, 1) infinite;
   }
 
-  .flexancors {
+  .scroll-downMB {
+    position: relative;
+    bottom: 45px;
     margin: 0 auto;
+    z-index: 0;
+    text-decoration: none;
+    text-shadow: 0;
+    width: 17px;
+    height: 17px;
+    border-bottom: 5px solid $secondary-color;
+    border-right: 5px solid $primary-color;
+    transform: translate(-50%, 0) rotate(45deg);
+    animation: fade_move_down 1.5s cubic-bezier(0.19, 1, 0.22, 1) infinite;
   }
 
-  .scroll-head {
+  .flexancors {
+    margin: 0 auto;
+    // display: none;
+  }
+
+  .scroll-head,
+  .scroll-headMB {
     a {
       color: $third-color;
 
@@ -85,6 +108,27 @@
       font-weight: bolder;
       font-size: 12.5px;
       letter-spacing: 2px;
+      border: 3px solid $spec-color;
+      border-radius: 5px;
+      @include smoothtrans;
+
+      &:hover {
+        color: $link-color;
+        @include smoothtrans;
+        border: 3px solid $link-color;
+        background-color: #e9e9e9;
+      }
+    }
+
+    .scroll-btnMB {
+      text-transform: uppercase;
+      padding: 10px 12.5px;
+      background: transparent;
+      color: $primary-color !important;
+      background-color: #f2f2f2;
+      font-weight: bolder;
+      font-size: 0.7em;
+      letter-spacing: 1px;
       border: 3px solid $spec-color;
       border-radius: 5px;
       @include smoothtrans;
@@ -115,7 +159,9 @@
 
 @media (max-width: 768px) {
   .hero-head {
-    font-size: 1.25em !important;
+    // font-size: 1.25em !important;
+    // height: 25px !important;
+    display: none;
   }
 
   .fleximage {
@@ -144,28 +190,47 @@
   }
 
   .scroll-down {
-    bottom: 45px !important;
-    width: 17px !important;
-    height: 17px !important;
+    // bottom: 45px !important;
+    // width: 17px !important;
+    // height: 17px !important;
+    display: none;
   }
 
   .scroll-head {
     // top: 0px !important;
+    display: none;
 
     .scrollBtn {
-      text-transform: uppercase;
-      padding: 10px 12.5px !important;
-      background-color: #f2f2f2;
-      font-size: 0.7em !important;
-      letter-spacing: 1px;
-      border: 3px solid $spec-color;
-      border-radius: 5px;
+      // text-transform: uppercase;
+      // padding: 10px 12.5px !important;
+      // background-color: #f2f2f2;
+      // font-size: 0.7em !important;
+      // letter-spacing: 1px;
+      // border: 3px solid $spec-color;
+      // border-radius: 5px;
+      display: none;
+    }
+
+    .scroll-btnMB {
+      padding: 5px 10px !important;
     }
   }
 }
 
 @media (min-width: 769px) {
   .ipvtpwriter {
+    display: none;
+  }
+
+  .scroll-downMB {
+    display: none;
+  }
+
+  .scroll-headMB {
+    display: none;
+  }
+
+  .hero-headMB {
     display: none;
   }
 }

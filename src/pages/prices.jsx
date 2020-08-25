@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
+import { Animated } from 'react-animated-css';
+
 import Layout from '../components/layout';
 
 import pricesDesign from '../styles/modules/prices.module.scss';
@@ -31,136 +33,162 @@ const Prices = () => {
         <br />
         <div className="row">
           <div className="col-md-4">
-            <div className={pricesDesign.pricecon}>
-              <h4 className={pricesDesign.pricehead}>STARTER PLAN</h4>
-              <p className={pricesDesign.pricecap}>
-                <span className={pricesDesign.pricedisc}>€695,-</span> &nbsp;
-                €345,-&nbsp;
-                <sup>
-                  <span className={pricesDesign.pricebtw}>(excl. btw)</span>
-                </sup>{' '}
-              </p>
-              <p className={pricesDesign.priceaction}>ACTIE: *(50% korting)</p>
-              <br />
-              <ul className={pricesDesign.pricelist}>
-                <li className={pricesDesign.pricebold}>1 - 5 pagina&apos;s</li>
+            <Animated
+              animationIn="fadeInUp"
+              animationInDelay={1000}
+              animationInDuration={1500}
+            >
+              <div className={pricesDesign.pricecon}>
+                <h4 className={pricesDesign.pricehead}>STARTER PLAN</h4>
+                <p className={pricesDesign.pricecap}>
+                  <span className={pricesDesign.pricedisc}>€695,-</span> &nbsp;
+                  €345,-&nbsp;
+                  <sup>
+                    <span className={pricesDesign.pricebtw}>(excl. btw)</span>
+                  </sup>{' '}
+                </p>
+                <p className={pricesDesign.priceaction}>
+                  ACTIE: *(50% korting)
+                </p>
+                <br />
+                <ul className={pricesDesign.pricelist}>
+                  <li className={pricesDesign.pricebold}>
+                    1 - 5 pagina&apos;s
+                  </li>
 
-                <li>Design op maatwerk</li>
-                <li>CMS</li>
-                <li>Foto Gallery</li>
-                <li>Video Integratie</li>
-                <li>Responsive Design</li>
-                <li>Formulieren</li>
-                <li>Testimonials</li>
-                <li>Google Maps integratie</li>
-                <li>Google Statistieken / SEO</li>
-                <li>Gratis SSL</li>
+                  <li>Design op maatwerk</li>
+                  <li>CMS</li>
+                  <li>Foto Gallery</li>
+                  <li>Video Integratie</li>
+                  <li>Responsive Design</li>
+                  <li>Formulieren</li>
+                  <li>Testimonials</li>
+                  <li>Google Maps integratie</li>
+                  <li>Google Statistieken / SEO</li>
+                  <li>Gratis SSL</li>
 
-                <li className={pricesDesign.pricebold}>
-                  1 maand gratis support
-                </li>
-              </ul>
-              <br />
-              <button
-                type="button"
-                name="offerte"
-                className={pricesDesign.pricebtn}
-              >
-                <Link to="/contact/">OFFERTE</Link>
-              </button>
-            </div>
+                  <li className={pricesDesign.pricebold}>
+                    1 maand gratis support
+                  </li>
+                </ul>
+                <br />
+                <button
+                  type="button"
+                  name="offerte"
+                  className={pricesDesign.pricebtn}
+                >
+                  <Link to="/contact/">OFFERTE</Link>
+                </button>
+              </div>
+            </Animated>
           </div>
           <div className="col-md-4">
             {' '}
-            <div className={pricesDesign.pricecon}>
-              <h4 className={pricesDesign.pricehead}>ESTABLISHED PLAN</h4>
-              <p className={pricesDesign.pricecap}>
-                <span className={pricesDesign.pricedisc}>€1125,-</span> &nbsp;
-                €555,-&nbsp;
-                <sup>
-                  <span className={pricesDesign.pricebtw}>(excl. btw)</span>
-                </sup>{' '}
-              </p>
-              <p className={pricesDesign.priceaction}>ACTIE: *(50% korting)</p>
-              <br />
-              <ul className={pricesDesign.pricelist}>
-                <li className={pricesDesign.pricebold}>± 10 pagina&apos;s</li>
+            <Animated
+              animationIn="fadeInUp"
+              animationInDelay={1750}
+              animationInDuration={1500}
+            >
+              <div className={pricesDesign.pricecon}>
+                <h4 className={pricesDesign.pricehead}>ESTABLISHED PLAN</h4>
+                <p className={pricesDesign.pricecap}>
+                  <span className={pricesDesign.pricedisc}>€1125,-</span> &nbsp;
+                  €555,-&nbsp;
+                  <sup>
+                    <span className={pricesDesign.pricebtw}>(excl. btw)</span>
+                  </sup>{' '}
+                </p>
+                <p className={pricesDesign.priceaction}>
+                  ACTIE: *(50% korting)
+                </p>
+                <br />
+                <ul className={pricesDesign.pricelist}>
+                  <li className={pricesDesign.pricebold}>± 10 pagina&apos;s</li>
 
-                <li>Design op maatwerk</li>
-                <li>CMS</li>
-                <li>Foto Gallery</li>
-                <li>Video Integratie</li>
-                <li>Responsive Design</li>
-                <li>Formulieren</li>
-                <li className={pricesDesign.pricebold}>
-                  Zoekmodule op website
-                </li>
+                  <li>Design op maatwerk</li>
+                  <li>CMS</li>
+                  <li>Foto Gallery</li>
+                  <li>Video Integratie</li>
+                  <li>Responsive Design</li>
+                  <li>Formulieren</li>
+                  <li className={pricesDesign.pricebold}>
+                    Zoekmodule op website
+                  </li>
 
-                <li>Testimonials</li>
-                <li>Google Maps integratie</li>
-                <li>Google Statistieken / SEO</li>
-                <li>Gratis SSL</li>
-                <li className={pricesDesign.pricebold}>
-                  2 maanden gratis support
-                </li>
-              </ul>
-              <br />
-              <button
-                type="button"
-                name="offerte"
-                className={pricesDesign.pricebtn}
-              >
-                <Link to="/contact/">OFFERTE</Link>
-              </button>
-            </div>
+                  <li>Testimonials</li>
+                  <li>Google Maps integratie</li>
+                  <li>Google Statistieken / SEO</li>
+                  <li>Gratis SSL</li>
+                  <li className={pricesDesign.pricebold}>
+                    2 maanden gratis support
+                  </li>
+                </ul>
+                <br />
+                <button
+                  type="button"
+                  name="offerte"
+                  className={pricesDesign.pricebtn}
+                >
+                  <Link to="/contact/">OFFERTE</Link>
+                </button>
+              </div>
+            </Animated>
           </div>
           <div className="col-md-4">
             {' '}
-            <div className={pricesDesign.pricecon}>
-              <h4 className={pricesDesign.pricehead}>BUSINESS PLAN</h4>
-              <p className={pricesDesign.pricecap}>
-                <span className={pricesDesign.pricedisc}>€1675,-</span> &nbsp;
-                €835,-&nbsp;
-                <sup>
-                  <span className={pricesDesign.pricebtw}>(excl. btw)</span>
-                </sup>{' '}
-              </p>
-              <p className={pricesDesign.priceaction}>ACTIE: *(50% korting)</p>
-              <br />
-              <ul className={pricesDesign.pricelist}>
-                <li className={pricesDesign.pricebold}>∞ pagina&apos;s</li>
+            <Animated
+              animationIn="fadeInUp"
+              animationInDelay={2500}
+              animationInDuration={1500}
+            >
+              <div className={pricesDesign.pricecon}>
+                <h4 className={pricesDesign.pricehead}>BUSINESS PLAN</h4>
+                <p className={pricesDesign.pricecap}>
+                  <span className={pricesDesign.pricedisc}>€1675,-</span> &nbsp;
+                  €835,-&nbsp;
+                  <sup>
+                    <span className={pricesDesign.pricebtw}>(excl. btw)</span>
+                  </sup>{' '}
+                </p>
+                <p className={pricesDesign.priceaction}>
+                  ACTIE: *(50% korting)
+                </p>
+                <br />
+                <ul className={pricesDesign.pricelist}>
+                  <li className={pricesDesign.pricebold}>∞ pagina&apos;s</li>
 
-                <li>Design op maatwerk</li>
-                <li className={pricesDesign.pricebold}>
-                  E-commerce (+Bank Integratie)
-                </li>
+                  <li>Design op maatwerk</li>
+                  <li className={pricesDesign.pricebold}>
+                    E-commerce (+Bank Integratie)
+                  </li>
 
-                <li>CMS</li>
-                <li>Foto Gallery</li>
-                <li>Video Integratie</li>
-                <li>Responsive Design</li>
-                <li>Formulieren</li>
-                <li className={pricesDesign.pricebold}>
-                  Zoekmodule op website
-                </li>
+                  <li>CMS</li>
+                  <li>Foto Gallery</li>
+                  <li>Video Integratie</li>
+                  <li>Responsive Design</li>
+                  <li>Formulieren</li>
+                  <li className={pricesDesign.pricebold}>
+                    Zoekmodule op website
+                  </li>
 
-                <li>Testimonials</li>
-                <li>Google Maps integratie</li>
-                <li>Google Statistieken / SEO</li>
-                <li>Gratis SSL</li>
-                <li className={pricesDesign.pricebold}>
-                  3 maanden gratis support
-                </li>
-              </ul>
-              <br />
-              <button
-                type="button"
-                name="offerte"
-                className={pricesDesign.pricebtn}
-              >
-                <Link to="/contact/">OFFERTE</Link>
-              </button>
-            </div>
+                  <li>Testimonials</li>
+                  <li>Google Maps integratie</li>
+                  <li>Google Statistieken / SEO</li>
+                  <li>Gratis SSL</li>
+                  <li className={pricesDesign.pricebold}>
+                    3 maanden gratis support
+                  </li>
+                </ul>
+                <br />
+                <button
+                  type="button"
+                  name="offerte"
+                  className={pricesDesign.pricebtn}
+                >
+                  <Link to="/contact/">OFFERTE</Link>
+                </button>
+              </div>
+            </Animated>
           </div>
         </div>
         <div id="callscroll" />
