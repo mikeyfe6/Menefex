@@ -46,6 +46,9 @@
   margin-right: 3%;
   float: left;
   display: block;
+  border-right: 5px solid $fourth-color;
+  border-radius: 1px;
+  padding-right: 2.5%;
 }
 
 .author-mini {
@@ -68,7 +71,7 @@
 }
 
 .thin {
-  border: 7.5px solid $fourth-color;
+  border: 7.5px solid $primary-color;
   width: 25%;
   border-radius: 3px;
   margin: 0;
@@ -90,10 +93,9 @@
 .post-date {
   color: $secondary-color;
   font-style: italic;
-  margin-left: 2.5%;
   white-space: nowrap;
   font-size: 0.75em;
-  letter-spacing: 0.75px;
+  letter-spacing: 0.5px;
 }
 
 .post-content {
@@ -179,7 +181,7 @@
   }
 
   .nexttologo {
-    margin-top: 1%;
+    margin-top: 0.5%;
     margin-bottom: 1%;
   }
 

@@ -85,10 +85,10 @@ const Blog = (props) => {
           <img className="blog-mini" src={mini} alt="Gimmix Mini Logo" />
           <div className="nexttologo">
             <h1 className="post-title">
-              | {props.data.contentfulBlogPost.title}
+              {props.data.contentfulBlogPost.title}
             </h1>
             <p className="post-date">
-              ⌁ Gepost op {props.data.contentfulBlogPost.publishedDate}
+              Gepost op {props.data.contentfulBlogPost.publishedDate}
             </p>
           </div>
           <div className="clr" />
