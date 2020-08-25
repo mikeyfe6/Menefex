@@ -160,7 +160,7 @@ const Form = () => {
               </p>
 
               <div className={formStyles.socials}>
-                Volg onze voetsporen of kom in contact:
+                Volg onze voetsporen & kom in contact:
               </div>
               <div className={formStyles.contacticons}>
                 <a
@@ -261,12 +261,12 @@ const Form = () => {
               &nbsp;
               <FontAwesomeIcon icon="mobile" size="lg" color="#1ca111" />
               <p className={formStyles.contacttel}>
-                - <a href="tel:0611054318">+31 6 11 05 43 18</a>
+                · <a href="tel:0611054318">+31 6 11 05 43 18</a>
               </p>
               <br />
               <FontAwesomeIcon icon="paper-plane" size="lg" color="#74aece" />
               <p className={formStyles.contactmail}>
-                - <a href="mailto:info@gimmix.nl">info@gimmix.nl</a>
+                · <a href="mailto:info@gimmix.nl">info@gimmix.nl</a>
               </p>
               <br />
               <br />

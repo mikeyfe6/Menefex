@@ -91,7 +91,7 @@ const workPage = () => {
                 color="#f0c410"
                 className={workDesign.workicon}
               />{' '}
-              Go to Project
+             Ga naar project
             </a>
             <a href="#!" className={workDesign.btnDark}>
               <FontAwesomeIcon
@@ -99,7 +99,7 @@ const workPage = () => {
                 color="#f0c410"
                 className={workDesign.workicon}
               />{' '}
-              Not on Github*
+              Niet op Github*
             </a>
           </div>
 
@@ -156,7 +156,7 @@ const workPage = () => {
                 color="#f0c410"
                 className={workDesign.workicon}
               />{' '}
-              Go to Project
+              Ga naar project
             </a>
             <a href="#!" className={workDesign.btnDark}>
               <FontAwesomeIcon
@@ -164,7 +164,7 @@ const workPage = () => {
                 color="#f0c410"
                 className={workDesign.workicon}
               />{' '}
-              Not on Github*
+              Niet op Github*
             </a>
           </div>
         </div>
