@@ -11,8 +11,8 @@ import SEO from '../components/seo';
 
 import workDesign from '../styles/modules/work.module.scss';
 
-import eternity from '../img/projects/Eternitydrum-screen.jpg';
-import blackharmony from '../img/projects/Blackharmony-screen.jpg';
+// import eternity from '../img/projects/Eternitydrum-screen.jpg';
+// import blackharmony from '../img/projects/Blackharmony-screen.jpg';
 // import comingsoon from '../img/projects/comingsoon.jpg';
 
 const workPage = () => {
@@ -52,7 +52,7 @@ const workPage = () => {
                 target="_blank"
               >
                 <img
-                  src={eternity}
+                  src="https://i.postimg.cc/pXj0DScY/Eternitydrum-screen.png"
                   alt="Eternity Drum"
                   className={workDesign.workimg}
                 />
@@ -110,6 +110,7 @@ const workPage = () => {
           {/* 
           // * EXTRA PROJECTEN BIJVOEGEN HIERONDER!
           */}
+
           <ScrollAnimation animateIn="fadeIn" delay={750} duration={2}>
             <div className="item">
               <a
@@ -118,7 +119,7 @@ const workPage = () => {
                 target="_blank"
               >
                 <img
-                  src={blackharmony}
+                  src="https://i.postimg.cc/fbzBQRzB/Blackharmony-screen.png"
                   alt="Black Harmony"
                   className={workDesign.workimg}
                 />
