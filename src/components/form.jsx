@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Animated } from 'react-animated-css';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import formStyles from '../styles/modules/form.module.scss';
@@ -11,123 +13,130 @@ const Form = () => {
 
   return (
     <div className="container">
-      <div className="row">
-        <div className={formStyles.formwrapper}>
-          <form
-            name="contact-form"
-            id={formStyles.contactForm}
-            method="POST"
-            action="/success"
-            data-netlify="true"
-            netlify-honeypot="bot-field"
-          >
-            <input type="hidden" name="form-name" value="contact-form" />
-            <ul>
-              <li>
-                <label htmlFor="contact-name">
-                  <span className="speccol">*</span> Naam
-                </label>
-                <div className={formStyles.textarea}>
-                  <input
-                    type="text"
-                    name="name"
-                    id="contact-name"
-                    defaultValue=""
-                    required
-                  />
-                </div>
-              </li>
-              <li>
-                <label htmlFor="contact-company">
-                  <span className="speccol">*</span> Bedrijfsnaam (optioneel)
-                </label>
-                <div className={formStyles.textarea}>
-                  <input
-                    type="text"
-                    name="company"
-                    id="contact-company"
-                    defaultValue=""
-                  />
-                </div>
-              </li>
-              <li>
-                <label htmlFor="contact-email">
-                  <span className="speccol">*</span> Email
-                </label>
-                <div className={formStyles.textarea}>
-                  <input
-                    type="email"
-                    name="email"
-                    id="contact-email"
-                    maxLength="35"
-                    defaultValue=""
-                    required
-                  />
-                </div>
-              </li>
-              <li>
-                <label htmlFor="contact-tel">
-                  <span className="speccol">*</span> Telefoon
-                </label>
-                <div className={formStyles.textarea}>
-                  <input
-                    type="tel"
-                    name="tel"
-                    id="contact-tel"
-                    maxLength="15"
-                    defaultValue=""
-                    required
-                  />
-                </div>
-              </li>
-              <li>
-                <label htmlFor="contact-msg">
-                  <span className="speccol">*</span> Selecteer onderwerp
-                </label>
-                <div>
-                  <select
-                    name="onderwerp[]"
-                    className={formStyles.choosing}
-                    required
-                  >
-                    <option value="website">Offerte aanvragen</option>
-                    <option value="samenwerking">Samenwerking aangaan</option>
-                    <option value="opmerking">Vraag / Opmerking</option>
-                    <option value="feedback">Klacht / Feedback</option>
-                    <option value="hulp">Hulp & Probleemoplossing</option>
-                  </select>
-                </div>
-              </li>
-              <li>
-                <label htmlFor="contact-project">
-                  <span className="speccol">*</span> Type uw bericht hieronder
-                </label>
-                <div className={formStyles.textarea}>
-                  <textarea
-                    type="text"
-                    name="message"
-                    id="contact-project"
-                    rows="6"
-                    defaultValue=""
-                    required
-                  />
-                </div>
-              </li>
-            </ul>
-
-            <button
-              type="submit"
-              name="submit"
-              id="contact-submit"
-              className={formStyles.send}
-              action="../pages/success.jsx"
+      {' '}
+      <Animated
+        animationIn="fadeIn"
+        animationInDelay={2500}
+        animationInDuration={2000}
+      >
+        <div className="row">
+          <div className={formStyles.formwrapper}>
+            <form
+              name="contact-form"
+              id={formStyles.contactForm}
+              method="POST"
+              action="/success"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
             >
-              Versturen
-            </button>
-            <div className="clr" />
-          </form>
+              <input type="hidden" name="form-name" value="contact-form" />
+              <ul>
+                <li>
+                  <label htmlFor="contact-name">
+                    <span className="speccol">*</span> Naam
+                  </label>
+                  <div className={formStyles.textarea}>
+                    <input
+                      type="text"
+                      name="name"
+                      id="contact-name"
+                      defaultValue=""
+                      required
+                    />
+                  </div>
+                </li>
+                <li>
+                  <label htmlFor="contact-company">
+                    <span className="speccol">*</span> Bedrijfsnaam (optioneel)
+                  </label>
+                  <div className={formStyles.textarea}>
+                    <input
+                      type="text"
+                      name="company"
+                      id="contact-company"
+                      defaultValue=""
+                    />
+                  </div>
+                </li>
+                <li>
+                  <label htmlFor="contact-email">
+                    <span className="speccol">*</span> Email
+                  </label>
+                  <div className={formStyles.textarea}>
+                    <input
+                      type="email"
+                      name="email"
+                      id="contact-email"
+                      maxLength="35"
+                      defaultValue=""
+                      required
+                    />
+                  </div>
+                </li>
+                <li>
+                  <label htmlFor="contact-tel">
+                    <span className="speccol">*</span> Telefoon
+                  </label>
+                  <div className={formStyles.textarea}>
+                    <input
+                      type="tel"
+                      name="tel"
+                      id="contact-tel"
+                      maxLength="15"
+                      defaultValue=""
+                      required
+                    />
+                  </div>
+                </li>
+                <li>
+                  <label htmlFor="contact-msg">
+                    <span className="speccol">*</span> Selecteer onderwerp
+                  </label>
+                  <div>
+                    <select
+                      name="onderwerp[]"
+                      className={formStyles.choosing}
+                      required
+                    >
+                      <option value="website">Offerte aanvragen</option>
+                      <option value="samenwerking">Samenwerking aangaan</option>
+                      <option value="opmerking">Vraag / Opmerking</option>
+                      <option value="feedback">Klacht / Feedback</option>
+                      <option value="hulp">Hulp & Probleemoplossing</option>
+                    </select>
+                  </div>
+                </li>
+                <li>
+                  <label htmlFor="contact-project">
+                    <span className="speccol">*</span> Type uw bericht hieronder
+                  </label>
+                  <div className={formStyles.textarea}>
+                    <textarea
+                      type="text"
+                      name="message"
+                      id="contact-project"
+                      rows="6"
+                      defaultValue=""
+                      required
+                    />
+                  </div>
+                </li>
+              </ul>
+
+              <button
+                type="submit"
+                name="submit"
+                id="contact-submit"
+                className={formStyles.send}
+                action="../pages/success.jsx"
+              >
+                Versturen
+              </button>
+              <div className="clr" />
+            </form>
+          </div>
         </div>
-      </div>
+      </Animated>
       <div className="whitespace" />
       {/* <hr className={formStyles.thick} /> */}
       <br />
