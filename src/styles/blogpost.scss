@@ -71,7 +71,7 @@
 }
 
 .thin {
-  border: 7.5px solid $primary-color;
+  border: 6.5px solid $primary-color;
   width: 25%;
   border-radius: 3px;
   margin: 0;
@@ -165,6 +165,10 @@
 @media (max-width: 768px) {
   .gobacktext {
     font-size: 0.8em;
+  }
+
+  .thin {
+    border: 5.5px solid $primary-color;
   }
 
   .gobackbtn {

@@ -96,7 +96,7 @@ const Blog = (props) => {
           <hr className="thin" />
 
           <h5 className="post-subtitle">
-            * {props.data.contentfulBlogPost.subtitle}
+            {props.data.contentfulBlogPost.subtitle}
           </h5>
 
           <div className="post-content">
