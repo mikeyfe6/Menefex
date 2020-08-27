@@ -204,30 +204,6 @@ const SEO = ({
 
             {seo.image && <meta name="twitter:image" content={seo.image} />}
 
-            {/* Scripts: Extentions & Plugins */}
-
-            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" async />
-
-            <script
-              src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"
-              async
-            />
-
-            <script
-              src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/gsap.min.js"
-              async
-            />
-
-            {/* Scripts: Google Adsense */}
-
-            <script
-              data-ad-client="ca-pub-3158048130288702"
-              async
-              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-            />
-
-            <script src="https://unpkg.com/swiper/swiper-bundle.min.js" async />
-
             {/* Links Rel: Fonts */}
 
             <link
@@ -245,16 +221,23 @@ const SEO = ({
               rel="stylesheet"
             />
 
+            {/* Google Adsense */}
+
+            <script
+              data-ad-client="ca-pub-3158048130288702"
+              async
+              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+            />
+
+            {/* Scripts: Extentions & Plugins */}
+
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js" async />
+
             {/* Links Rel: Extentions & Plugins */}
 
             <link
               rel="stylesheet"
               href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
-            />
-
-            <link
-              rel="stylesheet"
-              href="https://unpkg.com/swiper/swiper-bundle.min.css"
             />
           </Helmet>
         </>
