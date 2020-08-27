@@ -25,7 +25,7 @@ const IndexPage = () => {
       />
       <Hero />
 
-      <ScrollAnimation animateIn="zoomIn" delay={100}>
+      <ScrollAnimation animateIn="zoomIn" delay={50} duration={3}>
         <div className="specvertical" />
       </ScrollAnimation>
 
@@ -33,41 +33,64 @@ const IndexPage = () => {
 
       <div id="biografiescroll" className="extrawhitespace" />
 
-      <ScrollAnimation animateIn="fadeInLeft" delay={500}>
+      <ScrollAnimation
+        animateIn="fadeInRight"
+        delay={500}
+        offset={100}
+        duration={2}
+      >
         <h3 className="hometitles">Biografie</h3>
+      </ScrollAnimation>
 
-        <br />
+      <br />
 
+      <ScrollAnimation animateIn="fadeInLeft" delay={1250} duration={2}>
         <Smallbio />
       </ScrollAnimation>
 
       <div className="extrawhitespace" />
 
-      <ScrollAnimation animateIn="zoomIn" delay={100}>
+      <ScrollAnimation animateIn="zoomIn" delay={50} duration={3}>
         <div className="vertical" />
       </ScrollAnimation>
 
       <div id="servicescroll" className="extrawhitespace" />
 
-      <ScrollAnimation animateIn="fadeInRight" delay={500}>
+      <ScrollAnimation
+        animateIn="fadeInLeft"
+        delay={500}
+        offset={100}
+        duration={2}
+      >
         <h3 className="hometitles">Services & Diensten</h3>
+      </ScrollAnimation>
 
-        <br />
+      <br />
 
+      <ScrollAnimation animateIn="fadeInRight" delay={1250} duration={2}>
         <Quote />
       </ScrollAnimation>
 
       <div className="extrawhitespace" />
-      <ScrollAnimation animateIn="zoomIn" delay={100}>
+
+      <ScrollAnimation animateIn="zoomIn" delay={50} duration={3}>
         <div className="vertical" />
       </ScrollAnimation>
 
       <div id="projectscroll" className="extrawhitespace" />
 
-      <ScrollAnimation animateIn="fadeInUp" delay={500}>
+      <ScrollAnimation
+        animateIn="fadeInDown"
+        delay={500}
+        offset={100}
+        duration={2}
+      >
         <h3 className="hometitles"> Recente Projecten</h3>
-        <br />
+      </ScrollAnimation>
 
+      <br />
+
+      <ScrollAnimation animateIn="fadeInUp" delay={1250} duration={2}>
         <Projects />
       </ScrollAnimation>
 
