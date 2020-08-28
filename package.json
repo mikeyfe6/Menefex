@@ -46,7 +46,7 @@
     "gatsby-remark-embedder": "^3.0.0",
     "gatsby-remark-images": "^3.3.27",
     "gatsby-remark-images-contentful": "^2.3.14",
-    "gatsby-remark-relative-images": "^1.1.1",
+    "gatsby-remark-relative-images": "^2.0.2",
     "gatsby-source-contentful": "^2.3.39",
     "gatsby-source-filesystem": "^2.3.26",
     "gatsby-transformer-remark": "^2.8.30",
