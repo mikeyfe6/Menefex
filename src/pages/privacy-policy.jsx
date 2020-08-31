@@ -31,6 +31,7 @@ const PrivacyPolicy = () => (
           Voor alle aanvullende informatie over de bescherming van
           persoonsgegevens kunt u terecht op de website van de Autoriteit
           persoonsgegevens: 
+          <br />
           <a
             href="https://autoriteitpersoonsgegevens.nl/nl"
             rel="noopener noreferrer"
@@ -295,7 +296,8 @@ const PrivacyPolicy = () => (
         <h5>Artikel 14 - Contact</h5> 
         <p>
           Voor vragen, productinformatie of informatie over de website zelf,
-          kunt u zich richten tot: Michael Fransman, 
+          kunt u zich richten tot: <br />
+          Michael Fransman,{' '}
           <a
             href="mailto:michaelfransman@gimmix.nl"
             rel="noopener noreferrer"
