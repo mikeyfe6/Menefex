@@ -31,7 +31,6 @@ const PrivacyPolicy = () => (
           Voor alle aanvullende informatie over de bescherming van
           persoonsgegevens kunt u terecht op de website van de Autoriteit
           persoonsgegevens: 
-          <br />
           <a
             href="https://autoriteitpersoonsgegevens.nl/nl"
             rel="noopener noreferrer"
