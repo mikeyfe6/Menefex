@@ -66,7 +66,7 @@ const Footer = () => {
               <h4 className="wow fadeInUp" data-wow-delay="0.2s">
                 <a href="mailto:info@gimmix.nl">
                   {' '}
-                  <span className={footerStyles.mailfoot}>m:</span>{' '}
+                  <span className={footerStyles.mailfoot}>e:</span>{' '}
                   info@gimmix.nl
                 </a>{' '}
                 ∙
