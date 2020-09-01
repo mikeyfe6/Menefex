@@ -13,7 +13,7 @@ const ThankYouPage = () => (
       pathname="/success/"
     />
     <div className="container">
-      <div className="whitespace" />
+      <div className="smallwhitespace" />
       <hr />
       <br />
       <h1 className="page-title">

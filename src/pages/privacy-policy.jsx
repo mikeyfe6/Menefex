@@ -14,7 +14,7 @@ const PrivacyPolicy = () => (
     />
     <div className="container privacypol">
       <div className="col-lg-9">
-        <div className="whitespace" />
+        <div className="smallwhitespace" />
         <hr />
         <br />
         <h1 className="page-title">PRIVACYBELEID - Gimmix</h1> 

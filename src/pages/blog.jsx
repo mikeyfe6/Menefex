@@ -46,7 +46,7 @@ const BlogPage = () => {
       />
 
       <div className="container">
-        <div className="whitespace" />
+        <div className="smallwhitespace" />
         <h1 className="page-title">
           Blog<span className="headdots">.</span>
         </h1>

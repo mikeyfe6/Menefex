@@ -13,7 +13,7 @@ const TermsConditions = () => (
       pathname="/terms-conditions/"
     />
     <div className="container termscondit">
-      <div className="whitespace" />
+      <div className="smallwhitespace" />
       <hr />
       <br />
       <h1 className="page-title"> ALGEMENE VOORWAARDEN - Gimmix</h1>   

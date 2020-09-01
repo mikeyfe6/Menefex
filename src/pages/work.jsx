@@ -26,7 +26,7 @@ const workPage = () => {
       />
 
       <div className="container">
-        <div className="whitespace" />
+        <div className="smallwhitespace" />
         <div className="row">
           <div className="col-lg-12">
             <h1 className="page-title" data-wow-delay="1s">

@@ -14,7 +14,7 @@ const NotFound = () => {
         pathname="/404/"
       />
       <div className="container">
-        <div className="whitespace" />
+        <div className="smallwhitespace" />
         <h3>
           Ojee<span className="speccol">..</span> Pagina niet gevonden
           <span className="speccol">.</span> Dat is nou jammer

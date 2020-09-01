@@ -18,7 +18,7 @@ const AboutPage = () => {
         pathname="/about/"
       />
 
-      <div className="whitespace" />
+      <div className="smallwhitespace" />
       <div className="container">
         <div className="row">
           <div className="col-lg-8">

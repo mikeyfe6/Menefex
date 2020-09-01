@@ -9,11 +9,12 @@
   top: 0;
   left: 0;
   position: fixed;
-  background: $fourth-color;
-  height: 100px;
+  background: linear-gradient(to left, $fourth-color, $third-color);
+  // background: $fourth-color;
+  height: 90px;
   z-index: 300;
   border-top: 5px solid $secondary-color;
-  border-bottom: 3px solid $third-color;
+  border-bottom: 3px solid $fourth-color;
 
   &__navigation {
     display: flex;

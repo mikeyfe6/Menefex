@@ -19,7 +19,7 @@ const ContactPage = () => {
       />
 
       <div className="container">
-        <div className="whitespace" />
+        <div className="smallwhitespace" />
         <h1 className="page-title">
           Contact<span className="headdots">.</span>
         </h1>

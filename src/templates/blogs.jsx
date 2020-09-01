@@ -61,7 +61,7 @@ const Blog = (props) => {
 
   return (
     <Layout>
-      <div className="whitespace" />
+      <div className="smallwhitespace" />
       <div className="container">
         <SEO
           title={props.data.contentfulBlogPost.title}

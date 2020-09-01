@@ -20,7 +20,7 @@ const Prices = () => {
         pathname="/prices/"
       />
       <div className="container">
-        <div className="whitespace" />
+        <div className="smallwhitespace" />
         <h1 className="page-title">
           Prijzen & tarieven<span className="headdots">.</span>
         </h1>
