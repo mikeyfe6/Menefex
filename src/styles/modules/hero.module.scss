@@ -39,24 +39,41 @@
   .hero-head {
     text-align: center;
     color: $secondary-color;
-    letter-spacing: 1px;
-    font-family: $barrie-font;
-    font-size: 3.25em;
-    height: 300px;
+    letter-spacing: 5px;
+    font-family: $right-font;
+    font-size: 2.75em;
+    // height: 300px;
+    background: linear-gradient(to right, $primary-color, $button-hover);
+    border: 3px solid $fifth-color;
+
+    padding: 0.3em;
+    border-radius: 10px;
+
+    min-width: 50%;
+    max-width: 50%;
+    margin: 0 auto;
   }
 
   .hero-headMB {
-    font-size: 1.25em;
-    height: 25px;
+    font-size: 1em;
     text-align: center;
     color: $secondary-color;
-    letter-spacing: 1px;
-    font-family: $barrie-font;
+    letter-spacing: 2.5px;
+    font-family: $right-font;
+
+    background: linear-gradient(to right, $primary-color, $button-hover);
+    border: 3px solid $fifth-color;
+
+    padding: 0.3em;
+    border-radius: 10px;
+
+    width: 90%;
+    margin: 0 auto;
   }
 
   .scroll-down {
     position: relative;
-    top: -60px;
+    top: 175px;
     margin: 0 auto;
     z-index: 0;
     text-decoration: none;
@@ -100,6 +117,7 @@
     }
 
     .scrollBtn {
+      margin-top: 20em;
       text-transform: uppercase;
       padding: 12.5px 30px;
       background: transparent;
@@ -162,6 +180,7 @@
     // font-size: 1.25em !important;
     // height: 25px !important;
     display: none;
+    color: $primary-color !important;
   }
 
   .fleximage {
@@ -172,7 +191,7 @@
   .mini {
     // width: 125px !important;
     height: 150px !important;
-    width: 125px !important;
+    width: 150px !important;
     margin-top: -25px;
   }
 

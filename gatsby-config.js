@@ -116,7 +116,7 @@ module.exports = {
       resolve: `gatsby-plugin-nprogress`,
       options: {
         // Setting a color is optional.
-        color: `#f0c410`,
+        color: `#FFCC00`,
         // Disable the loading spinner.
         showSpinner: true,
       },
@@ -170,7 +170,7 @@ module.exports = {
         start_url: `/`,
         background_color: `#a9a9a9`,
         lang: `nl`,
-        theme_color: `#f0c410`,
+        theme_color: `#FFCC00`,
         display: `standalone`,
         icon: 'src/img/Gimmix-applogo.png',
       },

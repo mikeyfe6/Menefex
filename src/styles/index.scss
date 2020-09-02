@@ -76,7 +76,7 @@ a {
 }
 
 .page-title {
-  font-family: $barrie-font;
+  font-family: $right-font;
   font-size: 2.25rem;
 }
 
@@ -100,7 +100,7 @@ progress[value]::-webkit-progress-bar {
   padding: 1%;
   text-decoration: underline;
   text-decoration-color: $secondary-color;
-  font-family: $barrie-font;
+  font-family: $right-font;
   font-size: 1.75em;
 }
 
@@ -155,8 +155,8 @@ span.speccol {
 
 div#hs-eu-cookie-confirmation {
   border-top: none !important;
-  border-bottom: 1px solid #f0c410 !important;
-  box-shadow: 0 1px 5px #f0c410 !important;
+  border-bottom: 1px solid #ffcc00 !important;
+  box-shadow: 0 1px 5px #ffcc00 !important;
 }
 
 div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner p {

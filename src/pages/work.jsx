@@ -91,7 +91,7 @@ const workPage = () => {
               >
                 <FontAwesomeIcon
                   icon="eye"
-                  color="#f0c410"
+                  color="#FFCC00"
                   className={workDesign.workicon}
                 />{' '}
                 Ga naar project
@@ -99,7 +99,7 @@ const workPage = () => {
               <a href="#!" className={workDesign.btnDark}>
                 <FontAwesomeIcon
                   icon={['fab', 'github']}
-                  color="#f0c410"
+                  color="#FFCC00"
                   className={workDesign.workicon}
                 />{' '}
                 Niet op Github*
@@ -158,7 +158,7 @@ const workPage = () => {
               >
                 <FontAwesomeIcon
                   icon="eye"
-                  color="#f0c410"
+                  color="#FFCC00"
                   className={workDesign.workicon}
                 />{' '}
                 Ga naar project
@@ -166,7 +166,7 @@ const workPage = () => {
               <a href="#!" className={workDesign.btnDark}>
                 <FontAwesomeIcon
                   icon={['fab', 'github']}
-                  color="#f0c410"
+                  color="#FFCC00"
                   className={workDesign.workicon}
                 />{' '}
                 Niet op Github*

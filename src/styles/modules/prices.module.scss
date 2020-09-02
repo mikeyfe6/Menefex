@@ -17,7 +17,7 @@
   text-decoration: underline;
   text-decoration-color: $super-color;
   font-weight: 700;
-  font-family: $barrie-font;
+  font-family: $right-font;
   margin-bottom: 5%;
 }
 
@@ -31,6 +31,7 @@
 .pricedisc {
   text-decoration: line-through;
   font-size: 0.5em;
+  margin-right: -3%;
 }
 
 .priceaction {

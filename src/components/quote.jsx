@@ -13,7 +13,7 @@ const Quote = () => {
       <div className={quoteDesign.quoteWrapper}>
         <div className="row">
           <section id={quoteDesign.services} className="col-xl">
-            <FontAwesomeIcon icon="globe" size="2x" color="#f0c410" />
+            <FontAwesomeIcon icon="globe" size="2x" color="#FFCC00" />
             <h3 className={quoteDesign.quoteHead}>Websites</h3>
             <hr className={quoteDesign.thick} />
             <div className={quoteDesign.quoteBlock}>
@@ -40,7 +40,7 @@ const Quote = () => {
             <br />
           </section>
           <section id={quoteDesign.services} className="col-xl">
-            <FontAwesomeIcon icon="shopping-cart" size="2x" color="#f0c410" />
+            <FontAwesomeIcon icon="shopping-cart" size="2x" color="#FFCC00" />
             <h3 className={quoteDesign.quoteHead}>Webshops</h3>
             <hr className={quoteDesign.thick} />
             <div className={quoteDesign.quoteBlock}>
@@ -67,7 +67,7 @@ const Quote = () => {
             <br />
           </section>
           <section id={quoteDesign.services} className="col-xl">
-            <FontAwesomeIcon icon="mobile" size="2x" color="#f0c410" />
+            <FontAwesomeIcon icon="mobile" size="2x" color="#FFCC00" />
             <h3 className={quoteDesign.quoteHead}>Webapplicaties</h3>
             <hr className={quoteDesign.thick} />
             <div className={quoteDesign.quoteBlock}>
@@ -98,7 +98,7 @@ const Quote = () => {
             <FontAwesomeIcon
               icon={['fab', 'searchengin']}
               size="2x"
-              color="#f0c410"
+              color="#FFCC00"
             />
             <h3 className={quoteDesign.quoteHead}>Zoekmachineoptimalisatie</h3>
             <hr className={quoteDesign.thick} />
