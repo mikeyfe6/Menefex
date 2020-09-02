@@ -64,6 +64,7 @@ const sideDrawer = (props) => {
               icon={['fab', 'whatsapp']}
               size="lg"
               color="#1ca111"
+              className={sidebarDesign.whapp}
             />
             <span className={sidebarDesign.wapp}>
               &nbsp;Stuur een whatsapp&apos; bericht

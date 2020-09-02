@@ -73,7 +73,7 @@ const toolbar = (props) => (
               <FontAwesomeIcon
                 icon={['fab', 'whatsapp']}
                 size="2x"
-                color="#656565"
+                color="#555555"
                 className={headerDesign.whapp}
               />
             </a>

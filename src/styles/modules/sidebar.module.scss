@@ -44,7 +44,7 @@
   }
 
   a {
-    color: $primary-color;
+    color: #555555;
     text-decoration: none;
     font-family: $right-font;
     text-shadow: -5px 0 #cccccc, 0 5px #cccccc, 5px 0 #cccccc, 0 -5px #cccccc;
@@ -63,6 +63,11 @@
     .dots {
       color: $secondary-color;
       font-size: 50px;
+    }
+
+    .whapp {
+      padding-top: 3px;
+      // padding-bottom: 1px;
     }
 
     .wapp {
