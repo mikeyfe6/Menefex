@@ -150,17 +150,7 @@ const SEO = ({
                         "@id": "https://gimmix.nl",
                         "name": "Home"
                       }
-                    },
-                    {
-                      "@type": "ListItem",
-                      "position": 2,
-                      "item":
-                      {
-                        "@type": "Blog",
-                        "@id": "https://gimmix.nl/blog",
-                        "name": "Blog"
-                      }
-                    }  
+                    }
                   ]
                 }
              `}
