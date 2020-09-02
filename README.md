@@ -1,10 +1,15 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
+
+&nbsp;&nbsp;
+
 <p align="center">
   <a href="https://gimmix.nl" rel="noopener noreferrer"
               target="_blank">
-    <img alt="Gimmix" src="https://i.postimg.cc/WbsmfwKc/Gx-NEWLOGO.png" width="350" />
+    <img alt="Gimmix" src="https://i.postimg.cc/WbsmfwKc/Gx-NEWLOGO.png" width="500" />
   </a>
 </p>
+
+&nbsp;&nbsp;
 
 <h1>
   Gimmix Webmediabedrijf
