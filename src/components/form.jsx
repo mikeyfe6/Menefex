@@ -270,12 +270,12 @@ const Form = () => {
               &nbsp;
               <FontAwesomeIcon icon="mobile" size="lg" color="#1db954" />
               <p className={formStyles.contacttel}>
-                · <a href="tel:0611054318">+31 6 11 05 43 18</a>
+                · &nbsp;<a href="tel:0611054318">+31 6 11 05 43 18</a>
               </p>
               <br />
               <FontAwesomeIcon icon="paper-plane" size="lg" color="#74aece" />
               <p className={formStyles.contactmail}>
-                · <a href="mailto:info@gimmix.nl">info@gimmix.nl</a>
+                · &nbsp;<a href="mailto:info@gimmix.nl">info@gimmix.nl</a>
               </p>
               <br />
               <br />
