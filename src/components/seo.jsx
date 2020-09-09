@@ -178,18 +178,18 @@ const SEO = ({
             {/* <meta property="og:image:width" content="512" />
             <meta property="og:image:height" content="512" /> */}
 
-            <meta name="twitter:card" content="summary_large_image" />
+            <meta property="twitter:card" content="summary_large_image" />
             {seo.url && <meta property="twitter:url" content={seo.url} />}
-            {seo.title && <meta name="twitter:title" content={seo.title} />}
+            {seo.title && <meta property="twitter:title" content={seo.title} />}
             {seo.description && (
-              <meta name="twitter:description" content={seo.description} />
+              <meta property="twitter:description" content={seo.description} />
             )}
 
             {seo.image && <meta name="twitter:image" content={seo.image} />}
 
-            <meta name="twitter:site" content={twitterUsername} />
+            <meta property="twitter:site" content={twitterUsername} />
             {twitterUsername && (
-              <meta name="twitter:creator" content={twitterUsername} />
+              <meta property="twitter:creator" content={twitterUsername} />
             )}
 
             {/* Links Rel: Fonts */}
