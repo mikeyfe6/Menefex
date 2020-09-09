@@ -67,7 +67,7 @@ const Blog = (props) => {
           title={props.data.contentfulBlogPost.title}
           description={props.data.contentfulBlogPost.subtitle}
           keywords={props.data.contentfulBlogPost.keywords}
-          pathname={`/${props.data.contentfulBlogPost.slug}/`}
+          pathname={`/blog/${props.data.contentfulBlogPost.slug}/`}
           custom={`https:${props.data.contentfulBlogPost.image.file.url}`}
           article
         />

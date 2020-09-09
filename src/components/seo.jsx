@@ -156,17 +156,10 @@ const SEO = ({
              `}
             </script>
 
+            <meta property="fb:app_id" content="388358162140938" />
+
             {seo.url && <meta property="og:url" content={seo.url} />}
-            {/* {seo.url && <meta property="twitter:site" content={seo.url} />} */}
-
-            {(article ? (
-              false
-            ) : (
-              <meta property="og:type" content="website" />
-            )) || <meta property="og:type" content="article" />}
-
             {seo.title && <meta property="og:title" content={seo.title} />}
-
             {seo.description && (
               <meta property="og:description" content={seo.description} />
             )}
@@ -175,24 +168,29 @@ const SEO = ({
 
             <meta property="og:site_name" content="Gimmix" />
             <meta property="og:locale" content="nl_NL" />
-            <meta property="og:image:width" content="512" />
-            <meta property="og:image:height" content="512" />
-            <meta property="fb:app_id" content="388358162140938" />
+
+            {(article ? (
+              false
+            ) : (
+              <meta property="og:type" content="website" />
+            )) || <meta property="og:type" content="article" />}
+
+            {/* <meta property="og:image:width" content="512" />
+            <meta property="og:image:height" content="512" /> */}
 
             <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:site" content={twitterUsername} />
-
-            {twitterUsername && (
-              <meta name="twitter:creator" content={twitterUsername} />
-            )}
-
+            {seo.url && <meta property="twitter:url" content={seo.url} />}
             {seo.title && <meta name="twitter:title" content={seo.title} />}
-
             {seo.description && (
               <meta name="twitter:description" content={seo.description} />
             )}
 
             {seo.image && <meta name="twitter:image" content={seo.image} />}
+
+            <meta name="twitter:site" content={twitterUsername} />
+            {twitterUsername && (
+              <meta name="twitter:creator" content={twitterUsername} />
+            )}
 
             {/* Links Rel: Fonts */}
 
