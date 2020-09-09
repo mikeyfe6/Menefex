@@ -17,8 +17,7 @@ module.exports = {
     title: 'Gimmix',
     titleTemplate: '%s · Gimmix',
     author: 'Michael Fransman',
-    description:
-      'Website of Webapp? Webmediabedrijf Gimmix uit Amsterdam staat garant voor al uw webgerelateerde wensen en ambities.',
+    description: 'Websites & webapps bouwen met gevoel voor detail',
     twitterUsername: '@GimmixWMB',
   },
   plugins: [
@@ -166,13 +165,14 @@ module.exports = {
       options: {
         name: `Gimmix`,
         short_name: `Gimmix`,
-        description: `Websites bouwen met gevoel voor detail`,
+        description: `Websites & webapps bouwen met gevoel voor detail`,
         start_url: `/`,
         background_color: `#a9a9a9`,
         lang: `nl`,
         theme_color: `#FFCC00`,
         display: `standalone`,
         icon: 'src/img/Gimmix-applogo.png',
+        crossOrigin: `use-credentials`,
       },
     },
     'gatsby-plugin-offline',
