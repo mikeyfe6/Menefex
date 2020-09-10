@@ -185,7 +185,7 @@ const SEO = ({
               <meta property="twitter:description" content={seo.description} />
             )}
 
-            {seo.image && <meta name="twitter:image" content={seo.image} />}
+            {seo.image && <meta property="twitter:image" content={seo.image} />}
 
             <meta property="twitter:site" content={twitterUsername} />
             {twitterUsername && (
