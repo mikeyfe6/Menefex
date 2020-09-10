@@ -148,7 +148,7 @@ const SEO = ({
                       {
                         "@type": "Website",
                         "@id": "https://gimmix.nl",
-                        "name": "Home"
+                        "name": "Gimmix Webmediabedrijf"
                       }
                     }
                   ]
