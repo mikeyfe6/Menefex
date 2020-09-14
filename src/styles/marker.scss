@@ -13,3 +13,10 @@
     z-index: 1;
   }
 }
+
+@media (max-width: 768px) {
+  .marker {
+    width: 25px;
+    height: 25px;
+  }
+}
