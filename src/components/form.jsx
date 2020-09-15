@@ -28,6 +28,7 @@ const Form = () => {
               action="/success"
               data-netlify="true"
               netlify-honeypot="bot-field"
+              data-netlify-recaptcha="true"
             >
               <input type="hidden" name="form-name" value="contact-form" />
               <ul>
@@ -122,7 +123,7 @@ const Form = () => {
                   </div>
                 </li>
               </ul>
-
+              <div data-netlify-recaptcha="true" />
               <button
                 type="submit"
                 name="submit"
