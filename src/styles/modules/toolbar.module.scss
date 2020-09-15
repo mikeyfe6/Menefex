@@ -9,18 +9,18 @@
   top: 0;
   left: 0;
   position: fixed;
-  background: linear-gradient(to left, $fourth-color, $third-color);
+  background: linear-gradient(to bottom, $third-color, rgba(255, 255, 255, 0));
   // background: $fourth-color;
   height: 90px;
   z-index: 300;
-  border-top: 5px solid $secondary-color;
-  border-bottom: 3px solid $fourth-color;
+  border-top: 7.5px solid $secondary-color;
+  // border-bottom: 3px solid white;
 
   &__navigation {
     display: flex;
     align-items: center;
     height: 100%;
-    padding: 0 3rem;
+    padding: 0 1.5rem;
   }
 
   .spacer {
@@ -36,7 +36,7 @@
     }
 
     li {
-      padding: 0 0.7rem;
+      padding: 0 0.5rem;
     }
 
     .activePage {

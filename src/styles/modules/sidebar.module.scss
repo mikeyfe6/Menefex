@@ -8,13 +8,13 @@
   height: 100%;
   opacity: 0.95;
   color: black;
-  background: linear-gradient(to right, $third-color, white);
+  background: linear-gradient(to top, $third-color, white);
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 200;
-  transform: translateY(-100%);
+  transform: translateY(100%);
   transition: transform 0.5s ease-in-out;
 
   .menuline {

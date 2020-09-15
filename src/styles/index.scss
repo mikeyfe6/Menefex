@@ -34,12 +34,12 @@ html {
 
   /* Track */
   ::-webkit-scrollbar-track {
-    background: $primary-color;
+    background: $secondary-color;
   }
 
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: $secondary-color;
+    background: $primary-color;
   }
 
   /* Handle on hover */
