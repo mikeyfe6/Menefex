@@ -9,7 +9,7 @@ const TermsConditions = () => (
   <Layout>
     <SEO
       title="Terms & Conditions"
-      description="Onze voorwaarden & regels die wij als Gimmix nastreven."
+      description="Bekijk hier de algemene voorwaarden die wij als Gimmix nastreven."
       pathname="/terms-conditions/"
     />
     <div className="container termscondit">

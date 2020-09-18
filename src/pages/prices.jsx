@@ -15,7 +15,7 @@ const Prices = () => {
     <Layout>
       <SEO
         title="Prijzen & tarieven"
-        description="Bekijk onze prijzen en tarieven."
+        description="Hier ziet u een indicatie van onze scherpe prijzen. Heeft u liever een georiënteerd gesprek, neem contact met ons op of vraag een terugbelverzoek aan."
         keywords="prijzen, tarieven, starter, established, business, plan, actie"
         pathname="/prices/"
       />

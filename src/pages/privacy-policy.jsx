@@ -9,7 +9,7 @@ const PrivacyPolicy = () => (
   <Layout>
     <SEO
       title="Privacy Policy"
-      description="Hoe gaan wij om met uw gegevens?"
+      description="Hoe gaan wij om met uw gegevens en meer? Bekijk onze privacybeleid."
       pathname="/privacy-policy/"
     />
     <div className="container privacypol">
