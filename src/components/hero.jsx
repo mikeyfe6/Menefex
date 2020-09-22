@@ -53,7 +53,9 @@ const Hero = () => {
             animationInDuration={1900}
           >
             <h2 className={heroDesign.heroHead}>
-              Websites, webapplicaties & SEO
+              Web<span className={heroDesign.herospec}>sites</span>, web
+              <span className={heroDesign.herospec}>applicaties</span> & SE
+              <span className={heroDesign.herospec}>O</span>
             </h2>
           </Animated>
           <Animated
@@ -62,7 +64,12 @@ const Hero = () => {
             animationInDuration={3000}
           >
             <h2 className={heroDesign.heroHeadMB}>
-              Websites, webapplicaties & SEO
+              {/* <span className={heroDesign.herospec}>W</span>ebsites,{' '}
+              <span className={heroDesign.herospec}>w</span>ebapplicaties &{' '}
+              <span className={heroDesign.herospec}>S</span>EO */}
+              Web<span className={heroDesign.herospec}>sites</span>, web
+              <span className={heroDesign.herospec}>applicaties</span> & SE
+              <span className={heroDesign.herospec}>O</span>
             </h2>
           </Animated>
         </div>

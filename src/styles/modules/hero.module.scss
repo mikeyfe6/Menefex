@@ -41,16 +41,16 @@
     color: $secondary-color;
     letter-spacing: 5px;
     font-family: $right-font;
-    font-size: 2.5em;
+    font-size: 3em;
     // height: 300px;
     background: linear-gradient(to right, $primary-color, $button-hover);
     border: 3px solid $fifth-color;
 
-    padding: 0.3em;
+    padding: 0.1em;
     border-radius: 10px;
 
-    min-width: 55%;
-    max-width: 55%;
+    min-width: 50%;
+    max-width: 50%;
     margin: 0 auto;
   }
 
@@ -72,6 +72,10 @@
 
     // width: 90%;
     margin: 0 auto;
+  }
+
+  .herospec {
+    color: $sixth-color !important;
   }
 
   .scroll-down {
