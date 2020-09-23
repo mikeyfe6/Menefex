@@ -310,6 +310,7 @@ const PrivacyPolicy = () => (
         <Link to="/">Ga terug naar de hoofdpagina!</Link>
       </div>
     </div>
+    <div className="whitespace" />
   </Layout>
 );
 

@@ -660,6 +660,7 @@ const TermsConditions = () => (
       <br />
       <Link to="/">Ga terug naar de hoofdpagina!</Link>
     </div>
+    <div className="whitespace" />
   </Layout>
 );
 
