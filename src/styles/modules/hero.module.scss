@@ -37,20 +37,20 @@
   }
 
   .hero-head {
-    text-align: center;
+    // text-align: center;
     color: $secondary-color;
     letter-spacing: 5px;
     font-family: $right-font;
-    font-size: 3em;
+    font-size: 2.75em;
     // height: 300px;
     background: linear-gradient(to right, $primary-color, $button-hover);
     border: 3px solid $fifth-color;
 
-    padding: 0.1em;
+    padding: 0.1em 1.25em 0.1em 1.25em;
+    // padding-left: 15px;
     border-radius: 10px;
 
-    min-width: 50%;
-    max-width: 50%;
+    display: table; /* keep the background color wrapped tight */
     margin: 0 auto;
   }
 
@@ -64,13 +64,10 @@
     background: linear-gradient(to right, $primary-color, $button-hover);
     border: 3px solid $fifth-color;
 
-    padding: 0.5em;
+    padding: 0.5em 1.5em 0.5em 1.5em;
     border-radius: 10px;
 
-    min-width: 85%;
-    max-width: 95%;
-
-    // width: 90%;
+    display: table; /* keep the background color wrapped tight */
     margin: 0 auto;
   }
 
@@ -186,7 +183,7 @@
   .hero-head {
     // font-size: 1.25em !important;
     // height: 25px !important;
-    display: none;
+    display: none !important;
     color: $primary-color !important;
   }
 
@@ -257,6 +254,6 @@
   }
 
   .hero-headMB {
-    display: none;
+    display: none !important;
   }
 }
