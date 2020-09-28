@@ -161,9 +161,15 @@
   border: 3px solid $super-color;
 }
 
+.undercol {
+  text-decoration: underline;
+  text-decoration-color: $secondary-color !important;
+}
+
 .contactbox {
-  background: linear-gradient(to right, #656565, $button-hover);
-  color: $sixth-color;
+  background: linear-gradient(to bottom, #656565bd, white);
+  // color: $sixth-color;
+  color: $primary-color;
   height: 100%;
   width: 100vw;
   position: relative;
@@ -176,8 +182,8 @@
   padding-right: 20%;
   padding-left: 20%;
   // box-shadow: 1px 3px 7px rgba(209, 209, 209, 0.767);
-  border-bottom: 5px solid $primary-color;
-  border-top: 5px solid $primary-color;
+  // border-bottom: 5px solid #656565ce;
+  border-top: 5px solid #656565bd;
   font-size: 0.9em;
   text-align: center;
   // margin: 0 auto;
@@ -253,6 +259,11 @@
   margin-top: 3em;
   margin-bottom: 2.5em;
   background-color: $primary-color !important;
+  opacity: 0.25;
+}
+
+.uniqcol {
+  color: $secondary-color;
 }
 
 .contactgev {
@@ -327,5 +338,6 @@
   .contactbox {
     border-width: 5px;
     padding: 7.5%;
+    padding-top: 12.5% !important;
   }
 }

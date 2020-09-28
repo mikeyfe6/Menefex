@@ -145,20 +145,31 @@ const Form = () => {
           <div className="row">
             <div className="col-md">
               <p>
-                <u>Wij zijn bereikbaar van:</u> <br /> <br />
+                <b>
+                  <u className={formStyles.undercol}>
+                    Wij zijn bereikbaar van:
+                  </u>
+                </b>
+                <br /> <br />
                 <span className={formStyles.opentijd}>
-                  ma: &nbsp; <b>9:00 - 19:00</b>
+                  <span className={formStyles.uniqcol}>ma:</span> &nbsp;{' '}
+                  <b>9:00 - 19:00</b>
                   <br />
-                  di: &nbsp; <b>9:00 - 19:00</b>
+                  <span className={formStyles.uniqcol}>di:</span> &nbsp;{' '}
+                  <b>9:00 - 19:00</b>
                   <br />
-                  wo: &nbsp; <b>9:00 - 19:00</b>
+                  <span className={formStyles.uniqcol}>wo:</span> &nbsp;{' '}
+                  <b>9:00 - 19:00</b>
                   <br />
-                  do: &nbsp; <b>9:00 - 19:00</b>
+                  <span className={formStyles.uniqcol}>do:</span> &nbsp;{' '}
+                  <b>9:00 - 19:00</b>
                   <br />
-                  vri: &nbsp; <b>9:00 - 19:00</b>
+                  <span className={formStyles.uniqcol}>vr:</span> &nbsp;{' '}
+                  <b>9:00 - 19:00</b>
                   <br />
                   <br />
-                  za - zo: &nbsp; <b>gesloten</b>
+                  <span className={formStyles.uniqcol}>za - zo:</span>
+                  &nbsp; <b>gesloten</b>
                   <br />
                   <br />
                   <span className={formStyles.covid}>
@@ -169,7 +180,11 @@ const Form = () => {
               </p>
 
               <div className={formStyles.socials}>
-                Volg onze voetsporen & kom in contact:
+                <b>Volg</b> ons op de voet en
+                <span className={formStyles.uniqcol}>
+                  <b>/</b>
+                </span>
+                of kom in <b>contact</b>:
               </div>
               <div className={formStyles.contacticons}>
                 <a
@@ -180,7 +195,7 @@ const Form = () => {
                   <FontAwesomeIcon
                     icon={['fab', 'facebook']}
                     size="2x"
-                    color="#dadada"
+                    color=" #656565ce"
                     className={formStyles.fbicon}
                   />
                 </a>
@@ -193,7 +208,7 @@ const Form = () => {
                   <FontAwesomeIcon
                     icon={['fab', 'instagram']}
                     size="2x"
-                    color="#dadada"
+                    color="#656565ce"
                     className={formStyles.igicon}
                   />
                 </a>
@@ -206,7 +221,7 @@ const Form = () => {
                   <FontAwesomeIcon
                     icon={['fab', 'twitter']}
                     size="2x"
-                    color="#dadada"
+                    color="#656565ce"
                     className={formStyles.twicon}
                   />
                 </a>
@@ -219,7 +234,7 @@ const Form = () => {
                   <FontAwesomeIcon
                     icon={['fab', 'linkedin']}
                     size="2x"
-                    color="#dadada"
+                    color="#656565ce"
                     className={formStyles.liicon}
                   />
                 </a>
@@ -232,7 +247,7 @@ const Form = () => {
                   <FontAwesomeIcon
                     icon={['fab', 'github']}
                     size="2x"
-                    color="#dadada"
+                    color="#656565ce"
                     className={formStyles.ghicon}
                   />
                 </a>
@@ -245,7 +260,7 @@ const Form = () => {
                   <FontAwesomeIcon
                     icon={['fab', 'spotify']}
                     size="2x"
-                    color="#dadada"
+                    color="#656565ce"
                     className={formStyles.waicon}
                   />
                 </a>
@@ -258,7 +273,7 @@ const Form = () => {
                   <FontAwesomeIcon
                     icon={['fab', 'whatsapp']}
                     size="2x"
-                    color="#dadada"
+                    color="#656565ce"
                     className={formStyles.spicon}
                   />
                 </a>
@@ -280,27 +295,34 @@ const Form = () => {
               <br />
               <br />
               <p className={formStyles.contactgev}>
-                <b>Gimmix Webmediabedrijf,</b> <br />
-                gevestigd in Amsterdam-Zuidoost.
+                <span className={formStyles.uniqcol}>
+                  <b>Gimmix Webmediabedrijf</b>
+                </span>{' '}
+                <br />
+                gevestigd in Amsterdam-Zuidoost
                 <br />
                 <span className={formStyles.gimmixgev}>
                   <br />
-                  <u>Kamer van koophandel-nummer</u> <br />
+                  <u className={formStyles.undercol}>
+                    Kamer van koophandel-nummer
+                  </u>{' '}
+                  <br />
                   <i>
                     <b>76045315</b>
                   </i>
                   <br />
                   <br />
-                  <u>BTW-nummer</u>
+                  <u className={formStyles.undercol}>BTW-nummer</u>
                   <br />
                   <i>
                     <b>NL 003040579B17</b>
                   </i>
                   <br />
                   <br />
-                  <u>BANK-nummer</u>
+                  <u className={formStyles.undercol}>BANK-nummer</u>
                   <br />
                   <i>
+                    {' '}
                     <b>NL10 BUNQ 2038 8619 94</b>
                   </i>
                 </span>
