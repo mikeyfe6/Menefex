@@ -151,23 +151,23 @@ const Form = () => {
                 <br /> <br />
                 <span className={formStyles.opentijd}>
                   <span className={formStyles.uniqcol}>ma</span>{' '}
-                  <b>· 9:00 - 19:00</b>
+                  <b>9:00 · 19:00</b>
                   <br />
                   <span className={formStyles.uniqcol}>di</span>{' '}
-                  <b>· 9:00 - 19:00</b>
+                  <b>9:00 · 19:00</b>
                   <br />
                   <span className={formStyles.uniqcol}>wo</span>{' '}
-                  <b>· 9:00 - 19:00</b>
+                  <b> 9:00 · 19:00</b>
                   <br />
                   <span className={formStyles.uniqcol}>do</span>{' '}
-                  <b>· 9:00 - 19:00</b>
+                  <b> 9:00 · 19:00</b>
                   <br />
                   <span className={formStyles.uniqcol}>vr</span>{' '}
-                  <b>· 9:00 - 19:00</b>
+                  <b> 9:00 · 19:00</b>
                   <br />
                   <br />
                   <span className={formStyles.uniqcol}>za - zo</span>{' '}
-                  <b>· gesloten</b>
+                  <b>gesloten</b>
                   <br />
                   <br />
                   <span className={formStyles.covid}>
