@@ -146,30 +146,28 @@ const Form = () => {
             <div className="col-md">
               <p>
                 <b>
-                  <u className={formStyles.undercol}>
-                    Wij zijn bereikbaar van:
-                  </u>
+                  <u className={formStyles.undercol}>Wij zijn bereikbaar van</u>
                 </b>
                 <br /> <br />
                 <span className={formStyles.opentijd}>
-                  <span className={formStyles.uniqcol}>ma:</span> &nbsp;{' '}
-                  <b>9:00 - 19:00</b>
+                  <span className={formStyles.uniqcol}>ma</span>{' '}
+                  <b>· 9:00 - 19:00</b>
                   <br />
-                  <span className={formStyles.uniqcol}>di:</span> &nbsp;{' '}
-                  <b>9:00 - 19:00</b>
+                  <span className={formStyles.uniqcol}>di</span>{' '}
+                  <b>· 9:00 - 19:00</b>
                   <br />
-                  <span className={formStyles.uniqcol}>wo:</span> &nbsp;{' '}
-                  <b>9:00 - 19:00</b>
+                  <span className={formStyles.uniqcol}>wo</span>{' '}
+                  <b>· 9:00 - 19:00</b>
                   <br />
-                  <span className={formStyles.uniqcol}>do:</span> &nbsp;{' '}
-                  <b>9:00 - 19:00</b>
+                  <span className={formStyles.uniqcol}>do</span>{' '}
+                  <b>· 9:00 - 19:00</b>
                   <br />
-                  <span className={formStyles.uniqcol}>vr:</span> &nbsp;{' '}
-                  <b>9:00 - 19:00</b>
+                  <span className={formStyles.uniqcol}>vr</span>{' '}
+                  <b>· 9:00 - 19:00</b>
                   <br />
                   <br />
-                  <span className={formStyles.uniqcol}>za - zo:</span>
-                  &nbsp; <b>gesloten</b>
+                  <span className={formStyles.uniqcol}>za - zo</span>{' '}
+                  <b>· gesloten</b>
                   <br />
                   <br />
                   <span className={formStyles.covid}>
@@ -184,7 +182,7 @@ const Form = () => {
                 <span className={formStyles.uniqcol}>
                   <b>/</b>
                 </span>
-                of kom in <b>contact</b>:
+                of kom in <b>contact</b>
               </div>
               <div className={formStyles.contacticons}>
                 <a
