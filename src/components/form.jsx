@@ -295,9 +295,11 @@ const Form = () => {
               <br />
               <br />
               <p className={formStyles.contactgev}>
-                <span className={formStyles.uniqcol}>
-                  <b>Gimmix Webmediabedrijf</b>
-                </span>{' '}
+                <b>
+                  {' '}
+                  <span className={formStyles.uniqcol}>Gimmix</span>{' '}
+                  Webmediabedrijf{' '}
+                </b>
                 <br />
                 gevestigd in Amsterdam-Zuidoost
                 <br />
