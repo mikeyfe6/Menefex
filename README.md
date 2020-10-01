@@ -33,6 +33,6 @@ GNU AGPLv3, all rights reserved, Gimmix WMB 2020 ©
 
 ---
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/78c114cf-1bff-4d30-8899-92eacaec9f9a/deploy-status)](https://app.netlify.com/sites/gimmix/deploys) | [![time tracker](https://wakatime.com/badge/github/mikeyfe6/Gimmix.svg)](https://wakatime.com/badge/github/mikeyfe6/Gimmix)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/78c114cf-1bff-4d30-8899-92eacaec9f9a/deploy-status)](https://app.netlify.com/sites/gimmix/deploys) [![time tracker](https://wakatime.com/badge/github/mikeyfe6/Gimmix.svg)](https://wakatime.com/badge/github/mikeyfe6/Gimmix)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
