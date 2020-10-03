@@ -111,9 +111,9 @@ const AboutPage = () => {
                 {' '}
                 <br />
                 <b>
-                  WE ❤︎ MUSIC ! Daarom delen we onze eigen{' '}
-                  <u>work, chill & vibe</u> playlist. Geniet ervan en volg ons
-                  voor updates.
+                  <b>WE ❤︎ MUSIC !</b> Daarom delen we ons{' '}
+                  <u>work, chill & vibe</u> - playlist. Geniet ervan en blijf
+                  ons volgen voor updates.
                 </b>
               </p>{' '}
               <iframe
