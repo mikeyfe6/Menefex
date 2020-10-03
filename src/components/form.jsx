@@ -180,7 +180,7 @@ const Form = () => {
               <div className={formStyles.socials}>
                 <b>Volg</b> ons op de voet en
                 <span className={formStyles.uniqcol}>
-                  <b>/</b>
+                  <b> / </b>
                 </span>
                 of kom in <b>contact</b>
               </div>
