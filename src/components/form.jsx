@@ -171,8 +171,8 @@ const Form = () => {
                   <br />
                   <br />
                   <span className={formStyles.covid}>
-                    * (COVID-19 heeft <u>geen invloed</u> gehad op onze
-                    werkzaamheden)
+                    * COVID-19 heeft <u>geen invloed</u> gehad op onze
+                    werkzaamheden
                   </span>
                 </span>
               </p>
