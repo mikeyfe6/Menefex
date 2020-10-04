@@ -10,6 +10,12 @@
   background: linear-gradient(to bottom, $spec-color, $secondary-color);
   border-radius: 25px;
   border: 2px solid $spec-color;
+  @include smoothtrans;
+
+  &:hover {
+    transform: scale(1.025);
+    @include smoothtrans;
+  }
 }
 
 .scrollcall {
