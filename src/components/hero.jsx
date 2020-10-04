@@ -19,7 +19,7 @@ const Hero = () => {
         <div className={heroDesign.fleximage}>
           <Animated
             animationIn="heartBeat"
-            animationInDelay={15000}
+            animationInDelay={13500}
             animationInDuration={4000}
           >
             <img
@@ -49,7 +49,7 @@ const Hero = () => {
           </Animated>
           <Animated
             animationIn="fadeInUp"
-            animationInDelay={9000}
+            animationInDelay={8000}
             animationInDuration={1900}
           >
             <h2 className={heroDesign.heroHead}>
@@ -60,7 +60,7 @@ const Hero = () => {
           </Animated>
           <Animated
             animationIn="fadeInUp"
-            animationInDelay={2000}
+            animationInDelay={1000}
             animationInDuration={3000}
           >
             <h2 className={heroDesign.heroHeadMB}>
@@ -73,21 +73,21 @@ const Hero = () => {
         <div className={heroDesign.flexancors}>
           <Animated
             animationIn="zoomIn"
-            animationInDelay={13000}
+            animationInDelay={12000}
             animationInDuration={1000}
           >
             <div className={heroDesign.scrollDown} />
           </Animated>
           <Animated
             animationIn="zoomIn"
-            animationInDelay={5000}
+            animationInDelay={4500}
             animationInDuration={3000}
           >
             <div className={heroDesign.scrollDownMB} />
           </Animated>
           <Animated
             animationIn="fadeInDown"
-            animationInDelay={11000}
+            animationInDelay={10000}
             animationInDuration={2000}
           >
             <span className={heroDesign.scrollHead}>

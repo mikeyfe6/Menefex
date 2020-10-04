@@ -265,9 +265,10 @@
 .hrcont {
   width: 200%;
   height: 1px;
+  border-radius: 10px;
   margin-top: 3em;
   margin-bottom: 2.5em;
-  background-color: $primary-color !important;
+  background: linear-gradient(to left, $fourth-color, white);
   opacity: 0.25;
 }
 
@@ -327,6 +328,7 @@
   .waicon,
   .spicon {
     padding: 0.5%;
+    margin-top: 3%;
   }
 
   .hrcont {

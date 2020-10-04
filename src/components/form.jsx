@@ -16,7 +16,7 @@ const Form = () => {
       {' '}
       <Animated
         animationIn="fadeIn"
-        animationInDelay={2500}
+        animationInDelay={2750}
         animationInDuration={2000}
       >
         <div className="row">

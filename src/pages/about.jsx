@@ -17,7 +17,6 @@ const AboutPage = () => {
         keywords="over, gimmix, doelen, uniek, ondersteuning, spotify playlist, stayvibin"
         pathname="/about/"
       />
-
       <div className="smallwhitespace" />
       <div className="container">
         <div className="row">
