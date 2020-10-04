@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 import { Animated } from 'react-animated-css';
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 import Layout from '../components/layout';
 
@@ -27,8 +28,19 @@ const Prices = () => {
         <br />
         <p className="page-sub">
           Hier ziet u een indicatie van onze scherpe prijzen. Heeft u liever een
-          georiënteerd gesprek, neem <Link to="/contact/">contact</Link> met ons
-          op of vraag een <Link to="#callscroll">terugbelverzoek</Link> aan.
+          georiënteerd gesprek, neem{' '}
+          <Link to="/contact/">
+            <b>contact</b>
+          </Link>{' '}
+          met ons op of vraag een{' '}
+          <button
+            type="button"
+            className={pricesDesign.scrollcall}
+            onClick={() => scrollTo('#callscroll')}
+          >
+            <b>terugbelverzoek</b>
+          </button>{' '}
+          aan.
         </p>
         <br />
         <div className="row">
@@ -72,13 +84,15 @@ const Prices = () => {
                   </li>
                 </ul>
                 <br />
-                <button
-                  type="button"
-                  name="offerte"
-                  className={pricesDesign.pricebtn}
-                >
-                  <Link to="/contact/">OFFERTE</Link>
-                </button>
+                <Link to="/contact/">
+                  <button
+                    type="button"
+                    name="offerte"
+                    className={pricesDesign.pricebtn}
+                  >
+                    OFFERTE
+                  </button>
+                </Link>
               </div>
             </Animated>
           </div>
@@ -124,13 +138,15 @@ const Prices = () => {
                   </li>
                 </ul>
                 <br />
-                <button
-                  type="button"
-                  name="offerte"
-                  className={pricesDesign.pricebtn}
-                >
-                  <Link to="/contact/">OFFERTE</Link>
-                </button>
+                <Link to="/contact/">
+                  <button
+                    type="button"
+                    name="offerte"
+                    className={pricesDesign.pricebtn}
+                  >
+                    offerte
+                  </button>
+                </Link>
               </div>
             </Animated>
           </div>
@@ -180,13 +196,15 @@ const Prices = () => {
                   </li>
                 </ul>
                 <br />
-                <button
-                  type="button"
-                  name="offerte"
-                  className={pricesDesign.pricebtn}
-                >
-                  <Link to="/contact/">OFFERTE</Link>
-                </button>
+                <Link to="/contact/">
+                  <button
+                    type="button"
+                    name="offerte"
+                    className={pricesDesign.pricebtn}
+                  >
+                    offerte
+                  </button>
+                </Link>
               </div>
             </Animated>
           </div>

@@ -219,39 +219,47 @@
 .ghicon,
 .waicon,
 .spicon {
-  margin-right: 1.75%;
-  margin-left: 1.75%;
+  margin-right: 1.5%;
+  margin-left: 1.5%;
   margin-top: 1%;
   padding: 0.3%;
+  @include smoothtrans;
 }
 
 .fbicon:hover {
   @include smoothtrans;
   color: #4064ad;
+  transform: scale(1.25);
 }
 .igicon:hover {
   @include smoothtrans;
   color: #dd2a7b;
+  transform: scale(1.25);
 }
 .twicon:hover {
   @include smoothtrans;
   color: #55acee;
+  transform: scale(1.25);
 }
 .liicon:hover {
   @include smoothtrans;
   color: #0177b5;
+  transform: scale(1.25);
 }
 .ghicon:hover {
   @include smoothtrans;
   color: #24292e;
+  transform: scale(1.25);
 }
 .waicon:hover {
   @include smoothtrans;
   color: #1ca111;
+  transform: scale(1.25);
 }
 .spicon:hover {
   @include smoothtrans;
   color: #1db954;
+  transform: scale(1.25);
 }
 
 .hrcont {

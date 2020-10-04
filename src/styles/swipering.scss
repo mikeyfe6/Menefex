@@ -46,13 +46,24 @@
   .project-link {
     position: absolute;
     background: $secondary-color;
-    padding: 2%;
-    border: $spec-color solid 1px;
+    padding: 1% 2%;
+    border: 2.5px solid $spec-color;
     border-radius: 5px;
     top: 5%;
     right: 2%;
     font-weight: bolder;
     font-size: 1em;
+    color: white;
+    letter-spacing: 0.5px;
+    @include smoothtrans;
+    // text-transform: uppercase;
+
+    &:hover {
+      @include smoothtrans;
+      color: $link-color;
+      // background: $spec-color;
+      border-color: $link-color;
+    }
   }
 
   h5 {
@@ -166,6 +177,8 @@
       top: 5%;
       right: 2.5%;
       font-size: 0.9em;
+      border-width: 2px;
+      letter-spacing: 0px;
     }
   }
 }

@@ -16,6 +16,8 @@ const Call = () => {
         netlify-honeypot="bot-field"
       >
         <input type="hidden" name="form-name" value="call-form" />
+        <h5 className={callStyles.terugbel}>Terugbelverzoek</h5>
+        <hr className={callStyles.thick} />
         <ul className={callStyles.fillareaone}>
           <li>
             <label htmlFor="call-name">
@@ -85,7 +87,6 @@ const Call = () => {
             </div>
           </li>
         </ul>
-
         <button
           type="submit"
           name="submit"

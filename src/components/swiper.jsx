@@ -38,15 +38,16 @@ const Projects = () => {
           <div className="slider-content">
             <div className="beschrijving">
               <h5>Eternity Drum</h5>
-              <span className="project-link">
-                <a
-                  href="https://eternitydrum.com"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  bekijk website!
-                </a>
-              </span>
+
+              <a
+                href="https://eternitydrum.com"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <button type="button" className="project-link">
+                  bekijk website
+                </button>
+              </a>
 
               <p className="informatie">
                 Deze website is gebouwd in opdracht van Stichting Eternity
@@ -65,15 +66,16 @@ const Projects = () => {
           <div className="slider-content">
             <div className="beschrijving">
               <h5>Black Harmony</h5>
-              <span className="project-link">
-                <a
-                  href="https://blackharmony.nl"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  bekijk website!
-                </a>
-              </span>
+
+              <a
+                href="https://blackharmony.nl/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <button type="button" className="project-link">
+                  bekijk website
+                </button>
+              </a>
 
               <p className="informatie">
                 Deze website is gebouwd in opdracht van Black Harmony, zanggroep

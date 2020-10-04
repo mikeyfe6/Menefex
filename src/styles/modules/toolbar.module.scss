@@ -61,6 +61,7 @@
       font-size: 1.5em;
 
       opacity: 0.7;
+      @include smoothtrans;
 
       &:hover {
         @include smoothtrans;
@@ -79,6 +80,7 @@
       .whapp {
         padding-top: 7.5px;
         padding-bottom: 7.5px;
+        @include smoothtrans;
 
         &:hover {
           color: #1ca111;
