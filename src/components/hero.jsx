@@ -18,9 +18,9 @@ const Hero = () => {
       <div className={heroDesign.hero}>
         <div className={heroDesign.fleximage}>
           <Animated
-            animationIn="heartBeat"
-            animationInDelay={13500}
-            animationInDuration={4000}
+            animationIn="rollIn"
+            animationInDelay={5000}
+            animationInDuration={5000}
           >
             <img
               className={heroDesign.mini}
@@ -49,8 +49,8 @@ const Hero = () => {
           </Animated>
           <Animated
             animationIn="fadeInUp"
-            animationInDelay={8000}
-            animationInDuration={1900}
+            animationInDelay={8500}
+            animationInDuration={2000}
           >
             <h2 className={heroDesign.heroHead}>
               Web<span className={heroDesign.herospec}>sites</span>, web
@@ -60,7 +60,7 @@ const Hero = () => {
           </Animated>
           <Animated
             animationIn="fadeInUp"
-            animationInDelay={1000}
+            animationInDelay={3000}
             animationInDuration={3000}
           >
             <h2 className={heroDesign.heroHeadMB}>
@@ -73,8 +73,8 @@ const Hero = () => {
         <div className={heroDesign.flexancors}>
           <Animated
             animationIn="zoomIn"
-            animationInDelay={12000}
-            animationInDuration={1000}
+            animationInDelay={11000}
+            animationInDuration={3000}
           >
             <div className={heroDesign.scrollDown} />
           </Animated>
@@ -87,7 +87,7 @@ const Hero = () => {
           </Animated>
           <Animated
             animationIn="fadeInDown"
-            animationInDelay={10000}
+            animationInDelay={9500}
             animationInDuration={2000}
           >
             <span className={heroDesign.scrollHead}>
