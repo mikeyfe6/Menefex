@@ -12,12 +12,15 @@
   border: 2px $super-color solid;
   border-radius: 7.5px;
   width: inherit;
+  @include shadow;
 }
 
 .thick {
   margin: 0;
-  width: 10%;
+  width: 25%;
   border: 3px solid $primary-color;
+  border-radius: 25px;
+  @include shadow;
 }
 
 .spotext {

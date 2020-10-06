@@ -11,6 +11,7 @@
   border-radius: 25px;
   border: 2px solid $spec-color;
   @include smoothtrans;
+  @include shadow;
 
   &:hover {
     transform: scale(1.025);

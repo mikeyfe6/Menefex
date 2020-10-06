@@ -59,6 +59,7 @@
   border-radius: 5px;
   margin-bottom: 2%;
   @include smoothtrans;
+  @include shadow;
   // margin-top: 50px;
 
   &:hover {

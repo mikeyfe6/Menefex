@@ -14,7 +14,7 @@
   border-top: 2px solid $super-color;
   border-right: 2px solid $super-color;
   border-left: 2px solid $super-color;
-  box-shadow: 1px 3px 7px rgba(209, 209, 209, 0.767);
+  @include shadow;
 }
 
 .slider-content {
@@ -57,12 +57,13 @@
     letter-spacing: 0.5px;
     @include smoothtrans;
     // text-transform: uppercase;
+    @include shadow;
 
     &:hover {
       @include smoothtrans;
-      color: $link-color;
-      // background: $spec-color;
-      border-color: $link-color;
+      color: #4da3db;
+      // background: $fourth-color;
+      border-color: #4da3db;
     }
   }
 
@@ -87,9 +88,10 @@
     font-weight: 700;
     background: linear-gradient(to right, $fifth-color, $primary-color);
     color: white;
-    padding: 1% 1.5%;
+    padding: 1% 2%;
     border-radius: 4px;
     display: table;
+    @include shadow;
   }
 }
 
@@ -170,7 +172,7 @@
     .geschreven {
       font-size: 0.6em;
       border-radius: 3px;
-      padding: 1.5% 1.75%;
+      padding: 1.5% 2%;
     }
 
     .project-link {

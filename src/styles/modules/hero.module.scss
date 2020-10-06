@@ -6,7 +6,7 @@
 
 .hero {
   height: 100vh;
-  // height: calc(var(--vh, 1vh) * 100);
+  height: calc(var(--vh, 1vh) * 100);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -16,7 +16,7 @@
   }
 
   .mini {
-    width: 200px;
+    width: 225px;
     height: 250px;
     // opacity: 0.9;
   }
@@ -33,7 +33,8 @@
   }
 
   .flexhead {
-    // height: 300px;
+    margin-top: 3%;
+    margin-bottom: 10%;
   }
 
   .hero-head {
@@ -51,6 +52,7 @@
 
     display: table; /* keep the background color wrapped tight */
     margin: 0 auto;
+    @include shadow;
   }
 
   .hero-headMB {
@@ -68,6 +70,7 @@
 
     display: table; /* keep the background color wrapped tight */
     margin: 0 auto;
+    @include shadow;
   }
 
   .herospec {
@@ -76,13 +79,13 @@
 
   .scroll-down {
     position: relative;
-    top: 175px;
+    bottom: 75px;
     margin: 0 auto;
     z-index: 0;
     text-decoration: none;
     text-shadow: 0;
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     border-bottom: 5px solid $secondary-color;
     border-right: 5px solid $primary-color;
     transform: translate(-50%, 0) rotate(45deg);
@@ -91,7 +94,7 @@
 
   .scroll-downMB {
     position: relative;
-    bottom: 45px;
+    bottom: 50px;
     margin: 0 auto;
     z-index: 0;
     text-decoration: none;
@@ -105,7 +108,7 @@
   }
 
   .flexancors {
-    margin: 0 auto;
+    margin: 0 auto 0;
     // display: none;
   }
 
@@ -120,7 +123,6 @@
     }
 
     .scrollBtn {
-      margin-top: 20em;
       text-transform: uppercase;
       padding: 12.5px 30px;
       background: transparent;
@@ -132,6 +134,7 @@
       border: 3px solid $spec-color;
       border-radius: 5px;
       @include smoothtrans;
+      @include shadow;
 
       &:hover {
         color: $link-color;
@@ -154,6 +157,7 @@
       border: 3px solid $spec-color;
       border-radius: 5px;
       @include smoothtrans;
+      @include shadow;
 
       &:hover {
         color: $link-color;
@@ -180,9 +184,11 @@
 }
 
 @media (max-width: 768px) {
+  .hero {
+    margin-bottom: -25%;
+  }
+
   .hero-head {
-    // font-size: 1.25em !important;
-    // height: 25px !important;
     display: none !important;
     color: $primary-color !important;
   }
@@ -193,7 +199,6 @@
   }
 
   .mini {
-    // width: 125px !important;
     height: 150px !important;
     width: 150px !important;
     margin-top: -25px;
@@ -205,6 +210,7 @@
 
   .flexhead {
     height: 125px !important;
+    margin: 0 !important;
   }
 
   .flexancors {
@@ -213,24 +219,13 @@
   }
 
   .scroll-down {
-    // bottom: 45px !important;
-    // width: 17px !important;
-    // height: 17px !important;
     display: none;
   }
 
   .scroll-head {
-    // top: 0px !important;
     display: none;
 
     .scrollBtn {
-      // text-transform: uppercase;
-      // padding: 10px 12.5px !important;
-      // background-color: #f2f2f2;
-      // font-size: 0.7em !important;
-      // letter-spacing: 1px;
-      // border: 3px solid $spec-color;
-      // border-radius: 5px;
       display: none;
     }
 

@@ -15,6 +15,7 @@
     border: 2px $fourth-color solid;
     border-radius: 10px;
     @include smoothtrans;
+    @include shadow;
 
     &:hover {
       opacity: 0.7;
@@ -57,6 +58,7 @@
     font-size: 0.9em;
     font-family: $alata-font;
     @include smoothtrans;
+    @include shadow;
 
     &:hover {
       background: $secondary-color;

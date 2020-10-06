@@ -26,6 +26,7 @@
   border-radius: 5px;
   margin-bottom: 3%;
   @include smoothtrans;
+  @include shadow;
 
   &:hover {
     color: $link-color !important;
@@ -132,7 +133,7 @@
   background: linear-gradient(to bottom, $fifth-color, $button-hover);
   padding: 5px 0px 10px 20px;
   margin-right: 1%;
-  box-shadow: 1px 3px 7px rgba(209, 209, 209, 0.767);
+  @include shadow;
 }
 
 .post-author {

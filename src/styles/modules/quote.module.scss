@@ -75,6 +75,7 @@
     width: 23%;
     border: 3px solid $third-color;
     border-radius: 1px;
+    @include shadow;
   }
 
   .thin {
@@ -82,6 +83,7 @@
     padding: 0px;
     margin: 0px;
     width: 50%;
+    @include shadow;
   }
 }
 

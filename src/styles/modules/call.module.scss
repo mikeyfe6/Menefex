@@ -31,6 +31,7 @@
     width: 6%;
     border: 3px solid $third-color;
     border-radius: 1px;
+    @include shadow;
   }
 
   ul {
@@ -167,6 +168,7 @@
   margin-right: 1%;
   @include smoothtrans;
   margin-top: -75px;
+  @include shadow;
 
   &:hover {
     // color: $secondary-color;
