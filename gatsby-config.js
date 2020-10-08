@@ -65,6 +65,67 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allContentfulBlogPost } }) => {
+              return allContentfulBlogPost.edges.map((edge) => {
+                return {
+                  title: edge.node.title,
+                  author: 'michaelfransman@gimmix.nl',
+                  description: edge.node.subtitle,
+                  pubDate: edge.node.publishedDate,
+                  url: `${site.siteMetadata.siteUrl}/blog/${edge.node.slug}`,
+                  guid: `${site.siteMetadata.siteUrl}/blog/${edge.node.slug}`,
+                  custom_elements: [{ 'content:encoded': edge.node.body.json }],
+                };
+              });
+            },
+            query: `
+              {
+                allContentfulBlogPost(sort: { fields: publishedDate, order: DESC }) {
+                  edges {
+                    node {
+                      title
+                      subtitle
+                      slug
+                      updatedAt(formatString: "dddd D MMMM YYYY, HH:mm", locale: "nl")
+                      body {
+                        json
+                      }
+                    }
+                  }
+                }
+              }
+            `,
+            output: '/rss.xml',
+            title: "Gimmix' RSS Feed",
+            // optional configuration to insert feed reference in pages:
+            // if `string` is used, it will be used to create RegExp and then test if pathname of
+            // current page satisfied this regular expression;
+            // if not provided or `undefined`, all pages will have feed reference inserted
+            match: '^/blog/',
+            // optional configuration to specify external rss feed, such as feedburner
+            // link: 'https://feeds.feedburner.com/gimmix/blog',
+          },
+        ],
+      },
+    },
+
+    {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
         siteUrl: `https://gimmix.nl`,
