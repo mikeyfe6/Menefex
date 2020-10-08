@@ -87,8 +87,6 @@ module.exports = {
             {
               'atom:link href="https://gimmix.nl/rss.xml" rel="self" type="application/rss+xml"': null,
             },
-            // { 'itunes:author': 'Michael Scott' },
-            // { 'itunes:explicit': 'clean' },
           ],
         }),
 
