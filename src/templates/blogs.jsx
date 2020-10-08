@@ -43,9 +43,9 @@ const Blog = (props) => {
   const options = {
     renderNode: {
       'embedded-asset-block': (node) => {
-        const alt = node.data.target.fields.title['en-US'];
+        const alt = node.data.target.fields.title['nl-NL'];
         // eslint-disable-next-line prefer-destructuring
-        const url = node.data.target.fields.file['en-US'].url;
+        const url = node.data.target.fields.file['nl-NL'].url;
         return <img alt={alt} src={url} className="img-resize" />;
       },
     },
