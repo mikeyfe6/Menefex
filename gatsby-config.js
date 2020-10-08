@@ -102,7 +102,7 @@ module.exports = {
                       title
                       subtitle
                       slug
-                      publishedDate(formatString: "dddd D MMMM YYYY, HH:mm", locale: "nl")
+                      publishedDate
                       body {
                         json
                       }
@@ -119,7 +119,7 @@ module.exports = {
             // if not provided or `undefined`, all pages will have feed reference inserted
             match: '^/blog/',
             // optional configuration to specify external rss feed, such as feedburner
-            link: 'http://feeds.feedburner.com/GimmixWMB',
+            link: 'https://feeds.feedburner.com/GimmixWMB',
           },
         ],
       },
