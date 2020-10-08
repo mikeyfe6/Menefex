@@ -18,6 +18,7 @@ module.exports = {
     author: 'Michael Fransman',
     description: 'Wij bouwen websites & webapps bouwen met oog voor detail.',
     twitterUsername: '@GimmixWMB',
+    email: 'info@gimmix.nl',
   },
   plugins: [
     {
@@ -73,6 +74,7 @@ module.exports = {
                 title
                 author
                 description
+                email
                 siteUrl
                 site_url: siteUrl
               }
@@ -80,14 +82,20 @@ module.exports = {
           }
         `,
 
-        setup: (options) => ({
+        setup: ({ query: { site } }, options) => ({
           ...options,
+          title: "Gimmix' RSS Feed",
+          description: site.siteMetadata.description,
+          site_url: site.siteMetadata.siteUrl,
+          feed_url: `${site.siteMetadata.siteUrl}/rss.xml`,
+          image_url: 'https://i.postimg.cc/8PY02mwS/Gx-FAVICON.png',
+          webMaster: `${site.siteMetadata.author} ${site.siteMetadata.email}`,
+          managingEditor: site.siteMetadata.author,
+          copyright: `${new Date().getFullYear()} ${site.siteMetadata.title}`,
+          language: 'nl',
+          generator: 'GatsbyJS',
           custom_namespaces: {},
-          custom_elements: [
-            {
-              'atom:link href="https://gimmix.nl/rss.xml" rel="self" type="application/rss+xml"': null,
-            },
-          ],
+          custom_elements: [{}],
         }),
 
         feeds: [
@@ -126,6 +134,7 @@ module.exports = {
                 }
               }
             `,
+
             output: '/rss.xml',
             title: "Gimmix' RSS Feed",
             // optional configuration to insert feed reference in pages:
