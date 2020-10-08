@@ -111,7 +111,7 @@ module.exports = {
                   guid: `${site.siteMetadata.siteUrl}/blog/${edge.node.slug}`,
                   custom_elements: [
                     {
-                      'content:encoded': JSON.stringify(edge.node.body.json),
+                      // 'content:encoded': JSON.stringify(edge.node.body.json),
                     },
                   ],
                 };
