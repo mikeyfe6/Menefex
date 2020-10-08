@@ -1,8 +1,7 @@
 /**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
+    https://www.gatsbyjs.org/docs/gatsby-config/
  */
+
 const dotenv = require('dotenv');
 
 if (process.env.NODE_ENV !== 'production') {
@@ -17,7 +16,7 @@ module.exports = {
     title: 'Gimmix',
     titleTemplate: '%s · Gimmix',
     author: 'Michael Fransman',
-    description: 'Websites & webapps bouwen met gevoel voor detail',
+    description: 'Wij bouwen websites & webapps bouwen met oog voor detail.',
     twitterUsername: '@GimmixWMB',
   },
   plugins: [
@@ -72,6 +71,7 @@ module.exports = {
             site {
               siteMetadata {
                 title
+                author
                 description
                 siteUrl
                 site_url: siteUrl
@@ -79,18 +79,35 @@ module.exports = {
             }
           }
         `,
+
+        setup: (options) => ({
+          ...options,
+          custom_namespaces: {},
+          custom_elements: [
+            {
+              'atom:link href="https://gimmix.nl/rss.xml" rel="self" type="application/rss+xml"': null,
+            },
+            // { 'itunes:author': 'Michael Scott' },
+            // { 'itunes:explicit': 'clean' },
+          ],
+        }),
+
         feeds: [
           {
             serialize: ({ query: { site, allContentfulBlogPost } }) => {
               return allContentfulBlogPost.edges.map((edge) => {
                 return {
                   title: edge.node.title,
-                  author: 'michaelfransman@gimmix.nl',
+                  author: site.siteMetadata.author,
                   description: edge.node.subtitle,
                   date: edge.node.publishedDate,
                   url: `${site.siteMetadata.siteUrl}/blog/${edge.node.slug}`,
                   guid: `${site.siteMetadata.siteUrl}/blog/${edge.node.slug}`,
-                  custom_elements: [{ 'content:encoded': edge.node.body.json }],
+                  custom_elements: [
+                    {
+                      'content:encoded': JSON.stringify(edge.node.body.json),
+                    },
+                  ],
                 };
               });
             },

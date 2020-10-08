@@ -1,7 +1,7 @@
 {
   "name": "gimmix",
   "private": true,
-  "description": "Webdevelopment die schiet naar de toekomst",
+  "description": "Wij bouwen websites & webapps bouwen met oog voor detail.",
   "version": "1.8.7",
   "engines": {
     "node": ">=8.0.0"
