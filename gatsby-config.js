@@ -87,7 +87,7 @@ module.exports = {
                   title: edge.node.title,
                   author: 'michaelfransman@gimmix.nl',
                   description: edge.node.subtitle,
-                  pubDate: edge.node.publishedDate,
+                  date: edge.node.publishedDate,
                   url: `${site.siteMetadata.siteUrl}/blog/${edge.node.slug}`,
                   guid: `${site.siteMetadata.siteUrl}/blog/${edge.node.slug}`,
                   custom_elements: [{ 'content:encoded': edge.node.body.json }],
@@ -102,7 +102,7 @@ module.exports = {
                       title
                       subtitle
                       slug
-                      updatedAt(formatString: "dddd D MMMM YYYY, HH:mm", locale: "nl")
+                      publishedDate(formatString: "dddd D MMMM YYYY, HH:mm", locale: "nl")
                       body {
                         json
                       }
@@ -119,12 +119,11 @@ module.exports = {
             // if not provided or `undefined`, all pages will have feed reference inserted
             match: '^/blog/',
             // optional configuration to specify external rss feed, such as feedburner
-            // link: 'https://feeds.feedburner.com/gimmix/blog',
+            link: 'http://feeds.feedburner.com/GimmixWMB',
           },
         ],
       },
     },
-
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
