@@ -88,7 +88,7 @@ module.exports = {
           description: site.siteMetadata.description,
           site_url: site.siteMetadata.siteUrl,
           feed_url: `${site.siteMetadata.siteUrl}/rss.xml`,
-          image_url: 'https://i.postimg.cc/8PY02mwS/Gx-FAVICON.png',
+          image_url: 'https://i.postimg.cc/JnqZPb3f/Gx-FAVICON.png',
           webMaster: `${site.siteMetadata.author} ${site.siteMetadata.email}`,
           managingEditor: site.siteMetadata.author,
           copyright: `${new Date().getFullYear()} ${site.siteMetadata.title}`,
