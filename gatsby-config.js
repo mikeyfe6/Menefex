@@ -84,7 +84,7 @@ module.exports = {
 
         setup: ({ query: { site } }, options) => ({
           ...options,
-          title: "Gimmix' RSS Feed",
+          title: 'Gimmix WMB: RSS Blog Feeds',
           description: site.siteMetadata.description,
           site_url: site.siteMetadata.siteUrl,
           feed_url: `${site.siteMetadata.siteUrl}/rss.xml`,
@@ -111,7 +111,7 @@ module.exports = {
                   guid: `${site.siteMetadata.siteUrl}/blog/${edge.node.slug}`,
                   custom_elements: [
                     {
-                      // 'content:encoded': JSON.stringify(edge.node.body.json),
+                      // 'content:encoded': edge.node.body.json,
                     },
                   ],
                 };
@@ -136,7 +136,7 @@ module.exports = {
             `,
 
             output: '/rss.xml',
-            title: "Gimmix' RSS Feed",
+            title: 'Gimmix WMB: RSS Blog Feeds',
             // optional configuration to insert feed reference in pages:
             // if `string` is used, it will be used to create RegExp and then test if pathname of
             // current page satisfied this regular expression;
@@ -159,6 +159,7 @@ module.exports = {
       options: {
         spaceId: process.env.CONTENTFUL_SPACE_ID,
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        host: process.env.CONTENTFUL_HOST,
       },
     },
     `gatsby-plugin-sass`,
