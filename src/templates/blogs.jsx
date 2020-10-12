@@ -5,6 +5,8 @@ import { DiscussionEmbed } from 'disqus-react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import { Animated } from 'react-animated-css';
+
 import Layout from '../components/layout';
 import '../styles/blogpost.scss';
 import mini from '../logo/Gimmix-mini.svg';
@@ -71,51 +73,78 @@ const Blog = (props) => {
           custom={`https:${props.data.contentfulBlogPost.image.file.url}`}
           article
         />
-
         <Link to="/blog/">
           <button type="button" className="gobackbtn">
             <FontAwesomeIcon icon="backward" />{' '}
             <span className="gobacktext"> &nbsp;ALLE BLOGPOSTS </span>
           </button>
         </Link>
-
         <hr className="thick" />
-        <br />
+        <br />{' '}
         <div className="postcenterit">
-          <img className="blog-mini" src={mini} alt="Gimmix Mini Logo" />
-          <div className="nexttologo">
-            <h1 className="post-title">
-              {props.data.contentfulBlogPost.title}
-            </h1>
-            <p className="post-date">
-              Gepost op {props.data.contentfulBlogPost.publishedDate}
-            </p>
-          </div>
-          <div className="clr" />
+          {' '}
+          <Animated
+            animationIn="fadeIn"
+            animationInDelay={750}
+            animationInDuration={2000}
+          >
+            <img className="blog-mini" src={mini} alt="Gimmix Mini Logo" />
 
-          <hr className="thin" />
-
-          <h5 className="post-subtitle">
-            {props.data.contentfulBlogPost.subtitle}
-          </h5>
-
-          <div className="post-content">
-            {documentToReactComponents(
-              props.data.contentfulBlogPost.body.json,
-              options,
-            )}
-            <div className="smallwhitespace" />
-            <div className="post-authorcont">
-              <div className="post-author">
-                <span className="post-authorspec">Auteur</span>{' '}
-                {props.data.contentfulBlogPost.author}
-                <br />
-                <span className="post-authorspec">Laatst bijgewerkt</span>{' '}
-                {props.data.contentfulBlogPost.updatedAt}
-              </div>
-              <img className="author-mini" src={mini} alt="Gimmix Mini Logo" />
+            <div className="nexttologo">
+              <h1 className="post-title">
+                {props.data.contentfulBlogPost.title}
+              </h1>
+              <p className="post-date">
+                Gepost op {props.data.contentfulBlogPost.publishedDate}
+              </p>
             </div>
-          </div>
+          </Animated>
+          <div className="clr" />
+          <Animated
+            animationIn="fadeIn"
+            animationInDelay={1500}
+            animationInDuration={2000}
+          >
+            <hr className="thin" />
+          </Animated>
+          <Animated
+            animationIn="fadeIn"
+            animationInDelay={2250}
+            animationInDuration={2000}
+          >
+            <h5 className="post-subtitle">
+              {props.data.contentfulBlogPost.subtitle}
+            </h5>{' '}
+          </Animated>
+          <Animated
+            animationIn="fadeIn"
+            animationInDelay={3000}
+            animationInDuration={2000}
+          >
+            <div className="post-content">
+              {documentToReactComponents(
+                props.data.contentfulBlogPost.body.json,
+                options,
+              )}
+              <div className="smallwhitespace" />
+              <div className="post-authorcont">
+                <div className="post-author">
+                  <span className="post-authorspec">Auteur</span>{' '}
+                  {props.data.contentfulBlogPost.author}
+                  <br />
+                  <span className="post-authorspec">
+                    Laatst bijgewerkt
+                  </span>{' '}
+                  {props.data.contentfulBlogPost.updatedAt}
+                </div>
+                <img
+                  className="author-mini"
+                  src={mini}
+                  alt="Gimmix Mini Logo"
+                />
+              </div>
+            </div>
+          </Animated>
           <div className="clr" />
           <div className="specwhitespace" />
           <GoogleAds slot="3266975443" />

@@ -53,7 +53,7 @@
 }
 
 .author-mini {
-  height: 30px;
+  height: 35px;
   width: 50px;
 }
 
@@ -87,8 +87,14 @@
   margin-top: 7.5%;
   margin-bottom: 3.5%;
   // font-weight: 700;
-  font-size: 1.3em;
-  padding-left: 5px;
+  font-size: 1.05em;
+  font-weight: 700;
+
+  &::first-letter {
+    font-size: 2.5em;
+    float: left;
+    margin-top: -0.4125em;
+  }
 }
 
 .post-date {
@@ -105,7 +111,7 @@
   @include fontslg;
 
   p {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     letter-spacing: 0.4px !important;
 
     b {
@@ -131,7 +137,7 @@
   border-radius: 5px;
   border: 1.5px solid $secondary-color;
   background: linear-gradient(to bottom, $fifth-color, $button-hover);
-  padding: 5px 0px 10px 20px;
+  padding: 5px 0px 5px 20px;
   margin-right: 1%;
   @include shadow;
 }
@@ -224,6 +230,13 @@
   .post-subtitle {
     margin-top: 12.5%;
     font-size: 1em;
+    margin-bottom: 7.5%;
+
+    &::first-letter {
+      font-size: 3em;
+      float: left;
+      margin-top: -0.2em;
+    }
   }
 
   .post-date {
