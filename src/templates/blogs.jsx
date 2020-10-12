@@ -1,3 +1,4 @@
+/* eslint-disable react/style-prop-object */
 import React from 'react';
 import { graphql, Link } from 'gatsby';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
@@ -142,6 +143,41 @@ const Blog = (props) => {
                   src={mini}
                   alt="Gimmix Mini Logo"
                 />
+              </div>
+
+              <div className="clr" />
+
+              <div className="feedlysub">
+                <a
+                  href="http://feedly.com/#subscription/feed/http://feeds.feedburner.com/GimmixWMB"
+                  title="Gimmix WMB: Blog RSS Feeds"
+                >
+                  <img
+                    src="http://s3.feedly.com/feedburner/feedly.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div className="rsssub">
+                <a
+                  href="http://feeds.feedburner.com/GimmixWMB"
+                  rel="alternate"
+                  type="application/rss+xml"
+                >
+                  <img
+                    src="//feedburner.google.com/fb/images/pub/feed-icon16x16.png"
+                    alt=""
+                    className="imagerss"
+                  />
+                  &nbsp;
+                </a>
+                <a
+                  href="http://feeds.feedburner.com/GimmixWMB"
+                  rel="alternate"
+                  type="application/rss+xml"
+                >
+                  Abonneer op onze RSS feeds
+                </a>
               </div>
             </div>
           </Animated>

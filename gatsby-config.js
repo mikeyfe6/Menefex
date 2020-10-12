@@ -91,7 +91,9 @@ module.exports = {
           image_url: 'https://i.postimg.cc/JnqZPb3f/Gx-FAVICON.png',
           webMaster: `${site.siteMetadata.author} ${site.siteMetadata.email}`,
           managingEditor: site.siteMetadata.author,
-          copyright: `${new Date().getFullYear()} ${site.siteMetadata.title}`,
+          copyright: `© 2019 - ${new Date().getFullYear()} ${
+            site.siteMetadata.title
+          }, Alle rechten voorbehouden.`,
           language: 'nl',
           generator: 'GatsbyJS',
           custom_namespaces: {},
@@ -107,9 +109,24 @@ module.exports = {
                   author: site.siteMetadata.author,
                   description: edge.node.subtitle,
                   date: edge.node.publishedDate,
+                  // imageUrl: `https:${edge.node.image.file.url}`,
                   url: `${site.siteMetadata.siteUrl}/blog/${edge.node.slug}`,
                   guid: `${site.siteMetadata.siteUrl}/blog/${edge.node.slug}`,
+                  enclosure: {
+                    url: `https:${edge.node.image.file.url}`,
+                  },
                   custom_elements: [
+                    {
+                      // image: [
+                      //   {
+                      //     url: `https:${edge.node.image.file.url}`,
+                      //   },
+                      //   { title: edge.node.title },
+                      //   {
+                      //     link: `${site.siteMetadata.siteUrl}/blog/${edge.node.slug}`,
+                      //   },
+                      // ],
+                    },
                     {
                       'content:encoded': edge.node.body.rssHtml,
                     },
@@ -128,6 +145,11 @@ module.exports = {
                       publishedDate
                       body {
                         rssHtml
+                      }
+                      image {
+                        file {
+                          url
+                        }
                       }
                     }
                   }
