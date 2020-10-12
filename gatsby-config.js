@@ -96,6 +96,7 @@ module.exports = {
           }, Alle rechten voorbehouden.`,
           language: 'nl',
           generator: 'GatsbyJS',
+          ttl: '60',
           custom_namespaces: {},
           custom_elements: [{}],
         }),
