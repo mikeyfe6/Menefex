@@ -149,20 +149,20 @@ const Blog = (props) => {
 
               <div className="feedlysub">
                 <a
-                  href="http://feedly.com/#subscription/feed/http://feeds.feedburner.com/GimmixWMB"
+                  href="https://feedly.com/#subscription/feed/https://feeds.feedburner.com/GimmixWMB"
                   title="Gimmix WMB: Blog RSS Feeds"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   <img
-                    src="http://s3.feedly.com/feedburner/feedly.png"
+                    src="https://s3.feedly.com/feedburner/feedly.png"
                     alt=""
                   />
                 </a>
               </div>
               <div className="rsssub">
                 <a
-                  href="http://feeds.feedburner.com/GimmixWMB"
+                  href="https://feeds.feedburner.com/GimmixWMB"
                   type="application/rss+xml"
                   rel="noopener noreferrer"
                   target="_blank"
@@ -175,7 +175,7 @@ const Blog = (props) => {
                   &nbsp;
                 </a>
                 <a
-                  href="http://feeds.feedburner.com/GimmixWMB"
+                  href="https://feeds.feedburner.com/GimmixWMB"
                   type="application/rss+xml"
                   rel="noopener noreferrer"
                   target="_blank"
