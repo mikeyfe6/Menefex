@@ -116,11 +116,12 @@
 
     b {
       color: $secondary-color;
+      font-weight: bold !important;
     }
   }
 
   a {
-    font-weight: bold;
+    font-weight: bold !important;
   }
 
   ol li {

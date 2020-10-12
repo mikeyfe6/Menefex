@@ -21,7 +21,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
         edges {
           node {
             slug
-            updatedAt(formatString: "dddd D MMMM YYYY, HH:mm", locale: "nl")
+            updatedAt(formatString: "YYYY-MM-DD", locale: "nl")
           }
         }
       }
@@ -34,7 +34,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
       path: `/blog/${edge.node.slug}/`,
       context: {
         slug: edge.node.slug,
-        updatedAt: edge.node.updatedAt.substring(0.1),
+        updatedAt: edge.node.updatedAt,
       },
     });
   });

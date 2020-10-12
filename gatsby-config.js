@@ -261,7 +261,7 @@ module.exports = {
               url: `${site.siteMetadata.siteUrl}${edge.node.path}`,
               changefreq: `daily`,
               priority: 0.7,
-              lastmod: edge.node.context.updatedAt,
+              lastmodISO: edge.node.context.updatedAt,
             };
           }),
       },
