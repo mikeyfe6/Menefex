@@ -1,4 +1,16 @@
 const path = require('path');
+const { documentToHtmlString } = require('@contentful/rich-text-html-renderer');
+
+exports.createResolvers = ({ createResolvers }) => {
+  createResolvers({
+    contentfulBlogPostBodyRichTextNode: {
+      rssHtml: {
+        type: `String`,
+        resolve: (source) => documentToHtmlString(source),
+      },
+    },
+  });
+};
 
 module.exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;

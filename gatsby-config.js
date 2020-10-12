@@ -111,7 +111,7 @@ module.exports = {
                   guid: `${site.siteMetadata.siteUrl}/blog/${edge.node.slug}`,
                   custom_elements: [
                     {
-                      // 'content:encoded': edge.node.body.json,
+                      'content:encoded': edge.node.body.rssHtml,
                     },
                   ],
                 };
@@ -127,7 +127,7 @@ module.exports = {
                       slug
                       publishedDate
                       body {
-                        json
+                        rssHtml
                       }
                     }
                   }
