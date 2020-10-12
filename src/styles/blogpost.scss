@@ -93,7 +93,7 @@
   &::first-letter {
     font-size: 2.5em;
     float: left;
-    margin-top: -0.4125em;
+    margin-top: -0.35em;
   }
 }
 
@@ -117,6 +117,10 @@
     b {
       color: $secondary-color;
     }
+  }
+
+  a {
+    font-weight: bold;
   }
 
   ol li {
@@ -161,6 +165,14 @@
   font-weight: bold;
   font-size: 0.85em;
   margin-top: 0.5%;
+
+  a {
+    color: #fa9b3b;
+
+    &:hover {
+      color: #1f57ad;
+    }
+  }
 }
 
 .feedlysub {
