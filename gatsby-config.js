@@ -109,7 +109,7 @@ module.exports = {
                   title: edge.node.title,
                   author: site.siteMetadata.author,
                   description: edge.node.subtitle,
-                  date: edge.node.publishedDate,
+                  date: edge.node.updatedAt,
                   url: `${site.siteMetadata.siteUrl}/blog/${edge.node.slug}`,
                   guid: `${site.siteMetadata.siteUrl}/blog/${edge.node.slug}`,
                   enclosure: {
@@ -142,7 +142,7 @@ module.exports = {
                       title
                       subtitle
                       slug
-                      publishedDate
+                      updatedAt
                       body {
                         rssHtml
                       }
