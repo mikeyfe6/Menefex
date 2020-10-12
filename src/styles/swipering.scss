@@ -46,13 +46,13 @@
 
   .project-link {
     position: absolute;
-    background: $secondary-color;
+    background: linear-gradient(to left, #ffcc007c, $secondary-color);
     padding: 0.9% 2%;
-    border: 1.75px solid #797979;
+    border: 1.75px solid $fourth-color;
     border-radius: 5px;
     top: 7%;
     left: 4%;
-    font-weight: bolder;
+    font-weight: bold;
     font-size: 1em;
     color: $primary-color;
     letter-spacing: 0.5px;
@@ -196,7 +196,7 @@
       padding: 1% 2.25% !important;
       font-size: 0.8em;
       border-width: 1.25px;
-      letter-spacing: -0.5px;
+      letter-spacing: -0.25px;
     }
   }
 }
