@@ -35,15 +35,23 @@
     .project-text {
       letter-spacing: 0.02em;
       line-height: 1.6em;
-      font-size: 0.75em;
+      font-size: 0.7em;
       font-weight: 500;
     }
 
     .projectOrg {
       color: $primary-color;
+      font-weight: bold;
+      font-size: 1rem;
+      font-family: $right-font;
     }
 
-    span {
+    .projectField {
+      // font-weight: bold !important;
+      // padding-bottom: 100px !important;
+    }
+
+    .projectHead {
       font-family: $right-font;
       margin-right: 2%;
       color: $secondary-color;
@@ -56,7 +64,7 @@
       padding: 0.175% 1.5% 0.175% 1%;
       margin: 1% 0 1% 0%;
       color: white;
-      font-size: 0.8em;
+      font-size: 0.85em;
       white-space: nowrap;
       @include shadow;
     }

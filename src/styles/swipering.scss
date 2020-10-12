@@ -47,15 +47,16 @@
   .project-link {
     position: absolute;
     background: linear-gradient(to left, #ffcc007c, $secondary-color);
-    padding: 0.9% 2%;
+    padding: 1.5% 3%;
     border: 1.75px solid $fourth-color;
     border-radius: 5px;
     top: 7%;
     left: 4%;
     font-weight: bold;
     font-size: 1em;
-    color: $primary-color;
-    letter-spacing: 0.5px;
+    // color: $primary-color;
+    color: $button-hover;
+    letter-spacing: 0.75px;
     @include smoothtrans;
     // text-transform: uppercase;
     @include shadow;
@@ -96,7 +97,7 @@
     .technologien {
       background: linear-gradient(to right, $primary-color, $button-hover);
       border-radius: 3px;
-      padding: 0.175% 2% 0.175% 1.5%;
+      padding: 0.175% 2% 0.175% 2%;
       color: white;
       white-space: nowrap;
       @include shadow;
@@ -186,14 +187,14 @@
 
       .technologien {
         border-radius: 2.5px;
-        padding: 0.175% 1.75% 0.175% 1.25%;
+        padding: 0.175% 1.75% 0.175% 1.75%;
       }
     }
 
     .project-link {
       top: 7%;
       left: 3%;
-      padding: 1% 2.25% !important;
+      padding: 1.5% 2.5% !important;
       font-size: 0.8em;
       border-width: 1.25px;
       letter-spacing: -0.25px;

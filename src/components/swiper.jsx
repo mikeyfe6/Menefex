@@ -84,8 +84,8 @@ const Projects = () => {
               </p>
               <p className="geschreven">
                 <mark className="technologien">Wordpress</mark>{' '}
-                <mark className="technologien">Additional CSS</mark>{' '}
                 <mark className="technologien">ACF</mark>{' '}
+                <mark className="technologien">Additional CSS</mark>{' '}
                 <mark className="technologien">Elementor Pro</mark>
               </p>
             </div>

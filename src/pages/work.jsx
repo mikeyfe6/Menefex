@@ -59,18 +59,20 @@ const workPage = () => {
               </a>
               <div className={workDesign.projectInfo}>
                 <p className={workDesign.projectText}>
-                  <span>Client:</span>
+                  <span className={workDesign.projectHead}>Client:</span>
                   <span className={workDesign.projectOrg}>
                     Eternity Percussion
                   </span>
                   <br />
                   <br />
-                  Eternity Percussion/Drum is een culturele instelling die
-                  bijdrage levert aan talentontwikkeling, cultuurparticipatie en
-                  visieverbreding van jongeren. Door middel van ondere andere
-                  muziekeducatie en inzet van jongeren in eigen organisatie
-                  biedt Eternity jongeren de gelegenheid om cultureel te
-                  ondernemen en participeren binnen de Nederlandse samenleving.
+                  <span className={workDesign.projectField}>
+                    Eternity Percussion is een culturele instelling die bijdrage
+                    levert aan talentontwikkeling, cultuurparticipatie en
+                    visieverbreding van jongeren. D.m.v. o.a. muziekeducatie en
+                    inzet van jongeren in eigen organisatie biedt Eternity
+                    jongeren de gelegenheid om cultureel te ondernemen en
+                    participeren binnen de Nederlandse samenleving.
+                  </span>
                   <br />
                   <br />
                   <b>
@@ -79,7 +81,7 @@ const workPage = () => {
                   </b>
                   <br />
                   <br />
-                  <span>Tools:</span>
+                  <span className={workDesign.projectHead}> Tools:</span>
                   <mark className={workDesign.technologien}>
                     Wordpress
                   </mark>{' '}
@@ -132,7 +134,7 @@ const workPage = () => {
               </a>
               <div className={workDesign.projectInfo}>
                 <p className={workDesign.projectText}>
-                  <span>Client:</span>
+                  <span className={workDesign.projectHead}>Client:</span>
                   <span className={workDesign.projectOrg}>Black Harmony</span>
                   <br />
                   <br />
@@ -149,15 +151,15 @@ const workPage = () => {
                   </b>
                   <br />
                   <br />
-                  <span>Tools:</span>
+                  <span className={workDesign.projectHead}>Tools:</span>
                   <mark className={workDesign.technologien}>
                     Wordpress
                   </mark>{' '}
                   <mark className={workDesign.technologien}>
-                    Additional CSS
+                    Advanced Custom Field Types
                   </mark>{' '}
                   <mark className={workDesign.technologien}>
-                    Advanced Custom Field Types
+                    Additional CSS
                   </mark>{' '}
                   <mark className={workDesign.technologien}>Elementor Pro</mark>
                 </p>
