@@ -60,9 +60,9 @@ const workPage = () => {
               <div className={workDesign.projectInfo}>
                 <p className={workDesign.projectText}>
                   <span>Client:</span>
-                  <u>
-                    <b>Eternity Percussion</b>
-                  </u>
+                  <span className={workDesign.projectOrg}>
+                    Eternity Percussion
+                  </span>
                   <br />
                   <br />
                   Eternity Percussion/Drum is een culturele instelling die
@@ -75,12 +75,18 @@ const workPage = () => {
                   <br />
                   <b>
                     * Deze website is gebouwd met oog naar snelheid, overzicht
-                    en duidelijkheid.
+                    en toegankelijkheid.
                   </b>
                   <br />
                   <br />
                   <span>Tools:</span>
-                  Wordpress, Advanced Custom Field Types, Brizy
+                  <mark className={workDesign.technologien}>
+                    Wordpress
+                  </mark>{' '}
+                  <mark className={workDesign.technologien}>
+                    Advanced Custom Field Types
+                  </mark>{' '}
+                  <mark className={workDesign.technologien}>Brizy</mark>
                 </p>
               </div>
               <a
@@ -127,9 +133,7 @@ const workPage = () => {
               <div className={workDesign.projectInfo}>
                 <p className={workDesign.projectText}>
                   <span>Client:</span>
-                  <u>
-                    <b>Black Harmony</b>
-                  </u>
+                  <span className={workDesign.projectOrg}>Black Harmony</span>
                   <br />
                   <br />
                   Black Harmony is een populaire en getalenteerde zanggroep uit
@@ -146,8 +150,16 @@ const workPage = () => {
                   <br />
                   <br />
                   <span>Tools:</span>
-                  Wordpress, Additional CSS, Advanced Custom Field Types,
-                  Elementor Pro
+                  <mark className={workDesign.technologien}>
+                    Wordpress
+                  </mark>{' '}
+                  <mark className={workDesign.technologien}>
+                    Additional CSS
+                  </mark>{' '}
+                  <mark className={workDesign.technologien}>
+                    Advanced Custom Field Types
+                  </mark>{' '}
+                  <mark className={workDesign.technologien}>Elementor Pro</mark>
                 </p>
               </div>
               <a

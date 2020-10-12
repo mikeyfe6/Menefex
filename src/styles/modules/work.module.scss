@@ -39,11 +39,26 @@
       font-weight: 500;
     }
 
+    .projectOrg {
+      color: $primary-color;
+    }
+
     span {
       font-family: $right-font;
       margin-right: 2%;
       color: $secondary-color;
       font-size: 0.9rem;
+    }
+
+    .technologien {
+      background: linear-gradient(to right, $primary-color, $button-hover);
+      border-radius: 4px;
+      padding: 0.175% 1.5% 0.175% 1%;
+      margin: 1% 0 1% 0%;
+      color: white;
+      font-size: 0.8em;
+      white-space: nowrap;
+      @include shadow;
     }
   }
 

@@ -51,11 +51,12 @@ const Projects = () => {
 
               <p className="informatie">
                 Deze website is gebouwd in opdracht van Stichting Eternity
-                Percussion uit Amsterdam. Met oog naar snelheid, overzicht en
-                duidelijkheid.
+                Percussion uit Amsterdam.
               </p>
               <p className="geschreven">
-                Technologiën: <u>Wordpress</u>, <u>ACF</u> & <u>Brizy</u>
+                <mark className="technologien">Wordpress</mark>{' '}
+                <mark className="technologien">ACF</mark>{' '}
+                <mark className="technologien">Brizy</mark>
               </p>
             </div>
           </div>
@@ -78,13 +79,14 @@ const Projects = () => {
               </a>
 
               <p className="informatie">
-                Deze website is gebouwd in opdracht van Black Harmony, zanggroep
-                uit Amsterdam. Deze website bevat informatie, media en
-                interactieve social media toepassingen.
+                Deze website is gebouwd in opdracht van zanggroep Black Harmony
+                uit Amsterdam.
               </p>
               <p className="geschreven">
-                Technologiën: <u>Wordpress</u>, <u>Additional CSS</u>,{' '}
-                <u>ACF</u> & <u>Elementor Pro</u>
+                <mark className="technologien">Wordpress</mark>{' '}
+                <mark className="technologien">Additional CSS</mark>{' '}
+                <mark className="technologien">ACF</mark>{' '}
+                <mark className="technologien">Elementor Pro</mark>
               </p>
             </div>
           </div>
