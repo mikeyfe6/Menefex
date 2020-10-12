@@ -151,6 +151,8 @@ const Blog = (props) => {
                 <a
                   href="http://feedly.com/#subscription/feed/http://feeds.feedburner.com/GimmixWMB"
                   title="Gimmix WMB: Blog RSS Feeds"
+                  rel="noopener noreferrer"
+                  target="_blank"
                 >
                   <img
                     src="http://s3.feedly.com/feedburner/feedly.png"
@@ -161,8 +163,9 @@ const Blog = (props) => {
               <div className="rsssub">
                 <a
                   href="http://feeds.feedburner.com/GimmixWMB"
-                  rel="alternate"
                   type="application/rss+xml"
+                  rel="noopener noreferrer"
+                  target="_blank"
                 >
                   <img
                     src="//feedburner.google.com/fb/images/pub/feed-icon16x16.png"
@@ -173,8 +176,9 @@ const Blog = (props) => {
                 </a>
                 <a
                   href="http://feeds.feedburner.com/GimmixWMB"
-                  rel="alternate"
                   type="application/rss+xml"
+                  rel="noopener noreferrer"
+                  target="_blank"
                 >
                   Abonneer op onze RSS feeds
                 </a>

@@ -109,7 +109,6 @@ module.exports = {
                   author: site.siteMetadata.author,
                   description: edge.node.subtitle,
                   date: edge.node.publishedDate,
-                  // imageUrl: `https:${edge.node.image.file.url}`,
                   url: `${site.siteMetadata.siteUrl}/blog/${edge.node.slug}`,
                   guid: `${site.siteMetadata.siteUrl}/blog/${edge.node.slug}`,
                   enclosure: {
