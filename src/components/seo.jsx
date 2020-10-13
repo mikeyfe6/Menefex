@@ -232,6 +232,13 @@ const SEO = ({
               rel="stylesheet"
               href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
             />
+
+            <link
+              rel="alternate"
+              type="application/rss+xml"
+              title="Gimmix WMB: RSS Feeds"
+              href={`${seo.url}rss.xml`}
+            />
           </Helmet>
         </>
       );

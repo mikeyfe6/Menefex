@@ -18,7 +18,8 @@ module.exports = {
     author: 'Michael Fransman',
     description: 'Wij bouwen websites & webapps bouwen met oog voor detail.',
     twitterUsername: '@GimmixWMB',
-    email: 'info@gimmix.nl',
+    bizEmail: 'info@gimmix.nl',
+    authorEmail: 'michaelfransman@gimmix.nl',
   },
   plugins: [
     {
@@ -74,7 +75,8 @@ module.exports = {
                 title
                 author
                 description
-                email
+                bizEmail
+                authorEmail
                 siteUrl
                 site_url: siteUrl
               }
@@ -89,16 +91,37 @@ module.exports = {
           site_url: site.siteMetadata.siteUrl,
           feed_url: `${site.siteMetadata.siteUrl}/rss.xml`,
           image_url: 'https://i.postimg.cc/JnqZPb3f/Gx-FAVICON.png',
-          webMaster: `${site.siteMetadata.author} ${site.siteMetadata.email}`,
-          managingEditor: site.siteMetadata.author,
+          webMaster: `${site.siteMetadata.bizEmail}`,
+          managingEditor: site.siteMetadata.authorEmail,
           copyright: `© 2019 - ${new Date().getFullYear()} ${
             site.siteMetadata.title
           }, Alle rechten voorbehouden.`,
           language: 'nl',
           generator: 'GatsbyJS',
           ttl: '60',
-          custom_namespaces: {},
-          custom_elements: [{}],
+          custom_namespaces: {
+            webfeeds: 'http://webfeeds.org/rss/1.0',
+          },
+          custom_elements: [
+            {
+              'webfeeds:cover': {
+                _attr: {
+                  image: 'https://i.postimg.cc/WbsmfwKc/Gx-NEWLOGO.png',
+                },
+              },
+            },
+            { 'webfeeds:icon': 'https://i.postimg.cc/JnqZPb3f/Gx-FAVICON.png' },
+            { 'webfeeds:logo': 'https://i.postimg.cc/JnqZPb3f/Gx-FAVICON.png' },
+            { 'webfeeds:accentColor': 'FFCC00' },
+            {
+              'webfeeds:related': {
+                _attr: {
+                  layout: 'card',
+                  target: 'browser',
+                },
+              },
+            },
+          ],
         }),
 
         feeds: [
@@ -107,7 +130,7 @@ module.exports = {
               return allContentfulBlogPost.edges.map((edge) => {
                 return {
                   title: edge.node.title,
-                  author: site.siteMetadata.author,
+                  author: site.siteMetadata.authorEmail,
                   description: edge.node.subtitle,
                   date: edge.node.updatedAt,
                   url: `${site.siteMetadata.siteUrl}/blog/${edge.node.slug}`,
@@ -126,6 +149,7 @@ module.exports = {
                       //     link: `${site.siteMetadata.siteUrl}/blog/${edge.node.slug}`,
                       //   },
                       // ],
+                      'webfeeds:featuredImage': `https:${edge.node.image.file.url}`,
                     },
                     {
                       'content:encoded': edge.node.body.rssHtml,
