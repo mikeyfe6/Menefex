@@ -23,6 +23,7 @@ import {
   faBackward,
   faPaperPlane,
   faShoppingCart,
+  faRss,
 } from '@fortawesome/free-solid-svg-icons';
 
 // components
@@ -51,6 +52,7 @@ library.add(
   faTwitterSquare,
   faSpotify,
   faShoppingCart,
+  faRss,
 );
 
 // TODO: container & content=wrap kunnen weg

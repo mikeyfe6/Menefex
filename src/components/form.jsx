@@ -251,6 +251,19 @@ const Form = () => {
                 </a>
 
                 <a
+                  href="https://feeds.feedburner.com/GimmixWMB "
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <FontAwesomeIcon
+                    icon={['fa', 'rss']}
+                    size="2x"
+                    color="#656565ce"
+                    className={formStyles.rssicon}
+                  />
+                </a>
+
+                <a
                   href="https://open.spotify.com/playlist/08UGoWTjvpuooABCWyPx0m?si=caXZyz28R8u8Ck683qLgQA"
                   rel="noopener noreferrer"
                   target="_blank"

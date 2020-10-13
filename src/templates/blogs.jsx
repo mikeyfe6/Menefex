@@ -150,14 +150,14 @@ const Blog = (props) => {
               <div className="feedlysub">
                 <a
                   href="https://feedly.com/#subscription/feed/https://feeds.feedburner.com/GimmixWMB"
-                  title="Gimmix WMB: Blog RSS Feeds"
+                  title="Gimmix WMB: RSS Feeds"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   <img
                     id="feedlyFollow"
                     src="https://s3.feedly.com/img/follows/feedly-follow-circle-flat-green_2x.png"
-                    alt="follow us in feedly"
+                    alt="Lees op Feedly"
                     width="18"
                     height="18"
                     className="imagerss"
@@ -182,7 +182,7 @@ const Blog = (props) => {
                 >
                   <img
                     src="https://feedburner.google.com/fb/images/pub/feed-icon16x16.png"
-                    alt=""
+                    alt="Abonneer via RSS Reader"
                     className="imagerss"
                   />
                 </a>
