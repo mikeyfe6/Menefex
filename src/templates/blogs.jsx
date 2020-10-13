@@ -156,7 +156,7 @@ const Blog = (props) => {
                 >
                   <img
                     id="feedlyFollow"
-                    src="http://s3.feedly.com/img/follows/feedly-follow-circle-flat-green_2x.png"
+                    src="https://s3.feedly.com/img/follows/feedly-follow-circle-flat-green_2x.png"
                     alt="follow us in feedly"
                     width="18"
                     height="18"
@@ -181,12 +181,12 @@ const Blog = (props) => {
                   target="_blank"
                 >
                   <img
-                    src="//feedburner.google.com/fb/images/pub/feed-icon16x16.png"
+                    src="https://feedburner.google.com/fb/images/pub/feed-icon16x16.png"
                     alt=""
                     className="imagerss"
                   />
                 </a>
-                &nbsp;&nbsp;
+                &nbsp;
                 <a
                   href="https://feeds.feedburner.com/GimmixWMB"
                   type="application/rss+xml"
