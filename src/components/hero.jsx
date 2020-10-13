@@ -20,7 +20,7 @@ const Hero = () => {
           <Animated
             animationIn="rotateIn"
             animationInDelay={5000}
-            animationInDuration={10000}
+            animationInDuration={7500}
           >
             <img
               className={heroDesign.mini}
@@ -60,7 +60,7 @@ const Hero = () => {
           </Animated>
           <Animated
             animationIn="fadeInUp"
-            animationInDelay={3000}
+            animationInDelay={3250}
             animationInDuration={3000}
           >
             <h2 className={heroDesign.heroHeadMB}>
@@ -80,7 +80,7 @@ const Hero = () => {
           </Animated>
           <Animated
             animationIn="zoomIn"
-            animationInDelay={4500}
+            animationInDelay={7500}
             animationInDuration={3000}
           >
             <div className={heroDesign.scrollDownMB} />
@@ -118,7 +118,7 @@ const Hero = () => {
           </Animated>
           <Animated
             animationIn="fadeInDown"
-            animationInDelay={4000}
+            animationInDelay={4500}
             animationInDuration={3000}
           >
             <span className={heroDesign.scrollHeadMB}>
