@@ -84,7 +84,7 @@ module.exports = {
 
         setup: ({ query: { site } }, options) => ({
           ...options,
-          title: 'Gimmix WMB: RSS Blog Feeds',
+          title: 'Gimmix WMB: RSS Feeds',
           description: site.siteMetadata.description,
           site_url: site.siteMetadata.siteUrl,
           feed_url: `${site.siteMetadata.siteUrl}/rss.xml`,
@@ -158,7 +158,7 @@ module.exports = {
             `,
 
             output: '/rss.xml',
-            title: 'Gimmix WMB: RSS Blog Feeds',
+            // title: 'test',
             // optional configuration to insert feed reference in pages:
             // if `string` is used, it will be used to create RegExp and then test if pathname of
             // current page satisfied this regular expression;
