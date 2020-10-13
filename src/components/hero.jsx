@@ -18,9 +18,9 @@ const Hero = () => {
       <div className={heroDesign.hero}>
         <div className={heroDesign.fleximage}>
           <Animated
-            animationIn="rollIn"
+            animationIn="rotateIn"
             animationInDelay={5000}
-            animationInDuration={5000}
+            animationInDuration={10000}
           >
             <img
               className={heroDesign.mini}
