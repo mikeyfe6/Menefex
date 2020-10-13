@@ -161,11 +161,26 @@
   // text-decoration: underline;
 }
 
+.feedlysub {
+  vertical-align: middle;
+  border: 0;
+  margin-top: -6.825%;
+  font-size: 0.85em;
+
+  a {
+    color: #93be44;
+
+    &:hover {
+      color: #1f57ad;
+    }
+  }
+}
+
 .rsssub {
   border: 0;
   font-weight: bold;
   font-size: 0.85em;
-  margin-top: 0.5%;
+  margin-top: 0.25%;
 
   a {
     color: #fa9b3b;
@@ -176,14 +191,8 @@
   }
 }
 
-.feedlysub {
-  vertical-align: middle;
-  border: 0;
-  margin-top: -7%;
-}
-
 .imagerss {
-  margin-bottom: 0.5%;
+  margin-bottom: 0.25%;
 }
 
 .img-resize {
@@ -282,13 +291,14 @@
     margin-top: 3%;
     margin-right: 2%;
     font-weight: bold;
-    font-size: 0.85em;
+    font-size: 0.75em;
   }
 
   .feedlysub {
     float: right;
     margin-top: 3%;
     margin-right: 2%;
+    font-size: 0.75em;
   }
 
   .disqussion {

@@ -155,9 +155,22 @@ const Blog = (props) => {
                   target="_blank"
                 >
                   <img
-                    src="https://s3.feedly.com/feedburner/feedly.png"
-                    alt=""
+                    id="feedlyFollow"
+                    src="http://s3.feedly.com/img/follows/feedly-follow-circle-flat-green_2x.png"
+                    alt="follow us in feedly"
+                    width="18"
+                    height="18"
+                    className="imagerss"
                   />
+                </a>
+                &nbsp;
+                <a
+                  href="https://feedly.com/#subscription/feed/https://feeds.feedburner.com/GimmixWMB"
+                  type="application/rss+xml"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Lees op Feedly
                 </a>
               </div>
               <div className="rsssub">
@@ -172,15 +185,15 @@ const Blog = (props) => {
                     alt=""
                     className="imagerss"
                   />
-                  &nbsp;
                 </a>
+                &nbsp;&nbsp;
                 <a
                   href="https://feeds.feedburner.com/GimmixWMB"
                   type="application/rss+xml"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  Abonneer op onze RSS feeds
+                  Abonneer via RSS Reader
                 </a>
               </div>
             </div>
