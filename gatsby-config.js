@@ -91,8 +91,8 @@ module.exports = {
           site_url: site.siteMetadata.siteUrl,
           feed_url: `${site.siteMetadata.siteUrl}/rss.xml`,
           image_url: 'https://i.postimg.cc/JnqZPb3f/Gx-FAVICON.png',
-          webMaster: `${site.siteMetadata.bizEmail} ${site.siteMetadata.title}`,
-          managingEditor: `${site.siteMetadata.authorEmail} ${site.siteMetadata.author}`,
+          webMaster: `${site.siteMetadata.bizEmail} (${site.siteMetadata.title})`,
+          managingEditor: `${site.siteMetadata.authorEmail} (${site.siteMetadata.author})`,
           copyright: `© 2019 - ${new Date().getFullYear()} ${
             site.siteMetadata.title
           }, Alle rechten voorbehouden.`,

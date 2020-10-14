@@ -67,7 +67,7 @@ const BlogPage = () => {
                       alt={edge.node.image.title}
                       className={blogDesign.blogimg}
                     />
-                    <h4>{edge.node.title}</h4>
+                    <h4 className={blogDesign.posthead}>{edge.node.title}</h4>
 
                     <span className={blogDesign.contsubtext}>
                       {' '}
