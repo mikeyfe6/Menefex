@@ -183,7 +183,7 @@ module.exports = {
             `,
 
             output: '/rss.xml',
-            // title: 'test',
+            title: 'Gimmix WMB: RSS Feeds',
             // optional configuration to insert feed reference in pages:
             // if `string` is used, it will be used to create RegExp and then test if pathname of
             // current page satisfied this regular expression;
