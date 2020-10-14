@@ -113,9 +113,9 @@ const Blog = (props) => {
             animationInDelay={2250}
             animationInDuration={2000}
           >
-            <h5 className="post-subtitle">
+            <h3 className="post-subtitle">
               {props.data.contentfulBlogPost.subtitle}
-            </h5>{' '}
+            </h3>{' '}
           </Animated>
           <Animated
             animationIn="fadeIn"

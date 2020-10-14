@@ -72,8 +72,8 @@
 }
 
 .thin {
-  border: 6.5px solid $primary-color;
-  width: 25%;
+  border: 5px solid $sixth-color;
+  width: 100%;
   border-radius: 3px;
   margin: 0;
 }
@@ -81,6 +81,7 @@
 .post-title {
   font-weight: 700;
   font-size: 1.25em;
+  letter-spacing: 0.25px;
 }
 
 .post-subtitle {
@@ -89,6 +90,7 @@
   // font-weight: 700;
   font-size: 1.05em;
   font-weight: 700;
+  letter-spacing: 0.25px;
 
   &::first-letter {
     font-size: 2.5em;
@@ -101,8 +103,13 @@
   color: $secondary-color;
   font-style: italic;
   white-space: nowrap;
-  font-size: 0.75em;
+  font-size: 0.7em;
   letter-spacing: 0.5px;
+  display: table;
+  background: linear-gradient(to right, $primary-color, $fifth-color);
+  border: solid 1px $fifth-color;
+  border-radius: 3px;
+  padding: 0.2% 1% 0.2% 1%;
 }
 
 .post-content {
@@ -112,7 +119,7 @@
 
   p {
     margin-top: 1.5rem;
-    letter-spacing: 0.4px !important;
+    letter-spacing: 0.35px !important;
 
     b {
       color: $secondary-color;
@@ -128,6 +135,10 @@
     margin-top: -1rem;
     color: $primary-color;
     font-weight: 700;
+  }
+
+  h3 {
+    margin-top: 1rem;
   }
 
   h4 {
@@ -158,7 +169,6 @@
 .post-authorspec {
   color: $spec-color;
   font-weight: 600;
-  // text-decoration: underline;
 }
 
 .feedlysub {
@@ -227,7 +237,8 @@
   }
 
   .thin {
-    border: 5.5px solid $primary-color;
+    border: 5px solid $sixth-color;
+    width: 97% !important;
   }
 
   .gobackbtn {
@@ -253,7 +264,7 @@
   }
 
   .blog-mini {
-    height: 50px !important;
+    height: 57.5px !important;
   }
 
   .author-mini {
@@ -263,7 +274,7 @@
 
   .nexttologo {
     margin-top: 0.5%;
-    margin-bottom: 1%;
+    margin-bottom: 2%;
   }
 
   .postcenterit {
@@ -283,7 +294,7 @@
       margin-top: -1rem;
     }
 
-    h4 {
+    h3 {
       margin-top: 1.2rem;
       font-size: 0.9rem;
     }
@@ -295,13 +306,13 @@
 
   .post-title {
     font-size: 0.9em;
-    // padding-left: 2% !important;
   }
 
   .post-subtitle {
     margin-top: 12.5%;
     font-size: 1em;
     margin-bottom: 7.5%;
+    letter-spacing: 0.1px;
 
     &::first-letter {
       font-size: 3em;
@@ -313,9 +324,10 @@
   .post-date {
     color: $secondary-color;
     font-style: italic;
-    font-size: 0.6em;
+    font-size: 0.55em;
     margin-left: 0%;
     margin-top: -1.5%;
+    padding: 0.2% 1.5% 0.2% 1.5%;
   }
 
   .rsssub {
