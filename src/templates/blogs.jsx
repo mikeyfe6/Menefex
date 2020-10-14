@@ -122,12 +122,18 @@ const Blog = (props) => {
             animationInDelay={3000}
             animationInDuration={2000}
           >
+            <img
+              src={`https:${props.data.contentfulBlogPost.image.file.url}`}
+              alt={props.data.contentfulBlogPost.title}
+              className="blogheadimage webfeedsFeaturedVisual"
+            />
             <div className="post-content">
               {documentToReactComponents(
                 props.data.contentfulBlogPost.body.json,
                 options,
               )}
               <div className="smallwhitespace" />
+
               <div className="post-authorcont">
                 <div className="post-author">
                   <span className="post-authorspec">Auteur</span>{' '}
