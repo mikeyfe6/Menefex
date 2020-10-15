@@ -16,9 +16,31 @@
   }
 
   .mini {
-    width: 225px;
+    width: 250px;
     height: 250px;
-    // opacity: 0.9;
+
+    // display: inline-block;
+    animation: roll 60s infinite;
+    transform: rotate(180deg);
+    @include smoothtrans;
+
+    @keyframes roll {
+      0% {
+        transform: rotate(0deg);
+      }
+      25% {
+        transform: rotate(180deg);
+      }
+      50% {
+        transform: rotate(360deg);
+      }
+      75% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
   }
 
   .ipvtpwriter {
@@ -46,6 +68,7 @@
     // height: 300px;
     background: linear-gradient(to right, $primary-color, $button-hover);
     border: 3px solid $fifth-color;
+    white-space: nowrap;
 
     padding: 0.1em 1.25em 0.1em 1.25em;
     border-radius: 10px;

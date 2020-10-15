@@ -27,7 +27,7 @@ const Quote = () => {
             <br />
             <hr className={quoteDesign.thin} />
             <div className={quoteDesign.quoteText}>
-              <h6>Focus:</h6> <br />
+              <h6 className={quoteDesign.quoteFocus}>Focus:</h6> <br />
               <ul className={quoteDesign.quoteKwali}>
                 <li>Snelheid</li>
                 <li>Maatwerk Design</li>
@@ -54,7 +54,7 @@ const Quote = () => {
             <br />
             <hr className={quoteDesign.thin} />
             <div className={quoteDesign.quoteText}>
-              <h6>Focus:</h6> <br />
+              <h6 className={quoteDesign.quoteFocus}>Focus:</h6> <br />
               <ul className={quoteDesign.quoteKwali}>
                 <li>Overzicht Assortiment</li>
                 <li>Meer leads generen</li>
@@ -80,7 +80,7 @@ const Quote = () => {
             <br />
             <hr className={quoteDesign.thin} />
             <div className={quoteDesign.quoteText}>
-              <h6>Focus:</h6> <br />
+              <h6 className={quoteDesign.quoteFocus}>Focus:</h6> <br />
               <ul className={quoteDesign.quoteKwali}>
                 <li>Offline mogelijkheden</li>
                 <li>Optimalisatie voor alle apparaten</li>
@@ -113,7 +113,7 @@ const Quote = () => {
             <br />
             <hr className={quoteDesign.thin} />
             <div className={quoteDesign.quoteText}>
-              <h6>Focus:</h6> <br />
+              <h6 className={quoteDesign.quoteFocus}>Focus:</h6> <br />
               <ul className={quoteDesign.quoteKwali}>
                 <li>Vindbaarheid in zoekmachines</li>
                 <li>Content wordt sneller gevonden</li>
