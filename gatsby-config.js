@@ -16,7 +16,7 @@ module.exports = {
     title: 'Gimmix',
     titleTemplate: '%s · Gimmix',
     author: 'Michael Fransman',
-    description: 'Wij bouwen websites & webapps bouwen met oog voor detail.',
+    description: 'Wij bouwen websites & webapps met oog voor detail.',
     twitterUsername: '@GimmixWMB',
     bizEmail: 'info@gimmix.nl',
     authorEmail: 'michaelfransman@gimmix.nl',
@@ -298,7 +298,7 @@ module.exports = {
       options: {
         name: `Gimmix`,
         short_name: `Gimmix`,
-        description: `Websites & webapps bouwen met gevoel voor detail`,
+        description: `Wij bouwen websites & webapps met oog voor detail.`,
         start_url: `/`,
         background_color: `#a9a9a9`,
         lang: `nl`,
