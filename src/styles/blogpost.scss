@@ -24,7 +24,7 @@
   letter-spacing: 1px;
   border: 1.5px solid $third-color;
   border-radius: 5px;
-  margin-bottom: 3%;
+  margin-bottom: 2.5%;
   @include smoothtrans;
   @include shadow;
 
@@ -245,6 +245,7 @@
 
   .gobackbtn {
     margin-bottom: 7.5%;
+    margin-top: -3%;
   }
 
   .blogheadimage {
