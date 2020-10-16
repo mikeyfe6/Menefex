@@ -1,3 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+@import './customs/colors';
+@import './customs/fonts';
+@import './customs/functions';
+@import './customs/resets';
+
+* {
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  overflow-x: hidden !important;
+  width: 100%;
+  word-wrap: break-word;
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 7.5px;
+  }
+
+  // ::-webkit-scrollbar:hover {
+  //   // width: 15px !important;
+  // }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: $secondary-color;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $primary-color;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $fifth-color;
+  }
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: black;
+  background: $secondary-color;
+}
+
+::selection {
+  color: black;
+  background: $secondary-color;
+}
+
+progress[value] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: $secondary-color;
+}
+
+body {
+  width: 100%;
+  background: white;
+  color: #656565;
+  font-family: $poppins-font;
+}
+
+// Pagina Setup
+
 #page-container {
   position: relative;
   min-height: 100vh;
@@ -5,4 +79,94 @@
 
 #content-wrap {
   padding-bottom: 2.5rem; /* Footer height */
+}
+
+.page-title {
+  font-family: $right-font;
+  font-size: 2.25rem;
+}
+
+.page-sub {
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  font-size: 0.9em;
+}
+
+// Terms & Cods
+
+.termscondit,
+.privacypol {
+  font-size: 0.75em;
+}
+
+// Hubspot Cookiebanner CSS +
+
+#hs-eu-cookie-confirmation {
+  background: linear-gradient(
+    to right,
+    $textbase-color,
+    $primary-color
+  ) !important;
+  opacity: 0.95 !important;
+  position: fixed !important;
+}
+
+#hs-eu-cookie-confirmation-inner {
+  background: transparent !important;
+  font-family: $poppins-font !important;
+}
+
+div#hs-eu-cookie-confirmation {
+  border-top: none !important;
+  border-bottom: 1px solid #ffcc00 !important;
+  box-shadow: 0 1px 5px #ffcc00 !important;
+}
+
+div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner p {
+  color: $fourth-color !important;
+}
+
+div#hs-eu-cookie-confirmation
+  div#hs-eu-cookie-confirmation-inner
+  a#hs-eu-confirmation-button {
+  color: $button-hover !important;
+  transition: 1s ease-in-out !important;
+}
+
+div#hs-eu-cookie-confirmation
+  div#hs-eu-cookie-confirmation-inner
+  a#hs-eu-confirmation-button:hover {
+  background: #f1da7a !important;
+  transition: 1s ease-in-out !important;
+}
+
+div#hs-eu-cookie-confirmation
+  div#hs-eu-cookie-confirmation-inner
+  a#hs-eu-decline-button {
+  color: $fourth-color !important;
+  opacity: 0.7;
+  transition: 1s ease-in-out !important;
+}
+
+div#hs-eu-cookie-confirmation
+  div#hs-eu-cookie-confirmation-inner
+  a#hs-eu-decline-button:hover {
+  opacity: 1;
+  transition: 1s ease-in-out !important;
+}
+
+// Hubspot Cookiebanner CSS -
+
+@media (max-width: 768px) {
+  .page-sub {
+    font-size: 0.85em;
+  }
+
+  .page-title {
+    font-size: 1.75em;
+  }
+
+  // .specvertical {
+  //   // height: 90px;
+  // }
 }

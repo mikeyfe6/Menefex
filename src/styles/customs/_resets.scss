@@ -26,6 +26,16 @@ ul {
   padding-left: 0;
 }
 
+a {
+  text-decoration: none;
+  @include smoothtrans;
+
+  &:hover {
+    text-decoration: none;
+    @include smoothtrans;
+  }
+}
+
 @media (max-width: 768px) {
   .whitespace {
     height: 50px;

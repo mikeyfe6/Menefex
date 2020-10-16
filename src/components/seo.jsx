@@ -217,7 +217,7 @@ const SEO = ({
               rel="alternate"
               type="application/rss+xml"
               title="Gimmix WMB: RSS Feeds"
-              href={`${seo.url}rss.xml`}
+              href="https://gimmix.nl/rss.xml"
             />
           </Helmet>
         </>
