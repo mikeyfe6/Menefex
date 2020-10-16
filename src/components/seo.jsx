@@ -194,32 +194,12 @@ const SEO = ({
 
             {/* Links Rel: Fonts */}
 
-            <link
-              href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
-              rel="stylesheet"
-            />
-
-            <link
-              href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700;900&display=swap"
-              rel="stylesheet"
-            />
-
-            {/* <link
-              href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap"
-              rel="stylesheet"
-            /> */}
-
-            <link
-              href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
-              rel="stylesheet"
-            />
-
             {/* Google Adsense */}
 
             <script
               data-ad-client="ca-pub-3158048130288702"
-              async
               src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+              async
             />
 
             {/* Scripts: Extentions & Plugins */}
@@ -229,7 +209,7 @@ const SEO = ({
             {/* Links Rel: Extentions & Plugins */}
 
             <link
-              rel="stylesheet"
+              rel="stylesheet preload"
               href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
             />
 
