@@ -37,9 +37,11 @@
   a {
     font-family: $alata-font;
     color: white;
+    @include smoothtrans;
 
     &:hover {
       color: $hover-color;
+      @include smoothtrans;
       // text-decoration: underline;
     }
   }

@@ -68,6 +68,7 @@ body {
 
 a {
   text-decoration: none;
+  @include smoothtrans;
 
   &:hover {
     text-decoration: none;
