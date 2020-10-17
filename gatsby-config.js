@@ -134,7 +134,7 @@ module.exports = {
                   description: edge.node.subtitle,
                   date: edge.node.updatedAt,
                   url: `${site.siteMetadata.siteUrl}/blog/${edge.node.slug}`,
-                  guid: edge.node.id,
+                  guid: edge.node.updatedAt,
                   enclosure: {
                     url: `https:${edge.node.image.file.url}`,
                   },
@@ -167,7 +167,6 @@ module.exports = {
                       title
                       subtitle
                       slug
-                      id
                       updatedAt
                       body {
                         rssHtml
