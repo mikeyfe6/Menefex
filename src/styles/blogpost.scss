@@ -116,35 +116,58 @@
   width: 100%;
   padding-left: 5px;
   @include fontslg;
+  letter-spacing: 0.35px !important;
 
   p {
     margin-top: 1.5rem;
-    letter-spacing: 0.35px !important;
 
     b {
       color: $secondary-color;
-      font-weight: bold !important;
+      font-weight: 700;
     }
   }
 
   a {
-    font-weight: bold !important;
+    font-weight: bold;
+  }
+
+  ol {
+    margin-top: 2.5em;
+    padding-left: 25px;
   }
 
   ol li {
-    margin-top: -1rem;
+    margin-top: -0.75rem;
     color: $primary-color;
     font-weight: 700;
   }
 
   h3 {
     margin-top: 1rem;
-    font-size: 1.5em;
+    font-size: 1.375em;
   }
 
   h4 {
     margin-top: 1rem;
-    font-size: 1.125em;
+    font-size: 1.1em;
+    font-weight: 700;
+  }
+
+  h5 {
+    font-size: 0.9em;
+    margin-top: 1.5rem;
+    font-weight: 700;
+  }
+
+  hr {
+    margin-top: 5%;
+    margin-bottom: 2.5%;
+    width: 10%;
+    border-width: 5px;
+    margin-left: 0;
+    color: $sixth-color;
+    border-radius: 3px;
+    opacity: 0.5;
   }
 }
 
@@ -236,16 +259,18 @@
 @media (max-width: 768px) {
   .gobacktext {
     font-size: 0.8em;
-  }
-
-  .thin {
-    border: 5px solid $sixth-color;
-    width: 97% !important;
+    line-height: 2;
   }
 
   .gobackbtn {
     margin-bottom: 7.5%;
     margin-top: -3%;
+    padding: 10px 12.5px;
+  }
+
+  .thin {
+    border: 5px solid $sixth-color;
+    width: 97% !important;
   }
 
   .blogheadimage {
@@ -306,18 +331,26 @@
       letter-spacing: 0.3px !important;
     }
 
+    ol {
+      padding-left: 25px;
+    }
+
     ol li {
       margin-top: -1rem;
     }
 
     h3 {
       margin-top: 1.2rem;
-      font-size: 1.25rem;
     }
 
     h4 {
       margin-top: 1rem;
-      font-size: 0.875rem;
+    }
+
+    hr {
+      margin-top: 10%;
+      margin-bottom: 5%;
+      width: 20%;
     }
   }
 
