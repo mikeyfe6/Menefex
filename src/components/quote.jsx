@@ -19,9 +19,9 @@ const Quote = () => {
             <div className={quoteDesign.quoteBlock}>
               {' '}
               <p className={quoteDesign.quoteText}>
-                Wij bouwen functionele en efficiënte websites op maat. Daarin
-                zorgen wij dat uw website aan alle moderne technische wensen
-                voldoet.
+                Wij bouwen functionele en efficiënte websites volledig op
+                maatwerk. Daarin zorgen wij dat uw website aan alle actuele
+                technische wensen en voorwaarden voldoet.
               </p>
             </div>
             <br />
@@ -29,9 +29,9 @@ const Quote = () => {
             <div className={quoteDesign.quoteText}>
               <h6 className={quoteDesign.quoteFocus}>Focus:</h6> <br />
               <ul className={quoteDesign.quoteKwali}>
-                <li>Snelheid</li>
+                <li>Laadsnelheid</li>
                 <li>Maatwerk Design</li>
-                <li>User Interface & Experience</li>
+                <li>Gebruikersinterface & gebruikservaring</li>
                 <li>Web Cross-platform voor alle populaire browsers</li>
               </ul>
             </div>
@@ -46,9 +46,9 @@ const Quote = () => {
             <div className={quoteDesign.quoteBlock}>
               {' '}
               <p className={quoteDesign.quoteText}>
-                Webshops zijn deze tijd onmisbaar voor uw lokale bedrijf en
+                Webshops zijn deze tijd onmisbaar voor uw lokale onderneming en
                 bieden een bredere netwerk, beter beschikbaarheid en uiteraard
-                meer coversie en productaanzien.
+                meer conversie en productaanzien.
               </p>
             </div>
             <br />
@@ -56,10 +56,10 @@ const Quote = () => {
             <div className={quoteDesign.quoteText}>
               <h6 className={quoteDesign.quoteFocus}>Focus:</h6> <br />
               <ul className={quoteDesign.quoteKwali}>
-                <li>Overzicht Assortiment</li>
+                <li>Overzicht assortiment</li>
                 <li>Meer leads generen</li>
-                <li>24/7 Handelbaar</li>
-                <li>Automatisering</li>
+                <li>24/7 Handel drijven</li>
+                <li>Automatiseringsprocessen</li>
               </ul>
             </div>
             <br />
@@ -73,8 +73,8 @@ const Quote = () => {
             <div className={quoteDesign.quoteBlock}>
               <p className={quoteDesign.quoteText}>
                 Met de opkomst van digitalisering & mobiliteit is er steeds meer
-                vraag naar (web)apps. Implementatie van complexe interacties
-                maken het verschil tussen een webapp en website.
+                vraag naar (web)apps. Implementaties van complexe interacties
+                maken het verschil tussen een webapplicatie en een website.
               </p>
             </div>
             <br />
@@ -82,11 +82,11 @@ const Quote = () => {
             <div className={quoteDesign.quoteText}>
               <h6 className={quoteDesign.quoteFocus}>Focus:</h6> <br />
               <ul className={quoteDesign.quoteKwali}>
-                <li>Offline mogelijkheden</li>
+                <li>Offline-mogelijkheden</li>
                 <li>Optimalisatie voor alle apparaten</li>
                 <li>
-                  Ingebouwde functies (bijv. camera-, microfoon- &
-                  locatiegebruik)
+                  Koppelingen met ingebouwde functies (bijv. camera-, microfoon-
+                  & locatiegebruik)
                 </li>
               </ul>
             </div>
@@ -106,8 +106,8 @@ const Quote = () => {
               <p className={quoteDesign.quoteText}>
                 Met zoekmachineoptimalisatie, oftewel &apos;SEO&apos; zorgen wij
                 dat uw website bovenaan te vinden is in Google, Bing, Yahoo,
-                etc. Uw potentiele bezoekers zullen in staat zijn uw online
-                sneller te vinden.
+                etc. Potentiele bezoekers zullen in staat zijn uw onderneming
+                sneller te ontdekken.
               </p>
             </div>
             <br />
@@ -115,9 +115,9 @@ const Quote = () => {
             <div className={quoteDesign.quoteText}>
               <h6 className={quoteDesign.quoteFocus}>Focus:</h6> <br />
               <ul className={quoteDesign.quoteKwali}>
-                <li>Vindbaarheid in zoekmachines</li>
-                <li>Content wordt sneller gevonden</li>
-                <li>Grafieken en statistieken</li>
+                <li>Vindbaarheid in populaire zoekmachines</li>
+                <li>Aanzienlijk meer (in)directe webbezoekers</li>
+                <li>Grafieken, tactieken en statistieken</li>
               </ul>
             </div>
             <br />
