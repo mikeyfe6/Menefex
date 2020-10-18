@@ -53,9 +53,3 @@ const ContactPage = () => {
 };
 
 export default ContactPage;
-
-/* <a
-          href="https://twitter.com/mikeyfe"
-          target="_blank"
-          rel="noopener noreferrer"
-        ></a> */

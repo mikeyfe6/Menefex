@@ -57,8 +57,10 @@ const Blog = (props) => {
   const disqusConfig = {
     shortname: 'gimmix',
     config: {
+      url: props.data.contentfulBlogPost.slug,
       identifier: props.data.contentfulBlogPost.id,
       title: props.data.contentfulBlogPost.title,
+      language: 'nl_NL',
     },
   };
 

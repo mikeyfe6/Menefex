@@ -133,6 +133,4 @@ const AboutPage = () => {
   );
 };
 
-// data-wow-descapeelay="0.2s"
-
 export default AboutPage;
