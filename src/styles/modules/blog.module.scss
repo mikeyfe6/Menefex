@@ -1,4 +1,3 @@
-
 @import '../customs/functions';
 @import '../customs/colors';
 @import '../customs/fonts';
@@ -36,8 +35,7 @@
   }
 
   .posthead {
-    font-weight: 50;
-    font-size: 1.2em;
+    font-size: 1.125em;
     color: $button-hover;
     padding-left: 1%;
     padding-top: 1%;
@@ -73,9 +71,10 @@
     // height:100%;
     height: 125px;
     float: right;
-    border: 3px solid #e9e9e9;
+    border: 3px solid $fourth-color;
     border-radius: 5px;
     margin-left: 2%;
+    @include shadow;
   }
 }
 
@@ -86,7 +85,7 @@
   }
 
   .posthead {
-    font-size: 0.75em !important;
+    font-size: 0.675em !important;
   }
 
   .contsubtext {
