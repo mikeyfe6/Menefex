@@ -211,7 +211,13 @@ const Prices = () => {
         </div>
         <div id="callscroll" />
         <div className="whitespace" />
-        <Call />
+        <Animated
+          animationIn="fadeIn"
+          animationInDelay={3750}
+          animationInDuration={2750}
+        >
+          <Call />
+        </Animated>
       </div>
       <div className="whitespace" />
     </Layout>

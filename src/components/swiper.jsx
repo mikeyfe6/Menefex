@@ -1,11 +1,5 @@
 import React from 'react';
-import SwiperCore, {
-  Navigation,
-  Pagination,
-  Scrollbar,
-  A11y,
-  Autoplay,
-} from 'swiper';
+import SwiperCore, { Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 // import { Link } from 'gatsby';
 
@@ -16,7 +10,7 @@ import 'swiper/components/pagination/pagination.scss';
 import 'swiper/components/scrollbar/scrollbar.scss';
 import 'swiper/components/autoplay';
 
-SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
+SwiperCore.use([Pagination, Scrollbar, A11y, Autoplay]);
 
 const Projects = () => {
   return (
@@ -27,7 +21,6 @@ const Projects = () => {
         delay: '7000',
         disableOnInteraction: true,
       }}
-      // navigation
       pagination={{ clickable: true }}
       // scrollbar={{ draggable: true }}
       // onSwiper={(swiper) => console.log(swiper)}

@@ -54,14 +54,14 @@ html {
   background: $secondary-color;
 }
 
-progress[value] {
-  -webkit-appearance: none;
-  appearance: none;
-}
+// progress[value] {
+//   -webkit-appearance: none;
+//   appearance: none;
+// }
 
-progress[value]::-webkit-progress-bar {
-  background-color: $secondary-color;
-}
+// progress[value]::-webkit-progress-bar {
+//   background-color: $secondary-color;
+// }
 
 body {
   width: 100%;

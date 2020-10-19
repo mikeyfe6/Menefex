@@ -103,28 +103,40 @@ const AboutPage = () => {
             </Animated>
 
             <div className="whitespace" />
-            <hr className={spotiDesign.thick} />
+            <Animated
+              animationIn="fadeInRight"
+              animationInDelay={1750}
+              animationInDuration={2000}
+            >
+              <hr className={spotiDesign.thick} />
+            </Animated>
             <div className="whitespace" />
-            <div className={spotiDesign.spotcont}>
-              <p className={spotiDesign.spotext}>
-                {' '}
-                <br />
-                <b>
-                  <b>WE ❤︎ MUSIC !</b> Daarom delen we ons{' '}
-                  <u>work, chill & vibe</u> - playlist. Geniet ervan en blijf
-                  ons volgen voor updates.
-                </b>
-              </p>{' '}
-              <iframe
-                title="Gimmix' #STAYVIBIN Playlist"
-                src="https://open.spotify.com/embed/playlist/08UGoWTjvpuooABCWyPx0m"
-                width="100%"
-                height="444"
-                frameBorder="1"
-                allowtransparency="true"
-                allow="encrypted-media"
-              />
-            </div>
+            <Animated
+              animationIn="fadeIn"
+              animationInDelay={3500}
+              animationInDuration={2750}
+            >
+              <div className={spotiDesign.spotcont}>
+                <p className={spotiDesign.spotext}>
+                  {' '}
+                  <br />
+                  <b>
+                    <b>WE ❤︎ MUSIC !</b> Daarom delen we ons{' '}
+                    <u>work, chill & vibe</u> - playlist. Geniet ervan en blijf
+                    ons volgen voor updates.
+                  </b>
+                </p>{' '}
+                <iframe
+                  title="Gimmix' #STAYVIBIN Playlist"
+                  src="https://open.spotify.com/embed/playlist/08UGoWTjvpuooABCWyPx0m"
+                  width="100%"
+                  height="444"
+                  frameBorder="1"
+                  allowtransparency="true"
+                  allow="encrypted-media"
+                />
+              </div>
+            </Animated>
           </div>
         </div>
       </div>

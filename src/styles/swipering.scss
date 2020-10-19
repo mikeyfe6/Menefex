@@ -41,7 +41,6 @@
     &:hover {
       color: $hover-color;
       @include smoothtrans;
-      // text-decoration: underline;
     }
   }
 
@@ -133,13 +132,13 @@
   background-size: cover;
 }
 
-.swiper-button-next {
-  filter: hue-rotate(700deg);
-}
+// .swiper-button-next {
+//   filter: hue-rotate(700deg);
+// }
 
-.swiper-button-prev {
-  filter: hue-rotate(700deg);
-}
+// .swiper-button-prev {
+//   filter: hue-rotate(700deg);
+// }
 
 .swiper-pagination-bullet-active {
   opacity: 1;
