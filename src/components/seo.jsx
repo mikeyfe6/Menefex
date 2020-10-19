@@ -134,7 +134,7 @@ const SEO = ({
                   }
                 `}
             </script>
-            <script type="application/ld+json">
+            {/* <script type="application/ld+json">
               {`
                 {
                   "@context": "http://schema.org",
@@ -154,7 +154,7 @@ const SEO = ({
                   ]
                 }
              `}
-            </script>
+            </script> */}
 
             <meta property="fb:app_id" content="388358162140938" />
 
