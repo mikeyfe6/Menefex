@@ -224,9 +224,11 @@
   white-space: nowrap;
   padding-top: 0;
   padding-bottom: 0.5%;
-  background: linear-gradient(to right, #d6d6d6, #4a4a4a, #d6d6d6);
+  background: linear-gradient(to right, #d6d6d6, $secondary-color, #d6d6d6);
+  // border-top: 0.5px solid $sixth-color;
+  // border-bottom: 0.5px solid $sixth-color;
   @include shadow;
-  opacity: 0.75;
+  opacity: 0.8;
 }
 
 .socials {
@@ -350,9 +352,9 @@
   }
 
   .contacticons {
-    background: linear-gradient(to right, #c0c0c0, #4a4a4a, #c0c0c0);
+    background: linear-gradient(to right, #c0c0c0, $secondary-color, #c0c0c0);
     box-shadow: 0 0 0 !important;
-    opacity: 0.75;
+    opacity: 0.6;
     width: 100vw;
     position: relative;
     left: 50%;
@@ -380,10 +382,11 @@
   }
 
   .hrcont {
-    width: 100%;
+    width: 75%;
     margin-top: 2.5em;
     margin-bottom: 2.5em;
     height: 0.5px !important;
+    // display: none !important;
   }
 
   .choosing {
