@@ -1,8 +1,5 @@
 import React from 'react';
 
-// Bootstrap
-import 'bootstrap/dist/css/bootstrap.min.css';
-
 // FontAwesome icons
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
@@ -14,6 +11,7 @@ import {
   faWhatsappSquare,
   faTwitterSquare,
   faSpotify,
+  faPatreon,
 } from '@fortawesome/free-brands-svg-icons';
 import {
   faPhoneSquareAlt,
@@ -25,6 +23,9 @@ import {
   faShoppingCart,
   faRss,
 } from '@fortawesome/free-solid-svg-icons';
+
+// Bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 // components
 import Toolbar from './navbar/Toolbar';
@@ -53,6 +54,7 @@ library.add(
   faSpotify,
   faShoppingCart,
   faRss,
+  faPatreon,
 );
 
 // TODO: container & content=wrap kunnen weg

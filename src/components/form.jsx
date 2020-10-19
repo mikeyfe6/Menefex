@@ -178,7 +178,7 @@ const Form = () => {
               </p>
 
               <div className={formStyles.socials}>
-                <b>Volg</b> ons op de voet en
+                <b>Volg ons</b> op de voet, <b>support ons</b> en
                 <span className={formStyles.uniqcol}>
                   <b> / </b>
                 </span>
@@ -193,7 +193,7 @@ const Form = () => {
                   <FontAwesomeIcon
                     icon={['fab', 'facebook']}
                     size="2x"
-                    color=" #656565ce"
+                    color="#E0E0E0"
                     className={formStyles.fbicon}
                   />
                 </a>
@@ -206,7 +206,7 @@ const Form = () => {
                   <FontAwesomeIcon
                     icon={['fab', 'instagram']}
                     size="2x"
-                    color="#656565ce"
+                    color="#E0E0E0"
                     className={formStyles.igicon}
                   />
                 </a>
@@ -219,7 +219,7 @@ const Form = () => {
                   <FontAwesomeIcon
                     icon={['fab', 'twitter']}
                     size="2x"
-                    color="#656565ce"
+                    color="#E0E0E0"
                     className={formStyles.twicon}
                   />
                 </a>
@@ -232,7 +232,7 @@ const Form = () => {
                   <FontAwesomeIcon
                     icon={['fab', 'linkedin']}
                     size="2x"
-                    color="#656565ce"
+                    color="#E0E0E0"
                     className={formStyles.liicon}
                   />
                 </a>
@@ -245,21 +245,34 @@ const Form = () => {
                   <FontAwesomeIcon
                     icon={['fab', 'github']}
                     size="2x"
-                    color="#656565ce"
+                    color="#E0E0E0"
                     className={formStyles.ghicon}
                   />
                 </a>
 
                 <a
-                  href="https://feeds.feedburner.com/GimmixWMB "
+                  href="https://feeds.feedburner.com/GimmixWMB"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   <FontAwesomeIcon
                     icon={['fa', 'rss']}
                     size="2x"
-                    color="#656565ce"
+                    color="#E0E0E0"
                     className={formStyles.rssicon}
+                  />
+                </a>
+
+                <a
+                  href="https://www.patreon.com/gimmixWMB"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <FontAwesomeIcon
+                    icon={['fab', 'patreon']}
+                    size="2x"
+                    color="#E0E0E0"
+                    className={formStyles.patricon}
                   />
                 </a>
 
@@ -271,7 +284,7 @@ const Form = () => {
                   <FontAwesomeIcon
                     icon={['fab', 'spotify']}
                     size="2x"
-                    color="#656565ce"
+                    color="#E0E0E0"
                     className={formStyles.waicon}
                   />
                 </a>
@@ -284,27 +297,16 @@ const Form = () => {
                   <FontAwesomeIcon
                     icon={['fab', 'whatsapp']}
                     size="2x"
-                    color="#656565ce"
+                    color="#E0E0E0"
                     className={formStyles.spicon}
                   />
                 </a>
               </div>
+
               <hr className={formStyles.hrcont} />
             </div>
             <br />
             <div className="col-md">
-              &nbsp;
-              <FontAwesomeIcon icon="mobile" size="lg" color="#1db954" />
-              <p className={formStyles.contacttel}>
-                · &nbsp;<a href="tel:0611054318">+31 6 11 05 43 18</a>
-              </p>
-              <br />
-              <FontAwesomeIcon icon="paper-plane" size="lg" color="#74aece" />
-              <p className={formStyles.contactmail}>
-                · &nbsp;<a href="mailto:info@gimmix.nl">info@gimmix.nl</a>
-              </p>
-              <br />
-              <br />
               <p className={formStyles.contactgev}>
                 <b>
                   {' '}
@@ -339,6 +341,16 @@ const Form = () => {
                     <b>NL10 BUNQ 2038 8619 94</b>
                   </i>
                 </span>
+              </p>
+
+              <FontAwesomeIcon icon="mobile" size="lg" color="#1db954" />
+              <p className={formStyles.contacttel}>
+                · &nbsp;<a href="tel:0611054318">+31 6 11 05 43 18</a>
+              </p>
+              <br />
+              <FontAwesomeIcon icon="paper-plane" size="lg" color="#74aece" />
+              <p className={formStyles.contactmail}>
+                · &nbsp;<a href="mailto:info@gimmix.nl">info@gimmix.nl</a>
               </p>
             </div>
           </div>
