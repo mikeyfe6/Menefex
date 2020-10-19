@@ -1,7 +1,6 @@
 @import './customs/colors';
 @import './customs/fonts';
 @import './customs/functions';
-@import './customs/resets';
 
 .gobacktext {
   font-size: 0.9em;
@@ -88,9 +87,9 @@
   margin-top: 7.5%;
   margin-bottom: 3.5%;
   // font-weight: 700;
-  font-size: 1.05em;
+  font-size: 1.125em;
   font-weight: 700;
-  letter-spacing: 0.25px;
+  letter-spacing: 0.35px;
 
   &::first-letter {
     font-size: 2.5em;
@@ -148,7 +147,7 @@
   }
 
   h4 {
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     font-size: 1.125em;
     font-weight: 700;
     margin-bottom: -1%;
@@ -162,7 +161,7 @@
 
   hr {
     margin-top: 7.5%;
-    margin-bottom: 1%;
+    margin-bottom: 0;
     width: 10%;
     border-width: 5px;
     margin-left: 0;

@@ -1,16 +1,10 @@
 @import '../customs/functions';
 @import '../customs/colors';
 @import '../customs/fonts';
-@import '../customs/resets';
 
 .smallbio-container {
   margin-bottom: 1%;
   background: linear-gradient(to right, $spec-color, white);
-  // border-left: solid 5px $primary-color;
-  // border-right: solid 5px $primary-color;
-  // box-shadow: 1px 3px 7px rgba(209, 209, 209, 0.767);
-  // border: 2px solid $super-color;
-  // background: $secondary-color;
   height: 100%;
   width: 100vw;
   position: relative;
