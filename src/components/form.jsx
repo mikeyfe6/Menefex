@@ -193,7 +193,6 @@ const Form = () => {
                   <FontAwesomeIcon
                     icon={['fab', 'facebook']}
                     size="2x"
-                    color="#E0E0E0"
                     className={formStyles.fbicon}
                   />
                 </a>
@@ -206,7 +205,6 @@ const Form = () => {
                   <FontAwesomeIcon
                     icon={['fab', 'instagram']}
                     size="2x"
-                    color="#E0E0E0"
                     className={formStyles.igicon}
                   />
                 </a>
@@ -219,7 +217,6 @@ const Form = () => {
                   <FontAwesomeIcon
                     icon={['fab', 'twitter']}
                     size="2x"
-                    color="#E0E0E0"
                     className={formStyles.twicon}
                   />
                 </a>
@@ -232,7 +229,6 @@ const Form = () => {
                   <FontAwesomeIcon
                     icon={['fab', 'linkedin']}
                     size="2x"
-                    color="#E0E0E0"
                     className={formStyles.liicon}
                   />
                 </a>
@@ -245,7 +241,6 @@ const Form = () => {
                   <FontAwesomeIcon
                     icon={['fab', 'github']}
                     size="2x"
-                    color="#E0E0E0"
                     className={formStyles.ghicon}
                   />
                 </a>
@@ -258,7 +253,6 @@ const Form = () => {
                   <FontAwesomeIcon
                     icon={['fa', 'rss']}
                     size="2x"
-                    color="#E0E0E0"
                     className={formStyles.rssicon}
                   />
                 </a>
@@ -271,7 +265,6 @@ const Form = () => {
                   <FontAwesomeIcon
                     icon={['fab', 'patreon']}
                     size="2x"
-                    color="#E0E0E0"
                     className={formStyles.patricon}
                   />
                 </a>
@@ -284,7 +277,6 @@ const Form = () => {
                   <FontAwesomeIcon
                     icon={['fab', 'spotify']}
                     size="2x"
-                    color="#E0E0E0"
                     className={formStyles.waicon}
                   />
                 </a>
@@ -297,7 +289,6 @@ const Form = () => {
                   <FontAwesomeIcon
                     icon={['fab', 'whatsapp']}
                     size="2x"
-                    color="#E0E0E0"
                     className={formStyles.spicon}
                   />
                 </a>
