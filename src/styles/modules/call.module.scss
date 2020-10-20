@@ -2,7 +2,6 @@
 @import '../customs/colors';
 @import '../customs/fonts';
 
-
 .formwrapper {
   background-color: #f5f5f5;
   box-shadow: 1px 3px 7px rgba(209, 209, 209, 0.767);
@@ -60,13 +59,10 @@
     }
   }
 
-  .choosing {
-    background-color: $secondary-color;
-  }
-
   // --- // --- // -- // -- //
 
   .choosing {
+    background-color: $secondary-color;
     display: block;
     width: 100%;
     font-size: 0.65em;
@@ -85,6 +81,7 @@
     background-repeat: no-repeat, repeat;
     background-position: right 0.7em top 50%, 0 0;
     background-size: 0.65em auto, 100%;
+    @include smoothtrans;
   }
 
   .choosing:hover {
@@ -96,6 +93,7 @@
     box-shadow: 0 0 0 2px -moz-mac-focusring;
     color: $spectext-color;
     outline: none;
+    @include smoothtrans;
   }
   .choosing option {
     font-weight: normal;
@@ -129,6 +127,7 @@
     color: $primary-color;
     font-size: 0.9em;
     border-radius: 10px;
+    @include smoothtrans;
   }
 
   input:focus,
@@ -139,6 +138,7 @@
     outline: none;
     border: none;
     color: $link-color !important;
+    @include smoothtrans;
   }
 
   textarea {
