@@ -45,7 +45,6 @@
     "gatsby-plugin-sharp": "^2.6.43",
     "gatsby-plugin-sitemap": "^2.4.17",
     "gatsby-plugin-smoothscroll": "^1.2.0",
-    "gatsby-remark-embedder": "^3.0.0",
     "gatsby-remark-images": "^3.3.37",
     "gatsby-remark-images-contentful": "^2.3.19",
     "gatsby-remark-relative-images": "^2.0.2",
