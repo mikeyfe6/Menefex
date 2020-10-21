@@ -10,6 +10,7 @@ import { Animated } from 'react-animated-css';
 
 import Layout from '../components/layout';
 import '../styles/blogpost.scss';
+
 import mini from '../logo/Gimmix-mini.svg';
 
 import SEO from '../components/seo';
@@ -51,16 +52,6 @@ const Blog = (props) => {
         const url = node.data.target.fields.file['nl-NL'].url;
         return <img alt={alt} src={url} className="img-resize" />;
       },
-    },
-  };
-
-  const disqusConfig = {
-    shortname: 'gimmix',
-    config: {
-      url: props.data.contentfulBlogPost.slug,
-      identifier: props.data.contentfulBlogPost.id,
-      title: props.data.contentfulBlogPost.title,
-      language: 'nl_NL',
     },
   };
 
@@ -211,7 +202,15 @@ const Blog = (props) => {
           <GoogleAds slot="3266975443" />
           <div className="specwhitespace" />
           <div className="disqussion">
-            <DiscussionEmbed {...disqusConfig} />
+            <DiscussionEmbed
+              shortname="gimmix"
+              config={{
+                url: `https://gimmix.nl/${props.data.contentfulBlogPost.slug}/`,
+                identifier: props.data.contentfulBlogPost.id,
+                title: props.data.contentfulBlogPost.title,
+                language: 'nl_NL',
+              }}
+            />
           </div>
         </div>
       </div>
