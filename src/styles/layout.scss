@@ -156,13 +156,13 @@ div#hs-eu-cookie-confirmation
 
 // DISQUS TWEAK
 
-.comment-policy {
+#comment-policy .comment-policy .publisher-anchor-color {
   background-color: $spec-color !important;
   @include shadow;
-}
 
-.comment-policy i {
-  color: $primary-color !important;
+  i {
+    color: $primary-color !important;
+  }
 }
 
 // RESETS
