@@ -208,7 +208,7 @@ const Blog = (props) => {
                 url: `https://gimmix.nl/${props.data.contentfulBlogPost.slug}/`,
                 identifier: props.data.contentfulBlogPost.id,
                 title: props.data.contentfulBlogPost.title,
-                language: 'nl_NL',
+                language: 'nl',
               }}
             />
           </div>

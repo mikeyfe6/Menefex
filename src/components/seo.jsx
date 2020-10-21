@@ -215,6 +215,7 @@ const SEO = ({
             <link
               rel="stylesheet preload"
               href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+              as="style"
             />
 
             <link
