@@ -84,6 +84,7 @@ const SEO = ({
                     "name": "Michael Fransman"
                   },
                   "image": "https://gimmix.nl/Gimmix-logo.png",
+                  "logo": "https://i.postimg.cc/rsf0PJv0/Gx-FAVICON-X.png",
                   "@id": "https://gimmix.nl/#localbusiness",
                   "url": "https://gimmix.nl",
                   "telephone": "+31611054318",
@@ -91,7 +92,7 @@ const SEO = ({
                   "priceRange": "$$",
                   "address": {
                     "@type": "PostalAddress",
-                    "streetAddress": "Karspeldreef",
+                    "streetAddress": "Karspeldreef 1450",
                     "addressLocality": "Amsterdam",
                     "postalCode": "1104SE",
                     "addressCountry": "NL"
@@ -118,7 +119,11 @@ const SEO = ({
                     "https://www.twitter.com/GimmixWMB",
                     "https://www.instagram.com/gimmixwmb/",
                     "https://www.linkedin.com/company/gimmixwmb/",
-                    "https://github.com/mikeyfe6"
+                    "https://github.com/mikeyfe6",
+                    "https://www.patreon.com/gimmixWMB",
+                    "https://feeds.feedburner.com/GimmixWMB",
+                    "https://wa.me/31611054318",
+                    "https://open.spotify.com/playlist/08UGoWTjvpuooABCWyPx0m?si=caXZyz28R8u8Ck683qLgQA"
                   ]
                 }
               `}
