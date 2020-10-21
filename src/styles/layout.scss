@@ -154,6 +154,17 @@ div#hs-eu-cookie-confirmation
   transition: 1s ease-in-out !important;
 }
 
+// DISQUS TWEAK
+
+.comment-policy {
+  background-color: $spec-color !important;
+  @include shadow;
+}
+
+.comment-policy i {
+  color: $primary-color !important;
+}
+
 // RESETS
 
 .whitespace {
