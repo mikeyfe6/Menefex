@@ -156,14 +156,19 @@ div#hs-eu-cookie-confirmation
 
 // DISQUS TWEAK
 
-#comment-policy .comment-policy .publisher-anchor-color {
-  background-color: $spec-color !important;
-  @include shadow;
-
-  i {
-    color: $primary-color !important;
-  }
+#disqus_thread a {
+  color: $secondary-color;
+  // opacity: 0.95;
 }
+
+// #comment-policy .comment-policy .publisher-anchor-color {
+//   background-color: $spec-color !important;
+//   @include shadow;
+
+//   i {
+//     color: $primary-color !important;
+//   }
+// }
 
 // RESETS
 
