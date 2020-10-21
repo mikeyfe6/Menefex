@@ -131,13 +131,12 @@ const SEO = ({
             <script type="application/ld+json">
               {`
                 {
-                  "@context": "http://schema.org",
-                  "@type": "WebPage",
-                  "@id": "https://gimmix.nl/#webpage",
-                  "url": "https://gimmix.nl",
-                  "name": "Gimmix Webmediabedrijf"
-                  }
-                `}
+                  "@context": "https://schema.org/",
+                  "@type": "WebSite",
+                  "name": "Gimmix",
+                  "url": "https://gimmix.nl"
+                }
+              `}
             </script>
             {/* <script type="application/ld+json">
               {`
