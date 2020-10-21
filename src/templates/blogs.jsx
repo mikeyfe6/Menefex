@@ -205,7 +205,7 @@ const Blog = (props) => {
             <DiscussionEmbed
               shortname="gimmix"
               config={{
-                url: `https://gimmix.nl/${props.data.contentfulBlogPost.slug}/`,
+                url: `https://gimmix.nl/blog/${props.data.contentfulBlogPost.slug}/`,
                 identifier: props.data.contentfulBlogPost.id,
                 title: props.data.contentfulBlogPost.title,
                 language: 'nl',
