@@ -18,6 +18,7 @@ const BlogPage = () => {
       allContentfulBlogPost(sort: { fields: publishedDate, order: DESC }) {
         edges {
           node {
+            id
             title
             slug
             subtitle
@@ -60,7 +61,7 @@ const BlogPage = () => {
           <ol className={blogDesign.posts}>
             {data.allContentfulBlogPost.edges.map((edge) => {
               return (
-                <li className={blogDesign.post}>
+                <li className={blogDesign.post} key={edge.node.id}>
                   <Link to={`/blog/${edge.node.slug}/`}>
                     <img
                       src={edge.node.image.file.url}

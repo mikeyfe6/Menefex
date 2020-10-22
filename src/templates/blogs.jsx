@@ -62,7 +62,7 @@ const Blog = (props) => {
         <SEO
           title={props.data.contentfulBlogPost.title}
           description={props.data.contentfulBlogPost.subtitle}
-          keywords={props.data.contentfulBlogPost.keywords}
+          keywords={props.data.contentfulBlogPost.keywords.join(', ')}
           pathname={`/blog/${props.data.contentfulBlogPost.slug}/`}
           custom={`https:${props.data.contentfulBlogPost.image.file.url}`}
           article
