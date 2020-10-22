@@ -1,5 +1,3 @@
-/* eslint-disable no-underscore-dangle */
-/* eslint-disable no-multi-assign */
 import React from 'react';
 import { Link } from 'gatsby';
 
@@ -9,11 +7,6 @@ import Layout from '../components/layout';
 import PrivacyDesign from '../styles/modules/privacy.module.scss';
 
 const PrivacyPolicy = () => {
-  function removeCookies() {
-    const _hsp = (window._hsp = window._hsp || []);
-    _hsp.push(['revokeCookieConsent']);
-  }
-
   return (
     <Layout>
       <SEO
@@ -58,7 +51,10 @@ const PrivacyPolicy = () => {
               type="button"
               id="hs_remove_cookie_button"
               className={PrivacyDesign.consbtn}
-              onClick={removeCookies()}
+              onClick="(function removeCookies(){
+                var _hsp = window._hsp = window._hsp || [];
+                _hsp.push(['revokeCookieConsent']);
+              })()"
             >
               verwijder alle cookies
             </button>{' '}
