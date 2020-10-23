@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
+import Cookies from 'js-cookie';
+
 import SEO from '../components/seo';
 
 import Layout from '../components/layout';
-import PrivacyDesign from '../styles/modules/privacy.module.scss';
+import privacyDesign from '../styles/modules/privacy.module.scss';
 
 const PrivacyPolicy = () => {
   return (
@@ -49,12 +51,14 @@ const PrivacyPolicy = () => {
             dient u op{' '}
             <button
               type="button"
-              id="hs_remove_cookie_button"
-              className={PrivacyDesign.consbtn}
-              onClick="(function removeCookies(){
-                var _hsp = window._hsp = window._hsp || [];
-                _hsp.push(['revokeCookieConsent']);
-              })()"
+              className={privacyDesign.consbtn}
+              onClick={
+                (Cookies.remove('gatsby-gdpr-google-analytics', {
+                  path: '',
+                  domain: 'gimmix.nl',
+                }),
+                console.log(Cookies.remove()))
+              }
             >
               verwijder alle cookies
             </button>{' '}

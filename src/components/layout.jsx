@@ -1,4 +1,6 @@
 import React from 'react';
+import CookieConsent from 'react-cookie-consent';
+import { Link } from 'gatsby';
 
 // FontAwesome icons
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -34,7 +36,6 @@ import Backdrop from './navbar/Backdrop';
 import Footer from './footer';
 
 // styles
-import '../styles/index.scss';
 import '../styles/layout.scss';
 
 library.add(
@@ -91,6 +92,60 @@ class Layout extends React.Component {
           <main style={{ marginTop: '100px' }}>
             <div>{this.props.children}</div>
           </main>
+          <CookieConsent
+            debug
+            overlay
+            expires={60}
+            location="top"
+            buttonText="Accepteer"
+            enableDeclineButton
+            flipButtons="true"
+            declineButtonText="Weiger"
+            cookieName="gatsby-gdpr-google-analytics"
+            extraCookieOptions={{ domain: 'gimmix.nl' }}
+            contentStyle={{
+              margin: '1.25% 2.5% 1% 2.5%',
+            }}
+            style={{
+              background: 'linear-gradient(to right, #656565, #323232',
+              opacity: '0.95',
+              color: '#dadada',
+              fontSize: '11.5px',
+              borderBottom: '3px solid #FFCC00',
+              borderTop: '1.5px solid #656565',
+            }}
+            buttonStyle={{
+              color: '#323232',
+              backgroundColor: 'FFCC00',
+              fontSize: '14px',
+              borderRadius: '3px',
+              opacity: '0.95',
+            }}
+            declineButtonStyle={{
+              background: 'transparent',
+              border: '1px solid #dadada86',
+              borderRadius: '3px',
+              color: '#FFCC00',
+              cursor: 'pointer',
+              flex: '0 0 auto',
+              padding: '5.5px 12px',
+              marginLeft: '0px',
+              opacity: '0.95',
+            }}
+          >
+            Deze website slaat cookies op je computer op. Deze cookies worden
+            gebruikt om je websitebezoek te verbeteren en meer gepersonaliseerde
+            diensten aan je aan te bieden, zowel op deze website als via andere
+            media. Zie ons <Link to="/privacy-policy">Privacybeleid</Link> voor
+            meer informatie over de cookies die we gebruiken.
+            <br />
+            <br />
+            <span style={{ fontSize: '10px' }}>
+              We zullen je gegevens niet volgen als je onze site bezoekt. Maar
+              om te voldoen aan je voorkeuren moeten we enkele cookies gebruiken
+              zodat je niet vaker wordt gevraagd om deze keus te maken.
+            </span>
+          </CookieConsent>
         </div>
         <Footer />
       </div>

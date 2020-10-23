@@ -13,6 +13,8 @@ import Quote from '../components/quote';
 import Projects from '../components/swiper';
 import Smallbio from '../components/smallbio';
 
+import '../styles/index.scss';
+
 // TODO: pagina helemaal responsive maken
 
 const IndexPage = () => {

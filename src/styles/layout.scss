@@ -59,7 +59,7 @@ html {
 // }
 
 // progress[value]::-webkit-progress-bar {
-//   background-color: $secondary-color;
+//   background-color: $link-color;
 // }
 
 body {
@@ -86,6 +86,8 @@ body {
 }
 
 .page-sub {
+  border-left: 3.5px solid $secondary-color;
+  padding-left: 12.5px;
   font-weight: 500;
   letter-spacing: -0.2px;
   font-size: 0.9em;
@@ -98,77 +100,12 @@ body {
   font-size: 0.75em;
 }
 
-// Hubspot Cookiebanner CSS +
-
-#hs-eu-cookie-confirmation {
-  background: linear-gradient(
-    to right,
-    $textbase-color,
-    $primary-color
-  ) !important;
-  opacity: 0.95 !important;
-  position: fixed !important;
-}
-
-#hs-eu-cookie-confirmation-inner {
-  background: transparent !important;
-  font-family: $poppins-font !important;
-}
-
-div#hs-eu-cookie-confirmation {
-  border-top: none !important;
-  border-bottom: 1px solid #ffcc00 !important;
-  box-shadow: 0 1px 5px #ffcc00 !important;
-}
-
-div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner p {
-  color: $fourth-color !important;
-}
-
-div#hs-eu-cookie-confirmation
-  div#hs-eu-cookie-confirmation-inner
-  a#hs-eu-confirmation-button {
-  color: $button-hover !important;
-  transition: 1s ease-in-out !important;
-}
-
-div#hs-eu-cookie-confirmation
-  div#hs-eu-cookie-confirmation-inner
-  a#hs-eu-confirmation-button:hover {
-  background: #f1da7a !important;
-  transition: 1s ease-in-out !important;
-}
-
-div#hs-eu-cookie-confirmation
-  div#hs-eu-cookie-confirmation-inner
-  a#hs-eu-decline-button {
-  color: $fourth-color !important;
-  opacity: 0.7;
-  transition: 1s ease-in-out !important;
-}
-
-div#hs-eu-cookie-confirmation
-  div#hs-eu-cookie-confirmation-inner
-  a#hs-eu-decline-button:hover {
-  opacity: 1;
-  transition: 1s ease-in-out !important;
-}
-
 // DISQUS TWEAK
 
 #disqus_thread a {
   color: $secondary-color;
   // opacity: 0.95;
 }
-
-// #comment-policy .comment-policy .publisher-anchor-color {
-//   background-color: $spec-color !important;
-//   @include shadow;
-
-//   i {
-//     color: $primary-color !important;
-//   }
-// }
 
 // RESETS
 
@@ -213,6 +150,7 @@ a {
 @media (max-width: 768px) {
   .page-sub {
     font-size: 0.85em;
+    padding-left: 10px;
   }
 
   .page-title {
