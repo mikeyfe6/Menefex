@@ -22,40 +22,40 @@ module.exports = {
     authorEmail: 'michaelfransman@gimmix.nl',
   },
   plugins: [
-    {
-      resolve: `gatsby-plugin-gdpr-cookies`,
-      options: {
-        googleAnalytics: {
-          // trackingId: 'UA-120057209-5', // leave empty if you want to disable the tracker
-          // cookieName: 'gatsby-gdpr-google-analytics', // default
-          anonymize: true, // default
-          allowAdFeatures: false, // default
-        },
-        googleTagManager: {
-          // trackingId: 'GTM-5X6VS2L', // leave empty if you want to disable the tracker
-          // cookieName: 'gatsby-gdpr-google-tagmanager', // default
-          dataLayerName: 'dataLayer', // default
-          defaultDataLayer: { platform: 'gatsby' },
-        },
-        facebookPixel: {
-          pixelId: '388358162140938', // leave empty if you want to disable the tracker
-          // cookieName: 'gatsby-gdpr-facebook-pixel', // default
-        },
-        // defines the environments where the tracking should be available  - default is ["production"]
-        environments: ['production'],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        // replace "UA-XXXXXXXXX-X" with your own Tracking ID
-        trackingId: 'UA-120057209-5',
-        head: true,
-        respectDNT: true,
-        defer: false,
-        cookieDomain: 'gimmix.nl',
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-gdpr-cookies`,
+    //   options: {
+    //     googleAnalytics: {
+    //       // trackingId: 'UA-120057209-5', // leave empty if you want to disable the tracker
+    //       // cookieName: 'gatsby-gdpr-google-analytics', // default
+    //       anonymize: true, // default
+    //       allowAdFeatures: false, // default
+    //     },
+    //     googleTagManager: {
+    //       // trackingId: 'GTM-5X6VS2L', // leave empty if you want to disable the tracker
+    //       // cookieName: 'gatsby-gdpr-google-tagmanager', // default
+    //       dataLayerName: 'dataLayer', // default
+    //       defaultDataLayer: { platform: 'gatsby' },
+    //     },
+    //     facebookPixel: {
+    //       pixelId: '388358162140938', // leave empty if you want to disable the tracker
+    //       // cookieName: 'gatsby-gdpr-facebook-pixel', // default
+    //     },
+    //     // defines the environments where the tracking should be available  - default is ["production"]
+    //     environments: ['production'],
+    //   },
+    // },
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     // replace "UA-XXXXXXXXX-X" with your own Tracking ID
+    //     trackingId: 'UA-120057209-5',
+    //     head: true,
+    //     respectDNT: true,
+    //     defer: false,
+    //     cookieDomain: 'gimmix.nl',
+    //   },
+    // },
     {
       resolve: 'gatsby-plugin-google-tagmanager',
       options: {
@@ -73,7 +73,6 @@ module.exports = {
         // Specify optional GTM environment details.
         // gtmAuth: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING",
         // gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_PREVIEW_NAME",
-        dataLayerName: 'dataLayer',
       },
     },
     'gatsby-plugin-react-helmet',
