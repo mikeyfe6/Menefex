@@ -1,5 +1,5 @@
 import React from 'react';
-import CookieConsent from 'react-cookie-consent';
+import CookieConsent, { Cookies } from 'react-cookie-consent';
 import { Link } from 'gatsby';
 
 // FontAwesome icons
@@ -129,6 +129,22 @@ class Layout extends React.Component {
               padding: '5.5px 12px',
               marginLeft: '0px',
               opacity: '0.95',
+            }}
+            // onAccept={() => {}}
+            onDecline={() => {
+              Cookies.remove('_gid', { path: '', domain: '.gimmix.nl' });
+              Cookies.remove('_gat_UA-120057209-5', {
+                path: '',
+                domain: '.gimmix.nl',
+              });
+              Cookies.remove('_ga_NMPBTDD3QW', {
+                path: '',
+                domain: '.gimmix.nl',
+              });
+              Cookies.remove('test_cookie', { path: '', domain: '.gimmix.nl' });
+              Cookies.remove('_fbp', { path: '', domain: '.gimmix.nl' });
+              Cookies.remove('_gid', { path: '', domain: '.gimmix.nl' });
+              Cookies.remove('_ga', { path: '', domain: '.gimmix.nl' });
             }}
           >
             Deze website slaat cookies op je computer op. Deze cookies worden

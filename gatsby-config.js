@@ -29,6 +29,8 @@ module.exports = {
         trackingId: 'UA-120057209-5',
         head: true,
         respectDNT: true,
+        defer: false,
+        cookieDomain: 'gimmix.nl',
       },
     },
     {
@@ -48,22 +50,23 @@ module.exports = {
         // Specify optional GTM environment details.
         // gtmAuth: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING",
         // gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_PREVIEW_NAME",
-        // dataLayerName: "YOUR_DATA_LAYER_NAME",
+        dataLayerName: 'dataLayer',
       },
     },
     {
       resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
         googleAnalytics: {
-          trackingId: 'UA-120057209-5', // leave empty if you want to disable the tracker
+          // trackingId: 'UA-120057209-5', // leave empty if you want to disable the tracker
           // cookieName: 'gatsby-gdpr-google-analytics', // default
           anonymize: true, // default
           allowAdFeatures: false, // default
         },
         googleTagManager: {
-          trackingId: 'GTM-5X6VS2L', // leave empty if you want to disable the tracker
+          // trackingId: 'GTM-5X6VS2L', // leave empty if you want to disable the tracker
           // cookieName: 'gatsby-gdpr-google-tagmanager', // default
-          // dataLayerName: 'dataLayer', // default
+          dataLayerName: 'dataLayer', // default
+          defaultDataLayer: { platform: 'gatsby' },
         },
         facebookPixel: {
           pixelId: '388358162140938', // leave empty if you want to disable the tracker
