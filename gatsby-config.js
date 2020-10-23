@@ -23,6 +23,29 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-gdpr-cookies`,
+      options: {
+        googleAnalytics: {
+          // trackingId: 'UA-120057209-5', // leave empty if you want to disable the tracker
+          // cookieName: 'gatsby-gdpr-google-analytics', // default
+          anonymize: true, // default
+          allowAdFeatures: false, // default
+        },
+        googleTagManager: {
+          // trackingId: 'GTM-5X6VS2L', // leave empty if you want to disable the tracker
+          // cookieName: 'gatsby-gdpr-google-tagmanager', // default
+          dataLayerName: 'dataLayer', // default
+          defaultDataLayer: { platform: 'gatsby' },
+        },
+        facebookPixel: {
+          pixelId: '388358162140938', // leave empty if you want to disable the tracker
+          // cookieName: 'gatsby-gdpr-facebook-pixel', // default
+        },
+        // defines the environments where the tracking should be available  - default is ["production"]
+        environments: ['production'],
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // replace "UA-XXXXXXXXX-X" with your own Tracking ID
@@ -53,30 +76,6 @@ module.exports = {
         dataLayerName: 'dataLayer',
       },
     },
-    {
-      resolve: `gatsby-plugin-gdpr-cookies`,
-      options: {
-        googleAnalytics: {
-          // trackingId: 'UA-120057209-5', // leave empty if you want to disable the tracker
-          // cookieName: 'gatsby-gdpr-google-analytics', // default
-          anonymize: true, // default
-          allowAdFeatures: false, // default
-        },
-        googleTagManager: {
-          // trackingId: 'GTM-5X6VS2L', // leave empty if you want to disable the tracker
-          // cookieName: 'gatsby-gdpr-google-tagmanager', // default
-          dataLayerName: 'dataLayer', // default
-          defaultDataLayer: { platform: 'gatsby' },
-        },
-        facebookPixel: {
-          pixelId: '388358162140938', // leave empty if you want to disable the tracker
-          // cookieName: 'gatsby-gdpr-facebook-pixel', // default
-        },
-        // defines the environments where the tracking should be available  - default is ["production"]
-        environments: ['production'],
-      },
-    },
-
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-plugin-eslint',

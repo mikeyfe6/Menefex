@@ -100,7 +100,14 @@ class Layout extends React.Component {
             enableDeclineButton
             flipButtons="true"
             declineButtonText="Weiger"
-            cookieName="gatsby-gdpr-google-analytics"
+            cookieName={[
+              '_gid',
+              '_gat_UA-120057209-5',
+              '_ga_NMPBTDD3QW',
+              '_fbp',
+              '_gid',
+              '_ga',
+            ]}
             contentStyle={{
               margin: '1.25% 2.5% 1% 2.5%',
             }}
@@ -132,19 +139,12 @@ class Layout extends React.Component {
             }}
             // onAccept={() => {}}
             onDecline={() => {
-              Cookies.remove('_gid', { path: '', domain: '.gimmix.nl' });
-              Cookies.remove('_gat_UA-120057209-5', {
-                path: '',
-                domain: '.gimmix.nl',
-              });
-              Cookies.remove('_ga_NMPBTDD3QW', {
-                path: '',
-                domain: '.gimmix.nl',
-              });
-              Cookies.remove('test_cookie', { path: '', domain: '.gimmix.nl' });
-              Cookies.remove('_fbp', { path: '', domain: '.gimmix.nl' });
-              Cookies.remove('_gid', { path: '', domain: '.gimmix.nl' });
-              Cookies.remove('_ga', { path: '', domain: '.gimmix.nl' });
+              Cookies.remove('_gid');
+              Cookies.remove('_gat_UA-120057209-5');
+              Cookies.remove('_ga_NMPBTDD3QW');
+              Cookies.remove('_fbp');
+              Cookies.remove('_gid');
+              Cookies.remove('_ga');
             }}
           >
             Deze website slaat cookies op je computer op. Deze cookies worden
