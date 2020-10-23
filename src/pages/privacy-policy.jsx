@@ -52,13 +52,10 @@ const PrivacyPolicy = () => {
             <button
               type="button"
               className={privacyDesign.consbtn}
-              onClick={
-                (Cookies.remove('gatsby-gdpr-google-analytics', {
-                  path: '',
-                  domain: 'gimmix.nl',
-                }),
-                console.log(Cookies.remove()))
-              }
+              onClick={Cookies.remove('gatsby-gdpr-google-analytics', {
+                path: '',
+                domain: 'gimmix.nl',
+              })}
             >
               verwijder alle cookies
             </button>{' '}
