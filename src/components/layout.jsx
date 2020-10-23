@@ -93,7 +93,6 @@ class Layout extends React.Component {
             <div>{this.props.children}</div>
           </main>
           <CookieConsent
-            debug
             overlay
             expires={60}
             location="top"
@@ -102,7 +101,6 @@ class Layout extends React.Component {
             flipButtons="true"
             declineButtonText="Weiger"
             cookieName="gatsby-gdpr-google-analytics"
-            extraCookieOptions={{ domain: 'gimmix.nl' }}
             contentStyle={{
               margin: '1.25% 2.5% 1% 2.5%',
             }}

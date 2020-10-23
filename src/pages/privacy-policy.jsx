@@ -6,7 +6,7 @@ import Cookies from 'js-cookie';
 import SEO from '../components/seo';
 
 import Layout from '../components/layout';
-import privacyDesign from '../styles/modules/privacy.module.scss';
+// import privacyDesign from '../styles/modules/privacy.module.scss';
 
 const PrivacyPolicy = () => {
   return (
@@ -48,19 +48,70 @@ const PrivacyPolicy = () => {
             Met het voortzetten van het bezoek van deze website accepteert u de
             volgende gebruikersvoorwaarden. U accepteert het gebruik van cookies
             en andere tracking systems. Indien u dit gebruik wenst te weigeren
-            dient u op{' '}
-            <button
+            dient u{' '}
+            {/*  op <button
               type="button"
               className={privacyDesign.consbtn}
               onClick={Cookies.remove('gatsby-gdpr-google-analytics', {
                 path: '',
-                domain: 'gimmix.nl',
+                domain: '.gimmix.nl',
               })}
             >
               verwijder alle cookies
-            </button>{' '}
-            te klikken.
+            </button>
+            {' '}
+            te klikken. */}{' '}
+            <b>uw cache te wissen of uit te zetten</b>. Dit kan ook via een
+            Google Browser Add-on:{' '}
+            <a
+              href="https://tools.google.com/dlpage/gaoptout"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              https://tools.google.com/dlpage/gaoptout
+            </a>{' '}
+            .
           </p>
+          <p>
+            <u>De cookies die wij gebruiken</u>
+          </p>
+          <p>
+            <b>Geanonimiseerde Analytische cookies</b>
+          </p>
+          <ul>
+            <li>
+              Google Analytics (_gid): ter meting en bijhouden van
+              websitebezoekers
+            </li>
+            <li>
+              Google Analytics (_ga): deze cookie slaat aanvullende anonieme
+              data op ter calculatie van bezoekers, sessies, campagnes etc.
+            </li>
+          </ul>
+          <p>
+            <b>Functionele cookies</b>
+          </p>
+          <ul>
+            <li>Google analytics (_gat): onze Google analytics UA-ID</li>
+            <li>Google analytics (_ga_): onze Google Analytics GA4-ID</li>
+          </ul>
+          <p>
+            <b>Advertentiegerichte Cookies</b>
+          </p>
+          <ul>
+            {' '}
+            <li>
+              Google Ads (test_cookie): een test cookie om browsersupport voor
+              advertenties vast te stellen
+            </li>
+            <li>
+              Facebook Ads (_fbp): tracker die data tussen FB naar onze website
+              bijhoudt
+            </li>
+            <li>
+              Facebook Ads (fr): Facebook Pixel en Facebook Social ondersteuning
+            </li>
+          </ul>
           <p>
             De huidige op de website beschikbare versie van de privacy policy is
             de enige versie die van toepassing is zolang u de website bezoekt,
@@ -268,7 +319,7 @@ const PrivacyPolicy = () => {
               <br />
             </li>
             <li>Meer specifiek gebruiken wij de volgende cookies:</li>
-            <b>- Geen overige cookies.</b>
+            <b>- Advertentiegerichte Cookies</b>
             <li>
               Wanneer u onze website bezoekt kunnen cookies afkomstig van de
               verantwoordelijke en/of derden op uw apparatuur worden
