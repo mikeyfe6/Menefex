@@ -101,6 +101,7 @@ class Layout extends React.Component {
             flipButtons="true"
             declineButtonText="Weiger"
             cookieName="gimmix-optout"
+            extraCookieOptions={{ domain: '.gimmix.nl' }}
             contentStyle={{
               margin: '1.25% 2.5% 1% 2.5%',
             }}
