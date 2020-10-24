@@ -86,11 +86,12 @@ body {
 }
 
 .page-sub {
-  border-left: 3.5px solid $secondary-color;
+  border-left: 1.5px dotted $secondary-color;
   padding-left: 12.5px;
   font-weight: 500;
   letter-spacing: -0.2px;
   font-size: 0.9em;
+  opacity: 0.9;
 }
 
 // Terms & Cods
