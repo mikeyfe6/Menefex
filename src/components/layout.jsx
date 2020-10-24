@@ -100,14 +100,7 @@ class Layout extends React.Component {
             enableDeclineButton
             flipButtons="true"
             declineButtonText="Weiger"
-            cookieName={[
-              '_gid',
-              '_gat_UA-120057209-5',
-              '_ga_NMPBTDD3QW',
-              '_fbp',
-              '_gid',
-              '_ga',
-            ]}
+            cookieName="gimmix-optout"
             contentStyle={{
               margin: '1.25% 2.5% 1% 2.5%',
             }}
@@ -136,15 +129,6 @@ class Layout extends React.Component {
               padding: '5.5px 12px',
               marginLeft: '0px',
               opacity: '0.95',
-            }}
-            // onAccept={() => {}}
-            onDecline={() => {
-              Cookies.remove('_gid');
-              Cookies.remove('_gat_UA-120057209-5');
-              Cookies.remove('_ga_NMPBTDD3QW');
-              Cookies.remove('_fbp');
-              Cookies.remove('_gid');
-              Cookies.remove('_ga');
             }}
           >
             Deze website slaat cookies op je computer op. Deze cookies worden
