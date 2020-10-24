@@ -100,7 +100,7 @@ class Layout extends React.Component {
             enableDeclineButton
             flipButtons="true"
             declineButtonText="Weiger"
-            cookieName="gimmix-optout"
+            cookieName="gimmix-cookie"
             extraCookieOptions={{ domain: '.gimmix.nl' }}
             contentStyle={{
               margin: '1.25% 2.5% 1% 2.5%',
