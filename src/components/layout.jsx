@@ -80,13 +80,6 @@ class Layout extends React.Component {
   render() {
     let backdrop;
 
-    function clickMe() {
-      const gmxanltcs = false;
-      sessionStorage.setItem('gmxloc', gmxanltcs);
-    }
-
-    console.log('het werkt');
-
     if (this.state.sideDrawerOpen) {
       backdrop = <Backdrop click={this.backdropClickHandler} />;
     }
@@ -110,7 +103,8 @@ class Layout extends React.Component {
             extraCookieOptions={{ domain: '.gimmix.nl' }}
             enableDeclineButton
             onAccept={() => {
-              clickMe();
+              const gmxanltcs = false;
+              return gmxanltcs;
             }}
             sameSite="none"
             contentStyle={{
