@@ -1,5 +1,5 @@
 import React from 'react';
-import CookieConsent, { Cookies } from 'react-cookie-consent';
+import CookieConsent from 'react-cookie-consent';
 import { Link } from 'gatsby';
 
 // FontAwesome icons
@@ -80,6 +80,13 @@ class Layout extends React.Component {
   render() {
     let backdrop;
 
+    function clickMe() {
+      const gmxanltcs = false;
+      sessionStorage.setItem('gmxloc', gmxanltcs);
+    }
+
+    console.log('het werkt');
+
     if (this.state.sideDrawerOpen) {
       backdrop = <Backdrop click={this.backdropClickHandler} />;
     }
@@ -94,14 +101,18 @@ class Layout extends React.Component {
           </main>
           <CookieConsent
             overlay
+            flipButtons
             expires={60}
             location="top"
             buttonText="Accepteer"
-            enableDeclineButton
-            flipButtons="true"
             declineButtonText="Weiger"
             cookieName="gimmix-cookie"
             extraCookieOptions={{ domain: '.gimmix.nl' }}
+            enableDeclineButton
+            onAccept={() => {
+              clickMe();
+            }}
+            sameSite="none"
             contentStyle={{
               margin: '1.25% 2.5% 1% 2.5%',
             }}
