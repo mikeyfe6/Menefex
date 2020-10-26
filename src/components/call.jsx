@@ -1,9 +1,14 @@
 import React from 'react';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 import callStyles from '../styles/modules/call.module.scss';
 
 const Call = () => {
   //   const today = new Date()
+
+  function onChange(value) {
+    console.log('Captcha value:', value);
+  }
 
   return (
     <div className={callStyles.formwrapper}>
@@ -13,7 +18,7 @@ const Call = () => {
         method="POST"
         action="/success"
         data-netlify="true"
-        netlify-honeypot="bot-field"
+        data-netlify-recaptcha="true"
       >
         <input type="hidden" name="form-name" value="call-form" />
         <h5 className={callStyles.terugbel}>Terugbelverzoek</h5>
@@ -87,6 +92,13 @@ const Call = () => {
             </div>
           </li>
         </ul>
+
+        <ReCAPTCHA
+          sitekey="6Ld6aNsZAAAAAMudg5zs0s7nFcykFTEhGEK24OAF"
+          onChange={onChange}
+          className={callStyles.recaptcha}
+        />
+
         <button
           type="submit"
           name="submit"

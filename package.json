@@ -60,6 +60,7 @@
     "react-bootstrap": "^1.4.0",
     "react-cookie-consent": "^5.2.0",
     "react-dom": "^16.14.0",
+    "react-google-recaptcha": "^2.1.0",
     "react-helmet": "^6.1.0",
     "react-id-swiper": "^4.0.0",
     "smooth-scroll": "^16.1.3",

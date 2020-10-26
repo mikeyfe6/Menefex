@@ -151,6 +151,12 @@
   border-bottom: 1.5px solid $fourth-color;
 }
 
+.recaptcha {
+  position: absolute;
+  bottom: 13.25%;
+  left: 62.5%;
+}
+
 .callbtn {
   float: right;
   font-family: $alata-font;
@@ -207,10 +213,15 @@
     }
   }
 
+  .recaptcha {
+    position: static;
+    margin-left: 2.5%;
+  }
+
   .callbtn {
     padding: 12.5px 25px;
-    margin-right: 1%;
-    margin-top: 20px;
+    margin-right: 2.5%;
+    margin-top: 15px;
     letter-spacing: 1.5px;
     font-size: 11px;
   }

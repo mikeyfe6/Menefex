@@ -1,4 +1,5 @@
 import React from 'react';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 import { Animated } from 'react-animated-css';
 
@@ -10,6 +11,10 @@ import Maps from './gmaps/maps';
 
 const Form = () => {
   //   const today = new Date()
+
+  function onChange(value) {
+    console.log('Captcha value:', value);
+  }
 
   return (
     <div className="container">
@@ -27,7 +32,7 @@ const Form = () => {
               method="POST"
               action="/success"
               data-netlify="true"
-              netlify-honeypot="bot-field"
+              data-netlify-recaptcha="true"
             >
               <input type="hidden" name="form-name" value="contact-form" />
               <ul>
@@ -122,7 +127,10 @@ const Form = () => {
                   </div>
                 </li>
               </ul>
-
+              <ReCAPTCHA
+                sitekey="6Ld6aNsZAAAAAMudg5zs0s7nFcykFTEhGEK24OAF"
+                onChange={onChange}
+              />
               <button
                 type="submit"
                 name="submit"
