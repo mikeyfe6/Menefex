@@ -1,18 +1,71 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
+import { navigate } from 'gatsby';
 
 import callStyles from '../styles/modules/call.module.scss';
+
+// TODO: ENV goed instellen!
 
 const Call = () => {
   //   const today = new Date()
 
-  function onChange(value) {
-    console.log('Captcha value:', value);
-  }
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(
+        (key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`,
+      )
+      .join('&');
+  };
+
+  const [inputs, setInputs] = React.useState({
+    name: '',
+    tel: '',
+    tijdstip: '',
+    message: '',
+  });
+
+  const [recaptchaValue, setRecaptchaValue] = React.useState('');
+  const handleChange = React.useCallback(
+    (event) => {
+      setInputs({
+        ...inputs,
+        [event.target.name]: event.target.value,
+      });
+    },
+    [inputs],
+  );
+
+  const handleChangeReCAPTCHA = React.useCallback((value) => {
+    setRecaptchaValue(value);
+  }, []);
+
+  const handleSubmit = React.useCallback(
+    (event) => {
+      const form = event.currentTarget;
+      event.preventDefault();
+      event.stopPropagation();
+      if (recaptchaValue != null && recaptchaValue !== '') {
+        fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: encode({
+            'form-name': form.getAttribute('name'),
+            'g-recaptcha-response': recaptchaValue,
+            ...inputs,
+          }),
+        })
+          .then(() => navigate(form.getAttribute('action')))
+          .catch(() => console.log('POST ERROR'));
+      }
+    },
+
+    [inputs, recaptchaValue],
+  );
 
   return (
     <div className={callStyles.formwrapper}>
       <form
+        onSubmit={handleSubmit}
         name="call-form"
         id={callStyles.callForm}
         method="POST"
@@ -33,7 +86,8 @@ const Call = () => {
                 type="text"
                 name="name"
                 id="call-name"
-                defaultValue=""
+                value={inputs.name}
+                onChange={handleChange}
                 required
               />
             </div>
@@ -48,7 +102,8 @@ const Call = () => {
                 name="tel"
                 id="call-tel"
                 maxLength="15"
-                defaultValue=""
+                value={inputs.tel}
+                onChange={handleChange}
                 required
               />
             </div>
@@ -59,9 +114,12 @@ const Call = () => {
             </label>
             <div>
               <select
-                name="tijdstip[]"
-                className={callStyles.choosing}
                 required
+                name="tijdstip"
+                className={callStyles.choosing}
+                value={inputs.tijdstip}
+                onChange={handleChange}
+                multiple={false}
               >
                 <option value="tienuur">Tussen 10:00 - 10:30 uur</option>
                 <option value="elfuur">Tussen 11:00 - 10:30 uur</option>
@@ -87,27 +145,29 @@ const Call = () => {
                 name="message"
                 id="call-opmerking"
                 rows="6"
-                defaultValue=""
+                value={inputs.text}
+                onChange={handleChange}
               />
             </div>
           </li>
         </ul>
-
+        <div className="clr" />
         <ReCAPTCHA
           sitekey="6Ld6aNsZAAAAAMudg5zs0s7nFcykFTEhGEK24OAF"
-          onChange={onChange}
+          // sitekey={process.env.GATSBY_SITE_RECAPTCHA_KEY}
           className={callStyles.recaptcha}
+          onChange={handleChangeReCAPTCHA}
         />
-
+        <div className="clr" />
         <button
           type="submit"
           name="submit"
           id="call-submit"
           className={callStyles.callbtn}
-          action="../pages/success.jsx"
         >
           Bel mij terug!
         </button>
+
         <div className="clr" />
       </form>
     </div>

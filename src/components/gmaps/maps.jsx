@@ -10,8 +10,6 @@ import '../../styles/maps.scss';
 
 // TODO: Zorgen dat on click pop-up adresinformatie tevoren komt over Gimmix. KAN IK WAARSCHIJNLIJK MET SETTINGS DOEN. DOCS CHECKEN!
 
-// const AnyReactComponent = ({ text }) => <div>{text}</div>;
-
 class SimpleMap extends Component {
   static defaultProps = {
     center: {

@@ -128,7 +128,13 @@
   border-bottom: 1.5px solid $sixth-color;
 }
 
+.recaptcha {
+  margin-left: 1.5%;
+  display: table;
+}
+
 .send {
+  margin-top: -75px;
   float: right;
   font-family: $alata-font;
   text-transform: uppercase;
@@ -343,6 +349,14 @@
     padding: 15px;
     padding-left: 25px !important;
     border-width: 2px;
+  }
+
+  .recaptcha {
+    margin-right: 2.5%;
+    display: table;
+    margin-top: -5%;
+    float: right;
+    margin-bottom: -1%;
   }
 
   .send {

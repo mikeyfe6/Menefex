@@ -20,7 +20,7 @@ const Footer = () => {
   //   }
   // `);
 
-  // const today = new Date();
+  const today = new Date();
 
   return (
     <footer>
@@ -168,8 +168,8 @@ const Footer = () => {
           </div>
         </div>
         <p className={footerStyles.termscods}>
-          <span className="speccol">&copy;</span> 2019 - 2020 <u>Gimmix</u>{' '}
-          <span className="speccol">|</span>
+          <span className="speccol">&copy;</span> 2019 - {today.getFullYear()}{' '}
+          <u>Gimmix</u> <span className="speccol">|</span>
           <Link to="/privacy-policy/"> privacybeleid</Link>{' '}
           <span className="speccol">|</span>{' '}
           <Link to="/terms-conditions/"> algemene voorwaarden</Link>{' '}
@@ -185,10 +185,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-/* <footer className={footerDesign.footer}>
-      <p>
-        Created by <span>{data.site.siteMetadata.author}</span> also known as
-        Mr. <span>{data.site.siteMetadata.title}</span> {today.getFullYear()} ©
-      </p>
-    </footer> */

@@ -1,5 +1,6 @@
 import React from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
+import { navigate } from 'gatsby';
 
 import { Animated } from 'react-animated-css';
 
@@ -12,9 +13,60 @@ import Maps from './gmaps/maps';
 const Form = () => {
   //   const today = new Date()
 
-  function onChange(value) {
-    console.log('Captcha value:', value);
-  }
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(
+        (key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`,
+      )
+      .join('&');
+  };
+
+  const [inputs, setInputs] = React.useState({
+    name: '',
+    company: '',
+    email: '',
+    tel: '',
+    onderwerp: '',
+    message: '',
+  });
+
+  const [recaptchaValue, setRecaptchaValue] = React.useState('');
+  const handleChange = React.useCallback(
+    (event) => {
+      setInputs({
+        ...inputs,
+        [event.target.name]: event.target.value,
+      });
+    },
+    [inputs],
+  );
+
+  const handleChangeReCAPTCHA = React.useCallback((value) => {
+    setRecaptchaValue(value);
+  }, []);
+
+  const handleSubmit = React.useCallback(
+    (event) => {
+      const form = event.currentTarget;
+      event.preventDefault();
+      event.stopPropagation();
+      if (recaptchaValue != null && recaptchaValue !== '') {
+        fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: encode({
+            'form-name': form.getAttribute('name'),
+            'g-recaptcha-response': recaptchaValue,
+            ...inputs,
+          }),
+        })
+          .then(() => navigate(form.getAttribute('action')))
+          .catch(() => console.log('POST ERROR'));
+      }
+    },
+
+    [inputs, recaptchaValue],
+  );
 
   return (
     <div className="container">
@@ -33,6 +85,7 @@ const Form = () => {
               action="/success"
               data-netlify="true"
               data-netlify-recaptcha="true"
+              onSubmit={handleSubmit}
             >
               <input type="hidden" name="form-name" value="contact-form" />
               <ul>
@@ -46,6 +99,8 @@ const Form = () => {
                       name="name"
                       id="contact-name"
                       defaultValue=""
+                      value={inputs.name}
+                      onChange={handleChange}
                       required
                     />
                   </div>
@@ -59,7 +114,8 @@ const Form = () => {
                       type="text"
                       name="company"
                       id="contact-company"
-                      defaultValue=""
+                      value={inputs.company}
+                      onChange={handleChange}
                     />
                   </div>
                 </li>
@@ -73,7 +129,8 @@ const Form = () => {
                       name="email"
                       id="contact-email"
                       maxLength="35"
-                      defaultValue=""
+                      value={inputs.email}
+                      onChange={handleChange}
                       required
                     />
                   </div>
@@ -88,7 +145,8 @@ const Form = () => {
                       name="tel"
                       id="contact-tel"
                       maxLength="15"
-                      defaultValue=""
+                      value={inputs.tel}
+                      onChange={handleChange}
                       required
                     />
                   </div>
@@ -99,8 +157,10 @@ const Form = () => {
                   </label>
                   <div>
                     <select
-                      name="onderwerp[]"
+                      name="onderwerp"
                       className={formStyles.choosing}
+                      value={inputs.onderwerp}
+                      onChange={handleChange}
                       required
                     >
                       <option value="website">Offerte aanvragen</option>
@@ -121,7 +181,8 @@ const Form = () => {
                       name="message"
                       id="contact-project"
                       rows="6"
-                      defaultValue=""
+                      value={inputs.message}
+                      onChange={handleChange}
                       required
                     />
                   </div>
@@ -129,14 +190,15 @@ const Form = () => {
               </ul>
               <ReCAPTCHA
                 sitekey="6Ld6aNsZAAAAAMudg5zs0s7nFcykFTEhGEK24OAF"
-                onChange={onChange}
+                onChange={handleChangeReCAPTCHA}
+                className={formStyles.recaptcha}
               />
               <button
                 type="submit"
                 name="submit"
                 id="contact-submit"
                 className={formStyles.send}
-                action="../pages/success.jsx"
+                // action="../pages/success.jsx"
               >
                 Versturen
               </button>
@@ -146,7 +208,6 @@ const Form = () => {
         </div>
       </Animated>
       <div className="whitespace" />
-      {/* <hr className={formStyles.thick} /> */}
       <br />
       <div>
         <div className={`${formStyles.contactbox}`}>

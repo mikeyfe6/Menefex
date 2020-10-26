@@ -3,8 +3,6 @@ import { Link } from 'gatsby';
 
 import smallbioDesign from '../styles/modules/smallbio.module.scss';
 
-// TODO: Responsive maken!
-
 const Smallbio = () => {
   return (
     <div className={smallbioDesign.smallbioContainer}>
@@ -30,23 +28,12 @@ const Smallbio = () => {
           wensen tot één komen. Wij bouwen onze softwareproducten op maatwerk
           zodat u zich zoveel mogelijk kan relativeren met uw eindproduct.
           <br />
-          <b>{/* <Link to="/about/">Meer over Gimmix .. </Link> */}</b>
           <br />
-          {/* <u>Work, chill & vibe</u>{' '}
-          <a
-            href="https://open.spotify.com/playlist/08UGoWTjvpuooABCWyPx0m?si=caXZyz28R8u8Ck683qLgQA"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Spotify-playlist
-          </a>{' '}
-          ♫ */}
         </p>
         <Link to="/about/">
           <button
             type="button"
             name="meerover"
-            // id="call-submit"
             className={smallbioDesign.meerover}
           >
             Meer over Gimmix!

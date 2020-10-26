@@ -152,9 +152,9 @@
 }
 
 .recaptcha {
-  position: absolute;
-  bottom: 13.25%;
-  left: 60%;
+  float: right;
+  margin-right: 1%;
+  margin-top: -175px;
 }
 
 .callbtn {
@@ -214,8 +214,10 @@
   }
 
   .recaptcha {
+    margin-top: 0;
+    float: none;
     position: static;
-    margin-left: 2.5%;
+    margin-left: 2.5% !important;
   }
 
   .callbtn {
