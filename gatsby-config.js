@@ -2,16 +2,15 @@
     https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
-const dotenv = require('dotenv');
-
-if (process.env.NODE_ENV !== 'production') {
-  dotenv.config();
-}
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
 
 module.exports = {
   siteMetadata: {
     siteUrl: `https://gimmix.nl`,
     url: 'https://gimmix.nl',
+    tel: '+31611054318',
     image: '/Gimmix-logo.png',
     title: 'Gimmix',
     titleTemplate: '%s · Gimmix',

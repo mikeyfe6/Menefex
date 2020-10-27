@@ -149,6 +149,7 @@
 
 .textarea {
   border-bottom: 1.5px solid $fourth-color;
+  opacity: 0.75;
 }
 
 .recaptcha {
@@ -185,6 +186,17 @@
 }
 
 @media (max-width: 768px) {
+  #call-form {
+    input,
+    textarea {
+      font-size: 0.675em !important;
+    }
+
+    textarea {
+      height: 100px !important;
+    }
+  }
+
   .thick {
     margin-bottom: 12.5% !important;
     margin-top: 5% !important;
@@ -214,7 +226,7 @@
   }
 
   .recaptcha {
-    margin-top: 0;
+    margin-top: -15px;
     float: none;
     position: static;
     margin-left: 2.5% !important;

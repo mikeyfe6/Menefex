@@ -42,7 +42,7 @@ const BlogPage = () => {
       <SEO
         title="Blog"
         description="What goes through our mind.. Our views on life, technology, culture & the future."
-        keywords="blog, posts, views, nieuws, story"
+        keywords="blog, posts, views, nieuws, story, nieuws"
         pathname="/blog/"
       />
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 import Layout from '../components/layout';
@@ -18,12 +19,82 @@ import '../styles/index.scss';
 // TODO: pagina helemaal responsive maken
 
 const IndexPage = () => {
+  const { site } = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            description
+            siteUrl
+            tel
+            author
+            bizEmail
+          }
+        }
+      }
+    `,
+  );
+
+  // prettier-ignore
+  const schema =  {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    'name': 'Gimmix Webmediabedrijf',
+    'founder': {
+      '@type': 'Person',
+      'name': site.siteMetadata.author,
+    },
+    'image': `${site.siteMetadata.siteUrl}/Gimmix-logo.png`,
+    'logo': 'https://i.postimg.cc/rsf0PJv0/Gx-FAVICON-X.png',
+    '@id': 'https://gimmix.nl/#localbusiness',
+    'description': site.siteMetadata.description,
+    'url': site.siteMetadata.siteUrl,
+    'telephone': site.siteMetadata.tel,
+    'email': site.siteMetadata.bizEmail,
+    'hasMap': 'https://g.page/GimmixWMB?share',
+    "areaServed": {
+      "@type": "geoShape",
+      "addressCountry": ['Netherlands', 'Belgium', 'Surinam'],
+    },
+    'priceRange': '$$',
+    'address': {
+      '@type': 'PostalAddress',
+      'streetAddress': 'Karspeldreef 1450-A4',
+      'addressLocality': 'Amsterdam',
+      'postalCode': '1104SE',
+      'addressCountry': 'NL',
+    },
+    'geo': {
+      '@type': 'GeoCoordinates',
+      'latitude': '52.31482399999999',
+      'longitude': '4.9755936',
+    },
+    'openingHoursSpecification': {
+      '@type': 'OpeningHoursSpecification',
+      'dayOfWeek': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      'opens': '09:00',
+      'closes': '19:00',
+    },
+    'sameAs': [
+      'https://www.facebook.com/GimmixWMB',
+      'https://www.twitter.com/GimmixWMB',
+      'https://www.instagram.com/gimmixwmb/',
+      'https://www.linkedin.com/company/gimmixwmb/',
+      'https://github.com/mikeyfe6',
+      'https://www.patreon.com/gimmixWMB',
+      'https://feeds.feedburner.com/GimmixWMB',
+      'https://wa.me/31611054318',
+      'https://open.spotify.com/playlist/08UGoWTjvpuooABCWyPx0m?si=caXZyz28R8u8Ck683qLgQA',
+    ],
+  };
+
   return (
     <Layout>
       <SEO
         title="#1 Website Specialist"
         description="Een nieuwe professionele, modern & duurzame website of webapp nodig? Tijdelijk vanaf €345,- | Webmediabedrijf Gimmix uit Amsterdam staat garant voor al uw webgerelateerde wensen en ambities."
-        keywords="website bouwen, webapplicatie bouwen, webshop bouwen, wordpress website bouwen, elementor specialist, wordpress specialist amsterdam, website specialist amsterdam, gimmix portfolio, seo specialist amsterdam, gatsbyjs, freelancer, zzp-er, michael fransman, amsterdam zuidoost, front-end web developer, zelfstandige ondernemer, entrepeneur, mikey, mikeyfe, mikeyfe6, webmediabedrijf, gimmix, best seo amsterdam, beste seo amsterdam, beste website bouwer amsterdam, seo amsterdam, black owned business, bob, b.o.b., maatwerk, op maat"
+        keywords="websites, webapplicaties, wordpress, SEO, amsterdam"
+        schemaMarkup={schema}
       />
       <Hero />
 

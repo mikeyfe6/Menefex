@@ -343,6 +343,13 @@
 }
 
 @media (max-width: 768px) {
+  #contact-form {
+    input,
+    textarea {
+      font-size: 0.675em !important;
+    }
+  }
+
   .formwrapper {
     width: 100% !important;
     margin: 0 auto;

@@ -27,6 +27,7 @@ const SEO = ({
   lang,
   keywords,
   custom,
+  schemaMarkup,
 }) => (
   <StaticQuery
     query={query}
@@ -70,95 +71,6 @@ const SEO = ({
             <meta name="description" content={seo.description} />
             <meta name="image" content={seo.image} />
             <meta name="keywords" content={seo.keywords} />
-
-            {/* Schema Markup Data */}
-
-            <script type="application/ld+json">
-              {`
-                {
-                  "@context": "https://schema.org",
-                  "@type": "LocalBusiness",
-                  "name": "Gimmix Webmediabedrijf",
-                  "founder": {
-                    "@type": "Person",
-                    "name": "Michael Fransman"
-                  },
-                  "image": "https://gimmix.nl/Gimmix-logo.png",
-                  "logo": "https://i.postimg.cc/rsf0PJv0/Gx-FAVICON-X.png",
-                  "@id": "https://gimmix.nl/#localbusiness",
-                  "url": "https://gimmix.nl",
-                  "telephone": "+31611054318",
-                  "email": "info@gimmix.nl",
-                  "priceRange": "$$",
-                  "address": {
-                    "@type": "PostalAddress",
-                    "streetAddress": "Karspeldreef 1450",
-                    "addressLocality": "Amsterdam",
-                    "postalCode": "1104SE",
-                    "addressCountry": "NL"
-                  },
-                  "geo": {
-                    "@type": "GeoCoordinates",
-                    "latitude": 52.31482399999999,
-                    "longitude": 4.9755936
-                  },
-                  "openingHoursSpecification": {
-                    "@type": "OpeningHoursSpecification",
-                    "dayOfWeek": [
-                      "Monday",
-                      "Tuesday",
-                      "Wednesday",
-                      "Thursday",
-                      "Friday"
-                    ],
-                    "opens": "09:00",
-                    "closes": "19:00"
-                  },
-                  "sameAs": [
-                    "https://www.facebook.com/GimmixWMB",
-                    "https://www.twitter.com/GimmixWMB",
-                    "https://www.instagram.com/gimmixwmb/",
-                    "https://www.linkedin.com/company/gimmixwmb/",
-                    "https://github.com/mikeyfe6",
-                    "https://www.patreon.com/gimmixWMB",
-                    "https://feeds.feedburner.com/GimmixWMB",
-                    "https://wa.me/31611054318",
-                    "https://open.spotify.com/playlist/08UGoWTjvpuooABCWyPx0m?si=caXZyz28R8u8Ck683qLgQA"
-                  ]
-                }
-              `}
-            </script>
-            <script type="application/ld+json">
-              {`
-                {
-                  "@context": "https://schema.org/",
-                  "@type": "WebSite",
-                  "name": "Gimmix",
-                  "url": "https://gimmix.nl"
-                }
-              `}
-            </script>
-            {/* <script type="application/ld+json">
-              {`
-                {
-                  "@context": "http://schema.org",
-                  "@type": "BreadcrumbList",
-                  "itemListElement":
-                  [
-                    {
-                      "@type": "ListItem",
-                      "position": 1,
-                      "item":
-                      {
-                        "@type": "Website",
-                        "@id": "https://gimmix.nl",
-                        "name": "Gimmix Webmediabedrijf"
-                      }
-                    }
-                  ]
-                }
-             `}
-            </script> */}
 
             <meta property="fb:app_id" content="388358162140938" />
 
@@ -224,6 +136,12 @@ const SEO = ({
               title="Gimmix WMB: RSS Feeds"
               href="https://gimmix.nl/rss.xml"
             />
+
+            {schemaMarkup && (
+              <script type="application/ld+json">
+                {JSON.stringify(schemaMarkup)}
+              </script>
+            )}
           </Helmet>
         </>
       );

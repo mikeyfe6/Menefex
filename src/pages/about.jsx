@@ -14,9 +14,10 @@ const AboutPage = () => {
       <SEO
         title="About"
         description="Kom meer te weten over Gimmix."
-        keywords="over, gimmix, doelen, uniek, ondersteuning, spotify playlist, stayvibin"
+        keywords="over gimmix, doelen, biografie, motivatie, spotify playlist, stayvibin"
         pathname="/about/"
       />
+
       <div className="smallwhitespace" />
       <div className="container">
         <div className="row">

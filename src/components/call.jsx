@@ -7,8 +7,6 @@ import callStyles from '../styles/modules/call.module.scss';
 // TODO: ENV goed instellen!
 
 const Call = () => {
-  //   const today = new Date()
-
   const encode = (data) => {
     return Object.keys(data)
       .map(
@@ -66,14 +64,14 @@ const Call = () => {
     <div className={callStyles.formwrapper}>
       <form
         onSubmit={handleSubmit}
-        name="call-form"
+        name="Call Form"
         id={callStyles.callForm}
         method="POST"
         action="/success"
         data-netlify="true"
         data-netlify-recaptcha="true"
       >
-        <input type="hidden" name="form-name" value="call-form" />
+        <input type="hidden" name="form-name" value="Call Form" />
         <h5 className={callStyles.terugbel}>Terugbelverzoek</h5>
         <hr className={callStyles.thick} />
         <ul className={callStyles.fillareaone}>
@@ -153,8 +151,7 @@ const Call = () => {
         </ul>
         <div className="clr" />
         <ReCAPTCHA
-          sitekey="6Ld6aNsZAAAAAMudg5zs0s7nFcykFTEhGEK24OAF"
-          // sitekey={process.env.GATSBY_SITE_RECAPTCHA_KEY}
+          sitekey={process.env.SITE_RECAPTCHA_KEY}
           className={callStyles.recaptcha}
           onChange={handleChangeReCAPTCHA}
         />

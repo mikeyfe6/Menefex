@@ -14,7 +14,7 @@ const ContactPage = () => {
       <SEO
         title="Contact"
         description="Offerte aanvragen? samenwerking of gewoon gedag zeggen. Neem contact met ons op!"
-        keywords="contact, gimmix, michael fransman, mikeyfe6, offerte, openingstijden, laten bouwen"
+        keywords="contact, gimmix, michael fransman, mikeyfe6, offerte, openingstijden"
         pathname="/contact/"
       />
 
@@ -26,14 +26,24 @@ const ContactPage = () => {
         <div className="row">
           <div className="col-lg-8">
             <br />
-            <ScrollAnimation animateIn="fadeInUp" delay={750} duration={2}>
+            <ScrollAnimation
+              animateIn="fadeInUp"
+              delay={750}
+              duration={2}
+              animateOnce
+            >
               <h3 className={contactDesign.contacttitle}>
                 Laten wij samen iets geweldigs creëeren ✨
               </h3>
             </ScrollAnimation>
 
             <br />
-            <ScrollAnimation animateIn="fadeInUp" delay={1500} duration={2}>
+            <ScrollAnimation
+              animateIn="fadeInUp"
+              delay={1500}
+              duration={2}
+              animateOnce
+            >
               <p className="page-sub">
                 Jouw website, webshop of webapp laten bouwen door <b>Gimmix</b>?
                 Vraag een offerte aan! <br /> <br />

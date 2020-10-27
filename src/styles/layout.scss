@@ -86,8 +86,8 @@ body {
 }
 
 .page-sub {
-  border-left: 1.5px dotted $secondary-color;
-  padding-left: 12.5px;
+  // border-left: 1.5px dotted $secondary-color;
+  // padding-left: 12.5px;
   font-weight: 500;
   letter-spacing: -0.2px;
   font-size: 0.9em;
@@ -151,7 +151,6 @@ a {
 @media (max-width: 768px) {
   .page-sub {
     font-size: 0.85em;
-    padding-left: 10px;
   }
 
   .page-title {

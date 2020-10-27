@@ -42,7 +42,6 @@ export const query = graphql`
   }
 `;
 
-// show the individual blog pages & DSIH laat alles zien
 const Blog = (props) => {
   const options = {
     renderNode: {
@@ -55,6 +54,33 @@ const Blog = (props) => {
     },
   };
 
+  // prettier-ignore
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    'mainEntityOfPage': {
+      '@type': 'WebPage',
+      '@id': `https://gimmix.nl/blog/${props.data.contentfulBlogPost.slug}/`,
+    },
+    'headline': props.data.contentfulBlogPost.title,
+    'description': props.data.contentfulBlogPost.subtitle,
+    'image': `https:${props.data.contentfulBlogPost.image.file.url}`,
+    'author': {
+      '@type': 'Person',
+      'name': props.data.contentfulBlogPost.author,
+    },
+    'publisher': {
+      '@type': 'Organization',
+      'name': 'Gimmix',
+      'logo': {
+        '@type': 'ImageObject',
+        'url': 'https://i.postimg.cc/rsf0PJv0/Gx-FAVICON-X.png',
+      },
+    },
+    'datePublished': props.data.contentfulBlogPost.publishedDate,
+    'dateModified': props.data.contentfulBlogPost.updatedAt,
+  };
+
   return (
     <Layout>
       <div className="smallwhitespace" />
@@ -65,6 +91,7 @@ const Blog = (props) => {
           keywords={props.data.contentfulBlogPost.keywords.join(', ')}
           pathname={`/blog/${props.data.contentfulBlogPost.slug}/`}
           custom={`https:${props.data.contentfulBlogPost.image.file.url}`}
+          schemaMarkup={schema}
           article
         />
         <Link to="/blog/">
