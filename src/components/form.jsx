@@ -79,15 +79,15 @@ const Form = () => {
         <div className="row">
           <div className={formStyles.formwrapper}>
             <form
-              name="Contact Form"
+              name="contact-form"
               id={formStyles.contactForm}
               method="POST"
-              action="/success"
+              action="/success/"
               data-netlify="true"
               data-netlify-recaptcha="true"
               onSubmit={handleSubmit}
             >
-              <input type="hidden" name="form-name" value="Contact Form" />
+              <input type="hidden" name="form-name" value="contact-form" />
               <ul>
                 <li>
                   <label htmlFor="contact-name">
@@ -98,7 +98,6 @@ const Form = () => {
                       type="text"
                       name="name"
                       id="contact-name"
-                      defaultValue=""
                       value={inputs.name}
                       onChange={handleChange}
                       required
