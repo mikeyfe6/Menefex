@@ -115,19 +115,17 @@ const SEO = ({
             <script
               data-ad-client="ca-pub-3158048130288702"
               src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-              async
             />
 
             {/* Scripts: Extentions & Plugins */}
 
-            <script src="https://unpkg.com/swiper/swiper-bundle.min.js" async />
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js" />
 
             {/* Links Rel: Extentions & Plugins */}
 
             <link
-              rel="stylesheet preload"
+              rel="stylesheet"
               href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
-              as="style"
             />
 
             <link
