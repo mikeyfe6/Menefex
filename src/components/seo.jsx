@@ -72,7 +72,7 @@ const SEO = ({
             <meta name="image" content={seo.image} />
             <meta name="keywords" content={seo.keywords} />
 
-            <meta property="fb:app_id" content="388358162140938" />
+            <meta property="fb:app_id" content="277486370179723" />
 
             {seo.url && <meta property="og:url" content={seo.url} />}
             {seo.title && <meta property="og:title" content={seo.title} />}
