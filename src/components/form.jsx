@@ -79,7 +79,7 @@ const Form = () => {
         <div className="row">
           <div className={formStyles.formwrapper}>
             <form
-              name="contact-form"
+              name="Contact Form"
               id={formStyles.contactForm}
               method="POST"
               action="/success/"
@@ -87,7 +87,7 @@ const Form = () => {
               data-netlify-recaptcha="true"
               onSubmit={handleSubmit}
             >
-              <input type="hidden" name="form-name" value="contact-form" />
+              <input type="hidden" name="form-name" value="Contact Form" />
               <ul>
                 <li>
                   <label htmlFor="contact-name">

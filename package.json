@@ -9,7 +9,7 @@
   "author": "Michael Fransman <mikeyfe6@gimmix.nl>",
   "license": "agpl-3.0",
   "scripts": {
-    "build": "gatsby clean && echo SITE_RECAPTCHA_KEY=$SITE_RECAPTCHA_KEY >> .env.production && gatsby build",
+    "build": "gatsby clean && gatsby build",
     "develop": "GATSBY_GRAPHQL_IDE=playground gatsby develop -H 0.0.0.0 --open",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "eslint-check": "eslint --print-config .eslintrc | eslint-config-prettier-check",

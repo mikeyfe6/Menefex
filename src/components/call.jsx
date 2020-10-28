@@ -63,14 +63,14 @@ const Call = () => {
     <div className={callStyles.formwrapper}>
       <form
         onSubmit={handleSubmit}
-        name="call-form"
+        name="Call Form"
         id={callStyles.callForm}
         method="POST"
         action="/success/"
         data-netlify="true"
         data-netlify-recaptcha="true"
       >
-        <input type="hidden" name="form-name" value="call-form" />
+        <input type="hidden" name="form-name" value="Call Form" />
         <h5 className={callStyles.terugbel}>Terugbelverzoek</h5>
         <hr className={callStyles.thick} />
         <ul className={callStyles.fillareaone}>
