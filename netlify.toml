@@ -10,7 +10,7 @@
     
     # Content-Security-Policy-Report-Only = "default-src 'self'; style-src data: blob: 'unsafe-inline' *; script-src  'unsafe-eval' 'unsafe-inline'; img-src 'self'; form-action 'none'; frame-ancestors 'none'; report-uri https://gimmix.report-uri.com/r/d/csp/reportOnly"
 
-    Content-Security-Policy = "default-src 'self' https:; font-src 'self' https: data:; img-src 'self' https: data:; object-src 'none'; script-src: 'unsafe-eval'; script-src-elem 'unsafe-inline' 'self' connect.facebook.net pagead2.googlesyndication.com unpkg.com www.googletagmanager.com d33wubrfki0l68.cloudfront.net adservice.google.com adservice.google.nl partner.googleadservices.com tpc.googlesyndication.com www.google-analytics.com www.googletagservices.com gimmix.disqus.com maps.googleapis.com www.google.com; style-src 'self' https: 'unsafe-inline'; report-uri https://gimmix.report-uri.com/r/d/csp/wizard"
+    Content-Security-Policy = "default-src 'self' https:; font-src 'self' https: data:; img-src 'self' https: data:; object-src 'none'; script-src: 'unsafe-eval'; script-src-elem 'unsafe-inline' 'self' connect.facebook.net pagead2.googlesyndication.com unpkg.com www.googletagmanager.com d33wubrfki0l68.cloudfront.net adservice.google.com adservice.google.nl partner.googleadservices.com tpc.googlesyndication.com www.google-analytics.com www.googletagservices.com gimmix.disqus.com maps.googleapis.com www.google.com c.disquscdn.com www.gstatic.com; style-src 'self' https: 'unsafe-inline'; report-uri https://gimmix.report-uri.com/r/d/csp/wizard"
 
     X-Permitted-Cross-Domain-Policies = "none"
     X-Content-Type-Options = "nosniff"

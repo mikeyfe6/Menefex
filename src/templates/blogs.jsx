@@ -226,19 +226,31 @@ const Blog = (props) => {
           </Animated>
           <div className="clr" />
           <div className="specwhitespace" />
-          <GoogleAds slot="3266975443" />
+          <Animated
+            animationIn="fadeIn"
+            animationInDelay={3750}
+            animationInDuration={2000}
+          >
+            <GoogleAds slot="3266975443" />
+          </Animated>
           <div className="specwhitespace" />
-          <div className="disqussion">
-            <DiscussionEmbed
-              shortname="gimmix"
-              config={{
-                url: `https://gimmix.nl/blog/${props.data.contentfulBlogPost.slug}/`,
-                identifier: props.data.contentfulBlogPost.id,
-                title: props.data.contentfulBlogPost.title,
-                language: 'nl',
-              }}
-            />
-          </div>
+          <Animated
+            animationIn="fadeIn"
+            animationInDelay={4500}
+            animationInDuration={2000}
+          >
+            <div className="disqussion">
+              <DiscussionEmbed
+                shortname="gimmix"
+                config={{
+                  url: `https://gimmix.nl/blog/${props.data.contentfulBlogPost.slug}/`,
+                  identifier: props.data.contentfulBlogPost.id,
+                  title: props.data.contentfulBlogPost.title,
+                  language: 'nl',
+                }}
+              />
+            </div>
+          </Animated>
         </div>
       </div>
       <div className="whitespace" />
