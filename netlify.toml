@@ -8,3 +8,24 @@
     Content-Security-Policy-Report-Only = "report-uri https://gimmix.report-uri.com/r/d/csp/reportOnly"
     X-Content-Security-Policy-Report-Only = "report-uri https://gimmix.report-uri.com/r/d/csp/reportOnly"
     X-WebKit-CSP-Report-Only = "report-uri https://gimmix.report-uri.com/r/d/csp/reportOnly"
+    X-Permitted-Cross-Domain-Policies = "none"
+    X-Content-Type-Options = "nosniff"
+    
+    Feature-Policy = "microphone 'none'; geolocation 'none'"
+    
+    Expect-CT = 'enforce, max-age=31536000, report-uri="https://gimmix.report-uri.com/r/d/ct/reportOnly"'
+  
+    Feature-Policy = "camera 'none'; fullscreen 'self'; geolocation *; microphone 'self' https://www.gimmix.nl/*"
+    
+  [Report-To]
+    group = "default"
+    max_age = 31_536_000
+    include_subdomains = true
+
+    [[Report-To.endpoints]]
+      url = "https://gimmix.report-uri.com/a/d/g"
+
+  [NEL]
+    report_to = "default"
+    max_age = 31_536_000
+    include_subdomains = true
