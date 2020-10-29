@@ -17,7 +17,7 @@
 
     Expect-CT = 'enforce, max-age=31536000, report-uri="https://gimmix.report-uri.com/r/d/ct/reportOnly"'
 
-    Permissions-Policy = 'geolocation=(self "https://gimmix.nl/*"), microphone=() fullscreen=(self "https://gimmix.nl/*"), camera=()'
+    Permissions-Policy = 'geolocation=(self "https://gimmix.nl/*"), microphone=(), fullscreen=(self "https://gimmix.nl/*"), camera=()'
 
     Strict-Transport-Security = "max-age=31536000; includeSubdomains; preload"
 
