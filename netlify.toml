@@ -5,17 +5,17 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy-Report-Only = "report-uri https://gimmix.report-uri.com/r/d/csp/reportOnly"
-    X-Content-Security-Policy-Report-Only = "report-uri https://gimmix.report-uri.com/r/d/csp/reportOnly"
-    X-WebKit-CSP-Report-Only = "report-uri https://gimmix.report-uri.com/r/d/csp/reportOnly"
+    Content-Security-Policy = "default-src * data:; script-src https: 'unsafe-inline' 'unsafe-eval'; style-src https: 'unsafe-inline'; report-uri https://gimmix.report-uri.com/r/d/csp/reportOnly"
     X-Permitted-Cross-Domain-Policies = "none"
     X-Content-Type-Options = "nosniff"
 
     Expect-CT = 'enforce, max-age=31536000, report-uri="https://gimmix.report-uri.com/r/d/ct/reportOnly"'
-  
-    Feature-Policy = "camera 'none'; fullscreen 'self'; geolocation *; microphone 'self' https://gimmix.nl/*"
+
+    Permissions-Policy = 'geolocation=(self "https://gimmix.nl/*"), microphone=() fullscreen=(self "https://gimmix.nl/*"), camera=()'
 
     Strict-Transport-Security = "max-age=31536000; includeSubdomains; preload"
+
+    Referrer-Policy = "no-referrer-when-downgrade"
     
   [Report-To]
     group = "default"
