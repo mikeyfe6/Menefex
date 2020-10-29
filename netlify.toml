@@ -5,7 +5,7 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "default-src * data:; script-src https: 'unsafe-inline' 'unsafe-eval'; style-src https: 'unsafe-inline' report-uri https://gimmix.report-uri.com/r/d/csp/reportOnly"
+    Content-Security-Policy = "default-src * data:; script-src https: 'unsafe-inline' 'unsafe-eval'; style-src https: 'unsafe-inline'; report-uri https://gimmix.report-uri.com/r/d/csp/reportOnly"
     X-Permitted-Cross-Domain-Policies = "none"
     X-Content-Type-Options = "nosniff"
 
