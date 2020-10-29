@@ -10,12 +10,10 @@
     X-WebKit-CSP-Report-Only = "report-uri https://gimmix.report-uri.com/r/d/csp/reportOnly"
     X-Permitted-Cross-Domain-Policies = "none"
     X-Content-Type-Options = "nosniff"
-    
-    Feature-Policy = "microphone 'none'; geolocation 'none'"
-    
+
     Expect-CT = 'enforce, max-age=31536000, report-uri="https://gimmix.report-uri.com/r/d/ct/reportOnly"'
   
-    Feature-Policy = "camera 'none'; fullscreen 'self'; geolocation *; microphone 'self' https://www.gimmix.nl/*"
+    Feature-Policy = "camera 'none'; fullscreen 'self'; geolocation *; microphone 'self' https://gimmix.nl/*"
     
   [Report-To]
     group = "default"
