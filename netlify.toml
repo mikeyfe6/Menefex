@@ -22,14 +22,14 @@
 
     Referrer-Policy = "strict-origin-when-cross-origin"
 
-   [[headers]]
-    for = "/*"
-    [headers.values]
-	    cache-control = '''
-	    max-age=0,
-	    no-cache,
-	    no-store,
-	    must-revalidate'''
+  [[headers]]
+  for = "/*"
+  [headers.values]
+    cache-control = '''
+    max-age=0,
+    no-cache,
+    no-store,
+    must-revalidate'''
     
   [Report-To]
     group = "default"
