@@ -21,6 +21,7 @@ module.exports = {
     authorEmail: 'michaelfransman@gimmix.nl',
   },
   plugins: [
+    `gatsby-plugin-netlify`,
     {
       resolve: 'gatsby-plugin-google-tagmanager',
       options: {
@@ -280,6 +281,5 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
-    `gatsby-plugin-netlify`,
   ],
 };
