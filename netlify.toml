@@ -5,7 +5,7 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "default-src 'self'; block-all-mixed-content; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; font-src data: fonts.gstatic.com; img-src 'self' data: i.postimg.cc pagead2.googlesyndication.com www.google-analytics.com c.disquscdn.com feedburner.google.com images.ctfassets.net maps.googleapis.com maps.gstatic.com referrer.disqus.com s3.feedly.com www.facebook.com www.google.nl www.google.com www.googletagmanager.com; style-src cdnjs.cloudflare.com fonts.googleapis.com; style-src-elem 'unsafe-inline' cdnjs.cloudflare.com fonts.googleapis.com; style-src-attr 'unsafe-inline'; script-src 'unsafe-eval' 'unsafe-inline' 'self' d33wubrfki0l68.cloudfront.net pagead2.googlesyndication.com unpkg.com adservice.google.com adservice.google.nl connect.facebook.net gimmix.disqus.com maps.googleapis.com partner.googleadservices.com tpc.googlesyndication.com www.google.com www.googletagmanager.com www.googletagservices.com c.disquscdn.com www.google-analytics.com www.gstatic.com adservice.google.de; script-src-elem 'unsafe-inline' 'self' connect.facebook.net pagead2.googlesyndication.com unpkg.com www.googletagmanager.com d33wubrfki0l68.cloudfront.net adservice.google.com adservice.google.nl partner.googleadservices.com tpc.googlesyndication.com www.google-analytics.com www.googletagservices.com gimmix.disqus.com maps.googleapis.com www.google.com c.disquscdn.com www.gstatic.com adservice.google.com.pk adservice.google.ca cdn.ampproject.org; worker-src 'self'; connect-src 'self' pagead2.googlesyndication.com analytics.google.com stats.g.doubleclick.net www.google-analytics.com www.google.nl www.facebook.com links.services.disqus.com; prefetch-src adservice.google.com cdnjs.cloudflare.com connect.facebook.net pagead2.googlesyndication.com partner.googleadservices.com unpkg.com www.google-analytics.com www.googletagmanager.com www.googletagservices.com adservice.google.nl c.disquscdn.com disqus.com adservice.google.ca; frame-src pagead2.googlesyndication.com disqus.com googleads.g.doubleclick.net www.facebook.com open.spotify.com tpc.googlesyndication.com www.google.com; report-uri https://gimmix.report-uri.com/r/d/csp/wizard; report-to default"
+    Content-Security-Policy = "default-src 'self'; font-src data: fonts.gstatic.com; img-src 'self' data: i.postimg.cc pagead2.googlesyndication.com www.google-analytics.com c.disquscdn.com feedburner.google.com images.ctfassets.net maps.googleapis.com maps.gstatic.com referrer.disqus.com s3.feedly.com www.facebook.com www.google.nl www.google.com www.googletagmanager.com; style-src cdnjs.cloudflare.com fonts.googleapis.com; style-src-elem 'unsafe-inline' cdnjs.cloudflare.com fonts.googleapis.com; style-src-attr 'unsafe-inline'; script-src 'unsafe-eval' 'unsafe-inline' 'self' d33wubrfki0l68.cloudfront.net pagead2.googlesyndication.com unpkg.com adservice.google.com adservice.google.nl connect.facebook.net gimmix.disqus.com maps.googleapis.com partner.googleadservices.com tpc.googlesyndication.com www.google.com www.googletagmanager.com www.googletagservices.com c.disquscdn.com www.google-analytics.com www.gstatic.com adservice.google.de; script-src-elem 'unsafe-inline' 'self' connect.facebook.net pagead2.googlesyndication.com unpkg.com www.googletagmanager.com d33wubrfki0l68.cloudfront.net adservice.google.com adservice.google.nl partner.googleadservices.com tpc.googlesyndication.com www.google-analytics.com www.googletagservices.com gimmix.disqus.com maps.googleapis.com www.google.com c.disquscdn.com www.gstatic.com adservice.google.com.pk adservice.google.ca cdn.ampproject.org; worker-src 'self'; connect-src 'self' pagead2.googlesyndication.com analytics.google.com stats.g.doubleclick.net www.google-analytics.com www.google.nl www.facebook.com links.services.disqus.com; prefetch-src adservice.google.com cdnjs.cloudflare.com connect.facebook.net pagead2.googlesyndication.com partner.googleadservices.com unpkg.com www.google-analytics.com www.googletagmanager.com www.googletagservices.com adservice.google.nl c.disquscdn.com disqus.com adservice.google.ca; frame-src pagead2.googlesyndication.com disqus.com googleads.g.doubleclick.net www.facebook.com open.spotify.com tpc.googlesyndication.com www.google.com; report-uri https://gimmix.report-uri.com/r/d/csp/wizard; report-to default"
 
     Content-Security-Policy-Report-Only = "report-uri https://gimmix.report-uri.com/r/d/csp/reportOnly"
     X-Content-Security-Policy-Report-Only = "report-uri https://gimmix.report-uri.com/r/d/csp/reportOnly"
@@ -21,6 +21,15 @@
     Strict-Transport-Security = "max-age=31536000; includeSubdomains; preload"
 
     Referrer-Policy = "strict-origin-when-cross-origin"
+
+   [[headers]]
+    for = "/*"
+    [headers.values]
+	    cache-control = '''
+	    max-age=0,
+	    no-cache,
+	    no-store,
+	    must-revalidate'''
     
   [Report-To]
     group = "default"
