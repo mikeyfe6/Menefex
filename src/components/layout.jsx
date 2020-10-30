@@ -102,7 +102,6 @@ class Layout extends React.Component {
             cookieName="gimmix-cookie"
             extraCookieOptions={{ domain: '.gimmix.nl' }}
             enableDeclineButton
-            sameSite="strict"
             onAccept={() => {
               const gmxanltcs = false;
               return gmxanltcs;
