@@ -20,7 +20,7 @@
 
     Strict-Transport-Security = "max-age=31536000; includeSubdomains; preload"
 
-    Referrer-Policy = "no-referrer-when-downgrade"
+    Referrer-Policy = "strict-origin-when-cross-origin"
     
   [Report-To]
     group = "default"
