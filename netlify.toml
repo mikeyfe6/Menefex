@@ -22,7 +22,7 @@
 
     # Access-Control-Allow-Origin = "*"
 
-    Cache-Control = "public, max-age=0, must-revalidate"
+    # Cache-Control = "public, max-age=0, must-revalidate"
     # Cache-Control = "no-cache"
 
     # Cross-Origin-Resource-Policy = "cross-origin"
