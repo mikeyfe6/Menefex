@@ -18,6 +18,13 @@
     X-Permitted-Cross-Domain-Policies = "none"
 
     Referrer-Policy = "no-referrer"
+
+    cache-control = '''
+	  max-age=0,
+	  no-cache,
+	  no-store,
+	  must-revalidate'''
+    
     # Referrer Policy = "strict-origin-when-cross-origin"
 
     # Access-Control-Allow-Origin = "*"
