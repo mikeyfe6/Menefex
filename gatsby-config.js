@@ -21,14 +21,7 @@ module.exports = {
     authorEmail: 'michaelfransman@gimmix.nl',
   },
   plugins: [
-    {
-      resolve: `gatsby-plugin-netlify`,
-      options: {
-        mergeSecurityHeaders: true, // boolean to turn off the default security headers
-        mergeLinkHeaders: true, // boolean to turn off the default gatsby js headers
-        mergeCachingHeaders: true, // boolean to turn off the default caching headers
-      },
-    },
+    `gatsby-plugin-netlify`,
     {
       resolve: 'gatsby-plugin-google-tagmanager',
       options: {
