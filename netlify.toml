@@ -11,16 +11,18 @@
     X-Content-Security-Policy-Report-Only = "report-uri https://gimmix.report-uri.com/r/d/csp/reportOnly"
     X-WebKit-CSP-Report-Only = "report-uri https://gimmix.report-uri.com/r/d/csp/reportOnly"
 
-    X-Permitted-Cross-Domain-Policies = "none"
-    X-Content-Type-Options = "nosniff"
-
     Expect-CT = 'enforce, 0, report-uri="https://gimmix.report-uri.com/r/d/ct/reportOnly"'
 
     Permissions-Policy = 'geolocation=(self "https://gimmix.nl/*"), microphone=(), fullscreen=(self "https://gimmix.nl/*"), camera=()'
 
+    X-Permitted-Cross-Domain-Policies = "none"
+    X-Content-Type-Options = "nosniff"
+
     Strict-Transport-Security = "max-age=31536000; includeSubdomains; preload"
 
     Referrer-Policy = "strict-origin-when-cross-origin"
+
+    Set-Cookie = "gimmix-cookie; SameSite=Strict"
 
   [[headers]]
   for = "/*"
