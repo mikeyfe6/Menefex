@@ -11,8 +11,6 @@
     X-Content-Security-Policy-Report-Only = "report-uri https://gimmix.report-uri.com/r/d/csp/reportOnly"
     X-WebKit-CSP-Report-Only = "report-uri https://gimmix.report-uri.com/r/d/csp/reportOnly"
 
-    Access-Control-Allow-Origin = '*'
-
     X-Permitted-Cross-Domain-Policies = "none"
     X-Content-Type-Options = "nosniff"
 
