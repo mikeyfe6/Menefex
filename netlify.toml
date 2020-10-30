@@ -2,56 +2,32 @@
   command = "echo SITE_RECAPTCHA_KEY=$SITE_RECAPTCHA_KEY >> .env.production && gatsby build"
   publish = "public"
 
-[[headers]]
-  for = "/*"
-  [headers.values]
-    Content-Security-Policy = "default-src 'none'; report-uri https://gimmix.report-uri.com/r/d/csp/wizard; report-to default"
+# [[headers]]
+#   for = "/*"
+#   [headers.values]
+#     Content-Security-Policy = "default-src 'none'; report-uri https://gimmix.report-uri.com/r/d/csp/wizard; report-to default"
 
-    Content-Security-Policy-Report-Only = "report-uri https://gimmix.report-uri.com/r/d/csp/reportOnly"
-    X-Content-Security-Policy-Report-Only = "report-uri https://gimmix.report-uri.com/r/d/csp/reportOnly"
-    X-WebKit-CSP-Report-Only = "report-uri https://gimmix.report-uri.com/r/d/csp/reportOnly"
+#     Content-Security-Policy-Report-Only = "report-uri https://gimmix.report-uri.com/r/d/csp/reportOnly"
+#     X-Content-Security-Policy-Report-Only = "report-uri https://gimmix.report-uri.com/r/d/csp/reportOnly"
+#     X-WebKit-CSP-Report-Only = "report-uri https://gimmix.report-uri.com/r/d/csp/reportOnly"
 
-    Expect-CT = 'enforce, 0, report-uri="https://gimmix.report-uri.com/r/d/ct/reportOnly"'
+#     Expect-CT = 'enforce, 0, report-uri="https://gimmix.report-uri.com/r/d/ct/reportOnly"'
 
-    Permissions-Policy = 'geolocation=(self "https://gimmix.nl/*"), microphone=(), fullscreen=(self "https://gimmix.nl/*"), camera=()'
+#     Permissions-Policy = 'geolocation=(self "https://gimmix.nl/*"), microphone=(), fullscreen=(self "https://gimmix.nl/*"), camera=()'
 
-    X-Permitted-Cross-Domain-Policies = "none"
+#     X-Permitted-Cross-Domain-Policies = "none"
 
-    Referrer-Policy = "no-referrer"
-
-    cache-control = '''
-	  max-age=0,
-	  no-cache,
-	  no-store,
-	  must-revalidate'''
+#     Referrer-Policy = "no-referrer"
     
-    # Referrer Policy = "strict-origin-when-cross-origin"
+#   [Report-To]
+#     group = "default"
+#     max_age = 31_536_000
+#     include_subdomains = true
 
-    # Access-Control-Allow-Origin = "*"
+#     [[Report-To.endpoints]]
+#       url = "https://gimmix.report-uri.com/a/d/g"
 
-    # Cache-Control = "public, max-age=0, must-revalidate"
-    # Cache-Control = "no-cache"
-
-    # Cross-Origin-Resource-Policy = "cross-origin"
-
-  # [[headers]]
-  # for = "/*"
-  # [headers.values]
-  #   cache-control = '''
-  #   max-age=0,
-  #   no-cache,
-  #   no-store,
-  #   must-revalidate'''
-    
-  [Report-To]
-    group = "default"
-    max_age = 31_536_000
-    include_subdomains = true
-
-    [[Report-To.endpoints]]
-      url = "https://gimmix.report-uri.com/a/d/g"
-
-  [NEL]
-    report_to = "default"
-    max_age = 31_536_000
-    include_subdomains = true
+#   [NEL]
+#     report_to = "default"
+#     max_age = 31_536_000
+#     include_subdomains = true
