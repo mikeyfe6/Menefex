@@ -4,11 +4,11 @@
 
 [[headers]]
   for = "/*"
-  [headers.values];
-    Content-Security-Policy = "default-src 'self'; script-src 'report-sample' 'self' 'unsafe-eval' 'unsafe-inline' https://adservice.google.com/ https://adservice.google.nl/ https://c.disquscdn.com/ https://connect.facebook.net/ https://d33wubrfki0l68.cloudfront.net/bundles/ https://gimmix.disqus.com/ https://links.services.disqus.com/ https://maps.googleapis.com/ https://pagead2.googlesyndication.com/ https://partner.googleadservices.com/ https://tpc.googlesyndication.com/ https://unpkg.com/ https://www.google-analytics.com/ https://www.google.com/ https://www.googletagmanager.com/ https://www.googletagservices.com/ https://www.gstatic.com/; style-src 'report-sample' 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; object-src 'none'; base-uri 'self'; connect-src 'self' https://analytics.google.com https://links.services.disqus.com https://pagead2.googlesyndication.com https://stats.g.doubleclick.net https://www.google-analytics.com https://www.google.nl; font-src 'self' data: https://fonts.gstatic.com; frame-src 'self' https://disqus.com https://googleads.g.doubleclick.net https://open.spotify.com https://pagead2.googlesyndication.com https://tpc.googlesyndication.com https://web.facebook.com https://www.facebook.com https://www.google.com; img-src 'self' data: https://feedburner.google.com https://i.postimg.cc https://images.ctfassets.net https://maps.googleapis.com https://maps.gstatic.com https://pagead2.googlesyndication.com https://s3.feedly.com https://www.facebook.com https://www.google-analytics.com https://www.google.com https://www.google.nl; manifest-src 'self'; media-src 'self'; prefetch-src 'self' https://cdnjs.cloudflare.com https://fonts.googleapis.com https://maps.googleapis.com https://unpkg.com; report-uri https://5f9cae8b65d1a16209ba9064.endpoint.csper.io/; worker-src 'self';"
+  [headers.values]
+    Content-Security-Policy = "default-src 'self'; script-src 'report-sample' 'self' 'unsafe-eval' 'unsafe-inline' adservice.google.com/ adservice.google.nl/ c.disquscdn.com/ connect.facebook.net/ d33wubrfki0l68.cloudfront.net/ gimmix.disqus.com/ links.services.disqus.com/ maps.googleapis.com/ pagead2.googlesyndication.com/ partner.googleadservices.com/ tpc.googlesyndication.com/ unpkg.com/ www.google-analytics.com/ www.google.com/ www.googletagmanager.com/ www.googletagservices.com/ www.gstatic.com/; style-src 'report-sample' 'self' 'unsafe-inline' cdnjs.cloudflare.com fonts.googleapis.com; object-src 'none'; base-uri 'self'; connect-src 'self' analytics.google.com links.services.disqus.com pagead2.googlesyndication.com stats.g.doubleclick.net www.google-analytics.com www.google.nl; font-src 'self' data: fonts.gstatic.com; frame-src 'self' disqus.com googleads.g.doubleclick.net open.spotify.com pagead2.googlesyndication.com tpc.googlesyndication.com web.facebook.com www.facebook.com www.google.com; img-src 'self' data: feedburner.google.com i.postimg.cc images.ctfassets.net maps.googleapis.com maps.gstatic.com pagead2.googlesyndication.com s3.feedly.com www.facebook.com www.google-analytics.com www.google.com www.google.nl; manifest-src 'self'; media-src 'self'; prefetch-src 'self' cdnjs.cloudflare.com fonts.googleapis.com maps.googleapis.com unpkg.com; report-uri https://5f9cae8b65d1a16209ba9064.endpoint.csper.io/; worker-src 'self';"
     
 
-    # report-uri https://gimmix.report-uri.com/r/d/csp/wizard; report-to default"
+#   report-uri https://gimmix.report-uri.com/r/d/csp/wizard report-to default"
 
 #     Content-Security-Policy-Report-Only = "report-uri https://gimmix.report-uri.com/r/d/csp/reportOnly"
 #     X-Content-Security-Policy-Report-Only = "report-uri https://gimmix.report-uri.com/r/d/csp/reportOnly"
@@ -22,15 +22,15 @@
 
 #     Referrer-Policy = "no-referrer"
     
-#   [Report-To]
-#     group = "default"
-#     max_age = 31_536_000
-#     include_subdomains = true
+  [Report-To]
+    group = "default"
+    max_age = 31_536_000
+    include_subdomains = true
 
-#     [[Report-To.endpoints]]
-#       url = "https://gimmix.report-uri.com/a/d/g"
+    [[Report-To.endpoints]]
+      url = "https://gimmix.report-uri.com/a/d/g"
 
-#   [NEL]
-#     report_to = "default"
-#     max_age = 31_536_000
-#     include_subdomains = true
+  [NEL]
+    report_to = "default"
+    max_age = 31_536_000
+    include_subdomains = true
