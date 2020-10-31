@@ -2,18 +2,18 @@
   command = "echo SITE_RECAPTCHA_KEY=$SITE_RECAPTCHA_KEY >> .env.production && gatsby build"
   publish = "public"
 
-# [[headers]]
-#   for = "/*"
-#   [headers.values]
+[[headers]]
+  for = "/*"
+  [headers.values]
 #     Content-Security-Policy = "default-src 'none'; report-uri https://gimmix.report-uri.com/r/d/csp/wizard; report-to default"
 
 #     Content-Security-Policy-Report-Only = "report-uri https://gimmix.report-uri.com/r/d/csp/reportOnly"
 #     X-Content-Security-Policy-Report-Only = "report-uri https://gimmix.report-uri.com/r/d/csp/reportOnly"
 #     X-WebKit-CSP-Report-Only = "report-uri https://gimmix.report-uri.com/r/d/csp/reportOnly"
 
-#     Expect-CT = 'enforce, 0, report-uri="https://gimmix.report-uri.com/r/d/ct/reportOnly"'
+    Expect-CT = 'enforce, 0, report-uri="https://gimmix.report-uri.com/r/d/ct/reportOnly"'
 
-#     Permissions-Policy = 'geolocation=(self "https://gimmix.nl/*"), microphone=(), fullscreen=(self "https://gimmix.nl/*"), camera=()'
+    Permissions-Policy = 'geolocation=(self "https://gimmix.nl/*"), microphone=(), fullscreen=(self "https://gimmix.nl/*"), camera=()'
 
 #     X-Permitted-Cross-Domain-Policies = "none"
 
