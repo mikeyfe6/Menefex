@@ -188,7 +188,7 @@ const Form = () => {
                 </li>
               </ul>
               <ReCAPTCHA
-                sitekey={process.env.SITE_RECAPTCHA_KEY}
+                sitekey={process.env.GATSBY_SITE_RECAPTCHA_KEY}
                 onChange={handleChangeReCAPTCHA}
                 className={formStyles.recaptcha}
               />

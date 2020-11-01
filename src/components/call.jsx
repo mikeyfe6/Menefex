@@ -150,7 +150,7 @@ const Call = () => {
         </ul>
         <div className="clr" />
         <ReCAPTCHA
-          sitekey={process.env.SITE_RECAPTCHA_KEY}
+          sitekey={process.env.GATSBY_SITE_RECAPTCHA_KEY}
           className={callStyles.recaptcha}
           onChange={handleChangeReCAPTCHA}
         />

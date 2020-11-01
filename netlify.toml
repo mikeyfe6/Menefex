@@ -1,5 +1,5 @@
 [build]
-  command = "echo SITE_RECAPTCHA_KEY=$SITE_RECAPTCHA_KEY >> .env.production && gatsby build"
+  command = "echo SITE_RECAPTCHA_KEY=$GATSBY_SITE_RECAPTCHA_KEY >> .env && gatsby build"
   publish = "public"
 
 [[headers]]
