@@ -277,6 +277,9 @@ module.exports = {
         theme_color: `#FFCC00`,
         display: `standalone`,
         icon: 'src/img/Gimmix-applogo.png',
+        icon_options: {
+          purpose: `any maskable`,
+        },
         crossOrigin: `use-credentials`,
       },
     },
