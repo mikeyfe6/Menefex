@@ -26,7 +26,7 @@ class SimpleMap extends Component {
         <div style={{ height: '200px', width: '100%' }}>
           <GoogleMapReact
             bootstrapURLKeys={{
-              key: process.env.GATSBY_GOOGLE_MAPS_KEY,
+              key: process.env.GOOGLE_MAPS_KEY,
               language: 'nl',
               region: 'NL',
             }}
