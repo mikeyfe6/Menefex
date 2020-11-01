@@ -50,7 +50,7 @@
     "gatsby-source-filesystem": "^2.3.37",
     "gatsby-transformer-remark": "^2.8.47",
     "gatsby-transformer-sharp": "^2.5.20",
-    "google-map-react": "^2.1.8",
+    "google-map-react": "^2.1.9",
     "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",
     "react": "^16.14.0",
