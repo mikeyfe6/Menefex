@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { navigate } from 'gatsby';
 

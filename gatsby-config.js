@@ -193,10 +193,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sharp`,
       options: {
-        useMozJpeg: false,
+        base64Width: 20,
+        forceBase64Format: `webp`, // valid formats: png,jpg,webp
+        useMozJpeg: process.env.GATSBY_JPEG_ENCODER === `MOZJPEG`,
         stripMetadata: true,
-        defaultQuality: 75,
-        toFormat: `WEBP`,
+        defaultQuality: 50,
+        failOnError: true,
       },
     },
     `gatsby-transformer-sharp`,
