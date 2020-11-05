@@ -254,6 +254,11 @@ const Blog = (props) => {
         </div>
       </div>
       <div className="whitespace" />
+      <script
+        data-ad-client="ca-pub-3158048130288702"
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+        async
+      />
     </Layout>
   );
 };

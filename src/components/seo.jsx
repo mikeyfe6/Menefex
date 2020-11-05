@@ -108,15 +108,6 @@ const SEO = ({
               <meta property="twitter:creator" content={twitterUsername} />
             )}
 
-            {/* Links Rel: Fonts */}
-
-            {/* Google Adsense */}
-
-            <script
-              data-ad-client="ca-pub-3158048130288702"
-              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-            />
-
             {/* Scripts: Extentions & Plugins */}
 
             <script src="https://unpkg.com/swiper/swiper-bundle.min.js" />
