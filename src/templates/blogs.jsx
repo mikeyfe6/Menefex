@@ -1,5 +1,5 @@
 /* eslint-disable react/style-prop-object */
-import React from 'react';
+import React, { useEffect } from 'react';
 import { graphql, Link } from 'gatsby';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import { DiscussionEmbed } from 'disqus-react';
@@ -80,6 +80,22 @@ const Blog = (props) => {
     'datePublished': props.data.contentfulBlogPost.publishedDate,
     'dateModified': props.data.contentfulBlogPost.updatedAt,
   };
+
+  useEffect(() => {
+    const script = document.createElement('script');
+
+    script.src =
+      'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';
+    script.async = true;
+
+    document.body.appendChild(script);
+    console.log('GXWMB: Google Adsense is geladen!');
+
+    return () => {
+      document.body.removeChild(script);
+      console.log('GXWMB: Google Adsense is gestopt!');
+    };
+  }, []);
 
   return (
     <Layout>
@@ -254,11 +270,6 @@ const Blog = (props) => {
         </div>
       </div>
       <div className="whitespace" />
-      <script
-        data-ad-client="ca-pub-3158048130288702"
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-        async
-      />
     </Layout>
   );
 };
