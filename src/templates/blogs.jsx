@@ -33,8 +33,16 @@ export const query = graphql`
           url
         }
       }
-      publishedDate(formatString: "dddd D MMMM YYYY, HH:mm", locale: "nl")
-      updatedAt(formatString: "dddd D MMMM YYYY, HH:mm", locale: "nl")
+      publishedPost: publishedDate(
+        formatString: "dddd D MMMM YYYY, HH:mm"
+        locale: "nl"
+      )
+      updatedPost: updatedAt(
+        formatString: "dddd D MMMM YYYY, HH:mm"
+        locale: "nl"
+      )
+      publishedSchema: publishedDate
+      updatedSchema: updatedAt
       body {
         json
       }
@@ -77,8 +85,8 @@ const Blog = (props) => {
         'url': 'https://i.postimg.cc/rsf0PJv0/Gx-FAVICON-X.png',
       },
     },
-    'datePublished': props.data.contentfulBlogPost.publishedDate,
-    'dateModified': props.data.contentfulBlogPost.updatedAt,
+    'datePublished': props.data.contentfulBlogPost.publishedSchema,
+    'dateModified': props.data.contentfulBlogPost.updatedSchema,
   };
 
   useEffect(() => {
@@ -132,7 +140,7 @@ const Blog = (props) => {
                 {props.data.contentfulBlogPost.title}
               </h1>
               <p className="post-date">
-                Gepost op {props.data.contentfulBlogPost.publishedDate}
+                Gepost op {props.data.contentfulBlogPost.publishedPost}
               </p>
             </div>
           </Animated>
@@ -178,7 +186,7 @@ const Blog = (props) => {
                   <span className="post-authorspec">
                     Laatst bijgewerkt
                   </span>{' '}
-                  {props.data.contentfulBlogPost.updatedAt}
+                  {props.data.contentfulBlogPost.updatedPost}
                 </div>
                 <img
                   className="author-mini"
