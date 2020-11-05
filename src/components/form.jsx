@@ -239,8 +239,11 @@ const Form = () => {
                   <br />
                   <br />
                   <span className={formStyles.covid}>
-                    * COVID-19 heeft <u>geen invloed</u> gehad op onze
-                    werkzaamheden
+                    <b>&#8251;</b> COVID-19 heeft{' '}
+                    <b>
+                      <u>geen invloed</u>
+                    </b>{' '}
+                    gehad op onze werkzaamheden
                   </span>
                 </span>
               </p>
