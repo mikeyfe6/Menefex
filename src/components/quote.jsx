@@ -12,7 +12,7 @@ const Quote = () => {
     <div className={quoteDesign.quoteContainer}>
       <div className={quoteDesign.quoteWrapper}>
         <div className="row">
-          <section id={quoteDesign.services} className="col-xl">
+          <section className={`${quoteDesign.services} col-xl`}>
             <FontAwesomeIcon icon="globe" size="2x" color="#FFCC00" />
             <h3 className={quoteDesign.quoteHead}>Websites</h3>
             <hr className={quoteDesign.thick} />
@@ -39,7 +39,7 @@ const Quote = () => {
             <hr className={quoteDesign.endline} />
             <br />
           </section>
-          <section id={quoteDesign.services} className="col-xl">
+          <section className={`${quoteDesign.services} col-xl`}>
             <FontAwesomeIcon icon="shopping-cart" size="2x" color="#FFCC00" />
             <h3 className={quoteDesign.quoteHead}>Webshops</h3>
             <hr className={quoteDesign.thick} />
@@ -66,7 +66,7 @@ const Quote = () => {
             <hr className={quoteDesign.endline} />
             <br />
           </section>
-          <section id={quoteDesign.services} className="col-xl">
+          <section className={`${quoteDesign.services} col-xl`}>
             <FontAwesomeIcon icon="mobile" size="2x" color="#FFCC00" />
             <h3 className={quoteDesign.quoteHead}>Webapplicaties</h3>
             <hr className={quoteDesign.thick} />
@@ -94,7 +94,7 @@ const Quote = () => {
             <hr className={quoteDesign.endline} />
             <br />
           </section>
-          <section id={quoteDesign.services} className="col-xl">
+          <section className={`${quoteDesign.services} col-xl`}>
             <FontAwesomeIcon
               icon={['fab', 'searchengin']}
               size="2x"

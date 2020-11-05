@@ -197,7 +197,6 @@ const Form = () => {
                 name="submit"
                 id="contact-submit"
                 className={formStyles.send}
-                // action="../pages/success.jsx"
               >
                 Versturen
               </button>

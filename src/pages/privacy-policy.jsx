@@ -48,21 +48,8 @@ const PrivacyPolicy = () => {
             Met het voortzetten van het bezoek van deze website accepteert u de
             volgende gebruikersvoorwaarden. U accepteert het gebruik van cookies
             en andere tracking systems. Indien u dit gebruik wenst te weigeren
-            dient u{' '}
-            {/*  op <button
-              type="button"
-              className={privacyDesign.consbtn}
-              onClick={Cookies.remove('gatsby-gdpr-google-analytics', {
-                path: '',
-                domain: '.gimmix.nl',
-              })}
-            >
-              verwijder alle cookies
-            </button>
-            {' '}
-            te klikken. */}{' '}
-            <b>uw cache te wissen of uit te zetten</b>. Dit kan ook via een
-            Google Browser Add-on:{' '}
+            dient u <b>uw cache te wissen of uit te zetten</b>. Dit kan ook via
+            een officiële Google Browser Add-on:{' '}
             <a
               href="https://tools.google.com/dlpage/gaoptout"
               rel="noopener noreferrer"

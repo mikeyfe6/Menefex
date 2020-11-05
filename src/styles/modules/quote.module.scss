@@ -17,7 +17,7 @@
 .quote-wrapper {
   padding: 1.75%;
 
-  #services {
+  section.services {
     width: 100%;
     margin: 2%;
     padding-right: 0.75% !important;
@@ -93,12 +93,12 @@
 @media (max-width: 768px) {
   .quote-wrapper {
     padding: 5%;
+  }
 
-    #services {
-      width: 100%;
-      margin: 2%;
-      padding-right: 5% !important;
-    }
+  section.services {
+    width: 100%;
+    margin: 2%;
+    padding-right: 5% !important;
   }
 
   .quote-block {

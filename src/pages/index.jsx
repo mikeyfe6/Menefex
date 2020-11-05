@@ -98,7 +98,7 @@ const IndexPage = () => {
       />
       <Hero />
 
-      <ScrollAnimation animateIn="zoomIn" delay={50} duration={3}>
+      <ScrollAnimation animateIn="zoomIn" delay={50} duration={3} animateOnce>
         <div className="specvertical" />
       </ScrollAnimation>
 
@@ -111,19 +111,25 @@ const IndexPage = () => {
         delay={500}
         offset={100}
         duration={2}
+        animateOnce
       >
         <h3 className="hometitles">Biografie</h3>
       </ScrollAnimation>
 
       <br />
 
-      <ScrollAnimation animateIn="fadeInLeft" delay={1250} duration={2}>
+      <ScrollAnimation
+        animateIn="fadeInLeft"
+        delay={1250}
+        duration={2}
+        animateOnce
+      >
         <Smallbio />
       </ScrollAnimation>
 
       <div className="extrawhitespace" />
 
-      <ScrollAnimation animateIn="zoomIn" delay={50} duration={3}>
+      <ScrollAnimation animateIn="zoomIn" delay={50} duration={3} animateOnce>
         <div className="vertical" />
       </ScrollAnimation>
 
@@ -134,19 +140,25 @@ const IndexPage = () => {
         delay={500}
         offset={100}
         duration={2}
+        animateOnce
       >
         <h3 className="hometitles">Services & Diensten</h3>
       </ScrollAnimation>
 
       <br />
 
-      <ScrollAnimation animateIn="fadeInRight" delay={1250} duration={2}>
+      <ScrollAnimation
+        animateIn="fadeInRight"
+        delay={1250}
+        duration={2}
+        animateOnce
+      >
         <Quote />
       </ScrollAnimation>
 
       <div className="extrawhitespace" />
 
-      <ScrollAnimation animateIn="zoomIn" delay={50} duration={3}>
+      <ScrollAnimation animateIn="zoomIn" delay={50} duration={3} animateOnce>
         <div className="vertical" />
       </ScrollAnimation>
 
@@ -157,13 +169,19 @@ const IndexPage = () => {
         delay={500}
         offset={100}
         duration={2}
+        animateOnce
       >
         <h3 className="hometitles"> Recente Projecten</h3>
       </ScrollAnimation>
 
       <br />
 
-      <ScrollAnimation animateIn="fadeInUp" delay={1250} duration={2}>
+      <ScrollAnimation
+        animateIn="fadeInUp"
+        delay={1250}
+        duration={2}
+        animateOnce
+      >
         <Projects />
       </ScrollAnimation>
 
