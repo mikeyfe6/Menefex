@@ -16,6 +16,7 @@ const Projects = () => {
     autoplay: true,
     autoplaySpeed: 10000,
     adaptiveHeight: true,
+    arrows: false,
   };
   return (
     <div className="slider-container">

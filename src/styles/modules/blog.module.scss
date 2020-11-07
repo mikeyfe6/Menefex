@@ -2,7 +2,6 @@
 @import '../customs/colors';
 @import '../customs/fonts';
 
-
 .posts {
   list-style-type: none;
   width: 95%;
@@ -17,11 +16,10 @@
     background: linear-gradient(to right, $fourth-color, #f2f2f2);
     color: $textbase-color;
     display: block;
-    padding: 1rem;
+    padding: 1rem 1rem 1.5rem 1rem;
     text-decoration: none;
     border: 2px solid $fourth-color;
     border-radius: 10px;
-    overflow: auto;
     @include smoothtrans;
     @include shadow;
 
