@@ -44,8 +44,13 @@ const workPage = () => {
         <br />
 
         <div className={workDesign.projects}>
-          <ScrollAnimation animateIn="fadeIn" delay={750} duration={2}>
-            <div className="item">
+          <ScrollAnimation
+            animateIn="fadeIn"
+            delay={750}
+            duration={2}
+            animateOnce
+          >
+            <div className="item" id="#EP">
               <a
                 href="https://eternitydrum.com"
                 rel="noopener noreferrer"
@@ -119,8 +124,13 @@ const workPage = () => {
           // * EXTRA PROJECTEN BIJVOEGEN HIERONDER!
           */}
 
-          <ScrollAnimation animateIn="fadeIn" delay={750} duration={2}>
-            <div className="item">
+          <ScrollAnimation
+            animateIn="fadeIn"
+            delay={750}
+            duration={2}
+            animateOnce
+          >
+            <div className="item" id="#BH">
               <a
                 href="https://blackharmony.nl"
                 rel="noopener noreferrer"

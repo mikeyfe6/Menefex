@@ -1,35 +1,36 @@
 import React from 'react';
-import SwiperCore, { Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
-// import { Link } from 'gatsby';
+import { Link } from 'gatsby';
+
+import Slider from 'react-slick';
+
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 import '../styles/swipering.scss';
-import 'swiper/swiper.scss';
-import 'swiper/components/pagination/pagination.scss';
-import 'swiper/components/scrollbar/scrollbar.scss';
-import 'swiper/components/autoplay';
-
-SwiperCore.use([Pagination, Scrollbar, A11y, Autoplay]);
 
 const Projects = () => {
+  const settings = {
+    dots: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 10000,
+    adaptiveHeight: true,
+  };
   return (
-    <Swiper
-      spaceBetween={3}
-      slidesPerView={1}
-      autoplay={{
-        delay: '7000',
-        disableOnInteraction: true,
-      }}
-      pagination={{ clickable: true }}
-      // scrollbar={{ draggable: true }}
-      // onSwiper={(swiper) => console.log(swiper)}
-      // onSlideChange={() => console.log('slide change')}
-    >
-      <SwiperSlide>
-        <div className="swiper-slide slide1">
-          <div className="slider-content">
+    <div className="slider-container">
+      <Slider {...settings}>
+        <div>
+          <img
+            className="projects-img"
+            src="https://i.postimg.cc/pXj0DScY/Eternitydrum-screen.png"
+            alt="Stichting Eternity Percussion"
+          />
+          <div className="slider-info">
             <div className="beschrijving">
-              <h5>Eternity Drum</h5>
+              <Link to="/work/#EP">
+                <h5>Eternity Drum</h5>
+              </Link>
 
               <a
                 href="https://eternitydrum.com"
@@ -53,12 +54,19 @@ const Projects = () => {
             </div>
           </div>
         </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className="swiper-slide slide2">
-          <div className="slider-content">
+        <div>
+          <img
+            className="projects-img"
+            src="https://i.postimg.cc/fbzBQRzB/Blackharmony-screen.png"
+            alt="Zanggroep Black Harmony"
+          />
+
+          <div className="slider-info">
             <div className="beschrijving">
-              <h5>Black Harmony</h5>
+              <Link to="/work/#BH">
+                {' '}
+                <h5>Black Harmony</h5>{' '}
+              </Link>
 
               <a
                 href="https://blackharmony.nl/"
@@ -83,23 +91,9 @@ const Projects = () => {
             </div>
           </div>
         </div>
-      </SwiperSlide>
-    </Swiper>
+      </Slider>
+    </div>
   );
 };
 
 export default Projects;
-
-// * EXTRA PROJECTEN TOEVOEGEN
-/* <div className="swiper-slide slide2" data-hash="slide2">
-        Slide 2
-      </div>
-      <div className="swiper-slide slide3" data-hash="slide3">
-        Slide 3
-      </div>
-      <div className="swiper-slide slide4" data-hash="slide4">
-        Slide 4
-      </div>
-      <div className="swiper-slide slide5" data-hash="slide5">
-        Slide 5
-</div> */

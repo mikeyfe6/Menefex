@@ -108,7 +108,7 @@ const IndexPage = () => {
 
       <ScrollAnimation
         animateIn="fadeInRight"
-        delay={500}
+        delay={400}
         offset={100}
         duration={2}
         animateOnce
@@ -120,7 +120,7 @@ const IndexPage = () => {
 
       <ScrollAnimation
         animateIn="fadeInLeft"
-        delay={1250}
+        delay={1150}
         duration={2}
         animateOnce
       >
@@ -137,7 +137,7 @@ const IndexPage = () => {
 
       <ScrollAnimation
         animateIn="fadeInLeft"
-        delay={500}
+        delay={400}
         offset={100}
         duration={2}
         animateOnce
@@ -149,7 +149,7 @@ const IndexPage = () => {
 
       <ScrollAnimation
         animateIn="fadeInRight"
-        delay={1250}
+        delay={1150}
         duration={2}
         animateOnce
       >
@@ -166,7 +166,7 @@ const IndexPage = () => {
 
       <ScrollAnimation
         animateIn="fadeInDown"
-        delay={500}
+        delay={400}
         offset={100}
         duration={2}
         animateOnce
@@ -178,7 +178,7 @@ const IndexPage = () => {
 
       <ScrollAnimation
         animateIn="fadeInUp"
-        delay={1250}
+        delay={1150}
         duration={2}
         animateOnce
       >

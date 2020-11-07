@@ -108,10 +108,6 @@ const SEO = ({
               <meta property="twitter:creator" content={twitterUsername} />
             )}
 
-            {/* Scripts: Extentions & Plugins */}
-
-            <script src="https://unpkg.com/swiper/swiper-bundle.min.js" />
-
             {/* Links Rel: Extentions & Plugins */}
 
             <link
