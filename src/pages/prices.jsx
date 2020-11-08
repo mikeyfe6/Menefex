@@ -54,13 +54,13 @@ const Prices = () => {
                 <h4 className={pricesDesign.pricehead}>STARTER PLAN</h4>
                 <p className={pricesDesign.pricecap}>
                   <span className={pricesDesign.pricedisc}>€695,-</span> &nbsp;
-                  €345,-&nbsp;
+                  €521,-&nbsp;
                   <sup>
                     <span className={pricesDesign.pricebtw}>(excl. btw)</span>
                   </sup>{' '}
                 </p>
                 <p className={pricesDesign.priceaction}>
-                  ACTIE: *(50% korting)
+                  ACTIE: *(25% korting)
                 </p>
                 <br />
                 <ul className={pricesDesign.pricelist}>
@@ -107,13 +107,13 @@ const Prices = () => {
                 <h4 className={pricesDesign.pricehead}>ESTABLISHED PLAN</h4>
                 <p className={pricesDesign.pricecap}>
                   <span className={pricesDesign.pricedisc}>€1125,-</span> &nbsp;
-                  €555,-&nbsp;
+                  €844,-&nbsp;
                   <sup>
                     <span className={pricesDesign.pricebtw}>(excl. btw)</span>
                   </sup>{' '}
                 </p>
                 <p className={pricesDesign.priceaction}>
-                  ACTIE: *(50% korting)
+                  ACTIE: *(25% korting)
                 </p>
                 <br />
                 <ul className={pricesDesign.pricelist}>
@@ -161,13 +161,13 @@ const Prices = () => {
                 <h4 className={pricesDesign.pricehead}>BUSINESS PLAN</h4>
                 <p className={pricesDesign.pricecap}>
                   <span className={pricesDesign.pricedisc}>€1675,-</span> &nbsp;
-                  €835,-&nbsp;
+                  €1256,-&nbsp;
                   <sup>
                     <span className={pricesDesign.pricebtw}>(excl. btw)</span>
                   </sup>{' '}
                 </p>
                 <p className={pricesDesign.priceaction}>
-                  ACTIE: *(50% korting)
+                  ACTIE: *(25% korting)
                 </p>
                 <br />
                 <ul className={pricesDesign.pricelist}>
