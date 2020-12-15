@@ -68,9 +68,9 @@ class Layout extends React.Component {
   }
 
   drawerToggleClickHandler = () => {
-    this.setState((prevState) => {
-      return { sideDrawerOpen: !prevState.sideDrawerOpen };
-    });
+    this.setState((prevState) => ({
+      sideDrawerOpen: !prevState.sideDrawerOpen,
+    }));
   };
 
   backdropClickHandler = () => {

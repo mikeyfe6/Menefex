@@ -7,13 +7,12 @@ import callStyles from '../styles/modules/call.module.scss';
 // TODO: ENV goed instellen!
 
 const Call = () => {
-  const encode = (data) => {
-    return Object.keys(data)
+  const encode = (data) =>
+    Object.keys(data)
       .map(
         (key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`,
       )
       .join('&');
-  };
 
   const [inputs, setInputs] = React.useState({
     name: '',

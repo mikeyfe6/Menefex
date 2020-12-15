@@ -59,31 +59,29 @@ const BlogPage = () => {
           animationInDuration={2000}
         >
           <ol className={blogDesign.posts}>
-            {data.allContentfulBlogPost.edges.map((edge) => {
-              return (
-                <li className={blogDesign.post} key={edge.node.id}>
-                  <Link to={`/blog/${edge.node.slug}/`}>
-                    <img
-                      src={edge.node.image.file.url}
-                      alt={edge.node.image.title}
-                      className={blogDesign.blogimg}
-                    />
-                    <h4 className={blogDesign.posthead}>{edge.node.title}</h4>
+            {data.allContentfulBlogPost.edges.map((edge) => (
+              <li className={blogDesign.post} key={edge.node.id}>
+                <Link to={`/blog/${edge.node.slug}/`}>
+                  <img
+                    src={edge.node.image.file.url}
+                    alt={edge.node.image.title}
+                    className={blogDesign.blogimg}
+                  />
+                  <h4 className={blogDesign.posthead}>{edge.node.title}</h4>
 
-                    <span className={blogDesign.contsubtext}>
-                      {' '}
-                      {edge.node.subtitle}
-                    </span>
+                  <span className={blogDesign.contsubtext}>
+                    {' '}
+                    {edge.node.subtitle}
+                  </span>
 
-                    <p className={blogDesign.bloggepost}>
-                      {' '}
-                      Gepost: <strong>{edge.node.publishedDate}</strong> ⌁
-                      Auteur: <strong>{edge.node.author}</strong>{' '}
-                    </p>
-                  </Link>
-                </li>
-              );
-            })}
+                  <p className={blogDesign.bloggepost}>
+                    {' '}
+                    Gepost: <strong>{edge.node.publishedDate}</strong> ⌁ Auteur:{' '}
+                    <strong>{edge.node.author}</strong>{' '}
+                  </p>
+                </Link>
+              </li>
+            ))}
           </ol>
         </Animated>
         <div className="whitespace" />

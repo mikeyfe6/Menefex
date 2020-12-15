@@ -116,29 +116,26 @@ module.exports = {
 
         feeds: [
           {
-            serialize: ({ query: { site, allContentfulBlogPost } }) => {
-              return allContentfulBlogPost.edges.map((edge) => {
-                return {
-                  title: edge.node.title,
-                  author: site.siteMetadata.authorEmail,
-                  description: edge.node.subtitle,
-                  date: edge.node.updatedAt,
-                  url: `${site.siteMetadata.siteUrl}/blog/${edge.node.slug}`,
-                  guid: edge.node.updatedAt,
-                  enclosure: {
-                    url: `https:${edge.node.image.file.url}`,
+            serialize: ({ query: { site, allContentfulBlogPost } }) =>
+              allContentfulBlogPost.edges.map((edge) => ({
+                title: edge.node.title,
+                author: site.siteMetadata.authorEmail,
+                description: edge.node.subtitle,
+                date: edge.node.updatedAt,
+                url: `${site.siteMetadata.siteUrl}/blog/${edge.node.slug}`,
+                guid: edge.node.updatedAt,
+                enclosure: {
+                  url: `https:${edge.node.image.file.url}`,
+                },
+                custom_elements: [
+                  {
+                    'webfeeds:featuredImage': `https:${edge.node.image.file.url}`,
                   },
-                  custom_elements: [
-                    {
-                      'webfeeds:featuredImage': `https:${edge.node.image.file.url}`,
-                    },
-                    {
-                      'content:encoded': edge.node.body.rssHtml,
-                    },
-                  ],
-                };
-              });
-            },
+                  {
+                    'content:encoded': edge.node.body.rssHtml,
+                  },
+                ],
+              })),
 
             query: `
               {
@@ -265,14 +262,12 @@ module.exports = {
           }
       }`,
         serialize: ({ site, allSitePage }) =>
-          allSitePage.edges.map((edge) => {
-            return {
-              url: `${site.siteMetadata.siteUrl}${edge.node.path}`,
-              changefreq: `daily`,
-              priority: 0.7,
-              lastmodISO: edge.node.context.updatedAt,
-            };
-          }),
+          allSitePage.edges.map((edge) => ({
+            url: `${site.siteMetadata.siteUrl}${edge.node.path}`,
+            changefreq: `daily`,
+            priority: 0.7,
+            lastmodISO: edge.node.context.updatedAt,
+          })),
       },
     },
     `gatsby-plugin-catch-links`,

@@ -13,13 +13,12 @@ import Maps from './gmaps/maps';
 const Form = () => {
   //   const today = new Date()
 
-  const encode = (data) => {
-    return Object.keys(data)
+  const encode = (data) =>
+    Object.keys(data)
       .map(
         (key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`,
       )
       .join('&');
-  };
 
   const [inputs, setInputs] = React.useState({
     name: '',
