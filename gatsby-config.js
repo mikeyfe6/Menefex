@@ -187,7 +187,12 @@ module.exports = {
         host: process.env.CONTENTFUL_HOST,
       },
     },
-    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        implementation: require('sass'),
+      },
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
