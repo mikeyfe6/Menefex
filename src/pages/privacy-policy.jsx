@@ -110,8 +110,8 @@ const PrivacyPolicy = () => (
           <li>Website (hierna ook “De website”): gimmix.nl</li>
           <li>
             Verantwoordelijke voor de verwerking van persoonsgegevens (Hierna
-            ook: “De beheerder”): Gimmix, gevestigd te Karspeldreef
-            1450-A4, 1104SE Amsterdam, kvk-nummer: 76045315.
+            ook: “De beheerder”): Gimmix, gevestigd te Kelbergen
+            192, 1104LJ Amsterdam, kvk-nummer: 76045315.
           </li>
         </ol>
         <br />

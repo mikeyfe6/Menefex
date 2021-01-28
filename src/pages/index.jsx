@@ -59,9 +59,9 @@ const IndexPage = () => {
     'priceRange': '$$',
     'address': {
       '@type': 'PostalAddress',
-      'streetAddress': 'Karspeldreef 1450-A4',
+      'streetAddress': 'Kelbergen 192',
       'addressLocality': 'Amsterdam',
-      'postalCode': '1104SE',
+      'postalCode': '1104LJ',
       'addressCountry': 'NL',
     },
     'geo': {
