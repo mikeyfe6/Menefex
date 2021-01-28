@@ -66,8 +66,8 @@ const IndexPage = () => {
     },
     'geo': {
       '@type': 'GeoCoordinates',
-      'latitude': '52.31482399999999',
-      'longitude': '4.9755936',
+      'latitude': '52.31049387419748',
+      'longitude': '4.9737379576208856',
     },
     'openingHoursSpecification': {
       '@type': 'OpeningHoursSpecification',

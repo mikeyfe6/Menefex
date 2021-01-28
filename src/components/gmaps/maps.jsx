@@ -13,8 +13,8 @@ import '../../styles/maps.scss';
 class SimpleMap extends Component {
   static defaultProps = {
     center: {
-      lat: 52.310720877676786,
-      lng: 4.974365000024507,
+      lat: 52.31049387419748,
+      lng: 4.9737379576208856,
     },
     zoom: 15,
   };
@@ -36,8 +36,8 @@ class SimpleMap extends Component {
             onChildMouseLeave={this.onChildMouseLeave}
           >
             <Marker
-              lat={52.310720877676786}
-              lng={4.974365000024507}
+              lat={52.31049387419748}
+              lng={4.9737379576208856}
               name="Gimmix Webmediabedrijf"
             />
           </GoogleMapReact>
