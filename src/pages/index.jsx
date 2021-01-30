@@ -92,7 +92,7 @@ const IndexPage = () => {
     <Layout>
       <SEO
         title="#1 Website Specialist"
-        description="Een nieuwe professionele, modern & duurzame website of webapp nodig? Tijdelijk vanaf €345,- | Webmediabedrijf Gimmix uit Amsterdam staat garant voor al uw webgerelateerde wensen en ambities."
+        description="Een nieuwe professionele, modern & duurzame website of webapp nodig? Tijdelijk 25% KORTING! | Webmediabedrijf Gimmix uit Amsterdam staat garant voor al uw webgerelateerde wensen en ambities."
         keywords="websites, webapplicaties, wordpress, SEO, amsterdam, specialist"
         schemaMarkup={schema}
       />
