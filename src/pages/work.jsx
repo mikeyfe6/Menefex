@@ -5,8 +5,6 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 import Layout from '../components/layout';
 
-// import { Link } from 'gatsby';
-
 import SEO from '../components/seo';
 
 import workDesign from '../styles/modules/work.module.scss';
@@ -117,7 +115,7 @@ const workPage = () => (
           </div>
         </ScrollAnimation>
 
-        {/* 
+        {/*
           // * EXTRA PROJECTEN BIJVOEGEN HIERONDER!
           */}
 

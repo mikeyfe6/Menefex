@@ -46,12 +46,12 @@ const SEO = ({
       const seo = {
         title: title || defaultTitle,
         description: description || defaultDescription,
-        custom: custom,
+        custom,
         image: custom || `${siteUrl}${image || defaultImage}`,
         url: `${siteUrl}${pathname || '/'}`,
         keywords:
           keywords ||
-          `webmediabedrijf, gimmix, amsterdam, website laten maken, wordpress, reactjs`,
+          'webmediabedrijf, gimmix, amsterdam, website laten maken, wordpress, reactjs',
       };
       return (
         <>
@@ -144,9 +144,10 @@ SEO.propTypes = {
   article: PropTypes.bool,
   keywords: PropTypes.string,
   custom: PropTypes.string,
+  schemaMarkup: PropTypes.instanceOf(Object),
 };
 SEO.defaultProps = {
-  lang: `nl`,
+  lang: 'nl',
   title: null,
   description: null,
   image: null,
@@ -154,4 +155,5 @@ SEO.defaultProps = {
   custom: null,
   keywords: null,
   article: false,
+  schemaMarkup: null,
 };

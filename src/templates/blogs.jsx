@@ -1,4 +1,6 @@
-/* eslint-disable react/style-prop-object */
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable react/prop-types */
+
 import React, { useEffect } from 'react';
 import { graphql, Link } from 'gatsby';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
@@ -66,27 +68,27 @@ const Blog = (props) => {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    'mainEntityOfPage': {
+    mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': `https://gimmix.nl/blog/${props.data.contentfulBlogPost.slug}/`,
     },
-    'headline': props.data.contentfulBlogPost.title,
-    'description': props.data.contentfulBlogPost.subtitle,
-    'image': `https:${props.data.contentfulBlogPost.image.file.url}`,
-    'author': {
+    headline: props.data.contentfulBlogPost.title,
+    description: props.data.contentfulBlogPost.subtitle,
+    image: `https:${props.data.contentfulBlogPost.image.file.url}`,
+    author: {
       '@type': 'Person',
-      'name': props.data.contentfulBlogPost.author,
+      name: props.data.contentfulBlogPost.author,
     },
-    'publisher': {
+    publisher: {
       '@type': 'Organization',
-      'name': 'Gimmix',
-      'logo': {
+      name: 'Gimmix',
+      logo: {
         '@type': 'ImageObject',
-        'url': 'https://i.postimg.cc/rsf0PJv0/Gx-FAVICON-X.png',
+        url: 'https://i.postimg.cc/rsf0PJv0/Gx-FAVICON-X.png',
       },
     },
-    'datePublished': props.data.contentfulBlogPost.publishedSchema,
-    'dateModified': props.data.contentfulBlogPost.updatedSchema,
+    datePublished: props.data.contentfulBlogPost.publishedSchema,
+    dateModified: props.data.contentfulBlogPost.updatedSchema,
   };
 
   useEffect(() => {
@@ -97,11 +99,11 @@ const Blog = (props) => {
     script.async = true;
 
     document.body.appendChild(script);
-    console.log('GXWMB: Google Adsense is geladen!');
+    // console.log('GXWMB: Google Adsense is geladen!');
 
     return () => {
       document.body.removeChild(script);
-      console.log('GXWMB: Google Adsense is gestopt!');
+      // console.log('GXWMB: Google Adsense is gestopt!');
     };
   }, []);
 

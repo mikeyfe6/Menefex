@@ -3,11 +3,8 @@ import { useStaticQuery, graphql } from 'gatsby';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 import Layout from '../components/layout';
-// import { Link } from 'gatsby';
 
 import SEO from '../components/seo';
-
-// import { Animated } from 'react-animated-css';
 
 import Hero from '../components/hero';
 import Quote from '../components/quote';
@@ -35,47 +32,46 @@ const IndexPage = () => {
     `,
   );
 
-  // prettier-ignore
-  const schema =  {
+  const schema = {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
-    'name': 'Gimmix Webmediabedrijf',
-    'founder': {
+    name: 'Gimmix Webmediabedrijf',
+    founder: {
       '@type': 'Person',
-      'name': site.siteMetadata.author,
+      name: site.siteMetadata.author,
     },
-    'image': `${site.siteMetadata.siteUrl}/Gimmix-logo.png`,
-    'logo': 'https://i.postimg.cc/rsf0PJv0/Gx-FAVICON-X.png',
+    image: `${site.siteMetadata.siteUrl}/Gimmix-logo.png`,
+    logo: 'https://i.postimg.cc/rsf0PJv0/Gx-FAVICON-X.png',
     '@id': 'https://gimmix.nl/#localbusiness',
-    'description': site.siteMetadata.description,
-    'url': site.siteMetadata.siteUrl,
-    'telephone': site.siteMetadata.tel,
-    'email': site.siteMetadata.bizEmail,
-    'hasMap': 'https://g.page/GimmixWMB?share',
-    "areaServed": {
-      "@type": "geoShape",
-      "addressCountry": ['Netherlands', 'Belgium', 'Surinam'],
+    description: site.siteMetadata.description,
+    url: site.siteMetadata.siteUrl,
+    telephone: site.siteMetadata.tel,
+    email: site.siteMetadata.bizEmail,
+    hasMap: 'https://g.page/GimmixWMB?share',
+    areaServed: {
+      '@type': 'geoShape',
+      addressCountry: ['Netherlands', 'Belgium', 'Surinam'],
     },
-    'priceRange': '$$',
-    'address': {
+    priceRange: '$$',
+    address: {
       '@type': 'PostalAddress',
-      'streetAddress': 'Kelbergen 192',
-      'addressLocality': 'Amsterdam',
-      'postalCode': '1104LJ',
-      'addressCountry': 'NL',
+      streetAddress: 'Kelbergen 192',
+      addressLocality: 'Amsterdam',
+      postalCode: '1104LJ',
+      addressCountry: 'NL',
     },
-    'geo': {
+    geo: {
       '@type': 'GeoCoordinates',
-      'latitude': '52.31049387419748',
-      'longitude': '4.9737379576208856',
+      latitude: '52.31049387419748',
+      longitude: '4.9737379576208856',
     },
-    'openingHoursSpecification': {
+    openingHoursSpecification: {
       '@type': 'OpeningHoursSpecification',
-      'dayOfWeek': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-      'opens': '09:00',
-      'closes': '19:00',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      opens: '09:00',
+      closes: '19:00',
     },
-    'sameAs': [
+    sameAs: [
       'https://www.facebook.com/GimmixWMB',
       'https://www.twitter.com/GimmixWMB',
       'https://www.instagram.com/gimmixwmb/',

@@ -16,7 +16,7 @@ const TermsConditions = () => (
       <div className="smallwhitespace" />
       <hr />
       <br />
-      <h1 className="page-title"> ALGEMENE VOORWAARDEN - Gimmix</h1>   
+      <h1 className="page-title"> ALGEMENE VOORWAARDEN - Gimmix</h1>
       <h5>Definities</h5>
       <br />
       <ol>
@@ -115,7 +115,7 @@ const TermsConditions = () => (
         </li>
         <li>
           Wanneer de klant in verzuim is, is hij bovendien buitengerechtelijke
-          incassokosten en eventuele schadevergoeding verschuldigd aan Gimmix. 
+          incassokosten en eventuele schadevergoeding verschuldigd aan Gimmix.
         </li>
         <li>
           De incassokosten worden berekend aan de hand van het Besluit
@@ -124,17 +124,17 @@ const TermsConditions = () => (
         <li>
           Wanneer de klant niet tijdig betaalt, mag Gimmix zijn verplichtingen
           opschorten totdat de klant aan zijn betalingsverplichting heeft
-          voldaan. 
+          voldaan.
         </li>
         <li>
           In geval van liquidatie, faillissement, beslag of surseance van
           betaling aan de zijde van de klant, zijn de vorderingen van Gimmix op
-          de klant onmiddellijk opeisbaar. 
+          de klant onmiddellijk opeisbaar.
         </li>
         <li>
           Weigert de klant zijn medewerking aan de uitvoering van de
           overeenkomst door Gimmix, dan is hij nog steeds verplicht de
-          afgesproken prijs aan Gimmix te betalen. 
+          afgesproken prijs aan Gimmix te betalen.
         </li>
       </ol>
       <br />
@@ -146,7 +146,7 @@ const TermsConditions = () => (
         op te schorten.
       </p>
       <br />
-      <h5>Verrekening</h5> 
+      <h5>Verrekening</h5>
       <p>
         Tenzij de klant een consument is, doet de klant afstand van zijn recht
         om een schuld aan Gimmix te verrekenen met een vordering op Gimmix.
@@ -167,7 +167,7 @@ const TermsConditions = () => (
         <li>
           Indien de overeengekomen bedragen niet of niet op tijd worden voldaan,
           heeft Gimmix het recht om zijn verplichtingen op te schorten totdat
-          het overeengekomen deel alsnog is voldaan. 
+          het overeengekomen deel alsnog is voldaan.
         </li>
         <li>
           Bij te late betaling is er sprake van schuldeisersverzuim, met als
@@ -195,17 +195,17 @@ const TermsConditions = () => (
           schadevergoeding en evenmin het recht om de overeenkomst te ontbinden,
           tenzij Gimmix niet binnen 14 dagen na daartoe schriftelijk te zijn
           aangemaand kan leveren of partijen hierover iets anders hebben
-          afgesproken. 
+          afgesproken.
         </li>
       </ol>
       <br />
-      <h5>Feitelijke levering</h5> 
+      <h5>Feitelijke levering</h5>
       <p>
         De klant dient ervoor zorg te dragen dat de feitelijke levering van de
         door hem bestelde producten tijdig kan plaatsvinden.
       </p>
       <br />
-      <h5>Transportkosten </h5> 
+      <h5>Transportkosten </h5>
       <p>
         Transportkosten zijn voor rekening van de klant, tenzij partijen
         hierover iets anders hebben afgesproken.
@@ -246,14 +246,14 @@ const TermsConditions = () => (
         </li>
       </ol>
       <br />
-      <h5>Montage/Installatie</h5> 
+      <h5>Montage/Installatie</h5>
       <p>
         Hoewel Gimmix zich inspant alle montage en/of installatiewerkzaamheden
         zo goed mogelijk uit te voeren, draagt hij hiervoor geen enkele
         verantwoordelijkheid behalve in het geval van opzet of grove schuld.
       </p>
       <br />
-      <h5>Garantie</h5> 
+      <h5>Garantie</h5>
       <p>
         Wanneer partijen een overeenkomst met een dienstverlenend karakter zijn
         aangegaan, bevat deze voor Gimmix enkel inspanningsverplichtingen, geen
@@ -273,7 +273,7 @@ const TermsConditions = () => (
         <li>
           De uitvoering van de overeenkomst geschiedt in onderling overleg en na
           schriftelijk akkoord en betaling van het eventueel afgesproken
-          voorschot door de klant. 
+          voorschot door de klant.
         </li>
         <li>
           Het is de verantwoordelijkheid van de klant dat Gimmix tijdig kan
@@ -302,7 +302,7 @@ const TermsConditions = () => (
         </li>
         <li>
           Indien en voor zover de klant dit verzoekt, retourneert Gimmix de
-          betreffende bescheiden. 
+          betreffende bescheiden.
         </li>
         <li>
           Stelt de klant niet, niet tijdig of niet behoorlijk de
@@ -333,7 +333,7 @@ const TermsConditions = () => (
           Zijn partijen binnen de looptijd van de overeenkomst voor de
           voltooiing van bepaalde werkzaamheden een termijn overeengekomen, dan
           is dit nooit een fatale termijn. Bij overschrijding van deze termijn
-          moet de klant Gimmix schriftelijk in gebreke stellen. 
+          moet de klant Gimmix schriftelijk in gebreke stellen.
         </li>
       </ol>
       <br />
@@ -346,7 +346,7 @@ const TermsConditions = () => (
           etc.) op alle ontwerpen, tekeningen, geschriften, dragers met gegevens
           of andere informatie, offertes, afbeeldingen, schetsen, modellen,
           maquettes, etc., tenzij partijen schriftelijk anders zijn
-          overeengekomen. 
+          overeengekomen.
         </li>
         <li>
           De klant mag genoemde intellectuele eigendomsrechten niet zonder
@@ -379,7 +379,7 @@ const TermsConditions = () => (
           o die al openbaar was voordat de klant deze informatie vernam of die
           later openbaar is geworden zonder dat dit het gevolg was van een
           schending van de geheimhoudingsplicht van de klant <br />o die door de
-          klant openbaar gemaakt wordt op grond van een wettelijke plicht 
+          klant openbaar gemaakt wordt op grond van een wettelijke plicht
         </li>
         <li>
           De in dit artikel omschreven geheimhoudingsplicht geldt voor de duur
@@ -406,7 +406,7 @@ const TermsConditions = () => (
         <li>
           Voor het verbeuren van deze boete is geen voorafgaande
           ingebrekestelling of gerechtelijke procedure nodig. Ook hoeft er geen
-          sprake te zijn van enige vorm van schade. 
+          sprake te zijn van enige vorm van schade.
         </li>
         <li>
           Het verbeuren van de in het eerste lid van dit artikel bedoelde boete
@@ -419,7 +419,7 @@ const TermsConditions = () => (
       <br />
       <p>
         De klant vrijwaart Gimmix tegen alle aanspraken van derden die verband
-        houden met de door Gimmix geleverde producten en/of diensten. 
+        houden met de door Gimmix geleverde producten en/of diensten.
       </p>
       <br />
       <h5>Klachten</h5>
@@ -434,7 +434,7 @@ const TermsConditions = () => (
           de klant redelijkerwijs van de overeenkomst mocht verwachten, dan
           dient de klant Gimmix daarvan zo spoedig mogelijk, doch in ieder geval
           binnen 1 maand na constatering van de tekortkomingen, op de hoogte te
-          stellen. 
+          stellen.
         </li>
         <li>
           Consumenten dienen Gimmix uiterlijk binnen 2 maanden na constatering
@@ -442,8 +442,7 @@ const TermsConditions = () => (
         </li>
         <li>
           De klant geeft daarbij een zo gedetailleerd mogelijke omschrijving van
-          de tekortkoming, zodat Gimmix in staat is hierop adequaat te
-          reageren. 
+          de tekortkoming, zodat Gimmix in staat is hierop adequaat te reageren.
         </li>
         <li>
           De klant dient aan te tonen dat de klacht betrekking heeft op een
@@ -474,7 +473,7 @@ const TermsConditions = () => (
       <p>
         Als Gimmix een overeenkomst aangaat met meerdere klanten, is ieder van
         hen hoofdelijk aansprakelijk voor de volledige bedragen die zij op grond
-        van die overeenkomst aan Gimmix verschuldigd zijn. 
+        van die overeenkomst aan Gimmix verschuldigd zijn.
       </p>
       <br />
       <h5>Aansprakelijkheid Gimmix</h5>
@@ -512,7 +511,7 @@ const TermsConditions = () => (
         </li>
       </ol>
       <br />
-      <h5>Vervaltermijn</h5> 
+      <h5>Vervaltermijn</h5>
       <p>
         Elk recht van de klant op schadevergoeding van Gimmix vervalt in elk
         geval 12 maanden na de gebeurtenis waaruit de aansprakelijkheid direct
@@ -532,14 +531,14 @@ const TermsConditions = () => (
         <li>
           Is de nakoming van de verplichtingen door Gimmix niet blijvend of
           tijdelijk onmogelijk, dan kan ontbinding pas plaatsvinden
-          nadat Gimmix in verzuim is. 
+          nadat Gimmix in verzuim is.
         </li>
         <li>
           Gimmix heeft het recht de overeenkomst met de klant te ontbinden,
           indien de klant zijn verplichtingen uit de overeenkomst niet volledig
           of niet tijdig nakomt, danwel indien Gimmix kennis heeft genomen van
           omstandigheden die hem goede grond geven om te vrezen dat de klant
-          zijn verplichtingen niet behoorlijk zal kunnen nakomen. 
+          zijn verplichtingen niet behoorlijk zal kunnen nakomen.
         </li>
       </ol>
       <h5>Overmacht</h5>
@@ -551,7 +550,7 @@ const TermsConditions = () => (
           van de wil van Gimmix onafhankelijke situatie, waardoor de nakoming
           van zijn verplichtingen ten aanzien van de klant geheel of
           gedeeltelijk wordt verhinderd of waardoor de nakoming van zijn
-          verplichtingen in redelijkheid niet van Gimmix kan worden verlangd. 
+          verplichtingen in redelijkheid niet van Gimmix kan worden verlangd.
         </li>
         <li>
           Tot de in lid 1 genoemde overmachtsituatie worden ook - doch niet
@@ -560,7 +559,7 @@ const TermsConditions = () => (
           toeleveranciers, bezorgers of andere derden; onverwachte stroom-,
           elektriciteits- internet-, computer- en telecomstoringen;
           computervirussen, stakingen, overheidsmaatregelen, onvoorziene
-          vervoersproblemen, slechte weersomstandigheden en werkonderbrekingen. 
+          vervoersproblemen, slechte weersomstandigheden en werkonderbrekingen.
         </li>
         <li>
           Indien zich een overmachtsituatie voordoet waardoor Gimmix 1 of meer
@@ -570,7 +569,7 @@ const TermsConditions = () => (
         <li>
           Vanaf het moment dat een overmachtsituatie tenminste 30 kalenderdagen
           heeft geduurd, mogen beide partijen de overeenkomst schriftelijk
-          geheel of gedeeltelijk ontbinden. 
+          geheel of gedeeltelijk ontbinden.
         </li>
         <li>
           Gimmix is in een overmachtsituatie geen enkele (schade)vergoeding
@@ -579,7 +578,7 @@ const TermsConditions = () => (
         </li>
       </ol>
       <br />
-      <h5>Wijziging van de overeenkomst</h5> 
+      <h5>Wijziging van de overeenkomst</h5>
       <br />
       <p>
         Indien na het afsluiten van de overeenkomst voor de uitvoering ervan het
@@ -593,11 +592,11 @@ const TermsConditions = () => (
       <ol>
         <li>
           Gimmix is gerechtigd deze algemene voorwaarden te wijzigen of aan te
-          vullen. 
+          vullen.
         </li>
         <li>
           Wijzigingen van ondergeschikt belang kunnen te allen tijde worden
-          doorgevoerd. 
+          doorgevoerd.
         </li>
         <li>
           Grote inhoudelijke wijzigingen zal Gimmix zoveel mogelijk vooraf met
@@ -605,7 +604,7 @@ const TermsConditions = () => (
         </li>
         <li>
           Consumenten zijn gerechtigd bij een wezenlijke wijziging van de
-          algemene voorwaarden de overeenkomst op te zeggen. 
+          algemene voorwaarden de overeenkomst op te zeggen.
         </li>
       </ol>
       <br />
@@ -615,11 +614,11 @@ const TermsConditions = () => (
         <li>
           Rechten van de klant uit een overeenkomst tussen partijen kunnen niet
           aan derden worden overgedragen zonder de voorafgaande schriftelijke
-          instemming van Gimmix. 
+          instemming van Gimmix.
         </li>
         <li>
           Deze bepaling geldt als een beding met goederenrechtelijke werking
-          zoals bedoeld in artikel 3:83, tweede lid, Burgerlijk Wetboek. 
+          zoals bedoeld in artikel 3:83, tweede lid, Burgerlijk Wetboek.
         </li>
       </ol>
       <br />
@@ -629,7 +628,7 @@ const TermsConditions = () => (
         <li>
           Wanneer één of meerdere bepalingen van deze algemene voorwaarden
           nietig of vernietigbaar blijken, dan tast dit de overige bepalingen
-          van deze voorwaarden niet aan. 
+          van deze voorwaarden niet aan.
         </li>
         <li>
           Een bepaling die nietig of vernietigbaar is, wordt in dat geval
@@ -644,7 +643,7 @@ const TermsConditions = () => (
       <ol>
         <li>
           Op iedere overeenkomst tussen partijen is uitsluitend het Nederlands
-          recht van toepassing. 
+          recht van toepassing.
         </li>
         <li>
           De Nederlandse rechter in het arrondissement waar Gimmix is gevestigd

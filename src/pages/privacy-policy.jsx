@@ -1,12 +1,9 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-import Cookies from 'js-cookie';
-
 import SEO from '../components/seo';
 
 import Layout from '../components/layout';
-// import privacyDesign from '../styles/modules/privacy.module.scss';
 
 const PrivacyPolicy = () => (
   <Layout>
@@ -20,7 +17,7 @@ const PrivacyPolicy = () => (
         <div className="smallwhitespace" />
         <hr />
         <br />
-        <h1 className="page-title">PRIVACYBELEID - Gimmix</h1> 
+        <h1 className="page-title">PRIVACYBELEID - Gimmix</h1>
         <p>
           Gimmix respecteert de privacy van de bezoekers van haar website, in
           het bijzonder de rechten van bezoekers met betrekking tot de
@@ -33,7 +30,7 @@ const PrivacyPolicy = () => (
         <p>
           Voor alle aanvullende informatie over de bescherming van
           persoonsgegevens kunt u terecht op de website van de Autoriteit
-          persoonsgegevens: 
+          persoonsgegevens:
           <a
             href="https://autoriteitpersoonsgegevens.nl/nl"
             rel="noopener noreferrer"
@@ -115,7 +112,7 @@ const PrivacyPolicy = () => (
           </li>
         </ol>
         <br />
-        <h5>Artikel 2 - Toegang tot de website</h5> 
+        <h5>Artikel 2 - Toegang tot de website</h5>
         <p>
           De toegang tot de website en het gebruik is strikt persoonlijk. U zult
           deze website alsook de gegevens en informatie die daarop verstrekt
@@ -124,7 +121,7 @@ const PrivacyPolicy = () => (
           bijzonder niet gebruiken voor ongevraagde elektronische aanbiedingen.
         </p>
         <br />
-        <h5>Artikel 3 - De content van de website</h5> 
+        <h5>Artikel 3 - De content van de website</h5>
         <p>
           Alle merken, afbeeldingen, teksten, commentaren, illustraties,
           (animatie)plaatjes, videobeelden, geluiden, alsook alle technische
@@ -196,10 +193,10 @@ const PrivacyPolicy = () => (
         <p>
           Indien de beheerder betrokken raakt bij een geschil als gevolg van uw
           gebruik van deze website, is hij gerechtigd alle schade die hij
-          dientengevolge lijdt en nog zal lijden op u te verhalen.   
+          dientengevolge lijdt en nog zal lijden op u te verhalen.
         </p>
         <br />
-        <h5>Artikel 6 - Het verzamelen van gegevens</h5> 
+        <h5>Artikel 6 - Het verzamelen van gegevens</h5>
         <p>
           Uw gegevens worden verzameld door Gimmix. Onder persoonsgegevens
           worden verstaan: alle informatie over een geïdentificeerde of
@@ -215,17 +212,17 @@ const PrivacyPolicy = () => (
           De persoonsgegevens die op de website worden verzameld worden
           hoofdzakelijk gebruikt door de beheerder voor het onderhouden van
           relaties met u en indien aan de orde voor het verwerken van uw
-          bestellingen.    
+          bestellingen.
         </p>
         <br />
-        <h5>Artikel 7 - Uw rechten met betrekking tot uw gegevens</h5> 
+        <h5>Artikel 7 - Uw rechten met betrekking tot uw gegevens</h5>
         <p>
           Op grond van artikel 13 lid 2 sub b AVG heeft eenieder recht op inzage
           van en rectificatie of wissing van zijn persoonsgegevens of beperking
           van de hem betreffende verwerking, alsmede het recht tegen de
           verwerking bezwaar te maken en het recht op gegevensoverdraagbaarheid.
           U kunt deze rechten uitoefenen door contact met ons op te nemen
-          via michaelfransman@gimmix.nl. 
+          via michaelfransman@gimmix.nl.
         </p>
         <p>
           Ieder verzoek daartoe dient te worden vergezeld van een kopie van een
@@ -234,25 +231,25 @@ const PrivacyPolicy = () => (
           opgenomen. Binnen 1 maand na het ingediende verzoek, krijgt u antwoord
           op uw verzoek. Afhankelijk van de complexiteit van de verzoeken en het
           aantal van de verzoeken kan deze termijn indien nodig met 2 maanden
-          worden verlengd.  
+          worden verlengd.
         </p>
-        <h5>Artikel 8 - Verwerking van persoonsgegevens</h5> 
+        <h5>Artikel 8 - Verwerking van persoonsgegevens</h5>
         <p>
           In geval van schending van enige wet- of regelgeving, waarvan de
           bezoeker wordt verdacht en waarvoor de autoriteiten persoonsgegevens
           nodig hebben die de beheerder heeft verzameld, worden deze aan hen
           verstrekt na een uitdrukkelijk en gemotiveerd verzoek van die
           autoriteiten, waarna deze persoonsgegevens mitsdien niet meer onder de
-          bescherming van de bepalingen van deze privacyverklaring vallen. 
+          bescherming van de bepalingen van deze privacyverklaring vallen.
         </p>
         <p>
           Indien bepaalde informatie noodzakelijk is om toegang te krijgen tot
           bepaalde functionaliteiten van de website, zal de verantwoordelijke
           het verplichte karakter van deze informatie aangeven op het moment van
-          het vragen van de gegevens.  
+          het vragen van de gegevens.
         </p>
         <br />
-        <h5>Artikel 9 - Commerciële aanbiedingen</h5> 
+        <h5>Artikel 9 - Commerciële aanbiedingen</h5>
         <p>
           U kunt commerciële aanbiedingen krijgen van de beheerder. Indien u
           deze niet (meer) wenst te ontvangen, stuurt u een mail naar het
@@ -267,10 +264,10 @@ const PrivacyPolicy = () => (
           situaties.
         </p>
         <br />
-        <h5>Artikel 10 - Bewaartermijn gegevens</h5> 
+        <h5>Artikel 10 - Bewaartermijn gegevens</h5>
         <p>
           De door de beheerder van website verzamelde gegevens worden gebruikt
-          en bewaard voor de duur zoals deze bij wet is bepaald. 
+          en bewaard voor de duur zoals deze bij wet is bepaald.
         </p>
         <br />
         <h5>Artikel 11 - Cookies </h5>
@@ -304,7 +301,7 @@ const PrivacyPolicy = () => (
           <li>
             Wanneer u onze website bezoekt kunnen cookies afkomstig van de
             verantwoordelijke en/of derden op uw apparatuur worden
-            geïnstalleerd. 
+            geïnstalleerd.
           </li>
           <li>
             Voor meer informatie over het gebruik, het beheer en het verwijderen
@@ -320,20 +317,20 @@ const PrivacyPolicy = () => (
           </li>
         </ol>
         <br />
-        <h5>Artikel 12 - Beeldmateriaal en aangeboden producten</h5> 
+        <h5>Artikel 12 - Beeldmateriaal en aangeboden producten</h5>
         <p>
           Aan het beeldmateriaal dat behoort bij de aangeboden producten op de
           website kunnen geen rechten worden ontleend.
         </p>
         <br />
-        <h5>Artikel 13 - Toepasselijk recht</h5> 
+        <h5>Artikel 13 - Toepasselijk recht</h5>
         <p>
           Op deze voorwaarden is Nederlands Recht van toepassing. De rechtbank
           van de vestigingsplaats van de beheerder is exclusief bevoegd bij
           eventuele geschillen omtrent deze voorwaarden, behoudens wanneer
-          hierop een wettelijke uitzondering van toepassing is. 
+          hierop een wettelijke uitzondering van toepassing is.
         </p>
-        <h5>Artikel 14 - Contact</h5> 
+        <h5>Artikel 14 - Contact</h5>
         <p>
           Voor vragen, productinformatie of informatie over de website zelf,
           kunt u zich richten tot: <br />

@@ -2,13 +2,15 @@
     https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
-require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV}`,
-});
+// require('dotenv').config({
+//   path: `.env.${process.env.NODE_ENV}`,
+// });
+
+const sass = require('sass');
 
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://gimmix.nl`,
+    siteUrl: 'https://gimmix.nl',
     url: 'https://gimmix.nl',
     tel: '+31611054318',
     image: '/Gimmix-logo.png',
@@ -22,7 +24,7 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-netlify`,
+      resolve: 'gatsby-plugin-netlify',
       options: {
         mergeSecurityHeaders: true, // boolean to turn off the default security headers
         mergeLinkHeaders: true, // boolean to turn off the default gatsby js headers
@@ -43,20 +45,9 @@ module.exports = {
       },
     },
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-eslint',
     {
-      resolve: 'gatsby-plugin-eslint',
-      options: {
-        test: /\.js$|\.jsx$/,
-        exclude: /(node_modules|.cache|public)/,
-        stages: ['develop'],
-        options: {
-          emitWarning: true,
-          failOnError: false,
-        },
-      },
-    },
-    {
-      resolve: `gatsby-plugin-feed`,
+      resolve: 'gatsby-plugin-feed',
       options: {
         query: `
           {
@@ -174,9 +165,9 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-canonical-urls`,
+      resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: `https://gimmix.nl`,
+        siteUrl: 'https://gimmix.nl',
       },
     },
     {
@@ -188,9 +179,9 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-sass`,
+      resolve: 'gatsby-plugin-sass',
       options: {
-        implementation: require('sass'),
+        implementation: sass,
       },
     },
     {
@@ -201,17 +192,17 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-sharp`,
+      resolve: 'gatsby-plugin-sharp',
       options: {
         base64Width: 20,
-        forceBase64Format: `webp`, // valid formats: png,jpg,webp
-        useMozJpeg: process.env.GATSBY_JPEG_ENCODER === `MOZJPEG`,
+        forceBase64Format: 'webp', // valid formats: png,jpg,webp
+        useMozJpeg: process.env.GATSBY_JPEG_ENCODER === 'MOZJPEG',
         stripMetadata: true,
         defaultQuality: 50,
         failOnError: true,
       },
     },
-    `gatsby-transformer-sharp`,
+    'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
@@ -227,12 +218,12 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-smoothscroll`,
+    'gatsby-plugin-smoothscroll',
     {
-      resolve: `gatsby-plugin-nprogress`,
+      resolve: 'gatsby-plugin-nprogress',
       options: {
         // Setting a color is optional.
-        color: `#656565`,
+        color: '#656565',
         // Disable the loading spinner.
         showSpinner: true,
         minimum: 0.1,
@@ -245,7 +236,7 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-sitemap`,
+      resolve: 'gatsby-plugin-sitemap',
       options: {
         query: `
         {
@@ -269,29 +260,29 @@ module.exports = {
         serialize: ({ site, allSitePage }) =>
           allSitePage.edges.map((edge) => ({
             url: `${site.siteMetadata.siteUrl}${edge.node.path}`,
-            changefreq: `daily`,
+            changefreq: 'daily',
             priority: 0.7,
             lastmodISO: edge.node.context.updatedAt,
           })),
       },
     },
-    `gatsby-plugin-catch-links`,
+    'gatsby-plugin-catch-links',
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        name: `Gimmix`,
-        short_name: `Gimmix`,
-        description: `Wij bouwen websites & webapps met oog voor detail.`,
-        start_url: `/`,
-        background_color: `#a9a9a9`,
-        lang: `nl`,
-        theme_color: `#FFCC00`,
-        display: `standalone`,
+        name: 'Gimmix',
+        short_name: 'Gimmix',
+        description: 'Wij bouwen websites & webapps met oog voor detail.',
+        start_url: '/',
+        background_color: '#a9a9a9',
+        lang: 'nl',
+        theme_color: '#FFCC00',
+        display: 'standalone',
         icon: 'src/img/Gimmix-applogo.png',
         icon_options: {
-          purpose: `any maskable`,
+          purpose: 'any maskable',
         },
-        crossOrigin: `use-credentials`,
+        crossOrigin: 'use-credentials',
       },
     },
     'gatsby-plugin-offline',

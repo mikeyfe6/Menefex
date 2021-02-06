@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import CookieConsent from 'react-cookie-consent';
 import { Link } from 'gatsby';
 
@@ -79,18 +80,20 @@ class Layout extends React.Component {
 
   render() {
     let backdrop;
+    const { sideDrawerOpen } = this.state;
+    const { children } = this.props;
 
-    if (this.state.sideDrawerOpen) {
+    if (sideDrawerOpen) {
       backdrop = <Backdrop click={this.backdropClickHandler} />;
     }
     return (
       <div id="page-container">
         <div id="content-wrap">
           <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
-          <SideDrawer show={this.state.sideDrawerOpen} />
+          <SideDrawer show={sideDrawerOpen} />
           {backdrop}
           <main style={{ marginTop: '100px' }}>
-            <div>{this.props.children}</div>
+            <div>{children}</div>
           </main>
           <CookieConsent
             overlay
@@ -156,5 +159,9 @@ class Layout extends React.Component {
     );
   }
 }
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
 export default Layout;

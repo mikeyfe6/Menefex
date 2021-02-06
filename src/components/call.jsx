@@ -50,9 +50,8 @@ const Call = () => {
             'g-recaptcha-response': recaptchaValue,
             ...inputs,
           }),
-        })
-          .then(() => navigate(form.getAttribute('action')))
-          .catch(() => console.log('POST ERROR'));
+        }).then(() => navigate(form.getAttribute('action')));
+        // .catch(() => console.log('POST ERROR'));
       }
     },
     [inputs, recaptchaValue],
@@ -76,57 +75,57 @@ const Call = () => {
           <li>
             <label htmlFor="call-name">
               <span className="speccol">*</span> Naam
+              <div className={callStyles.textarea}>
+                <input
+                  type="text"
+                  name="name"
+                  id="call-name"
+                  value={inputs.name}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
             </label>
-            <div className={callStyles.textarea}>
-              <input
-                type="text"
-                name="name"
-                id="call-name"
-                value={inputs.name}
-                onChange={handleChange}
-                required
-              />
-            </div>
           </li>
           <li>
             <label htmlFor="call-tel">
               <span className="speccol">*</span> Telefoon
+              <div className={callStyles.textarea}>
+                <input
+                  type="tel"
+                  name="tel"
+                  id="call-tel"
+                  maxLength="15"
+                  value={inputs.tel}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
             </label>
-            <div className={callStyles.textarea}>
-              <input
-                type="tel"
-                name="tel"
-                id="call-tel"
-                maxLength="15"
-                value={inputs.tel}
-                onChange={handleChange}
-                required
-              />
-            </div>
           </li>
           <li>
             <label htmlFor="call-msg">
               <span className="speccol">*</span> Selecteer een gewenst tijdstip
+              <div>
+                <select
+                  required
+                  name="tijdstip"
+                  className={callStyles.choosing}
+                  value={inputs.tijdstip}
+                  onChange={handleChange}
+                  multiple={false}
+                >
+                  <option value="tienuur">Tussen 10:00 - 10:30 uur</option>
+                  <option value="elfuur">Tussen 11:00 - 10:30 uur</option>
+                  <option value="twaalfuur">Tussen 12:00 - 12:30 uur</option>
+                  <option value="tweeuur">Tussen 14:00 - 14:30 uur</option>
+                  <option value="drieuur">Tussen 15:00 - 15:30 uur</option>
+                  <option value="vieruur">Tussen 16:00 - 16:30 uur</option>
+                  <option value="vijfuur">Tussen 17:00 - 17:30 uur</option>
+                  <option value="zesuur">Tussen 18:00 - 18:30 uur</option>
+                </select>
+              </div>
             </label>
-            <div>
-              <select
-                required
-                name="tijdstip"
-                className={callStyles.choosing}
-                value={inputs.tijdstip}
-                onChange={handleChange}
-                multiple={false}
-              >
-                <option value="tienuur">Tussen 10:00 - 10:30 uur</option>
-                <option value="elfuur">Tussen 11:00 - 10:30 uur</option>
-                <option value="twaalfuur">Tussen 12:00 - 12:30 uur</option>
-                <option value="tweeuur">Tussen 14:00 - 14:30 uur</option>
-                <option value="drieuur">Tussen 15:00 - 15:30 uur</option>
-                <option value="vieruur">Tussen 16:00 - 16:30 uur</option>
-                <option value="vijfuur">Tussen 17:00 - 17:30 uur</option>
-                <option value="zesuur">Tussen 18:00 - 18:30 uur</option>
-              </select>
-            </div>
           </li>
         </ul>
         <ul className={callStyles.fillareatwo}>
@@ -134,17 +133,17 @@ const Call = () => {
             <label htmlFor="call-opmerking">
               <span className="speccol">*</span> Heeft u nog opmerkingen?
               (optioneel)
+              <div className={callStyles.textarea}>
+                <textarea
+                  type="text"
+                  name="message"
+                  id="call-opmerking"
+                  rows="6"
+                  value={inputs.text}
+                  onChange={handleChange}
+                />
+              </div>
             </label>
-            <div className={callStyles.textarea}>
-              <textarea
-                type="text"
-                name="message"
-                id="call-opmerking"
-                rows="6"
-                value={inputs.text}
-                onChange={handleChange}
-              />
-            </div>
           </li>
         </ul>
         <div className="clr" />

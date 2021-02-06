@@ -58,9 +58,8 @@ const Form = () => {
             'g-recaptcha-response': recaptchaValue,
             ...inputs,
           }),
-        })
-          .then(() => navigate(form.getAttribute('action')))
-          .catch(() => console.log('POST ERROR'));
+        }).then(() => navigate(form.getAttribute('action')));
+        // .catch(() => console.log('POST ERROR'));
       }
     },
 
@@ -91,99 +90,101 @@ const Form = () => {
                 <li>
                   <label htmlFor="contact-name">
                     <span className="speccol">*</span> Naam
+                    <div className={formStyles.textarea}>
+                      <input
+                        type="text"
+                        name="name"
+                        id="contact-name"
+                        value={inputs.name}
+                        onChange={handleChange}
+                        required
+                      />
+                    </div>
                   </label>
-                  <div className={formStyles.textarea}>
-                    <input
-                      type="text"
-                      name="name"
-                      id="contact-name"
-                      value={inputs.name}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
                 </li>
                 <li>
                   <label htmlFor="contact-company">
                     <span className="speccol">*</span> Bedrijfsnaam (optioneel)
+                    <div className={formStyles.textarea}>
+                      <input
+                        type="text"
+                        name="company"
+                        id="contact-company"
+                        value={inputs.company}
+                        onChange={handleChange}
+                      />
+                    </div>
                   </label>
-                  <div className={formStyles.textarea}>
-                    <input
-                      type="text"
-                      name="company"
-                      id="contact-company"
-                      value={inputs.company}
-                      onChange={handleChange}
-                    />
-                  </div>
                 </li>
                 <li>
                   <label htmlFor="contact-email">
                     <span className="speccol">*</span> Email
+                    <div className={formStyles.textarea}>
+                      <input
+                        type="email"
+                        name="email"
+                        id="contact-email"
+                        maxLength="35"
+                        value={inputs.email}
+                        onChange={handleChange}
+                        required
+                      />
+                    </div>
                   </label>
-                  <div className={formStyles.textarea}>
-                    <input
-                      type="email"
-                      name="email"
-                      id="contact-email"
-                      maxLength="35"
-                      value={inputs.email}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
                 </li>
                 <li>
                   <label htmlFor="contact-tel">
                     <span className="speccol">*</span> Telefoon
+                    <div className={formStyles.textarea}>
+                      <input
+                        type="tel"
+                        name="tel"
+                        id="contact-tel"
+                        maxLength="15"
+                        value={inputs.tel}
+                        onChange={handleChange}
+                        required
+                      />
+                    </div>
                   </label>
-                  <div className={formStyles.textarea}>
-                    <input
-                      type="tel"
-                      name="tel"
-                      id="contact-tel"
-                      maxLength="15"
-                      value={inputs.tel}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
                 </li>
                 <li>
                   <label htmlFor="contact-msg">
                     <span className="speccol">*</span> Selecteer onderwerp
+                    <div>
+                      <select
+                        name="onderwerp"
+                        className={formStyles.choosing}
+                        value={inputs.onderwerp}
+                        onChange={handleChange}
+                        required
+                      >
+                        <option value="website">Offerte aanvragen</option>
+                        <option value="samenwerking">
+                          Samenwerking aangaan
+                        </option>
+                        <option value="opmerking">Vraag / Opmerking</option>
+                        <option value="feedback">Klacht / Feedback</option>
+                        <option value="hulp">Hulp & Probleemoplossing</option>
+                      </select>
+                    </div>
                   </label>
-                  <div>
-                    <select
-                      name="onderwerp"
-                      className={formStyles.choosing}
-                      value={inputs.onderwerp}
-                      onChange={handleChange}
-                      required
-                    >
-                      <option value="website">Offerte aanvragen</option>
-                      <option value="samenwerking">Samenwerking aangaan</option>
-                      <option value="opmerking">Vraag / Opmerking</option>
-                      <option value="feedback">Klacht / Feedback</option>
-                      <option value="hulp">Hulp & Probleemoplossing</option>
-                    </select>
-                  </div>
                 </li>
                 <li>
                   <label htmlFor="contact-project">
                     <span className="speccol">*</span> Type uw bericht hieronder
+                    <div className={formStyles.textarea}>
+                      <textarea
+                        type="text"
+                        name="message"
+                        id="contact-project"
+                        rows="6"
+                        value={inputs.message}
+                        onChange={handleChange}
+                        required
+                      />
+                    </div>
                   </label>
-                  <div className={formStyles.textarea}>
-                    <textarea
-                      type="text"
-                      name="message"
-                      id="contact-project"
-                      rows="6"
-                      value={inputs.message}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
                 </li>
               </ul>
               <ReCAPTCHA

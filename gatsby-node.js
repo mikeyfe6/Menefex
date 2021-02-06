@@ -5,7 +5,7 @@ exports.createResolvers = ({ createResolvers }) => {
   createResolvers({
     contentfulBlogPostBodyRichTextNode: {
       rssHtml: {
-        type: `String`,
+        type: 'String',
         resolve: (source) => documentToHtmlString(source),
       },
     },
