@@ -62,7 +62,7 @@
     "react-google-recaptcha": "^2.1.0",
     "react-helmet": "^6.1.0",
     "react-slick": "^0.28.0",
-    "sass": "^1.32.6",
+    "sass": "^1.32.7",
     "slick-carousel": "^1.8.1",
     "smooth-scroll": "^16.1.3"
   },
