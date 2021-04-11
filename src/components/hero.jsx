@@ -1,12 +1,33 @@
 import React from 'react';
 
-import { Animated } from 'react-animated-css';
 import scrollTo from 'gatsby-plugin-smoothscroll';
+import { Animated } from 'react-animated-css';
 
-import heroDesign from '../styles/modules/hero.module.scss';
-import typewriterDesign from '../styles/modules/typewriter.module.scss';
+import minilogo from '../logo/Gimmix-mini.svg';
 
-import mini from '../logo/Gimmix-mini.svg';
+import {
+  hero,
+  fleximage,
+  ministylo,
+  flexhead,
+  ipvtpwriter,
+  spechead,
+  heroHead,
+  heroHeadMB,
+  herospec,
+  flexancors,
+  scrollDown,
+  scrollDownMB,
+  scrollHead,
+  scrollHeadMB,
+  scrollBtn,
+  scrollBtnMB,
+} from '../styles/modules/hero.module.scss';
+import {
+  tpwriter,
+  line,
+  animTypewriter,
+} from '../styles/modules/typewriter.module.scss';
 
 // TODO: 'lees meer' naar de volgende section laten scrollen
 // TODO: fix the elements on px's for fixed
@@ -14,21 +35,19 @@ import mini from '../logo/Gimmix-mini.svg';
 const Hero = () => (
   //   const today = new Date()
   <div className="container-fluid">
-    <div className={heroDesign.hero}>
-      <div className={heroDesign.fleximage}>
+    <div className={hero}>
+      <div className={fleximage}>
         <Animated
           animationIn="rotateIn"
           animationInDelay={5000}
           animationInDuration={7500}
         >
-          <img className={heroDesign.mini} src={mini} alt="Gimmix Mini Logo" />{' '}
+          <img className={ministylo} src={minilogo} alt="Gimmix Mini Logo" />{' '}
         </Animated>
       </div>
-      <div className={heroDesign.flexhead}>
+      <div className={flexhead}>
         {' '}
-        <h1
-          className={`${typewriterDesign.tpwriter} ${typewriterDesign.line} ${typewriterDesign.animTypewriter}`}
-        >
+        <h1 className={`${tpwriter} ${line} ${animTypewriter}`}>
           Webmediabedrijf Gimmix. Welkom!
         </h1>
         <Animated
@@ -36,9 +55,8 @@ const Hero = () => (
           animationInDelay={1500}
           animationInDuration={3000}
         >
-          <h1 className={heroDesign.ipvtpwriter}>
-            Webmediabedrijf <br />{' '}
-            <span className={heroDesign.spechead}> Gimmix</span>{' '}
+          <h1 className={ipvtpwriter}>
+            Webmediabedrijf <br /> <span className={spechead}> Gimmix</span>{' '}
             <span className="speccol">.</span>{' '}
           </h1>{' '}
         </Animated>
@@ -47,10 +65,10 @@ const Hero = () => (
           animationInDelay={8500}
           animationInDuration={2000}
         >
-          <h2 className={heroDesign.heroHead}>
-            Web<span className={heroDesign.herospec}>sites</span>, web
-            <span className={heroDesign.herospec}>applicaties</span> & SE
-            <span className={heroDesign.herospec}>O</span>
+          <h2 className={heroHead}>
+            Web<span className={herospec}>sites</span>, web
+            <span className={herospec}>applicaties</span> & SE
+            <span className={herospec}>O</span>
           </h2>
         </Animated>
         <Animated
@@ -58,37 +76,37 @@ const Hero = () => (
           animationInDelay={3250}
           animationInDuration={3000}
         >
-          <h2 className={heroDesign.heroHeadMB}>
-            Web<span className={heroDesign.herospec}>sites</span>, web
-            <span className={heroDesign.herospec}>applicaties</span> & SE
-            <span className={heroDesign.herospec}>O</span>
+          <h2 className={heroHeadMB}>
+            Web<span className={herospec}>sites</span>, web
+            <span className={herospec}>applicaties</span> & SE
+            <span className={herospec}>O</span>
           </h2>
         </Animated>
       </div>
-      <div className={heroDesign.flexancors}>
+      <div className={flexancors}>
         <Animated
           animationIn="zoomIn"
           animationInDelay={11000}
           animationInDuration={3000}
         >
-          <div className={heroDesign.scrollDown} />
+          <div className={scrollDown} />
         </Animated>
         <Animated
           animationIn="zoomIn"
           animationInDelay={7500}
           animationInDuration={3000}
         >
-          <div className={heroDesign.scrollDownMB} />
+          <div className={scrollDownMB} />
         </Animated>
         <Animated
           animationIn="fadeInDown"
           animationInDelay={9500}
           animationInDuration={2000}
         >
-          <span className={heroDesign.scrollHead}>
+          <span className={scrollHead}>
             <button
               type="button"
-              className={heroDesign.scrollBtn}
+              className={scrollBtn}
               onClick={() => scrollTo('#biografiescroll')}
             >
               biografie
@@ -96,7 +114,7 @@ const Hero = () => (
             <span className="speccol">&nbsp;|&nbsp;</span>{' '}
             <button
               type="button"
-              className={heroDesign.scrollBtn}
+              className={scrollBtn}
               onClick={() => scrollTo('#servicescroll')}
             >
               services
@@ -104,7 +122,7 @@ const Hero = () => (
             <span className="speccol">&nbsp;|&nbsp;</span>{' '}
             <button
               type="button"
-              className={heroDesign.scrollBtn}
+              className={scrollBtn}
               onClick={() => scrollTo('#projectscroll')}
             >
               portfolio
@@ -116,10 +134,10 @@ const Hero = () => (
           animationInDelay={4500}
           animationInDuration={3000}
         >
-          <span className={heroDesign.scrollHeadMB}>
+          <span className={scrollHeadMB}>
             <button
               type="button"
-              className={heroDesign.scrollBtnMB}
+              className={scrollBtnMB}
               onClick={() => scrollTo('#biografiescroll')}
             >
               biografie
@@ -127,7 +145,7 @@ const Hero = () => (
             <span className="speccol">&nbsp;|&nbsp;</span>{' '}
             <button
               type="button"
-              className={heroDesign.scrollBtnMB}
+              className={scrollBtnMB}
               onClick={() => scrollTo('#servicescroll')}
             >
               services
@@ -135,7 +153,7 @@ const Hero = () => (
             <span className="speccol">&nbsp;|&nbsp;</span>{' '}
             <button
               type="button"
-              className={heroDesign.scrollBtnMB}
+              className={scrollBtnMB}
               onClick={() => scrollTo('#projectscroll')}
             >
               portfolio

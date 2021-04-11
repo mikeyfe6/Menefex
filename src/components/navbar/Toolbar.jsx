@@ -1,66 +1,73 @@
 import React from 'react';
+
 import { Link } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import logo from '../../logo/Gimmix-logo.svg';
 import DrawerToggleButton from './DrawerToggleButton';
 
-import headLogo from '../../styles/modules/headLogo.module.scss';
-import headerDesign from '../../styles/modules/toolbar.module.scss';
+import { toolLogo } from '../../styles/modules/headLogo.module.scss';
+import {
+  tlbar,
+  tlbarNavigation,
+  tlbarToggleButton,
+  spacerTwo,
+  spacer,
+  tlbarNavigationItems,
+  activePage,
+  dots,
+  whapp,
+} from '../../styles/modules/toolbar.module.scss';
 
 const toolbar = (props) => (
-  <header className={headerDesign.toolbar}>
-    <nav className={headerDesign.toolbar__navigation}>
-      <div className={headerDesign.toolbar__toggleButton}>
+  <header className={tlbar}>
+    <nav className={tlbarNavigation}>
+      <div className={tlbarToggleButton}>
         <DrawerToggleButton click={props.drawerClickHandler} />
       </div>
-      <div className={headerDesign.spacerTwo} />
+      <div className={spacerTwo} />
       <div>
         <Link to="/">
-          <img className={headLogo.logo} src={logo} alt="Gimmix Logo" />
+          <img className={toolLogo} src={logo} alt="Gimmix Logo" />
         </Link>
       </div>
-      <div className={headerDesign.spacer} />
-      <div className={headerDesign.toolbar_navigationItems}>
+      <div className={spacer} />
+      <div className={tlbarNavigationItems}>
         <ul>
           <li>
-            <Link to="/" activeClassName={headerDesign.activePage}>
+            <Link to="/" activeClassName={activePage}>
               home
-              <span className={headerDesign.dots}>.</span>
+              <span className={dots}>.</span>
             </Link>
           </li>
           <li>
-            <Link to="/work/" activeClassName={headerDesign.activePage}>
+            <Link to="/work/" activeClassName={activePage}>
               portfolio
-              <span className={headerDesign.dots}>.</span>
+              <span className={dots}>.</span>
             </Link>
           </li>
           <li>
-            <Link
-              to="/blog/"
-              activeClassName={headerDesign.activePage}
-              partiallyActive
-            >
+            <Link to="/blog/" activeClassName={activePage} partiallyActive>
               blog
-              <span className={headerDesign.dots}>.</span>
+              <span className={dots}>.</span>
             </Link>
           </li>
           <li>
-            <Link to="/prices/" activeClassName={headerDesign.activePage}>
+            <Link to="/prices/" activeClassName={activePage}>
               prijzen
-              <span className={headerDesign.dots}>.</span>
+              <span className={dots}>.</span>
             </Link>
           </li>
           <li>
-            <Link to="/about/" activeClassName={headerDesign.activePage}>
+            <Link to="/about/" activeClassName={activePage}>
               over
-              <span className={headerDesign.dots}>.</span>
+              <span className={dots}>.</span>
             </Link>
           </li>
           <li>
-            <Link to="/contact/" activeClassName={headerDesign.activePage}>
+            <Link to="/contact/" activeClassName={activePage}>
               contact
-              <span className={headerDesign.dots}>.</span>
+              <span className={dots}>.</span>
             </Link>
           </li>
           <li>
@@ -73,7 +80,7 @@ const toolbar = (props) => (
                 icon={['fab', 'whatsapp']}
                 size="2x"
                 color="#555555"
-                className={headerDesign.whapp}
+                className={whapp}
               />
             </a>
           </li>

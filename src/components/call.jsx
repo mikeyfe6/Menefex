@@ -1,8 +1,20 @@
 import React from 'react';
-import ReCAPTCHA from 'react-google-recaptcha';
-import { navigate } from 'gatsby';
 
-import callStyles from '../styles/modules/call.module.scss';
+import { navigate } from 'gatsby';
+import ReCAPTCHA from 'react-google-recaptcha';
+
+import {
+  formwrapper,
+  callForm,
+  terugbel,
+  thick,
+  fillareaone,
+  fillareatwo,
+  textarea,
+  recaptcha,
+  callbtn,
+  choosing,
+} from '../styles/modules/call.module.scss';
 
 // TODO: ENV goed instellen!
 
@@ -58,24 +70,24 @@ const Call = () => {
   );
 
   return (
-    <div className={callStyles.formwrapper}>
+    <div className={formwrapper}>
       <form
         onSubmit={handleSubmit}
         name="Call Form"
-        id={callStyles.callForm}
+        id={callForm}
         method="POST"
         action="/success/"
         data-netlify="true"
         data-netlify-recaptcha="true"
       >
         <input type="hidden" name="form-name" value="Call Form" />
-        <h5 className={callStyles.terugbel}>Terugbelverzoek</h5>
-        <hr className={callStyles.thick} />
-        <ul className={callStyles.fillareaone}>
+        <h5 className={terugbel}>Terugbelverzoek</h5>
+        <hr className={thick} />
+        <ul className={fillareaone}>
           <li>
             <label htmlFor="call-name">
               <span className="speccol">*</span> Naam
-              <div className={callStyles.textarea}>
+              <div className={textarea}>
                 <input
                   type="text"
                   name="name"
@@ -90,7 +102,7 @@ const Call = () => {
           <li>
             <label htmlFor="call-tel">
               <span className="speccol">*</span> Telefoon
-              <div className={callStyles.textarea}>
+              <div className={textarea}>
                 <input
                   type="tel"
                   name="tel"
@@ -110,7 +122,7 @@ const Call = () => {
                 <select
                   required
                   name="tijdstip"
-                  className={callStyles.choosing}
+                  className={choosing}
                   value={inputs.tijdstip}
                   onChange={handleChange}
                   multiple={false}
@@ -128,12 +140,12 @@ const Call = () => {
             </label>
           </li>
         </ul>
-        <ul className={callStyles.fillareatwo}>
+        <ul className={fillareatwo}>
           <li>
             <label htmlFor="call-opmerking">
               <span className="speccol">*</span> Heeft u nog opmerkingen?
               (optioneel)
-              <div className={callStyles.textarea}>
+              <div className={textarea}>
                 <textarea
                   type="text"
                   name="message"
@@ -149,7 +161,7 @@ const Call = () => {
         <div className="clr" />
         <ReCAPTCHA
           sitekey={process.env.GATSBY_SITE_RECAPTCHA_KEY}
-          className={callStyles.recaptcha}
+          className={recaptcha}
           onChange={handleChangeReCAPTCHA}
         />
         <div className="clr" />
@@ -157,7 +169,7 @@ const Call = () => {
           type="submit"
           name="submit"
           id="call-submit"
-          className={callStyles.callbtn}
+          className={callbtn}
         >
           Bel mij terug!
         </button>

@@ -1,60 +1,65 @@
 import React from 'react';
+
 import { Link } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import sidebarDesign from '../../styles/modules/sidebar.module.scss';
+import {
+  activePage,
+  dots,
+  menuline,
+  whapp,
+  wapp,
+  sideBar,
+  open,
+} from '../../styles/modules/sidebar.module.scss';
 
 const sideDrawer = (props) => {
-  let drawerClasses = sidebarDesign.sideBar;
+  let drawerClasses = sideBar;
   if (props.show) {
-    drawerClasses = `${sidebarDesign.sideBar} ${sidebarDesign.open}`;
+    drawerClasses = `${sideBar} ${open}`;
   }
 
   return (
     <nav className={drawerClasses}>
       <ul>
         <li>
-          <Link to="/" activeClassName={sidebarDesign.activePage}>
+          <Link to="/" activeClassName={activePage}>
             home
-            <span className={sidebarDesign.dots}>.</span>
+            <span className={dots}>.</span>
           </Link>
         </li>
         <li>
-          <Link to="/work/" activeClassName={sidebarDesign.activePage}>
+          <Link to="/work/" activeClassName={activePage}>
             portfolio
-            <span className={sidebarDesign.dots}>.</span>
+            <span className={dots}>.</span>
           </Link>
         </li>
         <li>
-          <Link
-            to="/blog/"
-            activeClassName={sidebarDesign.activePage}
-            partiallyActive
-          >
+          <Link to="/blog/" activeClassName={activePage} partiallyActive>
             blog
-            <span className={sidebarDesign.dots}>.</span>
+            <span className={dots}>.</span>
           </Link>
         </li>
         <li>
-          <Link to="/prices/" activeClassName={sidebarDesign.activePage}>
+          <Link to="/prices/" activeClassName={activePage}>
             prijzen
-            <span className={sidebarDesign.dots}>.</span>
+            <span className={dots}>.</span>
           </Link>
         </li>
         <li>
-          <Link to="/about/" activeClassName={sidebarDesign.activePage}>
+          <Link to="/about/" activeClassName={activePage}>
             over
-            <span className={sidebarDesign.dots}>.</span>
+            <span className={dots}>.</span>
           </Link>
         </li>
         <li>
-          <Link to="/contact/" activeClassName={sidebarDesign.activePage}>
+          <Link to="/contact/" activeClassName={activePage}>
             contact
-            <span className={sidebarDesign.dots}>.</span>
+            <span className={dots}>.</span>
           </Link>
         </li>
         <br />
-        <hr className={sidebarDesign.menuline} />
+        <hr className={menuline} />
         <li>
           <a
             href="https://wa.me/31611054318"
@@ -65,12 +70,10 @@ const sideDrawer = (props) => {
               icon={['fab', 'whatsapp']}
               size="lg"
               color="#1ca111"
-              className={sidebarDesign.whapp}
+              className={whapp}
             />
-            <span className={sidebarDesign.wapp}>
-              &nbsp;Stuur een whatsapp&apos; bericht
-            </span>
-            <span className={sidebarDesign.dots}>.</span>
+            <span className={wapp}>&nbsp;Stuur een whatsapp&apos; bericht</span>
+            <span className={dots}>.</span>
           </a>
         </li>
       </ul>

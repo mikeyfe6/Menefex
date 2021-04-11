@@ -1,10 +1,29 @@
 import React from 'react';
+
 import { Link } from 'gatsby';
 // import { graphql, useStaticQuery } from 'gatsby';
 
-import footerStyles from '../styles/modules/footer.module.scss';
+import minilogo from '../logo/Gimmix-mini.svg';
 
-import mini from '../logo/Gimmix-mini.svg';
+import {
+  collab,
+  sayin,
+  hr,
+  ministylo,
+  info,
+  personal,
+  mailfoot,
+  telfoot,
+  media,
+  fb,
+  ig,
+  tw,
+  lin,
+  gh,
+  address,
+  amsterdam,
+  termscods,
+} from '../styles/modules/footer.module.scss';
 
 // TODO: footer copryrights in het midden zetten
 
@@ -26,11 +45,11 @@ const Footer = () => {
     <footer>
       <div className="container">
         <div className="whitespace" />
-        <div className={footerStyles.collab}>
+        <div className={collab}>
           <div className="row">
             <div className="col-lg-12">
               <blockquote>
-                <p className={footerStyles.sayin}>
+                <p className={sayin}>
                   <i>
                     <span>
                       &quot;Instead of thinking outside of the box, get rid of
@@ -44,51 +63,39 @@ const Footer = () => {
           </div>
         </div>
         <br />
-        <div className={footerStyles.hr}>
+        <div className={hr}>
           <br />
           <br />
           <Link to="/">
-            <img
-              className={footerStyles.mini}
-              src={mini}
-              alt="Gimmix Mini Logo"
-            />
+            <img className={ministylo} src={minilogo} alt="Gimmix Mini Logo" />
           </Link>{' '}
           <div className="row" />
         </div>
         <div className="extrawhitespace" />
         <br />
 
-        <div className={footerStyles.info}>
+        <div className={info}>
           <div className="row">
-            <div className="col-lg-4" id={footerStyles.personal}>
-              <p className="wow fadeInUp">connect with us</p>
-              <h4 className="wow fadeInUp" data-wow-delay="0.2s">
+            <div className="col-lg-4" id={personal}>
+              <p>connect with us</p>
+              <h4>
                 <a href="mailto:info@gimmix.nl">
                   {' '}
-                  <span className={footerStyles.mailfoot}>e:</span>{' '}
-                  info@gimmix.nl
+                  <span className={mailfoot}>e:</span> info@gimmix.nl
                 </a>{' '}
                 ∙
                 <a href="tel:0611054318">
                   {' '}
-                  <span className={footerStyles.telfoot}>t:</span> +31 6 11 05
-                  43 18
+                  <span className={telfoot}>t:</span> +31 6 11 05 43 18
                 </a>
               </h4>
             </div>
 
-            <div className="col-lg-4" id={footerStyles.media}>
-              <p className="wow fadeInUp" data-wow-delay="2s">
-                follow us on
-              </p>
+            <div className="col-lg-4" id={media}>
+              <p>follow us on</p>
 
               <ul>
-                <li
-                  id={footerStyles.fb}
-                  className="wow fadeInUp"
-                  data-wow-delay="0.4s"
-                >
+                <li id={fb}>
                   <a
                     href="https://www.facebook.com/GimmixWMB"
                     rel="noopener noreferrer"
@@ -97,11 +104,7 @@ const Footer = () => {
                     fb
                   </a>
                 </li>
-                <li
-                  id={footerStyles.ig}
-                  className="wow fadeInUp"
-                  data-wow-delay="0.6s"
-                >
+                <li id={ig}>
                   <a
                     href="https://www.instagram.com/gimmixwmb/"
                     rel="noopener noreferrer"
@@ -110,11 +113,7 @@ const Footer = () => {
                     ig
                   </a>
                 </li>
-                <li
-                  id={footerStyles.tw}
-                  className="wow fadeInUp"
-                  data-wow-delay="0.8s"
-                >
+                <li id={tw}>
                   <a
                     href="https://www.twitter.com/GimmixWMB"
                     rel="noopener noreferrer"
@@ -123,11 +122,7 @@ const Footer = () => {
                     tw
                   </a>
                 </li>
-                <li
-                  id={footerStyles.li}
-                  className="wow fadeInUp"
-                  data-wow-delay="1.0s"
-                >
+                <li id={lin}>
                   <a
                     href="https://www.linkedin.com/company/gimmixwmb/"
                     rel="noopener noreferrer"
@@ -136,11 +131,7 @@ const Footer = () => {
                     li
                   </a>
                 </li>
-                <li
-                  id={footerStyles.gh}
-                  className="wow fadeInUp"
-                  data-wow-delay="1.0s"
-                >
+                <li id={gh}>
                   <a
                     href="https://github.com/mikeyfe6"
                     rel="noopener noreferrer"
@@ -155,19 +146,16 @@ const Footer = () => {
               <br />
             </div>
 
-            <div className="col-lg-4" id={footerStyles.address}>
-              <p className="wow fadeInUp" data-wow-delay="0s">
-                straight from
-              </p>
-              <h4 className="wow fadeInUp" data-wow-delay="0.2s">
-                <span className={footerStyles.amsterdam}>xxx</span> amsterdam,
-                netherlands
+            <div className="col-lg-4" id={address}>
+              <p>straight from</p>
+              <h4>
+                <span className={amsterdam}>xxx</span> amsterdam, netherlands
               </h4>
               <div className="whitespace" />
             </div>
           </div>
         </div>
-        <p className={footerStyles.termscods}>
+        <p className={termscods}>
           <span className="speccol">&copy;</span> 2019 - {today.getFullYear()}{' '}
           <u>Gimmix</u> <span className="speccol">|</span>
           <Link to="/privacy-policy/"> privacybeleid</Link>{' '}

@@ -4,10 +4,21 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 import Layout from '../components/layout';
-
 import SEO from '../components/seo';
 
-import workDesign from '../styles/modules/work.module.scss';
+import {
+  projects,
+  workimg,
+  projectInfo,
+  projectText,
+  projectHead,
+  projectOrg,
+  // projectField,
+  technologien,
+  btnLight,
+  workicon,
+  btnDark,
+} from '../styles/modules/work.module.scss';
 
 // import eternity from '../img/projects/Eternitydrum-screen.jpg';
 // import blackharmony from '../img/projects/Blackharmony-screen.jpg';
@@ -26,7 +37,7 @@ const workPage = () => (
       <div className="smallwhitespace" />
       <div className="row">
         <div className="col-lg-12">
-          <h1 className="page-title" data-wow-delay="1s">
+          <h1 className="page-title">
             Recente Projecten<span className="headdots">.</span>
           </h1>
           <br />
@@ -40,7 +51,7 @@ const workPage = () => (
 
       <br />
 
-      <div className={workDesign.projects}>
+      <div className={projects}>
         <ScrollAnimation
           animateIn="fadeIn"
           delay={750}
@@ -56,18 +67,16 @@ const workPage = () => (
               <img
                 src="https://i.postimg.cc/pXj0DScY/Eternitydrum-screen.png"
                 alt="Eternity Drum"
-                className={workDesign.workimg}
+                className={workimg}
               />
             </a>
-            <div className={workDesign.projectInfo}>
-              <p className={workDesign.projectText}>
-                <span className={workDesign.projectHead}>Client:</span>
-                <span className={workDesign.projectOrg}>
-                  Eternity Percussion
-                </span>
+            <div className={projectInfo}>
+              <p className={projectText}>
+                <span className={projectHead}>Client:</span>
+                <span className={projectOrg}>Eternity Percussion</span>
                 <br />
                 <br />
-                <span className={workDesign.projectField}>
+                <span>
                   Eternity Percussion is een culturele instelling die bijdrage
                   levert aan talentontwikkeling, cultuurparticipatie en
                   visieverbreding van jongeren. D.m.v. o.a. muziekeducatie en
@@ -83,32 +92,32 @@ const workPage = () => (
                 </b>
                 <br />
                 <br />
-                <span className={workDesign.projectHead}> Tools:</span>
-                <mark className={workDesign.technologien}>Wordpress</mark>{' '}
-                <mark className={workDesign.technologien}>
+                <span className={projectHead}> Tools:</span>
+                <mark className={technologien}>Wordpress</mark>{' '}
+                <mark className={technologien}>
                   Advanced Custom Field Types
                 </mark>{' '}
-                <mark className={workDesign.technologien}>Brizy</mark>
+                <mark className={technologien}>Brizy</mark>
               </p>
             </div>
             <a
               href="https://eternitydrum.com"
               rel="noopener noreferrer"
               target="_blank"
-              className={workDesign.btnLight}
+              className={btnLight}
             >
               <FontAwesomeIcon
                 icon="eye"
                 color="#FFCC00"
-                className={workDesign.workicon}
+                className={workicon}
               />{' '}
               Ga naar project
             </a>
-            <a href="#!" className={workDesign.btnDark}>
+            <a href="#!" className={btnDark}>
               <FontAwesomeIcon
                 icon={['fab', 'github']}
                 color="#FFCC00"
-                className={workDesign.workicon}
+                className={workicon}
               />{' '}
               Niet op Github*
             </a>
@@ -134,20 +143,22 @@ const workPage = () => (
               <img
                 src="https://i.postimg.cc/fbzBQRzB/Blackharmony-screen.png"
                 alt="Black Harmony"
-                className={workDesign.workimg}
+                className={workimg}
               />
             </a>
-            <div className={workDesign.projectInfo}>
-              <p className={workDesign.projectText}>
-                <span className={workDesign.projectHead}>Client:</span>
-                <span className={workDesign.projectOrg}>Black Harmony</span>
+            <div className={projectInfo}>
+              <p className={projectText}>
+                <span className={projectHead}>Client:</span>
+                <span className={projectOrg}>Black Harmony</span>
                 <br />
                 <br />
-                Black Harmony is een populaire en getalenteerde zanggroep uit
-                Amsterdam. Deze muziekorganisatie wilt een bijdrage leveren aan
-                de positionering van de traditionele muziek genaamd Apinti
-                Kawina. Black harmony wilt fungeren als ambassadeur als het gaat
-                om traditionele Afro-Surinaamse muziek.
+                <span>
+                  Black Harmony is een populaire en getalenteerde zanggroep uit
+                  Amsterdam. Deze muziekorganisatie wilt een bijdrage leveren
+                  aan de positionering van de traditionele muziek genaamd Apinti
+                  Kawina. Black harmony wilt fungeren als ambassadeur als het
+                  gaat om traditionele Afro-Surinaamse muziek.
+                </span>
                 <br />
                 <br />
                 <b>
@@ -156,33 +167,33 @@ const workPage = () => (
                 </b>
                 <br />
                 <br />
-                <span className={workDesign.projectHead}>Tools:</span>
-                <mark className={workDesign.technologien}>Wordpress</mark>{' '}
-                <mark className={workDesign.technologien}>
+                <span className={projectHead}>Tools:</span>
+                <mark className={technologien}>Wordpress</mark>{' '}
+                <mark className={technologien}>
                   Advanced Custom Field Types
                 </mark>{' '}
-                <mark className={workDesign.technologien}>Additional CSS</mark>{' '}
-                <mark className={workDesign.technologien}>Elementor Pro</mark>
+                <mark className={technologien}>Additional CSS</mark>{' '}
+                <mark className={technologien}>Elementor Pro</mark>
               </p>
             </div>
             <a
               href="https://blackharmony.nl"
               rel="noopener noreferrer"
               target="_blank"
-              className={workDesign.btnLight}
+              className={btnLight}
             >
               <FontAwesomeIcon
                 icon="eye"
                 color="#FFCC00"
-                className={workDesign.workicon}
+                className={workicon}
               />{' '}
               Ga naar project
             </a>
-            <a href="#!" className={workDesign.btnDark}>
+            <a href="#!" className={btnDark}>
               <FontAwesomeIcon
                 icon={['fab', 'github']}
                 color="#FFCC00"
-                className={workDesign.workicon}
+                className={workicon}
               />{' '}
               Niet op Github*
             </a>

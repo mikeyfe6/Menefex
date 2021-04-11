@@ -1,14 +1,41 @@
 import React from 'react';
-import ReCAPTCHA from 'react-google-recaptcha';
+
 import { navigate } from 'gatsby';
-
 import { Animated } from 'react-animated-css';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-import formStyles from '../styles/modules/form.module.scss';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 import Maps from './gmaps/maps';
+
+import {
+  formwrapper,
+  contactForm,
+  textarea,
+  choosing,
+  recaptcha,
+  send,
+  contactbox,
+  undercol,
+  opentijd,
+  uniqcol,
+  covid,
+  socials,
+  contacticons,
+  fbicon,
+  igicon,
+  twicon,
+  liicon,
+  ghicon,
+  rssicon,
+  patricon,
+  waicon,
+  spicon,
+  hrcont,
+  contactgev,
+  gimmixgev,
+  contacttel,
+  contactmail,
+} from '../styles/modules/form.module.scss';
 
 const Form = () => {
   //   const today = new Date()
@@ -75,10 +102,10 @@ const Form = () => {
         animationInDuration={2000}
       >
         <div className="row">
-          <div className={formStyles.formwrapper}>
+          <div className={formwrapper}>
             <form
               name="Contact Form"
-              id={formStyles.contactForm}
+              id={contactForm}
               method="POST"
               action="/success/"
               data-netlify="true"
@@ -90,7 +117,7 @@ const Form = () => {
                 <li>
                   <label htmlFor="contact-name">
                     <span className="speccol">*</span> Naam
-                    <div className={formStyles.textarea}>
+                    <div className={textarea}>
                       <input
                         type="text"
                         name="name"
@@ -105,7 +132,7 @@ const Form = () => {
                 <li>
                   <label htmlFor="contact-company">
                     <span className="speccol">*</span> Bedrijfsnaam (optioneel)
-                    <div className={formStyles.textarea}>
+                    <div className={textarea}>
                       <input
                         type="text"
                         name="company"
@@ -119,7 +146,7 @@ const Form = () => {
                 <li>
                   <label htmlFor="contact-email">
                     <span className="speccol">*</span> Email
-                    <div className={formStyles.textarea}>
+                    <div className={textarea}>
                       <input
                         type="email"
                         name="email"
@@ -135,7 +162,7 @@ const Form = () => {
                 <li>
                   <label htmlFor="contact-tel">
                     <span className="speccol">*</span> Telefoon
-                    <div className={formStyles.textarea}>
+                    <div className={textarea}>
                       <input
                         type="tel"
                         name="tel"
@@ -154,7 +181,7 @@ const Form = () => {
                     <div>
                       <select
                         name="onderwerp"
-                        className={formStyles.choosing}
+                        className={choosing}
                         value={inputs.onderwerp}
                         onChange={handleChange}
                         required
@@ -173,7 +200,7 @@ const Form = () => {
                 <li>
                   <label htmlFor="contact-project">
                     <span className="speccol">*</span> Type uw bericht hieronder
-                    <div className={formStyles.textarea}>
+                    <div className={textarea}>
                       <textarea
                         type="text"
                         name="message"
@@ -190,13 +217,13 @@ const Form = () => {
               <ReCAPTCHA
                 sitekey={process.env.GATSBY_SITE_RECAPTCHA_KEY}
                 onChange={handleChangeReCAPTCHA}
-                className={formStyles.recaptcha}
+                className={recaptcha}
               />
               <button
                 type="submit"
                 name="submit"
                 id="contact-submit"
-                className={formStyles.send}
+                className={send}
               >
                 Versturen
               </button>
@@ -208,36 +235,30 @@ const Form = () => {
       <div className="whitespace" />
       <br />
       <div>
-        <div className={`${formStyles.contactbox}`}>
+        <div className={`${contactbox}`}>
           <div className="row">
             <div className="col-md">
               <p>
                 <b>
-                  <u className={formStyles.undercol}>Wij zijn bereikbaar van</u>
+                  <u className={undercol}>Wij zijn bereikbaar van:</u>
                 </b>
                 <br /> <br />
-                <span className={formStyles.opentijd}>
-                  <span className={formStyles.uniqcol}>ma</span>{' '}
-                  <b>9:00 · 19:00</b>
+                <span className={opentijd}>
+                  <span className={uniqcol}>ma</span> <b>9:00 · 19:00</b>
                   <br />
-                  <span className={formStyles.uniqcol}>di</span>{' '}
-                  <b>9:00 · 19:00</b>
+                  <span className={uniqcol}>di</span> <b>9:00 · 19:00</b>
                   <br />
-                  <span className={formStyles.uniqcol}>wo</span>{' '}
-                  <b> 9:00 · 19:00</b>
+                  <span className={uniqcol}>wo</span> <b> 9:00 · 19:00</b>
                   <br />
-                  <span className={formStyles.uniqcol}>do</span>{' '}
-                  <b> 9:00 · 19:00</b>
+                  <span className={uniqcol}>do</span> <b> 9:00 · 19:00</b>
                   <br />
-                  <span className={formStyles.uniqcol}>vr</span>{' '}
-                  <b> 9:00 · 19:00</b>
+                  <span className={uniqcol}>vr</span> <b> 9:00 · 19:00</b>
                   <br />
                   <br />
-                  <span className={formStyles.uniqcol}>za - zo</span>{' '}
-                  <b>gesloten</b>
+                  <span className={uniqcol}>za - zo</span> <b>gesloten</b>
                   <br />
                   <br />
-                  <span className={formStyles.covid}>
+                  <span className={covid}>
                     <b>&#8251;</b> COVID-19 heeft{' '}
                     <b>
                       <u>geen invloed</u>
@@ -247,14 +268,14 @@ const Form = () => {
                 </span>
               </p>
 
-              <div className={formStyles.socials}>
+              <div className={socials}>
                 <b>Volg ons</b> op de voet, <b>support ons</b> en
-                <span className={formStyles.uniqcol}>
+                <span className={uniqcol}>
                   <b> / </b>
                 </span>
                 of kom in <b>contact</b>
               </div>
-              <div className={formStyles.contacticons}>
+              <div className={contacticons}>
                 <a
                   href="https://www.facebook.com/GimmixWMB"
                   rel="noopener noreferrer"
@@ -263,7 +284,7 @@ const Form = () => {
                   <FontAwesomeIcon
                     icon={['fab', 'facebook']}
                     size="2x"
-                    className={formStyles.fbicon}
+                    className={fbicon}
                   />
                 </a>
 
@@ -275,7 +296,7 @@ const Form = () => {
                   <FontAwesomeIcon
                     icon={['fab', 'instagram']}
                     size="2x"
-                    className={formStyles.igicon}
+                    className={igicon}
                   />
                 </a>
 
@@ -287,7 +308,7 @@ const Form = () => {
                   <FontAwesomeIcon
                     icon={['fab', 'twitter']}
                     size="2x"
-                    className={formStyles.twicon}
+                    className={twicon}
                   />
                 </a>
 
@@ -299,7 +320,7 @@ const Form = () => {
                   <FontAwesomeIcon
                     icon={['fab', 'linkedin']}
                     size="2x"
-                    className={formStyles.liicon}
+                    className={liicon}
                   />
                 </a>
 
@@ -311,7 +332,7 @@ const Form = () => {
                   <FontAwesomeIcon
                     icon={['fab', 'github']}
                     size="2x"
-                    className={formStyles.ghicon}
+                    className={ghicon}
                   />
                 </a>
 
@@ -323,7 +344,7 @@ const Form = () => {
                   <FontAwesomeIcon
                     icon={['fa', 'rss']}
                     size="2x"
-                    className={formStyles.rssicon}
+                    className={rssicon}
                   />
                 </a>
 
@@ -335,7 +356,7 @@ const Form = () => {
                   <FontAwesomeIcon
                     icon={['fab', 'patreon']}
                     size="2x"
-                    className={formStyles.patricon}
+                    className={patricon}
                   />
                 </a>
 
@@ -347,7 +368,7 @@ const Form = () => {
                   <FontAwesomeIcon
                     icon={['fab', 'spotify']}
                     size="2x"
-                    className={formStyles.waicon}
+                    className={waicon}
                   />
                 </a>
 
@@ -359,43 +380,39 @@ const Form = () => {
                   <FontAwesomeIcon
                     icon={['fab', 'whatsapp']}
                     size="2x"
-                    className={formStyles.spicon}
+                    className={spicon}
                   />
                 </a>
               </div>
 
-              <hr className={formStyles.hrcont} />
+              <hr className={hrcont} />
             </div>
             <br />
             <div className="col-md">
-              <p className={formStyles.contactgev}>
+              <p className={contactgev}>
                 <b>
                   {' '}
-                  <span className={formStyles.uniqcol}>Gimmix</span>{' '}
-                  Webmediabedrijf{' '}
+                  <span className={uniqcol}>Gimmix</span> Webmediabedrijf{' '}
                 </b>
                 <br />
                 gevestigd in Amsterdam-Zuidoost
                 <br />
-                <span className={formStyles.gimmixgev}>
+                <span className={gimmixgev}>
                   <br />
-                  <u className={formStyles.undercol}>
-                    Kamer van koophandel-nummer
-                  </u>{' '}
-                  <br />
+                  <u className={undercol}>Kamer van koophandel-nummer</u> <br />
                   <i>
                     <b>76045315</b>
                   </i>
                   <br />
                   <br />
-                  <u className={formStyles.undercol}>BTW-nummer</u>
+                  <u className={undercol}>BTW-nummer</u>
                   <br />
                   <i>
                     <b>NL 003040579B17</b>
                   </i>
                   <br />
                   <br />
-                  <u className={formStyles.undercol}>BANK-nummer</u>
+                  <u className={undercol}>BANK-nummer</u>
                   <br />
                   <i>
                     {' '}
@@ -405,12 +422,12 @@ const Form = () => {
               </p>
 
               <FontAwesomeIcon icon="mobile" size="lg" color="#1db954" />
-              <p className={formStyles.contacttel}>
+              <p className={contacttel}>
                 · &nbsp;<a href="tel:0611054318">+31 6 11 05 43 18</a>
               </p>
               <br />
               <FontAwesomeIcon icon="paper-plane" size="lg" color="#74aece" />
-              <p className={formStyles.contactmail}>
+              <p className={contactmail}>
                 · &nbsp;<a href="mailto:info@gimmix.nl">info@gimmix.nl</a>
               </p>
             </div>

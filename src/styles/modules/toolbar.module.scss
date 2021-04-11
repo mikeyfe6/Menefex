@@ -2,7 +2,7 @@
 @import '../customs/colors';
 @import '../customs/fonts';
 
-.toolbar {
+.tlbar {
   width: 100%;
   top: 0;
   left: 0;
@@ -14,7 +14,7 @@
   border-top: 7.5px solid $secondary-color;
   // border-bottom: 3px solid white;
 
-  &__navigation {
+  &Navigation {
     display: flex;
     align-items: center;
     height: 100%;
@@ -25,7 +25,7 @@
     flex: 1;
   }
 
-  &_navigation-items {
+  &NavigationItems {
     ul {
       list-style: none;
       margin: 0;
@@ -90,12 +90,12 @@
 }
 
 @media (max-width: 768px) {
-  .toolbar_navigation-items {
+  .tlbarNavigationItems {
     display: none;
   }
 
-  .toolbar {
-    &__navigation {
+  .tlbar {
+    &Navigation {
       padding: 0 1.5rem !important;
     }
   }
@@ -108,7 +108,7 @@
 }
 
 @media (min-width: 769px) {
-  .toolbar__toggle-button {
+  .tlbarToggleButton {
     display: none;
   }
 }

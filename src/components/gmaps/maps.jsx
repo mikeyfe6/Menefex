@@ -1,11 +1,12 @@
 import React from 'react';
+
 import GoogleMapReact from 'google-map-react';
 
 // import mini from '../logo/Gimmix-mini.svg';
 
-import '../../styles/marker.scss';
-
 import Marker from './marker';
+
+import '../../styles/marker.scss';
 import '../../styles/maps.scss';
 
 // TODO: Zorgen dat on click pop-up adresinformatie tevoren komt over Gimmix

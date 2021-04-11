@@ -1,6 +1,16 @@
 const path = require('path');
 const { documentToHtmlString } = require('@contentful/rich-text-html-renderer');
 
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions;
+  const typeDefs = `
+    type contentfulBlogPostBodyRichTextNode implements Node @infer {
+      rssHtml: String!
+    }
+  `;
+  createTypes(typeDefs);
+};
+
 exports.createResolvers = ({ createResolvers }) => {
   createResolvers({
     contentfulBlogPostBodyRichTextNode: {

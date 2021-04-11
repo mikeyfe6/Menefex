@@ -1,7 +1,8 @@
 import React from 'react';
+
+import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import CookieConsent from 'react-cookie-consent';
-import { Link } from 'gatsby';
 
 // FontAwesome icons
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -129,6 +130,7 @@ class Layout extends React.Component {
               opacity: '0.95',
             }}
             declineButtonStyle={{
+              fontWeight: '300',
               background: 'transparent',
               border: '1px solid #dadada86',
               borderRadius: '3px',

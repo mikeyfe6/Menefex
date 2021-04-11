@@ -117,58 +117,105 @@
   @include fontslg;
   letter-spacing: 0.35px !important;
 
-  p {
+  .paragraphness {
+    // .p
     margin-top: 1.75rem;
-
-    b {
-      color: $secondary-color;
-      font-weight: 700;
-    }
   }
 
-  a {
-    font-weight: bold;
+  .boldness {
+    // .b
+    color: $secondary-color;
+    font-weight: 500;
   }
 
-  ol {
-    margin-top: 2.5em;
-    padding-left: 25px;
+  .headoneness {
+    // h1
   }
-
-  ol li {
-    margin-top: -0.75rem;
-    color: $primary-color;
-    font-weight: 700;
+  .headtwoness {
+    // h2
   }
-
-  h3 {
+  .headthreeness {
+    // h3
     margin-top: 1rem;
     font-size: 1.375em;
   }
-
-  h4 {
+  .headfourness {
+    // h4
     margin-top: 2rem;
     font-size: 1.125em;
     font-weight: 700;
     margin-bottom: -1%;
   }
-
-  h5 {
+  .headfiveness {
+    // h5
     font-size: 0.9em;
     margin-top: 1.5rem;
     font-weight: 700;
   }
-
-  hr {
-    margin-top: 7.5%;
-    margin-bottom: 0;
-    width: 10%;
-    border-width: 5px;
-    margin-left: 0;
-    color: $sixth-color;
-    border-radius: 3px;
-    opacity: 0.5;
+  .headsixness {
+    // h6
   }
+
+  .orderedlistness {
+    // ol
+    margin-top: 2.5em;
+    padding-left: 25px;
+  }
+
+  .listitemness {
+    // li
+    margin-top: -0.75rem;
+    color: $primary-color;
+    font-weight: 700;
+  }
+
+  .hyperlinkness {
+    font-weight: 500;
+  }
+
+  // a {
+  //   font-weight: bold;
+  // }
+
+  // ol {
+  //   margin-top: 2.5em;
+  //   padding-left: 25px;
+  // }
+
+  // ol li {
+  //   margin-top: -0.75rem;
+  //   color: $primary-color;
+  //   font-weight: 700;
+  // }
+
+  // h3 {
+  //   margin-top: 1rem;
+  //   font-size: 1.375em;
+  // }
+
+  // h4 {
+  //   margin-top: 2rem;
+  //   font-size: 1.125em;
+  //   font-weight: 700;
+  //   margin-bottom: -1%;
+  // }
+
+  // h5 {
+  //   font-size: 0.9em;
+  //   margin-top: 1.5rem;
+  //   font-weight: 700;
+  // }
+
+  // hr {
+  //   margin-top: 7.5%;
+  //   margin-bottom: 0;
+  //   width: 10%;
+  //   border-width: 5px;
+  //   margin-left: 0;
+  //   color: $sixth-color;
+  //   border-radius: 3px;
+  //   opacity: 0.5;
+  // }
 }
 
 .post-authorcont {
@@ -201,6 +248,7 @@
   border: 0;
   margin-top: -4.75%;
   font-size: 0.85em;
+  font-weight: 700;
 
   a {
     color: #93be44;
@@ -213,7 +261,7 @@
 
 .rsssub {
   border: 0;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 0.85em;
   margin-top: 0.25%;
 

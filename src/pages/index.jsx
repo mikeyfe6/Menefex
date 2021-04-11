@@ -1,11 +1,10 @@
 import React from 'react';
+
 import { useStaticQuery, graphql } from 'gatsby';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 import Layout from '../components/layout';
-
 import SEO from '../components/seo';
-
 import Hero from '../components/hero';
 import Quote from '../components/quote';
 import Projects from '../components/swiper';

@@ -1,15 +1,25 @@
 import React from 'react';
-import { Link } from 'gatsby';
 
+import { Link } from 'gatsby';
 import { Animated } from 'react-animated-css';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 
 import Layout from '../components/layout';
-
-import pricesDesign from '../styles/modules/prices.module.scss';
-
 import SEO from '../components/seo';
 import Call from '../components/call';
+
+import {
+  scrollcall,
+  pricecon,
+  pricehead,
+  pricecap,
+  pricedisc,
+  pricebtw,
+  priceaction,
+  pricelist,
+  pricebold,
+  pricebtn,
+} from '../styles/modules/prices.module.scss';
 
 const Prices = () => (
   <Layout>
@@ -28,16 +38,17 @@ const Prices = () => (
       <p className="page-sub">
         Hier ziet u een indicatie van onze scherpe prijzen. Heeft u liever een
         georiënteerd gesprek, neem{' '}
-        <Link to="/contact/">
-          <b>contact</b>
+        <Link to="/contact/" style={{ fontWeight: '700' }}>
+          contact
         </Link>{' '}
         met ons op of vraag een{' '}
         <button
+          style={{ fontWeight: '700' }}
           type="button"
-          className={pricesDesign.scrollcall}
+          className={scrollcall}
           onClick={() => scrollTo('#callscroll')}
         >
-          <b>terugbelverzoek</b>
+          terugbelverzoek
         </button>{' '}
         aan.
       </p>
@@ -49,19 +60,18 @@ const Prices = () => (
             animationInDelay={750}
             animationInDuration={1500}
           >
-            <div className={pricesDesign.pricecon}>
-              <h4 className={pricesDesign.pricehead}>STARTER PLAN</h4>
-              <p className={pricesDesign.pricecap}>
-                <span className={pricesDesign.pricedisc}>€695,-</span> &nbsp;
-                €521,-&nbsp;
+            <div className={pricecon}>
+              <h4 className={pricehead}>STARTER PLAN</h4>
+              <p className={pricecap}>
+                <span className={pricedisc}>€695,-</span> &nbsp; €521,-&nbsp;
                 <sup>
-                  <span className={pricesDesign.pricebtw}>(excl. btw)</span>
+                  <span className={pricebtw}>(excl. btw)</span>
                 </sup>{' '}
               </p>
-              <p className={pricesDesign.priceaction}>ACTIE: *(25% korting)</p>
+              <p className={priceaction}>ACTIE: *(25% korting)</p>
               <br />
-              <ul className={pricesDesign.pricelist}>
-                <li className={pricesDesign.pricebold}>1 - 5 pagina&apos;s</li>
+              <ul className={pricelist}>
+                <li className={pricebold}>1 - 5 pagina&apos;s</li>
 
                 <li>Design op maatwerk</li>
                 <li>CMS</li>
@@ -74,17 +84,11 @@ const Prices = () => (
                 <li>Google Statistieken / SEO</li>
                 <li>Gratis SSL</li>
 
-                <li className={pricesDesign.pricebold}>
-                  1 maand gratis support
-                </li>
+                <li className={pricebold}>1 maand gratis support</li>
               </ul>
               <br />
               <Link to="/contact/">
-                <button
-                  type="button"
-                  name="offerte"
-                  className={pricesDesign.pricebtn}
-                >
+                <button type="button" name="offerte" className={pricebtn}>
                   OFFERTE
                 </button>
               </Link>
@@ -98,19 +102,18 @@ const Prices = () => (
             animationInDelay={1500}
             animationInDuration={1500}
           >
-            <div className={pricesDesign.pricecon}>
-              <h4 className={pricesDesign.pricehead}>ESTABLISHED PLAN</h4>
-              <p className={pricesDesign.pricecap}>
-                <span className={pricesDesign.pricedisc}>€1125,-</span> &nbsp;
-                €844,-&nbsp;
+            <div className={pricecon}>
+              <h4 className={pricehead}>ESTABLISHED PLAN</h4>
+              <p className={pricecap}>
+                <span className={pricedisc}>€1125,-</span> &nbsp; €844,-&nbsp;
                 <sup>
-                  <span className={pricesDesign.pricebtw}>(excl. btw)</span>
+                  <span className={pricebtw}>(excl. btw)</span>
                 </sup>{' '}
               </p>
-              <p className={pricesDesign.priceaction}>ACTIE: *(25% korting)</p>
+              <p className={priceaction}>ACTIE: *(25% korting)</p>
               <br />
-              <ul className={pricesDesign.pricelist}>
-                <li className={pricesDesign.pricebold}>± 10 pagina&apos;s</li>
+              <ul className={pricelist}>
+                <li className={pricebold}>± 10 pagina&apos;s</li>
 
                 <li>Design op maatwerk</li>
                 <li>CMS</li>
@@ -118,25 +121,17 @@ const Prices = () => (
                 <li>Video Integratie</li>
                 <li>Responsive Design</li>
                 <li>Formulieren</li>
-                <li className={pricesDesign.pricebold}>
-                  Zoekmodule op website
-                </li>
+                <li className={pricebold}>Zoekmodule op website</li>
 
                 <li>Testimonials</li>
                 <li>Google Maps integratie</li>
                 <li>Google Statistieken / SEO</li>
                 <li>Gratis SSL</li>
-                <li className={pricesDesign.pricebold}>
-                  2 maanden gratis support
-                </li>
+                <li className={pricebold}>2 maanden gratis support</li>
               </ul>
               <br />
               <Link to="/contact/">
-                <button
-                  type="button"
-                  name="offerte"
-                  className={pricesDesign.pricebtn}
-                >
+                <button type="button" name="offerte" className={pricebtn}>
                   offerte
                 </button>
               </Link>
@@ -150,49 +145,38 @@ const Prices = () => (
             animationInDelay={2250}
             animationInDuration={1500}
           >
-            <div className={pricesDesign.pricecon}>
-              <h4 className={pricesDesign.pricehead}>BUSINESS PLAN</h4>
-              <p className={pricesDesign.pricecap}>
-                <span className={pricesDesign.pricedisc}>€1675,-</span> &nbsp;
-                €1256,-&nbsp;
+            <div className={pricecon}>
+              <h4 className={pricehead}>BUSINESS PLAN</h4>
+              <p className={pricecap}>
+                <span className={pricedisc}>€1675,-</span> &nbsp; €1256,-&nbsp;
                 <sup>
-                  <span className={pricesDesign.pricebtw}>(excl. btw)</span>
+                  <span className={pricebtw}>(excl. btw)</span>
                 </sup>{' '}
               </p>
-              <p className={pricesDesign.priceaction}>ACTIE: *(25% korting)</p>
+              <p className={priceaction}>ACTIE: *(25% korting)</p>
               <br />
-              <ul className={pricesDesign.pricelist}>
-                <li className={pricesDesign.pricebold}>∞ pagina&apos;s</li>
+              <ul className={pricelist}>
+                <li className={pricebold}>∞ pagina&apos;s</li>
 
                 <li>Design op maatwerk</li>
-                <li className={pricesDesign.pricebold}>
-                  E-commerce (+Bank Integratie)
-                </li>
+                <li className={pricebold}>E-commerce (+Bank Integratie)</li>
 
                 <li>CMS</li>
                 <li>Foto Gallery</li>
                 <li>Video Integratie</li>
                 <li>Responsive Design</li>
                 <li>Formulieren</li>
-                <li className={pricesDesign.pricebold}>
-                  Zoekmodule op website
-                </li>
+                <li className={pricebold}>Zoekmodule op website</li>
 
                 <li>Testimonials</li>
                 <li>Google Maps integratie</li>
                 <li>Google Statistieken / SEO</li>
                 <li>Gratis SSL</li>
-                <li className={pricesDesign.pricebold}>
-                  3 maanden gratis support
-                </li>
+                <li className={pricebold}>3 maanden gratis support</li>
               </ul>
               <br />
               <Link to="/contact/">
-                <button
-                  type="button"
-                  name="offerte"
-                  className={pricesDesign.pricebtn}
-                >
+                <button type="button" name="offerte" className={pricebtn}>
                   offerte
                 </button>
               </Link>

@@ -2,7 +2,6 @@
 @import '../customs/colors';
 @import '../customs/fonts';
 
-
 footer {
   position: absolute;
   bottom: 0;
@@ -20,7 +19,7 @@ footer {
   }
 }
 
-.mini {
+.ministylo {
   display: block;
   width: 65px;
   margin: 0 auto;
@@ -143,7 +142,7 @@ footer {
   background: #55acee;
 }
 
-#li::before {
+#lin::before {
   display: inline-block;
   content: '';
   border-radius: 100%;
@@ -190,7 +189,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .mini {
+  .ministylo {
     width: 50px;
   }
 

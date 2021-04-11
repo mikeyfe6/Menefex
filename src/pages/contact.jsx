@@ -1,12 +1,12 @@
 import React from 'react';
-import ScrollAnimation from 'react-animate-on-scroll';
-import Layout from '../components/layout';
 
+import ScrollAnimation from 'react-animate-on-scroll';
+
+import Layout from '../components/layout';
+import Form from '../components/form';
 import SEO from '../components/seo';
 
-import contactDesign from '../styles/modules/contact.module.scss';
-
-import Form from '../components/form';
+import { contacttitle } from '../styles/modules/contact.module.scss';
 
 const ContactPage = () => (
   <Layout>
@@ -31,7 +31,7 @@ const ContactPage = () => (
             duration={2}
             animateOnce
           >
-            <h3 className={contactDesign.contacttitle}>
+            <h3 className={contacttitle}>
               Laten wij samen iets geweldigs creëeren ✨
             </h3>
           </ScrollAnimation>

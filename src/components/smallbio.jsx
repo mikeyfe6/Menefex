@@ -1,16 +1,24 @@
 import React from 'react';
+
 import { Link } from 'gatsby';
 
-import smallbioDesign from '../styles/modules/smallbio.module.scss';
+import {
+  smallbioContainer,
+  smallbioWrapper,
+  thick,
+  smallbioText,
+  meerover,
+  thin,
+} from '../styles/modules/smallbio.module.scss';
 
 const Smallbio = () => (
-  <div className={smallbioDesign.smallbioContainer}>
-    <div className={smallbioDesign.smallbioWrapper}>
+  <div className={smallbioContainer}>
+    <div className={smallbioWrapper}>
       <br />
 
-      <hr className={smallbioDesign.thick} />
+      <hr className={thick} />
       <br />
-      <p className={smallbioDesign.smallbioText}>
+      <p className={smallbioText}>
         <b>Gimmix</b> is een jong & modern webmediabedrijf, opgericht door{' '}
         <b>
           <a
@@ -30,17 +38,13 @@ const Smallbio = () => (
         <br />
       </p>
       <Link to="/about/">
-        <button
-          type="button"
-          name="meerover"
-          className={smallbioDesign.meerover}
-        >
+        <button type="button" name="meerover" className={meerover}>
           Meer over Gimmix!
         </button>
       </Link>
       <div className="clr" />
 
-      <hr className={smallbioDesign.thin} />
+      <hr className={thin} />
     </div>
   </div>
 );

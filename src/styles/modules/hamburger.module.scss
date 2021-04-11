@@ -2,8 +2,7 @@
 @import '../customs/colors';
 @import '../customs/fonts';
 
-
-.toggle-button {
+.toggleButton {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -19,7 +18,7 @@
     outline: none;
   }
 
-  &__line {
+  &Line {
     width: 35px;
     height: 6px;
     background: $primary-color;

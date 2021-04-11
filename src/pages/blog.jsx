@@ -1,13 +1,19 @@
 import React from 'react';
-import { Link, graphql, useStaticQuery } from 'gatsby';
 
+import { Link, graphql, useStaticQuery } from 'gatsby';
 import { Animated } from 'react-animated-css';
 
 import Layout from '../components/layout';
-
 import SEO from '../components/seo';
 
-import blogDesign from '../styles/modules/blog.module.scss';
+import {
+  posts,
+  post,
+  blogimg,
+  posthead,
+  contsubtext,
+  bloggepost,
+} from '../styles/modules/blog.module.scss';
 
 // TODO: images moeten in hun frame komen
 
@@ -58,23 +64,20 @@ const BlogPage = () => {
           animationInDelay={750}
           animationInDuration={2000}
         >
-          <ol className={blogDesign.posts}>
+          <ol className={posts}>
             {data.allContentfulBlogPost.edges.map((edge) => (
-              <li className={blogDesign.post} key={edge.node.id}>
+              <li className={post} key={edge.node.id}>
                 <Link to={`/blog/${edge.node.slug}/`}>
                   <img
                     src={edge.node.image.file.url}
                     alt={edge.node.image.title}
-                    className={blogDesign.blogimg}
+                    className={blogimg}
                   />
-                  <h4 className={blogDesign.posthead}>{edge.node.title}</h4>
+                  <h4 className={posthead}>{edge.node.title}</h4>
 
-                  <span className={blogDesign.contsubtext}>
-                    {' '}
-                    {edge.node.subtitle}
-                  </span>
+                  <span className={contsubtext}> {edge.node.subtitle}</span>
 
-                  <p className={blogDesign.bloggepost}>
+                  <p className={bloggepost}>
                     {' '}
                     Gepost: <strong>{edge.node.publishedDate}</strong> ⌁ Auteur:{' '}
                     <strong>{edge.node.author}</strong>{' '}
