@@ -2,9 +2,9 @@
     https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
-// require('dotenv').config({
-//   path: `.env.${process.env.NODE_ENV}`,
-// });
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
 
 const sass = require('sass');
 
