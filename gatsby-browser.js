@@ -1,7 +1,7 @@
-export function onServiceWorkerUpdateReady() {
-  window.location.reload();
-  // console.log('GXWMB: Gimmix is geupdated !');
-}
+// export function onServiceWorkerUpdateReady() {
+//   window.location.reload();
+//   // console.log('GXWMB: Gimmix is geupdated !');
+// }
 
 export function onClientEntry() {
   document.querySelector('body').style.display = 'none';
