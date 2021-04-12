@@ -202,6 +202,7 @@ module.exports = {
         failOnError: true,
       },
     },
+    'gatsby-plugin-image',
     'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-transformer-remark',

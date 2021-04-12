@@ -29,11 +29,11 @@
     "disqus-react": "^1.0.11",
     "dotenv": "^8.2.0",
     "gatsby": "^3.2.1",
-    "gatsby-image": "^3.2.0",
     "gatsby-plugin-canonical-urls": "^3.2.0",
     "gatsby-plugin-catch-links": "^3.2.0",
     "gatsby-plugin-feed": "^3.2.0",
     "gatsby-plugin-google-tagmanager": "^3.2.0",
+    "gatsby-plugin-image": "^1.2.1",
     "gatsby-plugin-manifest": "^3.2.0",
     "gatsby-plugin-netlify": "^3.2.0",
     "gatsby-plugin-nprogress": "^3.2.0",
@@ -81,10 +81,11 @@
     "gatsby-plugin-eslint": "^3.0.0",
     "prettier": "^2.2.1"
   },
-  "browserslist": [
-    ">0.25%",
-    "not dead"
-  ],
+  "resolutions": {
+    "graphql": "^15.4.0",
+    "graphql-compose": "^7.25.0",
+    "webpack": "^5.24.2"
+  },
   "homepage": "https://gimmix.nl",
   "keywords": [
     "gimmix"
