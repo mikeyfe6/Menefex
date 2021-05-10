@@ -24,5 +24,6 @@ module.exports = {
     'react/jsx-one-expression-per-line': 0,
     'operator-linebreak': 0,
     'max-len': 0,
+    'object-curly-newline': ['warn', { consistent: true }],
   },
 };

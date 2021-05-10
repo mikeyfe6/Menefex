@@ -2,11 +2,21 @@
     https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
+// const {
+//   documentToReactComponents,
+// } = require('@contentful/rich-text-react-renderer');
+
+// const siteUrl = process.env.URL || 'https://gimmix.nl';
+
+// const { documentToHtmlString } = require('@contentful/rich-text-html-renderer');
+
 require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 });
 
-const sass = require('sass');
+// const postCSSimport = require('postcss-import');
+// const postCSSPlugin = require('postcss-preset-env');
+// const nodeSASSPlugin = require('node-sass');
 
 module.exports = {
   siteMetadata: {
@@ -14,11 +24,11 @@ module.exports = {
     url: 'https://gimmix.nl',
     tel: '+31611054318',
     image: '/Gimmix-logo.png',
-    title: 'Gimmix',
-    titleTemplate: '%s · Gimmix',
+    title: 'Menefex',
+    titleTemplate: '%s · Menefex',
     author: 'Michael Fransman',
     description: 'Wij bouwen websites & webapps met oog voor detail.',
-    twitterUsername: '@GimmixWMB',
+    twitterUsername: '@MenefexWMB',
     bizEmail: 'info@gimmix.nl',
     authorEmail: 'michaelfransman@gimmix.nl',
   },
@@ -67,7 +77,7 @@ module.exports = {
 
         setup: ({ query: { site } }, options) => ({
           ...options,
-          title: 'Gimmix WMB: RSS Feeds',
+          title: 'Menefex WMB: RSS Feeds',
           description: site.siteMetadata.description,
           site_url: site.siteMetadata.siteUrl,
           feed_url: `${site.siteMetadata.siteUrl}/rss.xml`,
@@ -123,7 +133,7 @@ module.exports = {
                     'webfeeds:featuredImage': `https:${edge.node.image.file.url}`,
                   },
                   {
-                    'content:encoded': edge.node.body.rssHtml,
+                    'content:encoded': JSON.stringify(edge.node.body),
                   },
                 ],
               })),
@@ -138,7 +148,19 @@ module.exports = {
                       slug
                       updatedAt
                       body {
-                        rssHtml
+                        raw
+                        references {
+                          ... on ContentfulAsset {
+                            contentful_id
+                            __typename
+                            fixed(width: 1600) {
+                              width
+                              height
+                              src
+                              srcSet
+                            }
+                          }
+                        }
                       }
                       image {
                         file {
@@ -152,7 +174,7 @@ module.exports = {
             `,
 
             output: '/rss.xml',
-            title: 'Gimmix WMB: RSS Feeds',
+            title: 'Menefex WMB: RSS Feeds',
             // optional configuration to insert feed reference in pages:
             // if `string` is used, it will be used to create RegExp and then test if pathname of
             // current page satisfied this regular expression;
@@ -178,12 +200,7 @@ module.exports = {
         host: process.env.CONTENTFUL_HOST,
       },
     },
-    {
-      resolve: 'gatsby-plugin-sass',
-      options: {
-        implementation: sass,
-      },
-    },
+    'gatsby-plugin-sass',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -194,12 +211,16 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-sharp',
       options: {
+        // Defaults used for gatsbyImageData and StaticImage
+        defaults: {},
+        // Set to false to allow builds to continue on image errors
+        failOnError: true,
+        // deprecated options and their defaults:
         base64Width: 20,
         forceBase64Format: 'webp', // valid formats: png,jpg,webp
         useMozJpeg: process.env.GATSBY_JPEG_ENCODER === 'MOZJPEG',
         stripMetadata: true,
         defaultQuality: 50,
-        failOnError: true,
       },
     },
     'gatsby-plugin-image',
@@ -212,8 +233,7 @@ module.exports = {
           {
             resolve: 'gatsby-remark-images',
             options: {
-              maxWidth: 250,
-              linkImagesToOriginal: false,
+              maxWidth: 590,
             },
           },
         ],
@@ -240,16 +260,14 @@ module.exports = {
       resolve: 'gatsby-plugin-sitemap',
       options: {
         query: `
-        {
-          site {
-            siteMetadata {
-              siteUrl
+          {
+            site {
+              siteMetadata {
+                siteUrl
+              }
             }
-          }
-
-          allSitePage {
-            edges {
-              node {
+            allSitePage {
+              nodes {
                 path
                 context {
                   updatedAt
@@ -257,22 +275,24 @@ module.exports = {
               }
             }
           }
-      }`,
-        serialize: ({ site, allSitePage }) =>
-          allSitePage.edges.map((edge) => ({
-            url: `${site.siteMetadata.siteUrl}${edge.node.path}`,
-            changefreq: 'daily',
-            priority: 0.7,
-            lastmodISO: edge.node.context.updatedAt,
-          })),
+        `,
+        resolveSiteUrl: ({ site }) => site.siteMetadata.siteUrl,
+        resolvePages: ({ allSitePage }) => allSitePage.nodes,
+        serialize: ({ path, context }) => ({
+          url: path,
+          changefreq: 'daily',
+          priority: 0.7,
+          lastmod: (context && context.updatedAt) || null,
+        }),
       },
     },
+    // 'gatsby-plugin-sitemap',
     'gatsby-plugin-catch-links',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Gimmix',
-        short_name: 'Gimmix',
+        name: 'Menefex',
+        short_name: 'Menefex',
         description: 'Wij bouwen websites & webapps met oog voor detail.',
         start_url: '/',
         background_color: '#a9a9a9',

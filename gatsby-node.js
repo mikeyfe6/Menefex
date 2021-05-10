@@ -1,5 +1,29 @@
+/* eslint-disable no-shadow */
 const path = require('path');
+
 const { documentToHtmlString } = require('@contentful/rich-text-html-renderer');
+
+// exports.createSchemaCustomization = ({ actions }) => {
+//   const { createTypes } = actions;
+//   const typeDefs = `
+//   type contentfulBlogPostBodyRichTextNode {
+//       rssHtml: String
+//     }
+//   `;
+//   createTypes(typeDefs);
+// };
+
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions;
+
+  const typeDefs = `
+      type contentfulBlogPostBodyRichTextNode {
+        rssHtml: String
+      }
+  `;
+
+  createTypes(typeDefs);
+};
 
 exports.createResolvers = ({ createResolvers }) => {
   createResolvers({
