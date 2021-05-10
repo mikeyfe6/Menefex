@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Maintenance = () => (
+const Maintenance = () => (
   <div>
     <h1
       style={{
