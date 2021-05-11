@@ -2,8 +2,11 @@ import React from 'react';
 
 const Maintenance = () => (
   <div>
-    <h3
+    <h6
       style={{
+        backgroundColor: '#fdfae9',
+        border: '3px solid #f8e491',
+        padding: '3rem',
         position: 'absolute',
         top: '50%',
         left: '50%',
@@ -12,13 +15,20 @@ const Maintenance = () => (
       }}
     >
       We zijn <b>snel</b> weer online! En wel onder een nieuwe naam:{' '}
-      <span style={{ color: 'ffcc00', fontWeight: 'bold' }}>
+      <span
+        style={{
+          color: 'ffcc00',
+          fontWeight: 'bold',
+          textDecoration: 'underline',
+          textDecorationColor: '#ffcc00',
+        }}
+      >
         {' '}
-        <u> Menefex</u>
+        Menefex
       </span>{' '}
       Webmediabedrijf. Hou ons in de gaten, voor je het weet zijn we er weer!
       Zelfde kwaliteit, zelfde doelen. ✨
-    </h3>
+    </h6>
   </div>
 );
 
