@@ -1,16 +1,15 @@
 import React from 'react';
 
 const Maintenance = () => (
-  <div>
+  <div style={{ fontFamily: "'Trebuchet MS', sans-serif" }}>
     <h6
       style={{
         backgroundColor: '#fdfae9',
         border: '3px solid #f8e491',
-        padding: '3rem',
+        padding: '2rem',
         position: 'absolute',
         top: '50%',
         left: '50%',
-        marginRight: '-50%',
         transform: 'translate(-50%, -50%)',
       }}
     >
@@ -26,8 +25,11 @@ const Maintenance = () => (
         {' '}
         Menefex
       </span>{' '}
-      Webmediabedrijf. Hou ons in de gaten, voor je het weet zijn we er weer!
-      Zelfde kwaliteit, zelfde doelen. ✨
+      Webmediabedrijf.
+      <br />
+      <br />
+      Hou ons in de gaten, voor je het weet zijn we er weer! Andere naam en nog
+      beter dan ooit ✨
     </h6>
   </div>
 );
