@@ -5,21 +5,21 @@
 <p align="center">
   <a href="https://gimmix.nl" rel="noopener noreferrer"
               target="_blank">
-    <img alt="Gimmix" src="https://i.postimg.cc/WbsmfwKc/Gx-NEWLOGO.png" width="500" />
+    <img alt="Menefex" src="https://i.postimg.cc/WbsmfwKc/Gx-NEWLOGO.png" width="500" />
   </a>
 </p>
 
 &nbsp;&nbsp;
 
 <h1>
-  Gimmix Webmediabedrijf
+  Menefex Webmediabedrijf
 </h1>
 
-Gimmix is een jong en modern webmediabedrijf, opgericht door [Michael Fransman](https://www.linkedin.com/in/michaelfransman/).
+Menefex is een jong en modern webmediabedrijf, opgericht door [Michael Fransman](https://www.linkedin.com/in/michaelfransman/).
 
 Die zich inzet en gespecialiseerd is in het uitdenken en ontwikkelen van websites en webapplicaties. Wij zorgen dat de ambities van de klant en het eindproduct tot één komen.
 
-- _Bekijk ook onze website / Also check our website: [Gimmix Webmediabedrijf](https://gimmix.nl/)_
+- _Bekijk ook onze website / Also check our website: [Menefex Webmediabedrijf](https://gimmix.nl/)_
 
 ---
 
