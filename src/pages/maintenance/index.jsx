@@ -11,7 +11,7 @@ const Maintenance = () => (
       backgroundColor: '#fdfae9',
       border: '3px solid #f8e491',
       padding: '2rem',
-      minWidth: '333px',
+      minWidth: '250px',
     }}
   >
     <h6 style={{}}>
@@ -53,9 +53,10 @@ const Maintenance = () => (
     <ul
       style={{
         display: 'flex',
-        justifyContent: 'space-evenly',
+        justifyContent: 'space-between',
         listStyle: 'none',
         fontSize: '0.95rem',
+        textDecoration: 'none',
       }}
     >
       <li
