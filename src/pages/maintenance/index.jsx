@@ -63,7 +63,6 @@ const Maintenance = () => (
       <li
         style={{
           color: '#4064ad',
-          textDecoration: 'none !important',
         }}
       >
         <a
@@ -72,6 +71,7 @@ const Maintenance = () => (
           target="_blank"
           style={{
             color: '#4064ad',
+            textDecoration: 'none !important',
           }}
         >
           Fb
@@ -81,7 +81,6 @@ const Maintenance = () => (
       <li
         style={{
           color: '#dd2a7b',
-          textDecoration: 'none !important',
         }}
       >
         <a
@@ -90,6 +89,7 @@ const Maintenance = () => (
           target="_blank"
           style={{
             color: '#dd2a7b',
+            textDecoration: 'none !important',
           }}
         >
           Ig
@@ -99,7 +99,6 @@ const Maintenance = () => (
       <li
         style={{
           color: '#1ca111',
-          textDecoration: 'none !important',
         }}
       >
         <a
@@ -108,6 +107,7 @@ const Maintenance = () => (
           target="_blank"
           style={{
             color: '#1ca111',
+            textDecoration: 'none !important',
           }}
         >
           Wa
@@ -117,7 +117,6 @@ const Maintenance = () => (
       <li
         style={{
           color: '#55acee',
-          textDecoration: 'none !important',
         }}
       >
         <a
@@ -126,6 +125,7 @@ const Maintenance = () => (
           target="_blank"
           style={{
             color: '#55acee',
+            textDecoration: 'none !important',
           }}
         >
           Tw
@@ -135,7 +135,6 @@ const Maintenance = () => (
       <li
         style={{
           color: '#0177b5',
-          textDecoration: 'none !important',
         }}
       >
         <a
@@ -144,6 +143,7 @@ const Maintenance = () => (
           target="_blank"
           style={{
             color: '#0177b5',
+            textDecoration: 'none !important',
           }}
         >
           Li
@@ -153,7 +153,6 @@ const Maintenance = () => (
       <li
         style={{
           color: '#1db954',
-          textDecoration: 'none !important',
         }}
       >
         <a
@@ -162,6 +161,7 @@ const Maintenance = () => (
           target="_blank"
           style={{
             color: '#1db954',
+            textDecoration: 'none !important',
           }}
         >
           Sp
