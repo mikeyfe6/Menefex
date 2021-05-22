@@ -55,7 +55,7 @@ const Maintenance = () => (
         display: 'flex',
         justifyContent: 'space-between',
         listStyle: 'none',
-        fontSize: '0.8rem',
+        fontSize: '0.75rem',
         margin: '0',
         padding: '0 0.25rem',
       }}
