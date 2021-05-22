@@ -55,13 +55,15 @@ const Maintenance = () => (
         display: 'flex',
         justifyContent: 'space-between',
         listStyle: 'none',
-        fontSize: '0.95rem',
-        textDecoration: 'none',
+        fontSize: '0.8rem',
+        margin: '0',
+        padding: '0 0.25rem',
       }}
     >
       <li
         style={{
           color: '#4064ad',
+          textDecoration: 'none',
         }}
       >
         <a
@@ -79,6 +81,7 @@ const Maintenance = () => (
       <li
         style={{
           color: '#dd2a7b',
+          textDecoration: 'none',
         }}
       >
         <a
@@ -96,6 +99,7 @@ const Maintenance = () => (
       <li
         style={{
           color: '#1ca111',
+          textDecoration: 'none',
         }}
       >
         <a
@@ -113,6 +117,7 @@ const Maintenance = () => (
       <li
         style={{
           color: '#55acee',
+          textDecoration: 'none',
         }}
       >
         <a
@@ -130,6 +135,7 @@ const Maintenance = () => (
       <li
         style={{
           color: '#0177b5',
+          textDecoration: 'none',
         }}
       >
         <a
@@ -147,6 +153,7 @@ const Maintenance = () => (
       <li
         style={{
           color: '#1db954',
+          textDecoration: 'none',
         }}
       >
         <a
