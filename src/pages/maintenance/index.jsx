@@ -63,7 +63,7 @@ const Maintenance = () => (
       <li
         style={{
           color: '#4064ad',
-          textDecoration: 'none',
+          textDecoration: 'none !important',
         }}
       >
         <a
@@ -81,7 +81,7 @@ const Maintenance = () => (
       <li
         style={{
           color: '#dd2a7b',
-          textDecoration: 'none',
+          textDecoration: 'none !important',
         }}
       >
         <a
@@ -99,7 +99,7 @@ const Maintenance = () => (
       <li
         style={{
           color: '#1ca111',
-          textDecoration: 'none',
+          textDecoration: 'none !important',
         }}
       >
         <a
@@ -117,7 +117,7 @@ const Maintenance = () => (
       <li
         style={{
           color: '#55acee',
-          textDecoration: 'none',
+          textDecoration: 'none !important',
         }}
       >
         <a
@@ -135,7 +135,7 @@ const Maintenance = () => (
       <li
         style={{
           color: '#0177b5',
-          textDecoration: 'none',
+          textDecoration: 'none !important',
         }}
       >
         <a
@@ -153,7 +153,7 @@ const Maintenance = () => (
       <li
         style={{
           color: '#1db954',
-          textDecoration: 'none',
+          textDecoration: 'none !important',
         }}
       >
         <a
