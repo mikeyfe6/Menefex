@@ -5,7 +5,7 @@
 <p align="center">
   <a href="https://gimmix.nl" rel="noopener noreferrer"
               target="_blank">
-    <img alt="Menefex" src="https://i.postimg.cc/WbsmfwKc/Gx-NEWLOGO.png" width="500" />
+    <img alt="Menefex" src="https://i.postimg.cc/2Spcbp6w/Menefex-SOCL.png" width="500" />
   </a>
 </p>
 
