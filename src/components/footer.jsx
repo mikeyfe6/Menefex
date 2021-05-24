@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 // import { graphql, useStaticQuery } from 'gatsby';
 
-import minilogo from '../logo/Gimmix-mini.svg';
+import minilogo from '../logo/Menefex-icon.svg';
 
 import {
   collab,
@@ -67,7 +67,7 @@ const Footer = () => {
           <br />
           <br />
           <Link to="/">
-            <img className={ministylo} src={minilogo} alt="Gimmix Mini Logo" />
+            <img className={ministylo} src={minilogo} alt="Menefex Mini Logo" />
           </Link>{' '}
           <div className="row" />
         </div>
@@ -79,9 +79,9 @@ const Footer = () => {
             <div className="col-lg-4" id={personal}>
               <p>connect with us</p>
               <h4>
-                <a href="mailto:info@gimmix.nl">
+                <a href="mailto:info@menefex.nl">
                   {' '}
-                  <span className={mailfoot}>e:</span> info@gimmix.nl
+                  <span className={mailfoot}>e:</span> info@menefex.nl
                 </a>{' '}
                 ∙
                 <a href="tel:0611054318">
@@ -97,7 +97,7 @@ const Footer = () => {
               <ul>
                 <li id={fb}>
                   <a
-                    href="https://www.facebook.com/GimmixWMB"
+                    href="https://www.facebook.com/MenefexWMB"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
@@ -106,7 +106,7 @@ const Footer = () => {
                 </li>
                 <li id={ig}>
                   <a
-                    href="https://www.instagram.com/gimmixwmb/"
+                    href="https://www.instagram.com/menefexwmb/"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
@@ -115,7 +115,7 @@ const Footer = () => {
                 </li>
                 <li id={tw}>
                   <a
-                    href="https://www.twitter.com/GimmixWMB"
+                    href="https://www.twitter.com/MenefexWMB"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
@@ -124,7 +124,7 @@ const Footer = () => {
                 </li>
                 <li id={lin}>
                   <a
-                    href="https://www.linkedin.com/company/gimmixwmb/"
+                    href="https://www.linkedin.com/company/menefexwmb/"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
@@ -157,7 +157,7 @@ const Footer = () => {
         </div>
         <p className={termscods}>
           <span className="speccol">&copy;</span> 2019 - {today.getFullYear()}{' '}
-          <u>Gimmix</u> <span className="speccol">|</span>
+          <u>Menefex</u> <span className="speccol">|</span>
           <Link to="/privacy-policy/"> privacybeleid</Link>{' '}
           <span className="speccol">|</span>{' '}
           <Link to="/terms-conditions/"> algemene voorwaarden</Link>{' '}

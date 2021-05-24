@@ -3,7 +3,7 @@ import React from 'react';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import { Animated } from 'react-animated-css';
 
-import minilogo from '../logo/Gimmix-mini.svg';
+import minilogo from '../logo/Menefex-icon.svg';
 
 import {
   hero,
@@ -42,13 +42,13 @@ const Hero = () => (
           animationInDelay={5000}
           animationInDuration={7500}
         >
-          <img className={ministylo} src={minilogo} alt="Gimmix Mini Logo" />{' '}
+          <img className={ministylo} src={minilogo} alt="Menefex Mini Logo" />{' '}
         </Animated>
       </div>
       <div className={flexhead}>
         {' '}
         <h1 className={`${tpwriter} ${line} ${animTypewriter}`}>
-          Webmediabedrijf Gimmix. Welkom!
+          Webmediabedrijf Menefex. Welkom!
         </h1>
         <Animated
           animationIn="fadeInDown"
@@ -56,7 +56,7 @@ const Hero = () => (
           animationInDuration={3000}
         >
           <h1 className={ipvtpwriter}>
-            Webmediabedrijf <br /> <span className={spechead}> Gimmix</span>{' '}
+            Webmediabedrijf <br /> <span className={spechead}> Menefex</span>{' '}
             <span className="speccol">.</span>{' '}
           </h1>{' '}
         </Animated>

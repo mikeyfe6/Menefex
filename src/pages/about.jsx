@@ -12,8 +12,8 @@ const AboutPage = () => (
   <Layout>
     <SEO
       title="About"
-      description="Kom meer te weten over Gimmix."
-      keywords="over gimmix, doelen, biografie, motivatie, spotify playlist, stayvibin"
+      description="Kom meer te weten over Menefex."
+      keywords="over menefex, doelen, biografie, motivatie, spotify playlist, stayvibin"
       pathname="/about/"
     />
 
@@ -22,7 +22,7 @@ const AboutPage = () => (
       <div className="row">
         <div className="col-lg-8">
           <h1 className="page-title">
-            Over Gimmix<span className="headdots">.</span>
+            Over Menefex<span className="headdots">.</span>
           </h1>
           <br />
           <Animated
@@ -32,7 +32,7 @@ const AboutPage = () => (
           >
             <h3 className={overtitle}>Wie zijn wij?</h3>
             <p className={aboutText}>
-              <b>Gimmix</b> is een jong en modern webmediabedrijf, opgericht
+              <b>Menefex</b> is een jong en modern webmediabedrijf, opgericht
               door{' '}
               <a
                 href="https://www.linkedin.com/in/michaelfransman"
@@ -54,7 +54,7 @@ const AboutPage = () => (
           >
             <h3 className={overtitle}>Waar staan wij voor?</h3>
             <p className={aboutText}>
-              <b>Gimmix</b> staat voor efficiëntie, innovatie,
+              <b>Menefex</b> staat voor efficiëntie, innovatie,
               gebruiksvriendelijkheid en misschien wel twee van onze
               belangrijkste aspecten; de functionaliteit en de moderne design.
               Wij bouwen onze softwareproducten op maatwerk en zorgen dat de
@@ -70,13 +70,13 @@ const AboutPage = () => (
             animationInDelay={1250}
             animationInDuration={2000}
           >
-            <h3 className={overtitle}>Wat maakt ons als Gimmix zo uniek?</h3>
+            <h3 className={overtitle}>Wat maakt ons als Menefex zo uniek?</h3>
             <p className={aboutText}>
-              <b>Gimmix</b> biedt de nodige hulp, service en communicatie vóór,
+              <b>Menefex</b> biedt de nodige hulp, service en communicatie vóór,
               tijdens en ná het bouwproces van uw product en heeft deze op een
               hoog plateau staan. Wij denken sterk mee met de klant. Wij werken
               met de nieuwste en meest stabiele software, zodat u product veilig
-              en duurzaam blijft. Bij Gimmix respecteren we essentiële details
+              en duurzaam blijft. Bij Menefex respecteren we essentiële details
               en is niks onmogelijk. Er wordt bij het bouwen tot over de laatste
               pixel nagedacht.
             </p>
@@ -89,7 +89,7 @@ const AboutPage = () => (
           >
             <h3 className={overtitle}>Onze doelen, streven en motivatie?</h3>
             <p className={aboutText}>
-              <b>Gimmix</b> heeft als drijfveren de interesse in de diversiteit
+              <b>Menefex</b> heeft als drijfveren de interesse in de diversiteit
               van software en de oneindige mogelijkheden die technologie deze
               tijd biedt. Bovendien motiveert het ons als we onze tevreden
               klanten een digitale brug kunnen bieden en hun ambities verpakt
@@ -123,7 +123,7 @@ const AboutPage = () => (
                 </b>
               </p>{' '}
               <iframe
-                title="Gimmix' #STAYVIBIN Playlist"
+                title="Menefex' #STAYVIBIN Playlist"
                 src="https://open.spotify.com/embed/playlist/08UGoWTjvpuooABCWyPx0m"
                 width="100%"
                 height="444"

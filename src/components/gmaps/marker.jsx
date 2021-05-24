@@ -14,7 +14,7 @@ const Marker = ({ color, name }) => (
 
 Marker.defaultProps = {
   color: null,
-  name: 'Gimmix Webmediabedrijf',
+  name: 'Menefex Webmediabedrijf',
 };
 
 Marker.propTypes = {

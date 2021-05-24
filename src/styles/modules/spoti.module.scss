@@ -11,6 +11,11 @@
   border-radius: 7.5px;
   width: inherit;
   @include shadow;
+
+  iframe {
+    border-radius: 7.5px !important;
+    opacity: 0.9;
+  }
 }
 
 .thick {

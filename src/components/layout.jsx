@@ -103,13 +103,13 @@ class Layout extends React.Component {
             location="top"
             buttonText="Accepteer"
             declineButtonText="Weiger"
-            cookieName="gimmix-cookie"
-            extraCookieOptions={{ domain: '.gimmix.nl' }}
+            cookieName="menefex-cookie"
+            extraCookieOptions={{ domain: '.menefex.nl' }}
             enableDeclineButton
             sameSite="none"
             onAccept={() => {
-              const gmxanltcs = false;
-              return gmxanltcs;
+              const mnfxanltcs = false;
+              return mnfxanltcs;
             }}
             contentStyle={{
               margin: '1.25% 2.5% 1% 2.5%',

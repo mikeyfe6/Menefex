@@ -52,7 +52,7 @@ const SEO = ({
         url: `${siteUrl}${pathname || '/'}`,
         keywords:
           keywords ||
-          'webmediabedrijf, gimmix, amsterdam, website laten maken, wordpress, reactjs',
+          'webmediabedrijf, menefex, amsterdam, website laten maken, wordpress, reactjs',
       };
       return (
         <>
@@ -83,7 +83,7 @@ const SEO = ({
 
             {seo.image && <meta property="og:image" content={seo.image} />}
 
-            <meta property="og:site_name" content="Gimmix" />
+            <meta property="og:site_name" content="Menefex" />
             <meta property="og:locale" content="nl_NL" />
 
             {(article ? (
@@ -119,8 +119,8 @@ const SEO = ({
             <link
               rel="alternate"
               type="application/rss+xml"
-              title="Gimmix WMB: RSS Feeds"
-              href="https://gimmix.nl/rss.xml"
+              title="Menefex WMB: RSS Feeds"
+              href="https://menefex.nl/rss.xml"
             />
 
             {schemaMarkup && (

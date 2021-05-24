@@ -6,7 +6,7 @@
   "engines": {
     "node": ">=8.0.0"
   },
-  "author": "Michael Fransman <mikeyfe6@gimmix.nl>",
+  "author": "Michael Fransman <mikeyfe6@menefex.nl>",
   "license": "agpl-3.0",
   "scripts": {
     "build": "gatsby clean && gatsby build",
@@ -28,11 +28,11 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
     "bootstrap": "^5.0.1",
-    "disqus-react": "^1.0.11",
     "dotenv": "^10.0.0",
     "gatsby": "^3.5.1",
     "gatsby-plugin-canonical-urls": "^3.5.0",
     "gatsby-plugin-catch-links": "^3.5.0",
+    "gatsby-plugin-disqus": "^1.2.2",
     "gatsby-plugin-feed": "^3.5.0",
     "gatsby-plugin-google-tagmanager": "^3.5.0",
     "gatsby-plugin-image": "^1.5.0",
@@ -87,13 +87,13 @@
     "graphql-compose": "^7.25.0",
     "contentful": "8.1.7"
   },
-  "homepage": "https://gimmix.nl",
+  "homepage": "https://menefex.nl",
   "keywords": [
     "menefex"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/mikeyfe6/gimmix"
+    "url": "https://github.com/mikeyfe6/menefex"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"

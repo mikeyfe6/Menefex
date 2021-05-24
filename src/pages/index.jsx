@@ -34,19 +34,19 @@ const IndexPage = () => {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
-    name: 'Gimmix Webmediabedrijf',
+    name: 'Menefex Webmediabedrijf',
     founder: {
       '@type': 'Person',
       name: site.siteMetadata.author,
     },
-    image: `${site.siteMetadata.siteUrl}/Gimmix-logo.png`,
+    image: `${site.siteMetadata.siteUrl}/Menefex-scl.png`,
     logo: 'https://i.postimg.cc/rsf0PJv0/Gx-FAVICON-X.png',
-    '@id': 'https://gimmix.nl/#localbusiness',
+    '@id': 'https://menefex.nl/#localbusiness',
     description: site.siteMetadata.description,
     url: site.siteMetadata.siteUrl,
     telephone: site.siteMetadata.tel,
     email: site.siteMetadata.bizEmail,
-    hasMap: 'https://g.page/GimmixWMB?share',
+    hasMap: 'https://g.page/MenefexWMB?share',
     areaServed: {
       '@type': 'geoShape',
       addressCountry: ['Netherlands', 'Belgium', 'Surinam'],
@@ -71,13 +71,13 @@ const IndexPage = () => {
       closes: '19:00',
     },
     sameAs: [
-      'https://www.facebook.com/GimmixWMB',
-      'https://www.twitter.com/GimmixWMB',
-      'https://www.instagram.com/gimmixwmb/',
-      'https://www.linkedin.com/company/gimmixwmb/',
+      'https://www.facebook.com/MenefexWMB',
+      'https://www.twitter.com/MenefexWMB',
+      'https://www.instagram.com/menefexwmb/',
+      'https://www.linkedin.com/company/menefexwmb/',
       'https://github.com/mikeyfe6',
-      'https://www.patreon.com/gimmixWMB',
-      'https://feeds.feedburner.com/GimmixWMB',
+      'https://www.patreon.com/menefexWMB',
+      'https://feeds.feedburner.com/MenefexWMB',
       'https://wa.me/31611054318',
       'https://open.spotify.com/playlist/08UGoWTjvpuooABCWyPx0m?si=caXZyz28R8u8Ck683qLgQA',
     ],
@@ -87,7 +87,7 @@ const IndexPage = () => {
     <Layout>
       <SEO
         title="#1 Website Specialist"
-        description="Een nieuwe professionele, modern & duurzame website of webapp nodig? Tijdelijk 25% KORTING! | Webmediabedrijf Gimmix uit Amsterdam staat garant voor al uw webgerelateerde wensen en ambities."
+        description="Een nieuwe professionele, modern & duurzame website of webapp nodig? Tijdelijk 25% KORTING! | Webmediabedrijf Menefex uit Amsterdam staat garant voor al uw webgerelateerde wensen en ambities."
         keywords="websites, webapplicaties, wordpress, SEO, amsterdam, specialist"
         schemaMarkup={schema}
       />

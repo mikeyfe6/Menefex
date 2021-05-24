@@ -5,7 +5,7 @@ import React, { useEffect } from 'react';
 
 import { graphql, Link } from 'gatsby';
 import { Animated } from 'react-animated-css';
-import { DiscussionEmbed } from 'disqus-react';
+import { Disqus } from 'gatsby-plugin-disqus';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { BLOCKS, INLINES, MARKS } from '@contentful/rich-text-types';
@@ -15,14 +15,14 @@ import SEO from '../components/seo';
 import GoogleAds from '../components/ads';
 import Layout from '../components/layout';
 
-import mini from '../logo/Gimmix-mini.svg';
+import mini from '../logo/Menefex-icon.svg';
 
 import '../styles/blogpost.scss';
 
 // TODO: Add 'author' & fix the blogpost page accordingly to Traversy Media
 
 export const query = graphql`
-  query($slug: String!) {
+  query ($slug: String!) {
     contentfulBlogPost(slug: { eq: $slug }) {
       title
       id
@@ -64,7 +64,7 @@ export const query = graphql`
   }
 `;
 
-const websiteUrl = 'https://gimmix.nl/';
+const websiteUrl = 'https://menefex.nl/';
 
 const Blog = (props) => {
   // const options = {
@@ -187,7 +187,7 @@ const Blog = (props) => {
     '@type': 'BlogPosting',
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `https://gimmix.nl/blog/${props.data.contentfulBlogPost.slug}/`,
+      '@id': `https://menefex.nl/blog/${props.data.contentfulBlogPost.slug}/`,
     },
     headline: props.data.contentfulBlogPost.title,
     description: props.data.contentfulBlogPost.subtitle,
@@ -198,7 +198,7 @@ const Blog = (props) => {
     },
     publisher: {
       '@type': 'Organization',
-      name: 'Gimmix',
+      name: 'Menefex',
       logo: {
         '@type': 'ImageObject',
         url: 'https://i.postimg.cc/rsf0PJv0/Gx-FAVICON-X.png',
@@ -252,7 +252,7 @@ const Blog = (props) => {
             animationInDelay={750}
             animationInDuration={2000}
           >
-            <img className="blog-mini" src={mini} alt="Gimmix Mini Logo" />
+            <img className="blog-mini" src={mini} alt="Menefex Icon" />
 
             <div className="nexttologo">
               <h1 className="post-title">
@@ -305,19 +305,15 @@ const Blog = (props) => {
                   </span>{' '}
                   {props.data.contentfulBlogPost.updatedPost}
                 </div>
-                <img
-                  className="author-mini"
-                  src={mini}
-                  alt="Gimmix Mini Logo"
-                />
+                <img className="author-mini" src={mini} alt="Menefex Icon" />
               </div>
 
               <div className="clr" />
 
               <div className="feedlysub">
                 <a
-                  href="https://feedly.com/#subscription/feed/https://feeds.feedburner.com/GimmixWMB"
-                  title="Gimmix WMB: RSS Feeds"
+                  href="https://feedly.com/#subscription/feed/https://feeds.feedburner.com/MenefexWMB"
+                  title="Menefex WMB: RSS Feeds"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -332,7 +328,7 @@ const Blog = (props) => {
                 </a>
                 &nbsp;
                 <a
-                  href="https://feedly.com/#subscription/feed/https://feeds.feedburner.com/GimmixWMB"
+                  href="https://feedly.com/#subscription/feed/https://feeds.feedburner.com/MenefexWMB"
                   type="application/rss+xml"
                   rel="noopener noreferrer"
                   target="_blank"
@@ -342,7 +338,7 @@ const Blog = (props) => {
               </div>
               <div className="rsssub">
                 <a
-                  href="https://feeds.feedburner.com/GimmixWMB"
+                  href="https://feeds.feedburner.com/MenefexWMB"
                   type="application/rss+xml"
                   rel="noopener noreferrer"
                   target="_blank"
@@ -355,7 +351,7 @@ const Blog = (props) => {
                 </a>
                 &nbsp;
                 <a
-                  href="https://feeds.feedburner.com/GimmixWMB"
+                  href="https://feeds.feedburner.com/MenefexWMB"
                   type="application/rss+xml"
                   rel="noopener noreferrer"
                   target="_blank"
@@ -381,13 +377,11 @@ const Blog = (props) => {
             animationInDuration={2000}
           >
             <div className="disqussion">
-              <DiscussionEmbed
-                shortname="gimmix"
+              <Disqus
                 config={{
-                  url: `https://gimmix.nl/blog/${props.data.contentfulBlogPost.slug}/`,
+                  url: `https://menefex.nl/blog/${props.data.contentfulBlogPost.slug}/`,
                   identifier: props.data.contentfulBlogPost.id,
                   title: props.data.contentfulBlogPost.title,
-                  language: 'nl',
                 }}
               />
             </div>

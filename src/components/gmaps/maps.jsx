@@ -35,7 +35,7 @@ const SimpleMap = () => (
         <Marker
           lat={52.31049387419748}
           lng={4.9737379576208856}
-          name="Gimmix Webmediabedrijf"
+          name="Menefex Webmediabedrijf"
         />
       </GoogleMapReact>
     </div>

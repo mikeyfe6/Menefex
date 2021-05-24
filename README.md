@@ -3,9 +3,9 @@
 &nbsp;&nbsp;
 
 <p align="center">
-  <a href="https://gimmix.nl" rel="noopener noreferrer"
+  <a href="https://menefex.nl" rel="noopener noreferrer"
               target="_blank">
-    <img alt="Menefex" src="https://i.postimg.cc/2Spcbp6w/Menefex-SOCL.png" width="500" />
+    <img alt="Menefex" src="https://i.postimg.cc/6qSmNRwh/Menefex-TRANS-Logo.png" width="500" />
   </a>
 </p>
 
@@ -19,7 +19,7 @@ Menefex is een jong en modern webmediabedrijf, opgericht door [Michael Fransman]
 
 Die zich inzet en gespecialiseerd is in het uitdenken en ontwikkelen van websites en webapplicaties. Wij zorgen dat de ambities van de klant en het eindproduct tot één komen.
 
-- _Bekijk ook onze website / Also check our website: [Menefex Webmediabedrijf](https://gimmix.nl/)_
+- _Bekijk ook onze website / Also check our website: [Menefex Webmediabedrijf](https://menefex.nl/)_
 
 ---
 
@@ -33,6 +33,6 @@ GNU AGPLv3, all rights reserved, Menefex WMB 2019 - 2021 ©
 
 ---
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/78c114cf-1bff-4d30-8899-92eacaec9f9a/deploy-status)](https://app.netlify.com/sites/gimmix/deploys) [![time tracker](https://wakatime.com/badge/github/mikeyfe6/Gimmix.svg)](https://wakatime.com/badge/github/mikeyfe6/Gimmix)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/78c114cf-1bff-4d30-8899-92eacaec9f9a/deploy-status)](https://app.netlify.com/sites/menefex/deploys) [![time tracker](https://wakatime.com/badge/github/mikeyfe6/menefex.svg)](https://wakatime.com/badge/github/mikeyfe6/menefex)
 
 <!-- AUTO-GENERATED-CONTENT:END -->

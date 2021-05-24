@@ -17,9 +17,9 @@ const PrivacyPolicy = () => (
         <div className="smallwhitespace" />
         <hr />
         <br />
-        <h1 className="page-title">PRIVACYBELEID - Gimmix</h1>
+        <h1 className="page-title">PRIVACYBELEID - Menefex</h1>
         <p>
-          Gimmix respecteert de privacy van de bezoekers van haar website, in
+          Menefex respecteert de privacy van de bezoekers van haar website, in
           het bijzonder de rechten van bezoekers met betrekking tot de
           geautomatiseerde verwerking van persoonsgegevens. Vanwege volledige
           transparantie met onze klanten hebben wij daarom een beleid
@@ -104,10 +104,10 @@ const PrivacyPolicy = () => (
         <h5>Artikel 1 - Wettelijke bepalingen</h5>
         <br />
         <ol>
-          <li>Website (hierna ook “De website”): gimmix.nl</li>
+          <li>Website (hierna ook “De website”): menefex.nl</li>
           <li>
             Verantwoordelijke voor de verwerking van persoonsgegevens (Hierna
-            ook: “De beheerder”): Gimmix, gevestigd te Kelbergen
+            ook: “De beheerder”): Menefex, gevestigd te Kelbergen
             192, 1104LJ Amsterdam, kvk-nummer: 76045315.
           </li>
         </ol>
@@ -198,8 +198,8 @@ const PrivacyPolicy = () => (
         <br />
         <h5>Artikel 6 - Het verzamelen van gegevens</h5>
         <p>
-          Uw gegevens worden verzameld door Gimmix. Onder persoonsgegevens
-          worden verstaan: alle informatie over een geïdentificeerde of
+          Uw gegevens worden verzameld Menefex. Onder persoonsgegevens worden
+          verstaan: alle informatie over een geïdentificeerde of
           identificeerbare natuurlijke persoon; als identificeerbaar wordt
           beschouwd een natuurlijke persoon die direct of indirect kan worden
           geïdentificeerd, met name aan de hand van een identificator zoals een
@@ -222,7 +222,7 @@ const PrivacyPolicy = () => (
           van de hem betreffende verwerking, alsmede het recht tegen de
           verwerking bezwaar te maken en het recht op gegevensoverdraagbaarheid.
           U kunt deze rechten uitoefenen door contact met ons op te nemen
-          via michaelfransman@gimmix.nl.
+          via michaelfransman@menefex.nl.
         </p>
         <p>
           Ieder verzoek daartoe dient te worden vergezeld van een kopie van een
@@ -253,7 +253,7 @@ const PrivacyPolicy = () => (
         <p>
           U kunt commerciële aanbiedingen krijgen van de beheerder. Indien u
           deze niet (meer) wenst te ontvangen, stuurt u een mail naar het
-          volgende adres: michaelfransman@gimmix.nl.
+          volgende adres: michaelfransman@menefex.nl.
         </p>
         <p>
           Indien u tijdens het bezoek van de website enige persoonsgegevens
@@ -336,11 +336,11 @@ const PrivacyPolicy = () => (
           kunt u zich richten tot: <br />
           Michael Fransman,{' '}
           <a
-            href="mailto:michaelfransman@gimmix.nl"
+            href="mailto:michaelfransman@menefex.nl"
             rel="noopener noreferrer"
             target="_blank"
           >
-            michaelfransman@gimmix.nl
+            michaelfransman@menefex.nl
           </a>
           , <a href="tel:0611054318">+31 6 11 05 43 18</a>.
         </p>

@@ -20,17 +20,17 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    siteUrl: 'https://gimmix.nl',
-    url: 'https://gimmix.nl',
+    siteUrl: 'https://menefex.nl',
+    url: 'https://menefex.nl',
     tel: '+31611054318',
-    image: '/Gimmix-logo.png',
+    image: '/Menefex-scl.png',
     title: 'Menefex',
     titleTemplate: '%s · Menefex',
     author: 'Michael Fransman',
     description: 'Wij bouwen websites & webapps met oog voor detail.',
     twitterUsername: '@MenefexWMB',
-    bizEmail: 'info@gimmix.nl',
-    authorEmail: 'michaelfransman@gimmix.nl',
+    bizEmail: 'info@menefex.nl',
+    authorEmail: 'michaelfransman@menefex.nl',
   },
   plugins: [
     {
@@ -181,7 +181,7 @@ module.exports = {
             // if not provided or `undefined`, all pages will have feed reference inserted
             match: '^/blog/',
             // optional configuration to specify external rss feed, such as feedburner
-            link: 'https://feeds.feedburner.com/GimmixWMB',
+            link: 'https://feeds.feedburner.com/MenefexWMB',
           },
         ],
       },
@@ -189,7 +189,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: 'https://gimmix.nl',
+        siteUrl: 'https://menefex.nl',
       },
     },
     {
@@ -237,6 +237,12 @@ module.exports = {
             },
           },
         ],
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-disqus',
+      options: {
+        shortname: 'menefex',
       },
     },
     'gatsby-plugin-smoothscroll',
@@ -299,7 +305,7 @@ module.exports = {
         lang: 'nl',
         theme_color: '#FFCC00',
         display: 'standalone',
-        icon: 'src/img/Gimmix-applogo.png',
+        icon: 'src/img/Menefex-icon.png',
         icon_options: {
           purpose: 'any maskable',
         },

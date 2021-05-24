@@ -32,7 +32,7 @@ import {
   spicon,
   hrcont,
   contactgev,
-  gimmixgev,
+  menefexgev,
   contacttel,
   contactmail,
 } from '../styles/modules/form.module.scss';
@@ -277,7 +277,7 @@ const Form = () => {
               </div>
               <div className={contacticons}>
                 <a
-                  href="https://www.facebook.com/GimmixWMB"
+                  href="https://www.facebook.com/MenefexWMB"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -289,7 +289,7 @@ const Form = () => {
                 </a>
 
                 <a
-                  href="https://www.instagram.com/gimmixwmb/"
+                  href="https://www.instagram.com/menefexwmb/"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -301,7 +301,7 @@ const Form = () => {
                 </a>
 
                 <a
-                  href="https://www.twitter.com/GimmixWMB"
+                  href="https://www.twitter.com/MenefexWMB"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -313,7 +313,7 @@ const Form = () => {
                 </a>
 
                 <a
-                  href="https://www.linkedin.com/company/gimmixwmb/"
+                  href="https://www.linkedin.com/company/menefexwmb/"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -337,7 +337,7 @@ const Form = () => {
                 </a>
 
                 <a
-                  href="https://feeds.feedburner.com/GimmixWMB"
+                  href="https://feeds.feedburner.com/MenefexWMB"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -349,7 +349,7 @@ const Form = () => {
                 </a>
 
                 <a
-                  href="https://www.patreon.com/gimmixWMB"
+                  href="https://www.patreon.com/menefexWMB"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -392,12 +392,12 @@ const Form = () => {
               <p className={contactgev}>
                 <b>
                   {' '}
-                  <span className={uniqcol}>Gimmix</span> Webmediabedrijf{' '}
+                  <span className={uniqcol}>Menefex</span> Webmediabedrijf{' '}
                 </b>
                 <br />
                 gevestigd in Amsterdam-Zuidoost
                 <br />
-                <span className={gimmixgev}>
+                <span className={menefexgev}>
                   <br />
                   <u className={undercol}>Kamer van koophandel-nummer</u> <br />
                   <i>
@@ -428,7 +428,7 @@ const Form = () => {
               <br />
               <FontAwesomeIcon icon="paper-plane" size="lg" color="#74aece" />
               <p className={contactmail}>
-                · &nbsp;<a href="mailto:info@gimmix.nl">info@gimmix.nl</a>
+                · &nbsp;<a href="mailto:info@menefex.nl">info@menefex.nl</a>
               </p>
             </div>
           </div>

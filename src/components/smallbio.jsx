@@ -19,7 +19,7 @@ const Smallbio = () => (
       <hr className={thick} />
       <br />
       <p className={smallbioText}>
-        <b>Gimmix</b> is een jong & modern webmediabedrijf, opgericht door{' '}
+        <b>Menefex</b> is een jong & modern webmediabedrijf, opgericht door{' '}
         <b>
           <a
             href="https://www.linkedin.com/in/michaelfransman"
@@ -39,7 +39,7 @@ const Smallbio = () => (
       </p>
       <Link to="/about/">
         <button type="button" name="meerover" className={meerover}>
-          Meer over Gimmix!
+          Meer over Menefex!
         </button>
       </Link>
       <div className="clr" />

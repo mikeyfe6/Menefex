@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import logo from '../../logo/Gimmix-logo.svg';
+import logo from '../../logo/Menefex-logo.svg';
 import DrawerToggleButton from './DrawerToggleButton';
 
 import { toolLogo } from '../../styles/modules/headLogo.module.scss';
@@ -28,7 +28,7 @@ const toolbar = (props) => (
       <div className={spacerTwo} />
       <div>
         <Link to="/">
-          <img className={toolLogo} src={logo} alt="Gimmix Logo" />
+          <img className={toolLogo} src={logo} alt="Menefex Logo" />
         </Link>
       </div>
       <div className={spacer} />
