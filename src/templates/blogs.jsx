@@ -201,7 +201,7 @@ const Blog = (props) => {
       name: 'Menefex',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://i.postimg.cc/rsf0PJv0/Gx-FAVICON-X.png',
+        url: 'https://i.postimg.cc/YSf8SKzs/Menefex-FAVI.png',
       },
     },
     datePublished: props.data.contentfulBlogPost.publishedSchema,

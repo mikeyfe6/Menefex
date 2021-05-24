@@ -81,7 +81,7 @@ module.exports = {
           description: site.siteMetadata.description,
           site_url: site.siteMetadata.siteUrl,
           feed_url: `${site.siteMetadata.siteUrl}/rss.xml`,
-          image_url: 'https://i.postimg.cc/JnqZPb3f/Gx-FAVICON.png',
+          image_url: 'https://i.postimg.cc/YSf8SKzs/Menefex-FAVI.png',
           webMaster: `${site.siteMetadata.bizEmail} (${site.siteMetadata.title})`,
           managingEditor: `${site.siteMetadata.authorEmail} (${site.siteMetadata.author})`,
           copyright: `© 2019 - ${new Date().getFullYear()} ${
@@ -97,12 +97,16 @@ module.exports = {
             {
               'webfeeds:cover': {
                 _attr: {
-                  image: 'https://i.postimg.cc/WbsmfwKc/Gx-NEWLOGO.png',
+                  image: 'https://i.postimg.cc/CMqyFdfP/Menefex-SCL-TRANS.png',
                 },
               },
             },
-            { 'webfeeds:icon': 'https://i.postimg.cc/JnqZPb3f/Gx-FAVICON.png' },
-            { 'webfeeds:logo': 'https://i.postimg.cc/JnqZPb3f/Gx-FAVICON.png' },
+            {
+              'webfeeds:icon': 'https://i.postimg.cc/YSf8SKzs/Menefex-FAVI.png',
+            },
+            {
+              'webfeeds:logo': 'https://i.postimg.cc/ZqLVVt2h/Menefex-ICON.png',
+            },
             { 'webfeeds:accentColor': 'FFCC00' },
             {
               'webfeeds:related': {

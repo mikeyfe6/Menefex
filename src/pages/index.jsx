@@ -40,7 +40,7 @@ const IndexPage = () => {
       name: site.siteMetadata.author,
     },
     image: `${site.siteMetadata.siteUrl}/Menefex-scl.png`,
-    logo: 'https://i.postimg.cc/rsf0PJv0/Gx-FAVICON-X.png',
+    logo: 'https://i.postimg.cc/YSf8SKzs/Menefex-FAVI.png',
     '@id': 'https://menefex.nl/#localbusiness',
     description: site.siteMetadata.description,
     url: site.siteMetadata.siteUrl,
