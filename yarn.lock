@@ -3936,9 +3936,9 @@ contentful-sdk-core@^6.5.0, contentful-sdk-core@^6.8.0:
     qs "^6.9.4"
 
 contentful@^8.1.7:
-  version "8.3.5"
-  resolved "https://registry.yarnpkg.com/contentful/-/contentful-8.3.5.tgz#1907e6102ec26129ba6e51b4b6616e8ccd3b25e1"
-  integrity sha512-1xlu5MQDsj4A01Vr8pEuU01y9+dL24a6T+1M0ZZHzIj6n4/SJ1clwxW/GgF07qzeFZ+uvP8hSyJ3XVsQ2Shjvg==
+  version "8.3.6"
+  resolved "https://registry.yarnpkg.com/contentful/-/contentful-8.3.6.tgz#612a689e740545527cead616b48155c3f5280ef7"
+  integrity sha512-GbGwC/F5Mv0VAqcWA0dEp46uojt1AqoeMaVi+T7Yojc49R4znsy/hPU4S9e9rxaEbH7ndp68BBiQea8aJpWGZQ==
   dependencies:
     axios "^0.21.1"
     contentful-resolve-response "^1.3.0"
@@ -4921,9 +4921,9 @@ ee-first@1.1.1:
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
 electron-to-chromium@^1.3.564, electron-to-chromium@^1.3.723:
-  version "1.3.736"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.736.tgz#f632d900a1f788dab22fec9c62ec5c9c8f0c4052"
-  integrity sha512-DY8dA7gR51MSo66DqitEQoUMQ0Z+A2DSXFi7tK304bdTVqczCAfUuyQw6Wdg8hIoo5zIxkU1L24RQtUce1Ioig==
+  version "1.3.737"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.737.tgz#196f2e9656f4f3c31930750e1899c091b72d36b5"
+  integrity sha512-P/B84AgUSQXaum7a8m11HUsYL8tj9h/Pt5f7Hg7Ty6bm5DxlFq+e5+ouHUoNQMsKDJ7u4yGfI8mOErCmSH9wyg==
 
 "emoji-regex@>=6.0.0 <=6.1.1":
   version "6.1.1"
