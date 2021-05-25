@@ -115,12 +115,12 @@ class Layout extends React.Component {
               margin: '1.25% 2.5% 1% 2.5%',
             }}
             style={{
-              background: 'linear-gradient(to right, #656565, #323232',
+              background: 'linear-gradient(to right, #595858, #333333',
               opacity: '0.95',
               color: '#dadada',
               fontSize: '11.5px',
               borderBottom: '3px solid #FFCC00',
-              borderTop: '1.5px solid #656565',
+              borderTop: '1.5px solid #595858',
             }}
             buttonStyle={{
               color: '#323232',

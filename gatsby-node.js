@@ -3,6 +3,23 @@ const path = require('path');
 
 const { documentToHtmlString } = require('@contentful/rich-text-html-renderer');
 
+// exports.onCreateWebpackConfig = ({ actions }) => {
+//   actions.setWebpackConfig({
+//     node: {
+//       fs: 'empty',
+//       path: 'mock',
+//     },
+//     resolve: {
+//       alias: {
+//         path: require.resolve('path-browserify'),
+//       },
+//       fallback: {
+//         fs: false,
+//       },
+//     },
+//   });
+// };
+
 // exports.createSchemaCustomization = ({ actions }) => {
 //   const { createTypes } = actions;
 //   const typeDefs = `
@@ -17,8 +34,8 @@ exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions;
 
   const typeDefs = `
-      type contentfulBlogPostBodyRichTextNode {
-        rssHtml: String
+      type contentfulBlogPostBodyRichTextNode implements Node {
+        rssHtml: String!
       }
   `;
 

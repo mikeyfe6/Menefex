@@ -85,7 +85,8 @@
   "resolutions": {
     "graphql": "^15.4.0",
     "graphql-compose": "^7.25.0",
-    "contentful": "8.1.7"
+    "contentful": "^8.1.7",
+    "webpack": "^5.24.2"
   },
   "homepage": "https://menefex.nl",
   "keywords": [
