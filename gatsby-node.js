@@ -23,35 +23,23 @@ const { documentToHtmlString } = require('@contentful/rich-text-html-renderer');
 // exports.createSchemaCustomization = ({ actions }) => {
 //   const { createTypes } = actions;
 //   const typeDefs = `
-//   type contentfulBlogPostBodyRichTextNode {
-//       rssHtml: String
+//   type contentfulBlogPostBodyRichTextNode implements Node {
+//       rssHtml: String!
 //     }
 //   `;
 //   createTypes(typeDefs);
 // };
 
-exports.createSchemaCustomization = ({ actions }) => {
-  const { createTypes } = actions;
-
-  const typeDefs = `
-      type contentfulBlogPostBodyRichTextNode implements Node {
-        rssHtml: String!
-      }
-  `;
-
-  createTypes(typeDefs);
-};
-
-exports.createResolvers = ({ createResolvers }) => {
-  createResolvers({
-    contentfulBlogPostBodyRichTextNode: {
-      rssHtml: {
-        type: 'String',
-        resolve: (source) => documentToHtmlString(source),
-      },
-    },
-  });
-};
+// exports.createResolvers = ({ createResolvers }) => {
+//   createResolvers({
+//     contentfulBlogPostBodyRichTextNode: {
+//       rssHtml: {
+//         type: 'String',
+//         resolve: (source) => documentToHtmlString(source),
+//       },
+//     },
+//   });
+// };
 
 module.exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;

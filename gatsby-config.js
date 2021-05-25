@@ -137,7 +137,7 @@ module.exports = {
                     'webfeeds:featuredImage': `https:${edge.node.image.file.url}`,
                   },
                   {
-                    'content:encoded': JSON.stringify(edge.node.body),
+                    'content:encoded': JSON.stringify(edge.node.body, null, 2),
                   },
                 ],
               })),
@@ -294,6 +294,8 @@ module.exports = {
           priority: 0.7,
           lastmod: (context && context.updatedAt) || null,
         }),
+        output: '/',
+        excludes: ['/success'],
       },
     },
     // 'gatsby-plugin-sitemap',
