@@ -1,7 +1,7 @@
 /* eslint-disable no-shadow */
 const path = require('path');
 
-const { documentToHtmlString } = require('@contentful/rich-text-html-renderer');
+// const { documentToHtmlString } = require('@contentful/rich-text-html-renderer');
 
 // exports.onCreateWebpackConfig = ({ actions }) => {
 //   actions.setWebpackConfig({
