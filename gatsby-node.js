@@ -1,45 +1,45 @@
 /* eslint-disable no-shadow */
 const path = require('path');
 
-// const { documentToHtmlString } = require('@contentful/rich-text-html-renderer');
+const { documentToHtmlString } = require('@contentful/rich-text-html-renderer');
 
-// exports.onCreateWebpackConfig = ({ actions }) => {
-//   actions.setWebpackConfig({
-//     node: {
-//       fs: 'empty',
-//       path: 'mock',
-//     },
-//     resolve: {
-//       alias: {
-//         path: require.resolve('path-browserify'),
-//       },
-//       fallback: {
-//         fs: false,
-//       },
-//     },
-//   });
-// };
+// const CssMinimizerWebpackPlugin = require('css-minimizer-webpack-plugin');
 
-// exports.createSchemaCustomization = ({ actions }) => {
-//   const { createTypes } = actions;
-//   const typeDefs = `
-//   type contentfulBlogPostBodyRichTextNode implements Node {
-//       rssHtml: String!
+// exports.onCreateWebpackConfig = ({ stage, getConfig, actions }) => {
+//   console.log(`Webpack stage ${stage}`);
+//   const config = getConfig();
+//   const minimizer = config?.optimization?.minimizer;
+//   if (stage === 'build-javacsript' && minimizer) {
+//     console.log('Override CssMinimizerWebpackPlugin');
+//     const indexOfCssMinimizerPlugin = minimizer.findIndex(
+//       (minimizer) =>
+//         minimizer.constructor.name === CssMinimizerWebpackPlugin.name,
+//     );
+//     if (indexOfCssMinimizerPlugin > -1) {
+//       const currentCssMinimizerPlugin = minimizer[indexOfCssMinimizerPlugin];
+//       minimizer[indexOfCssMinimizerPlugin] = new CssMinimizerWebpackPlugin({
+//         test: /\.css(\?.*)?$/i,
+//         warningsFilter: () => false,
+//         parallel: currentCssMinimizerPlugin.options.parallel,
+//         minimizerOptions: currentCssMinimizerPlugin.options.minimizerOptions,
+//       });
+//       actions.replaceWebpackPlugin(config);
 //     }
-//   `;
-//   createTypes(typeDefs);
+//   }
 // };
 
-// exports.createResolvers = ({ createResolvers }) => {
-//   createResolvers({
-//     contentfulBlogPostBodyRichTextNode: {
-//       rssHtml: {
-//         type: 'String',
-//         resolve: (source) => documentToHtmlString(source),
-//       },
-//     },
-//   });
-// };
+exports.createResolvers = ({ createResolvers }) => {
+  createResolvers({
+    contentfulBlogPostBody: {
+      rssHtml: {
+        type: 'String',
+        resolve: (source) => documentToHtmlString(source),
+      },
+    },
+  });
+};
+
+// --------------------------------------- //
 
 module.exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;

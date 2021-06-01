@@ -33,6 +33,6 @@ GNU AGPLv3, all rights reserved, Menefex WMB 2019 - 2021 ©
 
 ---
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/78c114cf-1bff-4d30-8899-92eacaec9f9a/deploy-status)](https://app.netlify.com/sites/menefex/deploys) [![time tracker](https://wakatime.com/badge/github/mikeyfe6/menefex.svg)](https://wakatime.com/badge/github/mikeyfe6/menefex)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/78c114cf-1bff-4d30-8899-92eacaec9f9a/deploy-status)](https://app.netlify.com/sites/menefex/deploys) [![Wakatime TR](https://wakatime.com/badge/github/mikeyfe6/Menefex.svg)](https://wakatime.com/badge/github/mikeyfe6/Menefex)
 
 <!-- AUTO-GENERATED-CONTENT:END -->

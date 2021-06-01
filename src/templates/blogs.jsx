@@ -66,6 +66,77 @@ export const query = graphql`
 
 const websiteUrl = 'https://menefex.nl/';
 
+const options = {
+  renderMark: {
+    [MARKS.BOLD]: (text) => <Bold>{text}</Bold>,
+  },
+  renderNode: {
+    [BLOCKS.EMBEDDED_ASSET]: (node) => (
+      <img
+        alt={'lol' || node.data.target.fields.title['nl-NL']}
+        src={node.data.target.fixed.src}
+        className="img-resize"
+      />
+    ),
+    [BLOCKS.EMBEDDED_ENTRY]: (node) => (
+      // manipulate here your embedded entry
+      <>
+        <div>Im an embedded entry, {node}</div>
+      </>
+    ),
+    [BLOCKS.PARAGRAPH]: (node, children) => (
+      <Text style={{ color: 'red !important' }}>{children}</Text>
+    ),
+
+    [BLOCKS.HEADING_1]: (node, children) => <Heading1>{children}</Heading1>,
+    [BLOCKS.HEADING_2]: (node, children) => <Heading2>{children}</Heading2>,
+    [BLOCKS.HEADING_3]: (node, children) => <Heading3>{children}</Heading3>,
+    [BLOCKS.HEADING_4]: (node, children) => <Heading4>{children}</Heading4>,
+    [BLOCKS.HEADING_5]: (node, children) => <Heading5>{children}</Heading5>,
+    [BLOCKS.HEADING_6]: (node, children) => <Heading6>{children}</Heading6>,
+
+    [BLOCKS.UL_LIST]: (node, children) => <UnOrdList>{children}</UnOrdList>,
+    [BLOCKS.OL_LIST]: (node, children) => <OrdList>{children}</OrdList>,
+    [BLOCKS.LIST_ITEM]: (node, children) => <DotList>{children}</DotList>,
+
+    [BLOCKS.HR]: (node, children) => <Horizontal>{children}</Horizontal>,
+
+    [INLINES.HYPERLINK]: ({ data }, children) => (
+      <a
+        className="hyperlinkness"
+        href={data.uri}
+        target={`${data.uri.startsWith(websiteUrl) ? '_self' : '_blank'}`}
+        rel={`${data.uri.startsWith(websiteUrl) ? '' : 'noopener noreferrer'}`}
+      >
+        {children}
+      </a>
+    ),
+  },
+};
+
+const Bold = ({ children }) => <span className="boldness">{children}</span>;
+
+const Text = ({ children }) => <p className="paragraphness">{children}</p>;
+
+const Heading1 = ({ children }) => <h1 className="headoneness">{children}</h1>;
+const Heading2 = ({ children }) => <h2 className="headtwoness">{children}</h2>;
+const Heading3 = ({ children }) => (
+  <h3 className="headthreeness">{children}</h3>
+);
+const Heading4 = ({ children }) => <h4 className="headfourness">{children}</h4>;
+const Heading5 = ({ children }) => <h5 className="headfiveness">{children}</h5>;
+const Heading6 = ({ children }) => <h6 className="headsixness">{children}</h6>;
+
+const UnOrdList = ({ children }) => (
+  <ul className="orderedlistness">{children}</ul>
+);
+const OrdList = ({ children }) => (
+  <ol className="orderedlistness">{children}</ol>
+);
+const DotList = ({ children }) => <li className="listitemness">{children}</li>;
+
+const Horizontal = () => <hr className="horizontness" />;
+
 const Blog = (props) => {
   // const options = {
   //   renderNode: {
@@ -76,110 +147,6 @@ const Blog = (props) => {
   //     },
   //   },
   // };
-
-  // const richTextDocument = {
-  //   nodeType: 'document',
-  //   data: {},
-  //   content: [
-  //     {
-  //       nodeType: 'paragraph',
-  //       value: props.data.contentfulBlogPost.body,
-  //       data: {},
-  //       content: [
-  //         {
-  //           nodeType: 'text',
-  //           data: {},
-  //           marks: [{ type: 'bold' }],
-  //         },
-  //       ],
-  //     },
-  //   ],
-  // };
-
-  const options = {
-    renderMark: {
-      [MARKS.BOLD]: (text) => <Bold>{text}</Bold>,
-    },
-    renderNode: {
-      [BLOCKS.EMBEDDED_ASSET]: (node) => (
-        <img
-          alt={'lol' || node.data.target.fields.title['nl-NL']}
-          src={node.data.target.fixed.src}
-          className="img-resize"
-        />
-      ),
-      [BLOCKS.EMBEDDED_ENTRY]: (node) => (
-        // manipulate here your embedded entry
-        <>
-          <div>Im an embedded entry, {node}</div>
-        </>
-      ),
-      [BLOCKS.PARAGRAPH]: (node, children) => (
-        <Text style={{ color: 'red !important' }}>{children}</Text>
-      ),
-
-      [BLOCKS.HEADING_1]: (node, children) => <Heading1>{children}</Heading1>,
-      [BLOCKS.HEADING_2]: (node, children) => <Heading2>{children}</Heading2>,
-      [BLOCKS.HEADING_3]: (node, children) => <Heading3>{children}</Heading3>,
-      [BLOCKS.HEADING_4]: (node, children) => <Heading4>{children}</Heading4>,
-      [BLOCKS.HEADING_5]: (node, children) => <Heading5>{children}</Heading5>,
-      [BLOCKS.HEADING_6]: (node, children) => <Heading6>{children}</Heading6>,
-
-      [BLOCKS.UL_LIST]: (node, children) => <UnOrdList>{children}</UnOrdList>,
-      [BLOCKS.OL_LIST]: (node, children) => <OrdList>{children}</OrdList>,
-      [BLOCKS.LIST_ITEM]: (node, children) => <DotList>{children}</DotList>,
-
-      [BLOCKS.HR]: (node, children) => <Horizontal>{children}</Horizontal>,
-
-      [INLINES.HYPERLINK]: ({ data }, children) => (
-        <a
-          className="hyperlinkness"
-          href={data.uri}
-          target={`${data.uri.startsWith(websiteUrl) ? '_self' : '_blank'}`}
-          rel={`${
-            data.uri.startsWith(websiteUrl) ? '' : 'noopener noreferrer'
-          }`}
-        >
-          {children}
-        </a>
-      ),
-    },
-  };
-
-  const Bold = ({ children }) => <span className="boldness">{children}</span>;
-
-  const Text = ({ children }) => <p className="paragraphness">{children}</p>;
-
-  const Heading1 = ({ children }) => (
-    <h1 className="headoneness">{children}</h1>
-  );
-  const Heading2 = ({ children }) => (
-    <h2 className="headtwoness">{children}</h2>
-  );
-  const Heading3 = ({ children }) => (
-    <h3 className="headthreeness">{children}</h3>
-  );
-  const Heading4 = ({ children }) => (
-    <h4 className="headfourness">{children}</h4>
-  );
-  const Heading5 = ({ children }) => (
-    <h5 className="headfiveness">{children}</h5>
-  );
-  const Heading6 = ({ children }) => (
-    <h6 className="headsixness">{children}</h6>
-  );
-
-  const UnOrdList = ({ children }) => (
-    <ul className="orderedlistness">{children}</ul>
-  );
-  const OrdList = ({ children }) => (
-    <ol className="orderedlistness">{children}</ol>
-  );
-  const DotList = ({ children }) => (
-    <li className="listitemness">{children}</li>
-  );
-
-  const Horizontal = () => <hr className="horizontness" />;
 
   // prettier-ignore
   const schema = {

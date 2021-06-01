@@ -2,23 +2,20 @@
     https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
-// const {
-//   documentToReactComponents,
-// } = require('@contentful/rich-text-react-renderer');
-
 // const siteUrl = process.env.URL || 'https://gimmix.nl';
-
-// const { documentToHtmlString } = require('@contentful/rich-text-html-renderer');
 
 require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 });
 
-// const postCSSimport = require('postcss-import');
-// const postCSSPlugin = require('postcss-preset-env');
-// const nodeSASSPlugin = require('node-sass');
-
 module.exports = {
+  flags: {
+    PRESERVE_WEBPACK_CACHE: true,
+    FAST_DEV: true,
+    PRESERVE_FILE_DOWNLOAD_CACHE: true,
+    PARALLEL_SOURCING: true,
+    FUNCTIONS: false,
+  },
   siteMetadata: {
     siteUrl: 'https://menefex.nl',
     url: 'https://menefex.nl',
@@ -137,7 +134,7 @@ module.exports = {
                     'webfeeds:featuredImage': `https:${edge.node.image.file.url}`,
                   },
                   {
-                    'content:encoded': JSON.stringify(edge.node.body, null, 2),
+                    'content:encoded': edge.node.body,
                   },
                 ],
               })),
