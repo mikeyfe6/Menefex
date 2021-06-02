@@ -30,7 +30,7 @@ const { documentToHtmlString } = require('@contentful/rich-text-html-renderer');
 
 exports.createResolvers = ({ createResolvers }) => {
   createResolvers({
-    contentfulBlogPostBody: {
+    ContentfulBlogPostBody: {
       rssHtml: {
         type: 'String',
         resolve: (source) => documentToHtmlString(source),
