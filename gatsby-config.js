@@ -134,7 +134,7 @@ module.exports = {
                     'webfeeds:featuredImage': `https:${edge.node.image.file.url}`,
                   },
                   {
-                    'content:encoded': edge.node.body,
+                    'content:encoded': edge.node.body.rssHtml,
                   },
                 ],
               })),
@@ -149,6 +149,7 @@ module.exports = {
                       slug
                       updatedAt
                       body {
+                        rssHtml
                         raw
                         references {
                           ... on ContentfulAsset {

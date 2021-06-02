@@ -3,37 +3,40 @@ const path = require('path');
 
 const { documentToHtmlString } = require('@contentful/rich-text-html-renderer');
 
-// const CssMinimizerWebpackPlugin = require('css-minimizer-webpack-plugin');
+const CssMinimizerWebpackPlugin = require('css-minimizer-webpack-plugin');
 
-// exports.onCreateWebpackConfig = ({ stage, getConfig, actions }) => {
-//   console.log(`Webpack stage ${stage}`);
-//   const config = getConfig();
-//   const minimizer = config?.optimization?.minimizer;
-//   if (stage === 'build-javacsript' && minimizer) {
-//     console.log('Override CssMinimizerWebpackPlugin');
-//     const indexOfCssMinimizerPlugin = minimizer.findIndex(
-//       (minimizer) =>
-//         minimizer.constructor.name === CssMinimizerWebpackPlugin.name,
-//     );
-//     if (indexOfCssMinimizerPlugin > -1) {
-//       const currentCssMinimizerPlugin = minimizer[indexOfCssMinimizerPlugin];
-//       minimizer[indexOfCssMinimizerPlugin] = new CssMinimizerWebpackPlugin({
-//         test: /\.css(\?.*)?$/i,
-//         warningsFilter: () => false,
-//         parallel: currentCssMinimizerPlugin.options.parallel,
-//         minimizerOptions: currentCssMinimizerPlugin.options.minimizerOptions,
-//       });
-//       actions.replaceWebpackPlugin(config);
-//     }
-//   }
-// };
+const fixCssMinimizer = ({ actions, getConfig }) => {
+  const config = getConfig();
+  const minimizer = config?.optimization?.minimizer;
+  if (minimizer) {
+    const indexOfCssMinimizerPlugin = minimizer.findIndex(
+      (plugin) => plugin.constructor.name === CssMinimizerWebpackPlugin.name,
+    );
+    if (indexOfCssMinimizerPlugin > -1) {
+      const currentCssMinimizerPlugin = minimizer[indexOfCssMinimizerPlugin];
+
+      minimizer[indexOfCssMinimizerPlugin] = new CssMinimizerWebpackPlugin({
+        test: /\.css(\?.*)?$/i,
+        warningsFilter: () => false,
+        parallel: currentCssMinimizerPlugin.options.parallel,
+        minimizerOptions: currentCssMinimizerPlugin.options.minimizerOptions,
+      });
+
+      actions.replaceWebpackConfig(config);
+    }
+  }
+};
+
+exports.onCreateWebpackConfig = ({ actions, getConfig }) => {
+  fixCssMinimizer({ actions, getConfig });
+};
 
 exports.createResolvers = ({ createResolvers }) => {
   createResolvers({
     ContentfulBlogPostBody: {
       rssHtml: {
         type: 'String',
-        resolve: (source) => documentToHtmlString(source),
+        resolve: (source) => documentToHtmlString(JSON.parse(source.raw)),
       },
     },
   });
