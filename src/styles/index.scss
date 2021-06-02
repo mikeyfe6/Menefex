@@ -21,6 +21,12 @@ span.speccol {
   color: $secondary-color;
 }
 
+span.speccolplus {
+  color: $fifth-color;
+  font-weight: bolder;
+  opacity: 0.75;
+}
+
 .vertical {
   border-left: 5px solid $spec-color;
   height: 70px;

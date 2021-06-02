@@ -9,7 +9,7 @@
 
   .workimg {
     width: 100%;
-    height: 300px;
+    height: 325px;
     border: 2px $fourth-color solid;
     border-radius: 10px;
     @include smoothtrans;
@@ -26,9 +26,9 @@
     padding: 0.5rem 1rem;
     border: 0.5px solid $secondary-color;
     margin-top: 2em;
-    margin-bottom: 1em;
     border-bottom: none;
     border-top: none;
+    min-height: 225px;
 
     .project-text {
       letter-spacing: 0.02em;

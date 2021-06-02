@@ -21,7 +21,7 @@
   background: linear-gradient(to bottom, $super-color, $fourth-color);
   font-size: 12.5px;
   letter-spacing: 1px;
-  border: 1.5px solid $third-color;
+  border: 2px solid $third-color;
   border-radius: 5px;
   margin-bottom: 2.5%;
   @include smoothtrans;
@@ -30,7 +30,7 @@
   &:hover {
     color: $link-color !important;
     @include smoothtrans;
-    border: 1.5px solid $link-color;
+    border: 2px solid $link-color;
     filter: brightness(90%);
   }
 }
@@ -58,7 +58,6 @@
 
 .nexttologo {
   display: inline-block;
-  margin-top: 1.5%;
   margin-bottom: 2.5%;
   width: 75%;
 }
@@ -87,7 +86,7 @@
   margin-top: 7.5%;
   margin-bottom: 3.5%;
   // font-weight: 700;
-  font-size: 1.125em;
+  font-size: 1.025em;
   font-weight: 700;
   letter-spacing: 0.35px;
 
@@ -170,52 +169,9 @@
   }
 
   .hyperlinkness {
+    // a
     font-weight: 500;
   }
-
-  // a {
-  //   font-weight: bold;
-  // }
-
-  // ol {
-  //   margin-top: 2.5em;
-  //   padding-left: 25px;
-  // }
-
-  // ol li {
-  //   margin-top: -0.75rem;
-  //   color: $primary-color;
-  //   font-weight: 700;
-  // }
-
-  // h3 {
-  //   margin-top: 1rem;
-  //   font-size: 1.375em;
-  // }
-
-  // h4 {
-  //   margin-top: 2rem;
-  //   font-size: 1.125em;
-  //   font-weight: 700;
-  //   margin-bottom: -1%;
-  // }
-
-  // h5 {
-  //   font-size: 0.9em;
-  //   margin-top: 1.5rem;
-  //   font-weight: 700;
-  // }
-
-  // hr {
-  //   margin-top: 7.5%;
-  //   margin-bottom: 0;
-  //   width: 10%;
-  //   border-width: 5px;
-  //   margin-left: 0;
-  //   color: $sixth-color;
-  //   border-radius: 3px;
-  //   opacity: 0.5;
-  // }
 }
 
 .post-authorcont {
@@ -361,7 +317,6 @@
   }
 
   .nexttologo {
-    margin-top: 0.5%;
     margin-bottom: 2%;
   }
 
@@ -403,12 +358,12 @@
   }
 
   .post-title {
-    font-size: 0.9em;
+    font-size: 0.75em;
   }
 
   .post-subtitle {
     margin-top: 12.5%;
-    font-size: 0.95em;
+    font-size: 0.85em;
     margin-bottom: 7.5%;
     letter-spacing: 0.1px;
 

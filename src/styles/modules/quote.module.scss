@@ -52,6 +52,7 @@
     @include fontslg;
     font-size: 0.825em;
     margin-top: 15%;
+    width: 90%;
 
     .quote-Focus {
       font-weight: 700;
@@ -82,12 +83,11 @@
 }
 
 .endline {
-  border-width: 3px;
-  border-color: $sixth-color;
+  border-width: 5px;
+  background: $secondary-color;
   // border-style: dashed;
-  opacity: 0.75;
-  width: 100%;
-  border-radius: 25px;
+  opacity: 0.5;
+  width: 90%;
 }
 
 @media (max-width: 768px) {

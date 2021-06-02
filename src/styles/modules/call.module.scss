@@ -70,7 +70,7 @@
     color: grey !important;
     padding: 0.7em 1.5em 0.6em 0.9em;
     box-sizing: border-box;
-    margin-top: 2%;
+    margin-top: 5%;
     margin-left: 1%;
     margin-bottom: 2%;
     border: 3px solid $secondary-color;
@@ -148,14 +148,15 @@
 }
 
 .textarea {
-  border-bottom: 1.5px solid $fourth-color;
+  border-bottom: 2.5px solid $fourth-color;
   opacity: 0.75;
 }
 
 .recaptcha {
   float: right;
-  margin-right: 1%;
+  margin-right: -1.5%;
   margin-top: -175px;
+  transform: scale(0.8);
 }
 
 .callbtn {
@@ -227,9 +228,8 @@
 
   .recaptcha {
     margin-top: -15px;
-    float: none;
     position: static;
-    margin-left: 2.5% !important;
+    margin-right: -6%;
   }
 
   .callbtn {

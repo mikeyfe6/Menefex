@@ -125,11 +125,14 @@
 }
 
 .textarea {
-  border-bottom: 1.5px solid $sixth-color;
+  border-bottom: 1.5px solid $fourth-color;
+  opacity: 0.75;
+  width: 97%;
 }
 
 .recaptcha {
-  margin-left: 1.5%;
+  transform: scale(0.9);
+  // margin-left: 1.5%;
   display: table;
 }
 
@@ -351,6 +354,12 @@
     }
   }
 
+  .textarea {
+    border-bottom: 1.5px solid $fourth-color;
+    opacity: 0.5;
+    width: 97%;
+  }
+
   .formwrapper {
     width: 100% !important;
     margin: 0 auto;
@@ -360,7 +369,7 @@
   }
 
   .recaptcha {
-    margin-right: 2.5%;
+    margin-right: -2%;
     display: table;
     margin-top: -5%;
     float: right;

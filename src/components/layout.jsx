@@ -118,7 +118,7 @@ class Layout extends React.Component {
               background: 'linear-gradient(to right, #595858, #333333',
               opacity: '0.95',
               color: '#dadada',
-              fontSize: '11.5px',
+              fontSize: '12px',
               borderBottom: '3px solid #FFCC00',
               borderTop: '1.5px solid #595858',
             }}
@@ -145,11 +145,14 @@ class Layout extends React.Component {
             Deze website slaat cookies op je computer op. Deze cookies worden
             gebruikt om je websitebezoek te verbeteren en meer gepersonaliseerde
             diensten aan je aan te bieden, zowel op deze website als via andere
-            media. Zie ons <Link to="/privacy-policy">Privacybeleid</Link> voor
-            meer informatie over de cookies die we gebruiken.
+            media. Zie ons{' '}
+            <Link to="/privacy-policy" style={{ color: '#FFCC00' }}>
+              Privacybeleid
+            </Link>{' '}
+            voor meer informatie over de cookies die we gebruiken.
             <br />
             <br />
-            <span style={{ fontSize: '10px' }}>
+            <span style={{ fontSize: '11px' }}>
               We zullen je gegevens niet volgen als je onze site bezoekt. Maar
               om te voldoen aan je voorkeuren moeten we enkele cookies gebruiken
               zodat je niet vaker wordt gevraagd om deze keus te maken.

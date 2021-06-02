@@ -111,7 +111,7 @@ const Hero = () => (
             >
               biografie
             </button>{' '}
-            <span className="speccol">&nbsp;|&nbsp;</span>{' '}
+            <span className="speccolplus">&nbsp;|&nbsp;</span>{' '}
             <button
               type="button"
               className={scrollBtn}
@@ -119,7 +119,7 @@ const Hero = () => (
             >
               services
             </button>{' '}
-            <span className="speccol">&nbsp;|&nbsp;</span>{' '}
+            <span className="speccolplus">&nbsp;|&nbsp;</span>{' '}
             <button
               type="button"
               className={scrollBtn}
@@ -142,7 +142,7 @@ const Hero = () => (
             >
               biografie
             </button>{' '}
-            <span className="speccol">&nbsp;|&nbsp;</span>{' '}
+            <span className="speccolplus">&nbsp;|&nbsp;</span>{' '}
             <button
               type="button"
               className={scrollBtnMB}
@@ -150,7 +150,7 @@ const Hero = () => (
             >
               services
             </button>{' '}
-            <span className="speccol">&nbsp;|&nbsp;</span>{' '}
+            <span className="speccolplus">&nbsp;|&nbsp;</span>{' '}
             <button
               type="button"
               className={scrollBtnMB}
