@@ -261,6 +261,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
+        sitemap: 'https://menefex.nl/sitemap-0.xml',
         policy: [{ userAgent: '*', allow: '/' }],
       },
     },
@@ -301,7 +302,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Menefex',
+        name: 'Menefex Webmediabedrijf',
         short_name: 'Menefex',
         description: 'Wij bouwen websites & webapps met oog voor detail.',
         start_url: '/',
