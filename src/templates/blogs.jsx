@@ -279,7 +279,7 @@ const Blog = (props) => {
 
               <div className="feedlysub">
                 <a
-                  href="https://feedly.com/#subscription/feed/https://feeds.feedburner.com/MenefexWMB"
+                  href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fmenefex.nl%2Frss.xml"
                   title="Menefex WMB: RSS Feeds"
                   rel="noopener noreferrer"
                   target="_blank"
@@ -295,7 +295,7 @@ const Blog = (props) => {
                 </a>
                 &nbsp;
                 <a
-                  href="https://feedly.com/#subscription/feed/https://feeds.feedburner.com/MenefexWMB"
+                  href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fmenefex.nl%2Frss.xml"
                   type="application/rss+xml"
                   rel="noopener noreferrer"
                   target="_blank"

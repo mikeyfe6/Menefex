@@ -120,7 +120,12 @@
     height: 237.5px !important;
   }
 
-  .project-text {
-    letter-spacing: 0.03em !important;
+  .project-info {
+    min-height: 0px !important;
+    margin-bottom: 1em;
+
+    .project-text {
+      letter-spacing: 0.03em !important;
+    }
   }
 }

@@ -87,13 +87,13 @@ const PrivacyPolicy = () => (
             Google Ads (test_cookie): een test cookie om browsersupport voor
             advertenties vast te stellen
           </li>
-          <li>
+          {/* <li>
             Facebook Ads (_fbp): tracker die data tussen FB naar onze website
             bijhoudt
           </li>
           <li>
             Facebook Ads (fr): Facebook Pixel en Facebook Social ondersteuning
-          </li>
+          </li> */}
         </ul>
         <p>
           De huidige op de website beschikbare versie van de privacy policy is

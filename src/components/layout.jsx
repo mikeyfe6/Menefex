@@ -110,6 +110,10 @@ class Layout extends React.Component {
               const mnfxanltcs = false;
               return mnfxanltcs;
             }}
+            // onDecline={() => {
+            //   const mnfxanltcs = true;
+            //   return mnfxanltcs;
+            // }}
             contentStyle={{
               margin: '1.25% 2.5% 1% 2.5%',
             }}

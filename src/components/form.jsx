@@ -30,6 +30,7 @@ import {
   patricon,
   waicon,
   spicon,
+  skicon,
   hrcont,
   contactgev,
   menefexgev,
@@ -369,6 +370,18 @@ const Form = () => {
                     icon={['fab', 'spotify']}
                     size="2x"
                     className={waicon}
+                  />
+                </a>
+
+                <a
+                  href="https://join.skype.com/invite/lpx2blVirPUn"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <FontAwesomeIcon
+                    icon={['fab', 'skype']}
+                    size="2x"
+                    className={skicon}
                   />
                 </a>
 
