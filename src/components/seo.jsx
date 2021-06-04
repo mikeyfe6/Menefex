@@ -95,7 +95,7 @@ const SEO = ({
             {/* <meta property="og:image:width" content="512" />
             <meta property="og:image:height" content="512" /> */}
 
-            <meta property="twitter:card" content="summary_large_image" />
+            <meta property="twitter:card" content="summary" />
             {seo.url && <meta property="twitter:url" content={seo.url} />}
             {seo.title && <meta property="twitter:title" content={seo.title} />}
             {seo.description && (

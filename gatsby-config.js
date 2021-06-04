@@ -294,7 +294,6 @@ module.exports = {
           lastmod: (context && context.updatedAt) || null,
         }),
         output: '/',
-        excludes: ['/success'],
       },
     },
     // 'gatsby-plugin-sitemap',

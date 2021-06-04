@@ -106,14 +106,11 @@ class Layout extends React.Component {
             cookieName="menefex-cookie"
             extraCookieOptions={{ domain: '.menefex.nl' }}
             enableDeclineButton
+            sameSite="strict"
             onAccept={() => {
               const mnfxanltcs = false;
               return mnfxanltcs;
             }}
-            // onDecline={() => {
-            //   const mnfxanltcs = true;
-            //   return mnfxanltcs;
-            // }}
             contentStyle={{
               margin: '1.25% 2.5% 1% 2.5%',
             }}
