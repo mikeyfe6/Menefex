@@ -27,6 +27,7 @@ const Projects = () => {
             src="../images/projects/Eternitydrum-screen.png"
             alt=""
             layout="fullWidth"
+            placeholder="none"
             formats={['auto', 'webp', 'avif']}
           />
           <div className="slider-info">
@@ -62,6 +63,7 @@ const Projects = () => {
             src="../images/projects/Blackharmony-screen.png"
             alt=""
             layout="fullWidth"
+            placeholder="none"
             formats={['auto', 'webp', 'avif']}
           />
           <div className="slider-info">
