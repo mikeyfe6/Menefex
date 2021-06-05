@@ -17,7 +17,6 @@ const Projects = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 10000,
-    adaptiveHeight: true,
     arrows: false,
   };
   return (
