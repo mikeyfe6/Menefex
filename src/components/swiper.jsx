@@ -25,10 +25,11 @@ const Projects = () => {
       <Slider {...settings}>
         <div>
           <StaticImage
-            src="./../images/projects/Eternitydrum-screen.png"
+            src="../images/projects/Eternitydrum-screen.png"
             alt="Eternity Percussion"
             loading="eager"
             style={{ opacity: 1 }}
+            layout="fixed"
           />
           <div className="slider-info">
             <div className="beschrijving">
@@ -60,11 +61,11 @@ const Projects = () => {
         </div>
         <div>
           <StaticImage
-            src="./../images/projects/Blackharmony-screen.png"
+            src="../images/projects/Blackharmony-screen.png"
             alt="Eternity Percussion"
             loading="eager"
             style={{ opacity: 1 }}
-            plac
+            layout="fixed"
           />
           <div className="slider-info">
             <div className="beschrijving">
