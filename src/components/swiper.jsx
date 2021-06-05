@@ -18,6 +18,7 @@ const Projects = () => {
     autoplay: true,
     autoplaySpeed: 10000,
     arrows: false,
+    loop: true,
   };
   return (
     <div className="slider-container">
@@ -26,6 +27,8 @@ const Projects = () => {
           <StaticImage
             src="./../images/projects/Eternitydrum-screen.png"
             alt="Eternity Percussion"
+            loading="eager"
+            style={{ opacity: 1 }}
           />
           <div className="slider-info">
             <div className="beschrijving">
@@ -59,6 +62,9 @@ const Projects = () => {
           <StaticImage
             src="./../images/projects/Blackharmony-screen.png"
             alt="Eternity Percussion"
+            loading="eager"
+            style={{ opacity: 1 }}
+            plac
           />
           <div className="slider-info">
             <div className="beschrijving">
