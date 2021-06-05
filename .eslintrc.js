@@ -10,13 +10,17 @@ module.exports = {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
   },
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
   parserOptions: {
+    allowImportExportEverywhere: false,
     ecmaFeatures: {
       jsx: true,
     },
     ecmaVersion: 2020,
     sourceType: 'module',
+    babelOptions: {
+      configFile: './.babelrc',
+    },
   },
   plugins: ['react'],
   rules: {

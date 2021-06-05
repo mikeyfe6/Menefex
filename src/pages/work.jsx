@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { StaticImage } from 'gatsby-plugin-image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ScrollAnimation from 'react-animate-on-scroll';
 
@@ -64,9 +65,9 @@ const workPage = () => (
               rel="noopener noreferrer"
               target="_blank"
             >
-              <img
-                src="https://i.postimg.cc/pXj0DScY/Eternitydrum-screen.png"
-                alt="Eternity Drum"
+              <StaticImage
+                src="./../images/projects/Eternitydrum-screen.png"
+                alt="Eternity Percussion"
                 className={workimg}
               />
             </a>
@@ -140,9 +141,9 @@ const workPage = () => (
               rel="noopener noreferrer"
               target="_blank"
             >
-              <img
-                src="https://i.postimg.cc/fbzBQRzB/Blackharmony-screen.png"
-                alt="Black Harmony"
+              <StaticImage
+                src="./../images/projects/Blackharmony-screen.png"
+                alt="Eternity Percussion"
                 className={workimg}
               />
             </a>

@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import React from 'react';
 
+import { StaticImage } from 'gatsby-plugin-image';
 import { Link } from 'gatsby';
 import Slider from 'react-slick';
 
@@ -23,10 +24,9 @@ const Projects = () => {
     <div className="slider-container">
       <Slider {...settings}>
         <div>
-          <img
-            className="projects-img"
-            src="https://i.postimg.cc/pXj0DScY/Eternitydrum-screen.png"
-            alt="Stichting Eternity Percussion"
+          <StaticImage
+            src="./../images/projects/Eternitydrum-screen.png"
+            alt="Eternity Percussion"
           />
           <div className="slider-info">
             <div className="beschrijving">
@@ -57,12 +57,10 @@ const Projects = () => {
           </div>
         </div>
         <div>
-          <img
-            className="projects-img"
-            src="https://i.postimg.cc/fbzBQRzB/Blackharmony-screen.png"
-            alt="Zanggroep Black Harmony"
+          <StaticImage
+            src="./../images/projects/Blackharmony-screen.png"
+            alt="Eternity Percussion"
           />
-
           <div className="slider-info">
             <div className="beschrijving">
               <Link to="/work/#BH">

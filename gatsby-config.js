@@ -210,11 +210,15 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
+    'gatsby-plugin-image',
     {
       resolve: 'gatsby-plugin-sharp',
       options: {
         // Defaults used for gatsbyImageData and StaticImage
-        defaults: {},
+        defaults: {
+          placeholder: 'blurred',
+          quality: 100,
+        },
         // Set to false to allow builds to continue on image errors
         failOnError: true,
         // deprecated options and their defaults:
@@ -225,7 +229,6 @@ module.exports = {
         defaultQuality: 50,
       },
     },
-    'gatsby-plugin-image',
     'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-transformer-remark',
@@ -309,7 +312,7 @@ module.exports = {
         lang: 'nl',
         theme_color: '#FFCC00',
         display: 'standalone',
-        icon: 'src/img/Menefex-icon.png',
+        icon: 'src/images/Menefex-icon.png',
         icon_options: {
           purpose: 'any maskable',
         },

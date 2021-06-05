@@ -8,8 +8,9 @@
   grid-gap: 3rem;
 
   .workimg {
+    height: 100%;
     width: 100%;
-    height: 325px;
+    object-fit: contain;
     border: 2px $fourth-color solid;
     border-radius: 10px;
     @include smoothtrans;
@@ -117,7 +118,9 @@
   }
 
   .workimg {
-    height: 237.5px !important;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
   }
 
   .project-info {

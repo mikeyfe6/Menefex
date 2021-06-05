@@ -19,10 +19,10 @@ const PrivacyPolicy = () => (
         <br />
         <h1 className="page-title">PRIVACYBELEID - Menefex</h1>
         <p>
-          Menefex respecteert de privacy van de bezoekers van haar website, in
+          Menefex respecteert de privacy van de bezoekers van haar website, in
           het bijzonder de rechten van bezoekers met betrekking tot de
           geautomatiseerde verwerking van persoonsgegevens. Vanwege volledige
-          transparantie met onze klanten hebben wij daarom een beleid
+          transparantie met onze klanten hebben wij daarom een beleid
           geformuleerd en geïmplementeerd met betrekking tot deze verwerkingen
           zelf, het doel ervan alsook de mogelijkheden voor betrokkenen om hun
           de rechten zo goed mogelijk te kunnen uitoefenen.
@@ -42,7 +42,7 @@ const PrivacyPolicy = () => (
         </p>
         <p>
           Met het voortzetten van het bezoek van deze website accepteert u de
-          volgende gebruikersvoorwaarden. U accepteert het gebruik van cookies
+          volgende gebruikersvoorwaarden. U accepteert het gebruik van cookies
           en andere tracking systems. Indien u dit gebruik wenst te weigeren
           dient u <b>uw cache te wissen of uit te zetten</b>. Dit kan ook via
           een officiële Google Browser Add-on:{' '}
@@ -107,8 +107,8 @@ const PrivacyPolicy = () => (
           <li>Website (hierna ook “De website”): menefex.nl</li>
           <li>
             Verantwoordelijke voor de verwerking van persoonsgegevens (Hierna
-            ook: “De beheerder”): Menefex, gevestigd te Kelbergen
-            192, 1104LJ Amsterdam, kvk-nummer: 76045315.
+            ook: “De beheerder”): Menefex, gevestigd te Kelbergen 192, 1104LJ
+            Amsterdam, kvk-nummer: 76045315.
           </li>
         </ol>
         <br />
@@ -116,7 +116,7 @@ const PrivacyPolicy = () => (
         <p>
           De toegang tot de website en het gebruik is strikt persoonlijk. U zult
           deze website alsook de gegevens en informatie die daarop verstrekt
-          worden niet gebruiken voor commerciële, politieke of publicitaire
+          worden niet gebruiken voor commerciële, politieke of publicitaire
           doeleinden, dan wel voor enige commerciële aanbiedingen en in het
           bijzonder niet gebruiken voor ongevraagde elektronische aanbiedingen.
         </p>
@@ -164,7 +164,7 @@ const PrivacyPolicy = () => (
           De beheerder is in geen geval verantwoordelijk voor falen, storingen,
           moeilijkheden of onderbrekingen van het functioneren van de website,
           waardoor de website of een van zijn functionaliteiten niet
-          toegankelijk is. De wijze waarop u verbinding zoekt met de website is
+          toegankelijk is. De wijze waarop u verbinding zoekt met de website is
           uw eigen verantwoordelijkheid. U dient zelf alle geschikte maatregelen
           te treffen om uw apparatuur en uw gegevens te beschermen tegen onder
           andere virusaanvallen op het internet. U bent bovendien zelf
@@ -198,7 +198,7 @@ const PrivacyPolicy = () => (
         <br />
         <h5>Artikel 6 - Het verzamelen van gegevens</h5>
         <p>
-          Uw gegevens worden verzameld Menefex. Onder persoonsgegevens worden
+          Uw gegevens worden verzameld Menefex. Onder persoonsgegevens worden
           verstaan: alle informatie over een geïdentificeerde of
           identificeerbare natuurlijke persoon; als identificeerbaar wordt
           beschouwd een natuurlijke persoon die direct of indirect kan worden
@@ -221,8 +221,8 @@ const PrivacyPolicy = () => (
           van en rectificatie of wissing van zijn persoonsgegevens of beperking
           van de hem betreffende verwerking, alsmede het recht tegen de
           verwerking bezwaar te maken en het recht op gegevensoverdraagbaarheid.
-          U kunt deze rechten uitoefenen door contact met ons op te nemen
-          via michaelfransman@menefex.nl.
+          U kunt deze rechten uitoefenen door contact met ons op te nemen via
+          michaelfransman@menefex.nl.
         </p>
         <p>
           Ieder verzoek daartoe dient te worden vergezeld van een kopie van een
@@ -233,7 +233,7 @@ const PrivacyPolicy = () => (
           aantal van de verzoeken kan deze termijn indien nodig met 2 maanden
           worden verlengd.
         </p>
-        <h5>Artikel 8 - Verwerking van persoonsgegevens</h5>
+        <h5>Artikel 8 - Verwerking van persoonsgegevens</h5>
         <p>
           In geval van schending van enige wet- of regelgeving, waarvan de
           bezoeker wordt verdacht en waarvoor de autoriteiten persoonsgegevens
@@ -253,7 +253,7 @@ const PrivacyPolicy = () => (
         <p>
           U kunt commerciële aanbiedingen krijgen van de beheerder. Indien u
           deze niet (meer) wenst te ontvangen, stuurt u een mail naar het
-          volgende adres: michaelfransman@menefex.nl.
+          volgende adres: michaelfransman@menefex.nl.
         </p>
         <p>
           Indien u tijdens het bezoek van de website enige persoonsgegevens
@@ -270,18 +270,18 @@ const PrivacyPolicy = () => (
           en bewaard voor de duur zoals deze bij wet is bepaald.
         </p>
         <br />
-        <h5>Artikel 11 - Cookies </h5>
+        <h5>Artikel 11 - Cookies</h5>
         <ol>
           <li>
             Een cookie is een klein tekstbestand dat bij bezoek aan onze website
-            geplaatst wordt op de harde schijf van uw computer. Een cookie bevat
-            gegevens zodat u bij elk bezoek aan onze website als bezoeker kan
-            worden herkend. Het is dan mogelijk om onze website speciaal op u in
-            te stellen en het inloggen te vergemakkelijken. Wanneer u onze
-            website bezoekt, verschijnt er een banner waarmee we u informeren
-            over het gebruik van cookies. Bij verder gebruik van onze
-            website accepteert u het gebruik ervan. Uw toestemming is geldig
-            voor een periode van dertien maanden.
+            geplaatst wordt op de harde schijf van uw computer. Een cookie bevat
+            gegevens zodat u bij elk bezoek aan onze website als bezoeker kan
+            worden herkend. Het is dan mogelijk om onze website speciaal op u in
+            te stellen en het inloggen te vergemakkelijken. Wanneer u onze
+            website bezoekt, verschijnt er een banner waarmee we u informeren
+            over het gebruik van cookies. Bij verder gebruik van onze website
+            accepteert u het gebruik ervan. Uw toestemming is geldig voor een
+            periode van dertien maanden.
           </li>
           <li>
             Wij gebruiken de volgende soorten cookies op onze website: <br />
@@ -326,11 +326,11 @@ const PrivacyPolicy = () => (
         <h5>Artikel 13 - Toepasselijk recht</h5>
         <p>
           Op deze voorwaarden is Nederlands Recht van toepassing. De rechtbank
-          van de vestigingsplaats van de beheerder is exclusief bevoegd bij
+          van de vestigingsplaats van de beheerder is exclusief bevoegd bij
           eventuele geschillen omtrent deze voorwaarden, behoudens wanneer
           hierop een wettelijke uitzondering van toepassing is.
         </p>
-        <h5>Artikel 14 - Contact</h5>
+        <h5>Artikel 14 - Contact</h5>
         <p>
           Voor vragen, productinformatie of informatie over de website zelf,
           kunt u zich richten tot: <br />

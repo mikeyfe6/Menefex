@@ -16,15 +16,15 @@ const TermsConditions = () => (
       <div className="smallwhitespace" />
       <hr />
       <br />
-      <h1 className="page-title"> ALGEMENE VOORWAARDEN - Menefex</h1>
+      <h1 className="page-title"> ALGEMENE VOORWAARDEN - Menefex</h1>
       <h5>Definities</h5>
       <br />
       <ol>
         <li>
-          Menefex: Menefex, gevestigd te Amsterdam onder KvK nr. 76045315.
+          Menefex: Menefex, gevestigd te Amsterdam onder KvK nr. 76045315.
         </li>
-        <li>Klant: degene met wie Menefex een overeenkomst is aangegaan.</li>
-        <li>Partijen: Menefex en klant samen.</li>
+        <li>Klant: degene met wie Menefex een overeenkomst is aangegaan.</li>
+        <li>Partijen: Menefex en klant samen.</li>
         <li>
           Consument: een klant die tevens een individu is en die als privé
           persoon handelt.
@@ -37,7 +37,7 @@ const TermsConditions = () => (
         <li>
           Deze voorwaarden zijn van toepassing op alle offertes, aanbiedingen,
           werkzaamheden, bestellingen, overeenkomsten en leveringen van diensten
-          of producten door of namens Menefex.
+          of producten door of namens Menefex.
         </li>
         <li>
           Partijen kunnen alleen afwijken van deze voorwaarden als zij dat
@@ -53,11 +53,11 @@ const TermsConditions = () => (
       <br />
       <ol>
         <li>
-          Aanbiedingen en offertes van Menefex zijn vrijblijvend, tenzij daarin
+          Aanbiedingen en offertes van Menefex zijn vrijblijvend, tenzij daarin
           uitdrukkelijk anders vermeld.
         </li>
         <li>
-          Een aanbod of offerte is maximaal 2 weken geldig, tenzij een andere
+          Een aanbod of offerte is maximaal 2 weken geldig, tenzij een andere
           aanvaardingstermijn in het aanbod of de offerte staat vermeld.
         </li>
         <li>
@@ -70,17 +70,17 @@ const TermsConditions = () => (
         </li>
       </ol>
       <br />
-      <h5>Aanvaarding </h5>
+      <h5>Aanvaarding</h5>
       <br />
       <ol>
         <li>
-          Bij aanvaarding van een vrijblijvende offerte of aanbieding,
-          behoudt Menefex zich het recht voor de offerte of het aanbod alsnog
-          binnen 3 dagen na ontvangst van de aanvaarding in te trekken, zonder
-          dat de klant hieraan enige rechten kan ontlenen.
+          Bij aanvaarding van een vrijblijvende offerte of aanbieding, behoudt
+          Menefex zich het recht voor de offerte of het aanbod alsnog binnen 3
+          dagen na ontvangst van de aanvaarding in te trekken, zonder dat de
+          klant hieraan enige rechten kan ontlenen.
         </li>
         <li>
-          Mondelinge aanvaarding van de klant verbindt Menefex slechts, nadat de
+          Mondelinge aanvaarding van de klant verbindt Menefex slechts, nadat de
           klant deze schriftelijk (of elektronisch) heeft bevestigd.
         </li>
       </ol>
@@ -89,17 +89,17 @@ const TermsConditions = () => (
       <br />
       <ol>
         <li>
-          Alle prijzen die Menefex hanteert zijn in euro’s, zijn exclusief btw
+          Alle prijzen die Menefex hanteert zijn in euro’s, zijn exclusief btw
           en exclusief eventuele overige kosten zoals administratiekosten,
           heffingen en reis-, verzend- of transportkosten, tenzij uitdrukkelijk
           anders vermeld of anders overeengekomen.
         </li>
         <li>
-          Alle prijzen op die Menefex hanteert voor zijn producten of diensten,
-          op zijn website of die anderszins kenbaar zijn gemaakt, kan Menefex te
+          Alle prijzen op die Menefex hanteert voor zijn producten of diensten,
+          op zijn website of die anderszins kenbaar zijn gemaakt, kan Menefex te
           allen tijde wijzigen.
         </li>
-        <li>Menefex kan diensten aanbieden op basis van ‘no cure no pay’.</li>
+        <li>Menefex kan diensten aanbieden op basis van ‘no cure no pay’.</li>
         <li>
           In het geval van no cure no pay ontstaat de betalingsverplichting voor
           de klant op het moment dat het overeengekomen resultaat is behaald.
@@ -110,33 +110,33 @@ const TermsConditions = () => (
       <br />
       <ol>
         <li>
-          Betaalt de klant niet binnen de overeengekomen termijn, dan
-          is Menefex gerechtigd een rente van 1% per maand in rekening te
-          brengen vanaf de dag dat de klant in verzuim is, waarbij een gedeelte
-          van een maand voor een hele maand wordt gerekend.
+          Betaalt de klant niet binnen de overeengekomen termijn, dan is Menefex
+          gerechtigd een rente van 1% per maand in rekening te brengen vanaf de
+          dag dat de klant in verzuim is, waarbij een gedeelte van een maand
+          voor een hele maand wordt gerekend.
         </li>
         <li>
           Wanneer de klant in verzuim is, is hij bovendien buitengerechtelijke
-          incassokosten en eventuele schadevergoeding verschuldigd aan Menefex.
+          incassokosten en eventuele schadevergoeding verschuldigd aan Menefex.
         </li>
         <li>
           De incassokosten worden berekend aan de hand van het Besluit
           vergoeding voor buitengerechtelijke incassokosten.
         </li>
         <li>
-          Wanneer de klant niet tijdig betaalt, mag Menefex zijn verplichtingen
+          Wanneer de klant niet tijdig betaalt, mag Menefex zijn verplichtingen
           opschorten totdat de klant aan zijn betalingsverplichting heeft
           voldaan.
         </li>
         <li>
           In geval van liquidatie, faillissement, beslag of surseance van
-          betaling aan de zijde van de klant, zijn de vorderingen van Menefex op
+          betaling aan de zijde van de klant, zijn de vorderingen van Menefex op
           de klant onmiddellijk opeisbaar.
         </li>
         <li>
           Weigert de klant zijn medewerking aan de uitvoering van de
-          overeenkomst door Menefex, dan is hij nog steeds verplicht de
-          afgesproken prijs aan Menefex te betalen.
+          overeenkomst door Menefex, dan is hij nog steeds verplicht de
+          afgesproken prijs aan Menefex te betalen.
         </li>
       </ol>
       <br />
@@ -151,7 +151,7 @@ const TermsConditions = () => (
       <h5>Verrekening</h5>
       <p>
         Tenzij de klant een consument is, doet de klant afstand van zijn recht
-        om een schuld aan Menefex te verrekenen met een vordering op Menefex.
+        om een schuld aan Menefex te verrekenen met een vordering op Menefex.
       </p>
       <br />
       <h5>Levering</h5>
@@ -159,7 +159,7 @@ const TermsConditions = () => (
       <ol>
         <li>Levering vindt plaats zolang de voorraad strekt.</li>
         <li>
-          Levering vindt plaats bij Menefex, tenzij partijen anders zijn
+          Levering vindt plaats bij Menefex, tenzij partijen anders zijn
           overeengekomen.
         </li>
         <li>
@@ -168,34 +168,34 @@ const TermsConditions = () => (
         </li>
         <li>
           Indien de overeengekomen bedragen niet of niet op tijd worden voldaan,
-          heeft Menefex het recht om zijn verplichtingen op te schorten totdat
+          heeft Menefex het recht om zijn verplichtingen op te schorten totdat
           het overeengekomen deel alsnog is voldaan.
         </li>
         <li>
           Bij te late betaling is er sprake van schuldeisersverzuim, met als
-          gevolg dat de klant een verlate levering niet aan Menefex kan
+          gevolg dat de klant een verlate levering niet aan Menefex kan
           tegenwerpen.
         </li>
       </ol>
       <br />
-      <h5>Levertijd </h5>
+      <h5>Levertijd</h5>
       <br />
       <ol>
         <li>
-          De door Menefex opgegeven levertijden zijn indicatief en geven de
+          De door Menefex opgegeven levertijden zijn indicatief en geven de
           klant bij overschrijding daarvan geen recht op ontbinding of
           schadevergoeding, tenzij partijen uitdrukkelijk en schriftelijk anders
           zijn overeengekomen.
         </li>
         <li>
           De levertijd vangt aan nadat de door de klant voor akkoord getekende
-          offerte aan Menefex door Menefex schriftelijk danwel elektronisch is
+          offerte aan Menefex door Menefex schriftelijk danwel elektronisch is
           bevestigd aan de klant.
         </li>
         <li>
           Overschrijding van de opgegeven levertijd geeft de klant geen recht op
           schadevergoeding en evenmin het recht om de overeenkomst te ontbinden,
-          tenzij Menefex niet binnen 14 dagen na daartoe schriftelijk te zijn
+          tenzij Menefex niet binnen 14 dagen na daartoe schriftelijk te zijn
           aangemaand kan leveren of partijen hierover iets anders hebben
           afgesproken.
         </li>
@@ -207,7 +207,7 @@ const TermsConditions = () => (
         door hem bestelde producten tijdig kan plaatsvinden.
       </p>
       <br />
-      <h5>Transportkosten </h5>
+      <h5>Transportkosten</h5>
       <p>
         Transportkosten zijn voor rekening van de klant, tenzij partijen
         hierover iets anders hebben afgesproken.
@@ -220,15 +220,14 @@ const TermsConditions = () => (
           Indien de verpakking van een geleverd product geopend of beschadigd
           is, dan dient de klant, alvorens het product in ontvangst te nemen,
           hiervan door de expediteur c.q. bezorger een aantekening op te laten
-          maken, bij gebreke waarvan Menefex niet aansprakelijk kan worden
+          maken, bij gebreke waarvan Menefex niet aansprakelijk kan worden
           gehouden voor eventuele schade.
         </li>
         <li>
           Indien de klant zelf voor transport van een product zorgdraagt, dient
           hij eventuele zichtbare beschadigingen aan producten of de verpakking
-          voorafgaand aan het vervoer te melden aan Menefex, bij gebreke
-          waarvan Menefex niet aansprakelijk kan worden gehouden voor eventuele
-          schade.
+          voorafgaand aan het vervoer te melden aan Menefex, bij gebreke waarvan
+          Menefex niet aansprakelijk kan worden gehouden voor eventuele schade.
         </li>
       </ol>
       <h5>Verzekering</h5>
@@ -243,14 +242,14 @@ const TermsConditions = () => (
         o zaken van Menefex die bij de klant aanwezig zijn <br />o zaken die
         onder eigendomsvoorbehoud zijn geleverd
         <li>
-          De klant geeft op eerste verzoek van Menefex de polis van deze
+          De klant geeft op eerste verzoek van Menefex de polis van deze
           verzekeringen ter inzage.
         </li>
       </ol>
       <br />
       <h5>Montage/Installatie</h5>
       <p>
-        Hoewel Menefex zich inspant alle montage en/of installatiewerkzaamheden
+        Hoewel Menefex zich inspant alle montage en/of installatiewerkzaamheden
         zo goed mogelijk uit te voeren, draagt hij hiervoor geen enkele
         verantwoordelijkheid behalve in het geval van opzet of grove schuld.
       </p>
@@ -258,18 +257,18 @@ const TermsConditions = () => (
       <h5>Garantie</h5>
       <p>
         Wanneer partijen een overeenkomst met een dienstverlenend karakter zijn
-        aangegaan, bevat deze voor Menefex enkel inspanningsverplichtingen, geen
+        aangegaan, bevat deze voor Menefex enkel inspanningsverplichtingen, geen
         resultaatsverplichtingen.
       </p>
       <br />
-      <h5>Uitvoering van de overeenkomst </h5>
+      <h5>Uitvoering van de overeenkomst</h5>
       <ol>
         <li>
-          Menefex voert de overeenkomst naar beste inzicht en vermogen en
+          Menefex voert de overeenkomst naar beste inzicht en vermogen en
           overeenkomstig de eisen van goed vakmanschap uit.
         </li>
         <li>
-          Menefex heeft het recht om de overeengekomen dienstverlening
+          Menefex heeft het recht om de overeengekomen dienstverlening
           (gedeeltelijk) te laten verrichten door derden.
         </li>
         <li>
@@ -278,23 +277,23 @@ const TermsConditions = () => (
           voorschot door de klant.
         </li>
         <li>
-          Het is de verantwoordelijkheid van de klant dat Menefex tijdig kan
+          Het is de verantwoordelijkheid van de klant dat Menefex tijdig kan
           beginnen aan de uitvoering van de overeenkomst.
         </li>
         <li>
-          Indien de klant er niet voor heeft gezorgd dat Menefex tijdig kan
+          Indien de klant er niet voor heeft gezorgd dat Menefex tijdig kan
           beginnen aan de uitvoering van de overeenkomst, komen de daaruit
           voortvloeiende extra kosten en/of extra uren voor rekening van de
           klant.
         </li>
       </ol>
       <br />
-      <h5>Informatieverstrekking door de klant </h5>
+      <h5>Informatieverstrekking door de klant</h5>
       <ol>
         <li>
           De klant stelt alle informatie, gegevens en bescheiden die relevant
           zijn voor de correcte uitvoering van de overeenkomst tijdig en in
-          gewenste vorm en op gewenste wijze beschikbaar aan Menefex.
+          gewenste vorm en op gewenste wijze beschikbaar aan Menefex.
         </li>
         <li>
           De klant staat in voor de juistheid, volledigheid en betrouwbaarheid
@@ -303,23 +302,23 @@ const TermsConditions = () => (
           de overeenkomst niet anders voortvloeit.
         </li>
         <li>
-          Indien en voor zover de klant dit verzoekt, retourneert Menefex de
+          Indien en voor zover de klant dit verzoekt, retourneert Menefex de
           betreffende bescheiden.
         </li>
         <li>
-          Stelt de klant niet, niet tijdig of niet behoorlijk de
-          door Menefex redelijkerwijs verlangde informatie, gegevens of
-          bescheiden beschikbaar en loopt de uitvoering van de overeenkomst
-          hierdoor vertraging op, dan komen de daaruit voortvloeiende extra
-          kosten en extra uren voor rekening van de klant.
+          Stelt de klant niet, niet tijdig of niet behoorlijk de door Menefex
+          redelijkerwijs verlangde informatie, gegevens of bescheiden
+          beschikbaar en loopt de uitvoering van de overeenkomst hierdoor
+          vertraging op, dan komen de daaruit voortvloeiende extra kosten en
+          extra uren voor rekening van de klant.
         </li>
       </ol>
       <br />
       <h5>Duur van de overeenkomst</h5>
       <ol>
         <li>
-          De overeenkomst tussen Menefex en de klant wordt aangegaan voor de
-          duur van 6 Maanden, tenzij uit de aard van de overeenkomst iets anders
+          De overeenkomst tussen Menefex en de klant wordt aangegaan voor de
+          duur van 6 Maanden, tenzij uit de aard van de overeenkomst iets anders
           voortvloeit of partijen uitdrukkelijk en schriftelijk anders zijn
           overeengekomen.
         </li>
@@ -327,7 +326,7 @@ const TermsConditions = () => (
           Indien een overeenkomst voor bepaalde tijd is aangegaan, dan wordt
           deze na afloop van de termijn stilzwijgend omgezet in een overeenkomst
           voor onbepaalde tijd, tenzij 1 van de partijen de overeenkomst opzegt
-          met inachtneming van een opzegtermijn van 2 maanden, c.q. een
+          met inachtneming van een opzegtermijn van 2 maanden, c.q. een
           consument de overeenkomst opzegt met inachtneming van een opzegtermijn
           van 1 maand dan eindigt de overeenkomst van rechtswege.
         </li>
@@ -335,7 +334,7 @@ const TermsConditions = () => (
           Zijn partijen binnen de looptijd van de overeenkomst voor de
           voltooiing van bepaalde werkzaamheden een termijn overeengekomen, dan
           is dit nooit een fatale termijn. Bij overschrijding van deze termijn
-          moet de klant Menefex schriftelijk in gebreke stellen.
+          moet de klant Menefex schriftelijk in gebreke stellen.
         </li>
       </ol>
       <br />
@@ -343,7 +342,7 @@ const TermsConditions = () => (
       <br />
       <ol>
         <li>
-          Menefex behoudt alle intellectuele eigendomsrechten (waaronder
+          Menefex behoudt alle intellectuele eigendomsrechten (waaronder
           auteursrecht, octrooirecht, merkenrecht, tekeningen- en modellenrecht,
           etc.) op alle ontwerpen, tekeningen, geschriften, dragers met gegevens
           of andere informatie, offertes, afbeeldingen, schetsen, modellen,
@@ -352,7 +351,7 @@ const TermsConditions = () => (
         </li>
         <li>
           De klant mag genoemde intellectuele eigendomsrechten niet zonder
-          voorafgaande schriftelijke toestemming van Menefex (laten) kopiëren,
+          voorafgaande schriftelijke toestemming van Menefex (laten) kopiëren,
           aan derden tonen en/of ter beschikking stellen of op andere wijze
           gebruiken.
         </li>{' '}
@@ -362,14 +361,14 @@ const TermsConditions = () => (
       <br />
       <ol>
         <li>
-          De klant houdt iedere informatie die hij (in welke vorm dan ook)
-          van Menefex ontvangt geheim.
+          De klant houdt iedere informatie die hij (in welke vorm dan ook) van
+          Menefex ontvangt geheim.
         </li>
         <li>
-          Hetzelfde geldt voor alle andere informatie
-          betreffende Menefex waarvan hij weet of redelijkerwijs kan vermoeden
-          dat deze geheim of vertrouwelijk is, dan wel waarvan hij kan
-          verwachten dat verspreiding ervan Menefex schade kan berokkenen.
+          Hetzelfde geldt voor alle andere informatie betreffende Menefex
+          waarvan hij weet of redelijkerwijs kan vermoeden dat deze geheim of
+          vertrouwelijk is, dan wel waarvan hij kan verwachten dat verspreiding
+          ervan Menefex schade kan berokkenen.
         </li>
         <li>
           De klant neemt alle nodige maatregelen om te waarborgen dat hij de in
@@ -412,7 +411,7 @@ const TermsConditions = () => (
         </li>
         <li>
           Het verbeuren van de in het eerste lid van dit artikel bedoelde boete
-          doet geen afbreuk aan de overige rechten van Menefex waaronder zijn
+          doet geen afbreuk aan de overige rechten van Menefex waaronder zijn
           recht om naast de boete schadevergoeding te vorderen.
         </li>
       </ol>
@@ -420,31 +419,31 @@ const TermsConditions = () => (
       <h5>Vrijwaring</h5>
       <br />
       <p>
-        De klant vrijwaart Menefex tegen alle aanspraken van derden die verband
-        houden met de door Menefex geleverde producten en/of diensten.
+        De klant vrijwaart Menefex tegen alle aanspraken van derden die verband
+        houden met de door Menefex geleverde producten en/of diensten.
       </p>
       <br />
       <h5>Klachten</h5>
       <br />
       <ol>
         <li>
-          De klant dient een door Menefex geleverd product of verleende dienst
+          De klant dient een door Menefex geleverd product of verleende dienst
           zo spoedig mogelijk te onderzoeken op eventuele tekortkomingen.
         </li>
         <li>
           Beantwoordt een geleverd product of verleende dienst niet aan hetgeen
           de klant redelijkerwijs van de overeenkomst mocht verwachten, dan
-          dient de klant Menefex daarvan zo spoedig mogelijk, doch in ieder
+          dient de klant Menefex daarvan zo spoedig mogelijk, doch in ieder
           geval binnen 1 maand na constatering van de tekortkomingen, op de
           hoogte te stellen.
         </li>
         <li>
-          Consumenten dienen Menefex uiterlijk binnen 2 maanden na constatering
+          Consumenten dienen Menefex uiterlijk binnen 2 maanden na constatering
           van de tekortkomingen hiervan op de hoogte te stellen.
         </li>
         <li>
           De klant geeft daarbij een zo gedetailleerd mogelijke omschrijving van
-          de tekortkoming, zodat Menefex in staat is hierop adequaat te
+          de tekortkoming, zodat Menefex in staat is hierop adequaat te
           reageren.
         </li>
         <li>
@@ -453,7 +452,7 @@ const TermsConditions = () => (
         </li>
         <li>
           Indien een klacht betrekking heeft op lopende werkzaamheden, kan dit
-          er in ieder geval niet toe leiden dat Menefex gehouden kan worden om
+          er in ieder geval niet toe leiden dat Menefex gehouden kan worden om
           andere werkzaamheden te verrichten dan zijn overeengekomen.
         </li>
       </ol>
@@ -462,43 +461,43 @@ const TermsConditions = () => (
       <br />
       <ol>
         <li>
-          De klant dient ingebrekestellingen schriftelijk kenbaar te maken
-          aan Menefex.
+          De klant dient ingebrekestellingen schriftelijk kenbaar te maken aan
+          Menefex.
         </li>
         <li>
-          Het is de verantwoordelijkheid van de klant dat een
-          ingebrekestelling Menefex ook daadwerkelijk (tijdig) bereikt.
+          Het is de verantwoordelijkheid van de klant dat een ingebrekestelling
+          Menefex ook daadwerkelijk (tijdig) bereikt.
         </li>
       </ol>
       <br />
       <h5>Hoofdelijke aansprakelijkheid klant</h5>
       <br />
       <p>
-        Als Menefex een overeenkomst aangaat met meerdere klanten, is ieder van
+        Als Menefex een overeenkomst aangaat met meerdere klanten, is ieder van
         hen hoofdelijk aansprakelijk voor de volledige bedragen die zij op grond
-        van die overeenkomst aan Menefex verschuldigd zijn.
+        van die overeenkomst aan Menefex verschuldigd zijn.
       </p>
       <br />
-      <h5>Aansprakelijkheid Menefex</h5>
+      <h5>Aansprakelijkheid Menefex</h5>
       <br />
       <ol>
         <li>
-          Menefex is uitsluitend aansprakelijk voor enige schade die de klant
+          Menefex is uitsluitend aansprakelijk voor enige schade die de klant
           lijdt indien en voor zover die schade is veroorzaakt door opzet of
           bewuste roekeloosheid.
         </li>
         <li>
-          Indien Menefex aansprakelijk is voor enige schade, is het slechts
+          Indien Menefex aansprakelijk is voor enige schade, is het slechts
           aansprakelijk voor directe schade die voortvloeit uit of verband houdt
           met de uitvoering van een overeenkomst.
         </li>
         <li>
-          Menefex is nooit aansprakelijk voor indirecte schade, zoals
+          Menefex is nooit aansprakelijk voor indirecte schade, zoals
           gevolgschade, gederfde winst, gemiste besparingen of schade aan
           derden.
         </li>
         <li>
-          Indien Menefex aansprakelijk is, is deze aansprakelijkheid beperkt tot
+          Indien Menefex aansprakelijk is, is deze aansprakelijkheid beperkt tot
           het bedrag dat door een gesloten
           (beroeps)aansprakelijkheidsverzekering wordt uitbetaald en bij gebreke
           van (volledige) uitkering door een verzekeringsmaatschappij van het
@@ -516,7 +515,7 @@ const TermsConditions = () => (
       <br />
       <h5>Vervaltermijn</h5>
       <p>
-        Elk recht van de klant op schadevergoeding van Menefex vervalt in elk
+        Elk recht van de klant op schadevergoeding van Menefex vervalt in elk
         geval 12 maanden na de gebeurtenis waaruit de aansprakelijkheid direct
         of indirect voortvloeit. Hiermee wordt niet uitgesloten het bepaalde in
         artikel 6:89 van het Burgerlijk Wetboek.
@@ -526,20 +525,20 @@ const TermsConditions = () => (
       <br />
       <ol>
         <li>
-          De klant heeft het recht de overeenkomst te ontbinden
-          wanneer Menefex toerekenbaar tekortschiet in de nakoming van zijn
-          verplichtingen, tenzij deze tekortkoming, gezien haar bijzondere aard
-          of geringe betekenis, de ontbinding niet rechtvaardigt.
+          De klant heeft het recht de overeenkomst te ontbinden wanneer Menefex
+          toerekenbaar tekortschiet in de nakoming van zijn verplichtingen,
+          tenzij deze tekortkoming, gezien haar bijzondere aard of geringe
+          betekenis, de ontbinding niet rechtvaardigt.
         </li>
         <li>
-          Is de nakoming van de verplichtingen door Menefex niet blijvend of
-          tijdelijk onmogelijk, dan kan ontbinding pas plaatsvinden
-          nadat Menefex in verzuim is.
+          Is de nakoming van de verplichtingen door Menefex niet blijvend of
+          tijdelijk onmogelijk, dan kan ontbinding pas plaatsvinden nadat
+          Menefex in verzuim is.
         </li>
         <li>
-          Menefex heeft het recht de overeenkomst met de klant te ontbinden,
+          Menefex heeft het recht de overeenkomst met de klant te ontbinden,
           indien de klant zijn verplichtingen uit de overeenkomst niet volledig
-          of niet tijdig nakomt, danwel indien Menefex kennis heeft genomen van
+          of niet tijdig nakomt, danwel indien Menefex kennis heeft genomen van
           omstandigheden die hem goede grond geven om te vrezen dat de klant
           zijn verplichtingen niet behoorlijk zal kunnen nakomen.
         </li>
@@ -548,12 +547,12 @@ const TermsConditions = () => (
       <ol>
         <li>
           In aanvulling op het bepaalde in artikel 6:75 Burgerlijk Wetboek geldt
-          dat een tekortkoming van Menefex in de nakoming van enige verplichting
-          ten aanzien van de klant niet aan Menefex kan worden toegerekend in
-          een van de wil van Menefex onafhankelijke situatie, waardoor de
+          dat een tekortkoming van Menefex in de nakoming van enige verplichting
+          ten aanzien van de klant niet aan Menefex kan worden toegerekend in
+          een van de wil van Menefex onafhankelijke situatie, waardoor de
           nakoming van zijn verplichtingen ten aanzien van de klant geheel of
           gedeeltelijk wordt verhinderd of waardoor de nakoming van zijn
-          verplichtingen in redelijkheid niet van Menefex kan worden verlangd.
+          verplichtingen in redelijkheid niet van Menefex kan worden verlangd.
         </li>
         <li>
           Tot de in lid 1 genoemde overmachtsituatie worden ook - doch niet
@@ -565,9 +564,9 @@ const TermsConditions = () => (
           vervoersproblemen, slechte weersomstandigheden en werkonderbrekingen.
         </li>
         <li>
-          Indien zich een overmachtsituatie voordoet waardoor Menefex 1 of meer
+          Indien zich een overmachtsituatie voordoet waardoor Menefex 1 of meer
           verplichtingen naar de klant niet kan nakomen, dan worden die
-          verplichtingen opgeschort totdat Menefex er weer aan kan voldoen.
+          verplichtingen opgeschort totdat Menefex er weer aan kan voldoen.
         </li>
         <li>
           Vanaf het moment dat een overmachtsituatie tenminste 30 kalenderdagen
@@ -575,7 +574,7 @@ const TermsConditions = () => (
           geheel of gedeeltelijk ontbinden.
         </li>
         <li>
-          Menefex is in een overmachtsituatie geen enkele (schade)vergoeding
+          Menefex is in een overmachtsituatie geen enkele (schade)vergoeding
           verschuldigd, ook niet als het als gevolg van de overmachttoestand
           enig voordeel geniet.
         </li>
@@ -594,7 +593,7 @@ const TermsConditions = () => (
       <br />
       <ol>
         <li>
-          Menefex is gerechtigd deze algemene voorwaarden te wijzigen of aan te
+          Menefex is gerechtigd deze algemene voorwaarden te wijzigen of aan te
           vullen.
         </li>
         <li>
@@ -602,7 +601,7 @@ const TermsConditions = () => (
           doorgevoerd.
         </li>
         <li>
-          Grote inhoudelijke wijzigingen zal Menefex zoveel mogelijk vooraf met
+          Grote inhoudelijke wijzigingen zal Menefex zoveel mogelijk vooraf met
           de klant bespreken.
         </li>
         <li>
@@ -617,7 +616,7 @@ const TermsConditions = () => (
         <li>
           Rechten van de klant uit een overeenkomst tussen partijen kunnen niet
           aan derden worden overgedragen zonder de voorafgaande schriftelijke
-          instemming van Menefex.
+          instemming van Menefex.
         </li>
         <li>
           Deze bepaling geldt als een beding met goederenrechtelijke werking
@@ -635,8 +634,8 @@ const TermsConditions = () => (
         </li>
         <li>
           Een bepaling die nietig of vernietigbaar is, wordt in dat geval
-          vervangen door een bepaling die het dichtst in de buurt komt van
-          wat Menefex bij het opstellen van de voorwaarden op dat punt voor ogen
+          vervangen door een bepaling die het dichtst in de buurt komt van wat
+          Menefex bij het opstellen van de voorwaarden op dat punt voor ogen
           had.
         </li>
       </ol>
@@ -649,7 +648,7 @@ const TermsConditions = () => (
           recht van toepassing.
         </li>
         <li>
-          De Nederlandse rechter in het arrondissement waar Menefex is gevestigd
+          De Nederlandse rechter in het arrondissement waar Menefex is gevestigd
           / praktijk houdt / kantoor houdt is exclusief bevoegd om kennis te
           nemen van eventuele geschillen tussen partijen, tenzij de wet dwingend
           anders voorschrijft.
