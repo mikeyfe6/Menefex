@@ -25,8 +25,9 @@ const Projects = () => {
         <div>
           <StaticImage
             src="../images/projects/Eternitydrum-screen.png"
-            alt="Eternity Percussion"
-            loading="eager"
+            alt=""
+            layout="fullWidth"
+            formats={['auto', 'webp', 'avif']}
           />
           <div className="slider-info">
             <div className="beschrijving">
@@ -59,8 +60,9 @@ const Projects = () => {
         <div>
           <StaticImage
             src="../images/projects/Blackharmony-screen.png"
-            alt="Black Harmony"
-            loading="eager"
+            alt=""
+            layout="fullWidth"
+            formats={['auto', 'webp', 'avif']}
           />
           <div className="slider-info">
             <div className="beschrijving">
