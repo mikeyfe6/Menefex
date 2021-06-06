@@ -52,7 +52,7 @@ const BlogPage = () => {
         pathname="/blog/"
       />
 
-      <div className="container">
+      <div>
         <div className="smallwhitespace" />
         <h1 className="page-title">
           Blog<span className="headdots">.</span>

@@ -17,7 +17,7 @@ const ContactPage = () => (
       pathname="/contact/"
     />
 
-    <div className="container">
+    <div>
       <div className="smallwhitespace" />
       <h1 className="page-title">
         Contact<span className="headdots">.</span>

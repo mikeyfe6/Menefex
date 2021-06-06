@@ -12,7 +12,7 @@ const ThankYouPage = () => (
       description="Success! Uw bericht is aangekomen."
       pathname="/success/"
     />
-    <div className="container">
+    <div>
       <div className="smallwhitespace" />
       <hr />
       <br />

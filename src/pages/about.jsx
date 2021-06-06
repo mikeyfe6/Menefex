@@ -18,7 +18,7 @@ const AboutPage = () => (
     />
 
     <div className="smallwhitespace" />
-    <div className="container">
+    <div>
       <div className="row">
         <div className="col-lg-8">
           <h1 className="page-title">

@@ -8,6 +8,8 @@ require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 });
 
+const sass = require('sass');
+
 module.exports = {
   flags: {
     PRESERVE_WEBPACK_CACHE: true,
@@ -202,7 +204,12 @@ module.exports = {
         host: process.env.CONTENTFUL_HOST,
       },
     },
-    'gatsby-plugin-sass',
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        implementation: sass,
+      },
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -217,16 +224,11 @@ module.exports = {
         // Defaults used for gatsbyImageData and StaticImage
         defaults: {
           placeholder: 'blurred',
+          formats: ['auto', 'webp', 'avif'],
           quality: 100,
         },
         // Set to false to allow builds to continue on image errors
         failOnError: true,
-        // deprecated options and their defaults:
-        base64Width: 20,
-        forceBase64Format: 'webp', // valid formats: png,jpg,webp
-        useMozJpeg: process.env.GATSBY_JPEG_ENCODER === 'MOZJPEG',
-        stripMetadata: true,
-        defaultQuality: 50,
       },
     },
     'gatsby-transformer-sharp',
@@ -299,7 +301,6 @@ module.exports = {
         output: '/',
       },
     },
-    // 'gatsby-plugin-sitemap',
     'gatsby-plugin-catch-links',
     {
       resolve: 'gatsby-plugin-manifest',

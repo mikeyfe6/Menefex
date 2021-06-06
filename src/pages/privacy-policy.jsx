@@ -12,7 +12,7 @@ const PrivacyPolicy = () => (
       description="Hoe gaan wij om met uw gegevens en meer? Bekijk onze privacybeleid."
       pathname="/privacy-policy/"
     />
-    <div className="container privacypol">
+    <div className="privacypol">
       <div className="col-lg-9">
         <div className="smallwhitespace" />
         <hr />

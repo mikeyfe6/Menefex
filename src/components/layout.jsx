@@ -94,7 +94,7 @@ class Layout extends React.Component {
           <SideDrawer show={sideDrawerOpen} />
           {backdrop}
           <main style={{ marginTop: '100px' }}>
-            <div>{children}</div>
+            <div className="container">{children}</div>
           </main>
           <CookieConsent
             overlay

@@ -1,45 +1,18 @@
-@import './customs/functions';
-@import './customs/colors';
-@import './customs/fonts';
-
-.slider-container {
-  margin: 0 auto;
-  width: 950px;
-  opacity: 0.95;
-}
-
-.slick-slider,
-.slick-list,
-.slide-track,
-.slick-slide {
-  height: 540px;
-  border-bottom: 5px solid $secondary-color;
-  border-top: 1px solid $super-color;
-  border-right: 1px solid $super-color;
-  border-left: 1px solid $super-color;
-  border-radius: 20px 20px 0px 0px;
-  @include shadow;
-}
-
-.slick-dots {
-  bottom: -60px !important;
-  opacity: 0.75 !important;
-}
+@import '../customs/functions';
+@import '../customs/colors';
+@import '../customs/fonts';
 
 .slider-info {
-  z-index: 100;
-  position: relative;
-  float: right;
+  z-index: 1;
+  position: absolute;
   background: #fff;
   opacity: 0.9;
-  bottom: 200px;
-  right: 15px;
+  right: 0;
+  bottom: -35px;
   font-size: 0.725rem;
-  width: 275px;
-  margin-bottom: -35px !important;
-  border: 1.5px ridge $secondary-color;
+  width: 300px;
+  border: 2.5px ridge #ffcc00;
   border-radius: 7px;
-  display: table;
 }
 
 .beschrijving {
@@ -114,33 +87,11 @@
 }
 
 @media (max-width: 768px) {
-  .slider-container {
-    width: 95%;
-  }
-
-  .projects-img {
-    width: 100% !important;
-  }
-
-  .slick-slider,
-  .slick-list,
-  .slide-track,
-  .slick-slide {
-    height: 230px;
-    @include shadow;
-  }
-
-  .slick-dots {
-    bottom: -40px !important;
-    opacity: 0.75 !important;
-  }
-
   .slider-info {
-    z-index: 100;
-    bottom: 113.75px;
-    right: 5px;
+    bottom: -25px;
+    right: -50px;
     font-size: 0.65rem;
-    width: 52.5%;
+    width: 65%;
   }
 
   .beschrijving {

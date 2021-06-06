@@ -34,7 +34,7 @@ const workPage = () => (
       pathname="/work/"
     />
 
-    <div className="container">
+    <div>
       <div className="smallwhitespace" />
       <div className="row">
         <div className="col-lg-12">

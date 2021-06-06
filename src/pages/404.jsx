@@ -12,7 +12,7 @@ const NotFound = () => (
       description="oepss.. Pagina niet gevonden!"
       pathname="/404/"
     />
-    <div className="container">
+    <div>
       <div className="smallwhitespace" />
       <h3>
         Ojee<span className="speccol">..</span> Pagina niet gevonden

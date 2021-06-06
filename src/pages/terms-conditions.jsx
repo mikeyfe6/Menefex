@@ -12,7 +12,7 @@ const TermsConditions = () => (
       description="Bekijk hier de algemene voorwaarden die wij als Menefex nastreven."
       pathname="/terms-conditions/"
     />
-    <div className="container termscondit">
+    <div className="termscondit">
       <div className="smallwhitespace" />
       <hr />
       <br />

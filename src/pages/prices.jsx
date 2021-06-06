@@ -29,7 +29,7 @@ const Prices = () => (
       keywords="prijzen, tarieven, starter, established, business, plan, actie"
       pathname="/prices/"
     />
-    <div className="container">
+    <div>
       <div className="smallwhitespace" />
       <h1 className="page-title">
         Prijzen & tarieven<span className="headdots">.</span>

@@ -11,6 +11,15 @@
   font-size: 1.75em;
 }
 
+// .carousel-indicators {
+//   .active {
+//     color: red !important;
+//     background-color: red !important;
+//     background: red !important;
+//     z-index: 100000;
+//   }
+// }
+
 span.headdots {
   color: $secondary-color;
   font-size: 50px;
@@ -46,9 +55,42 @@ span.speccolplus {
   margin-top: -25px;
 }
 
+.carousel-control-next {
+  color: $secondary-color !important;
+  font-size: 3em !important ;
+}
+
+.carousel-control-prev {
+  color: $secondary-color !important;
+  font-size: 3em !important ;
+}
+
+.gatsby-image-wrapper-constrained {
+  border-bottom: 5px solid $secondary-color;
+  border-top: 2.5px solid $super-color;
+  border-right: 2.5px solid $super-color;
+  border-left: 2.5px solid $super-color;
+  border-radius: 15px 15px 0px 0px;
+  @include shadow;
+}
+
+.gatsby-image-wrapper {
+  overflow: auto !important;
+}
+
 @media (max-width: 768px) {
   .hometitles {
     font-size: 1.5em;
     margin-top: 3%;
+  }
+
+  .carousel-control-next {
+    color: $secondary-color !important;
+    font-size: 1.5em !important ;
+  }
+
+  .carousel-control-prev {
+    color: $secondary-color !important;
+    font-size: 1.5em !important ;
   }
 }
