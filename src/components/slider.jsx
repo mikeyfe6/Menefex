@@ -5,7 +5,7 @@ import React from 'react';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import { graphql, useStaticQuery, Link } from 'gatsby';
 
-import SwiperCore, { Autoplay, A11y } from 'swiper/core';
+import SwiperCore, { Autoplay, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/swiper.scss';
@@ -46,52 +46,6 @@ const Projects = () => {
       }
     }
   `);
-
-  // const graphImg = data.slideShow.edges.map(({ node }) => node.childImageSharp);
-  // const officers = [
-  //   { kijken: 20, name: 'Captain Piett' },
-  //   { kijken: 24, name: 'General Veers' },
-  //   { kijken: 56, name: 'Admiral Ozzel' },
-  //   { kijken: 88, name: 'Commander Jerjerrod' },
-  // ];
-
-  // const allGraphImg = graphImg.concat(officers);
-  // console.log(allGraphImg);
-  // console.log(data);
-
-  // const target = data.slideShow.edges;
-  // const officers = [
-  //   { 0: { node: { description: 'haak' } } },
-  //   { 1: { node: { description: 'tollie' } } },
-  // ];
-
-  // // const returnedTarget = Object.assign({}, target, ...officers);
-  // const returnedTarget = target.concat(officers);
-  // console.log(returnedTarget);
-
-  // function union(sets) {
-  //   return sets.reduce(
-  //     (combined, list) => new Set([...combined, ...list]),
-  //     new Set(),
-  //   );
-  // }
-
-  // const a = new Set([1, 2, 3]);
-  // const b = new Set([1, 3, 5]);
-  // const c = new Set([4, 5, 6]);
-
-  // console.log(union([a, b, c])); // {1, 2, 3, 4, 5, 6}
-
-  // const allGraphImg = new Map([...map1, ...map2, ...map3])
-
-  // data.slideShow.edges.node.push(...officers);
-  console.log(data);
-  console.log(data.slideShow.edges);
-  console.log(data.slideShow.edges.map(({ node }) => node.childImageSharp));
-
-  // if (msgArray.length === 100) {
-  //   console.log('The length is 100.');
-  // }
 
   const eternityDrum = (
     <div className={sliderInfo}>
