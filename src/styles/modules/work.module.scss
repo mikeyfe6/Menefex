@@ -12,6 +12,8 @@
     max-width: 100%;
     border: 2px $fourth-color solid;
     border-radius: 10px;
+    z-index: 1;
+
     @include smoothtrans;
     @include shadow;
 
