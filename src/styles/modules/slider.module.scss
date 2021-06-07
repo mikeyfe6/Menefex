@@ -2,13 +2,22 @@
 @import '../customs/colors';
 @import '../customs/fonts';
 
-.slider-info {
+.slideCont {
+  border-bottom: 5px solid $secondary-color;
+  border-top: 3px solid $fourth-color;
+  border-right: 3px solid $fourth-color;
+  border-left: 3px solid $fourth-color;
+  border-radius: 15px 15px 5px 5px;
   z-index: 1;
+}
+
+.slider-info {
+  z-index: 2;
   position: absolute;
   background: #fff;
   opacity: 0.9;
-  right: 0;
-  bottom: -35px;
+  right: 200px;
+  bottom: -20px;
   font-size: 0.725rem;
   width: 300px;
   border: 2.5px ridge #ffcc00;
@@ -30,13 +39,11 @@
   }
 
   .project-link {
-    position: absolute;
     background: linear-gradient(to left, #ffcc007c, $secondary-color);
-    padding: 1.5% 3%;
-    border: 1.75px solid $fourth-color;
+    padding: 5% 7%;
+    white-space: nowrap;
+    border: 2px solid $fourth-color;
     border-radius: 5px;
-    top: 7%;
-    left: 4%;
     font-weight: bold;
     font-size: 1em;
     // color: $primary-color;
@@ -87,11 +94,20 @@
 }
 
 @media (max-width: 768px) {
+  .slideCont {
+    border-bottom: 4px solid $secondary-color !important;
+    border-top: 2px solid $fourth-color !important;
+    border-right: 2px solid $fourth-color !important;
+    border-left: 2px solid $fourth-color !important;
+    border-radius: 7.5px 7.5px 3px 3px;
+  }
+
   .slider-info {
-    bottom: -25px;
-    right: -50px;
+    bottom: -5px;
+    right: 10px;
     font-size: 0.65rem;
-    width: 65%;
+    width: 50%;
+    border: 1.5px ridge #ffcc00;
   }
 
   .beschrijving {
@@ -118,9 +134,7 @@
     }
 
     .project-link {
-      top: 7%;
-      left: 3%;
-      padding: 1.5% 2.5% !important;
+      padding: 5% 7%;
       font-size: 0.8em;
       border-width: 1.25px;
       letter-spacing: -0.25px;

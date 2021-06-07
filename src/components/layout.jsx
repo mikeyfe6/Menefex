@@ -28,9 +28,6 @@ import {
   faRss,
 } from '@fortawesome/free-solid-svg-icons';
 
-// Bootstrap
-import 'bootstrap/dist/css/bootstrap.min.css';
-
 // components
 import Toolbar from './navbar/Toolbar';
 import SideDrawer from './navbar/SideDrawer';
