@@ -66,7 +66,7 @@ const Projects = () => {
               bekijk website
             </button>
           </a>
-          <Link to="/work/#EP">
+          <Link to="/work/">
             <h5>Eternity Drum</h5>
           </Link>
         </div>
@@ -103,7 +103,7 @@ const Projects = () => {
               bekijk website
             </button>
           </a>
-          <Link to="/work/#BH">
+          <Link to="/work/">
             {' '}
             <h5>Black Harmony</h5>{' '}
           </Link>
