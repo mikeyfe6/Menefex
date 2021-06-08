@@ -38,13 +38,13 @@
   .choosing {
     background-color: $secondary-color;
     display: block;
-    font-size: 0.75em;
-    font-weight: bold;
-    color: $spectext-color;
+    font-size: 16px;
+    // font-weight: bold;
+    color: $primary-color;
     // line-height: 1.3;
-    padding: 0.7em 1.5em 0.6em 0.9em;
+    padding: 0.25em 1.5em 0.25em 0.9em;
     // margin-left: 5%;
-    width: 35%;
+    width: 40%;
     box-sizing: border-box;
     margin-top: 2%;
     margin-left: 1%;
@@ -79,11 +79,17 @@
 
   label {
     display: block;
-    color: $spectext-color;
-    margin-top: 1%;
+    color: $fifth-color;
+    margin-top: 2%;
     letter-spacing: 1px;
     font-size: 0.75em;
     font-weight: 700;
+    @include smoothtrans;
+
+    &:hover {
+      color: $spectext-color;
+      @include smoothtrans;
+    }
   }
 
   input,
@@ -95,13 +101,13 @@
     padding-top: 10px;
     padding-bottom: 10px;
 
-    margin-top: 1%;
+    margin-top: 2%;
     margin-bottom: 3%;
     border: none;
 
     background: transparent;
     color: $primary-color;
-    font-size: 0.9em;
+    font-size: 16px;
 
     border-radius: 10px;
     @include smoothtrans;
@@ -125,8 +131,7 @@
 }
 
 .textarea {
-  border-bottom: 1.5px solid $fourth-color;
-  opacity: 0.75;
+  border-bottom: 2.5px solid #dadada3a;
   width: 97%;
 }
 
@@ -353,16 +358,18 @@
 }
 
 @media (max-width: 768px) {
-  #contact-form {
-    input,
-    textarea {
-      font-size: 0.675em !important;
-    }
+  // #contact-form {
+  //   input,
+  //   textarea {
+  //     font-size: 0.675em !important;
+  //   }
+  // }
+
+  label {
+    margin-top: 3%;
   }
 
   .textarea {
-    border-bottom: 1.5px solid $fourth-color;
-    opacity: 0.5;
     width: 97%;
   }
 

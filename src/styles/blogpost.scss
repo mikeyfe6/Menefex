@@ -121,8 +121,15 @@
     margin-top: 1.75rem;
   }
 
+  .horizontness {
+    // hr
+    display: block;
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+
   .boldness {
-    // .b
+    // b
     color: $secondary-color;
     font-weight: 500;
   }
@@ -328,29 +335,6 @@
     clear: both;
     width: 97%;
     @include fontsmb;
-
-    p {
-      margin-top: 1.5rem;
-      letter-spacing: 0.3px !important;
-    }
-
-    ol {
-      padding-left: 25px;
-    }
-
-    ol li {
-      margin-top: -1rem;
-    }
-
-    h3 {
-      margin-top: 1.2rem;
-    }
-
-    hr {
-      margin-top: 10%;
-      margin-bottom: 5%;
-      width: 20%;
-    }
   }
 
   .excerpt {

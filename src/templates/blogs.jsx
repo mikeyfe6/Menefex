@@ -260,7 +260,7 @@ const Blog = (props) => {
             <div className="post-content">
               {renderRichText(props.data.contentfulBlogPost.body, options)}
 
-              <div className="smallwhitespace" />
+              <div className="whitespace" />
 
               <div className="post-authorcont">
                 <div className="post-author">

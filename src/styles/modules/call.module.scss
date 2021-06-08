@@ -65,10 +65,10 @@
     background-color: $secondary-color;
     display: block;
     width: 100%;
-    font-size: 0.75em;
-    font-weight: bold;
-    color: grey !important;
-    padding: 0.7em 1.5em 0.6em 0.9em;
+    font-size: 16px;
+    // font-weight: bolder;
+    color: $primary-color;
+    padding: 0.25em 1.5em 0.25em 0.9em;
     box-sizing: border-box;
     margin-top: 5%;
     margin-left: 1%;
@@ -89,7 +89,6 @@
     @include smoothtrans;
   }
   .choosing:focus {
-    box-shadow: 0 0 1px 2px $link-color;
     box-shadow: 0 0 0 2px -moz-mac-focusring;
     color: $spectext-color;
     outline: none;
@@ -103,11 +102,17 @@
 
   label {
     display: block;
-    color: $spectext-color;
-    margin-top: 1%;
+    color: $fifth-color;
+    margin-top: 2%;
     letter-spacing: 1px;
     font-size: 0.75em;
     font-weight: 700;
+    @include smoothtrans;
+
+    &:hover {
+      color: $spectext-color;
+      @include smoothtrans;
+    }
   }
 
   input,
@@ -119,13 +124,13 @@
     padding-top: 10px;
     padding-bottom: 10px;
 
-    margin-top: 2%;
-    margin-bottom: 4%;
+    margin-top: 4%;
+    margin-bottom: 5%;
 
     border: none;
     background: transparent;
     color: $primary-color;
-    font-size: 0.9em;
+    font-size: 16px;
     border-radius: 10px;
     @include smoothtrans;
   }
@@ -148,8 +153,7 @@
 }
 
 .textarea {
-  border-bottom: 2.5px solid $fourth-color;
-  opacity: 0.75;
+  border-bottom: 2.5px solid #dadada3a;
 }
 
 .recaptcha {
@@ -188,9 +192,13 @@
 
 @media (max-width: 768px) {
   #call-form {
-    input,
-    textarea {
-      font-size: 0.675em !important;
+    // input,
+    // textarea {
+    //   font-size: 0.675em !important;
+    // }
+
+    label {
+      margin-top: 3%;
     }
 
     textarea {
@@ -212,7 +220,7 @@
   }
 
   .choosing {
-    width: 75% !important;
+    width: 85% !important;
   }
 
   #call-form {
