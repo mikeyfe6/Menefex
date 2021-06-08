@@ -366,7 +366,7 @@
   // }
 
   label {
-    margin-top: 3%;
+    margin-top: 5% !important;
   }
 
   .textarea {
@@ -439,6 +439,7 @@
   }
 
   .choosing {
+    margin-top: 3% !important;
     width: 75% !important;
   }
 
@@ -464,3 +465,11 @@
     font-size: 0.575em;
   }
 }
+
+// @media screen and (-webkit-min-device-pixel-ratio: 0) {
+//   select:focus,
+//   textarea:focus,
+//   input:focus {
+//     font-size: 16px;
+//   }
+// }
