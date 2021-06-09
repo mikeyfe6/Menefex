@@ -1,17 +1,16 @@
 .marker {
-  background: url('../logo/Menefex-icon.svg') no-repeat 50% 50%;
+  // background: url('../logo/Menefex-icon.svg') no-repeat 50% 50%;
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 50px;
-  height: 50px;
+  width: 42.5px;
+  height: 42.5px;
   user-select: none;
   transform: translate(-50%, -50%);
   cursor: 'pointer';
-  z-index: 5;
 
   &:hover {
-    z-index: 7;
+    z-index: 1;
   }
 }
 

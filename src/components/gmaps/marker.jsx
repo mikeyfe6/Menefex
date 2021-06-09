@@ -2,23 +2,24 @@ import React from 'react';
 
 import PropTypes from 'prop-types';
 
+import miniMaps from '../../logo/Menefex-icon.svg';
+
 import '../../styles/marker.scss';
 
-const Marker = ({ color, name }) => (
-  <div
-    className="marker"
-    style={{ backgroundColor: color, cursor: 'pointer' }}
+const Marker = ({ name }) => (
+  <img
+    src={miniMaps}
+    alt="Menefex Webmediabedrijf"
     title={name}
+    className="marker"
   />
 );
 
 Marker.defaultProps = {
-  color: null,
   name: 'Menefex Webmediabedrijf',
 };
 
 Marker.propTypes = {
-  color: PropTypes.string,
   name: PropTypes.string,
 };
 

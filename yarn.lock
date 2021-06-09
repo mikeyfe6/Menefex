@@ -2040,9 +2040,9 @@
     "@types/react" "*"
 
 "@types/react@*", "@types/react@>=16.14.8", "@types/react@>=16.9.11":
-  version "17.0.9"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.9.tgz#1147fb520024a62c9b3841f5cb4db89b73ddb87f"
-  integrity sha512-2Cw7FvevpJxQrCb+k5t6GH1KIvmadj5uBbjPaLlJB/nZWUj56e1ZqcD6zsoMFB47MsJUTFl9RJ132A7hb3QFJA==
+  version "17.0.10"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.10.tgz#c8bb4e37cc642f7cc5532959cb5e2ead6c74dec9"
+  integrity sha512-+Tc5aGO49L/cjFBfpIPB398ztmAUChglc+a+EYlvphMOMvwUEzmLiyfmnEseGE7inMO6XiSffHmXVPC8GonksQ==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -3420,9 +3420,9 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001125, caniuse-lite@^1.0.30001219, caniuse-lite@^1.0.30001230:
-  version "1.0.30001235"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001235.tgz#ad5ca75bc5a1f7b12df79ad806d715a43a5ac4ed"
-  integrity sha512-zWEwIVqnzPkSAXOUlQnPW2oKoYb2aLQ4Q5ejdjBcnH63rfypaW34CxaeBn1VMya2XaEU3P/R2qHpWyj+l0BT1A==
+  version "1.0.30001236"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001236.tgz#0a80de4cdf62e1770bb46a30d884fc8d633e3958"
+  integrity sha512-o0PRQSrSCGJKCPZcgMzl5fUaj5xHe8qA2m4QRvnyY4e1lITqoNkr7q/Oh1NcpGSy0Th97UZ35yoKcINPoq7YOQ==
 
 caw@^2.0.0, caw@^2.0.1:
   version "2.0.1"

@@ -4,7 +4,6 @@ import GoogleMapReact from 'google-map-react';
 
 import Marker from './marker';
 
-import '../../styles/marker.scss';
 import '../../styles/maps.scss';
 
 // TODO: Zorgen dat on click pop-up adresinformatie tevoren komt over Gimmix
