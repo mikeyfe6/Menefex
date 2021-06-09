@@ -123,6 +123,7 @@ const Form = () => {
                         type="text"
                         name="name"
                         id="contact-name"
+                        maxLength="50"
                         value={inputs.name}
                         onChange={handleChange}
                         required
@@ -138,6 +139,7 @@ const Form = () => {
                         type="text"
                         name="company"
                         id="contact-company"
+                        maxLength="30"
                         value={inputs.company}
                         onChange={handleChange}
                       />
@@ -153,6 +155,7 @@ const Form = () => {
                         name="email"
                         id="contact-email"
                         maxLength="35"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                         value={inputs.email}
                         onChange={handleChange}
                         required
@@ -168,6 +171,7 @@ const Form = () => {
                         type="tel"
                         name="tel"
                         id="contact-tel"
+                        pattern="^\+?\d*$"
                         maxLength="15"
                         value={inputs.tel}
                         onChange={handleChange}

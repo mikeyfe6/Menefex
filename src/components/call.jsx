@@ -92,6 +92,7 @@ const Call = () => {
                   type="text"
                   name="name"
                   id="call-name"
+                  maxLength="50"
                   value={inputs.name}
                   onChange={handleChange}
                   required
@@ -108,6 +109,7 @@ const Call = () => {
                   name="tel"
                   id="call-tel"
                   maxLength="15"
+                  pattern="^\+?\d*$"
                   value={inputs.tel}
                   onChange={handleChange}
                   required
