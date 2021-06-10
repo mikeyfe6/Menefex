@@ -445,7 +445,14 @@ const Form = () => {
               <br />
               <FontAwesomeIcon icon="paper-plane" size="lg" color="#74aece" />
               <p className={contactmail}>
-                · &nbsp;<a href="mailto:info@menefex.nl">info@menefex.nl</a>
+                · &nbsp;
+                <a
+                  href="mailto:info@menefex.nl"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  info@menefex.nl
+                </a>
               </p>
             </div>
           </div>

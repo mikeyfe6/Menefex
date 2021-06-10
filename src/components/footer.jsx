@@ -79,7 +79,11 @@ const Footer = () => {
             <div className="col-lg-4" id={personal}>
               <p>connect with us</p>
               <h4>
-                <a href="mailto:info@menefex.nl">
+                <a
+                  href="mailto:info@menefex.nl"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
                   {' '}
                   <span className={mailfoot}>e:</span> info@menefex.nl
                 </a>{' '}
