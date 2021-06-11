@@ -93,7 +93,9 @@
   &::first-letter {
     font-size: 2.5em;
     float: left;
+    color: $secondary-color;
     margin-top: -0.35em;
+    margin-right: 0.2em;
   }
 }
 
