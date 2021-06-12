@@ -95,7 +95,12 @@
     float: left;
     color: $secondary-color;
     margin-top: -0.35em;
-    margin-right: 0.2em;
+    margin-right: 0.25em;
+    text-decoration-color: $fourth-color !important;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 5px;
+    // text-decoration-style: dotted;
   }
 }
 
@@ -121,6 +126,11 @@
   .paragraphness {
     // .p
     margin-top: 1.75rem;
+
+    u {
+      text-decoration-color: $secondary-color;
+      text-decoration-thickness: 2px;
+    }
   }
 
   .horizontness {
@@ -349,14 +359,14 @@
 
   .post-subtitle {
     margin-top: 12.5%;
-    font-size: 0.85em;
+    font-size: 0.8em;
     margin-bottom: 7.5%;
     letter-spacing: 0.1px;
 
     &::first-letter {
       font-size: 3em;
       float: left;
-      margin-top: -0.2em;
+      margin-top: -0.1em;
     }
   }
 

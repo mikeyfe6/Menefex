@@ -18,9 +18,10 @@
 
 #call-form {
   .terugbel {
-    font-size: 1.125em;
+    font-size: 1.25em;
     font-weight: bolder;
     color: $primary-color !important;
+    font-family: $right-font;
   }
 
   .thick {
@@ -147,7 +148,7 @@
   }
 
   textarea {
-    height: 75px !important;
+    height: 75px;
     resize: vertical;
   }
 }

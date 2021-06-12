@@ -68,20 +68,22 @@ const BlogPage = () => {
             {data.allContentfulBlogPost.edges.map((edge) => (
               <li className={post} key={edge.node.id}>
                 <Link to={`/blog/${edge.node.slug}/`}>
+                  <div>
+                    {' '}
+                    <h4 className={posthead}>{edge.node.title}</h4>
+                    <span className={contsubtext}> {edge.node.subtitle}</span>
+                    <p className={bloggepost}>
+                      {' '}
+                      Gepost: <strong>{edge.node.publishedDate}</strong> ⌁
+                      Auteur: <strong>{edge.node.author}</strong>{' '}
+                    </p>
+                  </div>
+
                   <img
                     src={edge.node.image.file.url}
                     alt={edge.node.image.title}
                     className={blogimg}
                   />
-                  <h4 className={posthead}>{edge.node.title}</h4>
-
-                  <span className={contsubtext}> {edge.node.subtitle}</span>
-
-                  <p className={bloggepost}>
-                    {' '}
-                    Gepost: <strong>{edge.node.publishedDate}</strong> ⌁ Auteur:{' '}
-                    <strong>{edge.node.author}</strong>{' '}
-                  </p>
                 </Link>
               </li>
             ))}

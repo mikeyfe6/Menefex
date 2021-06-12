@@ -104,6 +104,19 @@
   border-radius: 2.5px;
 }
 
+.pricenot {
+  background: linear-gradient(to top, $spec-color, $very-color);
+  padding: 2.5% 4.5%;
+  border: 3px solid $very-color;
+  border-radius: 10px;
+  letter-spacing: 0.02em;
+
+  span {
+    font-family: $right-font;
+    font-size: 1.2em;
+  }
+}
+
 @media (max-width: 768px) {
   .pricecon {
     margin: 5%;
@@ -111,5 +124,10 @@
 
   .pricehead {
     font-size: 1.5em !important;
+  }
+
+  .pricenot {
+    font-size: 0.9em !important;
+    padding: 5% 7% !important;
   }
 }
