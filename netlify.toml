@@ -1,3 +1,6 @@
+[build]
+  functions = './functions/'
+
 [[headers]]
   for = "/*"
   Access-Control-Allow-Origin = "*"

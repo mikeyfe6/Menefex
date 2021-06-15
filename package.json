@@ -13,6 +13,7 @@
     "develop": "GATSBY_GRAPHQL_IDE=playground gatsby develop -H 0.0.0.0 --open",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "eslint-check": "eslint --print-config .eslintrc | eslint-config-prettier-check",
+    "postinstall": "netlify-lambda install",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
@@ -53,6 +54,7 @@
     "gatsby-transformer-remark": "^4.4.1",
     "gatsby-transformer-sharp": "^3.7.1",
     "google-map-react": "^2.1.9",
+    "netlify-lambda": "^2.0.9",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-animate-on-scroll": "^2.1.5",
