@@ -16,7 +16,7 @@ module.exports = {
     FAST_DEV: true,
     PRESERVE_FILE_DOWNLOAD_CACHE: true,
     PARALLEL_SOURCING: true,
-    FUNCTIONS: false,
+    FUNCTIONS: true,
   },
   siteMetadata: {
     siteUrl: 'https://menefex.nl',
