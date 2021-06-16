@@ -1,15 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 
 import { navigate } from 'gatsby';
 import { Animated } from 'react-animated-css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import axios from 'axios';
-
-import {
-  GoogleReCaptchaProvider,
-  GoogleReCaptcha,
-} from 'react-google-recaptcha-v3';
 
 import Maps from './gmaps/maps';
 
@@ -45,10 +40,6 @@ import {
 } from '../styles/modules/form.module.scss';
 
 const Form = () => {
-  const [token, setToken] = useState();
-
-  //   const today = new Date()
-
   // const encode = (data) =>
   //   Object.keys(data)
   //     .map(
@@ -56,18 +47,16 @@ const Form = () => {
   //     )
   //     .join('&');
 
-  const [inputs, setInputs] = React.useState({
+  const [inputs, setInputs] = useState({
     name: '',
     company: '',
     email: '',
     tel: '',
-    onderwerp: '',
+    subject: '',
     message: '',
   });
 
-  // const [recaptchaValue, setRecaptchaValue] = React.useState('');
-
-  const handleChange = React.useCallback(
+  const handleChange = useCallback(
     (event) => {
       setInputs({
         ...inputs,
@@ -77,26 +66,17 @@ const Form = () => {
     [inputs],
   );
 
-  // const handleChangeReCAPTCHA = React.useCallback((value) => {
-  //   setRecaptchaValue(value);
-  // }, []);
-
-  const handleSubmit = React.useCallback(
+  const handleSubmit = useCallback(
     (event) => {
       const form = event.currentTarget;
       event.preventDefault();
       event.stopPropagation();
-
-      // const data = new FormData(form);
-      // data.append('g-recaptcha-response', token);
 
       axios({
         url: '/.netlify/functions/sendmail',
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         data: {
-          // 'form-name': form.getAttribute('name'),
-          'g-recaptcha-response': token,
           ...inputs,
         },
       })
@@ -117,152 +97,126 @@ const Form = () => {
       >
         <div className="row">
           <div className={formwrapper}>
-            <GoogleReCaptchaProvider reCaptchaKey="6LeUoDgbAAAAAIqh4f_h__lb0qmormhRGMotPkGq">
-              <form
-                name="Contact Form"
-                id={contactForm}
-                // method="POST"
-                action="/success/"
-                // data-netlify="true"
-                // data-netlify-recaptcha="true"
-                onSubmit={handleSubmit}
-              >
-                {/* <input type="hidden" name="form-name" value="Contact Form" /> */}
-                <ul>
-                  <li>
-                    <label htmlFor="contact-name">
-                      <span className="speccol">*</span> Naam
-                      <div className={textarea}>
-                        <input
-                          type="text"
-                          name="name"
-                          id="contact-name"
-                          maxLength="50"
-                          value={inputs.name}
-                          onChange={handleChange}
-                          required
-                        />
-                      </div>
-                    </label>
-                  </li>
-                  <li>
-                    <label htmlFor="contact-company">
-                      <span className="speccol">*</span> Bedrijfsnaam
-                      (optioneel)
-                      <div className={textarea}>
-                        <input
-                          type="text"
-                          name="company"
-                          id="contact-company"
-                          maxLength="30"
-                          value={inputs.company}
-                          onChange={handleChange}
-                        />
-                      </div>
-                    </label>
-                  </li>
-                  <li>
-                    <label htmlFor="contact-email">
-                      <span className="speccol">*</span> Email
-                      <div className={textarea}>
-                        <input
-                          type="email"
-                          name="email"
-                          id="contact-email"
-                          maxLength="35"
-                          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                          value={inputs.email}
-                          onChange={handleChange}
-                          required
-                        />
-                      </div>
-                    </label>
-                  </li>
-                  <li>
-                    <label htmlFor="contact-tel">
-                      <span className="speccol">*</span> Telefoon
-                      <div className={textarea}>
-                        <input
-                          type="tel"
-                          name="tel"
-                          id="contact-tel"
-                          pattern="^\+?\d*$"
-                          maxLength="15"
-                          value={inputs.tel}
-                          onChange={handleChange}
-                          required
-                        />
-                      </div>
-                    </label>
-                  </li>
-                  <li>
-                    <label htmlFor="contact-msg">
-                      <span className="speccol">*</span> Selecteer onderwerp
-                      <div>
-                        <select
-                          name="onderwerp"
-                          className={choosing}
-                          value={inputs.onderwerp}
-                          onChange={handleChange}
-                          required
-                        >
-                          <option value="website">Offerte aanvragen</option>
-                          <option value="samenwerking">
-                            Samenwerking aangaan
-                          </option>
-                          <option value="opmerking">Vraag / Opmerking</option>
-                          <option value="feedback">Klacht / Feedback</option>
-                          <option value="hulp">Hulp & Probleemoplossing</option>
-                        </select>
-                      </div>
-                    </label>
-                  </li>
-                  <li>
-                    <label htmlFor="contact-project">
-                      <span className="speccol">*</span> Type uw bericht
-                      hieronder
-                      <div className={textarea}>
-                        <textarea
-                          type="text"
-                          name="message"
-                          id="contact-project"
-                          rows="6"
-                          value={inputs.message}
-                          onChange={handleChange}
-                          required
-                        />
-                      </div>
-                    </label>
-                  </li>
-                </ul>
-                {/* <ReCAPTCHA
-                  sitekey={process.env.GATSBY_SITE_RECAPTCHA_KEY}
-                  onChange={handleChangeReCAPTCHA}
-                  className={recaptcha}
-                /> */}
-                <button
-                  type="submit"
-                  name="submit"
-                  id="contact-submit"
-                  className={send}
-                >
-                  Versturen
-                </button>
-                <GoogleReCaptcha
-                  onVerify={() => {
-                    setToken(token);
-                  }}
-                />
-                <div className="clr" />
-              </form>
-            </GoogleReCaptchaProvider>
+            <form id={contactForm} action="/success/" onSubmit={handleSubmit}>
+              <ul>
+                <li>
+                  <label htmlFor="contact-name">
+                    <span className="speccol">*</span> Naam
+                    <div className={textarea}>
+                      <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        maxLength="50"
+                        value={inputs.name}
+                        onChange={handleChange}
+                        required
+                      />
+                    </div>
+                  </label>
+                </li>
+                <li>
+                  <label htmlFor="company">
+                    <span className="speccol">*</span> Bedrijfsnaam (optioneel)
+                    <div className={textarea}>
+                      <input
+                        type="text"
+                        name="company"
+                        id="company"
+                        maxLength="30"
+                        value={inputs.company}
+                        onChange={handleChange}
+                      />
+                    </div>
+                  </label>
+                </li>
+                <li>
+                  <label htmlFor="email">
+                    <span className="speccol">*</span> Email
+                    <div className={textarea}>
+                      <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        maxLength="35"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                        value={inputs.email}
+                        onChange={handleChange}
+                        required
+                      />
+                    </div>
+                  </label>
+                </li>
+                <li>
+                  <label htmlFor="tel">
+                    <span className="speccol">*</span> Telefoon
+                    <div className={textarea}>
+                      <input
+                        type="tel"
+                        name="tel"
+                        id="tel"
+                        pattern="^\+?\d*$"
+                        maxLength="15"
+                        value={inputs.tel}
+                        onChange={handleChange}
+                        required
+                      />
+                    </div>
+                  </label>
+                </li>
+                <li>
+                  <label htmlFor="subject">
+                    <span className="speccol">*</span> Selecteer onderwerp
+                    <div>
+                      <select
+                        name="onderwerp"
+                        className={choosing}
+                        value={inputs.subject}
+                        onChange={handleChange}
+                        required
+                      >
+                        <option value="website">Offerte aanvragen</option>
+                        <option value="samenwerking">
+                          Samenwerking aangaan
+                        </option>
+                        <option value="opmerking">Vraag / Opmerking</option>
+                        <option value="feedback">Klacht / Feedback</option>
+                        <option value="hulp">Hulp & Probleemoplossing</option>
+                      </select>
+                    </div>
+                  </label>
+                </li>
+                <li>
+                  <label htmlFor="contact-project">
+                    <span className="speccol">*</span> Type uw bericht hieronder
+                    <div className={textarea}>
+                      <textarea
+                        type="text"
+                        name="text"
+                        id="text"
+                        rows="6"
+                        value={inputs.message}
+                        onChange={handleChange}
+                        required
+                      />
+                    </div>
+                  </label>
+                </li>
+              </ul>
+
+              <button type="submit" className={send}>
+                Versturen
+              </button>
+
+              <div className="clr" />
+            </form>
           </div>
         </div>
       </Animated>
       <div className="whitespace" />
       <br />
       <div>
-        <div className={`${contactbox}`}>
+        <div className={contactbox}>
           <div className="row">
             <div className="col-md">
               <p>
