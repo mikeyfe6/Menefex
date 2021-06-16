@@ -78,7 +78,7 @@ const Form = () => {
       event.preventDefault();
       event.stopPropagation();
       if (recaptchaValue != null && recaptchaValue !== '') {
-        fetch('/', {
+        fetch('/.netlify/functions/sendmail', {
           method: 'POST',
           headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
           body: encode({
@@ -86,8 +86,9 @@ const Form = () => {
             'g-recaptcha-response': recaptchaValue,
             ...inputs,
           }),
-        }).then(() => navigate(form.getAttribute('action')));
-        // .catch(() => console.log('POST ERROR'));
+        })
+          .then(() => navigate(form.getAttribute('action')))
+          .catch(() => console.log('POST ERROR'));
       }
     },
 
@@ -109,7 +110,7 @@ const Form = () => {
               id={contactForm}
               method="POST"
               action="/success/"
-              data-netlify="true"
+              // data-netlify="true"
               data-netlify-recaptcha="true"
               onSubmit={handleSubmit}
             >
