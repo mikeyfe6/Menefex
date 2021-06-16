@@ -77,7 +77,7 @@ const Call = () => {
         },
       })
         .then(() => navigate(form.getAttribute('action')))
-        .catch(() => console.log('POST ERROR'));
+        .catch((error) => console.log('POST ERROR', error));
     },
     [inputs],
   );
