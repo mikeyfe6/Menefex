@@ -1,6 +1,3 @@
-[functions]
-  directory = "./functions/"
-
 [[headers]]
   for = "/*"
   Access-Control-Allow-Origin = "*"
