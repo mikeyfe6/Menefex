@@ -13,7 +13,6 @@
     "develop": "GATSBY_GRAPHQL_IDE=playground gatsby develop -H 0.0.0.0 --open",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "eslint-check": "eslint --print-config .eslintrc | eslint-config-prettier-check",
-    "postinstall": "netlify-lambda install",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
