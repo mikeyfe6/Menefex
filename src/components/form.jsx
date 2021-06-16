@@ -87,14 +87,17 @@ const Form = () => {
       event.preventDefault();
       event.stopPropagation();
 
-      const data = new FormData(form);
-      data.append('g-recaptcha-response', token);
-      data.append(...inputs);
+      // const data = new FormData(form);
+      // data.append('g-recaptcha-response', token);
 
       axios({
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        data,
+        data: {
+          // 'form-name': form.getAttribute('name'),
+          'g-recaptcha-response': token,
+          ...inputs,
+        },
       })
         .then(() => navigate(form.getAttribute('action')))
         .catch(() => console.log('POST ERROR'));
