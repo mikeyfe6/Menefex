@@ -66,12 +66,12 @@ const Call = () => {
 
       const data = new FormData(form);
       data.append('g-recaptcha-response', token);
+      data.append(...inputs);
 
       axios({
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         data,
-        ...inputs,
       })
         .then(() => navigate(form.getAttribute('action')))
         .catch(() => console.log('POST ERROR'));

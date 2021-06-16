@@ -24,6 +24,7 @@ const handler = (req, res) => {
           message: 'I will send email',
         });
       },
+      // eslint-disable-next-line consistent-return
       (error) => {
         console.error(error);
         if (error.response) {
