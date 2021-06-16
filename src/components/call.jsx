@@ -77,10 +77,10 @@ const Call = () => {
         id={callForm}
         method="POST"
         action="/success/"
-        data-netlify="true"
+        // data-netlify="true"
         data-netlify-recaptcha="true"
       >
-        <input type="hidden" name="form-name" value="Call Form" />
+        {/* <input type="hidden" name="form-name" value="Call Form" /> */}
         <h5 className={terugbel}>Terugbelverzoek</h5>
         <hr className={thick} />
         <ul className={fillareaone}>

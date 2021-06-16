@@ -114,7 +114,7 @@ const Form = () => {
               data-netlify-recaptcha="true"
               onSubmit={handleSubmit}
             >
-              <input type="hidden" name="form-name" value="Contact Form" />
+              {/* <input type="hidden" name="form-name" value="Contact Form" /> */}
               <ul>
                 <li>
                   <label htmlFor="contact-name">
