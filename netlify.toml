@@ -1,8 +1,5 @@
-[build]
-  publish = "public/"
-
 [functions]
-  directory = "functions/"
+  directory = "./functions/"
 
 [[headers]]
   for = "/*"
