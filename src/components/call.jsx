@@ -68,6 +68,7 @@ const Call = () => {
       // data.append('g-recaptcha-response', token);
 
       axios({
+        url: '/.netlify/functions/sendmail',
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         data: {
@@ -89,7 +90,7 @@ const Call = () => {
           onSubmit={handleSubmit}
           name="Call Form"
           id={callForm}
-          method="POST"
+          // method="POST"
           action="/success/"
           // data-netlify="true"
           // data-netlify-recaptcha="true"
