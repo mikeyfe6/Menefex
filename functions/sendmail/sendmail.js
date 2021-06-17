@@ -66,9 +66,9 @@
 
 const sgMail = require('@sendgrid/mail');
 
-exports.handler = async function (context, event, callback) {
-  sgMail.setApiKey(context.SENDGRID_API_KEY);
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
+exports.handler = async function (context, event, callback) {
   const msg = {
     to: event.mail, // Change to your recipient
     from: process.env.SENDGRID_AUTHORIZED_EMAIL, // Change to your verified sender
