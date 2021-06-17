@@ -69,12 +69,19 @@ const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 exports.handler = async function (req, res) {
+  const data = JSON.parse(req.body);
+  const { email, subject, text } = data;
+
+  const body = Object.keys(data)
+    .map((k) => `${k}: ${data[k]}`)
+    .join('<br><br>');
+
   const msg = {
     to: 'contact@menefex.nl', // Change to your recipient
-    from: process.env.SENDGRID_AUTHORIZED_EMAIL, // Change to your verified sender
-    subject: req.body.subject,
-    text: req.body.text,
-    html: req.body,
+    from: email, // Change to your verified sender
+    subject,
+    text,
+    html: body,
   };
 
   console.log('REQUESTOFSOOO:', req.body, 'RESBOELAII:', res);
