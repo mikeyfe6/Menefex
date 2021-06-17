@@ -20,7 +20,7 @@ const Form = () => {
     company: '',
     email: '',
     tel: '',
-    subject: '',
+    subject: 'Ik wil graag een offerte aanvragen',
     text: '',
   });
 
