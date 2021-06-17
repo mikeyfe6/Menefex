@@ -70,14 +70,14 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 exports.handler = async function (req, res) {
   const msg = {
-    to: req.body.mail, // Change to your recipient
+    to: 'contact@menefex.nl', // Change to your recipient
     from: process.env.SENDGRID_AUTHORIZED_EMAIL, // Change to your verified sender
     subject: req.body.subject,
     text: req.body.text,
     html: req.body,
   };
 
-  console.log('REQUESTOFSOOO:', req, 'RESBOELAII:', res);
+  console.log('REQUESTOFSOOO:', req.body, 'RESBOELAII:', res);
 
   try {
     await sgMail.send(msg);
