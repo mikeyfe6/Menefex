@@ -100,7 +100,7 @@ const Form = () => {
             <form id={contactForm} action="/success/" onSubmit={handleSubmit}>
               <ul>
                 <li>
-                  <label htmlFor="contact-name">
+                  <label htmlFor="name">
                     <span className="speccol">*</span> Naam
                     <div className={textarea}>
                       <input
@@ -169,7 +169,8 @@ const Form = () => {
                     <span className="speccol">*</span> Selecteer onderwerp
                     <div>
                       <select
-                        name="onderwerp"
+                        name="subject"
+                        id="subject"
                         className={choosing}
                         value={inputs.subject}
                         onChange={handleChange}
@@ -187,13 +188,13 @@ const Form = () => {
                   </label>
                 </li>
                 <li>
-                  <label htmlFor="contact-project">
+                  <label htmlFor="text">
                     <span className="speccol">*</span> Type uw bericht hieronder
                     <div className={textarea}>
                       <textarea
                         type="text"
-                        name="text"
-                        id="text"
+                        name="message"
+                        id="message"
                         rows="6"
                         value={inputs.message}
                         onChange={handleChange}

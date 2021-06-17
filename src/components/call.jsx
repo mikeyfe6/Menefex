@@ -129,7 +129,7 @@ const Call = () => {
               <div className={textarea}>
                 <textarea
                   type="text"
-                  name="text"
+                  name="message"
                   id="text"
                   rows="6"
                   value={inputs.text}
