@@ -51,9 +51,7 @@ const Form = () => {
         url: '/.netlify/functions/sendmail',
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        data: {
-          ...inputs,
-        },
+        data: inputs,
       })
         .then(() => navigate(form.getAttribute('action')))
         .catch((error) => console.log('POST ERROR', error));
