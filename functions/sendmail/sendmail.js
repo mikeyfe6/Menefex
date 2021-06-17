@@ -18,7 +18,7 @@ exports.handler = async function (req, res) {
    <p><u>Bericht</u><br />${text}</p><p>Wilt graag teruggebeld worden <i><strong>${
       tijdstip || 'geen tijdstip'
     }
-      </strong></i> <small>(string is geen tijdstip)</small></p><p>telefoonnummer: <strong>${tel}</strong></p>`,
+      </strong></i> </p><p>telefoonnummer: <strong>${tel}</strong></p>`,
   };
 
   try {

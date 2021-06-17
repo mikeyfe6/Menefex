@@ -83,7 +83,7 @@
 
     &:hover {
       background: $secondary-color;
-      border: 2px solid $primary-color;
+      border-color: $primary-color;
       @include smoothtrans;
 
       .workicon {

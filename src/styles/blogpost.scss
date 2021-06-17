@@ -30,7 +30,7 @@
   &:hover {
     color: $link-color !important;
     @include smoothtrans;
-    border: 2px solid $link-color;
+    border-color: $link-color;
     filter: brightness(90%);
   }
 }

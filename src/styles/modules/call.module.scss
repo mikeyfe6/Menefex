@@ -186,8 +186,7 @@
     // color: $secondary-color;
     @include smoothtrans;
     background-color: $button-hover;
-    border: 3px solid $link-color;
-    font-weight: bold;
+    border-color: $link-color;
   }
 }
 

@@ -162,8 +162,7 @@
     // color: $secondary-color;
     background-color: $button-hover;
     @include smoothtrans;
-    border: 3px solid $link-color;
-    font-weight: bold;
+    border-color: $link-color;
   }
 }
 
