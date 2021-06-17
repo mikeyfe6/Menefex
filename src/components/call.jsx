@@ -24,7 +24,7 @@ const Call = () => {
     name: '',
     tel: '',
     tijdstip: '',
-    message: '',
+    text: '',
   });
 
   const handleChange = useCallback(
@@ -129,7 +129,7 @@ const Call = () => {
               <div className={textarea}>
                 <textarea
                   type="text"
-                  name="message"
+                  name="text"
                   id="text"
                   rows="6"
                   value={inputs.text}

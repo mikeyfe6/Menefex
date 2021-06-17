@@ -15,18 +15,11 @@ import {
 } from '../styles/modules/form.module.scss';
 
 const Form = () => {
-  // const encode = (data) =>
-  //   Object.keys(data)
-  //     .map(
-  //       (key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`,
-  //     )
-  //     .join('&');
-
   const [inputs, setInputs] = useState({
     name: '',
-    // company: '',
+    company: '',
     email: '',
-    // tel: '',
+    tel: '',
     subject: '',
     text: '',
   });
@@ -88,7 +81,7 @@ const Form = () => {
                     </div>
                   </label>
                 </li>
-                {/* <li>
+                <li>
                   <label htmlFor="company">
                     <span className="speccol">*</span> Bedrijfsnaam (optioneel)
                     <div className={textarea}>
@@ -102,7 +95,7 @@ const Form = () => {
                       />
                     </div>
                   </label>
-                </li> */}
+                </li>
                 <li>
                   <label htmlFor="email">
                     <span className="speccol">*</span> Email
@@ -120,7 +113,7 @@ const Form = () => {
                     </div>
                   </label>
                 </li>
-                {/* <li>
+                <li>
                   <label htmlFor="tel">
                     <span className="speccol">*</span> Telefoon
                     <div className={textarea}>
@@ -136,7 +129,7 @@ const Form = () => {
                       />
                     </div>
                   </label>
-                </li> */}
+                </li>
                 <li>
                   <label htmlFor="subject">
                     <span className="speccol">*</span> Selecteer onderwerp
