@@ -28,7 +28,7 @@ const Form = () => {
     email: '',
     // tel: '',
     subject: '',
-    message: '',
+    text: '',
   });
 
   const handleChange = useCallback(
@@ -81,7 +81,7 @@ const Form = () => {
                       <input
                         type="text"
                         name="name"
-                        id="name"
+                        id="contact_name"
                         maxLength="50"
                         value={inputs.name}
                         onChange={handleChange}
@@ -112,7 +112,7 @@ const Form = () => {
                       <input
                         type="email"
                         name="email"
-                        id="email"
+                        id="contact_email"
                         maxLength="35"
                         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                         value={inputs.email}
@@ -145,7 +145,7 @@ const Form = () => {
                     <div>
                       <select
                         name="subject"
-                        id="subject"
+                        id="contact_subject"
                         className={choosing}
                         value={inputs.subject}
                         onChange={handleChange}
@@ -168,10 +168,10 @@ const Form = () => {
                     <div className={textarea}>
                       <textarea
                         type="text"
-                        name="message"
-                        id="message"
+                        name="text"
+                        id="contact_text"
                         rows="6"
-                        value={inputs.message}
+                        value={inputs.text}
                         onChange={handleChange}
                         required
                       />
