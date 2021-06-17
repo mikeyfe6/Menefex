@@ -15,7 +15,7 @@ exports.handler = async function (req, res) {
     html: `<p><strong>Lead ontvangen</strong> van <strong>${name}</strong> - ${
       email || 'geen email'
     } - ${company || 'geen bedrijf'}</p>
-   <p><u>Bericht</u><br />${text}</p><p>Wilt graag teruggebeld worden om <i><strong>${
+   <p><u>Bericht</u><br />${text}</p><p>Wilt graag teruggebeld worden <i><strong>${
       tijdstip || 'geen tijdstip'
     }
       </strong></i> <small>(string is geen tijdstip)</small></p><p>telefoonnummer: <strong>${tel}</strong></p>`,

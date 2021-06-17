@@ -108,16 +108,30 @@ const Call = () => {
                   onChange={handleChange}
                   multiple={false}
                 >
-                  <option value="tienuur" selected>
+                  <option value="tussen 10:00 - 10:30u" selected>
                     Tussen 10:00 - 10:30 uur
                   </option>
-                  <option value="elfuur">Tussen 11:00 - 10:30 uur</option>
-                  <option value="twaalfuur">Tussen 12:00 - 12:30 uur</option>
-                  <option value="tweeuur">Tussen 14:00 - 14:30 uur</option>
-                  <option value="drieuur">Tussen 15:00 - 15:30 uur</option>
-                  <option value="vieruur">Tussen 16:00 - 16:30 uur</option>
-                  <option value="vijfuur">Tussen 17:00 - 17:30 uur</option>
-                  <option value="zesuur">Tussen 18:00 - 18:30 uur</option>
+                  <option value="tussen 11:00 - 11:30u">
+                    Tussen 11:00 - 10:30 uur
+                  </option>
+                  <option value="tussen 12:00 - 12:30u">
+                    Tussen 12:00 - 12:30 uur
+                  </option>
+                  <option value="tussen 13:00 - 13:30u">
+                    Tussen 14:00 - 14:30 uur
+                  </option>
+                  <option value="tussen 14:00 - 14:30u">
+                    Tussen 15:00 - 15:30 uur
+                  </option>
+                  <option value="tussen 15:00 - 15:30u">
+                    Tussen 16:00 - 16:30 uur
+                  </option>
+                  <option value="tussen 16:00 - 16:30u">
+                    Tussen 17:00 - 17:30 uur
+                  </option>
+                  <option value="tussen 17:00 - 17:30u">
+                    Tussen 18:00 - 18:30 uur
+                  </option>
                 </select>
               </div>
             </label>
