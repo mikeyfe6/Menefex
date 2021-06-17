@@ -142,13 +142,24 @@ const Form = () => {
                         onChange={handleChange}
                         required
                       >
-                        <option value="website">Offerte aanvragen</option>
-                        <option value="samenwerking">
+                        <option
+                          value="Ik wil graag een offerte aanvragen"
+                          selected
+                        >
+                          Offerte aanvragen
+                        </option>
+                        <option value="Ik wil een samenwerking aangaan">
                           Samenwerking aangaan
                         </option>
-                        <option value="opmerking">Vraag / Opmerking</option>
-                        <option value="feedback">Klacht / Feedback</option>
-                        <option value="hulp">Hulp & Probleemoplossing</option>
+                        <option value="Ik heb een vraag of opmerking">
+                          Vraag / Opmerking
+                        </option>
+                        <option value="Ik wil graag feedback geven">
+                          Klacht / Feedback
+                        </option>
+                        <option value="Ik wil graag hulp of ondersteuning">
+                          Hulp & Probleemoplossing
+                        </option>
                       </select>
                     </div>
                   </label>

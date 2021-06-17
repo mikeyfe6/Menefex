@@ -9,7 +9,7 @@ exports.handler = async function (req, res) {
   const msg = {
     to: 'contact@menefex.nl', // Change to your recipient
     from: process.env.SENDGRID_AUTHORIZED_EMAIL, // Change to your verified sender
-    subject: `Mail ontvangen betreft: '${subject}'`,
+    subject: `Mail ontvangen betreft: '${subject || tijdstip}'`,
     text,
     html: `<p><strong>Lead ontvangen van ${name} - ${email} - ${company}</strong></p>
     <br /><p><u>Bericht</u><br />${text}</p><br /> <p>Wilt graag teruggebeld worden om ${tijdstip} <small>(string is geen tijdstip)</small></p> <br /><p>tel:${tel}</p>`,
