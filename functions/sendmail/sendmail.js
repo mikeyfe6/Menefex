@@ -42,9 +42,29 @@
 //   }
 // };
 
-const sgMail = require('@sendgrid/mail');
+// const sgMail = require('@sendgrid/mail');
 
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+// sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+
+// exports.handler = () => {
+//   const msg = {
+//     to: 'info@menefex.nl', // Change to your recipient
+//     from: process.env.SENDGRID_AUTHORIZED_EMAIL, // Change to your verified sender
+//     subject: 'Sending with SendGrid is Fun',
+//     text: 'and easy to do anywhere, even with Node.js',
+//     html: '<strong>and easy to do anywhere, even with Node.js</strong>',
+//   };
+//   sgMail
+//     .send(msg)
+//     .then(() => {
+//       console.log('Email sent');
+//     })
+//     .catch((error) => {
+//       console.error(error);
+//     });
+// };
+
+const sgMail = require('@sendgrid/mail');
 
 exports.handler = async function (context, event, callback) {
   sgMail.setApiKey(context.SENDGRID_API_KEY);
