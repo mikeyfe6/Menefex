@@ -72,17 +72,16 @@ exports.handler = async function (req, res) {
   const data = JSON.parse(req.body);
   const { email, subject, text } = data;
 
-  const body = Object.keys(data)
-    .map((k) => `${k}: ${data[k]}`)
-    .join('<br><br>');
-
   const msg = {
     to: 'contact@menefex.nl', // Change to your recipient
     from: email, // Change to your verified sender
     subject,
     text,
-    html: body,
+    html: `<p>${data}</p>`,
   };
+
+  console.log('EMAIL SUB AND TEXT:', email, subject, text);
+  console.log('DATA OFZOOO:', data);
 
   console.log('REQUESTOFSOOO:', req.body, 'RESBOELAII:', res);
 
