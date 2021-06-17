@@ -12,13 +12,18 @@ exports.handler = async function (req, res) {
     from: process.env.SENDGRID_AUTHORIZED_EMAIL, // Change to your verified sender
     subject: `Mail ontvangen betreft: '${subject || tijdstip}'`,
     text,
-    html: `<p><strong>Lead ontvangen</strong> van <strong>${name}</strong> - ${
-      email || 'geen email'
-    } - ${company || 'geen bedrijf'}</p>
-   <p><u>Bericht</u><br />${text}</p><p>Wilt graag teruggebeld worden <i><strong>${
-      tijdstip || 'geen tijdstip'
-    }
-      </strong></i> </p><p>telefoonnummer: <strong>${tel}</strong></p>`,
+    html: `<p><strong>Lead ontvangen</strong> <small>van</small> <strong>${name}</strong> - ${
+      email || '*geen email'
+    } - ${company || '*geen bedrijf'}</p>
+
+      <p><u><strong><small>Bericht</small></strong></u><br />${text}</p>
+   
+      <p><small>Wilt graag teruggebeld worden</small> <i><strong>${
+        tijdstip || '*geen tijdstip'
+      }
+      </strong></i></p>
+      
+      <p><small>Telnr:</small> <strong>${tel}</strong></p>`,
   };
 
   try {
