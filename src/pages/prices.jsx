@@ -194,10 +194,10 @@ const Prices = () => (
         <p className={pricenot}>
           <span>Aanvullende informatie:</span>
           <br />
-          <br />U bent bij ons uiteraard ook voor de <b>kleinere taken</b> bij
-          het juiste adres, denk bijvoorbeeld aan <b>onderhoud</b>, een{' '}
+          <br />U bent uiteraard ook voor de <b>kleinere taken</b> bij het
+          juiste adres, denk bijvoorbeeld aan <b>onderhoud</b>, een{' '}
           <b>nieuwe logo</b>, een <b>toevoeging</b> op uw website of meer{' '}
-          <b>zienswaardigheid</b> in Google. Noem maar op, maak het zo gek als
+          <b>zienswaardigheid in Google</b>. Noem maar op, maak het zo gek als
           je wilt. <u>Wij fixen het!</u>
           <br />
           <br />

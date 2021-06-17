@@ -3927,9 +3927,9 @@ content-type@^1.0.4, content-type@~1.0.4:
   integrity sha512-hIP3EEPs8tB9AT1L+NUqtwOAps4mk2Zob89MWXMHjHWg9milF/j4osnnQLXBCBFBk/tvIG/tUc9mOUJiPBhPXA==
 
 contentful-management@^7.5.1:
-  version "7.24.0"
-  resolved "https://registry.yarnpkg.com/contentful-management/-/contentful-management-7.24.0.tgz#178c4b2a0e24d8e1bcd595c5e00abcb83740c82b"
-  integrity sha512-Uo6SZ2q5PqrOSwFWX609/Dy1xfpwTJ0uOw4GuohIeo+MgJJqEwJcZ+K4H7/ie3QievZ1V7dm/f5AyyCalTCtgA==
+  version "7.25.0"
+  resolved "https://registry.yarnpkg.com/contentful-management/-/contentful-management-7.25.0.tgz#f9a515068e3b19d36aebaab51cfd6d326c328f2a"
+  integrity sha512-TX5X2g16uyDSRDCD9PotgaFoQoL7ABM6Zq4b4YZ6FZ10U17itWYKl6wJzLs2gWXnJbbwC+othWXrIaDQ00BsXQ==
   dependencies:
     "@types/json-patch" "0.0.30"
     axios "^0.21.0"
@@ -9983,9 +9983,9 @@ node-forge@^0.10.0:
   integrity sha512-PPmu8eEeG9saEUvI97fm4OYxXVB6bFvyNTyiUOBichBpFG8A1Ljw3bY62+5oOjDEMHRnd0Y7HQ+x7uzxOzC6JA==
 
 node-object-hash@^2.0.0:
-  version "2.3.4"
-  resolved "https://registry.yarnpkg.com/node-object-hash/-/node-object-hash-2.3.4.tgz#4deb2da90c3264c70bcf1b8413733d438972dabe"
-  integrity sha512-EeCg00r5yj3xVzrfFaq9jaeMWKxb0zkOyPC+m5AQrKIvhue7stoqSbhU0UHGQ9rWXC96Z+UtUVeTWOAgjjVhew==
+  version "2.3.7"
+  resolved "https://registry.yarnpkg.com/node-object-hash/-/node-object-hash-2.3.7.tgz#f60b767944be41bdfc62b3cfaa38f9cf6f90149a"
+  integrity sha512-ybV3ZKZZoHJPSelxgRY5LYRHQToMtxvJxNbkY8WtWCy5Z/t3V0gyy/6O6kGoh0PrzZIATxVVDG2q+eM6iZMjKQ==
 
 node-releases@^1.1.61, node-releases@^1.1.71:
   version "1.1.73"
@@ -14407,9 +14407,9 @@ webpack-virtual-modules@^0.3.2:
     debug "^3.0.0"
 
 webpack@^4.43.0, webpack@^5.24.2, webpack@^5.35.0:
-  version "5.39.0"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.39.0.tgz#37d6899f1f40c31d5901abc0f39bc8cc7224138c"
-  integrity sha512-25CHmuDj+oOTyteI13sUqNlCnjCnySuhiKWE/cRYPQYeoQ3ijHgyWX27CiyUKLNGq27v8S0mrksyTreT/xo7pg==
+  version "5.39.1"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.39.1.tgz#d1e014b6d71e1aef385316ad528f21cd5b1f9784"
+  integrity sha512-ulOvoNCh2PvTUa+zbpRuEb1VPeQnhxpnHleMPVVCq3QqnaFogjsLyps+o42OviQFoaGtTQYrUqDXu1QNkvUPzw==
   dependencies:
     "@types/eslint-scope" "^3.7.0"
     "@types/estree" "^0.0.47"
