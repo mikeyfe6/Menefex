@@ -4,6 +4,7 @@ sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
 const message = {
   from: process.env.SENDGRID_AUTHORIZED_EMAIL,
 };
+console.log(message);
 
 exports.handler = (req, res) => {
   try {
@@ -17,6 +18,7 @@ exports.handler = (req, res) => {
       message.text = req.body.text;
       message.html = req.body.text;
     }
+    console.log(req.body);
 
     return sendgrid.send(message).then(
       () => {

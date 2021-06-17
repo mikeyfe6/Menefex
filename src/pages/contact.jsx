@@ -4,6 +4,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 import Layout from '../components/layout';
 import Form from '../components/form';
+import Box from '../components/box';
 import SEO from '../components/seo';
 
 import { contacttitle } from '../styles/modules/contact.module.scss';
@@ -55,6 +56,7 @@ const ContactPage = () => (
       </div>
       <br />
       <Form />
+      <Box />
     </div>
     <div className="whitespace" />
   </Layout>
