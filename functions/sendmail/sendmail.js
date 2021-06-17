@@ -1,3 +1,4 @@
+/* eslint-disable indent */
 const sgMail = require('@sendgrid/mail');
 
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
@@ -11,8 +12,13 @@ exports.handler = async function (req, res) {
     from: process.env.SENDGRID_AUTHORIZED_EMAIL, // Change to your verified sender
     subject: `Mail ontvangen betreft: '${subject || tijdstip}'`,
     text,
-    html: `<p><strong>Lead ontvangen van ${name} - ${email} - ${company}</strong></p>
-    <br /><p><u>Bericht</u><br />${text}</p><br /> <p>Wilt graag teruggebeld worden om ${tijdstip} <small>(string is geen tijdstip)</small></p> <br /><p>tel:${tel}</p>`,
+    html: `<p><strong>Lead ontvangen</strong> van <strong>${name}</strong> - ${
+      email || 'geen email'
+    } - ${company || 'geen bedrijf'}</p>
+   <p><u>Bericht</u><br />${text}</p><p>Wilt graag teruggebeld worden om <i><strong>${
+      tijdstip || 'geen tijdstip'
+    }
+      </strong></i> <small>(string is geen tijdstip)</small></p><p>telefoonnummer: <strong>${tel}</strong></p>`,
   };
 
   try {

@@ -108,7 +108,9 @@ const Call = () => {
                   onChange={handleChange}
                   multiple={false}
                 >
-                  <option value="tienuur">Tussen 10:00 - 10:30 uur</option>
+                  <option value="tienuur" selected>
+                    Tussen 10:00 - 10:30 uur
+                  </option>
                   <option value="elfuur">Tussen 11:00 - 10:30 uur</option>
                   <option value="twaalfuur">Tussen 12:00 - 12:30 uur</option>
                   <option value="tweeuur">Tussen 14:00 - 14:30 uur</option>
