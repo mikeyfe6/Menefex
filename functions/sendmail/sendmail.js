@@ -68,27 +68,19 @@ const sgMail = require('@sendgrid/mail');
 
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
-exports.handler = async function (req, res) {
+exports.handler = async function (req, res, callback) {
   const msg = {
-    // to: event.mail, // Change to your recipient
-    to: 'info@menefex.nl', // Change to your recipient
+    to: req.body.mail, // Change to your recipient
     from: process.env.SENDGRID_AUTHORIZED_EMAIL, // Change to your verified sender
-    // subject: event.subject,
-    // text: event.text,
-    // html: event.text,
-
-    subject: 'Sending with SendGrid is Fun',
-    text: 'and easy to do anywhere, even with Node.js',
-    html: '<strong>and easy to do anywhere, even with Node.js</strong>',
+    subject: req.body.subject,
+    text: req.body.text,
+    html: req.body,
   };
-  console.log(req, res);
 
   try {
     await sgMail.send(msg);
-    console.log(req, res);
   } catch (error) {
     console.error(error);
+    console.error(res, callback);
   }
-
-  // callback(null);
 };
