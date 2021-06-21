@@ -208,7 +208,7 @@ const Prices = () => (
           (excl btw.).
           <br />
           <br />
-          Dit alles krijgt u natuurlijk <b>uitgebreid uitgelegd</b> dmv van
+          Dit alles wordt u natuurlijk <b>uitgebreid geinformeerd</b> dmv van
           bijv. een vrijblijvend terugbelverzoek of via de mail, mocht u er niet
           uitkomen welke pakket het beste u wensen vervult.
         </p>
