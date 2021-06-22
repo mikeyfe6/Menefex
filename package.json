@@ -55,7 +55,7 @@
     "gatsby-transformer-remark": "^4.4.1",
     "gatsby-transformer-sharp": "^3.7.1",
     "google-map-react": "^2.1.9",
-    "netlify-lambda": "^2.0.9",
+    "netlify-lambda": "^2.0.10",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-animate-on-scroll": "^2.1.5",
@@ -70,7 +70,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
-    "@babel/eslint-parser": "^7.14.5",
+    "@babel/eslint-parser": "^7.14.7",
     "babel-preset-gatsby": "^1.7.1",
     "eslint": "^7.29.0",
     "eslint-config-airbnb": "^18.2.1",
