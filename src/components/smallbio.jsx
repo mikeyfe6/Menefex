@@ -40,13 +40,17 @@ const Smallbio = () => (
         <br />
         <br />
       </p>
-      <Link to="/about/">
+      <a
+        href="https://open.spotify.com/playlist/08UGoWTjvpuooABCWyPx0m?si=caXZyz28R8u8Ck683qLgQA"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
         <FontAwesomeIcon
           icon={['fab', 'spotify']}
           size="2x"
           className={spotibio}
         />
-      </Link>
+      </a>
       <Link to="/about/">
         <button type="button" name="meerover" className={meerover}>
           Meer over Menefex!
