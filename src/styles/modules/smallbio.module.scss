@@ -39,6 +39,7 @@
 
 .spotibio {
   color: $primary-color;
+  padding: 1px;
   margin-top: 7.5px;
   @include smoothtrans;
   // margin-top: 50px;
@@ -89,6 +90,10 @@
 
   .smallbio-text {
     @include fontsmb;
+  }
+
+  .spotibio {
+    margin-left: 2.5px;
   }
 
   .meerover {
