@@ -2,11 +2,14 @@ import React from 'react';
 
 import { Link } from 'gatsby';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import {
   smallbioContainer,
   smallbioWrapper,
   thick,
   smallbioText,
+  spotibio,
   meerover,
   thin,
 } from '../styles/modules/smallbio.module.scss';
@@ -37,6 +40,13 @@ const Smallbio = () => (
         <br />
         <br />
       </p>
+      <Link to="/about/">
+        <FontAwesomeIcon
+          icon={['fab', 'spotify']}
+          size="2x"
+          className={spotibio}
+        />
+      </Link>
       <Link to="/about/">
         <button type="button" name="meerover" className={meerover}>
           Meer over Menefex!

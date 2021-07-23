@@ -37,6 +37,19 @@
   }
 }
 
+.spotibio {
+  color: $primary-color;
+  margin-top: 7.5px;
+  @include smoothtrans;
+  // margin-top: 50px;
+
+  &:hover {
+    // color: $secondary-color;
+    @include smoothtrans;
+    color: $link-color;
+  }
+}
+
 .meerover {
   float: right;
   text-transform: uppercase;
@@ -70,7 +83,7 @@
   }
 
   .smallbio-container {
-    width: 95%;
+    // width: 100%;
     border-width: 1px;
   }
 
