@@ -2,7 +2,7 @@
     https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
-// const siteUrl = process.env.URL || 'https://gimmix.nl';
+const superSiteUrl = process.env.URL || 'https://menefex.nl';
 
 require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
@@ -10,13 +10,24 @@ require('dotenv').config({
 
 const sass = require('sass');
 
+const eslpath = require('path');
+// Get paths of Gatsby's required rules, which as of writing is located at:
+// https://github.com/gatsbyjs/gatsby/tree/fbfe3f63dec23d279a27b54b4057dd611dce74bb/packages/
+// gatsby/src/utils/eslint-rules
+const gatsbyRequiredRules = eslpath.join(
+  process.cwd(),
+  'node_modules',
+  'gatsby',
+  'dist',
+  'utils',
+  'eslint-rules',
+);
+
 module.exports = {
   flags: {
-    PRESERVE_WEBPACK_CACHE: true,
     FAST_DEV: true,
     PRESERVE_FILE_DOWNLOAD_CACHE: true,
     PARALLEL_SOURCING: true,
-    FUNCTIONS: true,
   },
   siteMetadata: {
     siteUrl: 'https://menefex.nl',
@@ -54,7 +65,19 @@ module.exports = {
       },
     },
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-eslint',
+    {
+      resolve: 'gatsby-plugin-eslint',
+      options: {
+        // Gatsby required rules directory
+        rulePaths: [gatsbyRequiredRules],
+        // Default settings that may be ommitted or customized
+        stages: ['develop'],
+        extensions: ['js', 'jsx', 'ts', 'tsx'],
+        exclude: ['node_modules', 'bower_components', '.cache', 'public'],
+        // Any additional eslint-webpack-plugin options below
+        // ...
+      },
+    },
     {
       resolve: 'gatsby-plugin-feed',
       options: {
@@ -232,20 +255,20 @@ module.exports = {
       },
     },
     'gatsby-transformer-sharp',
-    {
-      resolve: 'gatsby-transformer-remark',
-      options: {
-        plugins: [
-          'gatsby-remark-relative-images',
-          {
-            resolve: 'gatsby-remark-images',
-            options: {
-              maxWidth: 590,
-            },
-          },
-        ],
-      },
-    },
+    // {
+    //   resolve: 'gatsby-transformer-remark',
+    //   options: {
+    //     plugins: [
+    //       'gatsby-remark-relative-images',
+    //       {
+    //         resolve: 'gatsby-remark-images',
+    //         options: {
+    //           maxWidth: 590,
+    //         },
+    //       },
+    //     ],
+    //   },
+    // },
     {
       resolve: 'gatsby-plugin-disqus',
       options: {
@@ -283,20 +306,19 @@ module.exports = {
             allSitePage {
               nodes {
                 path
-                context {
-                  updatedAt
-                }
+                pageContext
               }
             }
           }
         `,
-        resolveSiteUrl: ({ site }) => site.siteMetadata.siteUrl,
+        // resolveSiteUrl: ({ site }) => site.siteMetadata.siteUrl,
+        resolveSiteUrl: () => superSiteUrl,
         resolvePages: ({ allSitePage }) => allSitePage.nodes,
-        serialize: ({ path, context }) => ({
+        serialize: ({ path, pageContext }) => ({
           url: path,
           changefreq: 'daily',
           priority: 0.7,
-          lastmod: (context && context.updatedAt) || null,
+          lastmod: (pageContext && pageContext.updatedAt) || null,
         }),
         output: '/',
       },

@@ -51,6 +51,12 @@ html {
   background: $secondary-color;
 }
 
+.carousel-indicators {
+  button {
+    background-color: $secondary-color !important;
+  }
+}
+
 // progress[value] {
 //   -webkit-appearance: none;
 //   appearance: none;

@@ -1,33 +1,48 @@
 module.exports = {
   env: {
-    browser: true,
-    es6: true,
+    browser: true, // eslint recomm.
+    // es6: true,
     node: true,
-    commonjs: true,
+    // commonjs: true,
   },
-  extends: ['airbnb'],
-  globals: {
-    Atomics: 'readonly',
-    SharedArrayBuffer: 'readonly',
-  },
+  extends: ['airbnb', 'eslint:recommended', 'plugin:react/recommended'],
+  // globals: {
+  //   Atomics: 'readonly',
+  //   SharedArrayBuffer: 'readonly',
+  // },
   parser: '@babel/eslint-parser',
+  settings: {
+    react: {
+      version: 'detect', // detect react version
+    },
+  },
   parserOptions: {
     allowImportExportEverywhere: false,
     ecmaFeatures: {
       jsx: true,
+      modules: true,
+      globalReturn: false,
     },
-    ecmaVersion: 2020,
+    ecmaVersion: '12',
     sourceType: 'module',
+    requireConfigFile: false,
+    // babelOptions: {
+    //   configFile: './.babelrc',
+    // },
     babelOptions: {
-      configFile: './.babelrc',
+      presets: ['@babel/preset-react'],
     },
   },
   plugins: ['react'],
   rules: {
     'implicit-arrow-linebreak': 0,
     'react/jsx-one-expression-per-line': 0,
+    'react/display-name': [0, { ignoreTranspilerName: 0 }],
     'operator-linebreak': 0,
     'max-len': 0,
     'object-curly-newline': ['warn', { consistent: true }],
+    'no-anonymous-exports-page-templates': 0,
+    'limited-exports-page-templates': 0,
+    'no-undef': 0,
   },
 };
