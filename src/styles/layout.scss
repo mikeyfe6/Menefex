@@ -52,8 +52,10 @@ html {
 }
 
 .carousel-indicators {
+  margin-bottom: -3rem !important;
+
   button {
-    background-color: $secondary-color !important;
+    background-color: $primary-color !important;
   }
 }
 

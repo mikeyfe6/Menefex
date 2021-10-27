@@ -117,7 +117,13 @@ const Projects = () => {
   );
 
   return (
-    <Carousel fade style={{ textAlign: 'center' }}>
+    <Carousel
+      fade
+      variant="dark"
+      controls={false}
+      style={{ textAlign: 'center' }}
+      interval={5000}
+    >
       {data.slideShow.edges.map(({ node }) => (
         <Carousel.Item key={node.id}>
           <GatsbyImage
