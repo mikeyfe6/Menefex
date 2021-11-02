@@ -5,7 +5,8 @@
 const superSiteUrl = process.env.URL || 'https://menefex.nl';
 
 require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV}`,
+  // path: `.env.${process.env.NODE_ENV}`,
+  path: '.env',
 });
 
 const sass = require('sass');
