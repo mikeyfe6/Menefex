@@ -123,6 +123,11 @@ const SEO = ({
               href="https://menefex.nl/rss.xml"
             />
 
+            <meta
+              name="facebook-domain-verification"
+              content="080v9v80dia1y0k4qr49r9inscoq6c"
+            />
+
             {schemaMarkup && (
               <script type="application/ld+json">
                 {JSON.stringify(schemaMarkup)}
