@@ -328,9 +328,9 @@ module.exports = {
         theme_color: '#FFCC00',
         display: 'standalone',
         icon: 'src/images/Menefex-icon.png',
-        icon_options: {
-          purpose: 'any maskable',
-        },
+        // icon_options: {
+        //   purpose: 'any maskable',
+        // },
         crossOrigin: 'use-credentials',
       },
     },
