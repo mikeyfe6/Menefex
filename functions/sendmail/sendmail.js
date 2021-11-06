@@ -1,6 +1,8 @@
 /* eslint-disable indent */
 const sgMail = require('@sendgrid/mail');
 
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+
 exports.handler = async (event) => {
   const data = JSON.parse(event.body);
   const { name, subject, text, email, company, tel, tijdstip } = data;
@@ -26,7 +28,6 @@ exports.handler = async (event) => {
 
   try {
     await sgMail.send(msg);
-    sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
     return {
       statusCode: 202,
