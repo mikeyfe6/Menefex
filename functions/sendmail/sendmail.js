@@ -8,8 +8,8 @@ exports.handler = async (event) => {
   const { name, subject, text, email, company, tel, tijdstip } = data;
 
   const msg = {
-    // from: `Menefex WMB &lt;${process.env.SENDGRID_AUTHORIZED_EMAIL}&gt;`, // Change to your verified sender
-    from: process.env.SENDGRID_AUTHORIZED_EMAIL, // Change to your verified sender
+    from: `Menefex WMB &lt;${process.env.SENDGRID_AUTHORIZED_EMAIL}&gt;`, // Change to your verified sender
+    // from: process.env.SENDGRID_AUTHORIZED_EMAIL, // Change to your verified sender
 
     // subject: `Mail ontvangen betreft: '${subject || tijdstip}'`,
     // text,
@@ -28,7 +28,6 @@ exports.handler = async (event) => {
     templateId: 'd-8eebc10097fd430787de9cd0f3db702b',
     personalizations: [
       {
-        // to: [{ email: 'contact@menefex.nl' }],
         to: 'contact@menefex.nl', // Change to your recipient
         dynamic_template_data: {
           mfxName: name,
