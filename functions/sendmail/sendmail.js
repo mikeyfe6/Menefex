@@ -8,8 +8,8 @@ exports.handler = async (event) => {
   const { name, subject, text, email, company, tel, tijdstip } = data;
 
   const msg = {
-    from: `Menefex WMB &lt;${process.env.SENDGRID_AUTHORIZED_EMAIL}&gt;`, // Change to your verified sender
-    // from: process.env.SENDGRID_AUTHORIZED_EMAIL, // Change to your verified sender
+    // from: `Menefex WMB &lt;${process.env.SENDGRID_AUTHORIZED_EMAIL}&gt;`, // Change to your verified sender
+    from: process.env.SENDGRID_AUTHORIZED_EMAIL, // Change to your verified sender
 
     // subject: `Mail ontvangen betreft: '${subject || tijdstip}'`,
     // text,
@@ -46,8 +46,8 @@ exports.handler = async (event) => {
     await sgMail.send(msg);
 
     return {
-      statusCode: 200,
-      body: JSON.stringify({ message: ' Email Sent' }),
+      statusCode: 202,
+      body: 'Bericht verstuurd',
     };
   } catch (error) {
     const statusCode = typeof error.code === 'number' ? error.code : 500;
