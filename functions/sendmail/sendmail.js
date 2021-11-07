@@ -26,15 +26,16 @@ exports.handler = async (event) => {
     templateId: 'd-8eebc10097fd430787de9cd0f3db702b',
     personalizations: [
       {
+        // to: [{ email: 'contact@menefex.nl' }],
         to: 'contact@menefex.nl', // Change to your recipient
         dynamicTemplateData: {
-          name,
-          subject,
-          text,
-          email,
-          company,
-          tel,
-          tijdstip,
+          mfxName: name,
+          mfxSubject: subject,
+          mfxText: text,
+          mfxEmail: email,
+          mfxCompany: company,
+          mfxTel: tel,
+          mfxTijdstip: tijdstip,
         },
       },
     ],
