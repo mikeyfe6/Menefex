@@ -30,7 +30,7 @@ exports.handler = async (event) => {
       {
         // to: [{ email: 'contact@menefex.nl' }],
         to: 'contact@menefex.nl', // Change to your recipient
-        dynamicTemplateData: {
+        dynamic_template_data: {
           mfxName: name,
           mfxSubject: subject,
           mfxText: text,
@@ -47,8 +47,8 @@ exports.handler = async (event) => {
     await sgMail.send(msg);
 
     return {
-      statusCode: 202,
-      body: 'Bericht verstuurd',
+      statusCode: 200,
+      body: JSON.stringify({ message: ' Email Sent' }),
     };
   } catch (error) {
     const statusCode = typeof error.code === 'number' ? error.code : 500;
