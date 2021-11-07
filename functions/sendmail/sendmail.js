@@ -8,39 +8,22 @@ exports.handler = async (event) => {
   const { name, subject, text, email, company, tel, tijdstip } = data;
 
   const msg = {
-    // from: `Menefex WMB &lt;${process.env.SENDGRID_AUTHORIZED_EMAIL}&gt;`, // Change to your verified sender
-
     from: {
       email: process.env.SENDGRID_AUTHORIZED_EMAIL,
-      name: 'Menefex WMB [Website] ✨',
+      name: 'Menefex WMB - [website] ✨',
     },
-
-    // subject: `Mail ontvangen betreft: '${subject || tijdstip}'`,
-    // text,
-    // html: `<p><strong>Lead ontvangen</strong> <small>van</small> <strong>${name}</strong> - ${
-    //   email || '*geen email'
-    // } - ${company || '*geen bedrijf'}</p>
-
-    //   <p><u><strong><small>Bericht</small></strong></u><br />${text}</p>
-
-    //   <p><small>Wilt graag teruggebeld worden</small> <i><strong>${
-    //     tijdstip || '*geen tijdstip'
-    //   }
-    //   </strong></i></p>
-
-    //   <p><small>Telnr:</small> <strong>${tel}</strong></p>`,
     templateId: 'd-8eebc10097fd430787de9cd0f3db702b',
     personalizations: [
       {
         to: 'contact@menefex.nl', // Change to your recipient
         dynamic_template_data: {
-          mfxName: name,
-          mfxSubject: subject,
-          mfxText: text,
-          mfxEmail: email,
-          mfxCompany: company,
-          mfxTel: tel,
-          mfxTijdstip: tijdstip,
+          mfxName: name || 'n.v.t.',
+          mfxSubject: subject || 'Terugbelverzoek',
+          mfxText: text || 'n.v.t.',
+          mfxEmail: email || 'n.v.t.',
+          mfxCompany: company || 'n.v.t.',
+          mfxTel: tel || 'n.v.t.',
+          mfxTijdstip: tijdstip || 'n.v.t.',
         },
       },
     ],
