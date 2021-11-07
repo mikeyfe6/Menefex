@@ -9,7 +9,11 @@ exports.handler = async (event) => {
 
   const msg = {
     // from: `Menefex WMB &lt;${process.env.SENDGRID_AUTHORIZED_EMAIL}&gt;`, // Change to your verified sender
-    from: process.env.SENDGRID_AUTHORIZED_EMAIL, // Change to your verified sender
+
+    from: {
+      email: process.env.SENDGRID_AUTHORIZED_EMAIL,
+      name: 'Menefex WMB [Website] ✨',
+    },
 
     // subject: `Mail ontvangen betreft: '${subject || tijdstip}'`,
     // text,
