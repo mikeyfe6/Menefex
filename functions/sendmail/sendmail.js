@@ -10,7 +10,7 @@ exports.handler = async (event) => {
   const msg = {
     // from: `Menefex WMB &lt;${process.env.SENDGRID_AUTHORIZED_EMAIL}&gt;`, // Change to your verified sender
     from: process.env.SENDGRID_AUTHORIZED_EMAIL, // Change to your verified sender
-    to: 'contact@menefex.nl', // Change to your recipient
+
     // subject: `Mail ontvangen betreft: '${subject || tijdstip}'`,
     // text,
     // html: `<p><strong>Lead ontvangen</strong> <small>van</small> <strong>${name}</strong> - ${
@@ -29,6 +29,7 @@ exports.handler = async (event) => {
     personalizations: [
       {
         // to: [{ email: 'contact@menefex.nl' }],
+        to: 'contact@menefex.nl', // Change to your recipient
         dynamicTemplateData: {
           mfxName: name,
           mfxSubject: subject,
