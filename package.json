@@ -29,7 +29,7 @@
     "axios": "^0.24.0",
     "bootstrap": "^5.1.3",
     "dotenv": "^10.0.0",
-    "gatsby": "^4.1.0",
+    "gatsby": "^4.1.1",
     "gatsby-plugin-canonical-urls": "^4.1.0",
     "gatsby-plugin-catch-links": "^4.1.0",
     "gatsby-plugin-disqus": "^1.2.3",
