@@ -172,12 +172,6 @@ module.exports = {
                           ... on ContentfulAsset {
                             contentful_id
                             __typename
-                            fixed(width: 1600) {
-                              width
-                              height
-                              src
-                              srcSet
-                            }
                           }
                         }
                       }

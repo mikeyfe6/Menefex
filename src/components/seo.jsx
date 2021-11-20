@@ -55,81 +55,79 @@ const SEO = ({
           'webmediabedrijf, menefex, amsterdam, website laten maken, wordpress, reactjs',
       };
       return (
-        <>
-          <Helmet
-            htmlAttributes={{
-              lang,
-            }}
-            title={seo.title}
-            titleTemplate={titleTemplate}
-            defer
-          >
-            <meta
-              name="viewport"
-              content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
-            />
+        <Helmet
+          htmlAttributes={{
+            lang,
+          }}
+          title={seo.title}
+          titleTemplate={titleTemplate}
+          defer
+        >
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
+          />
 
-            <meta name="description" content={seo.description} />
-            <meta name="image" content={seo.image} />
-            <meta name="keywords" content={seo.keywords} />
+          <meta name="description" content={seo.description} />
+          <meta name="image" content={seo.image} />
+          <meta name="keywords" content={seo.keywords} />
 
-            <meta property="fb:app_id" content="277486370179723" />
+          <meta property="fb:app_id" content="277486370179723" />
 
-            {seo.url && <meta property="og:url" content={seo.url} />}
-            {seo.title && <meta property="og:title" content={seo.title} />}
-            {seo.description && (
-              <meta property="og:description" content={seo.description} />
-            )}
+          {seo.url && <meta property="og:url" content={seo.url} />}
+          {seo.title && <meta property="og:title" content={seo.title} />}
+          {seo.description && (
+            <meta property="og:description" content={seo.description} />
+          )}
 
-            {seo.image && <meta property="og:image" content={seo.image} />}
+          {seo.image && <meta property="og:image" content={seo.image} />}
 
-            <meta property="og:site_name" content="Menefex" />
-            <meta property="og:locale" content="nl_NL" />
+          <meta property="og:site_name" content="Menefex" />
+          <meta property="og:locale" content="nl_NL" />
 
-            {(article ? (
-              false
-            ) : (
-              <meta property="og:type" content="website" />
-            )) || <meta property="og:type" content="article" />}
+          {(article ? (
+            false
+          ) : (
+            <meta property="og:type" content="website" />
+          )) || <meta property="og:type" content="article" />}
 
-            {/* <meta property="og:image:width" content="512" />
+          {/* <meta property="og:image:width" content="512" />
             <meta property="og:image:height" content="512" /> */}
 
-            <meta property="twitter:card" content="summary" />
-            {seo.url && <meta property="twitter:url" content={seo.url} />}
-            {seo.title && <meta property="twitter:title" content={seo.title} />}
-            {seo.description && (
-              <meta property="twitter:description" content={seo.description} />
-            )}
+          <meta property="twitter:card" content="summary" />
+          {seo.url && <meta property="twitter:url" content={seo.url} />}
+          {seo.title && <meta property="twitter:title" content={seo.title} />}
+          {seo.description && (
+            <meta property="twitter:description" content={seo.description} />
+          )}
 
-            {seo.image && <meta property="twitter:image" content={seo.image} />}
+          {seo.image && <meta property="twitter:image" content={seo.image} />}
 
-            <meta property="twitter:site" content={twitterUsername} />
-            {twitterUsername && (
-              <meta property="twitter:creator" content={twitterUsername} />
-            )}
+          <meta property="twitter:site" content={twitterUsername} />
+          {twitterUsername && (
+            <meta property="twitter:creator" content={twitterUsername} />
+          )}
 
-            {/* Links Rel: Extentions & Plugins */}
+          {/* Links Rel: Extentions & Plugins */}
 
-            <link
-              rel="stylesheet"
-              href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
-            />
+          <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+          />
 
-            <link
-              rel="alternate"
-              type="application/rss+xml"
-              title="Menefex WMB: RSS Feeds"
-              href="https://menefex.nl/rss.xml"
-            />
+          <link
+            rel="alternate"
+            type="application/rss+xml"
+            title="Menefex WMB: RSS Feeds"
+            href="https://menefex.nl/rss.xml"
+          />
 
-            {schemaMarkup && (
-              <script type="application/ld+json">
-                {JSON.stringify(schemaMarkup)}
-              </script>
-            )}
-          </Helmet>
-        </>
+          {schemaMarkup && (
+            <script type="application/ld+json">
+              {JSON.stringify(schemaMarkup)}
+            </script>
+          )}
+        </Helmet>
       );
     }}
   />

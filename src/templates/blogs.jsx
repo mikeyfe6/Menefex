@@ -51,11 +51,17 @@ export const query = graphql`
           ... on ContentfulAsset {
             contentful_id
             __typename
-            fixed(width: 1600) {
-              width
-              height
-              src
-              srcSet
+            title
+            file {
+              url
+              details {
+                size
+                image {
+                  width
+                  height
+                }
+              }
+              fileName
             }
           }
         }
@@ -73,16 +79,14 @@ const options = {
   renderNode: {
     [BLOCKS.EMBEDDED_ASSET]: (node) => (
       <img
-        alt={'lol' || node.data.target.fields.title['nl-NL']}
-        src={node.data.target.fixed.src}
+        alt={node.data.target.title}
+        src={node.data.target.file.url}
         className="img-resize"
       />
     ),
     [BLOCKS.EMBEDDED_ENTRY]: (node) => (
       // manipulate here your embedded entry
-      <>
-        <div>Im an embedded entry, {node}</div>
-      </>
+      <div>Im an embedded entry, {node}</div>
     ),
     [BLOCKS.PARAGRAPH]: (node, children) => (
       <Text style={{ color: 'red !important' }}>{children}</Text>

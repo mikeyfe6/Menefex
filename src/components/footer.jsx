@@ -56,7 +56,7 @@ const Footer = () => {
                       the box&quot;
                     </span>
                   </i>{' '}
-                  - Deepak Chopra
+                  {/* CITE toevoegen */}- Deepak Chopra
                 </p>
               </blockquote>
             </div>
