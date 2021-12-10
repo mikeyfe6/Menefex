@@ -1058,12 +1058,12 @@
     "@babel/helper-validator-identifier" "^7.15.7"
     to-fast-properties "^2.0.0"
 
-"@contentful/rich-text-html-renderer@^15.8.0":
-  version "15.8.0"
-  resolved "https://registry.yarnpkg.com/@contentful/rich-text-html-renderer/-/rich-text-html-renderer-15.8.0.tgz#a416a4487b2d98404af13a044b1f143b907dbd90"
-  integrity sha512-oRifZfF49BqPyqopR8YyDBcc1skw4IrMYaA/rLKL+NrhdUfm3RFhZfv66q0DVPBPGN6nYHyUVVjGF1ptEVbwcQ==
+"@contentful/rich-text-html-renderer@^15.9.0":
+  version "15.9.0"
+  resolved "https://registry.yarnpkg.com/@contentful/rich-text-html-renderer/-/rich-text-html-renderer-15.9.0.tgz#dda1d7537793b13317e6a1b53a236078428c7423"
+  integrity sha512-oZDuifOT/5dA8z+2flfhqCCB0CCM9ybLuxWST/LRjJa1dqnYwpciQXw7KvXhEEOjifRSS949j6G0+Klnzshpzg==
   dependencies:
-    "@contentful/rich-text-types" "^15.7.0"
+    "@contentful/rich-text-types" "^15.9.0"
     escape-html "^1.0.3"
 
 "@contentful/rich-text-react-renderer@^14.1.3":
@@ -1078,10 +1078,12 @@
   resolved "https://registry.yarnpkg.com/@contentful/rich-text-types/-/rich-text-types-14.1.2.tgz#33162fdbf427891122a96030f806ca9a9cf0e844"
   integrity sha512-XbgZ7op5uyYYszipgQg/bYobF4b+llXyTwS8hISRniQY9xKESz544eP2OGmRc4J3MHx29M7Vmx7TVA/IK65giQ==
 
-"@contentful/rich-text-types@^15.7.0":
-  version "15.7.0"
-  resolved "https://registry.yarnpkg.com/@contentful/rich-text-types/-/rich-text-types-15.7.0.tgz#7d2ef28b975778cab133fec5b8d12aca39fb5eb8"
-  integrity sha512-SrwNCHGYshsEhCVHZg6bn0G9rMdbtFBCw8f0L1PorZex1Us7r9Ix8YTAxKhs1LmWKCOZkXpjI3wR+ZOW/hZ6rw==
+"@contentful/rich-text-types@^15.9.0":
+  version "15.9.0"
+  resolved "https://registry.yarnpkg.com/@contentful/rich-text-types/-/rich-text-types-15.9.0.tgz#8a305b6106e47f7d55c2bb825a2368a5d46753f3"
+  integrity sha512-PS/pcWDu56AGsQgIPGFNsFZKl9yOmTJDqC2HwtTUw18MN8IogzxdunzdFSmngoNoX6JTViKKve4wagbJqUx6gg==
+  dependencies:
+    ajv "^8.8.2"
 
 "@endemolshinegroup/cosmiconfig-typescript-loader@3.0.2":
   version "3.0.2"
@@ -1222,11 +1224,11 @@
     tslib "~2.1.0"
 
 "@graphql-tools/import@^6.2.6":
-  version "6.6.1"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/import/-/import-6.6.1.tgz#2a7e1ceda10103ffeb8652a48ddc47150b035485"
-  integrity sha512-i9WA6k+erJMci822o9w9DoX+uncVBK60LGGYW8mdbhX0l7wEubUpA000thJ1aarCusYh0u+ZT9qX0HyVPXu25Q==
+  version "6.6.2"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/import/-/import-6.6.2.tgz#2d1dabfee82ccebcd5e26d05f427cd1da91b2bf1"
+  integrity sha512-XBAw4GBaTwwA736VPTe5vKOS/FCVXpi0ofSeOa2AKedD4JEViAYx4Al3MPpmi2sIVumIOV7wGwHgX7HAgG5RdQ==
   dependencies:
-    "@graphql-tools/utils" "8.5.3"
+    "@graphql-tools/utils" "8.5.4"
     resolve-from "5.0.0"
     tslib "~2.3.0"
 
@@ -1330,10 +1332,10 @@
   dependencies:
     tslib "~2.3.0"
 
-"@graphql-tools/utils@8.5.3", "@graphql-tools/utils@^8.5.1":
-  version "8.5.3"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/utils/-/utils-8.5.3.tgz#404062e62cae9453501197039687749c4885356e"
-  integrity sha512-HDNGWFVa8QQkoQB0H1lftvaO1X5xUaUDk1zr1qDe0xN1NL0E/CrQdJ5UKLqOvH4hkqVUPxQsyOoAZFkaH6rLHg==
+"@graphql-tools/utils@8.5.4", "@graphql-tools/utils@^8.5.1":
+  version "8.5.4"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/utils/-/utils-8.5.4.tgz#9dadbd2fad2115ab5cde546d1353e41ef3d139a0"
+  integrity sha512-ViupMJH590be75tCiyHs/wgJ2KPbWMzc+jopen6P6MliHWoqRlGWMMvYQE1hDj25v4fxObCVq20maQCow0T9nQ==
   dependencies:
     tslib "~2.3.0"
 
@@ -1814,9 +1816,9 @@
     dequal "^2.0.2"
 
 "@restart/ui@^0.2.3":
-  version "0.2.4"
-  resolved "https://registry.yarnpkg.com/@restart/ui/-/ui-0.2.4.tgz#a522ec75d1d74aa2637ded2c1b338317ff66770a"
-  integrity sha512-KUPvgDRXaJap9uGgyqRIeOPq94GBuCGDdlcRoCjV05LSfMrDN4pdMCV9lKt+NDXu+A4QpHRpFBKSUNIyDHzeQw==
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/@restart/ui/-/ui-0.2.5.tgz#e94204cbc88a9d13d1d20ce9cdf4713998b7c0fa"
+  integrity sha512-3dP8pMFickPpvAG5MVQW53HnJl0c17h7MwvI4nNy9QF66sHSYVchudlqlI8eOSaqnmc5YVjGura63vMb9LTNbQ==
   dependencies:
     "@babel/runtime" "^7.13.16"
     "@popperjs/core" "^2.10.1"
@@ -2543,7 +2545,7 @@ ajv@^6.10.0, ajv@^6.12.4, ajv@^6.12.5:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
-ajv@^8.0.1:
+ajv@^8.0.1, ajv@^8.8.2:
   version "8.8.2"
   resolved "https://registry.yarnpkg.com/ajv/-/ajv-8.8.2.tgz#01b4fef2007a28bf75f0b7fc009f62679de4abbb"
   integrity sha512-x9VuX+R/jcFj1DHo/fCp99esgGDWiHENrKxaCENuCxpoMCmAt/COCGVDwA7kleEpEzJjDnvh3yGoOuLu0Dtllw==
@@ -3369,9 +3371,9 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001125, caniuse-lite@^1.0.30001272, caniuse-lite@^1.0.30001280:
-  version "1.0.30001285"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001285.tgz#fe1e52229187e11d6670590790d669b9e03315b7"
-  integrity sha512-KAOkuUtcQ901MtmvxfKD+ODHH9YVDYnBt+TGYSz2KIfnq22CiArbUxXPN9067gNbgMlnNYRSwho8OPXZPALB9Q==
+  version "1.0.30001286"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001286.tgz#3e9debad420419618cfdf52dc9b6572b28a8fff6"
+  integrity sha512-zaEMRH6xg8ESMi2eQ3R4eZ5qw/hJiVsO/HlLwniIwErij0JDr9P+8V4dtx1l+kLq6j3yy8l8W4fst1lBnat5wQ==
 
 ccount@^1.0.0:
   version "1.1.0"
@@ -4599,9 +4601,9 @@ ee-first@1.1.1:
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
 electron-to-chromium@^1.3.564, electron-to-chromium@^1.3.896:
-  version "1.4.14"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.14.tgz#b0aa41fbfbf2eff8c2c6f7a871c03075250f8956"
-  integrity sha512-RsGkAN9JEAYMObS72kzUsPPcPGMqX1rBqGuXi9aa4TBKLzICoLf+DAAtd0fVFzrniJqYzpby47gthCUoObfs0Q==
+  version "1.4.15"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.15.tgz#4bd144d9d13f8b375c65e1a593e7f4a90bd01b90"
+  integrity sha512-WDw2IUL3k4QpbzInV3JZK+Zd1NjWJPDZ28oUSchWb/kf6AVj7/niaAlgcJlvojFa1d7pJSyQ/KSZsEtq5W7aGQ==
 
 emoji-regex@^8.0.0:
   version "8.0.0"
@@ -9959,9 +9961,9 @@ postcss-reduce-transforms@^5.0.1:
     postcss-value-parser "^4.1.0"
 
 postcss-selector-parser@^6.0.2, postcss-selector-parser@^6.0.4, postcss-selector-parser@^6.0.5:
-  version "6.0.6"
-  resolved "https://registry.yarnpkg.com/postcss-selector-parser/-/postcss-selector-parser-6.0.6.tgz#2c5bba8174ac2f6981ab631a42ab0ee54af332ea"
-  integrity sha512-9LXrvaaX3+mcv5xkg5kFwqSzSH1JIObIx51PrndZwlmznwXRfxMddDvo9gve3gVR8ZTKgoFDdWkbRFmEhT4PMg==
+  version "6.0.7"
+  resolved "https://registry.yarnpkg.com/postcss-selector-parser/-/postcss-selector-parser-6.0.7.tgz#48404830a635113a71fd79397de8209ed05a66fc"
+  integrity sha512-U+b/Deoi4I/UmE6KOVPpnhS7I7AYdKbhGcat+qTQ27gycvaACvNEw11ba6RrkwVmDVRW7sigWgLj4/KbbJjeDA==
   dependencies:
     cssesc "^3.0.0"
     util-deprecate "^1.0.2"
@@ -10327,10 +10329,10 @@ react-bootstrap@^2.0.3:
     uncontrollable "^7.2.1"
     warning "^4.0.3"
 
-react-cookie-consent@^7.0.0:
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/react-cookie-consent/-/react-cookie-consent-7.0.0.tgz#2e68bbbb676383710261db8a54e45a57eec55306"
-  integrity sha512-q55Kjxp8PwSnLmYpQbgFZ7OIdzkWLQglMLV6hV0SVf0sAeWlvYdmIpa/5faTdpia0URYlBOMyjvEaGAFR6nJPQ==
+react-cookie-consent@^6.4.1:
+  version "6.4.1"
+  resolved "https://registry.yarnpkg.com/react-cookie-consent/-/react-cookie-consent-6.4.1.tgz#256916725d87d8227e1f71d6aa4a18d451dc0d40"
+  integrity sha512-dAgC2uSrUN0eXoNhEKDCHH/dL3RUs/84SPO8hRvJVz7HtPGmF+t/mQwd4V4qsGAvVqhbn0hzMdftEuiJS3iueQ==
   dependencies:
     js-cookie "^2.2.1"
     prop-types "^15.7.2"

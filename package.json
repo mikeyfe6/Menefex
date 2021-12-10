@@ -18,8 +18,8 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },
   "dependencies": {
-    "@contentful/rich-text-html-renderer": "^15.8.0",
-    "@contentful/rich-text-types": "^15.7.0",
+    "@contentful/rich-text-html-renderer": "^15.9.0",
+    "@contentful/rich-text-types": "^15.9.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/free-regular-svg-icons": "^5.15.4",
@@ -59,7 +59,7 @@
     "react-animate-on-scroll": "^2.1.5",
     "react-animated-css": "^1.2.1",
     "react-bootstrap": "^2.0.3",
-    "react-cookie-consent": "^7.0.0",
+    "react-cookie-consent": "^6.4.1",
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
     "sass": "^1.44.0",
