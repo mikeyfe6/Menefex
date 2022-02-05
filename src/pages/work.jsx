@@ -78,12 +78,12 @@ const workPage = () => (
                 <br />
                 <br />
                 <span>
-                  Eternity Percussion is een culturele instelling die bijdrage
-                  levert aan talentontwikkeling, cultuurparticipatie en
-                  visieverbreding van jongeren. D.m.v. o.a. muziekeducatie en
-                  inzet van jongeren in eigen organisatie biedt Eternity
-                  jongeren de gelegenheid om cultureel te ondernemen en
-                  participeren binnen de Nederlandse samenleving.
+                  <strong>Eternity Percussion</strong> is een culturele
+                  instelling die bijdrage levert aan talentontwikkeling,
+                  cultuurparticipatie en visieverbreding van jongeren. D.m.v.
+                  o.a. muziekeducatie en inzet van jongeren in eigen organisatie
+                  biedt Eternity jongeren de gelegenheid om cultureel te
+                  ondernemen en participeren binnen de Nederlandse samenleving.
                 </span>
                 <br />
                 <br />
@@ -120,7 +120,7 @@ const workPage = () => (
                 color="#FFCC00"
                 className={workicon}
               />{' '}
-              Niet op Github*
+              <strike>Niet op Github*</strike>
             </a>
           </div>
         </ScrollAnimation>
@@ -154,11 +154,12 @@ const workPage = () => (
                 <br />
                 <br />
                 <span>
-                  Black Harmony is een populaire en getalenteerde zanggroep uit
-                  Amsterdam. Deze muziekorganisatie wilt een bijdrage leveren
-                  aan de positionering van de traditionele muziek genaamd Apinti
-                  Kawina. Black harmony wilt fungeren als ambassadeur als het
-                  gaat om traditionele Afro-Surinaamse muziek.
+                  <strong>Black Harmony</strong> is een populaire en
+                  getalenteerde zanggroep uit Amsterdam. Deze muziekorganisatie
+                  wilt een bijdrage leveren aan de positionering van de
+                  traditionele muziek genaamd Apinti Kawina. Black harmony wilt
+                  fungeren als ambassadeur als het gaat om traditionele
+                  Afro-Surinaamse muziek.
                 </span>
                 <br />
                 <br />
@@ -196,7 +197,85 @@ const workPage = () => (
                 color="#FFCC00"
                 className={workicon}
               />{' '}
-              Niet op Github*
+              <strike>Niet op Github*</strike>
+            </a>
+          </div>
+        </ScrollAnimation>
+
+        {/*
+          // * EXTRA PROJECTEN BIJVOEGEN HIERONDER!
+          */}
+
+        <ScrollAnimation
+          animateIn="fadeIn"
+          delay={750}
+          duration={2}
+          animateOnce
+        >
+          <div className="item" id="#ADS">
+            <a
+              href="https://afrodiasphere.netlify.app"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <StaticImage
+                src="./../images/projects/Afrodiasphere-screen.png"
+                alt="Afrodiasphere"
+                className={workimg}
+              />
+            </a>
+            <div className={projectInfo}>
+              <p className={projectText}>
+                <span className={projectHead}>Project:</span>
+                <span className={projectOrg}>Afrodiasphere</span>
+                <br />
+                <br />
+                <span>
+                  <strong>Afrodiasphere</strong> is een project geheel op eigen
+                  initiatief opgezet, voornamelijk gericht op het makkelijker
+                  maken van het delen van informatie onder
+                  particulieren/bedrijven die zich willen voortmanifesteren.
+                  Maak je profiel aan & join the MOVEMENT!
+                </span>
+                <br />
+                <br />
+                <b>
+                  * Deze website is vooral interactief, gericht op netwerken
+                  inclusief social media en veel meer toekomstige toepassingen.
+                </b>
+                <br />
+                <br />
+                <span className={projectHead}>Tools:</span>
+                <mark className={technologien}>Gatsby</mark>{' '}
+                <mark className={technologien}>Strapi</mark>{' '}
+                <mark className={technologien}>Netlify</mark>{' '}
+                <mark className={technologien}>RESTful API</mark>{' '}
+                <mark className={technologien}>Heroku</mark>
+              </p>
+            </div>
+            <a
+              href="https://afrodiasphere.netlify.app"
+              rel="noopener noreferrer"
+              target="_blank"
+              className={btnLight}
+            >
+              <FontAwesomeIcon
+                icon="eye"
+                color="#FFCC00"
+                className={workicon}
+              />{' '}
+              Ga naar project
+            </a>
+            <a
+              href="https://github.com/mikeyfe6/Afrodiasphere"
+              className={btnDark}
+            >
+              <FontAwesomeIcon
+                icon={['fab', 'github']}
+                color="#FFCC00"
+                className={workicon}
+              />{' '}
+              Check op Github*
             </a>
           </div>
         </ScrollAnimation>

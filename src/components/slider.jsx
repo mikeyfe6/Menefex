@@ -21,7 +21,7 @@ const Projects = () => {
     query {
       slideShow: allFile(
         filter: { relativeDirectory: { eq: "images/projects" } }
-        sort: { fields: base, order: DESC }
+        sort: { fields: base, order: ASC }
       ) {
         edges {
           node {
@@ -32,6 +32,8 @@ const Projects = () => {
               gatsbyImageData(
                 transformOptions: { cropFocus: CENTER, fit: COVER }
                 blurredOptions: { width: 100 }
+                width: 1000
+                height: 575
               )
             }
           }
@@ -116,6 +118,43 @@ const Projects = () => {
     </div>
   );
 
+  const afroDiaSphere = (
+    <div className={sliderInfo}>
+      <div className={beschrijving}>
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            marginBottom: '1em',
+          }}
+        >
+          <a
+            href="https://afrodiasphere.netlify.app/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <button type="button" className={projectLink}>
+              bekijk website
+            </button>
+          </a>
+          <Link to="/work/">
+            {' '}
+            <h5>Afrodiasphere</h5>{' '}
+          </Link>
+        </div>
+
+        <p>Dit project is geheel op eigen initiatief opgezet.</p>
+        <p className={geschreven}>
+          <mark className={technologien}>Gatsby</mark>{' '}
+          <mark className={technologien}>Strapi</mark>{' '}
+          <mark className={technologien}>Netlify</mark>{' '}
+          <mark className={technologien}>GraphQl</mark>{' '}
+          <mark className={technologien}>RESTful API</mark>
+        </p>
+      </div>
+    </div>
+  );
+
   return (
     <Carousel
       fade
@@ -140,6 +179,8 @@ const Projects = () => {
                 return eternityDrum;
               case 'Blackharmony-screen':
                 return blackHarmony;
+              case 'Afrodiasphere-screen':
+                return afroDiaSphere;
               default:
                 return 'Een project title';
             }
