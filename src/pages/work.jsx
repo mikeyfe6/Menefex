@@ -246,7 +246,7 @@ const workPage = () => (
                 <br />
                 <br />
                 <span className={projectHead}>Tools:</span>
-                <mark className={technologien}>Gatsby</mark>{' '}
+                <mark className={technologien}>GatsbyJS</mark>{' '}
                 <mark className={technologien}>Strapi</mark>{' '}
                 <mark className={technologien}>Netlify</mark>{' '}
                 <mark className={technologien}>RESTful API</mark>{' '}

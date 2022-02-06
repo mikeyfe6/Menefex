@@ -145,7 +145,7 @@ const Projects = () => {
 
         <p>Dit project is geheel op eigen initiatief opgezet.</p>
         <p className={geschreven}>
-          <mark className={technologien}>Gatsby</mark>{' '}
+          <mark className={technologien}>GatsbyJS</mark>{' '}
           <mark className={technologien}>Strapi</mark>{' '}
           <mark className={technologien}>Netlify</mark>{' '}
           <mark className={technologien}>GraphQl</mark>{' '}
