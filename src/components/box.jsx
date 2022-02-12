@@ -81,7 +81,7 @@ const Box = () => (
             >
               <FontAwesomeIcon
                 icon={['fab', 'facebook']}
-                size="2x"
+                size="xl"
                 className={fbicon}
               />
             </a>
@@ -93,7 +93,7 @@ const Box = () => (
             >
               <FontAwesomeIcon
                 icon={['fab', 'instagram']}
-                size="2x"
+                size="xl"
                 className={igicon}
               />
             </a>
@@ -105,7 +105,7 @@ const Box = () => (
             >
               <FontAwesomeIcon
                 icon={['fab', 'twitter']}
-                size="2x"
+                size="xl"
                 className={twicon}
               />
             </a>
@@ -117,7 +117,7 @@ const Box = () => (
             >
               <FontAwesomeIcon
                 icon={['fab', 'linkedin']}
-                size="2x"
+                size="xl"
                 className={liicon}
               />
             </a>
@@ -129,7 +129,7 @@ const Box = () => (
             >
               <FontAwesomeIcon
                 icon={['fab', 'github']}
-                size="2x"
+                size="xl"
                 className={ghicon}
               />
             </a>
@@ -141,7 +141,7 @@ const Box = () => (
             >
               <FontAwesomeIcon
                 icon={['fa', 'rss']}
-                size="2x"
+                size="xl"
                 className={rssicon}
               />
             </a>
@@ -153,7 +153,7 @@ const Box = () => (
             >
               <FontAwesomeIcon
                 icon={['fab', 'patreon']}
-                size="2x"
+                size="xl"
                 className={patricon}
               />
             </a>
@@ -165,7 +165,7 @@ const Box = () => (
             >
               <FontAwesomeIcon
                 icon={['fab', 'spotify']}
-                size="2x"
+                size="xl"
                 className={waicon}
               />
             </a>
@@ -177,7 +177,7 @@ const Box = () => (
             >
               <FontAwesomeIcon
                 icon={['fab', 'skype']}
-                size="2x"
+                size="xl"
                 className={skicon}
               />
             </a>
@@ -189,7 +189,7 @@ const Box = () => (
             >
               <FontAwesomeIcon
                 icon={['fab', 'whatsapp']}
-                size="2x"
+                size="xl"
                 className={spicon}
               />
             </a>
