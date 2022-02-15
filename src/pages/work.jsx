@@ -21,10 +21,6 @@ import {
   btnDark,
 } from '../styles/modules/work.module.scss';
 
-// import eternity from '../img/projects/Eternitydrum-screen.jpg';
-// import blackharmony from '../img/projects/Blackharmony-screen.jpg';
-// import comingsoon from '../img/projects/comingsoon.jpg';
-
 const workPage = () => (
   <Layout>
     <SEO
@@ -59,50 +55,50 @@ const workPage = () => (
           duration={2}
           animateOnce
         >
-          <div className="item" id="#EP">
+          <div className="item" id="#ADS">
             <a
-              href="https://eternitydrum.com"
+              href="https://afrodiasphere.netlify.app"
               rel="noopener noreferrer"
               target="_blank"
             >
               <StaticImage
-                src="./../images/projects/Eternitydrum-screen.png"
-                alt="Eternity Percussion"
+                src="./../images/projects/Afrodiasphere-screen.png"
+                alt="Afrodiasphere"
                 className={workimg}
               />
             </a>
             <div className={projectInfo}>
               <p className={projectText}>
-                <span className={projectHead}>Client:</span>
-                <span className={projectOrg}>Eternity Percussion</span>
+                <span className={projectHead}>Project:</span>
+                <span className={projectOrg}>Afrodiasphere</span>
                 <br />
                 <br />
                 <span>
-                  <strong>Eternity Percussion</strong> is een culturele
-                  instelling die bijdrage levert aan talentontwikkeling,
-                  cultuurparticipatie en visieverbreding van jongeren. D.m.v.
-                  o.a. muziekeducatie en inzet van jongeren in eigen organisatie
-                  biedt Eternity jongeren de gelegenheid om cultureel te
-                  ondernemen en participeren binnen de Nederlandse samenleving.
+                  <strong>Afrodiasphere</strong> is een project geheel op eigen
+                  initiatief opgezet, voornamelijk gericht op het makkelijker
+                  maken van het delen van informatie onder
+                  particulieren/bedrijven die zich willen voortmanifesteren.
+                  Maak je profiel aan & join the MOVEMENT!
                 </span>
                 <br />
                 <br />
                 <b>
-                  * Deze website is gebouwd met oog naar snelheid, overzicht en
-                  toegankelijkheid.
+                  * Deze webapplicatie is vooral interactief, gericht op
+                  netwerken inclusief social media en veel meer toekomstige
+                  toepassingen.
                 </b>
                 <br />
                 <br />
-                <span className={projectHead}> Tools:</span>
-                <mark className={technologien}>Wordpress</mark>{' '}
-                <mark className={technologien}>
-                  Advanced Custom Field Types
-                </mark>{' '}
-                <mark className={technologien}>Brizy</mark>
+                <span className={projectHead}>Tools:</span>
+                <mark className={technologien}>GatsbyJS</mark>{' '}
+                <mark className={technologien}>Strapi</mark>{' '}
+                <mark className={technologien}>Netlify</mark>{' '}
+                <mark className={technologien}>RESTful API</mark>{' '}
+                <mark className={technologien}>Heroku</mark>
               </p>
             </div>
             <a
-              href="https://eternitydrum.com"
+              href="https://afrodiasphere.netlify.app"
               rel="noopener noreferrer"
               target="_blank"
               className={btnLight}
@@ -114,13 +110,16 @@ const workPage = () => (
               />{' '}
               Ga naar project
             </a>
-            <a href="#!" className={btnDark}>
+            <a
+              href="https://github.com/mikeyfe6/Afrodiasphere"
+              className={btnDark}
+            >
               <FontAwesomeIcon
                 icon={['fab', 'github']}
                 color="#FFCC00"
                 className={workicon}
               />{' '}
-              <strike>Niet op Github*</strike>
+              Check op Github*
             </a>
           </div>
         </ScrollAnimation>
@@ -212,49 +211,50 @@ const workPage = () => (
           duration={2}
           animateOnce
         >
-          <div className="item" id="#ADS">
+          <div className="item" id="#EP">
             <a
-              href="https://afrodiasphere.netlify.app"
+              href="https://eternitydrum.com"
               rel="noopener noreferrer"
               target="_blank"
             >
               <StaticImage
-                src="./../images/projects/Afrodiasphere-screen.png"
-                alt="Afrodiasphere"
+                src="./../images/projects/Eternitydrum-screen.png"
+                alt="Eternity Percussion"
                 className={workimg}
               />
             </a>
             <div className={projectInfo}>
               <p className={projectText}>
-                <span className={projectHead}>Project:</span>
-                <span className={projectOrg}>Afrodiasphere</span>
+                <span className={projectHead}>Client:</span>
+                <span className={projectOrg}>Eternity Percussion</span>
                 <br />
                 <br />
                 <span>
-                  <strong>Afrodiasphere</strong> is een project geheel op eigen
-                  initiatief opgezet, voornamelijk gericht op het makkelijker
-                  maken van het delen van informatie onder
-                  particulieren/bedrijven die zich willen voortmanifesteren.
-                  Maak je profiel aan & join the MOVEMENT!
+                  <strong>Eternity Percussion</strong> is een culturele
+                  instelling die bijdrage levert aan talentontwikkeling,
+                  cultuurparticipatie en visieverbreding van jongeren. D.m.v.
+                  o.a. muziekeducatie en inzet van jongeren in eigen organisatie
+                  biedt Eternity jongeren de gelegenheid om cultureel te
+                  ondernemen en participeren binnen de Nederlandse samenleving.
                 </span>
                 <br />
                 <br />
                 <b>
-                  * Deze website is vooral interactief, gericht op netwerken
-                  inclusief social media en veel meer toekomstige toepassingen.
+                  * Deze website is gebouwd met oog naar snelheid, overzicht en
+                  toegankelijkheid.
                 </b>
                 <br />
                 <br />
-                <span className={projectHead}>Tools:</span>
-                <mark className={technologien}>GatsbyJS</mark>{' '}
-                <mark className={technologien}>Strapi</mark>{' '}
-                <mark className={technologien}>Netlify</mark>{' '}
-                <mark className={technologien}>RESTful API</mark>{' '}
-                <mark className={technologien}>Heroku</mark>
+                <span className={projectHead}> Tools:</span>
+                <mark className={technologien}>Wordpress</mark>{' '}
+                <mark className={technologien}>
+                  Advanced Custom Field Types
+                </mark>{' '}
+                <mark className={technologien}>Brizy</mark>
               </p>
             </div>
             <a
-              href="https://afrodiasphere.netlify.app"
+              href="https://eternitydrum.com"
               rel="noopener noreferrer"
               target="_blank"
               className={btnLight}
@@ -266,19 +266,20 @@ const workPage = () => (
               />{' '}
               Ga naar project
             </a>
-            <a
-              href="https://github.com/mikeyfe6/Afrodiasphere"
-              className={btnDark}
-            >
+            <a href="#!" className={btnDark}>
               <FontAwesomeIcon
                 icon={['fab', 'github']}
                 color="#FFCC00"
                 className={workicon}
               />{' '}
-              Check op Github*
+              <strike>Niet op Github*</strike>
             </a>
           </div>
         </ScrollAnimation>
+
+        {/*
+          // * EXTRA PROJECTEN BIJVOEGEN HIERONDER!
+          */}
       </div>
     </div>
     <div className="whitespace" />

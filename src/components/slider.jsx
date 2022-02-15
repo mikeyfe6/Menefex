@@ -134,7 +134,7 @@ const Projects = () => {
             target="_blank"
           >
             <button type="button" className={projectLink}>
-              bekijk website
+              bekijk webapp
             </button>
           </a>
           <Link to="/work/">
@@ -143,7 +143,10 @@ const Projects = () => {
           </Link>
         </div>
 
-        <p>Dit project is geheel op eigen initiatief opgezet.</p>
+        <p>
+          Dit project is geheel op eigen initiatief opgezet, gericht op sociale
+          interacties.
+        </p>
         <p className={geschreven}>
           <mark className={technologien}>GatsbyJS</mark>{' '}
           <mark className={technologien}>Strapi</mark>{' '}
