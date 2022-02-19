@@ -3,9 +3,6 @@
   "private": true,
   "description": "Wij bouwen websites & webapps bouwen met oog voor detail.",
   "version": "1.8.7",
-  "engines": {
-    "node": ">=8.0.0 ||^12.20.0 || ^14.13.1 || >=16.0.0"
-  },
   "author": "Michael Fransman <mikeyfe6@menefex.nl>",
   "license": "agpl-3.0",
   "scripts": {
@@ -80,13 +77,6 @@
     "eslint-webpack-plugin": "^3.1.1",
     "gatsby-plugin-eslint": "^4.0.2",
     "prettier": "^2.5.1"
-  },
-  "resolutions": {
-    "graphql": "^15.4.0",
-    "graphql-compose": "^7.25.0",
-    "contentful": "^8.1.7",
-    "webpack": "^5.24.2",
-    "postcss": "^8.2.15"
   },
   "homepage": "https://menefex.nl",
   "keywords": [
