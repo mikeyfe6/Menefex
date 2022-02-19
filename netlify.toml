@@ -1,6 +1,9 @@
 [Settings]
 ID = "78c114cf-1bff-4d30-8899-92eacaec9f9a"
 
+[build.environment]
+  NODE_VERSION = "16.14.0"
+
 [[headers]]
   for = "/*"
   [headers.values]
