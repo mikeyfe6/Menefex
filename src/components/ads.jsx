@@ -9,6 +9,7 @@ class GoogleAds extends Component {
 
   render() {
     const { slot } = this.props;
+
     return (
       <ins
         className="adsbygoogle"
