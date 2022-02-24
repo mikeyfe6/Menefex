@@ -2,7 +2,9 @@
 ID = "78c114cf-1bff-4d30-8899-92eacaec9f9a"
 
 [build.environment]
-  NODE_VERSION = "16.14.0"
+  NODE_VERSION = "17.6.0"
+  NPM_VERSION = "8.5.1"
+  YARN_VERSION = "1.22.17"
 
 [[headers]]
   for = "/*"
