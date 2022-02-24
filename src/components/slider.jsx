@@ -158,6 +158,46 @@ const Projects = () => {
     </div>
   );
 
+  const dsMelodies = (
+    <div className={sliderInfo}>
+      <div className={beschrijving}>
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            marginBottom: '1em',
+          }}
+        >
+          <a
+            // href="https://dsmelodies.com"
+            href="#!"
+            // rel="noopener noreferrer"
+            // target="_blank"
+          >
+            <button type="button" className={projectLink}>
+              {/* bekijk website */}
+              binnenkort!{' '}
+            </button>
+          </a>
+          <Link to="/work/">
+            {' '}
+            <h5>DS Melodies</h5>{' '}
+          </Link>
+        </div>
+
+        <p>
+          Deze website is gebouwd in opdracht van steelpannist Derek Simpey uit
+          Amsterdam.
+        </p>
+        <p className={geschreven}>
+          <mark className={technologien}>Wordpress</mark>{' '}
+          <mark className={technologien}>Additional CSS</mark>{' '}
+          <mark className={technologien}>Elementor</mark>
+        </p>
+      </div>
+    </div>
+  );
+
   return (
     <Carousel
       fade
@@ -184,6 +224,8 @@ const Projects = () => {
                 return blackHarmony;
               case 'Afrodiasphere-screen':
                 return afroDiaSphere;
+              case 'DSMelodies-screen':
+                return dsMelodies;
               default:
                 return 'Een project title';
             }

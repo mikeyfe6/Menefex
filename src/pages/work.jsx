@@ -57,6 +57,82 @@ const workPage = () => (
         >
           <div className="item" id="#ADS">
             <a
+              // href="https://dsmelodies.com"
+              href="#!"
+              // rel="noopener noreferrer"
+              // target="_blank"
+            >
+              <StaticImage
+                src="./../images/projects/DSMelodies-screen.png"
+                alt="DS Melodies"
+                className={workimg}
+              />
+            </a>
+            <div className={projectInfo}>
+              <p className={projectText}>
+                <span className={projectHead}>Client:</span>
+                <span className={projectOrg}>DS Melodies</span>
+                <br />
+                <br />
+                <span>
+                  <strong>DS Melodies</strong> alias Derek Simpey is een
+                  professioneel Steeldrum-artiest uit Amsterdam Zuidoost. Met
+                  zijn unieke sound die gevormd is uit 18 jaar ervaring,
+                  creeeren hij en zijn steelpan-instrument, waar ie ook is, een
+                  waardig spectakel.
+                </span>
+                <br />
+                <br />
+                <b>
+                  * Deze website is gebouwd met oog naar snelheid, abstractie in
+                  design en toegankelijkheid.
+                </b>
+                <br />
+                <br />
+                <span className={projectHead}>Tools:</span>
+                <mark className={technologien}>Wordpress</mark>{' '}
+                <mark className={technologien}>Additional CSS</mark>{' '}
+                <mark className={technologien}>Elementor</mark>
+              </p>
+            </div>
+            <a
+              // href="https://dsmelodies.com"
+              href="#!"
+              // rel="noopener noreferrer"
+              // target="_blank"
+              className={btnLight}
+            >
+              <FontAwesomeIcon
+                icon="eye"
+                color="#FFCC00"
+                className={workicon}
+              />{' '}
+              {/* Ga naar project */}
+              Komt Binnenkort
+            </a>
+            <a href="#!" className={btnDark}>
+              <FontAwesomeIcon
+                icon={['fab', 'github']}
+                color="#FFCC00"
+                className={workicon}
+              />{' '}
+              <strike>Niet op Github*</strike>
+            </a>
+          </div>
+        </ScrollAnimation>
+
+        {/*
+          // * EXTRA PROJECTEN BIJVOEGEN HIERONDER!
+          */}
+
+        <ScrollAnimation
+          animateIn="fadeIn"
+          delay={750}
+          duration={2}
+          animateOnce
+        >
+          <div className="item" id="#ADS">
+            <a
               href="https://afrodiasphere.netlify.app"
               rel="noopener noreferrer"
               target="_blank"
