@@ -70,6 +70,7 @@ module.exports = {
         // ...
       },
     },
+    'gatsby-plugin-netlify',
     {
       resolve: 'gatsby-plugin-feed',
       options: {
