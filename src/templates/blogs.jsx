@@ -25,7 +25,7 @@ export const query = graphql`
   query ($slug: String!) {
     contentfulBlogPost(slug: { eq: $slug }) {
       title
-      id
+      contentful_id
       subtitle
       slug
       keywords
@@ -351,7 +351,7 @@ const Blog = (props) => {
               <Disqus
                 config={{
                   url: `https://menefex.nl/blog/${props.data.contentfulBlogPost.slug}/`,
-                  identifier: props.data.contentfulBlogPost.id,
+                  identifier: props.data.contentfulBlogPost.contentful_id,
                   title: props.data.contentfulBlogPost.title,
                 }}
               />

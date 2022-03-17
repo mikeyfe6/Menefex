@@ -24,6 +24,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
       allContentfulBlogPost {
         edges {
           node {
+            contentful_id
             slug
             updatedAt(formatString: "YYYY-MM-DD", locale: "nl")
           }
@@ -36,9 +37,9 @@ module.exports.createPages = async ({ graphql, actions }) => {
     createPage({
       component: blogTemplate,
       path: `/blog/${edge.node.slug}/`,
-      ownerNodeId: edge.node.id,
+      ownerNodeId: edge.node.contentful_id,
       context: {
-        id: edge.node.id,
+        id: edge.node.contentful_id,
         slug: edge.node.slug,
         updatedAt: edge.node.updatedAt,
       },
