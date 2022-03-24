@@ -57,10 +57,10 @@ const workPage = () => (
         >
           <div className="item" id="#ADS">
             <a
-              // href="https://dsmelodies.com"
-              href="#!"
-              // rel="noopener noreferrer"
-              // target="_blank"
+              href="https://dsmelodies.com"
+              // href="#!"
+              rel="noopener noreferrer"
+              target="_blank"
             >
               <StaticImage
                 src="./../images/projects/DSMelodies-screen.png"
@@ -96,10 +96,10 @@ const workPage = () => (
               </p>
             </div>
             <a
-              // href="https://dsmelodies.com"
-              href="#!"
-              // rel="noopener noreferrer"
-              // target="_blank"
+              href="https://dsmelodies.com"
+              // href="#!"
+              rel="noopener noreferrer"
+              target="_blank"
               className={btnLight}
             >
               <FontAwesomeIcon
@@ -107,8 +107,8 @@ const workPage = () => (
                 color="#FFCC00"
                 className={workicon}
               />{' '}
-              {/* Ga naar project */}
-              Komt Binnenkort
+              Ga naar project
+              {/* Komt Binnenkort */}
             </a>
             <a href="#!" className={btnDark}>
               <FontAwesomeIcon

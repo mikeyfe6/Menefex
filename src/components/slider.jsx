@@ -169,14 +169,14 @@ const Projects = () => {
           }}
         >
           <a
-            // href="https://dsmelodies.com"
-            href="#!"
-            // rel="noopener noreferrer"
-            // target="_blank"
+            href="https://dsmelodies.com"
+            // href="#!"
+            rel="noopener noreferrer"
+            target="_blank"
           >
             <button type="button" className={projectLink}>
-              {/* bekijk website */}
-              binnenkort!{' '}
+              bekijk website
+              {/* binnenkort!{' '} */}
             </button>
           </a>
           <Link to="/work/">
