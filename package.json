@@ -29,7 +29,7 @@
     "gatsby": "^4.13.1",
     "gatsby-plugin-canonical-urls": "^4.13.0",
     "gatsby-plugin-catch-links": "^4.13.0",
-    "gatsby-plugin-disqus": "^1.2.3",
+    "gatsby-plugin-disqus": "^1.2.4",
     "gatsby-plugin-feed": "^4.13.0",
     "gatsby-plugin-google-tagmanager": "^4.13.0",
     "gatsby-plugin-image": "^2.13.0",
