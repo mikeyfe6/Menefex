@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -14,6 +15,7 @@ import {
   quoteFocus,
   quoteKwali,
   endline,
+  quotePriceInfo,
 } from '../styles/modules/quote.module.scss';
 
 // TODO: Responsive maken!
@@ -31,9 +33,9 @@ const Quote = () => (
           <div className={quoteBlock}>
             {' '}
             <p className={quoteText}>
-              Wij bouwen functionele en efficiënte websites volledig op
-              maatwerk. Daarin zorgen wij dat uw website aan alle actuele
-              technische wensen en voorwaarden voldoet.
+              Wij bouwen functionele en efficiënte websites volledig op maat.
+              Daarin zorgen wij dat uw website aan alle actuele technische
+              wensen en voorwaarden voldoet.
             </p>
           </div>
           <br />
@@ -136,6 +138,13 @@ const Quote = () => (
           <hr className={endline} />
           <br />
         </section>
+        <div style={{ textAlign: 'center', marginTop: '2em' }}>
+          <Link to="/prices">
+            <button type="button" className={quotePriceInfo} style={{}}>
+              Technische specificatie & onze uitgebreide prijzen
+            </button>
+          </Link>
+        </div>
       </div>
     </div>
   </div>

@@ -98,7 +98,7 @@ const Form = () => {
                 </li>
                 <li>
                   <label htmlFor="email">
-                    <span className="speccol">*</span> Email
+                    <span className="speccol">*</span> E-mail
                     <div className={textarea}>
                       <input
                         type="email"

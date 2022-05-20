@@ -80,6 +80,27 @@
     width: 50%;
     @include shadow;
   }
+
+  .quotePriceInfo {
+    font-family: $alata-font;
+    background: $primary-color;
+    padding: 15px 35px;
+    letter-spacing: 1px;
+    border: 3px solid $secondary-color;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    @include smoothtrans;
+    @include shadow;
+
+    &:hover {
+      background-color: $textbase-color;
+      border-color: $link-color;
+
+      // background: white;
+      // color: $primary-color;
+    }
+  }
 }
 
 .endline {
@@ -93,6 +114,14 @@
 @media (max-width: 768px) {
   .quote-wrapper {
     padding: 5%;
+
+    .quotePriceInfo {
+      letter-spacing: 1.5px;
+      font-size: 11px;
+      padding: 12.5px 25px;
+      margin-top: 0 !important;
+      margin-bottom: 3em;
+    }
   }
 
   section.services {

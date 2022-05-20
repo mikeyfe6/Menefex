@@ -12,6 +12,11 @@
   padding-left: 75px !important;
   padding-bottom: 30px !important;
   width: 75%;
+  @include smoothtrans;
+
+  &:hover {
+    border: 3px solid #008cd24f;
+  }
 }
 
 // .rcpth {
@@ -88,7 +93,6 @@
 
     &:hover {
       color: $spectext-color;
-      @include smoothtrans;
     }
   }
 

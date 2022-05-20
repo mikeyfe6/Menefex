@@ -15,6 +15,14 @@
     transform: scale(1.025);
     @include smoothtrans;
   }
+
+  .pricebevat {
+    text-align: center;
+    font-size: 0.75em;
+    text-decoration: underline;
+    font-weight: bold;
+    margin: 2.5em 0;
+  }
 }
 
 .scrollcall {

@@ -71,7 +71,6 @@
 
   &:hover {
     // color: $secondary-color;
-    @include smoothtrans;
     background-color: $textbase-color;
     border-color: $link-color;
     font-weight: bold;

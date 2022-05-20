@@ -20,6 +20,7 @@ import {
   pricebold,
   pricebtn,
   pricenot,
+  pricebevat,
 } from '../styles/modules/prices.module.scss';
 
 const Prices = () => (
@@ -70,23 +71,26 @@ const Prices = () => (
                 </sup>{' '}
               </p>
               <p className={priceaction}>ACTIE: *(25% korting)</p>
-              <br />
+              <p className={pricebevat}>
+                <i>... bevat:</i>
+              </p>
               <ul className={pricelist}>
                 <li className={pricebold}>1 - 5 pagina&apos;s</li>
 
-                <li>Design op maatwerk</li>
-                <li>CMS</li>
-                <li>Foto Gallery</li>
-                <li>Video Integratie</li>
-                <li>Responsive Design</li>
-                <li>Formulieren</li>
-                <li>Testimonials</li>
-                <li>Google Maps integratie</li>
-                <li>Google Statistieken / SEO</li>
+                <li>Maatwerk Design</li>
+                <li>Eigen CMS (inlogpaneel)</li>
+                <li>Foto&apos;s, video&apos;s en andere media</li>
+                <li>Responsief voor alle toestellen</li>
+                <li>Uitgebreide Formulieren</li>
+                <li>Testimonials / Reviews</li>
+                <li>
+                  Statistieken; Google Analytics, Tag Manager & Search Console
+                </li>
                 <li>Gratis SSL</li>
 
-                <li className={pricebold}>1 maand gratis support</li>
+                <li className={pricebold}>3 maanden gratis support</li>
               </ul>
+              <br />
               <br />
               <Link to="/contact/">
                 <button type="button" name="offerte" className={pricebtn}>
@@ -112,24 +116,28 @@ const Prices = () => (
                 </sup>{' '}
               </p>
               <p className={priceaction}>ACTIE: *(25% korting)</p>
-              <br />
+
+              <p className={pricebevat}>
+                <i>... bevat:</i>
+              </p>
+
               <ul className={pricelist}>
                 <li className={pricebold}>± 10 pagina&apos;s</li>
 
-                <li>Design op maatwerk</li>
-                <li>CMS</li>
-                <li>Foto Gallery</li>
-                <li>Video Integratie</li>
-                <li>Responsive Design</li>
-                <li>Formulieren</li>
+                <li>Maatwerk Design</li>
+                <li>Eigen CMS (inlogpaneel)</li>
+                <li>Foto&apos;s, video&apos;s en andere media</li>
+                <li>Responsief voor alle toestellen</li>
+                <li>Uitgebreide Formulieren</li>
                 <li className={pricebold}>Zoekmodule op website</li>
-
-                <li>Testimonials</li>
-                <li>Google Maps integratie</li>
-                <li>Google Statistieken / SEO</li>
+                <li>Testimonials / Reviews</li>
+                <li>
+                  Statistieken; Google Analytics, Tag Manager & Search Console
+                </li>
                 <li>Gratis SSL</li>
-                <li className={pricebold}>2 maanden gratis support</li>
+                <li className={pricebold}>6 maanden gratis support</li>
               </ul>
+              <br />
               <br />
               <Link to="/contact/">
                 <button type="button" name="offerte" className={pricebtn}>
@@ -155,26 +163,31 @@ const Prices = () => (
                 </sup>{' '}
               </p>
               <p className={priceaction}>ACTIE: *(25% korting)</p>
-              <br />
+
+              <p className={pricebevat}>
+                <i>... bevat:</i>
+              </p>
+
               <ul className={pricelist}>
                 <li className={pricebold}>∞ pagina&apos;s</li>
 
-                <li>Design op maatwerk</li>
-                <li className={pricebold}>E-commerce (+Bank Integratie)</li>
+                <li>Maatwerk Design</li>
 
-                <li>CMS</li>
-                <li>Foto Gallery</li>
-                <li>Video Integratie</li>
-                <li>Responsive Design</li>
-                <li>Formulieren</li>
+                <li>Eigen CMS (inlogpaneel)</li>
+                <li>Foto&apos;s, video&apos;s en andere media</li>
+                <li className={pricebold}>E-commerce (+Bank Integratie)</li>
+                <li>Responsief voor alle toestellen</li>
+                <li>Uitgebreide Formulieren</li>
                 <li className={pricebold}>Zoekmodule op website</li>
 
-                <li>Testimonials</li>
-                <li>Google Maps integratie</li>
-                <li>Google Statistieken / SEO</li>
+                <li>Testimonials / Reviews</li>
+                <li>
+                  Statistieken; Google Analytics, Tag Manager & Search Console
+                </li>
                 <li>Gratis SSL</li>
-                <li className={pricebold}>3 maanden gratis support</li>
+                <li className={pricebold}>12 maanden gratis support</li>
               </ul>
+              <br />
               <br />
               <Link to="/contact/">
                 <button type="button" name="offerte" className={pricebtn}>
