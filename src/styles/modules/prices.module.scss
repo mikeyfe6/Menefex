@@ -19,9 +19,10 @@
   .pricebevat {
     text-align: center;
     font-size: 0.75em;
-    text-decoration: underline;
     font-weight: bold;
     margin: 2.5em 0;
+    text-decoration: underline;
+    text-decoration-color: $super-color;
   }
 }
 

@@ -15,7 +15,9 @@
   @include smoothtrans;
 
   &:hover {
-    border: 3px solid #008cd24f;
+    // border: 3px solid #008cd24f;
+    border: 3px solid $spec-color;
+    // background: linear-gradient(45deg, $sixth-color, $super-color);
   }
 }
 
