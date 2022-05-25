@@ -108,7 +108,7 @@ class Layout extends React.Component {
               margin: '1.25% 2.5% 1% 2.5%',
             }}
             style={{
-              background: 'linear-gradient(to right, #595858, #333333',
+              background: 'linear-gradient(to right, #595858, #333333)',
               opacity: '0.95',
               color: '#dadada',
               fontSize: '12px',
