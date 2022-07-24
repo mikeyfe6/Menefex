@@ -33,7 +33,7 @@ const ContactPage = () => (
             animateOnce
           >
             <h3 className={contacttitle}>
-              Laten wij samen iets geweldigs creëeren ✨
+              Laten wij iets geweldigs creëeren! ✨
             </h3>
           </ScrollAnimation>
 

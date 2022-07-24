@@ -62,13 +62,15 @@ const Hero = () => (
         </Animated>
         <Animated
           animationIn="fadeInUp"
-          animationInDelay={8500}
+          animationInDelay={8250}
           animationInDuration={2000}
         >
           <h2 className={heroHead}>
-            Web<span className={herospec}>sites</span>, web
+            {' '}
+            <span style={{ color: 'white' }}>・ </span>Web
+            <span className={herospec}>sites</span>, web
             <span className={herospec}>applicaties</span> & SE
-            <span className={herospec}>O</span>
+            <span className={herospec}>O</span> ・
           </h2>
         </Animated>
         <Animated
@@ -77,12 +79,14 @@ const Hero = () => (
           animationInDuration={3000}
         >
           <h2 className={heroHeadMB}>
+            <span style={{ color: 'white' }}>・ </span>
             Web<span className={herospec}>sites</span>, web
             <span className={herospec}>applicaties</span> & SE
-            <span className={herospec}>O</span>
+            <span className={herospec}>O</span> ・
           </h2>
         </Animated>
       </div>
+
       <div className={flexancors}>
         <Animated
           animationIn="zoomIn"

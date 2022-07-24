@@ -210,20 +210,20 @@ const Prices = () => (
           <br />U bent uiteraard ook voor de <b>kleinere taken</b> bij het
           juiste adres, denk bijvoorbeeld aan <b>onderhoud</b>, een{' '}
           <b>nieuwe logo</b>, een <b>toevoeging</b> op uw website of meer{' '}
-          <b>zienswaardigheid in Google</b>. Noem maar op, maak het zo gek als
-          je wilt. <u>Wij fixen het!</u>
+          <b>zienswaardigheid in Google</b>. Noem maar op, maak het zo gek als u
+          wilt. <u>Wij fixen het!</u>
           <br />
           <br />
           Wel variëren deze prijzen <b>vanaf €150,-</b> (excl btw.) Mocht het
           gaan om grotere projecten die meer tijd vergen, zoals het vernieuwen
           van een bestaande website hanteren we een prijs van{' '}
-          <b>€35,- per uur </b>
+          <b>€45,- per uur </b>
           (excl btw.).
           <br />
           <br />
-          Dit alles wordt u natuurlijk <b>uitgebreid geinformeerd</b> dmv van
-          bijv. een vrijblijvend terugbelverzoek of via de mail, mocht u er niet
-          uitkomen welke pakket het beste u wensen vervult.
+          Dit alles wordt u natuurlijk <b>uitgebreid geinformeerd</b> d.m.v. een
+          vrijblijvend terugbelverzoek of via de mail, mocht u er niet uitkomen
+          welke pakket het beste u wensen vervult.
         </p>
       </Animated>
       <div id="callscroll" />

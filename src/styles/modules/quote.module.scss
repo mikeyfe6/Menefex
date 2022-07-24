@@ -36,6 +36,7 @@
   .quote-kwali {
     padding-left: 7.5%;
     list-style: none;
+    // font-weight: 400;
 
     li::before {
       content: '\203B'; /* Add content: \2022 is the CSS Code/unicode for a bullet */

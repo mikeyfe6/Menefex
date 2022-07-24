@@ -14,8 +14,8 @@
   }
 
   .ministylo {
-    width: 250px;
-    height: 250px;
+    width: 225px;
+    height: 225px;
 
     // display: inline-block;
     animation: roll 60s infinite;
@@ -62,7 +62,7 @@
     color: $secondary-color;
     letter-spacing: 5px;
     font-family: $right-font;
-    font-size: 2.725em;
+    // font-size: 2.25rem;
     // height: 300px;
     background: linear-gradient(to right, $primary-color, $button-hover);
     border: 3px solid $primary-color;
@@ -73,6 +73,7 @@
 
     display: table; /* keep the background color wrapped tight */
     margin: 0 auto;
+    text-align: center;
     @include shadow;
   }
 
@@ -82,6 +83,8 @@
     color: $secondary-color;
     letter-spacing: 2.5px;
     font-family: $right-font;
+
+    white-space: nowrap;
 
     background: linear-gradient(to right, $primary-color, $button-hover);
     border: 2px solid $primary-color;

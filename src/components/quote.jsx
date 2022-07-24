@@ -141,7 +141,7 @@ const Quote = () => (
         <div style={{ textAlign: 'center', marginTop: '2em' }}>
           <Link to="/prices/">
             <button type="button" className={quotePriceInfo} style={{}}>
-              Technische specificatie & onze uitgebreide prijzen
+              Technische specificaties & onze prijslijst
             </button>
           </Link>
         </div>
