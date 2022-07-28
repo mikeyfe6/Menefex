@@ -223,7 +223,7 @@ const Prices = () => (
           <br />
           Dit alles wordt u natuurlijk <b>uitgebreid geinformeerd</b> d.m.v. een
           vrijblijvend terugbelverzoek of via de mail, mocht u er niet uitkomen
-          welke pakket het beste u wensen vervult.
+          welk pakket het beste u wensen vervult.
         </p>
       </Animated>
       <div id="callscroll" />
