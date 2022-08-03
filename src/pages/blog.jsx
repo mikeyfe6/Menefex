@@ -47,8 +47,8 @@ const BlogPage = () => {
     <Layout>
       <SEO
         title="Blog"
-        description="What goes through our mind.. Our views on life, technology, culture & the future."
-        keywords="blog, posts, views, nieuws, story, nieuws"
+        description="What goes through our mind... Our views on life, technology, culture, the past, the future and more..."
+        keywords="blog, posts, views, nieuws, stories, nieuws, content, verhalen, news, mind, actualiteiten"
         pathname="/blog/"
       />
 

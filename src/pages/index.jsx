@@ -87,8 +87,8 @@ const IndexPage = () => {
     <Layout>
       <SEO
         title="#1 Website Specialist"
-        description="Een nieuwe professionele, modern & duurzame website of webapp nodig? Tijdelijk 25% KORTING! | Webmediabedrijf Menefex uit Amsterdam staat garant voor al uw webgerelateerde wensen en ambities."
-        keywords="websites, webapplicaties, wordpress, SEO, amsterdam, specialist"
+        description="Website, webshop of webapplicatie laten maken? Al vanaf €295,- | Menefex Webmediabedrijf uit Amsterdam staat garant voor al uw webgerelateerde wensen en ambities."
+        keywords="website, webapplicatie, webshop, wordpress, SEO, amsterdam, specialist, menefex, webmediabedrijf, modern, professioneel, ontwikkelen, bob, webbeheerder, webmaster, projecten, portfolio, services, diensten, biografie, web development, app development, jamstack, michael fransman, gatsby, laten bouwen"
         schemaMarkup={schema}
       />
       <Hero />

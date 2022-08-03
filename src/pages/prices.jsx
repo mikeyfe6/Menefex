@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import { Link } from 'gatsby';
 import { Animated } from 'react-animated-css';
@@ -23,12 +24,24 @@ import {
   pricebevat,
 } from '../styles/modules/prices.module.scss';
 
+const SalePrice = ({ indivPrice }) => {
+  const totalPrice = indivPrice - (indivPrice / 100) * 10;
+  const endResult = totalPrice;
+  const euroFormat = new Intl.NumberFormat('nl-NL', {
+    style: 'currency',
+    currency: 'EUR',
+  }).format(endResult);
+
+  // console.log(euroFormat);
+  return euroFormat;
+};
+
 const Prices = () => (
   <Layout>
     <SEO
       title="Prijzen & tarieven"
       description="Hier ziet u een indicatie van onze scherpe prijzen. Heeft u liever een georiënteerd gesprek, neem contact met ons op of vraag een terugbelverzoek aan."
-      keywords="prijzen, tarieven, starter, established, business, plan, actie"
+      keywords="prijzen, tarieven, budget plan, starter plan, established plan, business plan, actie, terugbelverzoek, prijslijst, pakket, offerte, bel mij terug, prices"
       pathname="/prices/"
     />
     <div>
@@ -56,7 +69,63 @@ const Prices = () => (
       </p>
       <br />
       <div className="row">
-        <div className="col-md-4">
+        <div className="col-md-3">
+          <Animated
+            animationIn="fadeInUp"
+            animationInDelay={0}
+            animationInDuration={1500}
+          >
+            <div className={pricecon}>
+              <h4 className={pricehead}>BUDGET PLAN</h4>
+              <p className={pricecap}>
+                <span className={pricedisc}>€ 295,-</span>&nbsp;{' '}
+                <SalePrice indivPrice={295} />{' '}
+                <sup>
+                  <span className={pricebtw}>(excl. btw)</span>
+                </sup>{' '}
+              </p>
+              <p className={priceaction}>*ACTIE: 10% korting</p>
+              <p className={pricebevat}>
+                <i>... bevat:</i>
+              </p>
+              <ul className={pricelist}>
+                <li className={pricebold}>1 - 2 pagina&apos;s</li>
+
+                <li>Maatwerk Design</li>
+
+                <li>CMS (Content Manager)</li>
+                <li>Foto&apos;s, video&apos;s & andere media</li>
+                <li>Responsief voor alle toestellen</li>
+                <li>Uitgebreide Formulieren</li>
+                <li>Social Media Integratie</li>
+                <li>Testimonials / Reviews</li>
+                <li>
+                  Statistieken; Google Analytics, Tag Manager & Search Console
+                </li>
+                <li>SSL Certificaat</li>
+                <li
+                  style={{
+                    fontSize: '0.75em',
+                    fontStyle: 'italic',
+                    fontWeight: 'bold',
+                    color: 'white',
+                  }}
+                >
+                  extra features: € 45,- per uur
+                </li>
+                <li className={pricebold}>1 maand gratis support</li>
+              </ul>
+              <br />
+              <br />
+              <Link to="/contact/">
+                <button type="button" name="offerte" className={pricebtn}>
+                  OFFERTE
+                </button>
+              </Link>
+            </div>
+          </Animated>
+        </div>
+        <div className="col-md-3">
           <Animated
             animationIn="fadeInUp"
             animationInDelay={750}
@@ -65,12 +134,13 @@ const Prices = () => (
             <div className={pricecon}>
               <h4 className={pricehead}>STARTER PLAN</h4>
               <p className={pricecap}>
-                <span className={pricedisc}>€695,-</span> &nbsp; €521,-&nbsp;
+                <span className={pricedisc}>€ 595,-</span>&nbsp;{' '}
+                <SalePrice indivPrice={595} />{' '}
                 <sup>
                   <span className={pricebtw}>(excl. btw)</span>
                 </sup>{' '}
               </p>
-              <p className={priceaction}>ACTIE: *(25% korting)</p>
+              <p className={priceaction}>*ACTIE: 10% korting</p>
               <p className={pricebevat}>
                 <i>... bevat:</i>
               </p>
@@ -78,15 +148,29 @@ const Prices = () => (
                 <li className={pricebold}>1 - 5 pagina&apos;s</li>
 
                 <li>Maatwerk Design</li>
-                <li>Eigen CMS (inlogpaneel)</li>
-                <li>Foto&apos;s, video&apos;s en andere media</li>
+
+                <li>CMS (Content Manager)</li>
+                <li className={pricebold}>Blog</li>
+                <li>Foto&apos;s, video&apos;s & andere media</li>
                 <li>Responsief voor alle toestellen</li>
+
                 <li>Uitgebreide Formulieren</li>
+                <li>Social Media Integratie</li>
                 <li>Testimonials / Reviews</li>
                 <li>
                   Statistieken; Google Analytics, Tag Manager & Search Console
                 </li>
-                <li>Gratis SSL</li>
+                <li>SSL Certificaat</li>
+                <li
+                  style={{
+                    fontSize: '0.75em',
+                    fontStyle: 'italic',
+                    fontWeight: 'bold',
+                    color: 'white',
+                  }}
+                >
+                  extra features: € 45,- per uur
+                </li>
 
                 <li className={pricebold}>3 maanden gratis support</li>
               </ul>
@@ -100,7 +184,7 @@ const Prices = () => (
             </div>
           </Animated>
         </div>
-        <div className="col-md-4">
+        <div className="col-md-3">
           {' '}
           <Animated
             animationIn="fadeInUp"
@@ -110,12 +194,13 @@ const Prices = () => (
             <div className={pricecon}>
               <h4 className={pricehead}>ESTABLISHED PLAN</h4>
               <p className={pricecap}>
-                <span className={pricedisc}>€1125,-</span> &nbsp; €844,-&nbsp;
+                <span className={pricedisc}>€ 1025,-</span>&nbsp;{' '}
+                <SalePrice indivPrice={1025} />{' '}
                 <sup>
                   <span className={pricebtw}>(excl. btw)</span>
                 </sup>{' '}
               </p>
-              <p className={priceaction}>ACTIE: *(25% korting)</p>
+              <p className={priceaction}>*ACTIE: 10% korting</p>
 
               <p className={pricebevat}>
                 <i>... bevat:</i>
@@ -125,16 +210,31 @@ const Prices = () => (
                 <li className={pricebold}>± 10 pagina&apos;s</li>
 
                 <li>Maatwerk Design</li>
-                <li>Eigen CMS (inlogpaneel)</li>
-                <li>Foto&apos;s, video&apos;s en andere media</li>
+
+                <li>CMS (Content Manager)</li>
+                <li className={pricebold}>Blog</li>
+                <li>Foto&apos;s, video&apos;s & andere media</li>
                 <li>Responsief voor alle toestellen</li>
+
                 <li>Uitgebreide Formulieren</li>
-                <li className={pricebold}>Zoekmodule op website</li>
+                <li className={pricebold}>Zoekmodule</li>
+                <li>Social Media Integratie</li>
                 <li>Testimonials / Reviews</li>
                 <li>
                   Statistieken; Google Analytics, Tag Manager & Search Console
                 </li>
-                <li>Gratis SSL</li>
+                <li>SSL Certificaat</li>
+
+                <li
+                  style={{
+                    fontSize: '0.75em',
+                    fontStyle: 'italic',
+                    fontWeight: 'bold',
+                    color: 'white',
+                  }}
+                >
+                  extra features: € 45,- per uur
+                </li>
                 <li className={pricebold}>6 maanden gratis support</li>
               </ul>
               <br />
@@ -147,7 +247,7 @@ const Prices = () => (
             </div>
           </Animated>
         </div>
-        <div className="col-md-4">
+        <div className="col-md-3">
           {' '}
           <Animated
             animationIn="fadeInUp"
@@ -157,12 +257,13 @@ const Prices = () => (
             <div className={pricecon}>
               <h4 className={pricehead}>BUSINESS PLAN</h4>
               <p className={pricecap}>
-                <span className={pricedisc}>€1675,-</span> &nbsp; €1256,-&nbsp;
+                <span className={pricedisc}>€ 1575,-</span>&nbsp;{' '}
+                <SalePrice indivPrice={1575} />{' '}
                 <sup>
                   <span className={pricebtw}>(excl. btw)</span>
                 </sup>{' '}
               </p>
-              <p className={priceaction}>ACTIE: *(25% korting)</p>
+              <p className={priceaction}>*ACTIE: 10% korting</p>
 
               <p className={pricebevat}>
                 <i>... bevat:</i>
@@ -173,18 +274,22 @@ const Prices = () => (
 
                 <li>Maatwerk Design</li>
 
-                <li>Eigen CMS (inlogpaneel)</li>
-                <li>Foto&apos;s, video&apos;s en andere media</li>
+                <li>CMS (Content Manager)</li>
+                <li className={pricebold}>Blog</li>
+                <li>Foto&apos;s, video&apos;s & andere media</li>
                 <li className={pricebold}>E-commerce (+Bank Integratie)</li>
                 <li>Responsief voor alle toestellen</li>
+
                 <li>Uitgebreide Formulieren</li>
-                <li className={pricebold}>Zoekmodule op website</li>
+                <li>Social Media Integratie</li>
+                <li className={pricebold}>Zoekmodule</li>
 
                 <li>Testimonials / Reviews</li>
+                <li className={pricebold}>User Login / Register</li>
                 <li>
                   Statistieken; Google Analytics, Tag Manager & Search Console
                 </li>
-                <li>Gratis SSL</li>
+                <li>SSL Certificaat</li>
                 <li className={pricebold}>12 maanden gratis support</li>
               </ul>
               <br />
@@ -214,11 +319,11 @@ const Prices = () => (
           wilt. <u>Wij fixen het!</u>
           <br />
           <br />
-          Wel variëren deze prijzen <b>vanaf €150,-</b> (excl btw.) Mocht het
-          gaan om grotere projecten die meer tijd vergen, zoals het vernieuwen
-          van een bestaande website hanteren we een prijs van{' '}
+          Wel variëren deze prijzen <b>vanaf €150,-</b> (excl. BTW). Mocht het
+          gaan om <b>grotere projecten</b> die meer tijd vergen, zoals het
+          vernieuwen van een bestaande website hanteren we een prijs van{' '}
           <b>€45,- per uur </b>
-          (excl btw.).
+          (excl. BTW).
           <br />
           <br />
           Dit alles wordt u natuurlijk <b>uitgebreid geinformeerd</b> d.m.v. een
@@ -241,3 +346,11 @@ const Prices = () => (
 );
 
 export default Prices;
+
+SalePrice.defaultProps = {
+  indivPrice: null,
+};
+
+SalePrice.propTypes = {
+  indivPrice: PropTypes.number,
+};

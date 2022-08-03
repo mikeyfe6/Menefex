@@ -12,8 +12,8 @@ const AboutPage = () => (
   <Layout>
     <SEO
       title="About"
-      description="Kom meer te weten over Menefex."
-      keywords="over menefex, doelen, biografie, motivatie, spotify playlist, stayvibin"
+      description="Kom meer te weten over Menefex, de oprichter Michael Fransman, doelen & streven en meer..."
+      keywords="over menefex, doelen, biografie, motivatie, spotify playlist, stayvibin, gespecialiseerd, webmediabedrijf, michael fransman, verhaal, about"
       pathname="/about/"
     />
 
@@ -60,8 +60,8 @@ const AboutPage = () => (
               Wij bouwen onze softwareproducten op maatwerk en zorgen dat de
               klant zich zoveel mogelijk kan relativeren met het eindproduct.
               Wij zijn van mening dat de functionaliteit in balans moet zijn met
-              de visuele aspecten van de website/webapplicatie voor een ultieme
-              ervaring.
+              de visuele aspecten van de website / webapplicatie voor een
+              ultieme ervaring.
             </p>
           </Animated>
           <br />
