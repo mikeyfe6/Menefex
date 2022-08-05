@@ -132,7 +132,7 @@ const IndexPage = () => {
       <div id="actualscroll" className="extrawhitespace" />
 
       <ScrollAnimation
-        animateIn="fadeInRight"
+        animateIn="fadeInLeft"
         delay={250}
         offset={50}
         duration={2}
@@ -144,7 +144,7 @@ const IndexPage = () => {
       <br />
 
       <ScrollAnimation
-        animateIn="fadeInLeft"
+        animateIn="fadeInRight"
         delay={900}
         duration={2}
         animateOnce
@@ -161,7 +161,7 @@ const IndexPage = () => {
       <div id="servicescroll" className="extrawhitespace" />
 
       <ScrollAnimation
-        animateIn="fadeInLeft"
+        animateIn="fadeInRight"
         delay={250}
         offset={50}
         duration={2}
@@ -173,7 +173,7 @@ const IndexPage = () => {
       <br />
 
       <ScrollAnimation
-        animateIn="fadeInRight"
+        animateIn="fadeInLeft"
         delay={900}
         duration={2}
         animateOnce
