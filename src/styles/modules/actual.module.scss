@@ -1,0 +1,39 @@
+@import '../customs/functions';
+@import '../customs/colors';
+@import '../customs/fonts';
+
+.actual-container {
+  @include smoothtrans;
+
+  .actual-wrapper {
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .actual-img {
+    }
+
+    .actual-text {
+      max-width: 550px;
+      @include fontslg;
+
+      padding: 0.5rem 1rem 1.5rem 1rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .actual-text {
+    @include fontsmb;
+
+    h4 {
+      font-size: 1.5em;
+    }
+  }
+
+  .actual-img {
+    width: 100vw;
+  }
+}

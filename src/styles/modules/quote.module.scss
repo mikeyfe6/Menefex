@@ -51,6 +51,7 @@
 
   .quote-text {
     @include fontslg;
+    vertical-align: text-top;
     font-size: 0.825em;
     margin-top: 15%;
     width: 90%;
@@ -112,6 +113,22 @@
   width: 90%;
 }
 
+@media (min-width: 1200px) {
+  .endline {
+    display: none;
+  }
+
+  .quote-wrapper {
+    padding: 5%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .quote-block {
+    min-height: 0 !important;
+  }
+}
+
 @media (max-width: 768px) {
   .quote-wrapper {
     padding: 5%;
@@ -146,17 +163,5 @@
   .quote-text {
     @include fontsmb;
     margin-top: 10% !important;
-  }
-}
-
-@media (min-width: 768px) {
-  .quote-wrapper {
-    padding: 5%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .endline {
-    display: none;
   }
 }

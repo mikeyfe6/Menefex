@@ -9,6 +9,7 @@ import Hero from '../components/hero';
 import Quote from '../components/quote';
 import Projects from '../components/slider';
 import Smallbio from '../components/smallbio';
+import Actual from '../components/actual';
 
 import '../styles/index.scss';
 
@@ -103,8 +104,8 @@ const IndexPage = () => {
 
       <ScrollAnimation
         animateIn="fadeInRight"
-        delay={400}
-        offset={100}
+        delay={250}
+        offset={50}
         duration={2}
         animateOnce
       >
@@ -115,7 +116,7 @@ const IndexPage = () => {
 
       <ScrollAnimation
         animateIn="fadeInLeft"
-        delay={1150}
+        delay={900}
         duration={2}
         animateOnce
       >
@@ -128,12 +129,41 @@ const IndexPage = () => {
         <div className="vertical" />
       </ScrollAnimation>
 
+      <div id="actualscroll" className="extrawhitespace" />
+
+      <ScrollAnimation
+        animateIn="fadeInRight"
+        delay={250}
+        offset={50}
+        duration={2}
+        animateOnce
+      >
+        <h3 className="hometitles">Actualiteiten</h3>
+      </ScrollAnimation>
+
+      <br />
+
+      <ScrollAnimation
+        animateIn="fadeInLeft"
+        delay={900}
+        duration={2}
+        animateOnce
+      >
+        <Actual />
+      </ScrollAnimation>
+
+      <div className="extrawhitespace" />
+
+      <ScrollAnimation animateIn="zoomIn" delay={50} duration={3} animateOnce>
+        <div className="vertical" />
+      </ScrollAnimation>
+
       <div id="servicescroll" className="extrawhitespace" />
 
       <ScrollAnimation
         animateIn="fadeInLeft"
-        delay={400}
-        offset={100}
+        delay={250}
+        offset={50}
         duration={2}
         animateOnce
       >
@@ -144,7 +174,7 @@ const IndexPage = () => {
 
       <ScrollAnimation
         animateIn="fadeInRight"
-        delay={1150}
+        delay={900}
         duration={2}
         animateOnce
       >
@@ -161,8 +191,8 @@ const IndexPage = () => {
 
       <ScrollAnimation
         animateIn="fadeInDown"
-        delay={400}
-        offset={100}
+        delay={250}
+        offset={50}
         duration={2}
         animateOnce
       >
@@ -173,7 +203,7 @@ const IndexPage = () => {
 
       <ScrollAnimation
         animateIn="fadeInUp"
-        delay={1150}
+        delay={900}
         duration={2}
         animateOnce
       >
