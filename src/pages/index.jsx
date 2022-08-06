@@ -138,7 +138,7 @@ const IndexPage = () => {
         duration={2}
         animateOnce
       >
-        <h3 className="hometitles">Actualiteiten</h3>
+        <h3 className="hometitles">Actueel</h3>
       </ScrollAnimation>
 
       <br />

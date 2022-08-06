@@ -314,21 +314,35 @@ const Prices = () => (
           <br />
           <br />U bent uiteraard ook voor de <b>kleinere taken</b> bij het
           juiste adres, denk bijvoorbeeld aan <b>onderhoud</b>, een{' '}
-          <b>nieuwe logo</b>, een <b>toevoeging</b> op uw website of meer{' '}
-          <b>zienswaardigheid in Google</b>. Noem maar op, maak het zo gek als u
+          <b>nieuw logo</b>, <b>extra toevoegingen</b> of <b>toepassingen</b> op
+          uw website, beter <b>zienswaardigheid via de zoekresultaten (SEO)</b>{' '}
+          op bijv. Google, Bing, Yahoo... Noem maar op, maak het zo gek als u
           wilt. <u>Wij fixen het!</u>
           <br />
           <br />
-          Wel variëren deze prijzen <b>vanaf €150,-</b> (excl. BTW). Mocht het
-          gaan om <b>grotere projecten</b> die meer tijd vergen, zoals het
-          vernieuwen van een bestaande website hanteren we een prijs van{' '}
-          <b>€45,- per uur </b>
-          (excl. BTW).
+          Ook de <b>grotere projecten</b> die meer tijd vergen, zoals het
+          vernieuwen van een bestaande website pakken we met beide handen aan.
           <br />
           <br />
-          Dit alles wordt u natuurlijk <b>uitgebreid geinformeerd</b> d.m.v. een
-          vrijblijvend terugbelverzoek of via de mail, mocht u er niet uitkomen
-          welk pakket het beste u wensen vervult.
+          Alle genoemde services & diensten vallen onder een prijs van{' '}
+          <b>€ 45,- per uur (excl. BTW). </b>
+          <br />
+          <br />
+          Mocht u er niet uitkomen welk <b>pakket</b> u het beste schikt... Geen
+          probleem! Wij helpen u graag verder. Vraag een <b>terugbelverzoek</b>{' '}
+          hieronder aan, <b>bel</b> of <b>mail</b> ons en alles wordt u{' '}
+          <b>uitgebreid geinformeerd</b>.
+          <br />
+          <br />* Download{' '}
+          <a
+            href="https://menefex.nl/Menefex-PLIST.pdf"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <b>hier</b>{' '}
+          </a>
+          een <u> overzicht</u> van onze prijzen & extraatjes in <b>pdf</b>
+          -vorm.
         </p>
       </Animated>
       <div id="callscroll" />

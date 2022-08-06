@@ -19,6 +19,7 @@ const Actual = () => {
         slug
         publishedDate
         image {
+          title
           gatsbyImageData(
             width: 625
             placeholder: BLURRED

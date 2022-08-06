@@ -20,7 +20,7 @@ const Form = () => {
     company: '',
     email: '',
     tel: '',
-    subject: 'Ik wil graag een offerte aanvragen',
+    subject: 'Ik wil een offerte aanvragen',
     text: '',
   });
 
@@ -142,10 +142,7 @@ const Form = () => {
                         onChange={handleChange}
                         required
                       >
-                        <option
-                          value="Ik wil graag een offerte aanvragen"
-                          selected
-                        >
+                        <option value="Ik wil een offerte aanvragen">
                           Offerte aanvragen
                         </option>
                         <option value="Ik wil een samenwerking aangaan">
