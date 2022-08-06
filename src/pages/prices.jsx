@@ -315,9 +315,10 @@ const Prices = () => (
           <br />U bent uiteraard ook voor de <b>kleinere taken</b> bij het
           juiste adres, denk bijvoorbeeld aan <b>onderhoud</b>, een{' '}
           <b>nieuw logo</b>, <b>extra toevoegingen</b> of <b>toepassingen</b> op
-          uw website, beter <b>zienswaardigheid via de zoekresultaten (SEO)</b>{' '}
-          op bijv. Google, Bing, Yahoo... Noem maar op, maak het zo gek als u
-          wilt. <u>Wij fixen het!</u>
+          uw website, webapp of webshop, beter{' '}
+          <b>zienswaardigheid via de zoekresultaten (SEO)</b> op bijv. Google,
+          Bing, Yahoo... Noem maar op, maak het zo gek als u wilt.{' '}
+          <u>Wij fixen het!</u>
           <br />
           <br />
           Ook de <b>grotere projecten</b> die meer tijd vergen, zoals het
