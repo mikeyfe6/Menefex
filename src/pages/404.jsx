@@ -27,3 +27,11 @@ const NotFound = () => (
 );
 
 export default NotFound;
+
+export const Head = () => (
+  <SEO
+    title="404"
+    description="oepss.. Pagina niet gevonden!"
+    pathname="/404/"
+  />
+);

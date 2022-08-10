@@ -24,10 +24,11 @@ const BodyAttributes = {
   // 'data-theme': 'dark',
 };
 
-exports.onRenderBody = (
-  { setHeadComponents, setHtmlAttributes, setBodyAttributes },
-  pluginOptions,
-) => {
+exports.onRenderBody = ({
+  setHeadComponents,
+  setHtmlAttributes,
+  setBodyAttributes,
+}) => {
   setHtmlAttributes(HtmlAttributes);
   setHeadComponents(HeadComponents);
   setBodyAttributes(BodyAttributes);

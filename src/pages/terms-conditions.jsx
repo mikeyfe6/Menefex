@@ -7,11 +7,6 @@ import Layout from '../components/layout';
 
 const TermsConditions = () => (
   <Layout>
-    <SEO
-      title="Terms & Conditions"
-      description="Bekijk hier de algemene voorwaarden die wij als Menefex nastreven."
-      pathname="/terms-conditions/"
-    />
     <div className="termscondit">
       <div className="smallwhitespace" />
       <hr />
@@ -666,3 +661,11 @@ const TermsConditions = () => (
 );
 
 export default TermsConditions;
+
+export const Head = () => (
+  <SEO
+    title="Terms & Conditions"
+    description="Bekijk hier de algemene voorwaarden die wij als Menefex nastreven."
+    pathname="/terms-conditions/"
+  />
+);

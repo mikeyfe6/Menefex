@@ -2,16 +2,11 @@ import React from 'react';
 
 import { Link } from 'gatsby';
 
-import SEO from '../components/seo';
 import Layout from '../components/layout';
+import SEO from '../components/seo';
 
 const PrivacyPolicy = () => (
   <Layout>
-    <SEO
-      title="Privacy Policy"
-      description="Hoe gaan wij om met uw gegevens en meer? Bekijk onze privacybeleid."
-      pathname="/privacy-policy/"
-    />
     <div className="privacypol">
       <div className="col-lg-9">
         <div className="smallwhitespace" />
@@ -353,3 +348,11 @@ const PrivacyPolicy = () => (
 );
 
 export default PrivacyPolicy;
+
+export const Head = () => (
+  <SEO
+    title="Privacy Policy"
+    description="Hoe gaan wij om met uw gegevens en meer? Bekijk onze privacybeleid."
+    pathname="/privacy-policy/"
+  />
+);

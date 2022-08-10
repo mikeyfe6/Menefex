@@ -7,11 +7,6 @@ import Layout from '../components/layout';
 
 const ThankYouPage = () => (
   <Layout>
-    <SEO
-      title="Thankyou!"
-      description="Success! Uw bericht is aangekomen."
-      pathname="/success/"
-    />
     <div>
       <div className="smallwhitespace" />
       <hr />
@@ -29,3 +24,11 @@ const ThankYouPage = () => (
 );
 
 export default ThankYouPage;
+
+export const Head = () => (
+  <SEO
+    title="Bedankt!"
+    description="Success! Uw bericht is aangekomen."
+    pathname="/success/"
+  />
+);
