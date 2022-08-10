@@ -18,7 +18,7 @@ import {
   quotePriceInfo,
 } from '../styles/modules/quote.module.scss';
 
-// TODO: Responsive maken!
+// *GEFIXT TODO: Responsive maken!
 
 const Quote = () => (
   //   const today = new Date()

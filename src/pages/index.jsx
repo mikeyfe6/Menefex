@@ -5,6 +5,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+
 import Hero from '../components/hero';
 import Quote from '../components/quote';
 import Projects from '../components/slider';
@@ -13,19 +14,142 @@ import Actual from '../components/actual';
 
 import '../styles/index.scss';
 
-// TODO: pagina helemaal responsive maken
+// *GEFIXT TODO: pagina helemaal responsive maken
 
-const IndexPage = () => {
+const IndexPage = () => (
+  <Layout>
+    <Hero />
+
+    <ScrollAnimation animateIn="zoomIn" delay={50} duration={3} animateOnce>
+      <div className="specvertical" />
+    </ScrollAnimation>
+
+    <br />
+
+    <div id="biografiescroll" className="extrawhitespace" />
+
+    <ScrollAnimation
+      animateIn="fadeInRight"
+      delay={250}
+      offset={50}
+      duration={2}
+      animateOnce
+    >
+      <h3 className="hometitles">Biografie</h3>
+    </ScrollAnimation>
+
+    <br />
+
+    <ScrollAnimation
+      animateIn="fadeInLeft"
+      delay={900}
+      duration={2}
+      animateOnce
+    >
+      <Smallbio />
+    </ScrollAnimation>
+
+    <div className="extrawhitespace" />
+
+    <ScrollAnimation animateIn="zoomIn" delay={50} duration={3} animateOnce>
+      <div className="vertical" />
+    </ScrollAnimation>
+
+    <div id="actualscroll" className="extrawhitespace" />
+
+    <ScrollAnimation
+      animateIn="fadeInLeft"
+      delay={250}
+      offset={50}
+      duration={2}
+      animateOnce
+    >
+      <h3 className="hometitles">Actueel</h3>
+    </ScrollAnimation>
+
+    <br />
+
+    <ScrollAnimation
+      animateIn="fadeInRight"
+      delay={900}
+      duration={2}
+      animateOnce
+    >
+      <Actual />
+    </ScrollAnimation>
+
+    <div className="extrawhitespace" />
+
+    <ScrollAnimation animateIn="zoomIn" delay={50} duration={3} animateOnce>
+      <div className="vertical" />
+    </ScrollAnimation>
+
+    <div id="servicescroll" className="extrawhitespace" />
+
+    <ScrollAnimation
+      animateIn="fadeInRight"
+      delay={250}
+      offset={50}
+      duration={2}
+      animateOnce
+    >
+      <h3 className="hometitles">Services & Diensten</h3>
+    </ScrollAnimation>
+
+    <br />
+
+    <ScrollAnimation
+      animateIn="fadeInLeft"
+      delay={900}
+      duration={2}
+      animateOnce
+    >
+      <Quote />
+    </ScrollAnimation>
+
+    <div className="extrawhitespace" />
+
+    <ScrollAnimation animateIn="zoomIn" delay={50} duration={3} animateOnce>
+      <div className="vertical" />
+    </ScrollAnimation>
+
+    <div id="projectscroll" className="extrawhitespace" />
+
+    <ScrollAnimation
+      animateIn="fadeInDown"
+      delay={250}
+      offset={50}
+      duration={2}
+      animateOnce
+    >
+      <h3 className="hometitles"> Recente Projecten</h3>
+    </ScrollAnimation>
+
+    <br />
+
+    <ScrollAnimation animateIn="fadeInUp" delay={900} duration={2} animateOnce>
+      <Projects />
+    </ScrollAnimation>
+
+    <div className="whitespace" />
+  </Layout>
+);
+
+export default IndexPage;
+
+export const Head = () => {
   const { site } = useStaticQuery(
     graphql`
       query {
         site {
           siteMetadata {
             description
+            favicon
             siteUrl
             tel
             author
             bizEmail
+            image
           }
         }
       }
@@ -40,9 +164,9 @@ const IndexPage = () => {
       '@type': 'Person',
       name: site.siteMetadata.author,
     },
-    image: `${site.siteMetadata.siteUrl}/Menefex-scl.png`,
-    logo: 'https://i.postimg.cc/YSf8SKzs/Menefex-FAVI.png',
-    '@id': 'https://menefex.nl/#localbusiness',
+    image: `${site.siteMetadata.siteUrl}${site.siteMetadata.image}`,
+    logo: `${site.siteMetadata.siteUrl}${site.siteMetadata.favicon}`,
+    '@id': `${site.siteMetadata.siteUrl}/#localbusiness`,
     description: site.siteMetadata.description,
     url: site.siteMetadata.siteUrl,
     telephone: site.siteMetadata.tel,
@@ -83,136 +207,12 @@ const IndexPage = () => {
       'https://open.spotify.com/playlist/08UGoWTjvpuooABCWyPx0m?si=caXZyz28R8u8Ck683qLgQA',
     ],
   };
-
   return (
-    <Layout>
-      <SEO
-        title="#1 Website Specialist"
-        description="Website, webshop of webapplicatie laten maken? Al vanaf €295,- | Menefex Webmediabedrijf uit Amsterdam staat garant voor al uw webgerelateerde wensen en ambities."
-        keywords="website, webapplicatie, webshop, wordpress, SEO, amsterdam, specialist, menefex, webmediabedrijf, modern, professioneel, ontwikkelen, bob, webbeheerder, webmaster, projecten, portfolio, services, diensten, biografie, web development, app development, jamstack, michael fransman, gatsby, laten bouwen"
-        schemaMarkup={schema}
-      />
-      <Hero />
-
-      <ScrollAnimation animateIn="zoomIn" delay={50} duration={3} animateOnce>
-        <div className="specvertical" />
-      </ScrollAnimation>
-
-      <br />
-
-      <div id="biografiescroll" className="extrawhitespace" />
-
-      <ScrollAnimation
-        animateIn="fadeInRight"
-        delay={250}
-        offset={50}
-        duration={2}
-        animateOnce
-      >
-        <h3 className="hometitles">Biografie</h3>
-      </ScrollAnimation>
-
-      <br />
-
-      <ScrollAnimation
-        animateIn="fadeInLeft"
-        delay={900}
-        duration={2}
-        animateOnce
-      >
-        <Smallbio />
-      </ScrollAnimation>
-
-      <div className="extrawhitespace" />
-
-      <ScrollAnimation animateIn="zoomIn" delay={50} duration={3} animateOnce>
-        <div className="vertical" />
-      </ScrollAnimation>
-
-      <div id="actualscroll" className="extrawhitespace" />
-
-      <ScrollAnimation
-        animateIn="fadeInLeft"
-        delay={250}
-        offset={50}
-        duration={2}
-        animateOnce
-      >
-        <h3 className="hometitles">Actueel</h3>
-      </ScrollAnimation>
-
-      <br />
-
-      <ScrollAnimation
-        animateIn="fadeInRight"
-        delay={900}
-        duration={2}
-        animateOnce
-      >
-        <Actual />
-      </ScrollAnimation>
-
-      <div className="extrawhitespace" />
-
-      <ScrollAnimation animateIn="zoomIn" delay={50} duration={3} animateOnce>
-        <div className="vertical" />
-      </ScrollAnimation>
-
-      <div id="servicescroll" className="extrawhitespace" />
-
-      <ScrollAnimation
-        animateIn="fadeInRight"
-        delay={250}
-        offset={50}
-        duration={2}
-        animateOnce
-      >
-        <h3 className="hometitles">Services & Diensten</h3>
-      </ScrollAnimation>
-
-      <br />
-
-      <ScrollAnimation
-        animateIn="fadeInLeft"
-        delay={900}
-        duration={2}
-        animateOnce
-      >
-        <Quote />
-      </ScrollAnimation>
-
-      <div className="extrawhitespace" />
-
-      <ScrollAnimation animateIn="zoomIn" delay={50} duration={3} animateOnce>
-        <div className="vertical" />
-      </ScrollAnimation>
-
-      <div id="projectscroll" className="extrawhitespace" />
-
-      <ScrollAnimation
-        animateIn="fadeInDown"
-        delay={250}
-        offset={50}
-        duration={2}
-        animateOnce
-      >
-        <h3 className="hometitles"> Recente Projecten</h3>
-      </ScrollAnimation>
-
-      <br />
-
-      <ScrollAnimation
-        animateIn="fadeInUp"
-        delay={900}
-        duration={2}
-        animateOnce
-      >
-        <Projects />
-      </ScrollAnimation>
-
-      <div className="whitespace" />
-    </Layout>
+    <SEO
+      title="#1 Website Specialist"
+      description="Website, webshop of webapplicatie laten maken? Al vanaf €295,- | Menefex Webmediabedrijf uit Amsterdam staat garant voor al uw webgerelateerde wensen en ambities."
+      keywords="website, webapplicatie, webshop, wordpress, SEO, amsterdam, specialist, menefex, webmediabedrijf, modern, professioneel, ontwikkelen, bob, webbeheerder, webmaster, projecten, portfolio, services, diensten, biografie, web development, app development, jamstack, michael fransman, gatsby, laten bouwen"
+      schemaMarkup={schema}
+    />
   );
 };
-
-export default IndexPage;

@@ -35,14 +35,21 @@ module.exports = {
     siteUrl: 'https://menefex.nl',
     url: 'https://menefex.nl',
     tel: '+31611054318',
-    image: '/Menefex-scl.png',
+
     title: 'Menefex',
-    titleTemplate: '%s · Menefex',
+    description:
+      'Bij Menefex bouwen wij websites, webshops & webapplicaties met oog voor detail.',
+
     author: 'Michael Fransman',
-    description: 'Wij bouwen websites & webapps met oog voor detail.',
+
     twitterUsername: '@MenefexWMB',
+
     bizEmail: 'info@menefex.nl',
     authorEmail: 'michaelfransman@menefex.nl',
+
+    image: '/Menefex-scl.png',
+    favicon: '/Menefex-favi.png',
+    // titleTemplate: '%s · Menefex',
   },
   plugins: [
     {
@@ -57,7 +64,6 @@ module.exports = {
         // gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_PREVIEW_NAME",
       },
     },
-    'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-plugin-eslint',
       options: {
@@ -97,7 +103,7 @@ module.exports = {
           description: site.siteMetadata.description,
           site_url: site.siteMetadata.siteUrl,
           feed_url: `${site.siteMetadata.siteUrl}/rss.xml`,
-          image_url: 'https://i.postimg.cc/YSf8SKzs/Menefex-FAVI.png',
+          image_url: `${site.siteMetadata.siteUrl}${site.siteMetadata.favicon}`,
           webMaster: `${site.siteMetadata.bizEmail} (${site.siteMetadata.title})`,
           managingEditor: `${site.siteMetadata.authorEmail} (${site.siteMetadata.author})`,
           copyright: `© 2019 - ${new Date().getFullYear()} ${
@@ -113,15 +119,15 @@ module.exports = {
             {
               'webfeeds:cover': {
                 _attr: {
-                  image: 'https://i.postimg.cc/CMqyFdfP/Menefex-SCL-TRANS.png',
+                  image: `${site.siteMetadata.siteUrl}${site.siteMetadata.image}`,
                 },
               },
             },
             {
-              'webfeeds:icon': 'https://i.postimg.cc/YSf8SKzs/Menefex-FAVI.png',
+              'webfeeds:icon': `${site.siteMetadata.siteUrl}${site.siteMetadata.favicon}`,
             },
             {
-              'webfeeds:logo': 'https://i.postimg.cc/ZqLVVt2h/Menefex-ICON.png',
+              'webfeeds:logo': `${site.siteMetadata.siteUrl}${site.siteMetadata.favicon}`,
             },
             { 'webfeeds:accentColor': 'FFCC00' },
             {
@@ -140,6 +146,7 @@ module.exports = {
             serialize: ({ query: { site, allContentfulBlogPost } }) =>
               allContentfulBlogPost.edges.map((edge) => ({
                 title: edge.node.title,
+                id: edge.node.id,
                 author: site.siteMetadata.authorEmail,
                 description: edge.node.subtitle,
                 date: edge.node.updatedAt,
@@ -163,6 +170,7 @@ module.exports = {
                 allContentfulBlogPost(sort: { fields: publishedDate, order: DESC }) {
                   edges {
                     node {
+                      id
                       title
                       subtitle
                       slug

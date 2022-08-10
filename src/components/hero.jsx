@@ -29,9 +29,6 @@ import {
   animTypewriter,
 } from '../styles/modules/typewriter.module.scss';
 
-// TODO: 'lees meer' naar de volgende section laten scrollen
-// TODO: fix the elements on px's for fixed
-
 const Hero = () => (
   //   const today = new Date()
   <div className="container-fluid">

@@ -29,8 +29,6 @@ import {
   contactmail,
 } from '../styles/modules/form.module.scss';
 
-// TODO: ENV goed instellen!
-
 const Box = () => (
   <div>
     <div className={contactbox}>
@@ -200,10 +198,7 @@ const Box = () => (
         <br />
         <div className="col-md">
           <p className={contactgev}>
-            <b>
-              {' '}
-              <span className={uniqcol}>Menefex</span> Webmediabedrijf{' '}
-            </b>
+            <b>Menefex Webmediabedrijf</b>
             <br />
             gevestigd in Amsterdam-Zuidoost
             <br />

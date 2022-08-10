@@ -23,13 +23,6 @@ import {
 
 const workPage = () => (
   <Layout>
-    <SEO
-      title="Portfolio"
-      description="Wij zijn trots op ons werk en showcasen dat ook graag! Neem een kijk in ons archief van recente projecten."
-      keywords="work, website, webapplicatie, projecten, eternity, black harmony, ds melodies, afrodiashpere, wordpress, reactjs, gatsby, elementor, github, portfolio, archief"
-      pathname="/work/"
-    />
-
     <div>
       <div className="smallwhitespace" />
       <div className="row">
@@ -363,3 +356,12 @@ const workPage = () => (
 );
 
 export default workPage;
+
+export const Head = () => (
+  <SEO
+    title="Portfolio"
+    description="Wij zijn trots op ons werk en showcasen dat ook graag! Neem een kijk in ons archief van recente projecten."
+    keywords="work, website, webapplicatie, projecten, eternity, black harmony, ds melodies, afrodiashpere, wordpress, reactjs, gatsby, elementor, github, portfolio, archief"
+    pathname="/work/"
+  />
+);

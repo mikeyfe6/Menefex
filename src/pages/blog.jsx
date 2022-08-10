@@ -15,8 +15,6 @@ import {
   bloggepost,
 } from '../styles/modules/blog.module.scss';
 
-// TODO: images moeten in hun frame komen
-
 // CONTENTFUL blogposts genereren
 const BlogPage = () => {
   const data = useStaticQuery(graphql`
@@ -45,13 +43,6 @@ const BlogPage = () => {
   // CONTENTFUL blogposts genereren
   return (
     <Layout>
-      <SEO
-        title="Blog"
-        description="What goes through our mind... Our views on life, technology, culture, the past, the future and more..."
-        keywords="blog, posts, views, nieuws, stories, nieuws, content, verhalen, news, mind, actualiteiten"
-        pathname="/blog/"
-      />
-
       <div>
         <div className="smallwhitespace" />
         <h1 className="page-title">
@@ -78,6 +69,8 @@ const BlogPage = () => {
                       Auteur: <strong>{edge.node.author}</strong>{' '}
                     </p>
                   </div>
+
+                  {/* TODO: image naar GatsbyImage */}
 
                   <img
                     src={edge.node.image.file.url}
@@ -137,3 +130,12 @@ const BlogPage = () => {
 };
 
 export default BlogPage;
+
+export const Head = () => (
+  <SEO
+    title="Blog"
+    description="What goes through our mind... Our views on life, technology, culture, the past, the future and more..."
+    keywords="blog, posts, views, nieuws, stories, nieuws, content, verhalen, news, mind, actualiteiten, actueel"
+    pathname="/blog/"
+  />
+);

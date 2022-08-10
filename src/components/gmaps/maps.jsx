@@ -30,8 +30,8 @@ const SimpleMap = () => (
         defaultZoom={defaultProps.zoom}
       >
         <Marker
-          lat={52.31049387419748}
-          lng={4.9737379576208856}
+          lat={defaultProps.center.lat}
+          lng={defaultProps.center.lng}
           name="Menefex Webmediabedrijf"
         />
       </GoogleMapReact>

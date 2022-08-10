@@ -38,12 +38,6 @@ const SalePrice = ({ indivPrice }) => {
 
 const Prices = () => (
   <Layout>
-    <SEO
-      title="Prijzen & tarieven"
-      description="Hier ziet u een indicatie van onze scherpe prijzen. Heeft u liever een georiënteerd gesprek, neem contact met ons op of vraag een terugbelverzoek aan."
-      keywords="prijzen, tarieven, budget plan, starter plan, established plan, business plan, actie, terugbelverzoek, prijslijst, pakket, offerte, bel mij terug, prices"
-      pathname="/prices/"
-    />
     <div>
       <div className="smallwhitespace" />
       <h1 className="page-title">
@@ -369,3 +363,12 @@ SalePrice.defaultProps = {
 SalePrice.propTypes = {
   indivPrice: PropTypes.number,
 };
+
+export const Head = () => (
+  <SEO
+    title="Prijzen & tarieven"
+    description="Hier ziet u een indicatie van onze scherpe prijzen. Heeft u liever een georiënteerd gesprek, neem contact met ons op of vraag een terugbelverzoek aan."
+    keywords="prijzen, tarieven, budget plan, starter plan, established plan, business plan, actie, terugbelverzoek, prijslijst, pakket, offerte, bel mij terug, prices"
+    pathname="/prices/"
+  />
+);

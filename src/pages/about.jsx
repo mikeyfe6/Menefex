@@ -10,13 +10,6 @@ import { thick, spotcont, spotext } from '../styles/modules/spoti.module.scss';
 
 const AboutPage = () => (
   <Layout>
-    <SEO
-      title="About"
-      description="Kom meer te weten over Menefex, de oprichter Michael Fransman, doelen & streven en meer..."
-      keywords="over menefex, doelen, biografie, motivatie, spotify playlist, stayvibin, gespecialiseerd, webmediabedrijf, michael fransman, verhaal, about"
-      pathname="/about/"
-    />
-
     <div className="smallwhitespace" />
     <div>
       <div className="row">
@@ -141,3 +134,12 @@ const AboutPage = () => (
 );
 
 export default AboutPage;
+
+export const Head = () => (
+  <SEO
+    title="About"
+    description="Kom meer te weten over Menefex, de oprichter Michael Fransman, doelen & streven en meer..."
+    keywords="over menefex, doelen, biografie, motivatie, spotify playlist, stayvibin, gespecialiseerd, webmediabedrijf, michael fransman, verhaal, about"
+    pathname="/about/"
+  />
+);

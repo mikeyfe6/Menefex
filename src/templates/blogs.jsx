@@ -1,4 +1,3 @@
-/* eslint-disable react/destructuring-assignment */
 /* eslint-disable react/prop-types */
 
 import React, { useEffect } from 'react';
@@ -19,13 +18,11 @@ import mini from '../logo/Menefex-icon.svg';
 
 import '../styles/blogpost.scss';
 
-// TODO: Add 'author' & fix the blogpost page accordingly to Traversy Media
-
 export const query = graphql`
   query ($slug: String!) {
     contentfulBlogPost(slug: { eq: $slug }) {
       title
-      contentful_id
+      contentfulId: contentful_id
       subtitle
       slug
       keywords
@@ -77,13 +74,15 @@ const options = {
     [MARKS.BOLD]: (text) => <Bold>{text}</Bold>,
   },
   renderNode: {
-    [BLOCKS.EMBEDDED_ASSET]: (node) => (
-      <img
-        alt={node.data.target.title}
-        src={node.data.target.file.url}
-        className="img-resize"
-      />
-    ),
+    [BLOCKS.EMBEDDED_ASSET]: (node) => {
+      const {
+        data: {
+          target: { title, file },
+        },
+      } = node;
+
+      return <img alt={title} src={file.url} className="img-resize" />;
+    },
     [BLOCKS.EMBEDDED_ENTRY]: (node) => (
       // manipulate here your embedded entry
       <div>Im an embedded entry, {node}</div>
@@ -142,6 +141,22 @@ const DotList = ({ children }) => <li className="listitemness">{children}</li>;
 const Horizontal = () => <hr className="horizontness" />;
 
 const Blog = (props) => {
+  const {
+    data: {
+      contentfulBlogPost: {
+        title,
+        publishedPost,
+        subtitle,
+        image,
+        body,
+        author,
+        updatedPost,
+        slug,
+        contentfulId,
+      },
+    },
+  } = props;
+
   // const options = {
   //   renderNode: {
   //     'embedded-asset-block': (node) => {
@@ -151,33 +166,6 @@ const Blog = (props) => {
   //     },
   //   },
   // };
-
-  // prettier-ignore
-  const schema = {
-    '@context': 'https://schema.org',
-    '@type': 'BlogPosting',
-    mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': `https://menefex.nl/blog/${props.data.contentfulBlogPost.slug}/`,
-    },
-    headline: props.data.contentfulBlogPost.title,
-    description: props.data.contentfulBlogPost.subtitle,
-    image: `https:${props.data.contentfulBlogPost.image.file.url}`,
-    author: {
-      '@type': 'Person',
-      name: props.data.contentfulBlogPost.author,
-    },
-    publisher: {
-      '@type': 'Organization',
-      name: 'Menefex',
-      logo: {
-        '@type': 'ImageObject',
-        url: 'https://i.postimg.cc/YSf8SKzs/Menefex-FAVI.png',
-      },
-    },
-    datePublished: props.data.contentfulBlogPost.publishedSchema,
-    dateModified: props.data.contentfulBlogPost.updatedSchema,
-  };
 
   useEffect(() => {
     const script = document.createElement('script');
@@ -199,15 +187,6 @@ const Blog = (props) => {
     <Layout>
       <div className="smallwhitespace" />
       <div className="container">
-        <SEO
-          title={props.data.contentfulBlogPost.title}
-          description={props.data.contentfulBlogPost.subtitle}
-          keywords={props.data.contentfulBlogPost.keywords.join(', ')}
-          pathname={`/blog/${props.data.contentfulBlogPost.slug}/`}
-          custom={`https:${props.data.contentfulBlogPost.image.file.url}`}
-          schemaMarkup={schema}
-          article
-        />
         <Link to="/blog/">
           <button type="button" className="gobackbtn">
             <FontAwesomeIcon icon="backward" />{' '}
@@ -226,12 +205,8 @@ const Blog = (props) => {
             <img className="blog-mini" src={mini} alt="Menefex Icon" />
 
             <div className="nexttologo">
-              <h1 className="post-title">
-                {props.data.contentfulBlogPost.title}
-              </h1>
-              <p className="post-date">
-                Gepost op {props.data.contentfulBlogPost.publishedPost}
-              </p>
+              <h1 className="post-title">{title}</h1>
+              <p className="post-date">Gepost op {publishedPost}</p>
             </div>
           </Animated>
           <div className="clr" />
@@ -247,9 +222,7 @@ const Blog = (props) => {
             animationInDelay={2250}
             animationInDuration={2000}
           >
-            <h2 className="post-subtitle">
-              {props.data.contentfulBlogPost.subtitle}
-            </h2>{' '}
+            <h2 className="post-subtitle">{subtitle}</h2>{' '}
           </Animated>
           <Animated
             animationIn="fadeIn"
@@ -257,24 +230,23 @@ const Blog = (props) => {
             animationInDuration={2000}
           >
             <img
-              src={`https:${props.data.contentfulBlogPost.image.file.url}`}
-              alt={props.data.contentfulBlogPost.title}
+              src={`https:${image.file.url}`}
+              alt={title}
               className="blogheadimage webfeedsFeaturedVisual"
             />
             <div className="post-content">
-              {renderRichText(props.data.contentfulBlogPost.body, options)}
+              {renderRichText(body, options)}
 
               <div className="whitespace" />
 
               <div className="post-authorcont">
                 <div className="post-author">
-                  <span className="post-authorspec">Auteur</span>{' '}
-                  {props.data.contentfulBlogPost.author}
+                  <span className="post-authorspec">Auteur</span> {author}
                   <br />
                   <span className="post-authorspec">
                     Laatst bijgewerkt
                   </span>{' '}
-                  {props.data.contentfulBlogPost.updatedPost}
+                  {updatedPost}
                 </div>
                 <img className="author-mini" src={mini} alt="Menefex Icon" />
               </div>
@@ -350,9 +322,9 @@ const Blog = (props) => {
             <div className="disqussion">
               <Disqus
                 config={{
-                  url: `https://menefex.nl/blog/${props.data.contentfulBlogPost.slug}/`,
-                  identifier: props.data.contentfulBlogPost.contentful_id,
-                  title: props.data.contentfulBlogPost.title,
+                  url: `https://menefex.nl/blog/${slug}/`,
+                  identifier: contentfulId,
+                  title,
                 }}
               />
             </div>
@@ -378,3 +350,57 @@ const Blog = (props) => {
 // `
 
 export default Blog;
+
+export const Head = (props) => {
+  const {
+    data: {
+      contentfulBlogPost: {
+        title,
+        subtitle,
+        author,
+        image,
+        slug,
+        publishedSchema,
+        updatedSchema,
+        keywords,
+      },
+    },
+  } = props;
+
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `https://menefex.nl/blog/${slug}/`,
+    },
+    headline: title,
+    description: subtitle,
+    image: `https:${image.file.url}`,
+    author: {
+      '@type': 'Person',
+      name: author,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Menefex',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://menefex.nl/Menefex-favi.png',
+      },
+    },
+    datePublished: publishedSchema,
+    dateModified: updatedSchema,
+  };
+  return (
+    <SEO
+      title={title}
+      description={subtitle}
+      keywords={keywords.join(', ')}
+      pathname={`/blog/${slug}/`}
+      custom={`https:${image.file.url}`}
+      schemaMarkup={schema}
+      article
+    />
+  );
+};

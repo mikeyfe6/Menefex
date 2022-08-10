@@ -1,7 +1,6 @@
 import React from 'react';
 
-import { Link } from 'gatsby';
-// import { graphql, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery, Link } from 'gatsby';
 
 import minilogo from '../logo/Menefex-icon.svg';
 
@@ -25,19 +24,23 @@ import {
   termscods,
 } from '../styles/modules/footer.module.scss';
 
-// TODO: footer copryrights in het midden zetten
-
 const Footer = () => {
-  // const data = useStaticQuery(graphql`
-  //   query {
-  //     site {
-  //       siteMetadata {
-  //         title
-  //         author
-  //       }
-  //     }
-  //   }
-  // `);
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+          bizEmail
+        }
+      }
+    }
+  `);
+
+  const {
+    site: {
+      siteMetadata: { title, bizEmail },
+    },
+  } = data;
 
   const today = new Date();
 
@@ -80,12 +83,12 @@ const Footer = () => {
               <p>connect with us</p>
               <h4>
                 <a
-                  href="mailto:info@menefex.nl"
+                  href={`mailto:${bizEmail}`}
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   {' '}
-                  <span className={mailfoot}>e:</span> info@menefex.nl
+                  <span className={mailfoot}>e:</span> {bizEmail}
                 </a>{' '}
                 ∙
                 <a href="tel:0611054318">
@@ -161,7 +164,7 @@ const Footer = () => {
         </div>
         <p className={termscods}>
           <span className="speccol">&copy;</span> 2019 - {today.getFullYear()}{' '}
-          <u>Menefex</u> <span className="speccol">|</span>
+          <u>{title}</u> <span className="speccol">|</span>
           <Link to="/privacy-policy/"> privacybeleid</Link>{' '}
           <span className="speccol">|</span>{' '}
           <Link to="/terms-conditions/"> algemene voorwaarden</Link>{' '}

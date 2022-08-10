@@ -17,8 +17,6 @@ import {
   choosing,
 } from '../styles/modules/call.module.scss';
 
-// TODO: ENV goed instellen!
-
 const Call = () => {
   const [inputs, setInputs] = useState({
     name: '',

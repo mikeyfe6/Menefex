@@ -1,7 +1,6 @@
 import React from 'react';
 
-import { StaticQuery, graphql } from 'gatsby';
-import { Helmet } from 'react-helmet';
+import { StaticQuery, graphql, Script } from 'gatsby';
 import PropTypes from 'prop-types';
 
 const query = graphql`
@@ -9,7 +8,6 @@ const query = graphql`
     site {
       siteMetadata {
         defaultTitle: title
-        titleTemplate
         defaultDescription: description
         siteUrl: url
         defaultImage: image
@@ -25,7 +23,6 @@ const SEO = ({
   image,
   pathname,
   article,
-  lang,
   keywords,
   custom,
   schemaMarkup,
@@ -36,7 +33,6 @@ const SEO = ({
       site: {
         siteMetadata: {
           defaultTitle,
-          titleTemplate,
           defaultDescription,
           siteUrl,
           defaultImage,
@@ -52,47 +48,42 @@ const SEO = ({
         url: `${siteUrl}${pathname || '/'}`,
         keywords:
           keywords ||
-          'webmediabedrijf, menefex, amsterdam, website laten maken, wordpress, reactjs',
+          'webmediabedrijf, menefex, amsterdam, website, webshop, webapplicatie laten maken, wordpress, reactjs',
       };
+
       return (
-        <Helmet
-          htmlAttributes={{
-            lang,
-          }}
-          title={seo.title}
-          titleTemplate={titleTemplate}
-          defer
-        >
-          <meta
+        <>
+          <title>{`${seo.title} · ${defaultTitle}`}</title>
+
+          {/* <meta
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
-          />
+          /> */}
 
           <meta name="description" content={seo.description} />
           <meta name="image" content={seo.image} />
           <meta name="keywords" content={seo.keywords} />
+          <meta property="fb:app_id" content={process.env.GATSBY_FB_APP_ID} />
 
-          <meta property="fb:app_id" content="277486370179723" />
+          {/* OG / Facebook etc. Meta Tags ! */}
 
           {seo.url && <meta property="og:url" content={seo.url} />}
           {seo.title && <meta property="og:title" content={seo.title} />}
           {seo.description && (
             <meta property="og:description" content={seo.description} />
           )}
-
           {seo.image && <meta property="og:image" content={seo.image} />}
-
-          <meta property="og:site_name" content="Menefex" />
+          <meta property="og:site_name" content={defaultTitle} />
           <meta property="og:locale" content="nl_NL" />
-
           {(article ? (
             false
           ) : (
             <meta property="og:type" content="website" />
           )) || <meta property="og:type" content="article" />}
-
           {/* <meta property="og:image:width" content="512" />
             <meta property="og:image:height" content="512" /> */}
+
+          {/* Twitter Meta Tags ! */}
 
           <meta property="twitter:card" content="summary" />
           {seo.url && <meta property="twitter:url" content={seo.url} />}
@@ -100,43 +91,27 @@ const SEO = ({
           {seo.description && (
             <meta property="twitter:description" content={seo.description} />
           )}
-
           {seo.image && <meta property="twitter:image" content={seo.image} />}
-
           <meta property="twitter:site" content={twitterUsername} />
           {twitterUsername && (
             <meta property="twitter:creator" content={twitterUsername} />
           )}
 
-          {/* Links Rel: Extentions & Plugins */}
-
-          <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
-          />
-
-          <link
-            rel="alternate"
-            type="application/rss+xml"
-            title="Menefex WMB: RSS Feeds"
-            href="https://menefex.nl/rss.xml"
-          />
-
           {schemaMarkup && (
-            <script type="application/ld+json">
+            <Script type="application/ld+json">
               {JSON.stringify(schemaMarkup)}
-            </script>
+            </Script>
           )}
-        </Helmet>
+        </>
       );
     }}
   />
 );
 
 export default SEO;
+
 SEO.propTypes = {
-  lang: PropTypes.string,
-  title: PropTypes.string,
+  title: PropTypes.string.isRequired,
   description: PropTypes.string,
   image: PropTypes.string,
   pathname: PropTypes.string,
@@ -146,8 +121,6 @@ SEO.propTypes = {
   schemaMarkup: PropTypes.instanceOf(Object),
 };
 SEO.defaultProps = {
-  lang: 'nl',
-  title: null,
   description: null,
   image: null,
   pathname: null,
