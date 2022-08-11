@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
-
 import React, { useEffect } from 'react';
+
+// import PropTypes from 'prop-types';
 
 import { graphql, Link } from 'gatsby';
 import { Animated } from 'react-animated-css';
@@ -404,3 +405,45 @@ export const Head = (props) => {
     />
   );
 };
+
+// Blog.propTypes = {
+//   data: PropTypes.shape({
+//     contentfulBlogPost: PropTypes.shape({
+//       title: PropTypes.string.isRequired,
+//       subtitle: PropTypes.string.isRequired,
+//       author: PropTypes.string.isRequired,
+//       image: PropTypes.shape({
+//         file: PropTypes.shape({
+//           url: PropTypes.string.isRequired,
+//         }),
+//       }),
+//       publishedPost: PropTypes.string.isRequired,
+//       updatedPost: PropTypes.string.isRequired,
+//       body: PropTypes.string.isRequired,
+//       slug: PropTypes.string.isRequired,
+//       keywords: PropTypes.arrayOf(PropTypes.string),
+//       contentfulId: PropTypes.string.isRequired,
+//     }),
+//   }),
+// };
+
+// Blog.defaultProps = {
+//   data: {
+//     contentfulBlogPost: {
+//       title: '',
+//       subtitle: '',
+//       author: '',
+//       image: {
+//         file: {
+//           url: '',
+//         },
+//       },
+//       publishedPost: '',
+//       updatedPost: '',
+//       body: '',
+//       slug: '',
+//       keywords: [],
+//       contentfulId: '',
+//     },
+//   },
+// };
