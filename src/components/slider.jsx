@@ -1,5 +1,3 @@
-/* eslint-disable no-lone-blocks */
-
 import React from 'react';
 
 import { GatsbyImage } from 'gatsby-plugin-image';
@@ -227,7 +225,7 @@ const Projects = () => {
               case 'DSMelodies-screen':
                 return dsMelodies;
               default:
-                return 'Een project title';
+                return null;
             }
           })()}
         </Carousel.Item>

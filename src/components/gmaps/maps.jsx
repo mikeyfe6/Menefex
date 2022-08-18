@@ -6,7 +6,7 @@ import Marker from './marker';
 
 import '../../styles/maps.scss';
 
-// TODO: Zorgen dat on click pop-up adresinformatie tevoren komt over Gimmix
+// TODO: Zorgen dat on click pop-up adresinformatie tevoren komt over Menefex
 
 const defaultProps = {
   center: {

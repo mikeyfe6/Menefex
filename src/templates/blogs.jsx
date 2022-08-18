@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React, { useEffect } from 'react';
 
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 import { graphql, Link } from 'gatsby';
 import { Animated } from 'react-animated-css';
@@ -118,6 +118,8 @@ const options = {
   },
 };
 
+// console.log(options);
+
 const Bold = ({ children }) => <span className="boldness">{children}</span>;
 
 const Text = ({ children }) => <p className="paragraphness">{children}</p>;
@@ -176,13 +178,15 @@ const Blog = (props) => {
     script.async = true;
 
     document.body.appendChild(script);
-    // console.log('GXWMB: Google Adsense is geladen!');
+    console.log('MFNXWMB: Google Adsense is geladen!');
 
     return () => {
       document.body.removeChild(script);
-      // console.log('GXWMB: Google Adsense is gestopt!');
+      console.log('MFNXWMB: Google Adsense is gestopt!');
     };
   }, []);
+
+  // console.log('body ishh', body);
 
   return (
     <Layout>
@@ -406,44 +410,89 @@ export const Head = (props) => {
   );
 };
 
-// Blog.propTypes = {
+Bold.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
+Text.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
+Heading1.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
+Heading2.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
+Heading3.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
+Heading4.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
+Heading5.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
+Heading6.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
+UnOrdList.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
+OrdList.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
+DotList.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
+Blog.propTypes = {
+  data: PropTypes.shape({
+    contentfulBlogPost: PropTypes.shape({
+      title: PropTypes.string,
+      subtitle: PropTypes.string,
+      author: PropTypes.string,
+      image: PropTypes.shape({
+        file: PropTypes.shape({
+          url: PropTypes.string,
+        }),
+      }),
+      publishedPost: PropTypes.string,
+      updatedPost: PropTypes.string,
+      body: PropTypes.shape({
+        json: PropTypes.shape({
+          content: PropTypes.arrayOf(),
+        }),
+      }),
+      slug: PropTypes.string,
+      contentfulId: PropTypes.string,
+    }),
+  }).isRequired,
+};
+
+// Head.propTypes = {
 //   data: PropTypes.shape({
 //     contentfulBlogPost: PropTypes.shape({
-//       title: PropTypes.string.isRequired,
-//       subtitle: PropTypes.string.isRequired,
-//       author: PropTypes.string.isRequired,
+//       title: PropTypes.string,
+//       subtitle: PropTypes.string,
+//       author: PropTypes.string,
 //       image: PropTypes.shape({
 //         file: PropTypes.shape({
-//           url: PropTypes.string.isRequired,
+//           url: PropTypes.string,
 //         }),
 //       }),
-//       publishedPost: PropTypes.string.isRequired,
-//       updatedPost: PropTypes.string.isRequired,
-//       body: PropTypes.string.isRequired,
-//       slug: PropTypes.string.isRequired,
+//       publishedSchema: PropTypes.string,
+//       updatedSchema: PropTypes.string,
+//       slug: PropTypes.string,
 //       keywords: PropTypes.arrayOf(PropTypes.string),
-//       contentfulId: PropTypes.string.isRequired,
 //     }),
-//   }),
-// };
-
-// Blog.defaultProps = {
-//   data: {
-//     contentfulBlogPost: {
-//       title: '',
-//       subtitle: '',
-//       author: '',
-//       image: {
-//         file: {
-//           url: '',
-//         },
-//       },
-//       publishedPost: '',
-//       updatedPost: '',
-//       body: '',
-//       slug: '',
-//       keywords: [],
-//       contentfulId: '',
-//     },
-//   },
+//   }).isRequired,
 // };

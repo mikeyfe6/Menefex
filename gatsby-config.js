@@ -247,7 +247,7 @@ module.exports = {
           quality: 100,
         },
         // Set to false to allow builds to continue on image errors
-        failOnError: false,
+        failOn: 'warning',
       },
     },
     'gatsby-transformer-sharp',
