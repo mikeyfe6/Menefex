@@ -33,3 +33,17 @@ exports.onRenderBody = ({
   setHeadComponents(HeadComponents);
   setBodyAttributes(BodyAttributes);
 };
+
+exports.onPreRenderHTML = ({ getHeadComponents, replaceHeadComponents }) => {
+  const headComponents = getHeadComponents();
+  headComponents.sort((x, y) => {
+    if (x.key === 'mnfxAnimate') {
+      return -1;
+    }
+    if (y.key === 'mnfxAnimate') {
+      return 1;
+    }
+    return 0;
+  });
+  replaceHeadComponents(headComponents);
+};
