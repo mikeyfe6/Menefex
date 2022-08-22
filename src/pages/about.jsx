@@ -118,6 +118,7 @@ const AboutPage = () => (
               <iframe
                 title="Menefex' #STAYVIBIN Playlist"
                 src="https://open.spotify.com/embed/playlist/08UGoWTjvpuooABCWyPx0m"
+                loading="lazy"
                 width="100%"
                 height="444"
                 frameBorder="1"
