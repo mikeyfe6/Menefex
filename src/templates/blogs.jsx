@@ -199,13 +199,13 @@ const Blog = (props) => {
           </button>
         </Link>
         <hr className="thick" />
-        <br />{' '}
+
         <div className="postcenterit">
           {' '}
           <Animated
             animationIn="fadeIn"
-            animationInDelay={750}
-            animationInDuration={2000}
+            animationInDelay={250}
+            animationInDuration={1000}
           >
             <img className="blog-mini" src={mini} alt="Menefex Icon" />
 
@@ -217,22 +217,22 @@ const Blog = (props) => {
           <div className="clr" />
           <Animated
             animationIn="fadeIn"
-            animationInDelay={1500}
-            animationInDuration={2000}
+            animationInDelay={1000}
+            animationInDuration={1000}
           >
             <hr className="thin" />
           </Animated>
           <Animated
             animationIn="fadeIn"
-            animationInDelay={2250}
-            animationInDuration={2000}
+            animationInDelay={1750}
+            animationInDuration={1000}
           >
             <h2 className="post-subtitle">{subtitle}</h2>{' '}
           </Animated>
           <Animated
             animationIn="fadeIn"
-            animationInDelay={3000}
-            animationInDuration={2000}
+            animationInDelay={2500}
+            animationInDuration={1000}
           >
             <img
               src={`https:${image.file.url}`}
@@ -313,16 +313,16 @@ const Blog = (props) => {
           <div className="specwhitespace" />
           <Animated
             animationIn="fadeIn"
-            animationInDelay={3750}
-            animationInDuration={2000}
+            animationInDelay={3250}
+            animationInDuration={1000}
           >
             <GoogleAds slot="3266975443" />
           </Animated>
           <div className="specwhitespace" />
           <Animated
             animationIn="fadeIn"
-            animationInDelay={4500}
-            animationInDuration={2000}
+            animationInDelay={4000}
+            animationInDuration={1000}
           >
             <div className="disqussion">
               <Disqus

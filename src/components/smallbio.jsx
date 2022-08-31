@@ -53,7 +53,7 @@ const Smallbio = () => (
       </a>
       <Link to="/about/">
         <button type="button" name="meerover" className={meerover}>
-          Meer over Menefex!
+          Meer over Menefex
         </button>
       </Link>
       <div className="clr" />

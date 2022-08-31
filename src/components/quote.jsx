@@ -120,8 +120,8 @@ const Quote = () => (
             <p className={quoteText}>
               Met zoekmachineoptimalisatie, oftewel &apos;SEO&apos; zorgen wij
               dat uw website bovenaan te vinden is in Google, Bing, Yahoo, etc.
-              Potentiele bezoekers zullen in staat zijn uw onderneming sneller
-              te ontdekken.
+              Potentiele bezoekers zullen zo in staat zijn uw onderneming
+              sneller te ontdekken.
             </p>
           </div>
           <br />
@@ -141,7 +141,7 @@ const Quote = () => (
         <div style={{ textAlign: 'center', marginTop: '2em' }}>
           <Link to="/prices/">
             <button type="button" className={quotePriceInfo} style={{}}>
-              Technische specificaties & onze prijslijst
+              Bekijk de prijslijst
             </button>
           </Link>
         </div>

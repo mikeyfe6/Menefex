@@ -104,16 +104,19 @@ class Layout extends React.Component {
             extraCookieOptions={{ domain: '.menefex.nl' }}
             enableDeclineButton
             sameSite="strict"
-            contentStyle={{
-              margin: '1.25% 2.5% 1% 2.5%',
-            }}
+            contentStyle={
+              {
+                // padding: '0.5em 1em 0.5em',
+              }
+            }
             style={{
               background: 'linear-gradient(to right, #595858, #333333)',
               opacity: '0.95',
               color: '#dadada',
-              fontSize: '12px',
+              fontSize: '13px',
               borderBottom: '3px solid #FFCC00',
-              borderTop: '1.5px solid #595858',
+              borderTop: '3px solid #595858',
+              padding: '0 .5em 1em',
             }}
             buttonStyle={{
               color: '#323232',
@@ -130,25 +133,25 @@ class Layout extends React.Component {
               color: '#FFCC00',
               cursor: 'pointer',
               flex: '0 0 auto',
-              padding: '5.5px 12px',
               marginLeft: '0px',
               opacity: '0.95',
             }}
           >
-            Deze website slaat cookies op je computer op. Deze cookies worden
-            gebruikt om je websitebezoek te verbeteren en meer gepersonaliseerde
-            diensten aan je aan te bieden, zowel op deze website als via andere
-            media. Zie ons{' '}
+            Deze website slaat <b>cookies</b> op je computer op. Deze cookies
+            worden gebruikt om je websitebezoek te verbeteren en meer
+            gepersonaliseerde diensten aan je aan te bieden, zowel op deze
+            website als via andere media. Zie ons{' '}
             <Link to="/privacy-policy" style={{ color: '#FFCC00' }}>
               Privacybeleid
             </Link>{' '}
             voor meer informatie over de cookies die we gebruiken.
             <br />
             <br />
-            <span style={{ fontSize: '11px' }}>
-              We zullen je gegevens niet volgen als je onze site bezoekt. Maar
-              om te voldoen aan je voorkeuren moeten we enkele cookies gebruiken
-              zodat je niet vaker wordt gevraagd om deze keus te maken.
+            <span style={{ fontSize: '13px' }}>
+              We zullen je gegevens <b>niet volgen</b> als je onze site bezoekt.
+              Maar om te voldoen aan je voorkeuren moeten we enkele cookies
+              gebruiken zodat je niet vaker wordt gevraagd om deze keus te
+              maken.
             </span>
           </CookieConsent>
         </div>

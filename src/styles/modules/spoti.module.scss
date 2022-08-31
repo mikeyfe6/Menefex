@@ -28,7 +28,7 @@
 
 .spotext {
   letter-spacing: 0.02em;
-  font-size: 0.7em;
+  font-size: 0.85rem;
   font-weight: 300;
   margin-bottom: 5%;
   color: $textbase-color;
@@ -38,5 +38,9 @@
 @media (max-width: 768px) {
   .spotcont {
     border-width: 1px;
+  }
+
+  .spotext {
+    font-size: 0.75rem;
   }
 }

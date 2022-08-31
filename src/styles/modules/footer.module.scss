@@ -90,7 +90,6 @@ footer {
 
     &:hover {
       color: $link-color;
-      @include smoothtrans;
     }
   }
 
@@ -108,7 +107,7 @@ footer {
 .termscods {
   text-align: center;
   padding-bottom: 15px;
-  font-size: 0.7em;
+  font-size: 0.75rem;
   color: $fifth-color;
 }
 
@@ -219,7 +218,7 @@ footer {
 
   .termscods {
     padding-bottom: 25px;
-    font-size: 0.5em;
+    font-size: 0.5rem;
   }
 
   .sayin {

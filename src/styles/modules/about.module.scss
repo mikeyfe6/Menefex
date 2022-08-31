@@ -2,7 +2,6 @@
 @import '../customs/colors';
 @import '../customs/fonts';
 
-
 .overtitle {
   font-family: $right-font;
   font-size: 1.5em;
@@ -10,6 +9,7 @@
 
 .about-text {
   @include fontslg;
+  max-width: 75ch;
 }
 
 @media (max-width: 768px) {

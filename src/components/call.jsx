@@ -156,7 +156,7 @@ const Call = () => {
         <div className="clr" />
 
         <button type="submit" className={callbtn}>
-          Bel mij terug!
+          Bel mij terug
         </button>
 
         <div className="clr" />

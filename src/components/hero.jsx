@@ -111,24 +111,24 @@ const Hero = () => (
               onClick={() => scrollTo('#biografiescroll')}
             >
               biografie
-            </button>{' '}
-            <span className="speccolplus">&nbsp;|&nbsp;</span>{' '}
+            </button>
+            <span className="speccolplus">|</span>
             <button
               type="button"
               className={scrollBtn}
               onClick={() => scrollTo('#servicescroll')}
             >
               services
-            </button>{' '}
-            <span className="speccolplus">&nbsp;|&nbsp;</span>{' '}
+            </button>
+            <span className="speccolplus">|</span>
             <button
               type="button"
               className={scrollBtn}
               onClick={() => scrollTo('#projectscroll')}
             >
               portfolio
-            </button>{' '}
-          </span>{' '}
+            </button>
+          </span>
         </Animated>
         <Animated
           animationIn="fadeInDown"
@@ -142,24 +142,24 @@ const Hero = () => (
               onClick={() => scrollTo('#biografiescroll')}
             >
               biografie
-            </button>{' '}
-            <span className="speccolplus">&nbsp;|&nbsp;</span>{' '}
+            </button>
+            <span className="speccolplus">&nbsp;|&nbsp;</span>
             <button
               type="button"
               className={scrollBtnMB}
               onClick={() => scrollTo('#servicescroll')}
             >
               services
-            </button>{' '}
-            <span className="speccolplus">&nbsp;|&nbsp;</span>{' '}
+            </button>
+            <span className="speccolplus">&nbsp;|&nbsp;</span>
             <button
               type="button"
               className={scrollBtnMB}
               onClick={() => scrollTo('#projectscroll')}
             >
               portfolio
-            </button>{' '}
-          </span>{' '}
+            </button>
+          </span>
         </Animated>
       </div>
       <div className="clr" />

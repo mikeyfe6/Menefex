@@ -3,7 +3,7 @@
 @import './customs/functions';
 
 .gobacktext {
-  font-size: 0.9em;
+  font-size: 0.8rem;
   font-family: $alata-font;
   font-weight: bolder;
 
@@ -36,7 +36,7 @@
 }
 
 .postcenterit {
-  width: 85%;
+  max-width: 87.5ch;
   margin: 0 auto;
 }
 
@@ -63,8 +63,8 @@
 }
 
 .thick {
-  margin: 0;
-  width: 100%;
+  margin: 0 0 2em 0;
+  // width: 100%;
   border-radius: 25px;
   border: 2.5px solid $spec-color;
 }
@@ -78,7 +78,7 @@
 
 .post-title {
   font-weight: 700;
-  font-size: 1.25em;
+  font-size: 1.325rem;
   letter-spacing: 0.25px;
 }
 
@@ -86,7 +86,8 @@
   margin-top: 7.5%;
   margin-bottom: 3.5%;
   // font-weight: 700;
-  font-size: 1.025em;
+  // width: 100ch;
+  font-size: 1.05rem;
   font-weight: 700;
   letter-spacing: 0.35px;
 
@@ -94,7 +95,7 @@
     font-size: 2.5em;
     float: left;
     color: $secondary-color;
-    margin-top: -0.35em;
+    margin-top: -0.175em;
     margin-right: 0.25em;
     text-decoration-color: $fourth-color !important;
     text-decoration: underline;
@@ -108,7 +109,7 @@
   color: $secondary-color;
   font-style: italic;
   white-space: nowrap;
-  font-size: 0.6em;
+  font-size: 0.75rem;
   letter-spacing: 0.5px;
   display: table;
   background: linear-gradient(to right, $primary-color, $fifth-color);
@@ -118,15 +119,16 @@
 }
 
 .post-content {
-  width: 100%;
+  max-width: 100ch;
   padding-left: 5px;
   @include fontslg;
-  letter-spacing: 0.35px !important;
+  // letter-spacing: 0.35px !important;
 
   .paragraphness {
-    // .p
+    // p
     margin-top: 1.75rem;
 
+    // u
     u {
       text-decoration-color: $secondary-color;
       text-decoration-thickness: 2px;
@@ -209,7 +211,7 @@
 .post-author {
   text-align: right;
   color: white;
-  font-size: 0.7em;
+  font-size: 0.75rem;
   line-height: 1.6;
   white-space: nowrap;
 }
@@ -258,7 +260,7 @@
   margin: 0.5% 3.75% 2% 0.5%;
   display: block;
   border-radius: 15px;
-  width: 37.5%;
+  width: 45%;
   float: left;
   // padding: 1%;
   border: 1.5px solid #e9e9e9;
@@ -282,7 +284,7 @@
 
 @media (max-width: 768px) {
   .gobacktext {
-    font-size: 0.8em;
+    font-size: 0.7rem;
     line-height: 2;
   }
 
@@ -332,8 +334,8 @@
   }
 
   .author-mini {
-    height: 23px;
-    width: 40px;
+    height: 32.75px;
+    width: 45px;
   }
 
   .nexttologo {
@@ -355,26 +357,30 @@
   }
 
   .post-title {
-    font-size: 0.75em;
+    font-size: 1rem;
   }
 
   .post-subtitle {
     margin-top: 12.5%;
-    font-size: 0.8em;
+    font-size: 0.85rem;
     margin-bottom: 7.5%;
     letter-spacing: 0.1px;
 
     &::first-letter {
       font-size: 3em;
       float: left;
-      margin-top: -0.1em;
+      margin-top: -0.15em;
     }
+  }
+
+  .post-author {
+    font-size: 0.6rem;
   }
 
   .post-date {
     color: $secondary-color;
     font-style: italic;
-    font-size: 0.55em;
+    font-size: 0.6rem;
     margin-left: 0%;
     margin-top: -1.5%;
     padding: 0.2% 1.5% 0.2% 1.5%;

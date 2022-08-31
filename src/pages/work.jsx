@@ -44,11 +44,11 @@ const workPage = () => (
       <div className={projects}>
         <ScrollAnimation
           animateIn="fadeIn"
-          delay={750}
+          delay={500}
           duration={2}
           animateOnce
         >
-          <div className="item" id="#ADS">
+          <div className="item" id="#DSM">
             <a
               href="https://dsmelodies.com"
               // href="#!"
@@ -120,7 +120,7 @@ const workPage = () => (
 
         <ScrollAnimation
           animateIn="fadeIn"
-          delay={750}
+          delay={500}
           duration={2}
           animateOnce
         >
@@ -199,7 +199,7 @@ const workPage = () => (
 
         <ScrollAnimation
           animateIn="fadeIn"
-          delay={750}
+          delay={500}
           duration={2}
           animateOnce
         >
@@ -276,7 +276,7 @@ const workPage = () => (
 
         <ScrollAnimation
           animateIn="fadeIn"
-          delay={750}
+          delay={500}
           duration={2}
           animateOnce
         >

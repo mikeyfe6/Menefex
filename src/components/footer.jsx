@@ -69,12 +69,14 @@ const Footer = () => {
         <div className={hr}>
           <br />
           <br />
+          <br />
           <Link to="/">
             <img className={ministylo} src={minilogo} alt="Menefex Mini Logo" />
           </Link>{' '}
           <div className="row" />
         </div>
         <div className="extrawhitespace" />
+        <br />
         <br />
 
         <div className={info}>

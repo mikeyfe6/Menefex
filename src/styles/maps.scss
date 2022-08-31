@@ -8,6 +8,7 @@
   filter: grayscale(75%);
   filter: progid:DXImageTransform.Microsoft.BasicImage(grayScale=1);
   border: 3px solid $fourth-color;
+  margin-top: 1%;
   @include shadow;
 }
 

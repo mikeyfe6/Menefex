@@ -90,7 +90,7 @@
     color: $fifth-color;
     margin-top: 2%;
     letter-spacing: 1px;
-    font-size: 0.75em;
+    font-size: 0.8rem;
     font-weight: 700;
     @include smoothtrans;
 
@@ -186,7 +186,7 @@
 }
 
 .contactbox {
-  background: linear-gradient(to bottom, #59585885, white);
+  background: linear-gradient(to bottom, $fourth-color, white);
   color: $primary-color;
   height: 100%;
   width: 100vw;
@@ -210,7 +210,7 @@
   display: inline-block;
   padding-left: 7.5px;
   font-weight: bold;
-  font-size: 0.95em;
+  font-size: 1rem;
 
   a {
     color: #157a38;
@@ -227,7 +227,7 @@
   display: inline-block;
   padding-left: 7.5px;
   font-weight: bold;
-  font-size: 0.95em;
+  font-size: 1rem;
 
   a {
     color: #5986a1;
@@ -244,17 +244,16 @@
   white-space: nowrap;
   padding-top: 0;
   padding-bottom: 0.5%;
-  background: linear-gradient(to right, #d6d6d6, $secondary-color, #d6d6d6);
+  background: linear-gradient(to right, #eeeeee, $secondary-color, #eeeeee);
   // border-top: 0.5px solid $sixth-color;
   // border-bottom: 0.5px solid $sixth-color;
-  @include shadow;
   opacity: 0.8;
 }
 
 .socials {
   margin-top: 5%;
   margin-bottom: 0.75%;
-  font-size: 0.8em;
+  font-size: 0.9rem;
 }
 
 .fbicon,
@@ -326,15 +325,15 @@
   transform: scale(1.25);
 }
 
-.hrcont {
-  width: 200%;
-  height: 1px;
-  border-radius: 10px;
-  margin-top: 2em;
-  margin-bottom: 0.75em;
-  background: linear-gradient(to left, $fourth-color, white);
-  opacity: 0.25;
-}
+// .hrcont {
+//   width: 200%;
+//   height: 1px;
+//   border-radius: 10px;
+//   margin-top: 3em;
+//   margin-bottom: 1em;
+//   background: linear-gradient(to left, $fourth-color, white);
+//   opacity: 0.25;
+// }
 
 .uniqcol {
   color: $secondary-color;
@@ -342,24 +341,23 @@
 }
 
 .contactgev {
-  margin-bottom: 4em;
-  font-size: 0.95em;
+  margin-bottom: 3em;
+  font-size: 1rem;
 }
 
 .opentijd {
-  font-size: 0.9em;
+  font-size: 0.9rem;
 }
 
 .covid {
-  font-size: 0.65em;
+  font-size: 0.75rem;
   color: rgb(224, 68, 68);
   font-style: oblique;
   // font-weight: 700;
 }
 
 .menefexgev {
-  font-size: 0.85em;
-  margin-top: 10em;
+  font-size: 0.85rem;
 }
 
 @media (max-width: 768px) {
@@ -403,7 +401,7 @@
   }
 
   .contacticons {
-    background: linear-gradient(to right, #c0c0c0, $secondary-color, #c0c0c0);
+    background: linear-gradient(to right, #e6e6e6, $secondary-color, #e6e6e6);
     box-shadow: 0 0 0 !important;
     opacity: 0.6;
     width: 100vw;
@@ -417,7 +415,7 @@
 
   .socials {
     margin-top: 10%;
-    font-size: 0.7em;
+    font-size: 0.75rem;
   }
 
   .fbicon,
@@ -455,6 +453,7 @@
   .contactgev {
     margin-bottom: 2em;
     font-size: 0.95em;
+    margin-top: 4em;
   }
 
   .contacttel {
@@ -467,7 +466,7 @@
   }
 
   .covid {
-    font-size: 0.575em;
+    font-size: 0.625rem;
   }
 }
 

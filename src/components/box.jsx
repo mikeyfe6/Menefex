@@ -22,7 +22,7 @@ import {
   waicon,
   spicon,
   skicon,
-  hrcont,
+  // hrcont,
   contactgev,
   menefexgev,
   contacttel,
@@ -193,7 +193,7 @@ const Box = () => (
             </a>
           </div>
 
-          <hr className={hrcont} />
+          {/* <hr className={hrcont} /> */}
         </div>
         <br />
         <div className="col-md">
@@ -230,7 +230,9 @@ const Box = () => (
           <p className={contacttel}>
             · &nbsp;<a href="tel:0611054318">+31 6 11 05 43 18</a>
           </p>
+
           <br />
+
           <FontAwesomeIcon icon="paper-plane" size="lg" color="#74aece" />
           <p className={contactmail}>
             · &nbsp;

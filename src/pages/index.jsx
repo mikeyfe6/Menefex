@@ -98,12 +98,7 @@ const IndexPage = () => (
 
     <br />
 
-    <ScrollAnimation
-      animateIn="fadeInLeft"
-      delay={900}
-      duration={2}
-      animateOnce
-    >
+    <ScrollAnimation animateIn="fadeIn" delay={900} duration={2} animateOnce>
       <Quote />
     </ScrollAnimation>
 

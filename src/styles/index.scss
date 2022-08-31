@@ -25,6 +25,7 @@ span.speccolplus {
   color: $fifth-color;
   font-weight: bolder;
   opacity: 0.75;
+  margin: 0 0.75em;
 }
 
 .vertical {
@@ -38,17 +39,21 @@ span.speccolplus {
 
 .specvertical {
   border-left: 5px solid $spec-color;
-  height: 125px;
+  height: 100px;
   position: absolute;
   left: 50%;
   opacity: 0.5;
   border-radius: 25px;
-  margin-top: -25px;
+  // margin-top: -25px;
 }
 
 @media (max-width: 768px) {
   .hometitles {
     font-size: 1.5em;
     margin-top: 3%;
+  }
+
+  span.speccolplus {
+    margin: 0 0.5em;
   }
 }

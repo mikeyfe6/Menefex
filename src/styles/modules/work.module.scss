@@ -34,8 +34,8 @@
 
     .project-text {
       letter-spacing: 0.02em;
-      line-height: 1.6em;
-      font-size: 0.7em;
+      line-height: 1.6;
+      font-size: 0.8rem;
       font-weight: 300;
     }
 
@@ -71,7 +71,7 @@
   .btn {
     display: inline-block;
     padding: 0.5rem 1rem;
-    margin: 1%;
+    margin: 3% 1% 0;
     margin-bottom: 5%;
     border: 2px solid $fourth-color;
     width: 48%;

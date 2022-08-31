@@ -66,7 +66,7 @@ const Projects = () => {
 
         <p>
           Deze website is gebouwd in opdracht van Stichting Eternity Percussion
-          uit Amsterdam.
+          uit Amsterdam
         </p>
         <p className={geschreven}>
           <mark className={technologien}>Wordpress</mark>{' '}
@@ -104,7 +104,7 @@ const Projects = () => {
 
         <p>
           Deze website is gebouwd in opdracht van zanggroep Black Harmony uit
-          Amsterdam.
+          Amsterdam
         </p>
         <p className={geschreven}>
           <mark className={technologien}>Wordpress</mark>{' '}
@@ -143,7 +143,7 @@ const Projects = () => {
 
         <p>
           Dit project is geheel op eigen initiatief opgezet, gericht op sociale
-          interacties.
+          interacties
         </p>
         <p className={geschreven}>
           <mark className={technologien}>GatsbyJS</mark>{' '}
@@ -185,7 +185,7 @@ const Projects = () => {
 
         <p>
           Deze website is gebouwd in opdracht van steelpannist Derek Simpey uit
-          Amsterdam.
+          Amsterdam
         </p>
         <p className={geschreven}>
           <mark className={technologien}>Wordpress</mark>{' '}
