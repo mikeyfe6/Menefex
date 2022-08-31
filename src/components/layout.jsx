@@ -141,7 +141,7 @@ class Layout extends React.Component {
             worden gebruikt om je websitebezoek te verbeteren en meer
             gepersonaliseerde diensten aan je aan te bieden, zowel op deze
             website als via andere media. Zie ons{' '}
-            <Link to="/privacy-policy" style={{ color: '#FFCC00' }}>
+            <Link to="/privacy-policy/" style={{ color: '#FFCC00' }}>
               Privacybeleid
             </Link>{' '}
             voor meer informatie over de cookies die we gebruiken.

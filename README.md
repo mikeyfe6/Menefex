@@ -3,7 +3,7 @@
 &nbsp;&nbsp;
 
 <p align="center">
-  <a href="https://menefex.nl" rel="noopener noreferrer"
+  <a href="https://menefex.nl/" rel="noopener noreferrer"
               target="_blank">
     <img alt="Menefex" src="https://i.postimg.cc/6qSmNRwh/Menefex-TRANS-Logo.png" width="500" />
   </a>
