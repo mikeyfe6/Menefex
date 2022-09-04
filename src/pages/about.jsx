@@ -117,13 +117,14 @@ const AboutPage = () => (
               </p>{' '}
               <iframe
                 title="Menefex' #STAYVIBIN Playlist"
-                src="https://open.spotify.com/embed/playlist/08UGoWTjvpuooABCWyPx0m"
+                src="https://open.spotify.com/embed/playlist/08UGoWTjvpuooABCWyPx0m?utm_source=generator"
                 loading="lazy"
                 width="100%"
                 height="444"
                 frameBorder="1"
-                allowtransparency="true"
                 allow="encrypted-media"
+                // allowfullscreen=""
+                // allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
               />
             </div>
           </Animated>
