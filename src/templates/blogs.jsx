@@ -205,7 +205,7 @@ const Blog = (props) => {
           <Animated
             animationIn="fadeIn"
             animationInDelay={250}
-            animationInDuration={1000}
+            animationInDuration={2000}
           >
             <img className="blog-mini" src={mini} alt="Menefex Icon" />
 
@@ -218,21 +218,21 @@ const Blog = (props) => {
           <Animated
             animationIn="fadeIn"
             animationInDelay={1000}
-            animationInDuration={1000}
+            animationInDuration={2000}
           >
             <hr className="thin" />
           </Animated>
           <Animated
             animationIn="fadeIn"
             animationInDelay={1750}
-            animationInDuration={1000}
+            animationInDuration={2000}
           >
             <h2 className="post-subtitle">{subtitle}</h2>{' '}
           </Animated>
           <Animated
             animationIn="fadeIn"
             animationInDelay={2500}
-            animationInDuration={1000}
+            animationInDuration={2000}
           >
             <img
               src={`https:${image.file.url}`}
@@ -314,7 +314,7 @@ const Blog = (props) => {
           <Animated
             animationIn="fadeIn"
             animationInDelay={3250}
-            animationInDuration={1000}
+            animationInDuration={2000}
           >
             <GoogleAds slot="3266975443" />
           </Animated>
@@ -322,7 +322,7 @@ const Blog = (props) => {
           <Animated
             animationIn="fadeIn"
             animationInDelay={4000}
-            animationInDuration={1000}
+            animationInDuration={2000}
           >
             <div className="disqussion">
               <Disqus

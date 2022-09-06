@@ -21,8 +21,8 @@ const ContactPage = () => (
           <br />
           <ScrollAnimation
             animateIn="fadeInUp"
-            delay={500}
-            duration={1}
+            delay={750}
+            duration={2}
             animateOnce
           >
             <h3 className={contacttitle}>
@@ -33,8 +33,8 @@ const ContactPage = () => (
           <br />
           <ScrollAnimation
             animateIn="fadeInUp"
-            delay={1000}
-            duration={1}
+            delay={1500}
+            duration={2}
             animateOnce
           >
             <p className="page-sub">
