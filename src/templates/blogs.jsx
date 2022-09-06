@@ -213,25 +213,21 @@ const Blog = (props) => {
               <h1 className="post-title">{title}</h1>
               <p className="post-date">Gepost op {publishedPost}</p>
             </div>
-          </Animated>
-          <div className="clr" />
-          <Animated
-            animationIn="fadeIn"
-            animationInDelay={1000}
-            animationInDuration={2000}
-          >
+
+            <div className="clr" />
+
             <hr className="thin" />
           </Animated>
           <Animated
             animationIn="fadeIn"
-            animationInDelay={1750}
+            animationInDelay={1000}
             animationInDuration={2000}
           >
             <h2 className="post-subtitle">{subtitle}</h2>{' '}
           </Animated>
           <Animated
             animationIn="fadeIn"
-            animationInDelay={2500}
+            animationInDelay={1750}
             animationInDuration={2000}
           >
             <img
@@ -313,7 +309,7 @@ const Blog = (props) => {
           <div className="specwhitespace" />
           <Animated
             animationIn="fadeIn"
-            animationInDelay={3250}
+            animationInDelay={2500}
             animationInDuration={2000}
           >
             <GoogleAds slot="3266975443" />
@@ -321,7 +317,7 @@ const Blog = (props) => {
           <div className="specwhitespace" />
           <Animated
             animationIn="fadeIn"
-            animationInDelay={4000}
+            animationInDelay={3250}
             animationInDuration={2000}
           >
             <div className="disqussion">
