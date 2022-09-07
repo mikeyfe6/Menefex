@@ -9,7 +9,7 @@ import '../../styles/marker.scss';
 const Marker = ({ name }) => (
   <img
     src={miniMaps}
-    alt="Menefex Webmediabedrijf"
+    alt="Menefex Webmediabedrijf Google Maps Marker"
     title={name}
     className="marker"
   />
