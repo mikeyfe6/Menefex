@@ -133,7 +133,7 @@ const Box = () => (
             </a>
 
             <a
-              href="https://feeds.feedburner.com/MenefexWMB"
+              href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fmenefex.nl%2Frss.xml"
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -157,7 +157,7 @@ const Box = () => (
             </a>
 
             <a
-              href="https://open.spotify.com/playlist/08UGoWTjvpuooABCWyPx0m?si=caXZyz28R8u8Ck683qLgQA"
+              href="https://open.spotify.com/playlist/08UGoWTjvpuooABCWyPx0m?si=5a3ca09f8cba4300"
               rel="noopener noreferrer"
               target="_blank"
             >
