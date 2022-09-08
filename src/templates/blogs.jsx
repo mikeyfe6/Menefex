@@ -277,7 +277,7 @@ const Blog = (props) => {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  Lees op Feedly
+                  Lees / Abonneer op Feedly
                 </a>
               </div>
               <div className="rsssub">
@@ -300,7 +300,7 @@ const Blog = (props) => {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  Abonneer via RSS Reader
+                  RAW data via Feedburner
                 </a>
               </div>
             </div>
