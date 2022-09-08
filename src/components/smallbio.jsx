@@ -41,7 +41,7 @@ const Smallbio = () => (
         <br />
       </p>
       <a
-        href="https://open.spotify.com/playlist/08UGoWTjvpuooABCWyPx0m?si=caXZyz28R8u8Ck683qLgQA"
+        href="https://open.spotify.com/playlist/08UGoWTjvpuooABCWyPx0m?si=5a3ca09f8cba4300"
         rel="noopener noreferrer"
         target="_blank"
       >

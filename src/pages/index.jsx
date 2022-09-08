@@ -199,7 +199,7 @@ export const Head = () => {
       'https://www.patreon.com/menefexWMB',
       'https://feeds.feedburner.com/MenefexWMB',
       'https://wa.me/31611054318',
-      'https://open.spotify.com/playlist/08UGoWTjvpuooABCWyPx0m?si=caXZyz28R8u8Ck683qLgQA',
+      'https://open.spotify.com/playlist/08UGoWTjvpuooABCWyPx0m?si=5a3ca09f8cba4300',
     ],
   };
   return (
