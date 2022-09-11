@@ -2,7 +2,7 @@
 ID = "78c114cf-1bff-4d30-8899-92eacaec9f9a"
 
 [build.environment]
-  NODE_VERSION = "18.8.0" # - latest NODE
+  NODE_VERSION = "18.9.0" # - latest NODE
   # NODE_VERSION = "17.9.0" # - stable NODE
   NPM_VERSION = "8.19.1" # - latest NPM
   # NPM_VERSION = "8.13.2" # - stable NPM
