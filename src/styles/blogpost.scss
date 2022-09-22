@@ -126,7 +126,7 @@
 
   .paragraphness {
     // p
-    margin-top: 1.75rem;
+    margin-top: 1.25em;
 
     // u
     u {
@@ -157,20 +157,20 @@
   }
   .headthreeness {
     // h3
-    margin-top: 1rem;
-    font-size: 1.375em;
+    margin-top: 3em;
+    font-size: 1.375rem;
   }
   .headfourness {
     // h4
-    margin-top: 2rem;
-    font-size: 1.125em;
+    margin-top: 2em;
+    font-size: 1.125rem;
     font-weight: 700;
     margin-bottom: -1%;
   }
   .headfiveness {
     // h5
     font-size: 0.9em;
-    margin-top: 1.5rem;
+    margin-top: 1.5em;
     font-weight: 700;
   }
   .headsixness {
@@ -185,7 +185,7 @@
 
   .listitemness {
     // li
-    margin-top: -0.75rem;
+    margin-top: -0.75em;
     color: $primary-color;
     font-weight: 500;
   }
