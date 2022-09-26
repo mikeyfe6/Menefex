@@ -1,3 +1,4 @@
+/* eslint-disable indent */
 import React from 'react';
 
 import { Link } from 'gatsby';
@@ -19,10 +20,15 @@ import {
 
 // TODO: images naar GatsbyImage verwerken
 
+const DefaultInfo = ({ text }) => (
+  <p className="page-sub" style={{ marginLeft: '5%' }}>
+    <b>{text}</b>
+  </p>
+);
+
 // CONTENTFUL topics genereren
 const Topic = ({ pageContext }) => {
   const topicData = pageContext;
-  // console.log('topicData', topicData);
 
   // CONTENTFUL blogposts genereren
   return (
@@ -34,7 +40,7 @@ const Topic = ({ pageContext }) => {
         </h1>
         <br />
         <p className="page-sub" style={{ fontSize: '1.25rem' }}>
-          {topicData.name}
+          <b>#</b> &apos; {topicData.name}
         </p>
         <Animated
           animationIn="fadeIn"
@@ -42,28 +48,32 @@ const Topic = ({ pageContext }) => {
           animationInDuration={2000}
         >
           <ol className={posts}>
-            {topicData.topicData.map((edge) => (
-              <li className={post} key={edge.contentful_id}>
-                <Link to={`/blog/${edge.slug}/`}>
-                  <div>
-                    {' '}
-                    <h4 className={posthead}>{edge.title}</h4>
-                    <span className={contsubtext}> {edge.subtitle}</span>
-                    <p className={bloggepost}>
+            {topicData.topicData === null ? (
+              <DefaultInfo text="* Oeps! Nog geen blogposts..." />
+            ) : (
+              topicData.topicData.map((edge) => (
+                <li className={post} key={edge.contentful_id}>
+                  <Link to={`/blog/${edge.slug}/`}>
+                    <div>
                       {' '}
-                      Gepost: <strong>{edge.publishedDate}</strong> ⌁ Auteur:{' '}
-                      <strong>{edge.author}</strong>{' '}
-                    </p>
-                  </div>
+                      <h4 className={posthead}>{edge.title}</h4>
+                      <span className={contsubtext}> {edge.subtitle}</span>
+                      <p className={bloggepost}>
+                        {' '}
+                        Gepost: <strong>{edge.publishedDate}</strong> ⌁ Auteur:{' '}
+                        <strong>{edge.author}</strong>{' '}
+                      </p>
+                    </div>
 
-                  <img
-                    src={edge.image.file.url}
-                    alt={edge.image.title}
-                    className={blogimg}
-                  />
-                </Link>
-              </li>
-            ))}
+                    <img
+                      src={edge.image.file.url}
+                      alt={edge.image.title}
+                      className={blogimg}
+                    />
+                  </Link>
+                </li>
+              ))
+            )}
           </ol>
         </Animated>
         <div className="whitespace" />
@@ -82,6 +92,10 @@ export const Head = () => (
     pathname="/topic/"
   />
 );
+
+DefaultInfo.propTypes = {
+  text: PropTypes.string.isRequired,
+};
 
 Topic.propTypes = {
   pageContext: PropTypes.shape({
