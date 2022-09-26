@@ -328,15 +328,15 @@ const Prices = () => (
           hieronder aan, <b>bel</b> of <b>mail</b> ons en alles wordt u{' '}
           <b>uitgebreid geinformeerd</b>.
           <br />
-          <br />* Download{' '}
+          <br />*{' '}
           <a
             href="https://menefex.nl/Menefex-PLIST.pdf"
             rel="noopener noreferrer"
             target="_blank"
           >
-            <b>hier</b>{' '}
+            <b>Download hier</b>{' '}
           </a>
-          een <u> overzicht</u> van onze prijzen & extraatjes in <b>pdf</b>
+          een <u> overzicht</u> van onze prijzen in <b>pdf</b>
           -vorm.
         </p>
       </Animated>
