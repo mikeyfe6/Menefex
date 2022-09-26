@@ -4,8 +4,11 @@ import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 
 import { graphql, Link } from 'gatsby';
-import { Animated } from 'react-animated-css';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+
 import { Disqus } from 'gatsby-plugin-disqus';
+import { Animated } from 'react-animated-css';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { BLOCKS, INLINES, MARKS } from '@contentful/rich-text-types';
@@ -18,6 +21,10 @@ import Layout from '../components/layout';
 import mini from '../logo/Menefex-icon.svg';
 
 import '../styles/blogpost.scss';
+
+// console.log(GoogleAds);
+
+// TODO: google ads space ook conditional maken
 
 export const query = graphql`
   query ($slug: String!) {
@@ -61,6 +68,26 @@ export const query = graphql`
               }
               fileName
             }
+          }
+        }
+      }
+      topics {
+        id
+        name
+        slug
+        bdcolor
+        blogPost: blog_post {
+          contentfulId: contentful_id
+          title
+          subtitle
+          slug
+          image {
+            title
+            gatsbyImageData(
+              width: 300
+              placeholder: BLURRED
+              formats: [AUTO, WEBP]
+            )
           }
         }
       }
@@ -156,6 +183,7 @@ const Blog = (props) => {
         updatedPost,
         slug,
         contentfulId,
+        topics,
       },
     },
   } = props;
@@ -169,6 +197,11 @@ const Blog = (props) => {
   //     },
   //   },
   // };
+
+  const postTopic = topics;
+  const relatedPosts = postTopic.map((topic) =>
+    topic.blogPost.filter((post) => post.contentfulId !== contentfulId),
+  );
 
   useEffect(() => {
     const script = document.createElement('script');
@@ -186,7 +219,7 @@ const Blog = (props) => {
     };
   }, []);
 
-  // console.log('body ishh', body);
+  console.log(postTopic);
 
   return (
     <Layout>
@@ -306,7 +339,60 @@ const Blog = (props) => {
             </div>
           </Animated>
           <div className="clr" />
-          <div className="specwhitespace" />
+          <div className="smallwhitespace" />
+          <div className="topicsBackButton">
+            <div className="relatedTopicContainer">
+              <ul className="relatedTopic">
+                {postTopic.map((relTopic) => (
+                  <Link to={`/topic/${relTopic.slug}/`} key={relTopic.id}>
+                    <li
+                      key={relTopic.id}
+                      style={{ borderColor: relTopic.bdcolor }}
+                    >
+                      {relTopic.name}
+                    </li>
+                  </Link>
+                ))}
+              </ul>
+            </div>
+            <Link to="/blog/">
+              <button type="button" className="gobackbtnLOW">
+                <FontAwesomeIcon icon="backward" />
+                <span className="gobacktext"> &nbsp;ALLE BLOGPOSTS </span>
+              </button>
+            </Link>
+          </div>
+          {relatedPosts[0].length === 0 ? null : (
+            <div className="relatedHead">
+              <p>Gerelateerde Artikelen</p>
+            </div>
+          )}
+          <div className="relatedPostsContainer">
+            <ul className="relatedPosts">
+              {relatedPosts.map((relPost) =>
+                relPost.map((post) => {
+                  const projectImg = getImage(post.image.gatsbyImageData);
+
+                  return (
+                    <li key={post.contentfulId}>
+                      <Link to={`/blog/${post.slug}/`}>
+                        <GatsbyImage
+                          image={projectImg}
+                          alt={post.image.title}
+                          // className={slideCont}
+                          loading="eager"
+                        />
+                        <p className="relatedPostsTitle">{post.title}</p>
+                        <p className="relatedPostsSubtitle">{post.subtitle}</p>
+                        <p className="relatedPostsButton">Lees meer... </p>
+                      </Link>
+                    </li>
+                  );
+                }),
+              )}
+            </ul>
+          </div>
+          <div className="smallwhitespace" />
           <Animated
             animationIn="fadeIn"
             animationInDelay={2500}
@@ -314,7 +400,7 @@ const Blog = (props) => {
           >
             <GoogleAds slot="3266975443" />
           </Animated>
-          <div className="specwhitespace" />
+          <div className="smallwhitespace" />
           <Animated
             animationIn="fadeIn"
             animationInDelay={3250}

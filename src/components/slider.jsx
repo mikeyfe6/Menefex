@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { GatsbyImage } from 'gatsby-plugin-image';
 import { graphql, useStaticQuery, Link } from 'gatsby';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 import Carousel from 'react-bootstrap/Carousel';
 
@@ -204,32 +204,35 @@ const Projects = () => {
       style={{ textAlign: 'center' }}
       interval={5000}
     >
-      {data.slideShow.edges.map(({ node }) => (
-        <Carousel.Item key={node.id}>
-          <GatsbyImage
-            image={node.childImageSharp.gatsbyImageData}
-            alt={node.base}
-            title={node.name}
-            className={slideCont}
-            loading="eager"
-          />
+      {data.slideShow.edges.map(({ node }) => {
+        const projectImg = getImage(node.childImageSharp.gatsbyImageData);
 
-          {(() => {
-            switch (node.name) {
-              case 'Eternitydrum-screen':
-                return eternityDrum;
-              case 'Blackharmony-screen':
-                return blackHarmony;
-              case 'Afrodiasphere-screen':
-                return afroDiaSphere;
-              case 'DSMelodies-screen':
-                return dsMelodies;
-              default:
-                return null;
-            }
-          })()}
-        </Carousel.Item>
-      ))}
+        return (
+          <Carousel.Item key={node.id}>
+            <GatsbyImage
+              image={projectImg}
+              alt={node.name}
+              className={slideCont}
+              loading="eager"
+            />
+
+            {(() => {
+              switch (node.name) {
+                case 'Eternitydrum-screen':
+                  return eternityDrum;
+                case 'Blackharmony-screen':
+                  return blackHarmony;
+                case 'Afrodiasphere-screen':
+                  return afroDiaSphere;
+                case 'DSMelodies-screen':
+                  return dsMelodies;
+                default:
+                  return null;
+              }
+            })()}
+          </Carousel.Item>
+        );
+      })}
     </Carousel>
   );
 };

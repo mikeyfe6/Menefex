@@ -244,6 +244,7 @@
   white-space: nowrap;
   padding-top: 0;
   padding-bottom: 0.5%;
+  margin-top: 2%;
   background: linear-gradient(to right, #eeeeee, $secondary-color, #eeeeee);
   // border-top: 0.5px solid $sixth-color;
   // border-bottom: 0.5px solid $sixth-color;
@@ -269,9 +270,14 @@
   margin-right: 1.25%;
   margin-left: 1.25%;
   margin-top: 1.25%;
-  padding: 0.5%;
+  padding: 1% 0.5%;
   @include smoothtrans;
-  color: white;
+  color: $textbase-color;
+  opacity: 0.7;
+
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .fbicon:hover {

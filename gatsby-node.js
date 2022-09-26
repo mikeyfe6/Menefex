@@ -19,6 +19,7 @@ exports.createResolvers = ({ createResolvers }) => {
 module.exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
   const blogTemplate = path.resolve('./src/templates/blogs.jsx');
+  const topicTemplate = path.resolve('./src/templates/topics.jsx');
   const res = await graphql(`
     query {
       allContentfulBlogPost {
@@ -30,6 +31,32 @@ module.exports.createPages = async ({ graphql, actions }) => {
           }
         }
       }
+
+      allContentfulTopic {
+        edges {
+          node {
+            contentful_id
+            name
+            slug
+            bdcolor
+            blog_post {
+              contentful_id
+              id
+              title
+              slug
+              subtitle
+              author
+              image {
+                title
+                file {
+                  url
+                }
+              }
+              publishedDate(formatString: "dddd D MMMM YYYY", locale: "nl")
+            }
+          }
+        }
+      }
     }
   `);
 
@@ -37,11 +64,23 @@ module.exports.createPages = async ({ graphql, actions }) => {
     createPage({
       component: blogTemplate,
       path: `/blog/${edge.node.slug}/`,
-      // ownerNodeId: edge.node.contentful_id,
+      ownerNodeId: edge.node.contentful_id,
       context: {
-        // id: edge.node.contentful_id,
         slug: edge.node.slug,
         updatedAt: edge.node.updatedAt,
+      },
+    });
+  });
+
+  res.data.allContentfulTopic.edges.forEach((edge) => {
+    createPage({
+      component: topicTemplate,
+      path: `/topic/${edge.node.slug}/`,
+      ownerNodeId: edge.node.contentful_id,
+      context: {
+        topicData: edge.node.blog_post,
+        slug: edge.node.slug,
+        name: edge.node.name,
       },
     });
   });

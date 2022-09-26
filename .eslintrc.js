@@ -44,6 +44,7 @@ module.exports = {
     'no-anonymous-exports-page-templates': 0,
     'limited-exports-page-templates': 0,
     'no-undef': 0,
+    'function-paren-newline': 0,
     'react/function-component-definition': [
       2,
       {

@@ -15,6 +15,8 @@ import {
   bloggepost,
 } from '../styles/modules/blog.module.scss';
 
+// TODO: images naar GatsbyImage verwerken
+
 // CONTENTFUL blogposts genereren
 const BlogPage = () => {
   const data = useStaticQuery(graphql`

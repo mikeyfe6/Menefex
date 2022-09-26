@@ -13,7 +13,31 @@
   }
 }
 
+.gobackbtnLOW {
+  white-space: nowrap;
+  text-transform: uppercase;
+  padding: 10px 12.5px;
+  background: transparent;
+  color: $primary-color;
+  background: linear-gradient(to bottom, $super-color, $fourth-color);
+  font-size: 10px;
+  letter-spacing: 1px;
+  border: 2px solid $third-color;
+  border-radius: 5px;
+  margin-bottom: 2.5%;
+
+  @include smoothtrans;
+  @include shadow;
+
+  &:hover {
+    color: $link-color !important;
+    border-color: $link-color;
+    filter: brightness(90%);
+  }
+}
+
 .gobackbtn {
+  white-space: nowrap;
   text-transform: uppercase;
   padding: 12.5px 15px;
   background: transparent;
@@ -24,12 +48,12 @@
   border: 2px solid $third-color;
   border-radius: 5px;
   margin-bottom: 2.5%;
+
   @include smoothtrans;
   @include shadow;
 
   &:hover {
     color: $link-color !important;
-    @include smoothtrans;
     border-color: $link-color;
     filter: brightness(90%);
   }
@@ -204,7 +228,6 @@
   border: 1.5px solid $secondary-color;
   background: linear-gradient(to bottom, $fifth-color, $button-hover);
   padding: 5px 0px 5px 20px;
-  margin-right: 1%;
   @include shadow;
 }
 
@@ -254,6 +277,106 @@
 
 .imagerss {
   margin-bottom: 0.25%;
+}
+
+.topicsBackButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.relatedTopic {
+  list-style-type: none;
+  margin: 0;
+  gap: 20px;
+
+  li {
+    display: inline-block;
+    margin: 0 0.5em 0 0.25em;
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 5px;
+    color: $base-color;
+    font-weight: 500;
+
+    // background: linear-gradient(to bottom, $fifth-color, $button-hover);
+    background: white;
+
+    border-width: 2px;
+    border-style: solid;
+    font-size: 0.9rem;
+    @include shadow;
+    @include smoothtrans;
+
+    &:hover {
+      border-color: $link-color !important;
+      // color: $link-color;
+      background: $sixth-color;
+    }
+  }
+}
+
+.relatedHead {
+  font-family: $right-font;
+  font-size: 1.75rem;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: $secondary-color;
+  margin: 4rem 0 2rem 0.25rem;
+}
+
+.relatedPosts {
+  list-style-type: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1.5em;
+
+  li {
+    flex-basis: 100%;
+    background: linear-gradient(to right, $fourth-color, #f2f2f2);
+    border: 2px solid $fourth-color;
+    border-radius: 10px;
+    padding-bottom: 1.5em;
+    letter-spacing: -0.125px;
+    max-width: 300px;
+    color: $base-color;
+    @include smoothtrans;
+
+    img {
+      border-radius: 10px 10px 0 0;
+    }
+
+    overflow: hidden;
+
+    .relatedPostsTitle {
+      margin: 1.5em 0 0 0;
+      padding: 0 1em;
+      font-weight: 300;
+      color: $base-color;
+    }
+    .relatedPostsSubtitle {
+      margin: 1em 0;
+      padding: 0 1em;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: $base-color;
+    }
+
+    .relatedPostsButton {
+      margin: 2em 0 0 0;
+      padding: 0 1em;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    &:hover {
+      opacity: 0.7;
+      color: $link-color;
+      border-color: $link-color;
+
+      transform: scale(1.025);
+    }
+  }
 }
 
 .blogheadimage {
@@ -389,7 +512,8 @@
   .rsssub {
     float: right;
     margin-top: 3%;
-    margin-right: 2%;
+    margin-right: 3%;
+
     font-weight: bold;
     font-size: 0.75em;
   }
@@ -397,8 +521,26 @@
   .feedlysub {
     float: right;
     margin-top: 3%;
-    margin-right: 2%;
+
     font-size: 0.75em;
+  }
+
+  .relatedTopic {
+    li {
+      font-size: 0.75rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .relatedHead {
+    font-family: $right-font;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .relatedPosts {
+    flex-direction: column;
+    align-items: center;
   }
 
   .disqussion {

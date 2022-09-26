@@ -243,7 +243,8 @@ module.exports = {
         // Defaults used for gatsbyImageData and StaticImage
         defaults: {
           placeholder: 'blurred',
-          formats: ['auto', 'webp', 'avif'],
+          formats: ['auto', 'webp'],
+          backgroundColor: 'transparent',
           quality: 100,
         },
         // Set to false to allow builds to continue on image errors

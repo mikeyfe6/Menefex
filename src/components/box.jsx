@@ -65,11 +65,15 @@ const Box = () => (
           </p>
 
           <div className={socials}>
-            <b>Volg ons</b> op de voet, <b>support ons</b> en
+            <b>Volg</b> onze socials{' '}
+            <span className={uniqcol}>
+              <b> / </b>
+            </span>{' '}
+            <b>support</b> ons
             <span className={uniqcol}>
               <b> / </b>
             </span>
-            of kom in <b>contact</b>
+            kom in <b>contact</b>
           </div>
           <div className={contacticons}>
             <a
