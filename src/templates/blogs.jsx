@@ -219,7 +219,7 @@ const Blog = (props) => {
     };
   }, []);
 
-  console.log(postTopic);
+  // console.log(postTopic);
 
   return (
     <Layout>
