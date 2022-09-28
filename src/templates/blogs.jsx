@@ -203,19 +203,17 @@ const Blog = (props) => {
   const postTopic = topics;
   const relatedPosts = postTopic.map((topic) =>
     topic.blogPost.filter((post) => post.contentfulId !== contentfulId),
-  );
+  ); // filter out the current post
 
-  // const set = new Set();
-  // const unique = relatedPosts.filter((item) => {
-  //   const alreadyHas = set.has(item.key);
-  //   set.add(item.key);
+  const postsOneArray = relatedPosts.flat(Infinity); // flatten the array
 
-  //   return !alreadyHas;
-  // });
+  const set = new Set();
+  const uniquePosts = postsOneArray.filter((item) => {
+    const alreadyHas = set.has(item.slug);
+    set.add(item.slug);
 
-  // console.log('postTopic', postTopic);
-  // console.log('relatedPosts', relatedPosts);
-  // console.log('unique', unique);
+    return !alreadyHas;
+  }); // filter out the duplicates
 
   useEffect(() => {
     const script = document.createElement('script');
@@ -232,8 +230,6 @@ const Blog = (props) => {
       console.log('MFNXWMB: Google Adsense is gestopt!');
     };
   }, []);
-
-  // console.log(postTopic);
 
   return (
     <Layout>
@@ -383,28 +379,24 @@ const Blog = (props) => {
           )}
           <div className="relatedPostsContainer">
             <ul className="relatedPosts">
-              {relatedPosts.map((relPost) =>
-                relPost.slice(0, 1).map((post) => {
-                  const projectImg = getImage(post.image.gatsbyImageData);
-                  // console.log('relPost', relPost);
-                  // console.log(post);
+              {uniquePosts.slice(0, 3).map((post) => {
+                const projectImg = getImage(post.image.gatsbyImageData);
 
-                  return (
-                    <li key={post.contentfulId}>
-                      <Link to={`/blog/${post.slug}/`}>
-                        <GatsbyImage
-                          image={projectImg}
-                          alt={post.image.title}
-                          // className={slideCont}
-                        />
-                        <p className="relatedPostsTitle">{post.title}</p>
-                        <p className="relatedPostsSubtitle">{post.subtitle}</p>
-                        <p className="relatedPostsButton">Lees meer... </p>
-                      </Link>
-                    </li>
-                  );
-                }),
-              )}
+                return (
+                  <li key={post.contentfulId}>
+                    <Link to={`/blog/${post.slug}/`}>
+                      <GatsbyImage
+                        image={projectImg}
+                        alt={post.image.title}
+                        // className={slideCont}
+                      />
+                      <p className="relatedPostsTitle">{post.title}</p>
+                      <p className="relatedPostsSubtitle">{post.subtitle}</p>
+                      <p className="relatedPostsButton">Lees meer... </p>
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
           <div className="smallwhitespace" />
