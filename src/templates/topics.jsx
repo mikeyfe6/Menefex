@@ -29,6 +29,7 @@ const DefaultInfo = ({ text }) => (
 // CONTENTFUL topics genereren
 const Topic = ({ pageContext }) => {
   const topicData = pageContext;
+  console.log('topicData', topicData);
 
   // CONTENTFUL blogposts genereren
   return (

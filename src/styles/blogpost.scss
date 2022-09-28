@@ -328,11 +328,12 @@
   list-style-type: none;
   cursor: pointer;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 1.5em;
 
   li {
-    flex-basis: 100%;
+    flex: 0 0 31%;
     background: linear-gradient(to right, $fourth-color, #f2f2f2);
     border: 2px solid $fourth-color;
     border-radius: 10px;

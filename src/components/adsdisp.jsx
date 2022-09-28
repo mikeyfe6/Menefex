@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import PropTypes from 'prop-types';
 
-class GoogleAds extends Component {
+class GoogleAdsDisplay extends Component {
   componentDidMount() {
     (window.adsbygoogle = window.adsbygoogle || []).push({});
   }
@@ -23,8 +23,8 @@ class GoogleAds extends Component {
   }
 }
 
-GoogleAds.propTypes = {
+GoogleAdsDisplay.propTypes = {
   slot: PropTypes.string.isRequired,
 };
 
-export default GoogleAds;
+export default GoogleAdsDisplay;

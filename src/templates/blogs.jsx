@@ -15,8 +15,10 @@ import { BLOCKS, INLINES, MARKS } from '@contentful/rich-text-types';
 import { renderRichText } from 'gatsby-source-contentful/rich-text';
 
 import SEO from '../components/seo';
-import GoogleAds from '../components/ads';
 import Layout from '../components/layout';
+
+import GoogleAdsDisplay from '../components/adsdisp';
+import GoogleAdsMulti from '../components/adsmulti';
 
 import mini from '../logo/Menefex-icon.svg';
 
@@ -203,6 +205,18 @@ const Blog = (props) => {
     topic.blogPost.filter((post) => post.contentfulId !== contentfulId),
   );
 
+  // const set = new Set();
+  // const unique = relatedPosts.filter((item) => {
+  //   const alreadyHas = set.has(item.key);
+  //   set.add(item.key);
+
+  //   return !alreadyHas;
+  // });
+
+  // console.log('postTopic', postTopic);
+  // console.log('relatedPosts', relatedPosts);
+  // console.log('unique', unique);
+
   useEffect(() => {
     const script = document.createElement('script');
 
@@ -370,8 +384,10 @@ const Blog = (props) => {
           <div className="relatedPostsContainer">
             <ul className="relatedPosts">
               {relatedPosts.map((relPost) =>
-                relPost.map((post) => {
+                relPost.slice(0, 1).map((post) => {
                   const projectImg = getImage(post.image.gatsbyImageData);
+                  // console.log('relPost', relPost);
+                  // console.log(post);
 
                   return (
                     <li key={post.contentfulId}>
@@ -380,7 +396,6 @@ const Blog = (props) => {
                           image={projectImg}
                           alt={post.image.title}
                           // className={slideCont}
-                          loading="eager"
                         />
                         <p className="relatedPostsTitle">{post.title}</p>
                         <p className="relatedPostsSubtitle">{post.subtitle}</p>
@@ -398,7 +413,7 @@ const Blog = (props) => {
             animationInDelay={2500}
             animationInDuration={2000}
           >
-            <GoogleAds slot="3266975443" />
+            <GoogleAdsDisplay slot="3266975443" />
           </Animated>
           <div className="smallwhitespace" />
           <Animated
@@ -415,6 +430,7 @@ const Blog = (props) => {
                 }}
               />
             </div>
+            <GoogleAdsMulti slot="1625762341" />
           </Animated>
         </div>
       </div>
