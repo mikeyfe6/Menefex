@@ -303,12 +303,12 @@
 
     border-width: 2px;
     border-style: solid;
-    font-size: 0.9rem;
+    font-size: 0.75rem;
     @include shadow;
     @include smoothtrans;
 
     &:hover {
-      border-color: $link-color !important;
+      // border-color: $link-color !important;
       // color: $link-color;
       background: $sixth-color;
     }
@@ -337,7 +337,7 @@
     background: linear-gradient(to right, $fourth-color, #f2f2f2);
     border: 2px solid $fourth-color;
     border-radius: 10px;
-    padding-bottom: 1.5em;
+    padding-bottom: 2.5em;
     letter-spacing: -0.125px;
     max-width: 300px;
     color: $base-color;
@@ -354,6 +354,7 @@
       padding: 0 1em;
       font-weight: 300;
       color: $base-color;
+      min-height: 20%;
     }
     .relatedPostsSubtitle {
       margin: 1em 0;
@@ -361,6 +362,7 @@
       font-size: 0.9rem;
       font-weight: 700;
       color: $base-color;
+      min-height: 17.5%;
     }
 
     .relatedPostsButton {
@@ -528,7 +530,7 @@
 
   .relatedTopic {
     li {
-      font-size: 0.75rem;
+      font-size: 0.7rem;
       margin-bottom: 0.5rem;
     }
   }
