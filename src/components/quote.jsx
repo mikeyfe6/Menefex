@@ -27,8 +27,10 @@ const Quote = () => (
     <div className={quoteWrapper}>
       <div className="row">
         <section className={`${services} col-xl`}>
-          <FontAwesomeIcon icon="globe" size="2x" color="#FFCC00" />
-          <h3 className={quoteHead}>Websites</h3>
+          <div style={{ whiteSpace: 'nowrap' }}>
+            <FontAwesomeIcon icon="globe" size="2x" color="#FFCC00" />
+            <h3 className={quoteHead}>Websites</h3>
+          </div>
           <hr className={thick} />
           <div className={quoteBlock}>
             {' '}
@@ -54,8 +56,10 @@ const Quote = () => (
           <br />
         </section>
         <section className={`${services} col-xl`}>
-          <FontAwesomeIcon icon="shopping-cart" size="2x" color="#FFCC00" />
-          <h3 className={quoteHead}>Webshops</h3>
+          <div style={{ whiteSpace: 'nowrap' }}>
+            <FontAwesomeIcon icon="shopping-cart" size="2x" color="#FFCC00" />
+            <h3 className={quoteHead}>Webshops</h3>
+          </div>
           <hr className={thick} />
           <div className={quoteBlock}>
             {' '}
@@ -81,8 +85,10 @@ const Quote = () => (
           <br />
         </section>
         <section className={`${services} col-xl`}>
-          <FontAwesomeIcon icon="mobile" size="2x" color="#FFCC00" />
-          <h3 className={quoteHead}>Webapplicaties</h3>
+          <div style={{ whiteSpace: 'nowrap' }}>
+            <FontAwesomeIcon icon="mobile" size="2x" color="#FFCC00" />
+            <h3 className={quoteHead}>Webapplicaties</h3>
+          </div>
           <hr className={thick} />
           <div className={quoteBlock}>
             <p className={quoteText}>
@@ -109,12 +115,14 @@ const Quote = () => (
           <br />
         </section>
         <section className={`${services} col-xl`}>
-          <FontAwesomeIcon
-            icon={['fab', 'searchengin']}
-            size="2x"
-            color="#FFCC00"
-          />
-          <h3 className={quoteHead}>Zoekmachineoptimalisatie</h3>
+          <div style={{ whiteSpace: 'nowrap' }}>
+            <FontAwesomeIcon
+              icon={['fab', 'searchengin']}
+              size="2x"
+              color="#FFCC00"
+            />
+            <h3 className={quoteHead}>Zoekmachineoptimalisatie</h3>
+          </div>
           <hr className={thick} />
           <div className={quoteBlock}>
             <p className={quoteText}>
