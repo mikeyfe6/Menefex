@@ -81,6 +81,17 @@ const Topic = ({ pageContext: { name, topicPosts } }) => (
             )
           )}
         </ol>
+        <Link to="/topics/">
+          <p
+            style={{
+              textAlign: 'right',
+              margin: '2em 2em 0 0',
+              fontWeight: 'bold',
+            }}
+          >
+            Naar alle &apos;Topics&apos;
+          </p>
+        </Link>
       </Animated>
       <div className="whitespace" />
     </div>
@@ -90,7 +101,7 @@ export default Topic;
 
 // eslint-disable-next-line react/prop-types
 export const Head = ({ pageContext: { name, description, slug } }) => (
-  <SEO title={name} description={description} pathname={`/topic/${slug}/`} />
+  <SEO title={name} description={description} pathname={`/topics/${slug}/`} />
 );
 
 DefaultInfo.propTypes = {

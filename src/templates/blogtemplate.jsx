@@ -355,7 +355,7 @@ const Blog = (props) => {
             <div className="relatedTopicContainer">
               <ul className="relatedTopic">
                 {postTopic.map((relTopic) => (
-                  <Link to={`/topic/${relTopic.slug}/`} key={relTopic.id}>
+                  <Link to={`/topics/${relTopic.slug}/`} key={relTopic.id}>
                     <li
                       key={relTopic.id}
                       style={{ borderColor: relTopic.bdcolor }}

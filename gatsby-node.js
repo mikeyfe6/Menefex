@@ -18,8 +18,8 @@ exports.createResolvers = ({ createResolvers }) => {
 
 module.exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
-  const blogTemplate = path.resolve('./src/templates/blogs.jsx');
-  const topicTemplate = path.resolve('./src/templates/topics.jsx');
+  const blogTemplate = path.resolve('./src/templates/blogtemplate.jsx');
+  const topicTemplate = path.resolve('./src/templates/topictemplate.jsx');
   const res = await graphql(`
     query {
       allContentfulBlogPost {
@@ -78,7 +78,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
   res.data.allContentfulTopic.edges.forEach((edge) => {
     createPage({
       component: topicTemplate,
-      path: `/topic/${edge.node.slug}/`,
+      path: `/topics/${edge.node.slug}/`,
       ownerNodeId: edge.node.contentful_id,
       context: {
         topicPosts: edge.node.blog_post,
