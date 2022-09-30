@@ -89,9 +89,9 @@ const Topic = ({ pageContext: { name, topicPosts } }) => (
 export default Topic;
 
 // eslint-disable-next-line react/prop-types
-export const Head = ({ pageContext: { name, description, slug } }) => {
-  <SEO title={name} description={description} pathname={`/topic/${slug}/`} />;
-};
+export const Head = ({ pageContext: { name, description, slug } }) => (
+  <SEO title={name} description={description} pathname={`/topic/${slug}/`} />
+);
 
 DefaultInfo.propTypes = {
   text: PropTypes.string.isRequired,
