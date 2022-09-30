@@ -43,7 +43,7 @@ const TopicgPage = () => {
           Topics<span className="headdots">.</span>
         </h1>
         <br />
-        <p className="page-sub">Al onze blogonderwerpen op een rijtje..</p>
+        <p className="page-sub">Al onze blog onderwerpen op een rijtje..</p>
         <Animated
           animationIn="fadeIn"
           animationInDelay={750}
@@ -87,7 +87,7 @@ export const Head = () => (
   <SEO
     title="Topics"
     description="Waar gaan onze blog onderwerpen allemaal over? Hier vindt je een overzicht!"
-    keywords="blog, posts, topics, views, nieuws, stories, nieuws, content, news, mind, actualiteiten, actueel"
+    keywords="onderwerpen, posts, topics, views, nieuws, stories, content, news, mind, actualiteiten, actueel"
     pathname="/topics/"
   />
 );
