@@ -42,7 +42,6 @@ const BlogPage = () => {
     }
   `);
 
-  // CONTENTFUL blogposts genereren
   return (
     <Layout>
       <div>

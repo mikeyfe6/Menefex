@@ -27,72 +27,71 @@ const DefaultInfo = ({ text }) => (
 );
 
 // CONTENTFUL topics genereren
-const Topic = ({ pageContext }) => {
-  const topicData = pageContext;
-  // console.log('topicData', topicData);
-
-  // CONTENTFUL blogposts genereren
-  return (
-    <Layout>
-      <div>
-        <div className="smallwhitespace" />
-        <h1 className="page-title">
-          Topics<span className="headdots">.</span>
-        </h1>
-        <br />
-        <p className="page-sub" style={{ fontSize: '1.25rem' }}>
-          <b>#</b> &apos; {topicData.name}
-        </p>
-        <Animated
-          animationIn="fadeIn"
-          animationInDelay={750}
-          animationInDuration={2000}
-        >
-          <ol className={posts}>
-            {topicData.topicData === null ? (
-              <DefaultInfo text="* Oeps! Nog geen blogposts..." />
-            ) : (
-              topicData.topicData.map((edge) => (
-                <li className={post} key={edge.contentful_id}>
-                  <Link to={`/blog/${edge.slug}/`}>
+const Topic = ({ pageContext: { name, topicPosts } }) => (
+  <Layout>
+    <div>
+      <div className="smallwhitespace" />
+      <h1 className="page-title">
+        Topics<span className="headdots">.</span>
+      </h1>
+      <br />
+      <p className="page-sub" style={{ fontSize: '1.25rem' }}>
+        <b>#</b> &apos; {name}
+      </p>
+      <Animated
+        animationIn="fadeIn"
+        animationInDelay={750}
+        animationInDuration={2000}
+      >
+        <ol className={posts}>
+          {topicPosts === null ? (
+            <DefaultInfo text="* Oeps! Nog geen blogposts..." />
+          ) : (
+            topicPosts.map(
+              ({
+                slug,
+                contentful_id: contentfulId,
+                title,
+                subtitle,
+                publishedDate,
+                author,
+                image,
+              }) => (
+                <li className={post} key={contentfulId}>
+                  <Link to={`/blog/${slug}/`}>
                     <div>
                       {' '}
-                      <h4 className={posthead}>{edge.title}</h4>
-                      <span className={contsubtext}> {edge.subtitle}</span>
+                      <h4 className={posthead}>{title}</h4>
+                      <span className={contsubtext}> {subtitle}</span>
                       <p className={bloggepost}>
                         {' '}
-                        Gepost: <strong>{edge.publishedDate}</strong> ⌁ Auteur:{' '}
-                        <strong>{edge.author}</strong>{' '}
+                        Gepost: <strong>{publishedDate}</strong> ⌁ Auteur:{' '}
+                        <strong>{author}</strong>{' '}
                       </p>
                     </div>
 
                     <img
-                      src={edge.image.file.url}
-                      alt={edge.image.title}
+                      src={image.file.url}
+                      alt={image.title}
                       className={blogimg}
                     />
                   </Link>
                 </li>
-              ))
-            )}
-          </ol>
-        </Animated>
-        <div className="whitespace" />
-      </div>
-    </Layout>
-  );
-};
-
+              ),
+            )
+          )}
+        </ol>
+      </Animated>
+      <div className="whitespace" />
+    </div>
+  </Layout>
+);
 export default Topic;
 
-export const Head = () => (
-  <SEO
-    title="Topics"
-    description="topics hierrrr"
-    // keywords="alle topics"
-    pathname="/topic/"
-  />
-);
+// eslint-disable-next-line react/prop-types
+export const Head = ({ pageContext: { name, description, slug } }) => {
+  <SEO title={name} description={description} pathname={`/topic/${slug}/`} />;
+};
 
 DefaultInfo.propTypes = {
   text: PropTypes.string.isRequired,
@@ -100,10 +99,9 @@ DefaultInfo.propTypes = {
 
 Topic.propTypes = {
   pageContext: PropTypes.shape({
-    slug: PropTypes.string.isRequired,
-  }),
+    name: PropTypes.string,
+    topicPosts: PropTypes.arrayOf(PropTypes.shape({})),
+  }).isRequired,
 };
 
-Topic.defaultProps = {
-  pageContext: {},
-};
+Topic.defaultProps = {};

@@ -39,6 +39,9 @@ module.exports.createPages = async ({ graphql, actions }) => {
             name
             slug
             bdcolor
+            description {
+              description
+            }
             blog_post {
               contentful_id
               id
@@ -78,9 +81,10 @@ module.exports.createPages = async ({ graphql, actions }) => {
       path: `/topic/${edge.node.slug}/`,
       ownerNodeId: edge.node.contentful_id,
       context: {
-        topicData: edge.node.blog_post,
+        topicPosts: edge.node.blog_post,
         slug: edge.node.slug,
         name: edge.node.name,
+        description: edge.node.description.description,
       },
     });
   });
