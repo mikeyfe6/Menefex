@@ -27,7 +27,7 @@ const DefaultInfo = ({ text }) => (
 );
 
 // CONTENTFUL topics genereren
-const Topic = ({ pageContext: { name, topicPosts } }) => (
+const Topic = ({ pageContext: { name, topicPosts, bdcolor } }) => (
   <Layout>
     <div>
       <div className="smallwhitespace" />
@@ -36,7 +36,8 @@ const Topic = ({ pageContext: { name, topicPosts } }) => (
       </h1>
       <br />
       <p className="page-sub" style={{ fontSize: '1.25rem' }}>
-        <b>#</b> &apos; {name}
+        <span style={{ color: bdcolor, fontWeight: 'bold' }}>#</span> &apos;{' '}
+        {name}
       </p>
       <Animated
         animationIn="fadeIn"
@@ -111,6 +112,7 @@ DefaultInfo.propTypes = {
 Topic.propTypes = {
   pageContext: PropTypes.shape({
     name: PropTypes.string,
+    bdcolor: PropTypes.string,
     topicPosts: PropTypes.arrayOf(PropTypes.shape({})),
   }).isRequired,
 };

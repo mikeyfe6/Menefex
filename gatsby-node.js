@@ -82,8 +82,8 @@ module.exports.createPages = async ({ graphql, actions }) => {
       ownerNodeId: edge.node.contentful_id,
       context: {
         topicPosts: edge.node.blog_post,
-        slug: edge.node.slug,
         name: edge.node.name,
+        bdcolor: edge.node.bdcolor,
         description: edge.node.description.description,
       },
     });
