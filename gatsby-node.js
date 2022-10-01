@@ -85,6 +85,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
         name: edge.node.name,
         bdcolor: edge.node.bdcolor,
         description: edge.node.description.description,
+        slug: edge.node.slug,
       },
     });
   });
