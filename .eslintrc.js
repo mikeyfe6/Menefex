@@ -43,6 +43,7 @@ module.exports = {
     'limited-exports-page-templates': 0,
     'no-undef': 0,
     'function-paren-newline': 0,
+    'react/jsx-curly-newline': 0,
     'react/jsx-one-expression-per-line': 0,
     'react/display-name': [0, { ignoreTranspilerName: 0 }],
     'react/jsx-indent': 0,

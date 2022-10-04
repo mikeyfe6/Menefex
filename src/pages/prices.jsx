@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Link } from 'gatsby';
+import { Link, navigate } from 'gatsby';
 import { Animated } from 'react-animated-css';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 
@@ -34,6 +34,12 @@ const SalePrice = ({ indivPrice }) => {
 
   // console.log(euroFormat);
   return euroFormat;
+};
+
+const handlePrice = (handelen) => {
+  sessionStorage.setItem('mnfx', handelen);
+  console.log('geklikt op offerte', sessionStorage.getItem('mnfx'));
+  navigate('/contact');
 };
 
 const Prices = () => (
@@ -111,11 +117,18 @@ const Prices = () => (
               </ul>
               <br />
               <br />
-              <Link to="/contact/">
-                <button type="button" name="offerte" className={pricebtn}>
-                  OFFERTE
-                </button>
-              </Link>
+              <button
+                type="button"
+                name="offerte"
+                className={pricebtn}
+                onClick={() =>
+                  handlePrice(
+                    'Hi Michael, ik wil graag een offerte aanvragen voor de Budget Plan...',
+                  )
+                }
+              >
+                OFFERTE
+              </button>
             </div>
           </Animated>
         </div>
@@ -170,11 +183,18 @@ const Prices = () => (
               </ul>
               <br />
               <br />
-              <Link to="/contact/">
-                <button type="button" name="offerte" className={pricebtn}>
-                  OFFERTE
-                </button>
-              </Link>
+              <button
+                type="button"
+                name="offerte"
+                className={pricebtn}
+                onClick={() =>
+                  handlePrice(
+                    'Hi Michael, ik wil graag een offerte aanvragen voor de Starter Plan...',
+                  )
+                }
+              >
+                OFFERTE
+              </button>
             </div>
           </Animated>
         </div>
@@ -233,11 +253,18 @@ const Prices = () => (
               </ul>
               <br />
               <br />
-              <Link to="/contact/">
-                <button type="button" name="offerte" className={pricebtn}>
-                  offerte
-                </button>
-              </Link>
+              <button
+                type="button"
+                name="offerte"
+                className={pricebtn}
+                onClick={() =>
+                  handlePrice(
+                    'Hi Michael, ik wil graag een offerte aanvragen voor de Established Plan...',
+                  )
+                }
+              >
+                offerte
+              </button>
             </div>
           </Animated>
         </div>
@@ -288,11 +315,18 @@ const Prices = () => (
               </ul>
               <br />
               <br />
-              <Link to="/contact/">
-                <button type="button" name="offerte" className={pricebtn}>
-                  offerte
-                </button>
-              </Link>
+              <button
+                type="button"
+                name="offerte"
+                className={pricebtn}
+                onClick={() =>
+                  handlePrice(
+                    'Hi Michael, ik wil graag een offerte aanvragen voor de Business Plan...',
+                  )
+                }
+              >
+                offerte
+              </button>
             </div>
           </Animated>
         </div>

@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 
 import { navigate } from 'gatsby';
 import { Animated } from 'react-animated-css';
@@ -23,6 +23,25 @@ const Form = () => {
     subject: 'Ik wil een offerte aanvragen',
     text: '',
   });
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      console.log('window is defined & active!');
+      if (sessionStorage.getItem('mnfx') !== null) {
+        const mnfxPrice = sessionStorage.getItem('mnfx');
+        console.log('sessionStorage is not empty, check:', mnfxPrice);
+        setInputs({ text: mnfxPrice });
+
+        const doThis = () => {
+          console.log('sessionStorage removed!');
+          setTimeout(() => sessionStorage.removeItem('mnfx'), 3000);
+        };
+        doThis();
+      }
+    } else {
+      console.log('window is not defined!');
+    }
+  }, []);
 
   const handleChange = useCallback(
     (event) => {
