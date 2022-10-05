@@ -39,7 +39,7 @@ const SalePrice = ({ indivPrice }) => {
 const handlePrice = (handelen) => {
   sessionStorage.setItem('mnfx', handelen);
   console.log('geklikt op offerte', sessionStorage.getItem('mnfx'));
-  navigate('/contact');
+  navigate('/contact/');
 };
 
 const Prices = () => (
