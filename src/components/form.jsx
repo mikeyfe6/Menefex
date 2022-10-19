@@ -29,11 +29,11 @@ const Form = () => {
       console.log('window is defined & active!');
       if (sessionStorage.getItem('mnfx') !== null) {
         const mnfxPrice = sessionStorage.getItem('mnfx');
-        console.log('sessionStorage is not empty, check:', mnfxPrice);
+        console.log('sessionStorage (mnfx) is filled, check:', mnfxPrice);
         setInputs({ text: mnfxPrice });
 
         const doThis = () => {
-          console.log('sessionStorage removed!');
+          console.log('sessionStorage (mnfx) removed!');
           setTimeout(() => sessionStorage.removeItem('mnfx'), 3000);
         };
         doThis();

@@ -63,7 +63,7 @@ const workPage = () => (
             </a>
             <div className={projectInfo}>
               <p className={projectText}>
-                <span className={projectHead}>Client:</span>
+                <span className={projectHead}>Client: </span>
                 <span className={projectOrg}>DS Melodies</span>
                 <br />
                 <br />
@@ -82,7 +82,7 @@ const workPage = () => (
                 </b>
                 <br />
                 <br />
-                <span className={projectHead}>Tools:</span>
+                <span className={projectHead}>Tools: </span>
                 <mark className={technologien}>Wordpress</mark>{' '}
                 <mark className={technologien}>Additional CSS</mark>{' '}
                 <mark className={technologien}>Elementor</mark>
@@ -138,7 +138,7 @@ const workPage = () => (
             </a>
             <div className={projectInfo}>
               <p className={projectText}>
-                <span className={projectHead}>Project:</span>
+                <span className={projectHead}>Project: </span>
                 <span className={projectOrg}>Afrodiasphere</span>
                 <br />
                 <br />
@@ -158,7 +158,7 @@ const workPage = () => (
                 </b>
                 <br />
                 <br />
-                <span className={projectHead}>Tools:</span>
+                <span className={projectHead}>Tools: </span>
                 <mark className={technologien}>GatsbyJS</mark>{' '}
                 <mark className={technologien}>Strapi</mark>{' '}
                 <mark className={technologien}>Netlify</mark>{' '}
@@ -217,7 +217,7 @@ const workPage = () => (
             </a>
             <div className={projectInfo}>
               <p className={projectText}>
-                <span className={projectHead}>Client:</span>
+                <span className={projectHead}>Client: </span>
                 <span className={projectOrg}>Black Harmony</span>
                 <br />
                 <br />
@@ -237,7 +237,7 @@ const workPage = () => (
                 </b>
                 <br />
                 <br />
-                <span className={projectHead}>Tools:</span>
+                <span className={projectHead}>Tools: </span>
                 <mark className={technologien}>Wordpress</mark>{' '}
                 <mark className={technologien}>
                   Advanced Custom Field Types
@@ -294,7 +294,7 @@ const workPage = () => (
             </a>
             <div className={projectInfo}>
               <p className={projectText}>
-                <span className={projectHead}>Client:</span>
+                <span className={projectHead}>Client: </span>
                 <span className={projectOrg}>Eternity Percussion</span>
                 <br />
                 <br />
