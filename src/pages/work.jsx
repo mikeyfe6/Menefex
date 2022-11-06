@@ -41,7 +41,88 @@ const workPage = () => (
 
       <br />
 
+      {/*
+          // * KN-ACDiG!
+          */}
+
       <div className={projects}>
+        <ScrollAnimation
+          animateIn="fadeIn"
+          delay={500}
+          duration={2}
+          animateOnce
+        >
+          <div className="item" id="#KNA">
+            <a
+              href="https://kn-acdig.com"
+              // href="#!"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <StaticImage
+                src="./../images/projects/KNACDiG-screen.png"
+                alt="KN-ACDiG"
+                className={workimg}
+              />
+            </a>
+            <div className={projectInfo}>
+              <p className={projectText}>
+                <span className={projectHead}>Client: </span>
+                <span className={projectOrg}>KennisNetwerk ACDiG</span>
+                <br />
+                <br />
+                <span>
+                  <strong>KN-ACDiG</strong> oftewel KennisNetwerk
+                  Afrikaanse-Caribische Diaspora Gemeenschap is een stichting
+                  die zich richt op het werken aan de identiteitsversterking,
+                  het vergroten van de zichtbaarheid en het kennismanagement
+                  (advies tot monitoring) van de Afrikaanse-Caribische Diaspora
+                  Gemeenschap.
+                </span>
+                <br />
+                <br />
+                <b>
+                  * De speerpunten van deze website zijn het delen van
+                  informatie en netwerkverbreding
+                </b>
+                <br />
+                <br />
+                <span className={projectHead}>Tools: </span>
+                <mark className={technologien}>Wordpress</mark>{' '}
+                <mark className={technologien}>Additional CSS</mark>{' '}
+                <mark className={technologien}>Elementor Pro</mark>
+              </p>
+            </div>
+            <a
+              href="https://kn-acdig.com"
+              // href="#!"
+              rel="noopener noreferrer"
+              target="_blank"
+              className={btnLight}
+            >
+              <FontAwesomeIcon
+                icon="eye"
+                color="#FFCC00"
+                className={workicon}
+              />{' '}
+              Ga naar project
+              {/* Komt Binnenkort */}
+            </a>
+            <a href="#!" className={btnDark}>
+              <FontAwesomeIcon
+                icon={['fab', 'github']}
+                color="#FFCC00"
+                className={workicon}
+              />{' '}
+              <strike>Niet op Github*</strike>
+            </a>
+          </div>
+        </ScrollAnimation>
+
+        {/*
+          // * DS Melodies !
+          */}
+
         <ScrollAnimation
           animateIn="fadeIn"
           delay={500}
@@ -78,7 +159,7 @@ const workPage = () => (
                 <br />
                 <b>
                   * Deze website is gebouwd met oog naar snelheid, abstractie in
-                  design en toegankelijkheid.
+                  design en toegankelijkheid
                 </b>
                 <br />
                 <br />
@@ -115,7 +196,7 @@ const workPage = () => (
         </ScrollAnimation>
 
         {/*
-          // * EXTRA PROJECTEN BIJVOEGEN HIERONDER!
+          // * AFRODIASPHERE !
           */}
 
         <ScrollAnimation
@@ -153,13 +234,14 @@ const workPage = () => (
                 <br />
                 <b>
                   * Deze webapplicatie is vooral interactief, gericht op
-                  netwerken inclusief social media en veel meer toekomstige
-                  toepassingen.
+                  netwerken inclusief sociale media en veel meer toekomstige
+                  toepassingen
                 </b>
                 <br />
                 <br />
                 <span className={projectHead}>Tools: </span>
                 <mark className={technologien}>GatsbyJS</mark>{' '}
+                <mark className={technologien}>ReactJS</mark>{' '}
                 <mark className={technologien}>Strapi</mark>{' '}
                 <mark className={technologien}>Netlify</mark>{' '}
                 <mark className={technologien}>RESTful API</mark>{' '}
@@ -194,7 +276,7 @@ const workPage = () => (
         </ScrollAnimation>
 
         {/*
-          // * EXTRA PROJECTEN BIJVOEGEN HIERONDER!
+          // * BLACK HARMONY !
           */}
 
         <ScrollAnimation
@@ -232,8 +314,8 @@ const workPage = () => (
                 <br />
                 <br />
                 <b>
-                  * Deze website bevat informatie, media en interactieve social
-                  media toepassingen.
+                  * Deze website bevat informatie, media en interactieve sociale
+                  media toepassingen
                 </b>
                 <br />
                 <br />
@@ -271,7 +353,7 @@ const workPage = () => (
         </ScrollAnimation>
 
         {/*
-          // * EXTRA PROJECTEN BIJVOEGEN HIERONDER!
+          // * ETERNITY DRUM!
           */}
 
         <ScrollAnimation
@@ -310,7 +392,7 @@ const workPage = () => (
                 <br />
                 <b>
                   * Deze website is gebouwd met oog naar snelheid, overzicht en
-                  toegankelijkheid.
+                  toegankelijkheid
                 </b>
                 <br />
                 <br />

@@ -196,6 +196,46 @@ const Projects = () => {
     </div>
   );
 
+  const knAcdig = (
+    <div className={sliderInfo}>
+      <div className={beschrijving}>
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            marginBottom: '1em',
+          }}
+        >
+          <a
+            href="https://kn-acdig.com"
+            // href="#!"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <button type="button" className={projectLink}>
+              bekijk website
+              {/* binnenkort!{' '} */}
+            </button>
+          </a>
+          <Link to="/work/">
+            {' '}
+            <h5>KN-ACDiG</h5>{' '}
+          </Link>
+        </div>
+
+        <p>
+          Deze website is gebouwd in opdracht van stichting KN-ACDiG uit
+          Den-Haag
+        </p>
+        <p className={geschreven}>
+          <mark className={technologien}>Wordpress</mark>{' '}
+          <mark className={technologien}>Additional CSS</mark>{' '}
+          <mark className={technologien}>Elementor Pro</mark>
+        </p>
+      </div>
+    </div>
+  );
+
   return (
     <Carousel
       fade
@@ -226,6 +266,8 @@ const Projects = () => {
                   return afroDiaSphere;
                 case 'DSMelodies-screen':
                   return dsMelodies;
+                case 'KNACDiG-screen':
+                  return knAcdig;
                 default:
                   return null;
               }
