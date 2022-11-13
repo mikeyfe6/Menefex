@@ -19,7 +19,7 @@ import {
 const TopicPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      allContentfulTopic(sort: { fields: name, order: ASC }) {
+      allContentfulTopic(sort: { name: ASC }) {
         edges {
           node {
             contentful_id

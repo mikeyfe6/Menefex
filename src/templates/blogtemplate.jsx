@@ -24,8 +24,6 @@ import mini from '../logo/Menefex-icon.svg';
 
 import '../styles/blogpost.scss';
 
-// console.log(GoogleAds);
-
 // TODO: google ads space ook conditional maken
 
 export const query = graphql`

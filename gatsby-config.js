@@ -168,7 +168,7 @@ module.exports = {
 
             query: `
               {
-                allContentfulBlogPost(sort: { fields: publishedDate, order: DESC }) {
+                allContentfulBlogPost(sort: {publishedDate: DESC}) {
                   edges {
                     node {
                       id
@@ -318,7 +318,6 @@ module.exports = {
           priority: 0.7,
           lastmod: (pageContext && pageContext.updatedAt) || null,
         }),
-        output: '/',
       },
     },
     'gatsby-plugin-catch-links',

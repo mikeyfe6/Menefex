@@ -53,6 +53,12 @@ html {
   button {
     background-color: $primary-color !important;
   }
+
+  &.carousel-indicators [data-bs-target] {
+    &:hover {
+      background-color: $link-color !important;
+    }
+  }
 }
 
 // progress[value] {

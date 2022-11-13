@@ -3,7 +3,7 @@
 &nbsp;&nbsp;
 
 <p align="center">
-  <a href="https://menefex.nl/" rel="noopener noreferrer"
+  <a href="https://menefex.nl" rel="noopener noreferrer"
               target="_blank">
     <img alt="Menefex Github Banner" src="https://i.postimg.cc/6qSmNRwh/Menefex-TRANS-Logo.png" width="500" />
   </a>
@@ -19,7 +19,7 @@ Menefex is een jong en modern webmediabedrijf, opgericht door [Michael Fransman]
 
 Die zich inzet en gespecialiseerd is in het uitdenken en ontwikkelen van websites en webapplicaties. Wij zorgen dat de ambities van de klant en het eindproduct tot één komen.
 
-- _Bekijk ook onze website / Also check our website: [Menefex Webmediabedrijf](https://menefex.nl/)_
+- _Bekijk ook onze website / Also check our website: [Menefex Webmediabedrijf](https://menefex.nl)_
 
 <br>
 

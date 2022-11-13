@@ -19,7 +19,7 @@ const Projects = () => {
     query {
       slideShow: allFile(
         filter: { relativeDirectory: { eq: "images/projects" } }
-        sort: { fields: base, order: ASC }
+        sort: { base: ASC }
       ) {
         edges {
           node {
