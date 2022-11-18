@@ -43,6 +43,6 @@ GNU AGPLv3, all rights reserved, Menefex WMB 2019 - 2022 ©
 
 <br>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/78c114cf-1bff-4d30-8899-92eacaec9f9a/deploy-status)](https://app.netlify.com/sites/menefex/deploys) [![Wakatime TR](https://wakatime.com/badge/github/mikeyfe6/Menefex.svg)](https://wakatime.com/badge/github/mikeyfe6/Menefex) [![wakatime](https://wakatime.com/badge/user/172a37f5-1ff4-4cf8-9d08-5ccbe681726b.svg)](https://wakatime.com/@172a37f5-1ff4-4cf8-9d08-5ccbe681726b)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/78c114cf-1bff-4d30-8899-92eacaec9f9a/deploy-status)](https://app.netlify.com/sites/menefex/deploys) Time Coded on this project [![Wakatime TR](https://wakatime.com/badge/github/mikeyfe6/Menefex.svg)](https://wakatime.com/badge/github/mikeyfe6/Menefex) Time Coded on all projects [![wakatime](https://wakatime.com/badge/user/172a37f5-1ff4-4cf8-9d08-5ccbe681726b.svg)](https://wakatime.com/@172a37f5-1ff4-4cf8-9d08-5ccbe681726b)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
