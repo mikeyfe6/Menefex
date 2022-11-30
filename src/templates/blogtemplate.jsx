@@ -146,8 +146,6 @@ const options = {
   },
 };
 
-// console.log(options);
-
 const Bold = ({ children }) => <span className="boldness">{children}</span>;
 
 const Text = ({ children }) => <p className="paragraphness">{children}</p>;

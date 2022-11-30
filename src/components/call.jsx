@@ -17,6 +17,10 @@ import {
   choosing,
 } from '../styles/modules/call.module.scss';
 
+// const d = new Date();
+// const hour = d.getHours();
+// console.log(hour);
+
 const Call = () => {
   const [inputs, setInputs] = useState({
     name: '',

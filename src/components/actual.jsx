@@ -32,8 +32,6 @@ const Actual = () => {
 
   const frontImage = getImage(data.contentfulBlogPost.image);
 
-  //   console.log(data.contentfulBlogPost);
-
   return (
     <div className={actualContainer}>
       <div className={actualWrapper}>
