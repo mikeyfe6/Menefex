@@ -59,7 +59,6 @@
     "react-bootstrap": "^2.6.0",
     "react-cookie-consent": "^8.0.1",
     "react-dom": "^18.2.0",
-    "react-spring": "^9.5.5",
     "sass": "^1.56.1",
     "smooth-scroll": "^16.1.3"
   },
