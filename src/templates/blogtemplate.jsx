@@ -220,11 +220,11 @@ const Blog = (props) => {
     script.async = true;
 
     document.body.appendChild(script);
-    console.log('MFNXWMB: Google Adsense is geladen!');
+    // console.log('MFNXWMB: Google Adsense is geladen!');
 
     return () => {
       document.body.removeChild(script);
-      console.log('MFNXWMB: Google Adsense is gestopt!');
+      // console.log('MFNXWMB: Google Adsense is gestopt!');
     };
   }, []);
 
@@ -490,7 +490,7 @@ export const Head = (props) => {
       description={subtitle}
       keywords={keywords.join(', ')}
       pathname={`/blog/${slug}/`}
-      custom={`https:${image.file.url}`}
+      ogimage={`https:${image.file.url}`}
       schemaMarkup={schema}
       article
     />
