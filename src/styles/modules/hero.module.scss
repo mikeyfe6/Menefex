@@ -11,6 +11,10 @@
 
   .fleximage {
     margin: 0 auto;
+
+    @media ($mobile) {
+      margin-bottom: -2.5em;
+    }
   }
 
   .ministylo {
@@ -153,7 +157,7 @@
   }
 
   .flexancors {
-    margin: 3em auto 0;
+    margin: 0 auto;
 
     .scroll-head,
     .scroll-headMB {
@@ -232,7 +236,7 @@
 
 @media (max-width: 768px) {
   .hero {
-    margin-bottom: -7.5em;
+    margin-bottom: -5em;
   }
 
   .fleximage {
