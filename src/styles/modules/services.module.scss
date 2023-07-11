@@ -2,7 +2,7 @@
 @import '../customs/colors';
 @import '../customs/fonts';
 
-.quote-container {
+.service-container {
   margin-bottom: 1%;
   background: linear-gradient(to right, white, $fourth-color);
   height: 100%;
@@ -12,28 +12,56 @@
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
+
+  @media ($tablet) {
+    border-width: 1px;
+  }
 }
 
-.quote-wrapper {
-  padding: 1.75%;
+.service-wrapper {
+  padding: 2.5em 3em;
+
+  @media ($tablet) {
+    padding: 2em 2.5em;
+  }
+
+  @media ($mobile) {
+    padding: 1.5em 2em;
+  }
 
   section.services {
-    width: 100%;
-    margin: 2%;
-    padding-right: 0.75% !important;
+    flex: 1 1 0;
+
+    @media ($laptop) {
+      flex: 50%;
+    }
+
+    @media ($tablet) {
+      margin: 2%;
+      width: 100%;
+    }
   }
 
-  .quote-head {
-    display: inline-block;
-    padding-left: 5%;
-    margin-bottom: 10%;
+  .service-title {
+    min-height: 100px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .service-head {
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 1.2rem;
     letter-spacing: 1px;
     font-family: $right-font;
+    margin-bottom: 0;
+
+    @media ($tablet) {
+      font-size: 1.1em;
+    }
   }
 
-  .quote-kwali {
+  .service-kwali {
     padding-left: 7.5%;
     list-style: none;
     font-weight: 400;
@@ -49,22 +77,85 @@
       margin-bottom: 0.25em;
       margin-right: 0.5em; /* Also needed for space (tweak if needed) */
     }
-  }
 
-  .quote-text {
-    @include fontslg;
-    vertical-align: text-top;
-    margin-top: 15%;
-    width: 90%;
-
-    .quote-Focus {
-      font-weight: 700;
-      font-size: 1.1em;
+    @media ($tablet) {
+      font-size: 0.75rem;
     }
   }
 
-  .quote-block {
-    min-height: 25%;
+  .service-text {
+    @include fontslg;
+    vertical-align: text-top;
+    margin-top: 2.5em;
+    width: 90%;
+
+    @media ($tablet) {
+      @include fontsmb;
+      margin-top: 3em;
+      width: 100%;
+    }
+  }
+
+  .service-focus {
+    margin-top: 2.5em;
+    &-title {
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    @media ($massive) {
+      min-height: 175px;
+      height: 175px;
+      max-height: 200px;
+    }
+
+    @media ($desktop) {
+      min-height: 225px;
+      height: 250px;
+      max-height: 275px;
+    }
+
+    @media ($laptop) {
+      min-height: 150px;
+      height: 175px;
+      max-height: 200px;
+    }
+  }
+
+  .service-block {
+    min-height: 175px;
+    height: 200px;
+    max-height: 225px;
+
+    @media ($massive) {
+      min-height: 175px;
+      height: 175px;
+      max-height: 200px;
+    }
+
+    @media ($desktop) {
+      min-height: 237.5px;
+      height: 267.5px;
+      max-height: 287.5px;
+    }
+
+    @media ($laptop) {
+      min-height: 150px;
+      height: 175px;
+      max-height: 200px;
+    }
+
+    @media ($tablet) {
+      min-height: 100px;
+      height: 125px;
+      max-height: 150px;
+    }
+
+    @media ($mobile) {
+      min-height: 125px;
+      height: 150px;
+      max-height: 175px;
+    }
   }
 
   .thick {
@@ -84,7 +175,7 @@
     @include shadow;
   }
 
-  .quotePriceInfo {
+  .servicePriceInfo {
     font-family: $alata-font;
     font-size: 0.85rem;
     background: $primary-color;
@@ -101,46 +192,9 @@
     &:hover {
       background-color: $textbase-color;
       border-color: $link-color;
-
-      // background: white;
-      // color: $primary-color;
-    }
-  }
-}
-
-.endline {
-  border-width: 5px;
-  background: $secondary-color;
-  // border-style: dashed;
-  opacity: 0.5;
-  width: 90%;
-}
-
-@media (min-width: 1200px) {
-  .endline {
-    display: none;
-  }
-
-  .quote-wrapper {
-    padding: 5%;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1200px) {
-  .quote-block {
-    min-height: 0 !important;
-  }
-}
-
-@media (max-width: 768px) {
-  .quote-wrapper {
-    padding: 5%;
-
-    .quote-kwali {
-      font-size: 0.75rem;
     }
 
-    .quotePriceInfo {
+    @media ($tablet) {
       letter-spacing: 1.5px;
       font-size: 0.75rem;
       padding: 12.5px 25px;
@@ -148,27 +202,15 @@
       margin-bottom: 3em;
     }
   }
+}
 
-  section.services {
-    width: 100%;
-    margin: 2%;
-    padding-right: 5% !important;
-  }
+.endline {
+  border-width: 5px;
+  background: $secondary-color;
+  opacity: 0.5;
+  display: none;
 
-  .quote-block {
-    min-height: 10% !important;
-  }
-
-  .quote-container {
-    border-width: 1px;
-  }
-
-  .quote-head {
-    font-size: 1.1em !important;
-  }
-
-  .quote-text {
-    @include fontsmb;
-    margin-top: 10% !important;
+  @media ($laptop) {
+    display: block;
   }
 }

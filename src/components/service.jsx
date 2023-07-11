@@ -4,37 +4,35 @@ import { Link } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import {
-  quoteContainer,
-  quoteWrapper,
+  serviceContainer,
+  serviceWrapper,
   services,
-  quoteHead,
+  serviceHead,
   thick,
   thin,
-  quoteBlock,
-  quoteText,
-  quoteFocus,
-  quoteKwali,
+  serviceBlock,
+  serviceText,
+  serviceFocus,
+  serviceFocusTitle,
+  serviceTitle,
+  serviceKwali,
   endline,
-  quotePriceInfo,
-} from '../styles/modules/quote.module.scss';
+  servicePriceInfo,
+} from '../styles/modules/services.module.scss';
 
-// *GEFIXT TODO: Responsive maken!
-
-const Quote = () => (
-  //   const today = new Date()
-
-  <div className={quoteContainer}>
-    <div className={quoteWrapper}>
+const Service = () => (
+  <div className={serviceContainer}>
+    <div className={serviceWrapper}>
       <div className="row">
         <section className={`${services} col-xl`}>
-          <div style={{ whiteSpace: 'nowrap' }}>
+          <div className={serviceTitle}>
             <FontAwesomeIcon icon="globe" size="2x" color="#FFCC00" />
-            <h3 className={quoteHead}>Websites</h3>
+            <h3 className={serviceHead}>Websites</h3>
           </div>
           <hr className={thick} />
-          <div className={quoteBlock}>
+          <div className={serviceBlock}>
             {' '}
-            <p className={quoteText}>
+            <p className={serviceText}>
               Wij bouwen functionele en efficiënte websites volledig op maat.
               Daarin zorgen wij dat uw website aan alle actuele technische
               wensen en voorwaarden voldoet.
@@ -42,9 +40,9 @@ const Quote = () => (
           </div>
           <br />
           <hr className={thin} />
-          <div className={quoteText}>
-            <h6 className={quoteFocus}>Focus:</h6> <br />
-            <ul className={quoteKwali}>
+          <div className={serviceFocus}>
+            <h6 className={serviceFocusTitle}>Focus:</h6> <br />
+            <ul className={serviceKwali}>
               <li>Laadsnelheid</li>
               <li>Maatwerk Design</li>
               <li>Gebruikersinterface & gebruikservaring</li>
@@ -56,14 +54,14 @@ const Quote = () => (
           <br />
         </section>
         <section className={`${services} col-xl`}>
-          <div style={{ whiteSpace: 'nowrap' }}>
+          <div className={serviceTitle}>
             <FontAwesomeIcon icon="shopping-cart" size="2x" color="#FFCC00" />
-            <h3 className={quoteHead}>Webshops</h3>
+            <h3 className={serviceHead}>Webshops</h3>
           </div>
           <hr className={thick} />
-          <div className={quoteBlock}>
+          <div className={serviceBlock}>
             {' '}
-            <p className={quoteText}>
+            <p className={serviceText}>
               Webshops zijn deze tijd onmisbaar voor uw lokale onderneming en
               bieden een bredere netwerk, beter beschikbaarheid en uiteraard
               meer conversie en productaanzien.
@@ -71,9 +69,9 @@ const Quote = () => (
           </div>
           <br />
           <hr className={thin} />
-          <div className={quoteText}>
-            <h6 className={quoteFocus}>Focus:</h6> <br />
-            <ul className={quoteKwali}>
+          <div className={serviceFocus}>
+            <h6 className={serviceFocusTitle}>Focus:</h6> <br />
+            <ul className={serviceKwali}>
               <li>Overzicht assortiment</li>
               <li>Meer leads generen</li>
               <li>24/7 Handel drijven</li>
@@ -85,13 +83,13 @@ const Quote = () => (
           <br />
         </section>
         <section className={`${services} col-xl`}>
-          <div style={{ whiteSpace: 'nowrap' }}>
+          <div className={serviceTitle}>
             <FontAwesomeIcon icon="mobile" size="2x" color="#FFCC00" />
-            <h3 className={quoteHead}>Webapplicaties</h3>
+            <h3 className={serviceHead}>Webapplicaties</h3>
           </div>
           <hr className={thick} />
-          <div className={quoteBlock}>
-            <p className={quoteText}>
+          <div className={serviceBlock}>
+            <p className={serviceText}>
               Met de opkomst van digitalisering & mobiliteit is er steeds meer
               vraag naar (web)apps. Implementaties van complexe interacties
               maken het verschil tussen een webapplicatie en een website.
@@ -99,9 +97,9 @@ const Quote = () => (
           </div>
           <br />
           <hr className={thin} />
-          <div className={quoteText}>
-            <h6 className={quoteFocus}>Focus:</h6> <br />
-            <ul className={quoteKwali}>
+          <div className={serviceFocus}>
+            <h6 className={serviceFocusTitle}>Focus:</h6> <br />
+            <ul className={serviceKwali}>
               <li>Offline-mogelijkheden</li>
               <li>Optimalisatie voor alle apparaten</li>
               <li>
@@ -115,18 +113,18 @@ const Quote = () => (
           <br />
         </section>
         <section className={`${services} col-xl`}>
-          <div style={{ whiteSpace: 'nowrap' }}>
+          <div className={serviceTitle}>
             <FontAwesomeIcon
               icon={['fab', 'searchengin']}
               size="2x"
               color="#FFCC00"
             />
-            <h3 className={quoteHead}>Zoekmachineoptimalisatie</h3>
+            <h3 className={serviceHead}>Zoekmachine Optimalisatie</h3>
           </div>
           <hr className={thick} />
-          <div className={quoteBlock}>
-            <p className={quoteText}>
-              Met zoekmachineoptimalisatie, oftewel &apos;SEO&apos; zorgen wij
+          <div className={serviceBlock}>
+            <p className={serviceText}>
+              Met zoekmachine optimalisatie, oftewel &apos;SEO&apos; zorgen wij
               dat uw website bovenaan te vinden is in Google, Bing, Yahoo, etc.
               Potentiele bezoekers zullen zo in staat zijn uw onderneming
               sneller te ontdekken.
@@ -134,9 +132,9 @@ const Quote = () => (
           </div>
           <br />
           <hr className={thin} />
-          <div className={quoteText}>
-            <h6 className={quoteFocus}>Focus:</h6> <br />
-            <ul className={quoteKwali}>
+          <div className={serviceFocus}>
+            <h6 className={serviceFocusTitle}>Focus:</h6> <br />
+            <ul className={serviceKwali}>
               <li>Vindbaarheid in populaire zoekmachines</li>
               <li>Aanzienlijk meer (in)directe webbezoekers</li>
               <li>Grafieken, tactieken en statistieken</li>
@@ -146,9 +144,9 @@ const Quote = () => (
           <hr className={endline} />
           <br />
         </section>
-        <div style={{ textAlign: 'center', marginTop: '2em' }}>
+        <div style={{ textAlign: 'center', marginTop: '1em' }}>
           <Link to="/prices/">
-            <button type="button" className={quotePriceInfo} style={{}}>
+            <button type="button" className={servicePriceInfo}>
               Bekijk de prijslijst
             </button>
           </Link>
@@ -157,4 +155,4 @@ const Quote = () => (
     </div>
   </div>
 );
-export default Quote;
+export default Service;

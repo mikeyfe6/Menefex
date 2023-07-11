@@ -17,3 +17,11 @@
 @mixin shadow {
   box-shadow: 1px 3px 7px rgba(209, 209, 209, 0.767);
 }
+
+$pocket: 'max-width: 426px';
+$mobile: 'max-width: 576px';
+$tablet: 'max-width: 768px';
+$laptop: 'max-width: 992px';
+$desktop: 'max-width: 1200px';
+$wide: 'max-width: 1400px';
+$massive: 'min-width: 1401px';

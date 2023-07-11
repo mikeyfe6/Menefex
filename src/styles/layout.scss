@@ -1,6 +1,4 @@
-@import './customs/colors';
-@import './customs/fonts';
-@import './customs/functions';
+@import 'index.scss';
 
 * {
   outline: none;
@@ -33,6 +31,15 @@ html {
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: $fifth-color;
+  }
+
+  body {
+    width: 100%;
+    color: #656565;
+    font-family: $poppins-font;
+    font-weight: 300;
+    // overflow-y: auto;
+    overflow-x: hidden;
   }
 }
 
@@ -69,15 +76,6 @@ html {
 // progress[value]::-webkit-progress-bar {
 //   background-color: $link-color;
 // }
-
-body {
-  width: 100%;
-  color: #656565;
-  font-family: $poppins-font;
-  font-weight: 300;
-  // overflow-y: auto;
-  overflow-x: hidden;
-}
 
 // Pagina Setup
 

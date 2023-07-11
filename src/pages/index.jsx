@@ -7,7 +7,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 import Hero from '../components/hero';
-import Quote from '../components/quote';
+import Service from '../components/service';
 import Projects from '../components/slider';
 import Smallbio from '../components/smallbio';
 import Actual from '../components/actual';
@@ -99,7 +99,7 @@ const IndexPage = () => (
     <br />
 
     <ScrollAnimation animateIn="fadeIn" delay={900} duration={2} animateOnce>
-      <Quote />
+      <Service />
     </ScrollAnimation>
 
     <div className="extrawhitespace" />
@@ -133,23 +133,21 @@ const IndexPage = () => (
 export default IndexPage;
 
 export const Head = () => {
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            description
-            favicon
-            siteUrl
-            tel
-            author
-            bizEmail
-            image
-          }
+  const { site } = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          description
+          favicon
+          siteUrl
+          tel
+          author
+          bizEmail
+          image
         }
       }
-    `,
-  );
+    }
+  `);
 
   const schema = {
     '@context': 'https://schema.org',
