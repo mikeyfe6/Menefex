@@ -26,7 +26,7 @@
   }
 
   @media ($mobile) {
-    padding: 1em 1.5em;
+    padding: 1em;
   }
 
   section.services {
@@ -37,7 +37,7 @@
     }
 
     @media ($tablet) {
-      margin: 0.5em 1em;
+      margin: 0.25em 0.5em;
       width: 100%;
     }
   }
@@ -152,7 +152,7 @@
     }
   }
 
-  .service-price-info {
+  button.service-button {
     font-family: $alata-font;
     font-size: 0.85rem;
     background: $primary-color;

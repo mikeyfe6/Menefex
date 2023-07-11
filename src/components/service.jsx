@@ -8,16 +8,16 @@ import {
   serviceWrapper,
   services,
   serviceHead,
-  thick,
-  thin,
   serviceBlock,
   serviceText,
   serviceFocus,
   serviceFocusTitle,
   serviceTitle,
   serviceKwali,
+  thick,
+  thin,
   endline,
-  servicePriceInfo,
+  serviceButton,
 } from '../styles/modules/services.module.scss';
 
 const Service = () => (
@@ -146,7 +146,7 @@ const Service = () => (
         </section>
         <div style={{ textAlign: 'center', marginTop: '1em' }}>
           <Link to="/prices/">
-            <button type="button" className={servicePriceInfo}>
+            <button type="button" className={serviceButton}>
               Bekijk de prijslijst
             </button>
           </Link>
