@@ -37,7 +37,7 @@
     }
 
     @media ($tablet) {
-      margin: 2%;
+      margin: 0.5em 2em;
       width: 100%;
     }
   }
@@ -116,9 +116,9 @@
     }
 
     @media ($laptop) {
-      min-height: 150px;
-      height: 175px;
-      max-height: 200px;
+      min-height: fit-content;
+      height: fit-content;
+      max-height: fit-content;
     }
   }
 
@@ -146,15 +146,9 @@
     }
 
     @media ($tablet) {
-      min-height: 100px;
-      height: 125px;
-      max-height: 150px;
-    }
-
-    @media ($mobile) {
-      min-height: 112.5px;
-      height: 137.5px;
-      max-height: 167.5px;
+      min-height: fit-content;
+      height: fit-content;
+      max-height: fit-content;
     }
   }
 
