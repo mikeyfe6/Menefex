@@ -13,7 +13,7 @@
     margin: 0 auto;
 
     @media ($mobile) {
-      margin-bottom: -2.5em;
+      margin: -3.75em auto;
     }
   }
 
@@ -235,10 +235,6 @@
 }
 
 @media (max-width: 768px) {
-  .hero {
-    margin-bottom: -5em;
-  }
-
   .fleximage {
     margin: 0 auto;
   }
