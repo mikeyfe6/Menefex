@@ -82,10 +82,40 @@ html {
 #page-container {
   position: relative;
   min-height: 100vh;
-}
 
-#content-wrap {
-  padding-bottom: 2.5rem; /* Footer height */
+  #content-wrap {
+    padding-bottom: 2.5rem; /* Footer height */
+
+    @media (max-width: 319px) {
+      display: none;
+    }
+  }
+
+  #tosmallforyouscreen {
+    display: none;
+    text-align: center;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100vh;
+      gap: 25px;
+
+      img {
+        width: 37.5%;
+        margin: 0 auto;
+      }
+
+      p {
+        font-size: 0.75rem;
+      }
+    }
+
+    @media (max-width: 319px) {
+      display: block;
+    }
+  }
 }
 
 .page-title {

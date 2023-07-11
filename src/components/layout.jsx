@@ -37,6 +37,8 @@ import Footer from './footer';
 // styles
 import '../styles/layout.scss';
 
+import minilogo from '../logo/Menefex-icon.svg';
+
 library.add(
   fab,
   faPhoneSquareAlt,
@@ -86,6 +88,15 @@ class Layout extends React.Component {
     }
     return (
       <div id="page-container">
+        <div id="tosmallforyouscreen">
+          <div className="container">
+            <img src={minilogo} alt="Menefex Mini Logo" />
+            <p>
+              <strong>Sorry!</strong> De scherm van je toestel is te klein om de
+              website juist weer te geven...
+            </p>
+          </div>
+        </div>
         <div id="content-wrap">
           <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
           <SideDrawer show={sideDrawerOpen} />

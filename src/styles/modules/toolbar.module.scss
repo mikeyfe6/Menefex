@@ -39,8 +39,11 @@
 
     .activePage {
       color: $secondary-color;
-      text-shadow: -1px 1px 0 $textbase-color, 1px 1px 0 $textbase-color,
-        1px -1px 0 $textbase-color, -1px -1px 0 $textbase-color;
+      text-shadow:
+        -1px 1px 0 $textbase-color,
+        1px 1px 0 $textbase-color,
+        1px -1px 0 $textbase-color,
+        -1px -1px 0 $textbase-color;
       // text-decoration: overline;
       @include smoothtrans;
 
@@ -90,7 +93,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media ($laptop) {
   .tlbarNavigationItems {
     display: none;
   }
@@ -102,13 +105,13 @@
   }
 }
 
-@media (max-width: 768px) {
+@media ($laptop) {
   .spacer-two {
     flex: 1 100%;
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 993px) {
   .tlbarToggleButton {
     display: none;
   }

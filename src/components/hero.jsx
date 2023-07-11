@@ -6,16 +6,16 @@ import { Animated } from 'react-animated-css';
 import minilogo from '../logo/Menefex-icon.svg';
 
 import {
-  hero,
   fleximage,
-  ministylo,
   flexhead,
-  ipvtpwriter,
-  spechead,
+  flexancors,
+  hero,
   heroHead,
   heroHeadMB,
   herospec,
-  flexancors,
+  ipvtpwriter,
+  ministylo,
+  spechead,
   scrollDown,
   scrollDownMB,
   scrollHead,

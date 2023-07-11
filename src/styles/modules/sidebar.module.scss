@@ -45,13 +45,20 @@
     color: #555555;
     text-decoration: none;
     font-family: $right-font;
-    text-shadow: -5px 0 #cccccc, 0 5px #cccccc, 5px 0 #cccccc, 0 -5px #cccccc;
+    text-shadow:
+      -5px 0 #cccccc,
+      0 5px #cccccc,
+      5px 0 #cccccc,
+      0 -5px #cccccc;
 
     &:hover,
     &:active {
       color: $textbase-color;
-      text-shadow: -15px 0 $third-color, 0 15px $third-color,
-        15px 0 $third-color, 0 -15px $third-color;
+      text-shadow:
+        -15px 0 $third-color,
+        0 15px $third-color,
+        15px 0 $third-color,
+        0 -15px $third-color;
 
       .dots {
         color: $spec-color;
@@ -76,8 +83,11 @@
     font-size: 1.55em;
     color: $textbase-color;
 
-    text-shadow: -10px 0 $secondary-color, 0 10px $secondary-color,
-      10px 0 $secondary-color, 0 -10px $secondary-color;
+    text-shadow:
+      -10px 0 $secondary-color,
+      0 10px $secondary-color,
+      10px 0 $secondary-color,
+      0 -10px $secondary-color;
 
     .dots {
       color: $third-color;
@@ -87,7 +97,7 @@
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 993px) {
   .side-bar {
     display: none;
   }

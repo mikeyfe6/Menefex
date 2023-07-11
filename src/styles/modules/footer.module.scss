@@ -7,6 +7,10 @@ footer {
   bottom: 0;
   width: 100%;
   height: 2.5rem; /* Footer height */
+
+  @media (max-width: 319px) {
+    display: none;
+  }
 }
 
 .sayin {
