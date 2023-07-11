@@ -26,7 +26,7 @@
   }
 
   @media ($mobile) {
-    padding: 1.5em 2em;
+    padding: 1em 1.5em;
   }
 
   section.services {
@@ -37,7 +37,7 @@
     }
 
     @media ($tablet) {
-      margin: 0.5em 2em;
+      margin: 0.5em 1em;
       width: 100%;
     }
   }
@@ -152,24 +152,7 @@
     }
   }
 
-  .thick {
-    margin: 0;
-    padding: 0;
-    width: 23%;
-    border: 3px solid $third-color;
-    border-radius: 1px;
-    @include shadow;
-  }
-
-  .thin {
-    border-color: $secondary-color;
-    padding: 0px;
-    margin: 0px;
-    width: 50%;
-    @include shadow;
-  }
-
-  .servicePriceInfo {
+  .service-price-info {
     font-family: $alata-font;
     font-size: 0.85rem;
     background: $primary-color;
@@ -196,15 +179,32 @@
       margin-bottom: 3em;
     }
   }
-}
 
-.endline {
-  border-width: 5px;
-  background: $secondary-color;
-  opacity: 0.5;
-  display: none;
+  .thick {
+    margin: 0;
+    padding: 0;
+    width: 23%;
+    border: 3px solid $third-color;
+    border-radius: 1px;
+    @include shadow;
+  }
 
-  @media ($laptop) {
-    display: block;
+  .thin {
+    border-color: $secondary-color;
+    padding: 0px;
+    margin: 0px;
+    width: 50%;
+    @include shadow;
+  }
+
+  .endline {
+    border-width: 5px;
+    background: $secondary-color;
+    opacity: 0.5;
+    display: none;
+
+    @media ($laptop) {
+      display: block;
+    }
   }
 }
