@@ -16,8 +16,8 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "@contentful/rich-text-html-renderer": "^16.1.0",
-    "@contentful/rich-text-types": "^16.2.0",
+    "@contentful/rich-text-html-renderer": "^16.1.1",
+    "@contentful/rich-text-types": "^16.2.1",
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
     "@fortawesome/free-brands-svg-icons": "^6.4.2",
     "@fortawesome/free-regular-svg-icons": "^6.4.2",
