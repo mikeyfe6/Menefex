@@ -263,6 +263,8 @@ const workPage = () => (
             </a>
             <a
               href="https://github.com/mikeyfe6/Afrodiasphere"
+              rel="noopener noreferrer"
+              target="_blank"
               className={btnDark}
             >
               <FontAwesomeIcon
