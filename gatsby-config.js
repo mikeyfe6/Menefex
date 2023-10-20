@@ -31,7 +31,7 @@ module.exports = {
     PRESERVE_FILE_DOWNLOAD_CACHE: true,
     PARALLEL_SOURCING: true,
     DETECT_NODE_MUTATIONS: false,
-    PARTIAL_HYDRATION: true,
+    // PARTIAL_HYDRATION: true,
   },
   siteMetadata: {
     siteUrl: 'https://menefex.nl',
