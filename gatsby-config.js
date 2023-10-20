@@ -31,6 +31,7 @@ module.exports = {
     PRESERVE_FILE_DOWNLOAD_CACHE: true,
     PARALLEL_SOURCING: true,
     DETECT_NODE_MUTATIONS: false,
+    PARTIAL_HYDRATION: true,
   },
   siteMetadata: {
     siteUrl: 'https://menefex.nl',
@@ -78,7 +79,6 @@ module.exports = {
         // ...
       },
     },
-    'gatsby-plugin-netlify',
     {
       resolve: 'gatsby-plugin-feed',
       options: {
@@ -316,7 +316,7 @@ module.exports = {
           url: path,
           changefreq: 'daily',
           priority: 0.7,
-          lastmod: (pageContext && pageContext.updatedAt) || null,
+          lastmod: pageContext?.updatedAt || null,
         }),
       },
     },

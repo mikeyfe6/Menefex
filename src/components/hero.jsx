@@ -7,7 +7,6 @@ import minilogo from '../logo/Menefex-icon.svg';
 
 import {
   fleximage,
-  flexhead,
   flexancors,
   hero,
   heroHead,
@@ -42,7 +41,7 @@ const Hero = () => (
           <img className={ministylo} src={minilogo} alt="Menefex Mini Logo" />{' '}
         </Animated>
       </div>
-      <div className={flexhead}>
+      <div>
         {' '}
         <h1 className={`${tpwriter} ${line} ${animTypewriter}`}>
           Webmediabedrijf Menefex. Welkom!
