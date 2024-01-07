@@ -47,6 +47,7 @@ module.exports = {
     'react/jsx-one-expression-per-line': 0,
     'react/display-name': [0, { ignoreTranspilerName: 0 }],
     'react/jsx-indent': 0,
+    'jsx-a11y/control-has-associated-label': 0,
     'react/function-component-definition': [
       2,
       {
