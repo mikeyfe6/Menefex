@@ -1,19 +1,14 @@
 module.exports = {
   env: {
-    browser: true, // eslint recomm.
-    // es6: true,
+    browser: true,
     node: true,
-    // commonjs: true,
   },
   extends: ['airbnb', 'eslint:recommended', 'plugin:react/recommended'],
-  // globals: {
-  //   Atomics: 'readonly',
-  //   SharedArrayBuffer: 'readonly',
-  // },
+
   parser: '@babel/eslint-parser',
   settings: {
     react: {
-      version: 'detect', // detect react version
+      version: 'detect',
     },
   },
   parserOptions: {
@@ -26,9 +21,6 @@ module.exports = {
     ecmaVersion: '12',
     sourceType: 'module',
     requireConfigFile: false,
-    // babelOptions: {
-    //   configFile: './.babelrc',
-    // },
     babelOptions: {
       presets: ['@babel/preset-react'],
     },
