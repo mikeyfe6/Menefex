@@ -1,10 +1,7 @@
 [build.environment]
-  NODE_VERSION = "20.10.0" # - latest NODE version
-  # NODE_VERSION = "17.9.0" # - stable NODE 17+
-  # NODE_VERSION = "18.11.0" # - stable NODE 18+
-  NPM_VERSION = "10.2.5" # - latest NPM
-  # NPM_VERSION = "8.13.2" # - stable NPM
-  YARN_VERSION = "1.22.19"
+  NODE_VERSION = "20.11.0" # - latest NODE version
+  NPM_VERSION = "10.3.0" # - latest NPM version
+  YARN_VERSION = "1.22.21" # - latest YARN version
 
 [[headers]]
   for = "/*"
