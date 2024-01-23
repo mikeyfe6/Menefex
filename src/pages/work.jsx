@@ -207,7 +207,7 @@ const workPage = () => (
         >
           <div className="item" id="#ADS">
             <a
-              href="https://afrodiasphere.netlify.app"
+              href="https://afrodiasphere.com"
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -249,7 +249,7 @@ const workPage = () => (
               </p>
             </div>
             <a
-              href="https://afrodiasphere.netlify.app"
+              href="https://afrodiasphere.com"
               rel="noopener noreferrer"
               target="_blank"
               className={btnLight}

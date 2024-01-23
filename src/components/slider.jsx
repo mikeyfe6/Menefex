@@ -88,7 +88,7 @@ const Projects = () => {
           }}
         >
           <a
-            href="https://blackharmony.nl/"
+            href="https://blackharmony.nl"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -127,7 +127,7 @@ const Projects = () => {
           }}
         >
           <a
-            href="https://afrodiasphere.netlify.app/"
+            href="https://afrodiasphere.com"
             rel="noopener noreferrer"
             target="_blank"
           >
