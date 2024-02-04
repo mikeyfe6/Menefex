@@ -7,10 +7,7 @@ import Layout from '../components/layout';
 
 const ThankYouPage = () => (
   <Layout>
-    <div>
-      <div className="smallwhitespace" />
-      <hr />
-      <br />
+    <section>
       <h1 className="page-title">
         Bedankt voor u bericht<span className="speccol">..</span>
       </h1>
@@ -19,7 +16,7 @@ const ThankYouPage = () => (
       </p>
       <br />
       <Link to="/">Ga terug naar de hoofdpagina!</Link>
-    </div>
+    </section>
   </Layout>
 );
 

@@ -3,12 +3,7 @@ import React from 'react';
 import { useStaticQuery, graphql, Link } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
-import {
-  actualContainer,
-  actualText,
-  actualImg,
-  actualWrapper,
-} from '../styles/modules/actual.module.scss';
+import * as actualStyles from '../styles/modules/actual.module.scss';
 
 const Actual = () => {
   const data = useStaticQuery(graphql`
@@ -33,20 +28,19 @@ const Actual = () => {
   const frontImage = getImage(data.contentfulBlogPost.image);
 
   return (
-    <div className={actualContainer}>
-      <div className={actualWrapper}>
-        <div className={actualImg}>
+    <section className={actualStyles.actualContainer}>
+      <div className={actualStyles.actualWrapper}>
+        <div>
           <GatsbyImage
             image={frontImage}
             alt={data.contentfulBlogPost.image.title}
             style={{ borderRadius: '5px' }}
           />
         </div>
-        <div className={actualText}>
-          <h4 style={{ textAlign: 'center' }}>
-            {data.contentfulBlogPost.title}
-          </h4>
-          <p style={{ textAlign: 'center' }}>
+        <div className={actualStyles.actualText}>
+          <h4>{data.contentfulBlogPost.title}</h4>
+          <br />
+          <p>
             {data.contentfulBlogPost.subtitle}{' '}
             <Link to={`/blog/${data.contentfulBlogPost.slug}/`}>
               <b>Lees meer...</b>
@@ -54,7 +48,7 @@ const Actual = () => {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

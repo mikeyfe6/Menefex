@@ -1,15 +1,13 @@
-@import './customs/colors';
-@import './customs/fonts';
-@import './customs/functions';
+@import './configs/globals';
 
 .gobacktext {
   font-size: 0.8rem;
-  font-family: $alata-font;
+
   font-weight: bolder;
 
   &:hover {
     color: $link-color !important;
-    @include smoothtrans;
+    @include smoothTrans;
   }
 }
 
@@ -26,8 +24,8 @@
   border-radius: 5px;
   margin-bottom: 2.5%;
 
-  @include smoothtrans;
-  @include shadow;
+  @include smoothTrans;
+  @include boxShadow;
 
   &:hover {
     color: $link-color !important;
@@ -49,8 +47,8 @@
   border-radius: 5px;
   margin-bottom: 2.5%;
 
-  @include smoothtrans;
-  @include shadow;
+  @include smoothTrans;
+  @include boxShadow;
 
   &:hover {
     color: $link-color !important;
@@ -68,7 +66,7 @@
   height: 80px;
   margin-left: 1%;
   margin-right: 3%;
-  float: left;
+
   display: block;
   border-right: 5px solid $fourth-color;
   border-radius: 1px;
@@ -84,20 +82,6 @@
   display: inline-block;
   margin-bottom: 2.5%;
   width: 75%;
-}
-
-.thick {
-  margin: 0 0 2em 0;
-  // width: 100%;
-  border-radius: 25px;
-  border: 2.5px solid $spec-color;
-}
-
-.thin {
-  border: 5px solid $sixth-color;
-  width: 100%;
-  border-radius: 3px;
-  margin: 0;
 }
 
 .post-title {
@@ -117,7 +101,7 @@
 
   &::first-letter {
     font-size: 2.5em;
-    float: left;
+
     color: $secondary-color;
     margin-top: -0.175em;
     margin-right: 0.25em;
@@ -145,7 +129,7 @@
 .post-content {
   max-width: 100ch;
   padding-left: 5px;
-  @include fontslg;
+
   // letter-spacing: 0.35px !important;
 
   .paragraphness {
@@ -221,14 +205,13 @@
 }
 
 .post-authorcont {
-  float: right;
   display: flex;
   opacity: 0.9;
   border-radius: 5px;
   border: 1.5px solid $secondary-color;
   background: linear-gradient(to bottom, $fifth-color, $button-hover);
   padding: 5px 0px 5px 20px;
-  @include shadow;
+  @include boxShadow;
 }
 
 .post-author {
@@ -304,8 +287,8 @@
     border-width: 2px;
     border-style: solid;
     font-size: 0.75rem;
-    @include shadow;
-    @include smoothtrans;
+    @include boxShadow;
+    @include smoothTrans;
 
     &:hover {
       // border-color: $link-color !important;
@@ -341,7 +324,7 @@
     letter-spacing: -0.125px;
     max-width: 300px;
     color: $base-color;
-    @include smoothtrans;
+    @include smoothTrans;
 
     img {
       border-radius: 10px 10px 0 0;
@@ -387,10 +370,10 @@
   display: block;
   border-radius: 15px;
   width: 45%;
-  float: left;
+
   // padding: 1%;
   border: 1.5px solid #e9e9e9;
-  @include shadow;
+  @include boxShadow;
 }
 
 .img-resize {
@@ -398,156 +381,12 @@
   display: block;
   border-radius: 15px;
   width: 50%;
-  float: right;
+
   border: 1.5px solid #e9e9e9;
-  @include shadow;
+  @include boxShadow;
 }
 
 .disqussion {
   width: 100%;
   // margin: 0 auto;
-}
-
-@media (max-width: 768px) {
-  .gobacktext {
-    font-size: 0.7rem;
-    line-height: 2;
-  }
-
-  .gobackbtn {
-    margin-bottom: 7.5%;
-    margin-top: -3%;
-    padding: 10px 12.5px;
-  }
-
-  .thin {
-    border: 5px solid $sixth-color;
-    width: 97% !important;
-  }
-
-  .blogheadimage {
-    // margin: 0 3% 7% 0;
-    display: block;
-    border-radius: 0px !important;
-    // width: 100%;
-    border-top: 1.5px solid $sixth-color;
-    border-bottom: 1.5px solid $sixth-color;
-    border-right: 0px;
-    border-left: 0px;
-    @include shadow;
-    width: 100vw;
-
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    margin-bottom: 7%;
-    clear: both;
-  }
-
-  .img-resize {
-    margin: 3.5% 0 8.5% 0;
-    display: block;
-    border-radius: 15px;
-    width: 100%;
-    border: 1.5px solid #e9e9e9;
-    @include shadow;
-  }
-
-  .blog-mini {
-    height: 57.5px !important;
-  }
-
-  .author-mini {
-    height: 32.75px;
-    width: 45px;
-  }
-
-  .nexttologo {
-    margin-bottom: 2%;
-  }
-
-  .postcenterit {
-    width: 100%;
-  }
-
-  .post-content {
-    clear: both;
-    width: 97%;
-    @include fontsmb;
-  }
-
-  .excerpt {
-    margin-bottom: 5%;
-  }
-
-  .post-title {
-    font-size: 1rem;
-  }
-
-  .post-subtitle {
-    margin-top: 12.5%;
-    font-size: 0.85rem;
-    margin-bottom: 7.5%;
-    letter-spacing: 0.1px;
-
-    &::first-letter {
-      font-size: 3em;
-      float: left;
-      margin-top: -0.15em;
-    }
-  }
-
-  .post-author {
-    font-size: 0.6rem;
-  }
-
-  .post-date {
-    color: $secondary-color;
-    font-style: italic;
-    font-size: 0.6rem;
-    margin-left: 0%;
-    margin-top: -1.5%;
-    padding: 0.2% 1.5% 0.2% 1.5%;
-  }
-
-  .rsssub {
-    float: right;
-    margin-top: 3%;
-    margin-right: 3%;
-
-    font-weight: bold;
-    font-size: 0.75em;
-  }
-
-  .feedlysub {
-    float: right;
-    margin-top: 3%;
-
-    font-size: 0.75em;
-  }
-
-  .relatedTopic {
-    li {
-      font-size: 0.7rem;
-      margin-bottom: 0.5rem;
-    }
-  }
-
-  .relatedHead {
-    font-family: $right-font;
-    font-size: 1.5rem;
-    text-align: center;
-  }
-
-  .relatedPosts {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .disqussion {
-    width: 100%;
-    // margin: 0 auto;
-  }
 }

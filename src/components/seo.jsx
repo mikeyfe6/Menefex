@@ -1,6 +1,6 @@
 import * as React from 'react';
+
 import { useStaticQuery, graphql, Script } from 'gatsby';
-import PropTypes from 'prop-types';
 
 const SEO = ({
   title,
@@ -12,21 +12,19 @@ const SEO = ({
   ogimage,
   schemaMarkup,
 }) => {
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            url
-            image
-            twitterUsername
-          }
+  const { site } = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+          description
+          url
+          image
+          twitterUsername
         }
       }
-    `,
-  );
+    }
+  `);
 
   const { url, twitterUsername, image } = site.siteMetadata;
 
@@ -92,6 +90,16 @@ const SEO = ({
         <meta property="twitter:creator" content={twitterUsername} />
       )}
 
+      {/* --- Link Tags ! --- */}
+
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossOrigin="anonymous"
+        referrerPolicy="no-referrer"
+      />
+
       {/* --- SchemaMarkup ! --- */}
 
       {schemaMarkup && (
@@ -100,31 +108,9 @@ const SEO = ({
         </Script>
       )}
 
-      {/* --- Othersss ! --- */}
-
       {children}
     </>
   );
 };
 
 export default SEO;
-
-SEO.propTypes = {
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  pathname: PropTypes.string,
-  keywords: PropTypes.string,
-  ogimage: PropTypes.string,
-  children: PropTypes.node,
-  schemaMarkup: PropTypes.instanceOf(Object),
-  article: PropTypes.bool,
-};
-
-SEO.defaultProps = {
-  pathname: null,
-  keywords: null,
-  ogimage: null,
-  children: null,
-  schemaMarkup: null,
-  article: false,
-};

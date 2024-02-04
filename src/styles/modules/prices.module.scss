@@ -1,142 +1,116 @@
-@import '../customs/functions';
-@import '../customs/colors';
-@import '../customs/fonts';
+@import '../configs/globals';
 
-.pricecon {
-  padding: 30px;
-  // background: $spec-color;
-  background: linear-gradient(to bottom, $spec-color, $secondary-color);
-  border-radius: 25px;
-  border: 2px solid $spec-color;
-  @include smoothtrans;
-  @include shadow;
+.prices {
+  display: flex;
+  gap: 1.5em;
 
-  &:hover {
-    transform: scale(1.025);
-    @include smoothtrans;
-  }
+  > li {
+    padding: 1.5em 1em;
+    gap: 1em;
+    display: flex;
+    flex-direction: column;
 
-  .pricebevat {
-    text-align: center;
-    font-size: 0.75em;
-    font-weight: bold;
-    margin: 2.5em 0;
-    text-decoration: underline;
-    text-decoration-color: $super-color;
+    background: linear-gradient(to bottom, $spec-color, $secondary-color);
+    border-radius: 25px;
+
+    h4 {
+      text-align: center;
+      text-decoration: underline;
+      text-decoration-color: $super-color;
+      font-weight: 700;
+      font-family: $right-font;
+    }
+
+    @include smoothTrans;
+    @include boxShadow;
+
+    &:hover {
+      transform: scale(1.0125);
+      @include smoothTrans;
+    }
+
+    .price {
+      font-size: 1.6rem;
+      text-align: center;
+      font-weight: 700;
+      opacity: 0.8;
+      margin: 0 0 0.5em;
+
+      > span {
+        text-decoration: line-through;
+        font-size: 0.75rem;
+      }
+
+      > sup {
+        font-size: 0.7rem;
+        font-weight: 500;
+        display: block;
+        top: 0.25em;
+      }
+
+      &-action {
+        text-align: center;
+        font-size: 0.75em;
+        font-weight: bolder;
+        opacity: 0.5;
+      }
+
+      &-contains {
+        text-align: center;
+        font-size: 0.75em;
+        font-weight: bold;
+        margin: 1em 0;
+        text-decoration: underline;
+        text-decoration-color: $super-color;
+      }
+
+      &-feat {
+        font-size: 0.9rem;
+        font-style: italic;
+        font-weight: bold;
+        color: white;
+      }
+
+      &-bold {
+        font-weight: 700;
+        font-style: oblique;
+        background: rgba(245, 245, 245, 0.375);
+        border-radius: 2.5px;
+      }
+    }
+
+    > ul {
+      margin-bottom: 2em;
+
+      > li {
+        list-style: none;
+        text-align: center;
+        border-bottom: 1px $spec-color solid;
+        padding: 0.875em 0.5em;
+        font-size: 0.9em;
+      }
+    }
+
+    button {
+      margin: auto auto 0;
+      display: block;
+
+      @include tertiaryButton;
+
+      &:hover {
+        transform: scale(1);
+      }
+    }
   }
 }
 
-.scrollcall {
-  background: transparent;
-  border: none;
+.callme {
   color: #1ca111;
-  padding: 0;
-  @include smoothtrans;
-  outline: none !important;
+  font-weight: 500;
+
+  @include smoothTrans;
 
   &:hover {
     color: #187710;
-    @include smoothtrans;
-  }
-}
-
-.pricehead {
-  text-align: center;
-  text-decoration: underline;
-  text-decoration-color: $super-color;
-  font-weight: 700;
-  font-family: $right-font;
-  margin-bottom: 5%;
-}
-
-.pricecap {
-  font-size: 1.6em;
-  text-align: center;
-  font-weight: 700;
-  opacity: 0.8;
-}
-
-.pricedisc {
-  text-decoration: line-through;
-  font-size: 0.5em;
-  margin-right: -3%;
-}
-
-.priceaction {
-  text-align: center;
-  font-size: 0.75em;
-  font-weight: bolder;
-  opacity: 0.5;
-}
-
-.pricebtw {
-  font-size: 0.5em;
-}
-
-.pricebtn {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  padding: 12.5px 45px;
-  background: transparent;
-  color: $primary-color;
-  background-color: #f2f2f2;
-  font-weight: bolder;
-  font-size: 12.5px;
-  letter-spacing: 2px;
-  border: 3px solid $spec-color;
-  border-radius: 5px;
-  @include smoothtrans;
-
-  &:hover {
-    color: $link-color;
-    border-color: $link-color;
-    background-color: #e9e9e9;
-    @include smoothtrans;
-  }
-}
-
-.pricelist li {
-  list-style: none;
-  text-align: center;
-  border-bottom: 1.2px $secondary-color solid;
-  padding: 10px;
-  font-size: 0.9em;
-  font-weight: 100;
-}
-
-.pricebold {
-  font-weight: 700 !important;
-  font-style: oblique;
-  background: rgba(245, 245, 245, 0.375);
-  border-radius: 2.5px;
-}
-
-.pricenot {
-  background: linear-gradient(to top, $spec-color, $very-color);
-  padding: 2.5% 4.5%;
-  border: 3px solid $very-color;
-  border-radius: 10px;
-  letter-spacing: 0.02em;
-
-  span {
-    font-family: $right-font;
-    font-size: 1.2em;
-  }
-}
-
-@media (max-width: 768px) {
-  .pricecon {
-    margin: 5%;
-  }
-
-  .pricehead {
-    font-size: 1.5em !important;
-  }
-
-  .pricenot {
-    font-size: 0.9em !important;
-    padding: 5% 7% !important;
   }
 }

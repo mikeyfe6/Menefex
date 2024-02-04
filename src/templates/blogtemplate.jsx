@@ -1,15 +1,10 @@
 /* eslint-disable react/prop-types */
 import React, { useEffect } from 'react';
 
-import PropTypes from 'prop-types';
-
 import { graphql, Link } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 import { Disqus } from 'gatsby-plugin-disqus';
-import { Animated } from 'react-animated-css';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { BLOCKS, INLINES, MARKS } from '@contentful/rich-text-types';
 import { renderRichText } from 'gatsby-source-contentful/rich-text';
@@ -22,7 +17,7 @@ import GoogleAdsMulti from '../components/adsmulti';
 
 import mini from '../logo/Menefex-icon.svg';
 
-import '../styles/blogpost.scss';
+import '../styles/singlepost.scss';
 
 // TODO: google ads space ook conditional maken
 
@@ -231,199 +226,156 @@ const Blog = (props) => {
   return (
     <Layout>
       <div className="smallwhitespace" />
-      <div className="container">
-        <Link to="/blog/">
-          <button type="button" className="gobackbtn">
-            <FontAwesomeIcon icon="backward" />{' '}
-            <span className="gobacktext"> &nbsp;ALLE BLOGPOSTS </span>
-          </button>
-        </Link>
-        <hr className="thick" />
 
-        <div className="postcenterit">
-          {' '}
-          <Animated
-            animationIn="fadeIn"
-            animationInDelay={250}
-            animationInDuration={2000}
-          >
-            <img className="blog-mini" src={mini} alt="Menefex Icon" />
+      <Link to="/blog/">
+        <button type="button" className="gobackbtn">
+          {/* <FontAwesomeIcon icon="backward" />{' '} */}
+          <span className="gobacktext"> &nbsp;ALLE BLOGPOSTS </span>
+        </button>
+      </Link>
+      <hr className="thick" />
 
-            <div className="nexttologo">
-              <h1 className="post-title">{title}</h1>
-              <p className="post-date">Gepost op {publishedPost}</p>
+      <div className="postcenterit">
+        {' '}
+        <img className="blog-mini" src={mini} alt="Menefex Icon" />
+        <div className="nexttologo">
+          <h1 className="post-title">{title}</h1>
+          <p className="post-date">Gepost op {publishedPost}</p>
+        </div>
+        <hr className="thin" />
+        <h2 className="post-subtitle">{subtitle}</h2>{' '}
+        <img
+          src={`https:${image.file.url}`}
+          alt={title}
+          className="blogheadimage webfeedsFeaturedVisual"
+        />
+        <div className="post-content">
+          {renderRichText(body, options)}
+
+          <div className="post-authorcont">
+            <div className="post-author">
+              <span className="post-authorspec">Auteur</span> {author}
+              <br />
+              <span className="post-authorspec">Laatst bijgewerkt</span>{' '}
+              {updatedPost}
             </div>
-
-            <div className="clr" />
-
-            <hr className="thin" />
-          </Animated>
-          <Animated
-            animationIn="fadeIn"
-            animationInDelay={1000}
-            animationInDuration={2000}
-          >
-            <h2 className="post-subtitle">{subtitle}</h2>{' '}
-          </Animated>
-          <Animated
-            animationIn="fadeIn"
-            animationInDelay={1750}
-            animationInDuration={2000}
-          >
-            <img
-              src={`https:${image.file.url}`}
-              alt={title}
-              className="blogheadimage webfeedsFeaturedVisual"
-            />
-            <div className="post-content">
-              {renderRichText(body, options)}
-
-              <div className="whitespace" />
-
-              <div className="post-authorcont">
-                <div className="post-author">
-                  <span className="post-authorspec">Auteur</span> {author}
-                  <br />
-                  <span className="post-authorspec">
-                    Laatst bijgewerkt
-                  </span>{' '}
-                  {updatedPost}
-                </div>
-                <img className="author-mini" src={mini} alt="Menefex Icon" />
-              </div>
-
-              <div className="clr" />
-
-              <div className="feedlysub">
-                <a
-                  href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fmenefex.nl%2Frss.xml"
-                  title="Menefex WMB: RSS Feeds"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  <img
-                    id="feedlyFollow"
-                    src="https://s3.feedly.com/img/follows/feedly-follow-circle-flat-green_2x.png"
-                    alt="Lees op Feedly"
-                    width="18"
-                    height="18"
-                    className="imagerss"
-                  />
-                </a>
-                &nbsp;
-                <a
-                  href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fmenefex.nl%2Frss.xml"
-                  type="application/rss+xml"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Lees / Abonneer op Feedly
-                </a>
-              </div>
-              <div className="rsssub">
-                <a
-                  href="https://feeds.feedburner.com/MenefexWMB"
-                  type="application/rss+xml"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  <img
-                    src="https://feedburner.google.com/fb/images/pub/feed-icon16x16.png"
-                    alt="Abonneer via RSS Reader"
-                    className="imagerss"
-                  />
-                </a>
-                &nbsp;
-                <a
-                  href="https://feeds.feedburner.com/MenefexWMB"
-                  type="application/rss+xml"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  RAW data via Feedburner
-                </a>
-              </div>
-            </div>
-          </Animated>
-          <div className="clr" />
-          <div className="smallwhitespace" />
-          <div className="topicsBackButton">
-            <div className="relatedTopicContainer">
-              <ul className="relatedTopic">
-                {postTopic.map((relTopic) => (
-                  <Link to={`/topics/${relTopic.slug}/`} key={relTopic.id}>
-                    <li
-                      key={relTopic.id}
-                      style={{ borderColor: relTopic.bdcolor }}
-                    >
-                      {relTopic.name}
-                    </li>
-                  </Link>
-                ))}
-              </ul>
-            </div>
-            <Link to="/blog/">
-              <button type="button" className="gobackbtnLOW">
-                <FontAwesomeIcon icon="backward" />
-                <span className="gobacktext"> &nbsp;ALLE BLOGPOSTS </span>
-              </button>
-            </Link>
+            <img className="author-mini" src={mini} alt="Menefex Icon" />
           </div>
-          {relatedPosts[0].length === 0 ? null : (
-            <div className="relatedHead">
-              <p>Gerelateerde Artikelen</p>
-            </div>
-          )}
-          <div className="relatedPostsContainer">
-            <ul className="relatedPosts">
-              {uniquePosts.slice(0, 3).map((post) => {
-                const projectImg = getImage(post.image.gatsbyImageData);
 
-                return (
-                  <li key={post.contentfulId}>
-                    <Link to={`/blog/${post.slug}/`}>
-                      <GatsbyImage
-                        image={projectImg}
-                        alt={post.image.title}
-                        // className={slideCont}
-                      />
-                      <p className="relatedPostsTitle">{post.title}</p>
-                      <p className="relatedPostsSubtitle">{post.subtitle}</p>
-                      <p className="relatedPostsButton">Lees meer... </p>
-                    </Link>
+          <div className="feedlysub">
+            <a
+              href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fmenefex.nl%2Frss.xml"
+              title="Menefex WMB: RSS Feeds"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                id="feedlyFollow"
+                src="https://s3.feedly.com/img/follows/feedly-follow-circle-flat-green_2x.png"
+                alt="Lees op Feedly"
+                width="18"
+                height="18"
+                className="imagerss"
+              />
+            </a>
+            &nbsp;
+            <a
+              href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fmenefex.nl%2Frss.xml"
+              type="application/rss+xml"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Lees / Abonneer op Feedly
+            </a>
+          </div>
+          <div className="rsssub">
+            <a
+              href="https://feeds.feedburner.com/MenefexWMB"
+              type="application/rss+xml"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                src="https://feedburner.google.com/fb/images/pub/feed-icon16x16.png"
+                alt="Abonneer via RSS Reader"
+                className="imagerss"
+              />
+            </a>
+            &nbsp;
+            <a
+              href="https://feeds.feedburner.com/MenefexWMB"
+              type="application/rss+xml"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              RAW data via Feedburner
+            </a>
+          </div>
+        </div>
+        <div className="smallwhitespace" />
+        <div className="topicsBackButton">
+          <div className="relatedTopicContainer">
+            <ul className="relatedTopic">
+              {postTopic.map((relTopic) => (
+                <Link to={`/topics/${relTopic.slug}/`} key={relTopic.id}>
+                  <li
+                    key={relTopic.id}
+                    style={{ borderColor: relTopic.bdcolor }}
+                  >
+                    {relTopic.name}
                   </li>
-                );
-              })}
+                </Link>
+              ))}
             </ul>
           </div>
-          <div className="smallwhitespace" />
-          <Animated
-            animationIn="fadeIn"
-            animationInDelay={2500}
-            animationInDuration={2000}
-          >
-            <GoogleAdsDisplay slot="3266975443" />
-          </Animated>
-          <div className="smallwhitespace" />
-          <Animated
-            animationIn="fadeIn"
-            animationInDelay={3250}
-            animationInDuration={2000}
-          >
-            <div className="disqussion">
-              <Disqus
-                config={{
-                  url: `https://menefex.nl/blog/${slug}/`,
-                  identifier: contentfulId,
-                  title,
-                }}
-              />
-            </div>
-            <GoogleAdsMulti slot="1625762341" />
-          </Animated>
+          <Link to="/blog/">
+            <button type="button" className="gobackbtnLOW">
+              {/* <FontAwesomeIcon icon="backward" /> */}
+              <span className="gobacktext"> &nbsp;ALLE BLOGPOSTS </span>
+            </button>
+          </Link>
         </div>
+        {relatedPosts[0].length === 0 ? null : (
+          <div className="relatedHead">
+            <p>Gerelateerde Artikelen</p>
+          </div>
+        )}
+        <div className="relatedPostsContainer">
+          <ul className="relatedPosts">
+            {uniquePosts.slice(0, 3).map((post) => {
+              const projectImg = getImage(post.image.gatsbyImageData);
+
+              return (
+                <li key={post.contentfulId}>
+                  <Link to={`/blog/${post.slug}/`}>
+                    <GatsbyImage
+                      image={projectImg}
+                      alt={post.image.title}
+                      // className={slideCont}
+                    />
+                    <p className="relatedPostsTitle">{post.title}</p>
+                    <p className="relatedPostsSubtitle">{post.subtitle}</p>
+                    <p className="relatedPostsButton">Lees meer... </p>
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+        <div className="smallwhitespace" />
+        <GoogleAdsDisplay slot="3266975443" />
+        <div className="smallwhitespace" />
+        <div className="disqussion">
+          <Disqus
+            config={{
+              url: `https://menefex.nl/blog/${slug}/`,
+              identifier: contentfulId,
+              title,
+            }}
+          />
+        </div>
+        <GoogleAdsMulti slot="1625762341" />
       </div>
-      <div className="whitespace" />
     </Layout>
   );
 };
@@ -496,90 +448,3 @@ export const Head = (props) => {
     />
   );
 };
-
-Bold.propTypes = {
-  children: PropTypes.node.isRequired,
-};
-
-Text.propTypes = {
-  children: PropTypes.node.isRequired,
-};
-
-Heading1.propTypes = {
-  children: PropTypes.node.isRequired,
-};
-
-Heading2.propTypes = {
-  children: PropTypes.node.isRequired,
-};
-
-Heading3.propTypes = {
-  children: PropTypes.node.isRequired,
-};
-
-Heading4.propTypes = {
-  children: PropTypes.node.isRequired,
-};
-
-Heading5.propTypes = {
-  children: PropTypes.node.isRequired,
-};
-
-Heading6.propTypes = {
-  children: PropTypes.node.isRequired,
-};
-
-UnOrdList.propTypes = {
-  children: PropTypes.node.isRequired,
-};
-
-OrdList.propTypes = {
-  children: PropTypes.node.isRequired,
-};
-
-DotList.propTypes = {
-  children: PropTypes.node.isRequired,
-};
-
-Blog.propTypes = {
-  data: PropTypes.shape({
-    contentfulBlogPost: PropTypes.shape({
-      title: PropTypes.string,
-      subtitle: PropTypes.string,
-      author: PropTypes.string,
-      image: PropTypes.shape({
-        file: PropTypes.shape({
-          url: PropTypes.string,
-        }),
-      }),
-      publishedPost: PropTypes.string,
-      updatedPost: PropTypes.string,
-      body: PropTypes.shape({
-        json: PropTypes.shape({
-          content: PropTypes.arrayOf(),
-        }),
-      }),
-      slug: PropTypes.string,
-      contentfulId: PropTypes.string,
-    }),
-  }).isRequired,
-};
-
-// Head.propTypes = {
-//   data: PropTypes.shape({
-//     contentfulBlogPost: PropTypes.shape({
-//       title: PropTypes.string,
-//       subtitle: PropTypes.string,
-//       author: PropTypes.string,
-//       image: PropTypes.shape({
-//         file: PropTypes.shape({
-//           url: PropTypes.string,
-//         }),
-//       }),
-//       publishedSchema: PropTypes.string,
-//       updatedSchema: PropTypes.string,
-//       slug: PropTypes.string,
-//       keywords: PropTypes.arrayOf(PropTypes.string),
-//     }),
-//   }).isRequired,
-// };

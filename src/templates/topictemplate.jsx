@@ -2,21 +2,11 @@
 import React from 'react';
 
 import { Link } from 'gatsby';
-import PropTypes from 'prop-types';
-
-import { Animated } from 'react-animated-css';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-import {
-  posts,
-  post,
-  blogimg,
-  posthead,
-  contsubtext,
-  bloggepost,
-} from '../styles/modules/blog.module.scss';
+import {} from '../styles/modules/blog.module.scss';
 
 // TODO: images naar GatsbyImage verwerken
 
@@ -32,69 +22,63 @@ const Topic = ({ pageContext: { name, topicPosts, bdcolor } }) => (
     <div>
       <div className="smallwhitespace" />
       <h1 className="page-title">
-        Topics<span className="headdots">.</span>
+        Topics<span>.</span>
       </h1>
       <br />
       <p className="page-sub" style={{ fontSize: '1.25rem' }}>
         <span style={{ color: bdcolor, fontWeight: 'bold' }}>#</span> &apos;{' '}
         {name}
       </p>
-      <Animated
-        animationIn="fadeIn"
-        animationInDelay={750}
-        animationInDuration={2000}
-      >
-        <ol className={posts}>
-          {topicPosts === null ? (
-            <DefaultInfo text="* Oeps! Nog geen blogposts..." />
-          ) : (
-            topicPosts.map(
-              ({
-                slug,
-                contentful_id: contentfulId,
-                title,
-                subtitle,
-                publishedDate,
-                author,
-                image,
-              }) => (
-                <li className={post} key={contentfulId}>
-                  <Link to={`/blog/${slug}/`}>
-                    <div>
-                      {' '}
-                      <h4 className={posthead}>{title}</h4>
-                      <span className={contsubtext}> {subtitle}</span>
-                      <p className={bloggepost}>
-                        {' '}
-                        Gepost: <strong>{publishedDate}</strong> ⌁ Auteur:{' '}
-                        <strong>{author}</strong>{' '}
-                      </p>
-                    </div>
 
-                    <img
-                      src={image.file.url}
-                      alt={image.title}
-                      className={blogimg}
-                    />
-                  </Link>
-                </li>
-              ),
-            )
-          )}
-        </ol>
-        <Link to="/topics/">
-          <p
-            style={{
-              textAlign: 'right',
-              margin: '2em 2em 0 0',
-              fontWeight: 'bold',
-            }}
-          >
-            Naar alle &apos;Topics&apos;
-          </p>
-        </Link>
-      </Animated>
-      <div className="whitespace" />
+      <ol className={posts}>
+        {topicPosts === null ? (
+          <DefaultInfo text="* Oeps! Nog geen blogposts..." />
+        ) : (
+          topicPosts.map(
+            ({
+              slug,
+              contentful_id: contentfulId,
+              title,
+              subtitle,
+              publishedDate,
+              author,
+              image,
+            }) => (
+              <li className={post} key={contentfulId}>
+                <Link to={`/blog/${slug}/`}>
+                  <div>
+                    {' '}
+                    <h4 className={posthead}>{title}</h4>
+                    <span className={contsubtext}> {subtitle}</span>
+                    <p className={bloggepost}>
+                      {' '}
+                      Gepost: <strong>{publishedDate}</strong> ⌁ Auteur:{' '}
+                      <strong>{author}</strong>{' '}
+                    </p>
+                  </div>
+
+                  <img
+                    src={image.file.url}
+                    alt={image.title}
+                    className={blogimg}
+                  />
+                </Link>
+              </li>
+            ),
+          )
+        )}
+      </ol>
+      <Link to="/topics/">
+        <p
+          style={{
+            textAlign: 'right',
+            margin: '2em 2em 0 0',
+            fontWeight: 'bold',
+          }}
+        >
+          Naar alle &apos;Topics&apos;
+        </p>
+      </Link>
     </div>
   </Layout>
 );
@@ -104,17 +88,3 @@ export default Topic;
 export const Head = ({ pageContext: { name, description, slug } }) => (
   <SEO title={name} description={description} pathname={`/topics/${slug}/`} />
 );
-
-DefaultInfo.propTypes = {
-  text: PropTypes.string.isRequired,
-};
-
-Topic.propTypes = {
-  pageContext: PropTypes.shape({
-    name: PropTypes.string,
-    bdcolor: PropTypes.string,
-    topicPosts: PropTypes.arrayOf(PropTypes.shape({})),
-  }).isRequired,
-};
-
-Topic.defaultProps = {};

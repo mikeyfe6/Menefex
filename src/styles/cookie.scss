@@ -1,0 +1,65 @@
+@import './configs/globals';
+
+.cookie {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+
+  &-container {
+    background: linear-gradient(to right, $primary-color, $button-hover);
+    opacity: 0.95;
+    color: $fourth-color;
+
+    border-bottom: 7.5px solid $secondary-color;
+    border-top: 7.5px solid $primary-color;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1.5rem;
+
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -12.5%);
+
+    border-radius: $low-radius;
+  }
+
+  &-content {
+    > p {
+      color: white;
+    }
+
+    > span {
+      font-size: 14px;
+    }
+  }
+
+  &-btn {
+    &-wrapper {
+      display: flex;
+      justify-content: flex-end;
+      gap: 1em;
+      align-items: center;
+      margin-top: 1.5rem;
+    }
+
+    &-accept {
+      color: $textbase-color;
+      background-color: $secondary-color;
+      border-radius: $low-radius;
+      padding: 0.5em 1em;
+    }
+
+    &-decline {
+      font-weight: 300;
+      background: transparent;
+      border: 1px solid #dadada86;
+      border-radius: $low-radius;
+      padding: 0.5em 1em;
+      color: $secondary-color;
+    }
+  }
+}

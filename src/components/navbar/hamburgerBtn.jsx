@@ -5,7 +5,7 @@ import {
   toggleButtonLine,
 } from '../../styles/modules/hamburger.module.scss';
 
-const drawerToggleButton = (props) => (
+const HamburgerBtn = (props) => (
   <button
     type="button"
     className={toggleButton}
@@ -18,4 +18,4 @@ const drawerToggleButton = (props) => (
   </button>
 );
 
-export default drawerToggleButton;
+export default HamburgerBtn;

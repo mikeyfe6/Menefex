@@ -1,143 +1,77 @@
-@import '../customs/functions';
-@import '../customs/colors';
-@import '../customs/fonts';
+@import '../configs/globals';
 
-.slideCont {
-  border-bottom: 5px solid $secondary-color;
-  border-top: 3px solid $fourth-color;
-  border-right: 3px solid $fourth-color;
-  border-left: 3px solid $fourth-color;
-  border-radius: 15px 15px 5px 5px;
-  z-index: 1;
-}
+.slider {
+  &-wrapper {
+    overflow: hidden;
+    border-radius: 15px 15px 5px 5px;
+  }
 
-.slider-info {
-  z-index: 2;
-  position: absolute;
-  background: #fff;
-  opacity: 0.9;
-  right: 200px;
-  bottom: -20px;
-  font-size: 0.8rem;
-  width: 325px;
-  border: 2.5px ridge #ffcc00;
-  border-radius: 7px;
-}
+  &-container {
+    border-top: 3px solid $fourth-color;
+    border-right: 3px solid $fourth-color;
+    border-left: 3px solid $fourth-color;
+    border-bottom: 5px solid $secondary-color;
+    overflow: hidden;
+    border-radius: 15px 15px 5px 5px;
 
-.beschrijving {
-  padding: 4%;
+    max-height: 700px;
 
-  a {
-    font-family: $alata-font;
-    color: white;
-    @include smoothtrans;
-
-    &:hover {
-      color: $hover-color;
-      @include smoothtrans;
+    img {
+      object-position: top;
     }
   }
 
-  .project-link {
-    background: linear-gradient(to left, #ffcc007c, $secondary-color);
-    padding: 0.6em 1.25em;
-    white-space: nowrap;
-    border: 2px solid $fifth-color;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 0.75rem;
-    // color: $primary-color;
-    color: $button-hover;
-    letter-spacing: 0.75px;
-    @include smoothtrans;
-    // text-transform: uppercase;
-    @include shadow;
+  &-info {
+    z-index: 1;
+    position: absolute;
+    background: #fff;
+    opacity: 0.95;
+    right: 20px;
+    bottom: 30px;
+    max-width: 500px;
+    border: 2.5px solid $fifth-color;
+    border-radius: 7px;
 
-    &:hover {
-      @include smoothtrans;
-      color: #4da3db;
-      // background: $fourth-color;
-      border-color: #4da3db;
-    }
-  }
+    padding: 1em;
 
-  h5 {
-    color: $primary-color;
-    font-family: $right-font;
-    margin-bottom: 10%;
-    margin-top: 1%;
-    font-size: 1.2rem;
-    text-align: right;
-  }
+    > div {
+      display: flex;
+      justify-content: space-between;
 
-  p {
-    color: $primary-color;
-    text-align: right;
-  }
-
-  .geschreven {
-    font-size: 0.6rem;
-    // font-style: oblique;
-    // font-weight: 700;
-    color: $primary-color;
-    text-align: right;
-
-    .technologien {
-      background: linear-gradient(to right, $primary-color, $button-hover);
-      border-radius: 3px;
-      padding: 0.175% 2% 0.175% 2%;
-      color: white;
-      white-space: nowrap;
-      @include shadow;
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  .slideCont {
-    border-bottom: 4px solid $secondary-color !important;
-    border-top: 2px solid $fourth-color !important;
-    border-right: 2px solid $fourth-color !important;
-    border-left: 2px solid $fourth-color !important;
-    border-radius: 7.5px 7.5px 3px 3px;
-  }
-
-  .slider-info {
-    bottom: -5px;
-    right: 10px;
-    font-size: 0.65rem;
-    width: 52.5%;
-    border: 1.5px ridge #ffcc00;
-  }
-
-  .beschrijving {
-    padding: 3% 5% 0 3%;
-    margin-bottom: -7.5px;
-
-    h5 {
-      margin-top: 2px;
-      font-size: 1.25em;
-    }
-
-    p {
-      font-size: 0.8em;
-    }
-
-    .geschreven {
-      font-size: 0.6em;
-      margin-top: -2.5%;
-
-      .technologien {
-        border-radius: 2.5px;
-        padding: 0.175% 1.75% 0.175% 1.75%;
+      > a[target='_blank'] {
+        @include primaryButton;
       }
     }
 
-    .project-link {
-      padding: 0.75em 1.5em;
-      font-size: 0.8em;
-      border-width: 1.25px;
-      letter-spacing: -0.25px;
+    > h5 {
+      color: $primary-color;
+      font-size: 1.2rem;
+      text-align: right;
+    }
+
+    > p {
+      color: $primary-color;
+      text-align: right;
+      font-size: 0.9rem;
+      margin: 1em 0;
+    }
+
+    > ul {
+      display: flex;
+      gap: 0.25em;
+      justify-content: flex-end;
+
+      > li {
+        background: linear-gradient(to right, $primary-color, $button-hover);
+        border-radius: 3px;
+        padding: 0.125em 0.5em;
+        width: fit-content;
+        color: white;
+        white-space: nowrap;
+        font-size: 0.6rem;
+
+        @include boxShadow;
+      }
     }
   }
 }

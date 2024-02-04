@@ -1,105 +1,54 @@
-@import '../customs/functions';
-@import '../customs/colors';
-@import '../customs/fonts';
+@import '../configs/globals';
 
-.smallbio-container {
-  margin-bottom: 1%;
-  background: linear-gradient(to right, $spec-color, white);
-  height: 100%;
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  opacity: 0.9;
-}
+.smallbio {
+  &-container {
+    background: linear-gradient(to right, $spec-color, $white-color);
+    opacity: 0.9;
 
-.smallbio-wrapper {
-  padding: 2% 17.5%;
+    @include fullWidth;
+  }
 
-  .smallbio-text {
-    @include fontslg;
-    margin-top: 3%;
-    color: $textbase-color;
+  &-wrapper {
+    @include container(0, 4em);
+
+    .thick {
+      margin: 0;
+      width: 15%;
+      border: 3px solid $sixth-color;
+      opacity: 0.5;
+    }
+
+    .thin {
+      border: 1px solid $super-color;
+    }
+
+    > div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2em;
+
+      i {
+        color: $primary-color;
+        font-size: 2em;
+
+        @include smoothTrans;
+
+        &:hover {
+          color: $link-color;
+        }
+      }
+    }
+  }
+
+  &-text {
+    margin: 2em 0 1.5em;
     opacity: 0.75;
-    padding: 10px 0;
-  }
-
-  .thick {
-    margin: 0;
-    width: 15%;
-    border: 3px solid #fff;
-    opacity: 0.5;
-  }
-
-  .thin {
-    border: 1px solid $super-color;
-  }
-}
-
-.spotibio {
-  color: $primary-color;
-  padding: 1px;
-  margin-top: 7.5px;
-  @include smoothtrans;
-  // margin-top: 50px;
-
-  &:hover {
-    // color: $secondary-color;
-    @include smoothtrans;
-    color: $link-color;
+    color: $textbase-color;
+    max-width: 75%;
   }
 }
 
 .meerover {
-  float: right;
-  text-transform: uppercase;
-  font-family: $alata-font;
-  padding: 12.5px 35px;
-  background: transparent;
-  color: white;
-  background-color: $primary-color;
-  font-weight: bolder;
-  font-size: 0.75rem;
-  letter-spacing: 2px;
-  border: 3px solid $secondary-color;
-  border-radius: 5px;
-  margin-bottom: 2%;
-  @include smoothtrans;
-  @include shadow;
-  // margin-top: 50px;
-
-  &:hover {
-    // color: $secondary-color;
-    background-color: $textbase-color;
-    border-color: $link-color;
-    font-weight: bold;
-  }
+  @include primaryButton;
 }
-
-@media (max-width: 768px) {
-  .smallbio-wrapper {
-    padding: 5%;
-  }
-
-  .smallbio-container {
-    // width: 100%;
-    border-width: 1px;
-  }
-
-  .smallbio-text {
-    @include fontsmb;
-  }
-
-  .spotibio {
-    margin-left: 2.5px;
-  }
-
-  .meerover {
-    letter-spacing: 1.5px;
-    font-size: 11px;
-    padding: 12.5px 25px;
-  }
-}
-// color #d0d0d0;

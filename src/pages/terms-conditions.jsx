@@ -7,10 +7,7 @@ import Layout from '../components/layout';
 
 const TermsConditions = () => (
   <Layout>
-    <div className="termscondit">
-      <div className="smallwhitespace" />
-      <hr />
-      <br />
+    <section className="terms-conditions">
       <h1 className="page-title"> ALGEMENE VOORWAARDEN - Menefex</h1>
       <h5>Definities</h5>
       <br />
@@ -655,8 +652,7 @@ const TermsConditions = () => (
       </p>
       <br />
       <Link to="/">Ga terug naar de hoofdpagina!</Link>
-    </div>
-    <div className="whitespace" />
+    </section>
   </Layout>
 );
 

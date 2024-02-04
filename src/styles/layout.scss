@@ -1,174 +1,103 @@
-@import 'index.scss';
-
-* {
-  outline: none;
-}
+@import './configs/globals';
+@import './configs/resets';
 
 html {
   scroll-behavior: smooth;
-  width: 100%;
-  word-wrap: break-word;
-
-  /* width */
-  ::-webkit-scrollbar {
-    width: 7.5px;
-  }
-
-  // ::-webkit-scrollbar:hover {
-  //   // width: 15px !important;
-  // }
-
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: $secondary-color;
-  }
-
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: $primary-color;
-  }
-
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: $fifth-color;
-  }
-
-  body {
-    width: 100%;
-    color: #656565;
-    font-family: $poppins-font;
-    font-weight: 300;
-    // overflow-y: auto;
-    overflow-x: hidden;
-  }
+  overflow-x: hidden;
 }
 
-::-moz-selection {
-  /* Code for Firefox */
-  color: black;
-  background: $secondary-color;
-}
+body {
+  font-family: $poppins-font;
+  color: $base-color;
+  font-size: 1rem;
 
-::selection {
-  color: black;
-  background: $secondary-color;
-}
-
-.carousel-indicators {
-  margin-bottom: -3rem !important;
-
-  button {
-    background-color: $primary-color !important;
-  }
-
-  &.carousel-indicators [data-bs-target] {
-    &:hover {
-      background-color: $link-color !important;
-    }
-  }
-}
-
-// progress[value] {
-//   -webkit-appearance: none;
-//   appearance: none;
-// }
-
-// progress[value]::-webkit-progress-bar {
-//   background-color: $link-color;
-// }
-
-// Pagina Setup
-
-#page-container {
-  position: relative;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 
-  #content-wrap {
-    padding-bottom: 2.5rem; /* Footer height */
+  // @media (max-width: 319px) {
+  //   display: none;
+  // }
+}
 
-    @media (max-width: 319px) {
-      display: none;
-    }
-  }
+// #tosmallforyouscreen {
+//   display: none;
+//   text-align: center;
 
-  #tosmallforyouscreen {
-    display: none;
-    text-align: center;
+//   .container {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     height: 100vh;
+//     gap: 25px;
 
-    .container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      height: 100vh;
-      gap: 25px;
+//     img {
+//       width: 37.5%;
+//       margin: 0 auto;
+//     }
 
-      img {
-        width: 37.5%;
-        margin: 0 auto;
-      }
+//     p {
+//       font-size: 0.75rem;
+//     }
+//   }
 
-      p {
-        font-size: 0.75rem;
-      }
-    }
+//   @media (max-width: 319px) {
+//     display: block;
+//   }
+// }
 
-    @media (max-width: 319px) {
-      display: block;
-    }
+main {
+  @include container(100px);
+
+  &:has(> .page-title) {
+    @include container(100px, 3em);
   }
 }
 
-.page-title {
-  font-family: $right-font;
-  font-size: 2.25rem;
+section,
+form {
+  margin: 2.5em 0 2em;
+
+  section {
+    margin: 0;
+    padding: 0;
+  }
 }
 
-.page-sub {
-  // border-left: 1.5px dotted $secondary-color;
-  // padding-left: 12.5px;
+button {
+  cursor: pointer;
+
+  @include boxShadow;
+}
+
+h1 {
+  span {
+    color: $secondary-color;
+  }
+}
+
+h2 {
+}
+
+h3 {
+  font-family: Righteous, cursive;
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-family: Righteous, cursive;
+  font-size: 1.25rem;
+}
+
+p {
+  font-size: 1rem;
+  letter-spacing: 0.025rem;
+  line-height: 1.6;
   font-weight: 300;
-  letter-spacing: -0.2px;
-  opacity: 0.9;
-}
-
-// Terms & Cods
-
-.termscondit,
-.privacypol {
-  font-size: 0.75em;
-}
-
-// DISQUS TWEAK
-
-#disqus_thread a {
-  color: $secondary-color;
-  // opacity: 0.95;
-}
-
-// RESETS
-
-.whitespace {
-  width: 100%;
-  height: 75px;
-}
-
-.specwhitespace {
-  width: 100%;
-  height: 50px;
-}
-
-.smallwhitespace {
-  width: 100%;
-  height: 25px;
-}
-
-.extrawhitespace {
-  width: 100%;
-  height: 125px;
-}
-
-.clr {
-  clear: both;
 }
 
 ul {
@@ -177,32 +106,185 @@ ul {
 
 a {
   text-decoration: none;
-  @include smoothtrans;
+  display: inline-block;
+}
 
-  &:hover {
-    text-decoration: none;
-    @include smoothtrans;
+b {
+  font-weight: 500;
+}
+
+strike {
+  text-decoration: line-through;
+}
+
+u {
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+  text-decoration-color: $secondary-color;
+}
+
+hr {
+  @include boxShadow;
+}
+
+footer {
+  margin-top: auto;
+}
+
+input,
+textarea,
+select {
+  font-size: 1.1rem;
+  font-weight: 400;
+  border: none;
+  outline: none;
+}
+
+input,
+textarea {
+  width: 100%;
+}
+
+[hidden] {
+  display: none;
+}
+
+/* Width */
+::-webkit-scrollbar {
+  width: 7.5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $secondary-color;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $primary-color;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $fifth-color;
+}
+
+/* Selection */
+::selection {
+  color: $textbase-color;
+  background: $secondary-color;
+}
+
+.home-title {
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: $secondary-color;
+  font-family: $right-font;
+}
+
+.page-title {
+  font-family: $right-font;
+  font-size: 2.25rem;
+  margin-bottom: 0.375em;
+}
+
+.page-sub {
+  font-weight: 300;
+  letter-spacing: -0.1px;
+  opacity: 0.9;
+  font-size: 1.1rem;
+  max-width: 50%;
+}
+
+.thick {
+  border-radius: $low-radius;
+  border: 2.5px solid $spec-color;
+}
+
+.thin {
+  border: 5px solid $sixth-color;
+  border-radius: $low-radius;
+}
+
+.vertical-line-short {
+  border-left: 5px solid $spec-color;
+  display: table;
+  margin: 5em auto;
+  height: 70px;
+  opacity: 0.5;
+}
+
+.vertical-line-long {
+  border-left: 5px solid $spec-color;
+  display: table;
+  margin: 0 auto 5em;
+  height: 100px;
+  opacity: 0.5;
+}
+
+.about-spotify {
+  display: flex;
+  align-items: center;
+  gap: 5em;
+}
+
+.notes-call {
+  display: flex;
+  gap: 3em;
+
+  > section {
+    flex: 60%;
+  }
+
+  > form {
+    flex: 40%;
   }
 }
 
-@media (max-width: 768px) {
-  .page-sub {
-    font-size: 0.85em;
+.form-info {
+  display: flex;
+  align-items: center;
+  gap: 5em;
+
+  > section {
+    flex: 50%;
   }
 
-  .page-title {
-    font-size: 1.75em;
+  > div {
+    flex: 50%;
+  }
+}
+
+// Terms & Cods
+
+.terms-conditions,
+.privacy-policy {
+  h1 {
+    margin-bottom: 1em;
   }
 
-  .whitespace {
-    height: 50px;
+  p {
+    margin-bottom: 1em;
   }
 
-  .extrawhitespace {
-    height: 100px;
+  a {
+    color: $link-color;
   }
+}
 
-  // .specvertical {
-  //   // height: 90px;
-  // }
+// DISQUS TWEAK
+
+#disqus_thread a {
+  color: $secondary-color;
+}
+
+span.speccol {
+  color: $secondary-color;
+}
+
+span.speccolplus {
+  color: $fifth-color;
+  font-weight: bolder;
+  opacity: 0.75;
+  margin: 0 0.75em;
 }

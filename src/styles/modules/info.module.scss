@@ -1,0 +1,155 @@
+@use 'sass:color';
+
+@import '../configs/globals';
+
+.info {
+  padding: 2.5em;
+  background: linear-gradient(to right, $primary-color, $button-hover);
+  opacity: 0.9;
+  border: 3px solid $primary-color;
+  border-radius: $medium-radius;
+  color: white !important;
+
+  > span {
+    margin-bottom: 1em;
+    display: block;
+  }
+
+  ul.times > li > span {
+    color: $secondary-color;
+    min-width: 105px;
+    display: inline-block;
+  }
+
+  .details {
+    font-size: 0.9rem;
+  }
+
+  .communication {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    span {
+      color: $secondary-color;
+    }
+
+    ul {
+      display: flex;
+      gap: 1em;
+      margin-top: 1.25em;
+
+      li {
+        a {
+          i {
+            font-size: 1.5em;
+          }
+
+          display: block;
+          background: transparent;
+          border-radius: $medium-radius;
+          padding: 0.25em 0.25em 0;
+
+          @include smoothTrans;
+
+          &:hover {
+            background-color: $white-color;
+            transform: scale(1.125);
+          }
+
+          &.fb:hover i {
+            color: #4064ad;
+          }
+
+          &.ig:hover i {
+            color: #dd2a7b;
+          }
+
+          &.tw:hover i {
+            color: #55acee;
+          }
+
+          &.li:hover i {
+            color: #0177b5;
+          }
+
+          &.gh:hover i {
+            color: #24292e;
+          }
+
+          &.rss:hover i {
+            color: #fa9b3b;
+          }
+
+          &.patr:hover i {
+            color: #f26451;
+          }
+
+          &.sky:hover i {
+            color: #05aae8;
+          }
+
+          &.sp:hover i {
+            color: #1db954;
+          }
+
+          &.wa:hover i {
+            color: #1ca111;
+          }
+        }
+      }
+    }
+  }
+
+  .contacttel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    gap: 0.5em;
+
+    i {
+      font-size: 1.125em;
+    }
+
+    a {
+      color: #2b9d53;
+      font-size: 1rem;
+
+      @include smoothTrans;
+
+      &:hover {
+        color: color.adjust(#2b9d53, $lightness: 10%);
+      }
+    }
+  }
+
+  .contactmail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    gap: 0.5em;
+
+    i {
+      font-size: 1.125em;
+    }
+
+    a {
+      font-size: 1rem;
+      color: #84bcde;
+
+      @include smoothTrans;
+
+      &:hover {
+        color: color.adjust(#84bcde, $lightness: 10%);
+      }
+    }
+  }
+}

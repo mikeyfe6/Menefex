@@ -1,7 +1,61 @@
-/* eslint-disable no-shadow */
 const path = require('path');
+const fs = require('fs').promises;
 
 const { documentToHtmlString } = require('@contentful/rich-text-html-renderer');
+
+const puppeteer = require('puppeteer');
+
+const captureScreenshot = async (url, filename, delay) => {
+  try {
+    const browser = await puppeteer.launch({
+      headless: 'new',
+      args: [
+        '--no-sandbox',
+        '--disable-setuid-sandbox',
+        '--disable-web-security',
+        '--disable-features=IsolateOrigins,site-per-process',
+      ],
+    });
+    const page = await browser.newPage();
+
+    await page.setViewport({
+      width: 1920,
+      height: 1080,
+      deviceScaleFactor: 1,
+    });
+
+    await page.goto(url);
+
+    await new Promise((resolve) => setTimeout(resolve, delay));
+
+    await fs.mkdir('./public/project-images', { recursive: true });
+
+    await page.screenshot({
+      path: `./public/project-images/${filename}.png`,
+    });
+
+    console.log(`Done capturing screenshot for ${url}`);
+    await browser.close();
+  } catch (error) {
+    console.error(`Error capturing screenshot for ${url}:`, error);
+  }
+};
+
+exports.onPostBuild = async () => {
+  await captureScreenshot('https://blackharmony.nl', 'blackharmony', 0);
+  await captureScreenshot('https://eternitydrum.com', 'eternitydrum', 0);
+  await captureScreenshot('https://kn-acdig.com', 'kn-acdig', 0);
+  await captureScreenshot('https://dsmelodies.com', 'dsmelodies', 0);
+  await captureScreenshot('https://afrodiasphere.com', 'afrodiasphere', 3000);
+};
+
+exports.onPreBootstrap = async () => {
+  await captureScreenshot('https://blackharmony.nl', 'blackharmony', 0);
+  await captureScreenshot('https://eternitydrum.com', 'eternitydrum', 0);
+  await captureScreenshot('https://kn-acdig.com', 'kn-acdig', 0);
+  await captureScreenshot('https://dsmelodies.com', 'dsmelodies', 0);
+  await captureScreenshot('https://afrodiasphere.com', 'afrodiasphere', 3000);
+};
 
 exports.createResolvers = ({ createResolvers }) => {
   createResolvers({
@@ -13,8 +67,6 @@ exports.createResolvers = ({ createResolvers }) => {
     },
   });
 };
-
-// --------------------------------------- //
 
 module.exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
@@ -89,50 +141,4 @@ module.exports.createPages = async ({ graphql, actions }) => {
       },
     });
   });
-
-  //  ! MD locale post weergeven
-  // module.exports.onCreateNode = ({ node, actions }) => {
-  //   const { createNode, createNodeField } = actions
-
-  //   if (node.internal.type === "MarkdownRemark") {
-  //  ! geeft de md files aan
-  //     const slug = path.basename(node.fileAbsolutePath, ".md")
-
-  //  ! geeft alleen slugnaam weer voor md files
-  //     createNodeField({
-  //       node,
-  //       name: "slug",
-  //       value: slug,
-  //     })
-  //   }
-  // }
-
-  //  ! creeer nieuwe pagina's met MD
-  // module.exports.createPages = async ({ graphql, actions }) => {
-  //   const { createPage } = actions
-  //   const blogTemplate = path.resolve("./src/templates/blogs.js")
-  //   const res = await graphql(`
-  //     query {
-  //       allMarkdownRemark {
-  //         edges {
-  //           node {
-  //             fields {
-  //               slug
-  //             }
-  //           }
-  //         }
-  //       }
-  //     }
-  //   `)
-
-  //  ! wat moet createPage doen? met MD
-  // res.data.allMarkdownRemark.edges.forEach(edge => {
-  //   createPage({
-  //     component: blogTemplate,
-  //     path: `/blogs/${edge.node.fields.slug}`,
-  //     context: {
-  //       slug: edge.node.fields.slug,
-  //     },
-  //   })
-  // })
 };

@@ -1,19 +1,18 @@
 import React from 'react';
 
 import { Link } from 'gatsby';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import {
   activePage,
   dots,
   menuline,
-  whapp,
+  // whapp,
   wapp,
   sideBar,
   open,
 } from '../../styles/modules/sidebar.module.scss';
 
-const sideDrawer = (props) => {
+const MobileMenu = (props) => {
   let drawerClasses = sideBar;
   if (props.show) {
     drawerClasses = `${sideBar} ${open}`;
@@ -29,7 +28,7 @@ const sideDrawer = (props) => {
           </Link>
         </li>
         <li>
-          <Link to="/work/" activeClassName={activePage}>
+          <Link to="/portfolio/" activeClassName={activePage}>
             portfolio
             <span className={dots}>.</span>
           </Link>
@@ -41,13 +40,13 @@ const sideDrawer = (props) => {
           </Link>
         </li>
         <li>
-          <Link to="/prices/" activeClassName={activePage}>
+          <Link to="/prijzen/" activeClassName={activePage}>
             prijzen
             <span className={dots}>.</span>
           </Link>
         </li>
         <li>
-          <Link to="/about/" activeClassName={activePage}>
+          <Link to="/over/" activeClassName={activePage}>
             over
             <span className={dots}>.</span>
           </Link>
@@ -66,12 +65,12 @@ const sideDrawer = (props) => {
             rel="noopener noreferrer"
             target="_blank"
           >
-            <FontAwesomeIcon
+            {/* <FontAwesomeIcon
               icon={['fab', 'whatsapp']}
               size="lg"
               color="#1ca111"
               className={whapp}
-            />
+            /> */}
             <span className={wapp}>&nbsp;Stuur een whatsapp&apos; bericht</span>
             <span className={dots}>.</span>
           </a>
@@ -81,4 +80,4 @@ const sideDrawer = (props) => {
   );
 };
 
-export default sideDrawer;
+export default MobileMenu;

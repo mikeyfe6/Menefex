@@ -1,31 +1,27 @@
 import React from 'react';
 
 import { Link } from 'gatsby';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import logo from '../../logo/Menefex-logo.svg';
-import DrawerToggleButton from './DrawerToggleButton';
+import HamburgerBtn from './hamburgerBtn';
 
 import { toolLogo } from '../../styles/modules/headLogo.module.scss';
 import {
   tlbar,
   tlbarNavigation,
   tlbarToggleButton,
-  spacerTwo,
   spacer,
   tlbarNavigationItems,
   activePage,
   dots,
-  whapp,
 } from '../../styles/modules/toolbar.module.scss';
 
-const toolbar = (props) => (
+const DesktopMenu = ({ drawerClickHandler }) => (
   <header className={tlbar}>
     <nav className={tlbarNavigation}>
       <div className={tlbarToggleButton}>
-        <DrawerToggleButton click={props.drawerClickHandler} />
+        <HamburgerBtn click={drawerClickHandler} />
       </div>
-      <div className={spacerTwo} />
       <div>
         <Link to="/">
           <img className={toolLogo} src={logo} alt="Menefex Logo" />
@@ -41,7 +37,7 @@ const toolbar = (props) => (
             </Link>
           </li>
           <li>
-            <Link to="/work/" activeClassName={activePage}>
+            <Link to="/portfolio/" activeClassName={activePage}>
               portfolio
               <span className={dots}>.</span>
             </Link>
@@ -53,13 +49,13 @@ const toolbar = (props) => (
             </Link>
           </li>
           <li>
-            <Link to="/prices/" activeClassName={activePage}>
+            <Link to="/prijzen/" activeClassName={activePage}>
               prijzen
               <span className={dots}>.</span>
             </Link>
           </li>
           <li>
-            <Link to="/about/" activeClassName={activePage}>
+            <Link to="/over/" activeClassName={activePage}>
               over
               <span className={dots}>.</span>
             </Link>
@@ -76,19 +72,18 @@ const toolbar = (props) => (
               rel="noopener noreferrer"
               target="_blank"
             >
-              <FontAwesomeIcon
+              {/* <FontAwesomeIcon
                 icon={['fab', 'whatsapp']}
                 size="xl"
                 color="#555555"
                 className={whapp}
-              />
+              /> */}
             </a>
           </li>
         </ul>
       </div>
     </nav>
-    <div className="clr" />
   </header>
 );
 
-export default toolbar;
+export default DesktopMenu;

@@ -1,0 +1,101 @@
+@import '../configs/globals';
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
+
+  &-img {
+    max-height: 100%;
+    max-width: 100%;
+    border: 2px $fourth-color solid;
+    border-radius: 10px;
+    z-index: 1;
+
+    @include smoothTrans;
+    @include boxShadow;
+
+    &:hover {
+      opacity: 0.7;
+      border-color: $link-color;
+      @include smoothTrans;
+    }
+  }
+
+  &-info {
+    padding: 0.5rem 1rem;
+    border: 0.5px solid $secondary-color;
+    margin: 2em 0;
+    border-bottom: none;
+    border-top: none;
+    min-height: 300px;
+
+    span {
+      font-family: $right-font;
+      margin-right: 1em;
+      color: $secondary-color;
+      font-size: 0.9rem;
+    }
+
+    h5 {
+      display: inline;
+    }
+
+    p {
+      font-weight: 300;
+      font-size: 0.9rem;
+      margin: 1.5em 0 1em;
+    }
+
+    p:nth-of-type(2) {
+      font-weight: 500;
+      margin: 0 0 2em;
+    }
+
+    ul {
+      display: inline;
+
+      li {
+        background: linear-gradient(to right, $primary-color, $button-hover);
+        border-radius: 4px;
+        padding: 0.175% 1.5% 0.175% 1%;
+        margin: 1% 0 1% 0%;
+        color: $sixth-color;
+        font-size: 0.85em;
+        white-space: nowrap;
+        display: inline;
+
+        &:not(last-child) {
+          margin-right: 0.375em;
+        }
+
+        @include boxShadow;
+      }
+    }
+  }
+
+  &-btns {
+    display: flex;
+    gap: 1em;
+
+    .btn {
+      &-dark {
+        i {
+          margin-right: 0.5em;
+          font-size: 1.125em;
+        }
+
+        @include darkButton;
+      }
+
+      &-light {
+        i {
+          margin-right: 0.5em;
+          font-size: 1.125em;
+        }
+
+        @include lightButton;
+      }
+    }
+  }
+}

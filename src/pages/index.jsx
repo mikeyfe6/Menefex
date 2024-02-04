@@ -1,18 +1,15 @@
 import React from 'react';
 
 import { useStaticQuery, graphql } from 'gatsby';
-import ScrollAnimation from 'react-animate-on-scroll';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 import Hero from '../components/hero';
-import Service from '../components/service';
+import Service from '../components/services';
 import Projects from '../components/slider';
 import Smallbio from '../components/smallbio';
 import Actual from '../components/actual';
-
-import '../styles/index.scss';
 
 // *GEFIXT TODO: pagina helemaal responsive maken
 
@@ -20,113 +17,37 @@ const IndexPage = () => (
   <Layout>
     <Hero />
 
-    <ScrollAnimation animateIn="zoomIn" delay={50} duration={3} animateOnce>
-      <div className="specvertical" />
-    </ScrollAnimation>
+    <div className="vertical-line-long" />
 
-    <br />
+    <div id="biografiescroll" />
 
-    <div id="biografiescroll" className="extrawhitespace" />
+    <h3 className="home-title">Biografie</h3>
 
-    <ScrollAnimation
-      animateIn="fadeInRight"
-      delay={250}
-      offset={50}
-      duration={2}
-      animateOnce
-    >
-      <h3 className="hometitles">Biografie</h3>
-    </ScrollAnimation>
+    <Smallbio />
 
-    <br />
+    <div className="vertical-line-short" />
 
-    <ScrollAnimation
-      animateIn="fadeInLeft"
-      delay={900}
-      duration={2}
-      animateOnce
-    >
-      <Smallbio />
-    </ScrollAnimation>
+    <div id="actualscroll" />
 
-    <div className="extrawhitespace" />
+    <h3 className="home-title">Actueel</h3>
 
-    <ScrollAnimation animateIn="zoomIn" delay={50} duration={3} animateOnce>
-      <div className="vertical" />
-    </ScrollAnimation>
+    <Actual />
 
-    <div id="actualscroll" className="extrawhitespace" />
+    <div className="vertical-line-short" />
 
-    <ScrollAnimation
-      animateIn="fadeInLeft"
-      delay={250}
-      offset={50}
-      duration={2}
-      animateOnce
-    >
-      <h3 className="hometitles">Actueel</h3>
-    </ScrollAnimation>
+    <div id="servicescroll" />
 
-    <br />
+    <h3 className="home-title">Services & Diensten</h3>
 
-    <ScrollAnimation
-      animateIn="fadeInRight"
-      delay={900}
-      duration={2}
-      animateOnce
-    >
-      <Actual />
-    </ScrollAnimation>
+    <Service />
 
-    <div className="extrawhitespace" />
+    <div className="vertical-line-short" />
 
-    <ScrollAnimation animateIn="zoomIn" delay={50} duration={3} animateOnce>
-      <div className="vertical" />
-    </ScrollAnimation>
+    <div id="projectscroll" />
 
-    <div id="servicescroll" className="extrawhitespace" />
+    <h3 className="home-title"> Recente Projecten</h3>
 
-    <ScrollAnimation
-      animateIn="fadeInRight"
-      delay={250}
-      offset={50}
-      duration={2}
-      animateOnce
-    >
-      <h3 className="hometitles">Services & Diensten</h3>
-    </ScrollAnimation>
-
-    <br />
-
-    <ScrollAnimation animateIn="fadeIn" delay={900} duration={2} animateOnce>
-      <Service />
-    </ScrollAnimation>
-
-    <div className="extrawhitespace" />
-
-    <ScrollAnimation animateIn="zoomIn" delay={50} duration={3} animateOnce>
-      <div className="vertical" />
-    </ScrollAnimation>
-
-    <div id="projectscroll" className="extrawhitespace" />
-
-    <ScrollAnimation
-      animateIn="fadeInDown"
-      delay={250}
-      offset={50}
-      duration={2}
-      animateOnce
-    >
-      <h3 className="hometitles"> Recente Projecten</h3>
-    </ScrollAnimation>
-
-    <br />
-
-    <ScrollAnimation animateIn="fadeInUp" delay={900} duration={2} animateOnce>
-      <Projects />
-    </ScrollAnimation>
-
-    <div className="whitespace" />
+    <Projects />
   </Layout>
 );
 

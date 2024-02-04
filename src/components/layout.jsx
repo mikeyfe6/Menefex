@@ -1,179 +1,100 @@
-import React from 'react';
-
+import React, { useState } from 'react';
 import { Link } from 'gatsby';
-import PropTypes from 'prop-types';
 import CookieConsent from 'react-cookie-consent';
 
-// FontAwesome icons
-import { library } from '@fortawesome/fontawesome-svg-core';
-import {
-  fab,
-  faFacebookSquare,
-  faLinkedin,
-  faInstagramSquare,
-  faGithubSquare,
-  faWhatsappSquare,
-  faTwitterSquare,
-  faSpotify,
-  faPatreon,
-} from '@fortawesome/free-brands-svg-icons';
-import {
-  faPhoneSquareAlt,
-  faGlobe,
-  faMobile,
-  faEye,
-  faBackward,
-  faPaperPlane,
-  faShoppingCart,
-  faRss,
-} from '@fortawesome/free-solid-svg-icons';
-
 // components
-import Toolbar from './navbar/Toolbar';
-import SideDrawer from './navbar/SideDrawer';
-import Backdrop from './navbar/Backdrop';
+import DesktopMenu from './navbar/desktopMenu';
+import MobileMenu from './navbar/mobileMenu';
+import MenuOverlay from './navbar/menuOverlay';
 import Footer from './footer';
+
+import ResponsiveTag from './helpers/responsiveTag';
 
 // styles
 import '../styles/layout.scss';
+import '../styles/cookie.scss';
 
 import minilogo from '../logo/Menefex-icon.svg';
 
-library.add(
-  fab,
-  faPhoneSquareAlt,
-  faGlobe,
-  faMobile,
-  faEye,
-  faBackward,
-  faPaperPlane,
-  faFacebookSquare,
-  faLinkedin,
-  faInstagramSquare,
-  faGithubSquare,
-  faWhatsappSquare,
-  faTwitterSquare,
-  faSpotify,
-  faShoppingCart,
-  faRss,
-  faPatreon,
-);
+const Layout = ({ children }) => {
+  const [sideDrawerOpen, setSideDrawerOpen] = useState(false);
 
-// TODO: container & content=wrap kunnen weg
+  const drawerToggleClickHandler = () => {
+    setSideDrawerOpen((prevState) => !prevState.sideDrawerOpen);
+  };
 
-// layout
-class Layout extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { sideDrawerOpen: false };
+  const menuOverlayClickHandler = () => {
+    setSideDrawerOpen(false);
+  };
+
+  let backdrop;
+
+  if (sideDrawerOpen) {
+    backdrop = <MenuOverlay click={menuOverlayClickHandler} />;
   }
 
-  drawerToggleClickHandler = () => {
-    this.setState((prevState) => ({
-      sideDrawerOpen: !prevState.sideDrawerOpen,
-    }));
-  };
-
-  backdropClickHandler = () => {
-    this.setState({ sideDrawerOpen: false });
-  };
-
-  render() {
-    let backdrop;
-    const { sideDrawerOpen } = this.state;
-    const { children } = this.props;
-
-    if (sideDrawerOpen) {
-      backdrop = <Backdrop click={this.backdropClickHandler} />;
-    }
-    return (
-      <div id="page-container">
-        <div id="tosmallforyouscreen">
-          <div className="container">
-            <img src={minilogo} alt="Menefex Mini Logo" />
-            <p>
-              <strong>Sorry!</strong> De scherm van je toestel is te klein om de
-              website juist weer te geven...
-            </p>
-          </div>
+  return (
+    <>
+      <div id="tosmallforyouscreen" hidden>
+        <div className="container">
+          <img src={minilogo} alt="Menefex Mini Logo" />
+          <p>
+            <strong>Sorry!</strong> De scherm van je toestel is te klein om de
+            website juist weer te geven...
+          </p>
         </div>
-        <div id="content-wrap">
-          <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
-          <SideDrawer show={sideDrawerOpen} />
-          {backdrop}
-          <main style={{ marginTop: '100px' }}>
-            <div className="container">{children}</div>
-          </main>
-          <CookieConsent
-            overlay
-            flipButtons
-            expires={60}
-            location="top"
-            buttonText="Accepteer"
-            declineButtonText="Weiger"
-            cookieName="menefex-cookie"
-            extraCookieOptions={{ domain: '.menefex.nl' }}
-            enableDeclineButton
-            sameSite="strict"
-            contentStyle={
-              {
-                // padding: '0.5em 1em 0.5em',
-              }
-            }
-            style={{
-              background: 'linear-gradient(to right, #595858, #333333)',
-              opacity: '0.95',
-              color: '#dadada',
-              fontSize: '13px',
-              borderBottom: '3px solid #FFCC00',
-              borderTop: '3px solid #595858',
-              padding: '0 .5em 1em',
-            }}
-            buttonStyle={{
-              color: '#323232',
-              backgroundColor: 'FFCC00',
-              fontSize: '14px',
-              borderRadius: '3px',
-              opacity: '0.95',
-            }}
-            declineButtonStyle={{
-              fontWeight: '300',
-              background: 'transparent',
-              border: '1px solid #dadada86',
-              borderRadius: '3px',
-              color: '#FFCC00',
-              cursor: 'pointer',
-              flex: '0 0 auto',
-              marginLeft: '0px',
-              opacity: '0.95',
-            }}
-          >
-            Deze website slaat <b>cookies</b> op je computer op. Deze cookies
-            worden gebruikt om je websitebezoek te verbeteren en meer
-            gepersonaliseerde diensten aan je aan te bieden, zowel op deze
-            website als via andere media. Zie ons{' '}
-            <Link to="/privacy-policy/" style={{ color: '#FFCC00' }}>
-              Privacybeleid
-            </Link>{' '}
-            voor meer informatie over de cookies die we gebruiken.
-            <br />
-            <br />
-            <span style={{ fontSize: '13px' }}>
-              We zullen je gegevens <b>niet volgen</b> als je onze site bezoekt.
-              Maar om te voldoen aan je voorkeuren moeten we enkele cookies
-              gebruiken zodat je niet vaker wordt gevraagd om deze keus te
-              maken.
-            </span>
-          </CookieConsent>
-        </div>
-        <Footer />
       </div>
-    );
-  }
-}
 
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+      <DesktopMenu drawerClickHandler={drawerToggleClickHandler} />
+      <MobileMenu show={sideDrawerOpen} />
+
+      <main>{children}</main>
+
+      <Footer />
+
+      <CookieConsent
+        expires={60}
+        buttonText="Accepteer"
+        declineButtonText="Weiger"
+        cookieName="menefex-cookie"
+        extraCookieOptions={{ domain: '.menefex.nl' }}
+        enableDeclineButton
+        sameSite="strict"
+        overlayClasses="cookie"
+        containerClasses="cookie-container"
+        contentClasses="cookie-content"
+        buttonWrapperClasses="cookie-btn-wrapper"
+        buttonClasses="cookie-btn-accept"
+        declineButtonClasses="cookie-btn-decline"
+        disableStyles
+        flipButtons
+        overlay
+      >
+        <h3>Cookies</h3>
+        <br />
+        <p>
+          Deze site plaatst cookies op je computer om je websitebezoek te
+          optimaliseren en gepersonaliseerde diensten aan te bieden, zowel hier
+          als via andere media. Raadpleeg ons{' '}
+          <Link to="/privacy-policy/" style={{ color: '#FFCC00' }}>
+            Privacybeleid{' '}
+          </Link>{' '}
+          voor meer informatie over de gebruikte cookies.
+          <br />
+          <br />
+          <span>
+            We volgen je gegevens <b>niet</b> bij sitebezoeken, maar om aan je
+            voorkeuren te voldoen, gebruiken we enkele cookies zodat je deze
+            keuze niet herhaaldelijk hoeft te maken.
+          </span>
+        </p>
+      </CookieConsent>
+
+      {backdrop}
+
+      {process.env.NODE_ENV === 'development' && <ResponsiveTag />}
+    </>
+  );
 };
 
 export default Layout;

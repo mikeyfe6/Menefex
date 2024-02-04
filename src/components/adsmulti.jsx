@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-import PropTypes from 'prop-types';
-
 class GoogleAdsMulti extends Component {
   componentDidMount() {
     (window.adsbygoogle = window.adsbygoogle || []).push({});
@@ -21,9 +19,5 @@ class GoogleAdsMulti extends Component {
     );
   }
 }
-
-GoogleAdsMulti.propTypes = {
-  slot: PropTypes.string.isRequired,
-};
 
 export default GoogleAdsMulti;

@@ -1,0 +1,13 @@
+{
+    "extends": [
+        "stylelint-config-standard-scss",
+        "stylelint-config-prettier-scss"
+    ],
+    "rules": {
+        "media-feature-range-notation": "context",
+        "scss/dollar-variable-empty-line-before": null,
+        "no-descending-specificity": null,
+        "declaration-empty-line-before": null,
+        "scss/at-mixin-pattern": "^[a-z][a-zA-Z]*$"
+    }
+}

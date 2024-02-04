@@ -1,6 +1,4 @@
-@import '../customs/functions';
-@import '../customs/colors';
-@import '../customs/fonts';
+@import '../configs/globals';
 
 .tlbar {
   width: 100%;
@@ -19,6 +17,8 @@
     align-items: center;
     height: 100%;
     padding: 0 1.5rem;
+
+    @include container;
   }
 
   .spacer {
@@ -39,13 +39,10 @@
 
     .activePage {
       color: $secondary-color;
-      text-shadow:
-        -1px 1px 0 $textbase-color,
-        1px 1px 0 $textbase-color,
-        1px -1px 0 $textbase-color,
-        -1px -1px 0 $textbase-color;
+      text-shadow: -1px 1px 0 $textbase-color, 1px 1px 0 $textbase-color,
+        1px -1px 0 $textbase-color, -1px -1px 0 $textbase-color;
       // text-decoration: overline;
-      @include smoothtrans;
+      @include smoothTrans;
 
       &:hover {
         color: $spec-color;
@@ -62,15 +59,15 @@
       font-size: 1.5em;
 
       opacity: 0.7;
-      @include smoothtrans;
+      @include smoothTrans;
 
       &:hover {
-        @include smoothtrans;
+        @include smoothTrans;
         color: $textbase-color;
       }
 
       &:active {
-        @include smoothtrans;
+        @include smoothTrans;
         color: $secondary-color;
       }
 
@@ -82,18 +79,18 @@
         padding-top: 7.5px;
         padding-bottom: 7.5px;
         margin-left: 15px;
-        @include smoothtrans;
+        @include smoothTrans;
 
         &:hover {
           color: #1ca111;
-          @include smoothtrans;
+          @include smoothTrans;
         }
       }
     }
   }
 }
 
-@media ($laptop) {
+@include laptop {
   .tlbarNavigationItems {
     display: none;
   }
@@ -102,12 +99,6 @@
     &Navigation {
       padding: 0 1.5rem !important;
     }
-  }
-}
-
-@media ($laptop) {
-  .spacer-two {
-    flex: 1 100%;
   }
 }
 

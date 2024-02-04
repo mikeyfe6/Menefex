@@ -1,6 +1,4 @@
-@import '../customs/functions';
-@import '../customs/colors';
-@import '../customs/fonts';
+@import '../configs/globals';
 
 .line {
   top: 50%;
@@ -41,10 +39,4 @@
   font-size: 2em;
   font-family: $poppins-font;
   font-weight: 700;
-}
-
-@media (max-width: 768px) {
-  .tpwriter {
-    display: none;
-  }
 }

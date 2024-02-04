@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { Link, graphql, useStaticQuery } from 'gatsby';
-import { Animated } from 'react-animated-css';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -40,50 +39,41 @@ const TopicPage = () => {
       <div>
         <div className="smallwhitespace" />
         <h1 className="page-title">
-          Topics<span className="headdots">.</span>
+          Topics<span>.</span>
         </h1>
         <br />
         <p className="page-sub">Al onze blog onderwerpen op een rijtje..</p>
-        <Animated
-          animationIn="fadeIn"
-          animationInDelay={750}
-          animationInDuration={2000}
-        >
-          <ol className={topics}>
-            {data.allContentfulTopic.edges.map(
-              ({
-                node: {
-                  contentful_id: contentfulId,
-                  slug,
-                  bdcolor,
-                  name,
-                  description,
-                },
-              }) => (
-                <li className={topic} key={contentfulId}>
-                  <Link
-                    to={`/topics/${slug}/`}
-                    style={{ borderColor: bdcolor }}
-                  >
-                    <div>
-                      {' '}
-                      <h4 className={topichead}>
-                        <span style={{ color: bdcolor, fontWeight: 'bold' }}>
-                          #
-                        </span>{' '}
-                        {name}
-                      </h4>
-                      <span className={contsubtext}>
-                        {description.description}
-                      </span>
-                    </div>
-                  </Link>
-                </li>
-              ),
-            )}
-          </ol>
-        </Animated>
-        <div className="whitespace" />
+
+        <ol className={topics}>
+          {data.allContentfulTopic.edges.map(
+            ({
+              node: {
+                contentful_id: contentfulId,
+                slug,
+                bdcolor,
+                name,
+                description,
+              },
+            }) => (
+              <li className={topic} key={contentfulId}>
+                <Link to={`/topics/${slug}/`} style={{ borderColor: bdcolor }}>
+                  <div>
+                    {' '}
+                    <h4 className={topichead}>
+                      <span style={{ color: bdcolor, fontWeight: 'bold' }}>
+                        #
+                      </span>{' '}
+                      {name}
+                    </h4>
+                    <span className={contsubtext}>
+                      {description.description}
+                    </span>
+                  </div>
+                </Link>
+              </li>
+            ),
+          )}
+        </ol>
       </div>
     </Layout>
   );

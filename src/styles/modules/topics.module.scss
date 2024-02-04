@@ -1,6 +1,4 @@
-@import '../customs/functions';
-@import '../customs/colors';
-@import '../customs/fonts';
+@import '../configs/globals';
 
 .topics {
   list-style-type: none;
@@ -24,14 +22,14 @@
     border-width: 2px;
     border-style: solid;
     border-radius: 10px;
-    @include smoothtrans;
-    @include shadow;
+    @include smoothTrans;
+    @include boxShadow;
 
     &:hover {
       opacity: 0.7;
       color: $link-color;
       border-color: $link-color;
-      @include smoothtrans;
+      @include smoothTrans;
       transform: scale(1.025);
     }
   }
@@ -53,28 +51,5 @@
     padding-left: 0.3em;
     font-size: 0.9em;
     letter-spacing: 0.3px;
-  }
-}
-
-@media (max-width: 768px) {
-  .topics {
-    width: 100%;
-    margin-top: 7%;
-  }
-
-  .topichead {
-    font-size: 0.75em !important;
-  }
-
-  .contsubtext {
-    font-size: 0.6rem !important;
-    letter-spacing: 0px !important;
-  }
-
-  .topic {
-    a {
-      padding: 0.7rem;
-      border-width: 1px;
-    }
   }
 }

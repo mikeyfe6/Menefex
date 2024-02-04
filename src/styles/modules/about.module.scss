@@ -1,23 +1,11 @@
-@import '../customs/functions';
-@import '../customs/colors';
-@import '../customs/fonts';
+@import '../configs/globals';
 
-.overtitle {
-  font-family: $right-font;
-  font-size: 1.5em;
-}
+.about {
+  h3 {
+    margin-bottom: 0.5em;
 
-.about-text {
-  @include fontslg;
-  max-width: 75ch;
-}
-
-@media (max-width: 768px) {
-  .overtitle {
-    font-size: 1.25em;
-  }
-
-  .about-text {
-    @include fontsmb;
+    &:not(:first-of-type) {
+      margin-top: 1em;
+    }
   }
 }

@@ -1,0 +1,27 @@
+@import '../configs/globals';
+
+.spotify {
+  text-align: center;
+  background: linear-gradient(145deg, white, $secondary-color);
+  padding: 2em;
+  border-radius: $low-radius;
+  width: fit-content;
+  height: 100%;
+
+  p {
+    font-size: 0.85rem;
+    font-weight: 300;
+    margin-bottom: 2em;
+    color: $textbase-color;
+    opacity: 0.75;
+  }
+
+  @include boxShadow;
+
+  iframe {
+    opacity: 0.9;
+    height: 650px;
+    width: 400px;
+    border-radius: $high-radius;
+  }
+}

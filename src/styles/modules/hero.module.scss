@@ -1,125 +1,69 @@
-@import '../customs/functions';
-@import '../customs/colors';
-@import '../customs/fonts';
+@import '../configs/globals';
 
 .hero {
   height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
+  // height: calc(var(--vh, 1vh) * 100);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 
-  .fleximage {
+  &-image {
     margin: 0 auto;
-
-    @media ($mobile) {
-      margin: -3.75em auto;
-    }
   }
 
-  .ministylo {
+  &-logo {
     width: 225px;
     height: 225px;
 
-    // display: inline-block;
     animation: roll 60s infinite;
     transform: rotate(180deg);
-    @include smoothtrans;
+
+    @include smoothTrans;
 
     @keyframes roll {
       0% {
         transform: rotate(0deg);
       }
+
       25% {
         transform: rotate(180deg);
       }
+
       50% {
         transform: rotate(360deg);
       }
+
       75% {
         transform: rotate(0deg);
       }
+
       100% {
         transform: rotate(360deg);
       }
     }
   }
 
-  .ipvtpwriter {
-    text-align: center;
-    font-weight: 700;
-    font-size: 1.75em;
-    line-height: 40px;
-
-    span.spechead {
-      font-size: 1.5em !important;
-    }
-  }
-
-  .hero-head {
-    // text-align: center;
+  &-slogan {
     color: $secondary-color;
     letter-spacing: 5px;
     font-family: $right-font;
-    // font-size: 2.25rem;
-    // height: 300px;
+    font-size: 2.25rem;
+
     background: linear-gradient(to right, $primary-color, $button-hover);
     border: 3px solid $primary-color;
-    // white-space: nowrap;
 
     padding: 0.1em 1.25em;
     border-radius: 10px;
 
-    display: table; /* keep the background color wrapped tight */
+    width: fit-content;
     margin: 0 auto;
     text-align: center;
-    @include shadow;
 
-    @media ($laptop) {
-      border-radius: 0;
-      height: 100%;
-      width: 100vw;
-      position: relative;
-      left: 50%;
-      right: 50%;
-      margin-left: -50vw;
-      margin-right: -50vw;
-      opacity: 0.9;
+    > span {
+      color: $sixth-color;
     }
 
-    @media ($mobile) {
-      display: none;
-    }
-  }
-
-  .hero-headMB {
-    text-align: center;
-    color: $secondary-color;
-    font-family: $right-font;
-    background: linear-gradient(to right, $primary-color, $button-hover);
-    padding: 0.75em 0;
-    letter-spacing: 2.75px;
-    border-radius: 0;
-    height: 100%;
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    opacity: 0.9;
-    font-size: 1rem;
-    @include shadow;
-
-    @media ($pocket) {
-      font-size: 0.7rem;
-      letter-spacing: 2.5px;
-      padding: 1.25em 0;
-    }
-
-    @media (min-width: 577px) {
-      display: none;
-    }
+    @include boxShadow;
   }
 
   .herospec {
@@ -141,26 +85,10 @@
     animation: fade_move_down 1.5s cubic-bezier(0.19, 1, 0.22, 1) infinite;
   }
 
-  .scroll-downMB {
-    position: relative;
-    bottom: 67.5px;
-    margin: 0 auto;
-    z-index: 0;
-    text-decoration: none;
-    text-shadow: 0;
-    width: 17px;
-    height: 17px;
-    border-bottom: 5px solid $secondary-color;
-    border-right: 5px solid $primary-color;
-    transform: translate(-50%, 0) rotate(45deg);
-    animation: fade_move_down 1.5s cubic-bezier(0.19, 1, 0.22, 1) infinite;
-  }
-
   .flexancors {
     margin: 0 auto;
 
-    .scroll-head,
-    .scroll-headMB {
+    .scroll-head {
       a {
         color: $third-color;
 
@@ -180,40 +108,15 @@
         letter-spacing: 2px;
         border: 3px solid $spec-color;
         border-radius: 5px;
-        @include smoothtrans;
-        @include shadow;
+
+        @include smoothTrans;
+        @include boxShadow;
 
         &:hover {
           color: $link-color;
           border-color: $link-color;
           background-color: #e9e9e9;
           transform: scale(1.05);
-        }
-      }
-
-      .scroll-btnMB {
-        text-transform: uppercase;
-        padding: 10px 12.5px;
-        background: transparent;
-        color: $primary-color !important;
-        background-color: #f2f2f2;
-        font-weight: 700;
-        font-size: 0.7rem;
-        letter-spacing: 1px;
-        border: 3px solid $spec-color;
-        border-radius: 5px;
-        @include smoothtrans;
-        @include shadow;
-
-        &:hover {
-          color: $link-color;
-          border-color: $link-color;
-          background-color: #e9e9e9;
-        }
-
-        @media ($pocket) {
-          font-size: 0.5rem;
-          padding: 1em;
         }
       }
     }
@@ -225,56 +128,13 @@
     transform: translate(0, -20px) rotate(45deg);
     opacity: 0;
   }
+
   50% {
     opacity: 1;
   }
+
   100% {
     transform: translate(0, 20px) rotate(45deg);
     opacity: 0;
-  }
-}
-
-@media (max-width: 768px) {
-  .fleximage {
-    margin: 0 auto;
-  }
-
-  .ministylo {
-    height: 150px !important;
-    width: 150px !important;
-  }
-
-  .ipvtpwriter {
-    margin-bottom: 20px;
-  }
-
-  .flexancors {
-    font-size: 0.825rem;
-  }
-
-  .scroll-down {
-    display: none;
-  }
-
-  .scroll-head {
-    display: none;
-
-    .scrollBtn {
-      display: none;
-    }
-  }
-}
-
-@media (min-width: 769px) {
-  .ipvtpwriter {
-    display: none;
-  }
-
-  .scroll-downMB {
-    display: none;
-  }
-
-  .scroll-headMB {
-    display: none;
   }
 }

@@ -67,19 +67,6 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-eslint',
-      options: {
-        // Gatsby required rules directory
-        rulePaths: [gatsbyRequiredRules],
-        // Default settings that may be ommitted or customized
-        stages: ['develop'],
-        extensions: ['js', 'jsx', 'ts', 'tsx'],
-        exclude: ['node_modules', 'bower_components', '.cache', 'public'],
-        // Any additional eslint-webpack-plugin options below
-        // ...
-      },
-    },
-    {
       resolve: 'gatsby-plugin-feed',
       options: {
         query: `
@@ -233,6 +220,13 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
+        name: 'project-images',
+        path: `${__dirname}/public/project-images`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
         name: 'src',
         path: `${__dirname}/src/`,
       },
@@ -253,27 +247,12 @@ module.exports = {
       },
     },
     'gatsby-transformer-sharp',
-    // {
-    //   resolve: 'gatsby-transformer-remark',
-    //   options: {
-    //     plugins: [
-    //       'gatsby-remark-relative-images',
-    //       {
-    //         resolve: 'gatsby-remark-images',
-    //         options: {
-    //           maxWidth: 590,
-    //         },
-    //       },
-    //     ],
-    //   },
-    // },
     {
       resolve: 'gatsby-plugin-disqus',
       options: {
         shortname: 'menefex',
       },
     },
-    'gatsby-plugin-smoothscroll',
     {
       resolve: 'gatsby-plugin-nprogress',
       options: {

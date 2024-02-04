@@ -1,116 +1,75 @@
-@import '../customs/functions';
-@import '../customs/colors';
-@import '../customs/fonts';
+@import '../configs/globals';
 
-.posts {
-  list-style-type: none;
-  width: 95%;
-  margin: 0 auto;
-  padding-left: 0;
-  margin-top: 3%;
-}
+.blog {
+  &posts {
+    width: 95%;
+    margin: 0 auto;
 
-.post {
-  margin: 1rem 0;
-  a {
-    background: linear-gradient(to right, $fourth-color, #f2f2f2);
-    color: $textbase-color;
-    padding: 1rem 1rem 1.5rem 1rem;
-    text-decoration: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 25px;
-    border: 2px solid $fourth-color;
-    border-radius: 10px;
-    @include smoothtrans;
-    @include shadow;
+    li {
+      margin: 1em 0;
 
-    &:hover {
-      opacity: 0.7;
-      color: $link-color;
-      border-color: $link-color;
-      @include smoothtrans;
-      transform: scale(1.025);
-    }
-  }
+      a {
+        background: linear-gradient(to right, $fourth-color, #f2f2f2);
+        padding: 1em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1em;
+        border: 2px solid $fourth-color;
+        border-radius: 10px;
 
-  .posthead {
-    font-size: 1.125rem;
-    color: $button-hover;
-    font-weight: 300;
-    padding-left: 1%;
-    padding-top: 1%;
-  }
+        @include smoothTrans;
+        @include boxShadow;
 
-  .bloggepost {
-    color: $primary-color;
-    background: linear-gradient(to right, $secondary-color, #e2e2e2);
-    border: 3px solid #e2e2e2;
-    box-shadow: 3px inset $link-color;
-    // background-color: $link-color;
-    border-radius: 5px;
-    font-size: 0.75rem;
-    padding: 0.5em;
-    font-style: italic;
-    margin-left: 1%;
-    letter-spacing: -0.125px !important;
-    display: inline;
-    white-space: nowrap;
-  }
+        &:hover {
+          opacity: 0.7;
+          color: $link-color;
+          border-color: $link-color;
+          transform: scale(1.025);
+        }
 
-  .contsubtext {
-    color: $primary-color;
-    display: block;
-    max-width: 75ch;
-    font-weight: 700;
-    margin-top: 2.5%;
-    margin-bottom: 3%;
-    padding-left: 1%;
-    font-size: 0.9em;
-    letter-spacing: 0.3px;
-  }
+        > div {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          gap: 0.75em;
 
-  .blogimg {
-    min-width: 150px;
-    max-width: 200px;
-    border: 3px solid $fourth-color;
-    border-radius: 5px;
-    @include shadow;
-  }
-}
+          h4 {
+            font-size: 1.125rem;
+            font-weight: 600;
+          }
 
-@media (max-width: 768px) {
-  .posts {
-    width: 100%;
-    margin-top: 7%;
-  }
+          p {
+            color: $primary-color;
+            display: block;
+            max-width: 75ch;
+            font-weight: 300;
+            font-size: 0.9rem;
+            letter-spacing: 0.3px;
+          }
 
-  .posthead {
-    font-size: 0.75em !important;
-  }
+          span {
+            color: $primary-color;
+            background: linear-gradient(to right, $secondary-color, #e2e2e2);
+            border: 3px solid #e2e2e2;
+            border-radius: 5px;
+            font-size: 0.75rem;
+            padding: 0.5em;
+            font-style: italic;
+            display: inline;
+            white-space: nowrap;
+          }
+        }
 
-  .contsubtext {
-    font-size: 0.6rem !important;
-    letter-spacing: 0px !important;
-  }
+        img {
+          min-width: 150px;
+          max-width: 200px;
+          outline: 3px solid $fourth-color;
+          border-radius: 3px;
 
-  .bloggepost {
-    font-size: 0.4rem !important;
-    padding: 0.25rem !important;
-    margin-left: 0% !important;
-  }
-
-  .blogimg {
-    border-width: 1.5px !important;
-    min-width: 125px !important;
-    max-width: 175px !important;
-  }
-
-  .post {
-    a {
-      padding: 0.7rem;
-      border-width: 1px;
+          @include boxShadow;
+        }
+      }
     }
   }
 }

@@ -1,210 +1,112 @@
-@import '../customs/functions';
-@import '../customs/colors';
-@import '../customs/fonts';
+@import '../configs/globals';
 
-.service-container {
-  margin-bottom: 1%;
-  background: linear-gradient(to right, white, $fourth-color);
-  height: 100%;
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
+.service {
+  &-container {
+    background: linear-gradient(to right, white, $fourth-color);
 
-  @media ($tablet) {
-    border-width: 1px;
-  }
-}
-
-.service-wrapper {
-  padding: 2.5em 3em;
-
-  @media ($tablet) {
-    padding: 2em 2.5em;
+    @include fullWidth;
   }
 
-  @media ($mobile) {
-    padding: 1em;
-  }
+  &-wrapper {
+    @include container(0, 4em);
 
-  section.services {
-    flex: 1 1 0;
+    > div:nth-child(1) {
+      display: flex;
+      gap: 2em;
 
-    @media ($laptop) {
-      flex: 50%;
+      @include laptop {
+        flex-wrap: wrap;
+      }
+
+      > div {
+        flex: 1;
+
+        @include laptop {
+          flex: 0 0 48%;
+        }
+
+        span {
+          font-weight: 700;
+          font-size: 1rem;
+        }
+
+        p {
+          min-height: 230px;
+          max-width: 90%;
+          margin: 2em 0;
+
+          @include laptop {
+            min-height: 150px;
+          }
+        }
+
+        ul {
+          padding-left: 1em;
+          margin-top: 1em;
+          list-style: none;
+          font-weight: 400;
+
+          li {
+            font-size: 0.875rem;
+
+            &::before {
+              content: '\203B';
+              color: $secondary-color;
+              font-weight: bold;
+              font-size: 1.25em;
+              margin-right: 0.5em;
+            }
+          }
+        }
+      }
     }
 
-    @media ($tablet) {
-      margin: 0.25em 0.5em;
-      width: 100%;
-    }
-  }
-
-  .service-title {
-    min-height: 100px;
-    display: flex;
-    gap: 20px;
-    align-items: center;
-  }
-
-  .service-head {
-    font-weight: bold;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
-    font-family: $right-font;
-    margin-bottom: 0;
-
-    @media ($tablet) {
-      font-size: 1.15rem;
-    }
-  }
-
-  .service-kwali {
-    padding-left: 7.5%;
-    list-style: none;
-    font-weight: 400;
-    font-size: 0.8rem;
-
-    li::before {
-      content: '\203B'; /* Add content: \2022 is the CSS Code/unicode for a bullet */
-      color: $secondary-color; /* Change the color */
-      font-weight: bold; /* If you want it to be bold */
-      display: inline-block; /* Needed to add space between the bullet and the text */
-      width: 1em; /* Also needed for space (tweak if needed) */
-      margin-left: -1em;
-      margin-bottom: 0.25em;
-      margin-right: 0.5em; /* Also needed for space (tweak if needed) */
-    }
-
-    @media ($tablet) {
-      font-size: 0.75rem;
-    }
-  }
-
-  .service-text {
-    @include fontslg;
-    vertical-align: text-top;
-    margin-top: 2.5em;
-    width: 90%;
-
-    @media ($tablet) {
-      @include fontsmb;
+    > div:nth-child(2) {
+      display: flex;
+      justify-content: center;
       margin-top: 3em;
-      width: 100%;
+
+      a {
+        @include primaryButton;
+      }
+    }
+
+    .thick {
+      width: 25%;
+      border: 3px solid $third-color;
+    }
+
+    .thin {
+      width: 75%;
+      border: 1px solid $secondary-color;
+      opacity: 0.5;
+      margin-bottom: 2em;
+    }
+
+    .endline {
+      border-width: 5px;
+      background: $secondary-color;
+      opacity: 0.5;
+      display: none;
     }
   }
 
-  .service-focus {
-    margin-top: 2.5em;
-    &-title {
-      font-weight: 700;
-      font-size: 1rem;
+  &-title {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    min-height: 40px;
+    margin-bottom: 1em;
+
+    i {
+      font-size: 1.5em;
+      color: $secondary-color;
     }
 
-    @media ($massive) {
-      min-height: 175px;
-      height: 175px;
-      max-height: 200px;
-    }
-
-    @media ($desktop) {
-      min-height: 225px;
-      height: 250px;
-      max-height: 275px;
-    }
-
-    @media ($laptop) {
-      min-height: fit-content;
-      height: fit-content;
-      max-height: fit-content;
-    }
-  }
-
-  .service-block {
-    min-height: 175px;
-    height: 200px;
-    max-height: 225px;
-
-    @media ($massive) {
-      min-height: 175px;
-      height: 175px;
-      max-height: 200px;
-    }
-
-    @media ($desktop) {
-      min-height: 237.5px;
-      height: 267.5px;
-      max-height: 287.5px;
-    }
-
-    @media ($laptop) {
-      min-height: 150px;
-      height: 175px;
-      max-height: 200px;
-    }
-
-    @media ($tablet) {
-      min-height: fit-content;
-      height: fit-content;
-      max-height: fit-content;
-    }
-  }
-
-  button.service-button {
-    font-family: $alata-font;
-    font-size: 0.85rem;
-    background: $primary-color;
-    padding: 15px 35px;
-    letter-spacing: 2px;
-    border: 3px solid $secondary-color;
-    text-align: center;
-    text-transform: uppercase;
-    color: white;
-    border-radius: 5px;
-    @include smoothtrans;
-    @include shadow;
-
-    &:hover {
-      background-color: $textbase-color;
-      border-color: $link-color;
-    }
-
-    @media ($tablet) {
-      letter-spacing: 1.5px;
-      font-size: 0.75rem;
-      padding: 12.5px 25px;
-      margin-top: 0 !important;
-      margin-bottom: 3em;
-    }
-  }
-
-  .thick {
-    margin: 0;
-    padding: 0;
-    width: 23%;
-    border: 3px solid $third-color;
-    border-radius: 1px;
-    @include shadow;
-  }
-
-  .thin {
-    border-color: $secondary-color;
-    padding: 0px;
-    margin: 0px;
-    width: 50%;
-    @include shadow;
-  }
-
-  .endline {
-    border-width: 5px;
-    background: $secondary-color;
-    opacity: 0.5;
-    display: none;
-
-    @media ($laptop) {
-      display: block;
+    h4 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      white-space: nowrap;
     }
   }
 }

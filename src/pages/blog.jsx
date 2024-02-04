@@ -1,19 +1,11 @@
 import React from 'react';
 
 import { Link, graphql, useStaticQuery } from 'gatsby';
-import { Animated } from 'react-animated-css';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-import {
-  posts,
-  post,
-  blogimg,
-  posthead,
-  contsubtext,
-  bloggepost,
-} from '../styles/modules/blog.module.scss';
+import * as blogpostStyles from '../styles/modules/blog.module.scss';
 
 // TODO: images naar GatsbyImage verwerken
 
@@ -44,90 +36,39 @@ const BlogPage = () => {
 
   return (
     <Layout>
-      <div>
-        <div className="smallwhitespace" />
-        <h1 className="page-title">
-          Blog<span className="headdots">.</span>
-        </h1>
-        <br />
-        <p className="page-sub">What goes through our mind..</p>
-        <Animated
-          animationIn="fadeIn"
-          animationInDelay={750}
-          animationInDuration={2000}
-        >
-          <ol className={posts}>
-            {data.allContentfulBlogPost.edges.map((edge) => (
-              <li className={post} key={edge.node.id}>
-                <Link to={`/blog/${edge.node.slug}/`}>
-                  <div>
-                    {' '}
-                    <h4 className={posthead}>{edge.node.title}</h4>
-                    <span className={contsubtext}> {edge.node.subtitle}</span>
-                    <p className={bloggepost}>
-                      {' '}
-                      Gepost: <strong>{edge.node.publishedDate}</strong> ⌁
-                      Auteur: <strong>{edge.node.author}</strong>{' '}
-                    </p>
-                  </div>
+      <h1 className="page-title">
+        Blog<span>.</span>
+      </h1>
 
-                  {/* TODO: image naar GatsbyImage */}
+      <p className="page-sub">What goes through our mind..</p>
 
-                  <img
-                    src={edge.node.image.file.url}
-                    alt={edge.node.image.title}
-                    className={blogimg}
-                  />
-                </Link>
-              </li>
-            ))}
-          </ol>
-        </Animated>
-        <div className="whitespace" />
-      </div>
+      <section>
+        <ul className={blogpostStyles.blogposts}>
+          {data.allContentfulBlogPost.edges.map((edge) => (
+            <li key={edge.node.id}>
+              <Link to={`/blog/${edge.node.slug}/`}>
+                <div>
+                  <h4>{edge.node.title}</h4>
+                  <p>{edge.node.subtitle}</p>
+                  <span>
+                    Gepost: <strong>{edge.node.publishedDate}</strong> ⌁ Auteur:{' '}
+                    <strong>{edge.node.author}</strong>
+                  </span>
+                </div>
+
+                {/* TODO: image naar GatsbyImage */}
+
+                <img
+                  src={edge.node.image.file.url}
+                  alt={edge.node.image.title}
+                />
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </section>
     </Layout>
   );
-
-  // ! MARKDOWN: blogposts genereren grapqhl
-  // const BlogPage = () => {
-  //   const data = useStaticQuery(graphql`
-  //     query {
-  //       allMarkdownRemark {
-  //         edges {
-  //           node {
-  //             frontmatter {
-  //               title
-  //               date
-  //             }
-  //             fields {
-  //               slug
-  //             }
-  //           }
-  //         }
-  //       }
-  //     }
-  //   `)
-
-  // console.log(data)
-
-  // ! MARKDOWN blog posts weergeven
-  // return (
-  //   <Layout>
-  //     <h1>Blog Posts</h1>
-  //     <ol className={blogDesign.posts}>
-  //       {data.allMarkdownRemark.edges.map(edge => {
-  //         return (
-  //           <li className={blogDesign.post}>
-  //             <Link to={`/blogs/${edge.node.fields.slug}`}>
-  //               <h2>{edge.node.frontmatter.title}</h2>
-  //               <p>{edge.node.frontmatter.date}</p>
-  //             </Link>
-  //           </li>
-  //         )
-  //       })}
-  //     </ol>
-  //   </Layout>
-  // )
 };
 
 export default BlogPage;

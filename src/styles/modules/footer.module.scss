@@ -1,232 +1,188 @@
-@import '../customs/functions';
-@import '../customs/colors';
-@import '../customs/fonts';
+@import '../configs/globals';
 
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem; /* Footer height */
+.footer {
+  @include container;
 
-  @media (max-width: 319px) {
-    display: none;
-  }
-}
+  blockquote {
+    text-align: right;
 
-.sayin {
-  font-size: 0.9em;
-  text-align: end;
-  padding-right: 7.5%;
+    .sayin {
+      font-size: 1rem;
+      text-align: end;
+      padding-right: 2em;
+      margin-bottom: 2em;
 
-  span {
-    font-weight: 700;
-  }
-}
-
-.ministylo {
-  display: block;
-  width: 65px;
-  margin: 0 auto;
-  @include smoothtrans;
-
-  animation: roll 45s infinite;
-  transform: rotate(30deg);
-
-  @keyframes roll {
-    0% {
-      transform: rotate(360deg);
-    }
-    25% {
-      transform: rotate(180deg);
-    }
-    50% {
-      transform: rotate(360deg);
-    }
-    75% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-}
-
-.collab {
-  text-align: right;
-
-  p {
-    margin-bottom: 20px;
-  }
-}
-
-.hr {
-  background: $secondary-color;
-  height: 10px;
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-}
-
-.mailfoot {
-  color: #74aece;
-}
-
-.telfoot {
-  color: #1ca111;
-}
-
-.info {
-  h4 {
-    font-weight: bold;
-    font-size: 16px;
-
-    .amsterdam {
-      color: red;
+      i {
+        font-weight: 600;
+        font-style: italic;
+      }
     }
   }
 
-  a {
-    color: $primary-color;
-    @include smoothtrans;
+  hr {
+    background: $secondary-color;
+    height: 10px;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
 
-    &:hover {
+  > a {
+    display: block;
+    margin: 3em auto 4em;
+    text-align: center;
+    width: fit-content;
+  }
+
+  &-logo {
+    width: 75px;
+
+    @include smoothTrans;
+
+    animation: roll 45s infinite;
+    transform: rotate(30deg);
+
+    @keyframes roll {
+      0% {
+        transform: rotate(360deg);
+      }
+
+      25% {
+        transform: rotate(180deg);
+      }
+
+      50% {
+        transform: rotate(360deg);
+      }
+
+      75% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
+
+  &-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5em;
+    margin: 5em 0;
+
+    > div {
+      flex: 1;
+    }
+
+    h5 {
+      font-size: 1rem;
+    }
+
+    .personal {
+      font-family: $right-font;
+      letter-spacing: 1.5px;
+
+      .mailfoot {
+        color: #74aece;
+      }
+
+      .telfoot {
+        color: #1ca111;
+      }
+    }
+
+    .media {
+      text-align: center;
+      font-family: $right-font;
+      letter-spacing: 1.5px;
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          display: inline-block;
+          padding-left: 20px;
+
+          &.fb::before {
+            background: #4064ad;
+
+            @include footerDot;
+          }
+
+          &.ig::before {
+            background: #dd2a7b;
+
+            @include footerDot;
+          }
+
+          &.tw::before {
+            background: #55acee;
+
+            @include footerDot;
+          }
+
+          &.li::before {
+            background: #0177b5;
+
+            @include footerDot;
+          }
+
+          &.gh::before {
+            background: #24292e;
+
+            @include footerDot;
+          }
+        }
+      }
+    }
+
+    .address {
+      text-align: right;
+      font-family: $right-font;
+      letter-spacing: 1.5px;
+
+      .amsterdam {
+        color: red;
+      }
+    }
+
+    a {
+      color: $primary-color;
+
+      @include smoothTrans;
+
+      &:hover {
+        color: $link-color;
+      }
+    }
+
+    p {
+      color: $fifth-color;
+      font-family: $poppins-font;
+      font-size: 0.9rem;
+      margin-bottom: 0.5em;
+    }
+  }
+
+  .credits {
+    text-align: center;
+    font-size: 0.875rem;
+    color: $fifth-color;
+    padding-bottom: 1.5em;
+    line-height: 1.8;
+
+    a {
       color: $link-color;
     }
-  }
 
-  p {
-    color: $fifth-color;
-    font-family: $poppins-font;
-    font-size: 0.9em;
-  }
-
-  li {
-    padding-left: 20px;
-  }
-}
-
-.termscods {
-  text-align: center;
-  padding-bottom: 15px;
-  font-size: 0.75rem;
-  color: $fifth-color;
-}
-
-#fb::before {
-  display: inline-block;
-  content: '';
-  border-radius: 100%;
-  height: 6px;
-  width: 6px;
-  margin-right: 5px;
-  background: #4064ad;
-}
-
-#ig::before {
-  display: inline-block;
-  content: '';
-  border-radius: 100%;
-  height: 6px;
-  width: 6px;
-  margin-right: 5px;
-  background: #dd2a7b;
-}
-
-#tw::before {
-  display: inline-block;
-  content: '';
-  border-radius: 100%;
-  height: 6px;
-  width: 6px;
-  margin-right: 5px;
-  background: #55acee;
-}
-
-#lin::before {
-  display: inline-block;
-  content: '';
-  border-radius: 100%;
-  height: 6px;
-  width: 6px;
-  margin-right: 5px;
-  background: #0177b5;
-}
-
-#gh::before {
-  display: inline-block;
-  content: '';
-  border-radius: 100%;
-  height: 6px;
-  width: 6px;
-  margin-right: 5px;
-  background: #24292e;
-}
-
-#media {
-  text-align: center;
-  font-family: $right-font;
-  letter-spacing: 1.5px;
-}
-
-#address {
-  text-align: right;
-  font-family: $right-font;
-  letter-spacing: 1.5px;
-}
-
-#personal {
-  font-family: $right-font;
-  letter-spacing: 1.5px;
-}
-
-#media ul {
-  list-style: none;
-  padding: 0;
-
-  li {
-    display: inline-block;
-  }
-}
-
-@media (max-width: 768px) {
-  .ministylo {
-    width: 50px;
-  }
-
-  .collab,
-  #personal,
-  #media,
-  #address {
-    text-align: center;
-  }
-
-  #media {
-    padding-top: 50px;
-  }
-
-  .info ul {
-    margin: 0 0 0 -22px;
-    padding: 0;
-  }
-
-  .info li {
-    font-size: 15px !important;
-  }
-
-  .info h4 {
-    font-size: 14px !important;
-  }
-
-  .termscods {
-    padding-bottom: 25px;
-    font-size: 0.5rem;
-  }
-
-  .sayin {
-    font-size: 0.75em;
-    padding-right: 0;
+    span {
+      color: $secondary-color;
+      margin: 0 0.25em;
+    }
   }
 }
