@@ -82,6 +82,7 @@ h2 {
 h3 {
   font-family: Righteous, cursive;
   font-size: 1.75rem;
+  letter-spacing: $medium-spacing;
 }
 
 h4 {
@@ -90,12 +91,17 @@ h4 {
 
 h5 {
   font-family: Righteous, cursive;
+  letter-spacing: $medium-spacing;
   font-size: 1.25rem;
+}
+
+h6 {
+  letter-spacing: $medium-spacing;
 }
 
 p {
   font-size: 1rem;
-  letter-spacing: 0.025rem;
+  letter-spacing: $low-spacing;
   line-height: 1.6;
   font-weight: 300;
 }
@@ -119,7 +125,7 @@ strike {
 
 u {
   text-decoration: underline;
-  text-underline-offset: 0.25em;
+  text-underline-offset: 0.125em;
   text-decoration-color: $secondary-color;
 }
 
@@ -190,7 +196,7 @@ textarea {
 
 .page-sub {
   font-weight: 300;
-  letter-spacing: -0.1px;
+
   opacity: 0.9;
   font-size: 1.1rem;
   max-width: 50%;

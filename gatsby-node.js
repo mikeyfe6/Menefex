@@ -77,9 +77,69 @@ module.exports.createPages = async ({ graphql, actions }) => {
       allContentfulBlogPost {
         edges {
           node {
-            contentful_id
+            title
+            contentfulId: contentful_id
+            subtitle
             slug
-            updatedAt(formatString: "YYYY-MM-DD", locale: "nl")
+            keywords
+            author
+            image {
+              file {
+                url
+              }
+            }
+            publishedPost: publishedDate(
+              formatString: "dddd D MMMM YYYY, HH:mm"
+              locale: "nl"
+            )
+            updatedPost: updatedAt(
+              formatString: "dddd D MMMM YYYY, HH:mm"
+              locale: "nl"
+            )
+            publishedSchema: publishedDate
+            updatedSchema: updatedAt
+            body {
+              raw
+              references {
+                ... on ContentfulAsset {
+                  contentful_id
+                  __typename
+                  title
+                  file {
+                    url
+                    details {
+                      size
+                      image {
+                        width
+                        height
+                      }
+                    }
+                    fileName
+                  }
+                }
+              }
+            }
+            topics {
+              id
+              name
+              slug
+              bdcolor
+              blogPost: blog_post {
+                contentfulId: contentful_id
+                title
+                subtitle
+                slug
+                image {
+                  title
+                  gatsbyImageData(
+                    width: 300
+                    height: 225
+                    placeholder: BLURRED
+                    formats: [AUTO, WEBP]
+                  )
+                }
+              }
+            }
           }
         }
       }
@@ -123,6 +183,17 @@ module.exports.createPages = async ({ graphql, actions }) => {
       context: {
         slug: edge.node.slug,
         updatedAt: edge.node.updatedAt,
+        publishedDate: edge.node.publishedDate,
+        title: edge.node.title,
+        subtitle: edge.node.subtitle,
+        keywords: edge.node.keywords,
+        author: edge.node.author,
+        image: edge.node.image,
+        body: edge.node.body,
+        topics: edge.node.topics,
+        updatedPost: edge.node.updatedPost,
+        publishedPost: edge.node.publishedPost,
+        updatedSchema: edge.node.updatedSchema,
       },
     });
   });
@@ -138,6 +209,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
         bdcolor: edge.node.bdcolor,
         description: edge.node.description.description,
         slug: edge.node.slug,
+        title: edge.node.title,
       },
     });
   });

@@ -1,4 +1,3 @@
-/* eslint-disable indent */
 import React from 'react';
 
 import { Link } from 'gatsby';
@@ -6,12 +5,12 @@ import { Link } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-import {} from '../styles/modules/blog.module.scss';
+import * as topicStyles from '../styles/modules/topics.module.scss';
 
 // TODO: images naar GatsbyImage verwerken
 
 const DefaultInfo = ({ text }) => (
-  <p className="page-sub" style={{ marginLeft: '5%' }}>
+  <p className="page-sub">
     <b>{text}</b>
   </p>
 );
@@ -19,72 +18,54 @@ const DefaultInfo = ({ text }) => (
 // CONTENTFUL topics genereren
 const Topic = ({ pageContext: { name, topicPosts, bdcolor } }) => (
   <Layout>
-    <div>
-      <div className="smallwhitespace" />
-      <h1 className="page-title">
-        Topics<span>.</span>
-      </h1>
-      <br />
-      <p className="page-sub" style={{ fontSize: '1.25rem' }}>
-        <span style={{ color: bdcolor, fontWeight: 'bold' }}>#</span> &apos;{' '}
-        {name}
-      </p>
+    <h1 className="page-title">
+      Topics<span>.</span>
+    </h1>
 
-      <ol className={posts}>
-        {topicPosts === null ? (
-          <DefaultInfo text="* Oeps! Nog geen blogposts..." />
-        ) : (
-          topicPosts.map(
-            ({
-              slug,
-              contentful_id: contentfulId,
-              title,
-              subtitle,
-              publishedDate,
-              author,
-              image,
-            }) => (
-              <li className={post} key={contentfulId}>
-                <Link to={`/blog/${slug}/`}>
-                  <div>
-                    {' '}
-                    <h4 className={posthead}>{title}</h4>
-                    <span className={contsubtext}> {subtitle}</span>
-                    <p className={bloggepost}>
-                      {' '}
-                      Gepost: <strong>{publishedDate}</strong> ⌁ Auteur:{' '}
-                      <strong>{author}</strong>{' '}
-                    </p>
-                  </div>
+    <p className="page-sub">
+      <span style={{ color: bdcolor, fontWeight: 'bold' }}>#</span> {name}
+    </p>
 
-                  <img
-                    src={image.file.url}
-                    alt={image.title}
-                    className={blogimg}
-                  />
-                </Link>
-              </li>
-            ),
-          )
-        )}
-      </ol>
-      <Link to="/topics/">
-        <p
-          style={{
-            textAlign: 'right',
-            margin: '2em 2em 0 0',
-            fontWeight: 'bold',
-          }}
-        >
-          Naar alle &apos;Topics&apos;
-        </p>
-      </Link>
-    </div>
+    <ul className={topicStyles.posts}>
+      {topicPosts === null ? (
+        <DefaultInfo text="* Oeps! Nog geen blogposts..." />
+      ) : (
+        topicPosts.map(
+          ({
+            slug,
+            contentful_id: contentfulId,
+            title,
+            subtitle,
+            publishedDate,
+            author,
+            image,
+          }) => (
+            <li key={contentfulId}>
+              <Link to={`/blog/${slug}/`}>
+                <div>
+                  <h4>{title}</h4>
+                  <p> {subtitle}</p>
+                  <span>
+                    Gepost: <strong>{publishedDate}</strong> ⌁ Auteur:{' '}
+                    <strong>{author}</strong>
+                  </span>
+                </div>
+
+                <img src={image.file.url} alt={image.title} />
+              </Link>
+            </li>
+          ),
+        )
+      )}
+    </ul>
+
+    <Link to="/topics/" className={topicStyles.backBtn}>
+      <i className="fa-solid fa-angles-left" /> Alle &apos;Topics&apos;
+    </Link>
   </Layout>
 );
 export default Topic;
 
-// eslint-disable-next-line react/prop-types
 export const Head = ({ pageContext: { name, description, slug } }) => (
   <SEO title={name} description={description} pathname={`/topics/${slug}/`} />
 );

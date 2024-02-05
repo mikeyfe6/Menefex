@@ -5,7 +5,7 @@ import SEO from '../components/seo';
 
 import Form from '../components/form';
 import Info from '../components/info';
-import Maps from '../components/gmaps/maps';
+import Maps from '../components/google/maps';
 
 const ContactPage = () => (
   <Layout>

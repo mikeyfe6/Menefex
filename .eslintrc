@@ -1,23 +1,16 @@
 {
-  "env": {
-    "browser": true,
-    "es2021": true
-  },
-  "extends": "airbnb",
-  "overrides": [
-    {
-      "env": {
-        "node": true
-      },
-      "files": [".eslintrc.{js,cjs}"],
-      "parserOptions": {
-        "sourceType": "script"
-      }
-    }
-  ],
+  "extends": ["airbnb"],
   "parserOptions": {
     "ecmaVersion": "latest",
-    "sourceType": "module"
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
   },
-  "rules": {}
+  "rules": {},
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
 }

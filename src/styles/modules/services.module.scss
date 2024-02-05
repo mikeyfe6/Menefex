@@ -2,7 +2,7 @@
 
 .service {
   &-container {
-    background: linear-gradient(to right, white, $fourth-color);
+    background: linear-gradient(145deg, white, $fourth-color);
 
     @include fullWidth;
   }

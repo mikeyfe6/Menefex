@@ -4,7 +4,7 @@
   height: 100%;
   opacity: 0.95;
   color: black;
-  background: linear-gradient(to top, $third-color, white);
+  background: linear-gradient(145deg, $third-color, white);
   position: fixed;
   top: 0;
   left: 0;
@@ -32,7 +32,6 @@
     list-style: none;
     font-size: 1.35rem;
     margin-top: 2.5rem;
-    letter-spacing: 3px;
   }
 
   li {

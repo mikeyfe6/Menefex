@@ -5,12 +5,7 @@ import { Link, graphql, useStaticQuery } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-import {
-  topics,
-  topic,
-  topichead,
-  contsubtext,
-} from '../styles/modules/topics.module.scss';
+import * as topicStyles from '../styles/modules/topics.module.scss';
 
 // TODO: images naar GatsbyImage verwerken
 
@@ -36,15 +31,14 @@ const TopicPage = () => {
 
   return (
     <Layout>
-      <div>
-        <div className="smallwhitespace" />
-        <h1 className="page-title">
-          Topics<span>.</span>
-        </h1>
-        <br />
-        <p className="page-sub">Al onze blog onderwerpen op een rijtje..</p>
+      <h1 className="page-title">
+        Topics<span>.</span>
+      </h1>
 
-        <ol className={topics}>
+      <p className="page-sub">Al onze blog onderwerpen op een rijtje..</p>
+
+      <section>
+        <ul className={topicStyles.topics}>
           {data.allContentfulTopic.edges.map(
             ({
               node: {
@@ -55,26 +49,18 @@ const TopicPage = () => {
                 description,
               },
             }) => (
-              <li className={topic} key={contentfulId}>
+              <li key={contentfulId}>
                 <Link to={`/topics/${slug}/`} style={{ borderColor: bdcolor }}>
-                  <div>
-                    {' '}
-                    <h4 className={topichead}>
-                      <span style={{ color: bdcolor, fontWeight: 'bold' }}>
-                        #
-                      </span>{' '}
-                      {name}
-                    </h4>
-                    <span className={contsubtext}>
-                      {description.description}
-                    </span>
-                  </div>
+                  <h4>
+                    <span style={{ color: bdcolor }}>#</span> {name}
+                  </h4>
+                  <p>{description.description}</p>
                 </Link>
               </li>
             ),
           )}
-        </ol>
-      </div>
+        </ul>
+      </section>
     </Layout>
   );
 };
