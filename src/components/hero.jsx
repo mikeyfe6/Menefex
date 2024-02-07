@@ -14,11 +14,12 @@ const Hero = () => (
       <h1
         className={`${tpWriterStyles.tpwriter} ${tpWriterStyles.line} ${tpWriterStyles.animTypewriter}`}
       >
-        Webmediabedrijf Menefex<span class={tpWriterStyles.dot}>.</span>{' '}
-        <span class={tpWriterStyles.welkom}>Welkom!</span>
+        Webmediabedrijf Menefex<span className={tpWriterStyles.dot}>.</span>{' '}
+        <span className={tpWriterStyles.welkom}>Welkom!</span>
       </h1>
       <h2 className={heroStyles.heroSlogan}>
         <span>・</span>Web<span>sites</span>, web<span>applicaties</span> & SE
+        {''}
         <span>O</span>・
       </h2>
     </div>
