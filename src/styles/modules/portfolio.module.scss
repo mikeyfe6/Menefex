@@ -64,6 +64,7 @@
 
     .tools {
       display: flex;
+      align-items: center;
 
       ul {
         display: flex;
@@ -77,6 +78,10 @@
           color: $sixth-color;
           font-size: 0.85em;
           white-space: nowrap;
+
+          @include mobile {
+            font-size: 0.65rem;
+          }
 
           @include boxShadow;
         }

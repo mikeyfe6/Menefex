@@ -12,7 +12,7 @@ const AboutPage = () => (
       Over Menefex<span>.</span>
     </h1>
 
-    <p className="page-sub">Kom meer te weten over ons...</p>
+    {/* <p className="page-sub">Kom meer te weten over ons...</p> */}
 
     <div className="about-spotify">
       <About />

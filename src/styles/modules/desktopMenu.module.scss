@@ -5,14 +5,20 @@
   top: 0;
   left: 0;
   position: fixed;
-  background: linear-gradient(to bottom, $fourth-color, rgba(255, 255, 255, 0));
+  background: linear-gradient(to bottom, $white-color, rgba($white-color, 50%));
   height: 90px;
-  z-index: 300;
+  z-index: 7;
   border-top: 7.5px solid $secondary-color;
+  border-bottom: 1px solid rgba($white-color, 100%);
 
   .logo {
     padding-top: 0.25em;
     width: 225px;
+
+    @include mobile {
+      width: 175px;
+      padding-top: 0.5em;
+    }
   }
 
   > nav {

@@ -6,6 +6,12 @@
 
   @include mobile {
     flex-direction: column;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  @include mobile {
+    gap: 2.5em;
   }
 
   > li {
@@ -49,7 +55,7 @@
         font-size: 0.7rem;
         font-weight: 500;
         display: block;
-        top: 0.25em;
+        top: 0.5em;
       }
 
       &-action {
@@ -63,7 +69,7 @@
         text-align: center;
         font-size: 0.75em;
         font-weight: bold;
-        margin: 1em 0;
+        margin: 0.25em 0 1em;
         text-decoration: underline;
         text-decoration-color: $super-color;
       }

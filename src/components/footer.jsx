@@ -34,6 +34,7 @@ const Footer = () => {
             &quot;Instead of thinking outside of the box, get rid of the
             box&quot;
           </i>{' '}
+          <br />
           {/* CITE toevoegen */}- Deepak Chopra
         </p>
       </blockquote>
@@ -42,9 +43,9 @@ const Footer = () => {
 
       <div className={footerStyles.footerInfo}>
         <div className={footerStyles.personal}>
-          <p>connect with us</p>
+          <h5>connect with us</h5>
 
-          <h5>
+          <p>
             <a
               href={`mailto:${bizEmail}`}
               rel="noopener noreferrer"
@@ -52,15 +53,15 @@ const Footer = () => {
             >
               <span className={footerStyles.mailfoot}>e:</span> {bizEmail}
             </a>{' '}
-            ∙
+            ∙{' '}
             <a href="tel:0611054318">
               <span className={footerStyles.telfoot}>t:</span> +31 6 11 05 43 18
             </a>
-          </h5>
+          </p>
         </div>
 
         <div className={footerStyles.media}>
-          <p>follow us on</p>
+          <h5>follow us on</h5>
 
           <ul>
             <li className={footerStyles.fb}>
@@ -112,11 +113,11 @@ const Footer = () => {
         </div>
 
         <div className={footerStyles.address}>
-          <p>straight from</p>
-          <h5>
+          <h5>straight from</h5>
+          <p>
             <span className={footerStyles.amsterdam}>xxx</span> amsterdam,
             netherlands
-          </h5>
+          </p>
         </div>
       </div>
 

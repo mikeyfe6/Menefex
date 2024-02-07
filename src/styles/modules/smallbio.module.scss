@@ -11,6 +11,10 @@
   &-wrapper {
     @include container(0, 4em);
 
+    @include mobile {
+      @include container(0, 3em);
+    }
+
     .thick {
       margin: 0;
       width: 15%;
@@ -45,10 +49,10 @@
     margin: 2em 0;
     opacity: 0.75;
     color: $textbase-color;
-    max-width: 75%;
+    max-width: 87.5%;
 
     @include mobile {
-      max-width: 95%;
+      max-width: 100%;
     }
   }
 }

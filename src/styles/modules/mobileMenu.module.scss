@@ -3,12 +3,12 @@
 .mobile-menu {
   height: 100%;
   opacity: 0.95;
-  background: linear-gradient(145deg, $third-color, white);
+  background: linear-gradient(145deg, white, $third-color);
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 200;
+  z-index: 3;
   transform: translateY(100%);
   transition: transform 0.5s ease-in-out;
 
@@ -38,8 +38,7 @@
         font-family: $right-font;
         text-shadow: -5px 0 #ccc, 0 5px #ccc, 5px 0 #ccc, 0 -5px #ccc;
 
-        &:hover,
-        &:active {
+        &:hover:not(.active-page) {
           color: $textbase-color;
           text-shadow: -15px 0 $third-color, 0 15px $third-color,
             15px 0 $third-color, 0 -15px $third-color;

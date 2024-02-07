@@ -79,7 +79,7 @@ const PortfolioPage = () => (
               className={portfolioStyles.btnDark}
             >
               <i className="fa-brands fa-github" />
-              Check op Github
+              Github Repo
             </a>
           </div>
         </div>
@@ -135,9 +135,14 @@ const PortfolioPage = () => (
               <i className="fa-solid fa-eye" />
               Ga naar project
             </a>
-            <a href="#!" className={portfolioStyles.btnDark}>
+            <a
+              href="https://github.com/mikeyfe6/eternity-drum"
+              rel="noopener noreferrer"
+              target="_blank"
+              className={portfolioStyles.btnDark}
+            >
               <i className="fa-brands fa-github" />
-              <strike>Niet op Github</strike>
+              Github Repo
             </a>
           </div>
         </div>

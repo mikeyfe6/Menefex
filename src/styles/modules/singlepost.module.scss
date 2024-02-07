@@ -30,15 +30,25 @@
         gap: 1em;
 
         > img {
-          min-width: 50px;
-          max-height: 50px;
-          border-right: 5px solid $fourth-color;
+          max-height: 75px;
+          border-right: 2px solid $fourth-color;
           padding-right: 1em;
+          margin: 1em;
+
+          @include mobile {
+            max-height: 50px;
+          }
         }
 
         .title {
           font-size: 1.5rem;
           font-weight: 600;
+
+          @include mobile {
+            font-size: 1.25rem;
+            line-height: 1.5rem;
+            text-align: right;
+          }
         }
       }
 
@@ -72,16 +82,17 @@
           .subtitle {
             font-size: 1.25rem;
             font-weight: 500;
-            margin: 1.5em 0 1em;
+            line-height: 1.6rem;
+            margin: 2em 0 1em;
+
+            @include mobile {
+              font-size: 1.125rem;
+            }
 
             &::first-letter {
-              font-size: 2em;
-
+              font-size: 2.5rem;
               color: $secondary-color;
-              margin-top: -10px;
-              margin-right: 0.125em;
-              text-decoration: 5px underline $base-color;
-              text-underline-offset: 0.125em;
+              margin-right: 0.025em;
             }
           }
 
@@ -96,9 +107,8 @@
 
             .horizontness {
               // hr
-              display: block;
-              margin-top: 3em;
-              margin-bottom: 3em;
+              margin: 2em 0;
+              border: 1px solid rgba($base-color, 0.75);
             }
 
             .boldness {
@@ -180,7 +190,7 @@
         > aside {
           flex: 35%;
           position: sticky;
-          margin-bottom: 5em;
+          margin-bottom: 3em;
           top: 7.5em;
           height: 100%;
 
@@ -362,7 +372,8 @@
           display: flex;
           flex-wrap: wrap;
           justify-content: space-evenly;
-          gap: 1em;
+          margin-bottom: 3em;
+          gap: 2em;
 
           > li {
             a {
@@ -415,9 +426,10 @@
       .disqus {
         width: 87.5%;
         margin: 0 auto;
+        color: $base-color;
 
         @include mobile {
-          max-width: 100%;
+          width: 100%;
         }
       }
     }

@@ -4,16 +4,22 @@
   @include container;
 
   blockquote {
-    text-align: right;
+    margin-bottom: 2em;
 
     .sayin {
-      font-size: 1rem;
       text-align: end;
       padding-right: 2em;
-      margin-bottom: 2em;
 
       @include mobile {
         padding-right: 0;
+      }
+
+      br {
+        display: none;
+
+        @include mobile {
+          display: block;
+        }
       }
 
       i {
@@ -94,7 +100,21 @@
     }
 
     h5 {
+      color: $fifth-color;
+      font-family: $poppins-font;
       font-size: 1rem;
+      margin-bottom: 0.5em;
+    }
+
+    a {
+      color: $primary-color;
+      font-size: 1.1rem;
+
+      @include smoothTrans;
+
+      &:hover {
+        color: $link-color;
+      }
     }
 
     .personal {
@@ -157,41 +177,29 @@
       text-align: right;
       font-family: $right-font;
 
+      p {
+        font-size: 1.1rem;
+      }
+
       .amsterdam {
         color: red;
       }
-    }
-
-    a {
-      color: $primary-color;
-
-      @include smoothTrans;
-
-      &:hover {
-        color: $link-color;
-      }
-    }
-
-    p {
-      color: $fifth-color;
-      font-family: $poppins-font;
-      font-size: 0.9rem;
-      margin-bottom: 0.5em;
     }
   }
 
   .credits {
     text-align: center;
-    font-size: 0.875rem;
+    font-size: 0.825rem;
     color: $fifth-color;
     padding-bottom: 1.5em;
-    line-height: 1.8;
-    max-width: 60%;
+    max-width: 57.5%;
     margin: 0 auto;
 
     @include mobile {
-      font-size: 0.775rem;
-      max-width: 85%;
+      font-size: 0.65rem;
+      max-width: 100%;
+      line-height: 1.3rem;
+      letter-spacing: $low-spacing;
     }
 
     a {

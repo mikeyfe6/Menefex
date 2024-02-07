@@ -16,5 +16,13 @@
   &-text {
     text-align: center;
     max-width: 550px;
+
+    a {
+      color: $link-color;
+
+      &:hover {
+        color: rgba($link-color, 0.9);
+      }
+    }
   }
 }

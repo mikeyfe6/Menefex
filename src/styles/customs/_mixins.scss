@@ -13,7 +13,7 @@
   padding: $py 2em;
 
   @include mobile {
-    padding: $py 1.5em;
+    padding: $py 1em;
   }
 }
 
@@ -54,8 +54,12 @@
   display: inline-block;
   padding: 0.7em 1em;
   width: 100%;
-  border-radius: $medium-radius;
-  font-size: 0.9em;
+  border-radius: $low-radius;
+  font-size: 0.9rem;
+
+  @include mobile {
+    font-size: 0.8rem;
+  }
 
   @include smoothTrans;
   @include boxShadow;
@@ -100,7 +104,7 @@
   font-size: 0.8rem;
   letter-spacing: $high-spacing;
   border: 3px solid $spec-color;
-  border-radius: 5px;
+  border-radius: $low-radius;
 
   @include mobile {
     font-size: 0.7rem;

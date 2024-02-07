@@ -1,6 +1,10 @@
 @import './configs/globals';
 @import './configs/resets';
 
+:root {
+  --app-height: 100%;
+}
+
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -16,8 +20,28 @@ body {
   flex-direction: column;
 }
 
+main {
+  @include container(90px);
+
+  &:has(> .page-title) {
+    @include container(100px, 3em);
+
+    @include mobile {
+      @include container(90px, 1em);
+    }
+  }
+}
+
+header,
+footer,
+main {
+  @media (width <= 319px) {
+    display: none;
+  }
+}
+
 #tosmallforyouscreen {
-  display: none;
+  display: block;
   text-align: center;
 
   .container {
@@ -36,26 +60,6 @@ body {
       font-size: 0.75rem;
     }
   }
-}
-
-main {
-  @include container(100px);
-
-  &:has(> .page-title) {
-    @include container(100px, 3em);
-  }
-}
-
-header,
-footer,
-main {
-  @media (width <= 319px) {
-    display: none;
-  }
-}
-
-#tosmallforyouscreen {
-  display: block;
 
   @media (width >= 320px) {
     display: none;
@@ -65,6 +69,10 @@ main {
 section,
 form {
   margin: 2.5em 0 2em;
+
+  @include mobile {
+    margin: 2em 0 1em;
+  }
 
   section {
     margin: 0;
@@ -94,10 +102,20 @@ h3 {
   font-family: Righteous, cursive;
   font-size: 1.75rem;
   letter-spacing: $medium-spacing;
+
+  @include mobile {
+    font-size: 1.5rem;
+  }
 }
 
 h4 {
   font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 500;
+
+  @include mobile {
+    line-height: 1.8rem;
+  }
 }
 
 h5 {
@@ -112,9 +130,14 @@ h6 {
 
 p {
   font-size: 1rem;
-  letter-spacing: $low-spacing;
-  line-height: 1.6;
+  letter-spacing: $medium-spacing;
+  line-height: 1.6rem;
   font-weight: 300;
+
+  @include mobile {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
 }
 
 a {
@@ -148,7 +171,7 @@ input,
 textarea,
 select {
   font-size: 1.1rem;
-  font-weight: 400;
+  font-weight: 500;
   border: none;
   outline: none;
 }
@@ -199,6 +222,10 @@ textarea {
   font-family: $right-font;
   font-size: 2.25rem;
   margin-bottom: 0.375em;
+
+  @include mobile {
+    font-size: 1.875rem;
+  }
 }
 
 .page-sub {
@@ -210,6 +237,7 @@ textarea {
 
   @include mobile {
     max-width: 100%;
+    font-size: 1rem;
   }
 }
 
@@ -225,18 +253,28 @@ textarea {
 
 .vertical-line-short {
   border-left: 5px solid $spec-color;
+  border-radius: $low-radius;
   display: table;
   margin: 5em auto;
   height: 70px;
   opacity: 0.5;
+
+  @include mobile {
+    margin: 4em auto;
+  }
 }
 
 .vertical-line-long {
   border-left: 5px solid $spec-color;
+  border-radius: $low-radius;
   display: table;
   margin: 0 auto 5em;
   height: 100px;
   opacity: 0.5;
+
+  @include mobile {
+    margin: 0 auto 4em;
+  }
 }
 
 .about-spotify {
@@ -316,8 +354,12 @@ textarea {
 
 // DISQUS TWEAK
 
-#disqus_thread a {
-  color: $secondary-color;
+#disqus_thread {
+  margin: 5em auto 0;
+
+  a {
+    color: $secondary-color;
+  }
 }
 
 span.speccol {

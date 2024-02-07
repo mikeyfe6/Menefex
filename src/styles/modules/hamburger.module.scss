@@ -13,6 +13,13 @@
   box-sizing: border-box;
 
   box-shadow: none;
+  z-index: 6;
+  position: inherit;
+
+  @include mobile {
+    height: 32.5px;
+    width: 37.5px;
+  }
 
   &:focus {
     outline: none;

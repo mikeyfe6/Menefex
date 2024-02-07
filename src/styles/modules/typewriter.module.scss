@@ -74,8 +74,25 @@
   font-family: $poppins-font;
   font-weight: 600;
 
+  @include compact {
+    line-height: 1;
+
+    .wmb {
+      font-size: 2rem;
+    }
+
+    .mnfx {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+  }
+
   .dot {
     color: $secondary-color;
+
+    @include compact {
+      font-size: 2em;
+    }
   }
 
   .welkom {

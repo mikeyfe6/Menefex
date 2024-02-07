@@ -2,13 +2,17 @@
 
 .service {
   &-container {
-    background: linear-gradient(145deg, white, $fourth-color);
+    background: linear-gradient(145deg, $sixth-color, $fourth-color);
 
     @include fullWidth;
   }
 
   &-wrapper {
     @include container(0, 4em);
+
+    @include mobile {
+      @include container(0, 3em);
+    }
 
     > div:nth-child(1) {
       display: flex;

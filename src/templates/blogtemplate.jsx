@@ -126,21 +126,23 @@ const Blog = ({ pageContext }) => {
     },
   };
 
-  useEffect(() => {
-    const script = document.createElement('script');
+  if (process.env.NODE_ENV !== 'development') {
+    useEffect(() => {
+      const script = document.createElement('script');
 
-    script.src =
-      'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3158048130288702';
-    script.async = true;
+      script.src =
+        'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3158048130288702';
+      script.async = true;
 
-    document.body.appendChild(script);
-    console.log('MFNXWMB: Google Adsense is geladen!');
+      document.body.appendChild(script);
+      console.log('MFNXWMB: Google Adsense is geladen!');
 
-    return () => {
-      document.body.removeChild(script);
-      console.log('MFNXWMB: Google Adsense is gestopt!');
-    };
-  }, []);
+      return () => {
+        document.body.removeChild(script);
+        console.log('MFNXWMB: Google Adsense is gestopt!');
+      };
+    }, []);
+  }
 
   return (
     <Layout>
@@ -174,6 +176,16 @@ const Blog = ({ pageContext }) => {
                 <div className={singlepostStyle.content}>
                   {renderRichText(body, options)}
                 </div>
+
+                <section className={singlepostStyle.disqus}>
+                  <Disqus
+                    config={{
+                      url: `https://menefex.nl/blog/${slug}/`,
+                      identifier: contentfulId,
+                      title,
+                    }}
+                  />
+                </section>
 
                 <div className={singlepostStyle.feedlysub} hidden>
                   <a
@@ -289,7 +301,7 @@ const Blog = ({ pageContext }) => {
               </Link>
             </div>
 
-            <div className={singlepostStyle.family}>
+            <section className={singlepostStyle.family}>
               {relatedPosts[0].length === 0 ? null : (
                 <h6>Gerelateerde Artikelen</h6>
               )}
@@ -314,21 +326,11 @@ const Blog = ({ pageContext }) => {
                   );
                 })}
               </ul>
-            </div>
+            </section>
 
             {process.env.NODE_ENV !== 'development' && (
               <GoogleAdsDisplay slot="3266975443" />
             )}
-
-            <div className={singlepostStyle.disqus}>
-              <Disqus
-                config={{
-                  url: `https://menefex.nl/blog/${slug}/`,
-                  identifier: contentfulId,
-                  title,
-                }}
-              />
-            </div>
 
             {process.env.NODE_ENV !== 'development' && (
               <GoogleAdsMulti slot="1625762341" />
