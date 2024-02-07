@@ -31,8 +31,8 @@ const Notes = () => (
         rel="noopener noreferrer"
         target="_blank"
       >
-        <b>Download hier</b>{' '}
-      </a>
+        <b>Download hier</b>
+      </a>{' '}
       een <u> overzicht</u> van onze prijzen in <b>pdf</b>
       -vorm.
     </p>

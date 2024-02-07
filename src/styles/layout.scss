@@ -114,6 +114,7 @@ h4 {
   font-weight: 500;
 
   @include mobile {
+    font-size: 1.375rem;
     line-height: 1.8rem;
   }
 }
@@ -179,6 +180,7 @@ select {
 input,
 textarea {
   width: 100%;
+  caret-color: $link-color;
 }
 
 [hidden] {
