@@ -1,23 +1,25 @@
 @import '../configs/globals';
 
-.toggleButton {
+.hamburger {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 27.5px;
-  width: 35px;
+  height: 35px;
+  width: 40px;
   background: transparent;
   border: none;
   cursor: pointer;
   padding: 0;
   box-sizing: border-box;
 
+  box-shadow: none;
+
   &:focus {
     outline: none;
   }
 
-  &Line {
-    width: 35px;
+  > div {
+    width: 100%;
     height: 6px;
     background: $primary-color;
 

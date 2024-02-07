@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  margin: 0;
 
   &-image {
     margin: 0 auto;
@@ -19,6 +20,16 @@
     transform: rotate(180deg);
 
     @include smoothTrans;
+
+    @include mobile {
+      width: 175px;
+      height: 175px;
+    }
+
+    @include compact {
+      width: 150px;
+      height: 150px;
+    }
 
     @keyframes roll {
       0% {
@@ -49,6 +60,8 @@
     font-family: $right-font;
     font-size: 2.25rem;
 
+    letter-spacing: 0.25rem;
+
     background: linear-gradient(145deg, $primary-color, $button-hover);
     border: 3px solid $primary-color;
 
@@ -59,71 +72,65 @@
     margin: 0 auto;
     text-align: center;
 
+    word-wrap: break-word;
+
     > span {
       color: $sixth-color;
     }
 
     @include boxShadow;
+
+    @include mobile {
+      font-size: 1.375rem;
+      padding: 0.25em;
+      letter-spacing: 0.125rem;
+
+      border-left: none;
+      border-right: none;
+      border-radius: 0;
+
+      @include fullWidth;
+    }
+
+    @include compact {
+      font-size: 1rem;
+    }
   }
 
-  .herospec {
-    color: $sixth-color !important;
-  }
-
-  .scroll-down {
-    position: relative;
-    bottom: 75px;
-    margin: 0 auto;
-    z-index: 0;
-    text-decoration: none;
-    text-shadow: 0;
-    width: 20px;
-    height: 20px;
-    border-bottom: 5px solid $secondary-color;
-    border-right: 5px solid $primary-color;
-    transform: translate(-50%, 0) rotate(45deg);
-    animation: fade_move_down 1.5s cubic-bezier(0.19, 1, 0.22, 1) infinite;
-  }
-
-  .flexancors {
+  &-cta {
     margin: 0 auto;
 
-    .scroll-head {
-      a {
-        color: $third-color;
+    .scroll-down {
+      position: relative;
+      bottom: 75px;
+      margin: 0 auto;
+      z-index: 0;
+      text-decoration: none;
+      text-shadow: 0;
+      width: 20px;
+      height: 20px;
+      border-bottom: 5px solid $secondary-color;
+      border-right: 5px solid $primary-color;
+      transform: translate(-50%, 0) rotate(45deg);
+      animation: fade-move-down 1.5s cubic-bezier(0.19, 1, 0.22, 1) infinite;
+    }
+  }
 
-        &:hover {
-          color: $link-color;
-        }
-      }
+  &-buttons {
+    > button {
+      @include tertiaryButton;
+    }
 
-      .scrollBtn {
-        text-transform: uppercase;
-        padding: 12.5px 30px;
-        background: transparent;
-        color: $primary-color !important;
-        background-color: #f2f2f2;
-        font-weight: 700;
-        font-size: 0.8rem;
-
-        border: 3px solid $spec-color;
-        border-radius: 5px;
-
-        @include smoothTrans;
-        @include boxShadow;
-
-        &:hover {
-          color: $link-color;
-          border-color: $link-color;
-          background-color: #e9e9e9;
-          transform: scale(1.05);
-        }
-      }
+    > span {
+      color: $fifth-color;
+      font-weight: bolder;
+      opacity: 0.75;
+      margin: 0 0.75em;
     }
   }
 }
 
-@keyframes fade_move_down {
+@keyframes fade-move-down {
   0% {
     transform: translate(0, -20px) rotate(45deg);
     opacity: 0;

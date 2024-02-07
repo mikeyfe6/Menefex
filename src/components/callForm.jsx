@@ -4,7 +4,7 @@ import { navigate } from 'gatsby';
 
 import axios from 'axios';
 
-import * as callStyles from '../styles/modules/call.module.scss';
+import * as callStyles from '../styles/modules/callForm.module.scss';
 
 // TODO: change to callForm.scss
 

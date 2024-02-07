@@ -8,6 +8,10 @@
   width: fit-content;
   height: 100%;
 
+  @include mobile {
+    padding: 1em;
+  }
+
   p {
     font-size: 0.85rem;
     font-weight: 300;
@@ -23,5 +27,9 @@
     height: 650px;
     width: 400px;
     border-radius: $high-radius;
+
+    @include mobile {
+      width: 100%;
+    }
   }
 }

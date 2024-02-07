@@ -12,6 +12,10 @@
       padding-right: 2em;
       margin-bottom: 2em;
 
+      @include mobile {
+        padding-right: 0;
+      }
+
       i {
         font-weight: 600;
         font-style: italic;
@@ -35,6 +39,10 @@
     margin: 3em auto 4em;
     text-align: center;
     width: fit-content;
+
+    @include mobile {
+      margin: 3em auto;
+    }
   }
 
   &-logo {
@@ -70,9 +78,16 @@
 
   &-info {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0 5em;
     margin: 5em 0;
+    gap: 3em;
+
+    @include mobile {
+      margin: 2.5em 0;
+      padding: 0;
+      flex-direction: column;
+    }
 
     > div {
       flex: 1;
@@ -99,13 +114,12 @@
       font-family: $right-font;
 
       ul {
-        list-style: none;
-        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
 
         li {
-          display: inline-block;
-          padding-left: 20px;
-
           &.fb::before {
             background: #4064ad;
 
@@ -172,6 +186,13 @@
     color: $fifth-color;
     padding-bottom: 1.5em;
     line-height: 1.8;
+    max-width: 60%;
+    margin: 0 auto;
+
+    @include mobile {
+      font-size: 0.775rem;
+      max-width: 85%;
+    }
 
     a {
       color: $link-color;

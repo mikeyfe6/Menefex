@@ -14,42 +14,43 @@ const Hero = () => (
       <h1
         className={`${tpWriterStyles.tpwriter} ${tpWriterStyles.line} ${tpWriterStyles.animTypewriter}`}
       >
-        Webmediabedrijf Menefex. Welkom!
+        Webmediabedrijf Menefex<span class={tpWriterStyles.dot}>.</span>{' '}
+        <span class={tpWriterStyles.welkom}>Welkom!</span>
       </h1>
       <h2 className={heroStyles.heroSlogan}>
-        <span>・ </span>Web<span>sites</span>, web<span>applicaties</span> & SE{' '}
-        <span>O</span> ・
+        <span>・</span>Web<span>sites</span>, web<span>applicaties</span> & SE
+        <span>O</span>・
       </h2>
     </div>
 
-    <div className={heroStyles.flexancors}>
+    <div className={heroStyles.heroCta}>
       <div className={heroStyles.scrollDown} />
 
-      <span className={heroStyles.scrollHead}>
+      <div className={heroStyles.heroButtons}>
         <button
           type="button"
-          className={heroStyles.scrollBtn}
+
           // onClick={() => scrollTo('#biografiescroll')}
         >
           biografie
         </button>
-        <span className="speccolplus">|</span>
+        <span>|</span>
         <button
           type="button"
-          className={heroStyles.scrollBtn}
+
           // onClick={() => scrollTo('#servicescroll')}
         >
           services
         </button>
-        <span className="speccolplus">|</span>
+        <span>|</span>
         <button
           type="button"
-          className={heroStyles.scrollBtn}
+
           // onClick={() => scrollTo('#projectscroll')}
         >
           portfolio
         </button>
-      </span>
+      </div>
     </div>
   </section>
 );

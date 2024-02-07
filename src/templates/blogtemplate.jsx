@@ -315,7 +315,11 @@ const Blog = ({ pageContext }) => {
                 })}
               </ul>
             </div>
-            <GoogleAdsDisplay slot="3266975443" />
+
+            {process.env.NODE_ENV !== 'development' && (
+              <GoogleAdsDisplay slot="3266975443" />
+            )}
+
             <div className={singlepostStyle.disqus}>
               <Disqus
                 config={{
@@ -325,7 +329,10 @@ const Blog = ({ pageContext }) => {
                 }}
               />
             </div>
-            <GoogleAdsMulti slot="1625762341" />
+
+            {process.env.NODE_ENV !== 'development' && (
+              <GoogleAdsMulti slot="1625762341" />
+            )}
           </div>
         </section>
       </div>

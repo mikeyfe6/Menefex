@@ -1,20 +1,17 @@
 import React from 'react';
 
-import {
-  toggleButton,
-  toggleButtonLine,
-} from '../../styles/modules/hamburger.module.scss';
+import * as hamburberStyles from '../../styles/modules/hamburger.module.scss';
 
-const HamburgerBtn = (props) => (
+const HamburgerBtn = ({ click }) => (
   <button
     type="button"
-    className={toggleButton}
-    onClick={props.click}
+    className={hamburberStyles.hamburger}
+    onClick={click}
     aria-label="Menu"
   >
-    <div className={toggleButtonLine} />
-    <div className={toggleButtonLine} />
-    <div className={toggleButtonLine} />
+    <div />
+    <div />
+    <div />
   </button>
 );
 

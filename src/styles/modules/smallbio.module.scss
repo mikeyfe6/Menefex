@@ -42,10 +42,14 @@
   }
 
   &-text {
-    margin: 2em 0 1.5em;
+    margin: 2em 0;
     opacity: 0.75;
     color: $textbase-color;
     max-width: 75%;
+
+    @include mobile {
+      max-width: 95%;
+    }
   }
 }
 

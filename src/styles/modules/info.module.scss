@@ -10,6 +10,10 @@
   border-radius: $medium-radius;
   color: white !important;
 
+  @include mobile {
+    padding: 1.5em;
+  }
+
   > span {
     margin-bottom: 1em;
     display: block;
@@ -28,6 +32,8 @@
   .communication {
     display: flex;
     justify-content: space-around;
+    gap: 2em;
+    flex-wrap: wrap;
   }
 
   .socials {
@@ -36,6 +42,10 @@
     align-items: center;
     flex-direction: column;
 
+    p {
+      text-align: center;
+    }
+
     span {
       color: $secondary-color;
     }
@@ -43,6 +53,8 @@
     ul {
       display: flex;
       gap: 1em;
+      justify-content: center;
+      flex-wrap: wrap;
       margin-top: 1.25em;
 
       li {

@@ -20,6 +20,10 @@
       max-width: 80%;
       margin: 0 auto;
 
+      @include mobile {
+        max-width: 100%;
+      }
+
       .header {
         display: flex;
         align-items: center;
@@ -35,7 +39,6 @@
         .title {
           font-size: 1.5rem;
           font-weight: 600;
-          margin-bottom: 0.25em;
         }
       }
 
@@ -48,6 +51,11 @@
       .main {
         display: flex;
         gap: 4em;
+
+        @include tablet {
+          flex-direction: column;
+          gap: 2em;
+        }
 
         > section {
           flex: 65%;
@@ -176,6 +184,11 @@
           top: 7.5em;
           height: 100%;
 
+          @include tablet {
+            position: static;
+            margin-bottom: 2em;
+          }
+
           .gepost {
             color: $secondary-color;
             font-style: italic;
@@ -214,6 +227,10 @@
               border-radius: $low-radius;
               border: 2.5px solid rgba($base-color, 0.75);
               margin: 1.5em 0;
+
+              @include tablet {
+                display: none;
+              }
             }
 
             .related {
@@ -222,6 +239,10 @@
                 font-size: 1.125rem;
                 text-align: center;
                 margin: 2em 0 1em;
+              }
+
+              @include tablet {
+                display: none;
               }
 
               ul {
@@ -281,8 +302,17 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        gap: 2em;
 
-        ul {
+        @include tablet {
+          align-items: flex-start;
+        }
+
+        @include mobile {
+          margin-top: 0;
+        }
+
+        > ul {
           display: flex;
           flex-wrap: wrap;
           gap: 0.5em;
@@ -309,9 +339,15 @@
             }
           }
         }
+
+        > a {
+          white-space: nowrap;
+        }
       }
 
       .family {
+        margin-bottom: 1em;
+
         > h6 {
           font-family: $right-font;
           font-size: 1.75rem;
@@ -379,6 +415,10 @@
       .disqus {
         width: 87.5%;
         margin: 0 auto;
+
+        @include mobile {
+          max-width: 100%;
+        }
       }
     }
   }

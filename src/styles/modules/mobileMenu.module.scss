@@ -1,0 +1,79 @@
+@import '../configs/globals';
+
+.mobile-menu {
+  height: 100%;
+  opacity: 0.95;
+  background: linear-gradient(145deg, $third-color, white);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 200;
+  transform: translateY(100%);
+  transition: transform 0.5s ease-in-out;
+
+  hr {
+    margin: 0;
+    width: 50%;
+    border: 1px solid $secondary-color;
+  }
+
+  &.open {
+    transform: translateY(0);
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 1.75em;
+
+    li {
+      a {
+        font-size: 1.5rem;
+        letter-spacing: $high-spacing;
+        color: #555;
+        font-family: $right-font;
+        text-shadow: -5px 0 #ccc, 0 5px #ccc, 5px 0 #ccc, 0 -5px #ccc;
+
+        &:hover,
+        &:active {
+          color: $textbase-color;
+          text-shadow: -15px 0 $third-color, 0 15px $third-color,
+            15px 0 $third-color, 0 -15px $third-color;
+        }
+
+        .dots {
+          color: $secondary-color;
+          font-size: 25px;
+        }
+
+        &.whapp {
+          font-size: 1.25rem;
+
+          > i {
+            margin-right: 0.5em;
+            font-size: 1.25em;
+            color: #3fd252;
+          }
+        }
+      }
+
+      .active-page {
+        font-size: 1.55em;
+        color: $textbase-color;
+
+        text-shadow: -10px 0 $secondary-color, 0 10px $secondary-color,
+          10px 0 $secondary-color, 0 -10px $secondary-color;
+
+        .dots {
+          color: $third-color;
+        }
+
+        @include smoothTrans;
+      }
+    }
+  }
+}

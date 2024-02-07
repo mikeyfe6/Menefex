@@ -10,8 +10,8 @@ import * as mapsStyles from '../../styles/modules/maps.module.scss';
 
 const defaultProps = {
   center: {
-    lat: 52.30994504604427,
-    lng: 4.973749639894681,
+    lat: 52.30994007862562,
+    lng: 4.974422834381031,
   },
   zoom: 15,
 };

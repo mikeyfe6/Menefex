@@ -25,6 +25,10 @@
     transform: translate(-50%, -12.5%);
 
     border-radius: $low-radius;
+
+    @include mobile {
+      max-width: 95%;
+    }
   }
 
   &-content {

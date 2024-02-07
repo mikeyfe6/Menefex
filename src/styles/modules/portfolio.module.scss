@@ -5,6 +5,10 @@
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 3rem;
 
+  @include phablet {
+    grid-template-columns: 1fr;
+  }
+
   &-img {
     max-height: 100%;
     max-width: 100%;
@@ -18,6 +22,7 @@
     &:hover {
       opacity: 0.7;
       border-color: $link-color;
+
       @include smoothTrans;
     }
   }
@@ -30,11 +35,16 @@
     border-top: none;
     min-height: 300px;
 
+    @include phablet {
+      min-height: auto;
+    }
+
     span {
       font-family: $right-font;
       margin-right: 1em;
       color: $secondary-color;
       font-size: 0.9rem;
+      display: inline;
     }
 
     h5 {
@@ -52,24 +62,24 @@
       margin: 0 0 2em;
     }
 
-    ul {
-      display: inline;
+    .tools {
+      display: flex;
 
-      li {
-        background: linear-gradient(145deg, $primary-color, $button-hover);
-        border-radius: 4px;
-        padding: 0.175% 1.5% 0.175% 1%;
-        margin: 1% 0 1% 0%;
-        color: $sixth-color;
-        font-size: 0.85em;
-        white-space: nowrap;
-        display: inline;
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.25em;
 
-        &:not(last-child) {
-          margin-right: 0.375em;
+        li {
+          background: linear-gradient(145deg, $primary-color, $button-hover);
+          border-radius: $low-radius;
+          padding: 0 0.5em;
+          color: $sixth-color;
+          font-size: 0.85em;
+          white-space: nowrap;
+
+          @include boxShadow;
         }
-
-        @include boxShadow;
       }
     }
   }

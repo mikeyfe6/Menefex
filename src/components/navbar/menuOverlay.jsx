@@ -1,9 +1,13 @@
 import React from 'react';
 
-import { backdropStylo } from '../../styles/modules/backdrop.module.scss';
+import * as backDropStyles from '../../styles/modules/backdrop.module.scss';
 
-const MenuOverlay = (props) => (
-  <div className={backdropStylo} onClick={props.click} role="presentation" />
+const MenuOverlay = ({ click }) => (
+  <div
+    className={backDropStyles.backdrop}
+    onClick={click}
+    role="presentation"
+  />
 );
 
 export default MenuOverlay;

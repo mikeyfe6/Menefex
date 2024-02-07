@@ -132,8 +132,8 @@ const Footer = () => {
         <span>&copy;</span> 2019 - {today.getFullYear()} · {title}{' '}
         <span>|</span> <Link to="/privacy-policy/">privacybeleid</Link>{' '}
         <span>|</span> <Link to="/terms-conditions/">algemene voorwaarden</Link>{' '}
-        <span>|</span> alle rechten voorbehouden <br />
-        KvK <span>#</span> 76045315 <span>|</span> Btw <span>#</span> NL
+        <span>|</span> alle rechten voorbehouden <span>|</span> KvK{' '}
+        <span>#</span> 76045315 <span>|</span> Btw <span>#</span> NL
         003040579B17 <span>|</span> Bank <span>#</span> NL10 BUNQ 2038 8619 94
       </p>
     </footer>

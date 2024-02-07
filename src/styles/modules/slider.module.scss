@@ -1,9 +1,25 @@
 @import '../configs/globals';
 
+// :root {
+//   var(--swiper-navigation-sides-offset, 10px)
+// }
+
 .slider {
   &-wrapper {
     overflow: hidden;
     border-radius: 15px 15px 5px 5px;
+
+    --swiper-navigation-sides-offset: 20px;
+    --swiper-navigation-size: 30px;
+    --swiper-theme-color: #008cd2;
+
+    @include mobile {
+      border-radius: 0;
+
+      --swiper-navigation-size: 25px;
+
+      @include fullWidth;
+    }
   }
 
   &-container {
@@ -15,6 +31,12 @@
     border-radius: 15px 15px 5px 5px;
 
     max-height: 700px;
+
+    @include mobile {
+      border-radius: 0;
+      border-right: none;
+      border-left: none;
+    }
 
     img {
       object-position: top;
@@ -33,6 +55,13 @@
     border-radius: 7px;
 
     padding: 1em;
+
+    @include mobile {
+      position: static;
+      border-radius: 0;
+      border: none;
+      padding: 1.5em 1.5em 2.5em;
+    }
 
     > div {
       display: flex;

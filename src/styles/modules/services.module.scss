@@ -12,17 +12,32 @@
 
     > div:nth-child(1) {
       display: flex;
+      justify-content: space-between;
       gap: 2em;
 
       @include laptop {
         flex-wrap: wrap;
       }
 
+      @include mobile {
+        flex-direction: column;
+      }
+
       > div {
         flex: 1;
 
         @include laptop {
-          flex: 0 0 48%;
+          flex: 0 0 45%;
+        }
+
+        @include mobile {
+          flex: 1;
+
+          &:not(:first-of-type) {
+            border-top: 5px solid $spectext-color;
+            padding-top: 3em;
+            margin-top: 2em;
+          }
         }
 
         span {

@@ -10,7 +10,11 @@
   width: 100%;
   max-width: 1400px;
   margin: $my auto;
-  padding: $py 2rem;
+  padding: $py 2em;
+
+  @include mobile {
+    padding: $py 1.5em;
+  }
 }
 
 @mixin fullWidth {
@@ -94,9 +98,14 @@
   background-color: #f2f2f2;
   font-weight: 700;
   font-size: 0.8rem;
-
+  letter-spacing: $high-spacing;
   border: 3px solid $spec-color;
   border-radius: 5px;
+
+  @include mobile {
+    font-size: 0.7rem;
+    padding: 1em 2em;
+  }
 
   @include smoothTrans;
   @include boxShadow;

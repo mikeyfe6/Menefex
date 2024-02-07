@@ -2,77 +2,70 @@ import React from 'react';
 
 import { Link } from 'gatsby';
 
-import {
-  activePage,
-  dots,
-  menuline,
-  // whapp,
-  wapp,
-  sideBar,
-  open,
-} from '../../styles/modules/sidebar.module.scss';
+import * as mobileMenuStyles from '../../styles/modules/mobileMenu.module.scss';
 
-const MobileMenu = (props) => {
-  let drawerClasses = sideBar;
-  if (props.show) {
-    drawerClasses = `${sideBar} ${open}`;
+const MobileMenu = ({ show }) => {
+  let drawerClasses = mobileMenuStyles.mobileMenu;
+  if (show) {
+    drawerClasses = `${mobileMenuStyles.mobileMenu} ${mobileMenuStyles.open}`;
   }
 
   return (
     <nav className={drawerClasses}>
       <ul>
         <li>
-          <Link to="/" activeClassName={activePage}>
+          <Link to="/" activeClassName={mobileMenuStyles.activePage}>
             home
-            <span className={dots}>.</span>
+            <span className={mobileMenuStyles.dots}>.</span>
           </Link>
         </li>
         <li>
-          <Link to="/portfolio/" activeClassName={activePage}>
+          <Link to="/portfolio/" activeClassName={mobileMenuStyles.activePage}>
             portfolio
-            <span className={dots}>.</span>
+            <span className={mobileMenuStyles.dots}>.</span>
           </Link>
         </li>
         <li>
-          <Link to="/blog/" activeClassName={activePage} partiallyActive>
+          <Link
+            to="/blog/"
+            activeClassName={mobileMenuStyles.activePage}
+            partiallyActive
+          >
             blog
-            <span className={dots}>.</span>
+            <span className={mobileMenuStyles.dots}>.</span>
           </Link>
         </li>
         <li>
-          <Link to="/prijzen/" activeClassName={activePage}>
+          <Link to="/prijzen/" activeClassName={mobileMenuStyles.activePage}>
             prijzen
-            <span className={dots}>.</span>
+            <span className={mobileMenuStyles.dots}>.</span>
           </Link>
         </li>
         <li>
-          <Link to="/over/" activeClassName={activePage}>
+          <Link to="/over/" activeClassName={mobileMenuStyles.activePage}>
             over
-            <span className={dots}>.</span>
+            <span className={mobileMenuStyles.dots}>.</span>
           </Link>
         </li>
         <li>
-          <Link to="/contact/" activeClassName={activePage}>
+          <Link to="/contact/" activeClassName={mobileMenuStyles.activePage}>
             contact
-            <span className={dots}>.</span>
+            <span className={mobileMenuStyles.dots}>.</span>
           </Link>
         </li>
-        <br />
-        <hr className={menuline} />
+
+        <hr />
+
         <li>
           <a
             href="https://wa.me/31611054318"
             rel="noopener noreferrer"
             target="_blank"
+            className={mobileMenuStyles.whapp}
           >
-            {/* <FontAwesomeIcon
-              icon={['fab', 'whatsapp']}
-              size="lg"
-              color="#1ca111"
-              className={whapp}
-            /> */}
-            <span className={wapp}>&nbsp;Stuur een whatsapp&apos; bericht</span>
-            <span className={dots}>.</span>
+            <i className="fa-brands fa-whatsapp" />
+            Stuur een whatsapp&apos; bericht
+            <span className={mobileMenuStyles.dots}>.</span>
           </a>
         </li>
       </ul>

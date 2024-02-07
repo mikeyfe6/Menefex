@@ -14,43 +14,51 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-
-  // @media (max-width: 319px) {
-  //   display: none;
-  // }
 }
 
-// #tosmallforyouscreen {
-//   display: none;
-//   text-align: center;
+#tosmallforyouscreen {
+  display: none;
+  text-align: center;
 
-//   .container {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     height: 100vh;
-//     gap: 25px;
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    gap: 25px;
 
-//     img {
-//       width: 37.5%;
-//       margin: 0 auto;
-//     }
+    img {
+      width: 37.5%;
+      margin: 0 auto;
+    }
 
-//     p {
-//       font-size: 0.75rem;
-//     }
-//   }
-
-//   @media (max-width: 319px) {
-//     display: block;
-//   }
-// }
+    p {
+      font-size: 0.75rem;
+    }
+  }
+}
 
 main {
   @include container(100px);
 
   &:has(> .page-title) {
     @include container(100px, 3em);
+  }
+}
+
+header,
+footer,
+main {
+  @media (width <= 319px) {
+    display: none;
+  }
+}
+
+#tosmallforyouscreen {
+  display: block;
+
+  @media (width >= 320px) {
+    display: none;
   }
 }
 
@@ -71,12 +79,15 @@ button {
 }
 
 h1 {
+  letter-spacing: $low-spacing;
+
   span {
     color: $secondary-color;
   }
 }
 
 h2 {
+  letter-spacing: $low-spacing;
 }
 
 h3 {
@@ -104,10 +115,6 @@ p {
   letter-spacing: $low-spacing;
   line-height: 1.6;
   font-weight: 300;
-}
-
-ul {
-  padding-left: 0;
 }
 
 a {
@@ -200,6 +207,10 @@ textarea {
   opacity: 0.9;
   font-size: 1.1rem;
   max-width: 50%;
+
+  @include mobile {
+    max-width: 100%;
+  }
 }
 
 .thick {
@@ -232,11 +243,21 @@ textarea {
   display: flex;
   align-items: center;
   gap: 5em;
+
+  @include mobile {
+    flex-direction: column;
+    gap: 0;
+  }
 }
 
 .notes-call {
   display: flex;
   gap: 3em;
+
+  @include mobile {
+    flex-direction: column;
+    gap: 0;
+  }
 
   > section {
     flex: 60%;
@@ -252,12 +273,27 @@ textarea {
   align-items: center;
   gap: 5em;
 
-  > section {
-    flex: 50%;
+  @include mobile {
+    flex-direction: column;
+    gap: 0;
   }
 
-  > div {
+  > section {
     flex: 50%;
+
+    @include mobile {
+      width: 100%;
+      flex: 100%;
+    }
+  }
+
+  > form {
+    flex: 50%;
+
+    @include mobile {
+      width: 100%;
+      flex: 100%;
+    }
   }
 }
 
@@ -286,11 +322,4 @@ textarea {
 
 span.speccol {
   color: $secondary-color;
-}
-
-span.speccolplus {
-  color: $fifth-color;
-  font-weight: bolder;
-  opacity: 0.75;
-  margin: 0 0.75em;
 }

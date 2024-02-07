@@ -4,6 +4,10 @@
   display: flex;
   gap: 1.5em;
 
+  @include mobile {
+    flex-direction: column;
+  }
+
   > li {
     padding: 1.5em 1em;
     gap: 1em;

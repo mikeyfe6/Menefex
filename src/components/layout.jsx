@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
   const [sideDrawerOpen, setSideDrawerOpen] = useState(false);
 
   const drawerToggleClickHandler = () => {
-    setSideDrawerOpen((prevState) => !prevState.sideDrawerOpen);
+    setSideDrawerOpen((prevState) => !prevState);
   };
 
   const menuOverlayClickHandler = () => {
@@ -30,12 +30,13 @@ const Layout = ({ children }) => {
   let backdrop;
 
   if (sideDrawerOpen) {
+    console.log('test', backdrop);
     backdrop = <MenuOverlay click={menuOverlayClickHandler} />;
   }
 
   return (
     <>
-      <div id="tosmallforyouscreen" hidden>
+      <div id="tosmallforyouscreen">
         <div className="container">
           <img src={minilogo} alt="Menefex Mini Logo" />
           <p>

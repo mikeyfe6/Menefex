@@ -15,7 +15,7 @@ const PortfolioPage = () => (
 
     <p className="page-sub">
       Wij zijn trots op ons werk en showcasen dat ook graag! Neem een kijk in
-      ons archief van recente projecten:
+      ons archief van recente projecten..
     </p>
 
     <section>
@@ -50,15 +50,17 @@ const PortfolioPage = () => (
               * Deze webapplicatie is vooral interactief, gericht op netwerken
               inclusief sociale media en veel meer toekomstige toepassingen
             </p>
-            <span>Tools:</span>
-            <ul>
-              <li>GatsbyJS</li>
-              <li>ReactJS</li>
-              <li>Strapi</li>
-              <li>Netlify</li>
-              <li>RESTful API</li>
-              <li>Heroku</li>
-            </ul>
+            <div className={portfolioStyles.tools}>
+              <span>Tools:</span>
+              <ul>
+                <li>GatsbyJS</li>
+                <li>ReactJS</li>
+                <li>Strapi</li>
+                <li>Netlify</li>
+                <li>RESTful API</li>
+                <li>Heroku</li>
+              </ul>
+            </div>
           </div>
           <div className={portfolioStyles.portfolioBtns}>
             <a
@@ -113,13 +115,15 @@ const PortfolioPage = () => (
               * Deze website is gebouwd met oog naar snelheid, overzicht en
               toegankelijkheid
             </p>
-            <span>Tools:</span>
-            <ul>
-              <li>GatsbyJS</li>
-              <li>ReactJS</li>
-              <li>Netlify</li>
-              <li>Contentful</li>
-            </ul>
+            <div className={portfolioStyles.tools}>
+              <span>Tools:</span>
+              <ul>
+                <li>GatsbyJS</li>
+                <li>ReactJS</li>
+                <li>Netlify</li>
+                <li>Contentful</li>
+              </ul>
+            </div>
           </div>
           <div className={portfolioStyles.portfolioBtns}>
             <a
@@ -169,12 +173,14 @@ const PortfolioPage = () => (
               * De speerpunten van deze website zijn het delen van informatie en
               netwerkverbreding
             </p>
-            <span>Tools:</span>
-            <ul>
-              <li>Wordpress</li>
-              <li>Custom CSS</li>
-              <li>Elementor</li>
-            </ul>
+            <div className={portfolioStyles.tools}>
+              <span>Tools:</span>
+              <ul>
+                <li>Wordpress</li>
+                <li>Custom CSS</li>
+                <li>Elementor</li>
+              </ul>
+            </div>
           </div>
           <div className={portfolioStyles.portfolioBtns}>
             <a
@@ -224,12 +230,14 @@ const PortfolioPage = () => (
               * Deze website is gebouwd met oog naar snelheid, abstractie in
               design en toegankelijkheid
             </p>
-            <span>Tools:</span>
-            <ul>
-              <li>Wordpress</li>
-              <li>Custom CSS</li>
-              <li>Elementor</li>
-            </ul>
+            <div className={portfolioStyles.tools}>
+              <span>Tools:</span>
+              <ul>
+                <li>Wordpress</li>
+                <li>Custom CSS</li>
+                <li>Elementor</li>
+              </ul>
+            </div>
           </div>
           <div className={portfolioStyles.portfolioBtns}>
             <a
@@ -280,13 +288,15 @@ const PortfolioPage = () => (
               * Deze website bevat informatie, media en interactieve sociale
               media toepassingen
             </p>
-            <span>Tools:</span>
-            <ul>
-              <li>Wordpress</li>
-              <li>Advanced Custom Field Types</li>
-              <li>Custom CSS</li>
-              <li>Elementor</li>
-            </ul>
+            <div className={portfolioStyles.tools}>
+              <span>Tools:</span>
+              <ul>
+                <li>Wordpress</li>
+                <li>Advanced Custom Field Types</li>
+                <li>Custom CSS</li>
+                <li>Elementor</li>
+              </ul>
+            </div>
           </div>
           <div className={portfolioStyles.portfolioBtns}>
             <a

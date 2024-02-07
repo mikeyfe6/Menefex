@@ -7,7 +7,7 @@ import SEO from '../components/seo';
 
 import PriceTable from '../components/pricetable';
 import Notes from '../components/notes';
-import Call from '../components/call';
+import Call from '../components/callForm';
 
 import * as pricesStyles from '../styles/modules/prices.module.scss';
 

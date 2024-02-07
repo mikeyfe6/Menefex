@@ -5,11 +5,12 @@
   filter: grayscale(75%);
   filter: progid:DXImageTransform.Microsoft.BasicImage(grayScale=1);
   outline: 3px solid rgba($primary-color, 75%);
-  border-radius: $medium-radius;
+  border-radius: $low-radius;
   overflow: hidden;
 
   height: 200px;
   width: 100%;
+  margin-top: 2em;
 
   @include boxShadow;
 

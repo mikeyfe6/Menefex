@@ -8,35 +8,101 @@
   white-space: nowrap;
   overflow: hidden;
   transform: translateY(-50%);
+
+  @include compact {
+    border-right: none;
+  }
 }
 
 .anim-typewriter {
   animation: typewriter 6s steps(50) 1.5s 1 normal both,
-    blinkTextCursor 1300ms steps(60) infinite normal;
+    blink-text-cursor 1300ms steps(60) infinite normal;
+
+  @include compact {
+    animation: none;
+  }
 }
 
 @keyframes typewriter {
   from {
     width: 0;
   }
+
   to {
     width: 590px;
   }
 }
 
-@keyframes blinkTextCursor {
+@include phablet {
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 525px;
+    }
+  }
+}
+
+@include mobile {
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 400px;
+    }
+  }
+}
+
+@keyframes blink-text-cursor {
   from {
     border-right-color: $secondary-color;
   }
+
   to {
     border-right-color: transparent;
   }
 }
 
 .tpwriter {
-  margin: 0 auto 0;
-  letter-spacing: -1px;
-  font-size: 2em;
+  margin: 0 auto;
+  letter-spacing: -0.5px;
+  font-size: 2rem;
   font-family: $poppins-font;
-  font-weight: 700;
+  font-weight: 600;
+
+  .dot {
+    color: $secondary-color;
+  }
+
+  .welkom {
+    @include compact {
+      display: none;
+    }
+  }
+
+  span {
+    color: $base-color;
+  }
+
+  br {
+    display: none;
+  }
+
+  @include phablet {
+    font-size: 1.75rem;
+  }
+
+  @include mobile {
+    font-size: 1.375rem;
+  }
+
+  @include compact {
+    br {
+      display: block;
+    }
+  }
 }
