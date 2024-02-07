@@ -47,7 +47,7 @@
     width: fit-content;
 
     @include mobile {
-      margin: 3em auto;
+      margin: 3em auto 2.5em;
     }
   }
 
@@ -90,7 +90,7 @@
     gap: 3em;
 
     @include mobile {
-      margin: 2.5em 0;
+      margin: 3.5em 0 2.5em;
       padding: 0;
       flex-direction: column;
     }
@@ -191,7 +191,7 @@
     text-align: center;
     font-size: 0.825rem;
     color: $fifth-color;
-    padding-bottom: 1.5em;
+    padding-bottom: 1.75em;
     max-width: 57.5%;
     margin: 0 auto;
 
