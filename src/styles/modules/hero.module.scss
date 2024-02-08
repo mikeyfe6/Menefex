@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin: 0;
+  gap: 1em;
 
   @include mobile {
     height: fit-content;
@@ -105,7 +105,7 @@
   }
 
   &-cta {
-    margin: 0 auto;
+    margin: 2em auto 0;
 
     .scroll-down {
       position: relative;
@@ -120,6 +120,10 @@
       border-right: 5px solid $primary-color;
       transform: translate(-50%, 0) rotate(45deg);
       animation: fade-move-down 1.5s cubic-bezier(0.19, 1, 0.22, 1) infinite;
+
+      @include mobile {
+        bottom: 25px;
+      }
     }
   }
 
