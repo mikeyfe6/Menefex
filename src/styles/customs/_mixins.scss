@@ -26,6 +26,16 @@
   margin-right: -50vw;
 }
 
+@mixin textLink {
+  color: $link-color;
+
+  @include smoothTrans;
+
+  &:hover {
+    color: rgba($link-color, 0.875);
+  }
+}
+
 @mixin primaryButton {
   display: block;
   text-transform: uppercase;

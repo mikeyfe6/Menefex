@@ -21,13 +21,13 @@ body {
 }
 
 main {
-  @include container(90px);
+  @include container(100px);
 
   &:has(> .page-title) {
     @include container(100px, 3em);
 
     @include mobile {
-      @include container(90px, 1em);
+      @include container(100px, 1em);
     }
   }
 }
