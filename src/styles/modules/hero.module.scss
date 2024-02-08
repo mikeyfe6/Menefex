@@ -75,7 +75,7 @@
     border-radius: 10px;
 
     width: fit-content;
-    margin: 0 auto;
+    margin: 0.5em auto;
     text-align: center;
 
     word-wrap: break-word;
@@ -127,6 +127,7 @@
     display: flex;
     align-items: center;
     gap: 0.5em;
+    margin: 2em 0;
 
     > button {
       @include tertiaryButton;

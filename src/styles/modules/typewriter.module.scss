@@ -1,13 +1,11 @@
 @import '../configs/globals';
 
 .line {
-  top: 50%;
   margin: auto;
   border-right: 3px solid $secondary-color;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
-  transform: translateY(-50%);
 
   @include compact {
     border-right: none;
