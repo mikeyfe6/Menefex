@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 import * as servicesStyles from '../styles/modules/services.module.scss';
 
 const Service = () => (
-  <section className={servicesStyles.serviceContainer}>
+  <section className={servicesStyles.serviceContainer} id="services">
     <div className={servicesStyles.serviceWrapper}>
       <div>
         <div>

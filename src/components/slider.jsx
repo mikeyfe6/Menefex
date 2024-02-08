@@ -187,7 +187,7 @@ const Projects = () => {
   );
 
   return (
-    <section>
+    <section id="portfolio" data-scroll-center>
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, Parallax, Autoplay]}
         spaceBetween={10}

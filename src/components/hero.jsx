@@ -6,6 +6,36 @@ import * as heroStyles from '../styles/modules/hero.module.scss';
 import * as tpWriterStyles from '../styles/modules/typewriter.module.scss';
 
 const Hero = () => {
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (!section) return;
+
+    const hasScrollPosition = section.hasAttribute('data-scroll-center');
+
+    if (hasScrollPosition) {
+      const blockValue = 'center';
+      const scrollOptions = {
+        behavior: 'smooth',
+        block: blockValue,
+        inline: 'nearest',
+      };
+      section.scrollIntoView(scrollOptions);
+      return;
+    }
+
+    const offset = 175;
+    const scrollOptions = {
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest',
+    };
+
+    window.scrollTo({
+      top: section.offsetTop - offset,
+      ...scrollOptions,
+    });
+  };
+
   return (
     <section className={heroStyles.hero} id="hero">
       <div className={heroStyles.heroImage}>
@@ -35,27 +65,15 @@ const Hero = () => {
         <div className={heroStyles.scrollDown} />
 
         <div className={heroStyles.heroButtons}>
-          <button
-            type="button"
-
-            // onClick={() => scrollTo('#biografiescroll')}
-          >
+          <button type="button" onClick={() => scrollToSection('biografie')}>
             biografie
           </button>
           <span>|</span>
-          <button
-            type="button"
-
-            // onClick={() => scrollTo('#servicescroll')}
-          >
+          <button type="button" onClick={() => scrollToSection('services')}>
             services
           </button>
           <span>|</span>
-          <button
-            type="button"
-
-            // onClick={() => scrollTo('#projectscroll')}
-          >
+          <button type="button" onClick={() => scrollToSection('portfolio')}>
             portfolio
           </button>
         </div>

@@ -12,7 +12,7 @@ import {
 } from '../styles/modules/smallbio.module.scss';
 
 const Smallbio = () => (
-  <section className={smallbioContainer}>
+  <section className={smallbioContainer} id="biografie" data-scroll-center>
     <div className={smallbioWrapper}>
       <hr className={thick} />
       <p className={smallbioText}>
