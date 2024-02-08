@@ -30,7 +30,6 @@ const Layout = ({ children }) => {
   let backdrop;
 
   if (sideDrawerOpen) {
-    console.log('test', backdrop);
     backdrop = <MenuOverlay click={menuOverlayClickHandler} />;
   }
 

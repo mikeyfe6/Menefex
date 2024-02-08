@@ -24,6 +24,10 @@
     left: 50%;
     transform: translate(-50%, -12.5%);
 
+    @include mobile {
+      transform: translate(-50%, -7.5%);
+    }
+
     border-radius: $low-radius;
 
     @include mobile {
@@ -48,6 +52,10 @@
       gap: 1em;
       align-items: center;
       margin-top: 1.5rem;
+
+      @include mobile {
+        justify-content: flex-start;
+      }
     }
 
     &-accept {
