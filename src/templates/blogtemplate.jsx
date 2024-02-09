@@ -143,13 +143,19 @@ const Blog = ({ pageContext }) => {
   }, []);
 
   const postTopic = topics;
-  const relatedPosts = postTopic
-    .flatMap((topic) =>
-      topic.blogPost.filter(
-        (post) => post.contentfulId !== contentfulId && post.slug !== slug,
-      ),
-    )
-    .slice(0, 3);
+  const relatedPostsSet = new Set();
+  const relatedPosts = [];
+
+  const currentPostSlug = slug;
+
+  postTopic.forEach((topic) => {
+    topic.blogPost.forEach((post) => {
+      if (post.slug !== currentPostSlug && !relatedPostsSet.has(post.slug)) {
+        relatedPostsSet.add(post.slug);
+        relatedPosts.push(post);
+      }
+    });
+  });
 
   return (
     <Layout>
@@ -264,7 +270,7 @@ const Blog = ({ pageContext }) => {
                     )}
 
                     <ul>
-                      {relatedPosts?.map((post) => (
+                      {relatedPosts?.slice(0, 3).map((post) => (
                         <li key={post.contentfulId}>
                           <Link to={`/blog/${post.slug}/`}>
                             <h5>{post.title}</h5>
