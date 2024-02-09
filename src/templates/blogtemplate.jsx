@@ -98,10 +98,13 @@ const Blog = ({ pageContext }) => {
 
       [INLINES.HYPERLINK]: ({ data }, children) => {
         const isInternal = data.uri.startsWith(websiteUrl);
+        const strippedUrl = isInternal
+          ? data.uri.replace(websiteUrl, '')
+          : data.uri;
 
         if (isInternal) {
           return (
-            <Link className={singlepostStyle.hyperlinkness} to={data.uri}>
+            <Link className={singlepostStyle.hyperlinkness} to={strippedUrl}>
               {children}
             </Link>
           );
