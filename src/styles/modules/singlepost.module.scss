@@ -11,7 +11,9 @@
     }
 
     > hr {
-      margin: 2em 0;
+      margin: 2em 0 1em;
+      border-radius: $low-radius;
+      border: 2.5px solid $spec-color;
     }
 
     > div {
@@ -54,7 +56,7 @@
       .thin {
         border: 5px solid $sixth-color;
         border-radius: $low-radius;
-        margin: 2em 0 3em;
+        margin: 1em 0 3em;
       }
 
       .main {
@@ -159,6 +161,7 @@
               // ul
               text-decoration-color: $secondary-color;
               text-decoration-thickness: 2px;
+              margin: 1.5em 0;
             }
 
             .listitemness {
@@ -281,10 +284,18 @@
               text-align: right;
               font-size: 0.85rem;
 
+              a {
+                @include textLink;
+              }
+
               > span {
                 display: block;
                 font-weight: 500;
                 min-width: 75px;
+
+                &:nth-of-type(2) {
+                  margin-top: 0.75em;
+                }
               }
             }
 

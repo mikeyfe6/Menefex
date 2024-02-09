@@ -9,21 +9,6 @@ require('dotenv').config({
   path: '.env',
 });
 
-const sass = require('sass');
-
-const eslpath = require('path');
-// Get paths of Gatsby's required rules, which as of writing is located at:
-// https://github.com/gatsbyjs/gatsby/tree/fbfe3f63dec23d279a27b54b4057dd611dce74bb/packages/
-// gatsby/src/utils/eslint-rules
-const gatsbyRequiredRules = eslpath.join(
-  process.cwd(),
-  'node_modules',
-  'gatsby',
-  'dist',
-  'utils',
-  'eslint-rules',
-);
-
 module.exports = {
   flags: {
     DEV_SSR: true,
@@ -64,6 +49,68 @@ module.exports = {
         // Specify optional GTM environment details.
         // gtmAuth: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING",
         // gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_PREVIEW_NAME",
+      },
+    },
+
+    {
+      resolve: 'gatsby-plugin-canonical-urls',
+      options: {
+        siteUrl: 'https://menefex.nl',
+      },
+    },
+    {
+      resolve: 'gatsby-source-contentful',
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        host: process.env.CONTENTFUL_HOST,
+      },
+    },
+    'gatsby-plugin-sass',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'project-images',
+        path: `${__dirname}/public/project-images`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'src',
+        path: `${__dirname}/src/`,
+      },
+    },
+    'gatsby-plugin-image',
+    {
+      resolve: 'gatsby-plugin-sharp',
+      options: {
+        // Defaults used for gatsbyImageData and StaticImage
+        defaults: {
+          placeholder: 'blurred',
+          formats: ['auto', 'webp'],
+          backgroundColor: 'transparent',
+          quality: 100,
+        },
+        // Set to false to allow builds to continue on image errors
+        failOn: 'warning',
+      },
+    },
+    'gatsby-transformer-sharp',
+    {
+      resolve: 'gatsby-plugin-disqus',
+      options: {
+        shortname: 'menefex',
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-nprogress',
+      options: {
+        // Setting a color is optional.
+        color: '#595858',
+        // Disable the loading spinner.
+        showSpinner: true,
+        minimum: 0.1,
       },
     },
     {
@@ -195,72 +242,6 @@ module.exports = {
             link: 'https://feeds.feedburner.com/MenefexWMB',
           },
         ],
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-canonical-urls',
-      options: {
-        siteUrl: 'https://menefex.nl',
-      },
-    },
-    {
-      resolve: 'gatsby-source-contentful',
-      options: {
-        spaceId: process.env.CONTENTFUL_SPACE_ID,
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-        host: process.env.CONTENTFUL_HOST,
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-sass',
-      options: {
-        implementation: sass,
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'project-images',
-        path: `${__dirname}/public/project-images`,
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'src',
-        path: `${__dirname}/src/`,
-      },
-    },
-    'gatsby-plugin-image',
-    {
-      resolve: 'gatsby-plugin-sharp',
-      options: {
-        // Defaults used for gatsbyImageData and StaticImage
-        defaults: {
-          placeholder: 'blurred',
-          formats: ['auto', 'webp'],
-          backgroundColor: 'transparent',
-          quality: 100,
-        },
-        // Set to false to allow builds to continue on image errors
-        failOn: 'warning',
-      },
-    },
-    'gatsby-transformer-sharp',
-    {
-      resolve: 'gatsby-plugin-disqus',
-      options: {
-        shortname: 'menefex',
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-nprogress',
-      options: {
-        // Setting a color is optional.
-        color: '#595858',
-        // Disable the loading spinner.
-        showSpinner: true,
-        minimum: 0.1,
       },
     },
     {

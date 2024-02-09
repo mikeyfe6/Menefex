@@ -16,6 +16,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@contentful/live-preview": "^2.17.3",
     "@contentful/rich-text-html-renderer": "^16.3.4",
     "@contentful/rich-text-types": "^16.3.4",
     "@sendgrid/mail": "^8.1.0",

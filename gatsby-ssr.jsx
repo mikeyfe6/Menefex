@@ -1,15 +1,10 @@
-const React = require('react');
+import React from 'react';
 
 const HtmlAttributes = {
   lang: 'nl',
 };
 
 const HeadComponents = [
-  <link
-    key="mnfxAnimate"
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
-  />,
   <link
     key="mnfxRss"
     rel="alternate"
@@ -24,7 +19,7 @@ const BodyAttributes = {
   // 'data-theme': 'dark',
 };
 
-exports.onRenderBody = ({
+export const onRenderBody = ({
   setHeadComponents,
   setHtmlAttributes,
   setBodyAttributes,
@@ -34,16 +29,10 @@ exports.onRenderBody = ({
   setBodyAttributes(BodyAttributes);
 };
 
-exports.onPreRenderHTML = ({ getHeadComponents, replaceHeadComponents }) => {
+export const onPreRenderHTML = ({
+  getHeadComponents,
+  replaceHeadComponents,
+}) => {
   const headComponents = getHeadComponents();
-  headComponents.sort((x, y) => {
-    if (x.key === 'mnfxAnimate') {
-      return -1;
-    }
-    if (y.key === 'mnfxAnimate') {
-      return 1;
-    }
-    return 0;
-  });
   replaceHeadComponents(headComponents);
 };

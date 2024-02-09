@@ -8,7 +8,7 @@ const About = () => (
     <p>
       <b>Menefex</b> is een jong en modern webmediabedrijf, opgericht door{' '}
       <a
-        href="https://www.linkedin.com/in/michaelfransman"
+        href="https://www.linkedin.com/in/michaelfransman/"
         rel="noopener noreferrer"
         target="_blank"
       >

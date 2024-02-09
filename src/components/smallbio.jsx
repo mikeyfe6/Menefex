@@ -2,20 +2,17 @@ import React from 'react';
 
 import { Link } from 'gatsby';
 
-import {
-  smallbioContainer,
-  smallbioWrapper,
-  thick,
-  smallbioText,
-  meerover,
-  thin,
-} from '../styles/modules/smallbio.module.scss';
+import * as smallBioStyles from '../styles/modules/smallbio.module.scss';
 
 const Smallbio = () => (
-  <section className={smallbioContainer} id="biografie" data-scroll-center>
-    <div className={smallbioWrapper}>
-      <hr className={thick} />
-      <p className={smallbioText}>
+  <section
+    className={smallBioStyles.smallbioContainer}
+    id="biografie"
+    data-scroll-center
+  >
+    <div className={smallBioStyles.smallbioWrapper}>
+      <hr className={smallBioStyles.thickHr} />
+      <p className={smallBioStyles.smallbioText}>
         <b>Menefex</b> is een jong & modern webmediabedrijf, opgericht door{' '}
         <b>
           <a
@@ -40,12 +37,12 @@ const Smallbio = () => (
         >
           <i className="fa-brands fa-spotify" />
         </a>
-        <Link to="/over/" className={meerover}>
+        <Link to="/over/" className={smallBioStyles.meerover}>
           Meer over Menefex
         </Link>
       </div>
 
-      <hr className={thin} />
+      <hr className={smallBioStyles.thinHr} />
     </div>
   </section>
 );

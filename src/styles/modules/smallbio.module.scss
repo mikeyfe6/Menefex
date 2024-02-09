@@ -15,14 +15,14 @@
       @include container(0, 3em);
     }
 
-    .thick {
+    .thick-hr {
       margin: 0;
       width: 15%;
       border: 3px solid $sixth-color;
       opacity: 0.5;
     }
 
-    .thin {
+    .thin-hr {
       border: 1px solid $super-color;
     }
 
@@ -50,6 +50,10 @@
     opacity: 0.75;
     color: $textbase-color;
     max-width: 87.5%;
+
+    a {
+      @include textLink;
+    }
 
     @include mobile {
       max-width: 100%;
