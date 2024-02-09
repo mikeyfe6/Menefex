@@ -1,11 +1,11 @@
 import React from 'react';
 
-import * as hamburberStyles from '../../styles/modules/hamburger.module.scss';
+import * as hamburgerStyles from '../../styles/modules/hamburger.module.scss';
 
 const HamburgerBtn = ({ click }) => (
   <button
     type="button"
-    className={hamburberStyles.hamburger}
+    className={hamburgerStyles.hamburger}
     onClick={click}
     aria-label="Menu"
   >

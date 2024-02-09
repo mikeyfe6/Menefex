@@ -8,7 +8,7 @@
   opacity: 0.875;
   outline: 3px solid $primary-color;
   border-radius: $medium-radius;
-  color: white !important;
+  color: white;
 
   @include mobile {
     padding: 1.5em;

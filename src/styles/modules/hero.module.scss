@@ -2,17 +2,10 @@
 
 .hero {
   height: 100vh;
-  min-height: fill-available;
-
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   gap: 1em;
-
-  @include mobile {
-    height: fit-content;
-    min-height: fill-available;
-  }
 
   &-image {
     margin: 0 auto;

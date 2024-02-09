@@ -6,6 +6,21 @@ import * as heroStyles from '../styles/modules/hero.module.scss';
 import * as tpWriterStyles from '../styles/modules/typewriter.module.scss';
 
 const Hero = () => {
+  React.useEffect(() => {
+    const updateVhVariable = () => {
+      const vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    };
+
+    updateVhVariable();
+
+    window.addEventListener('resize', updateVhVariable);
+
+    return () => {
+      window.removeEventListener('resize', updateVhVariable);
+    };
+  }, []);
+
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (!section) return;
