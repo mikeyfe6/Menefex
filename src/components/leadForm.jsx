@@ -18,17 +18,14 @@ const Form = () => {
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      // console.log('window is defined & active!');
       if (sessionStorage.getItem('mnfx') !== null) {
         const mnfxPrice = sessionStorage.getItem('mnfx');
-        // console.log('sessionStorage (mnfx) is filled, check:', mnfxPrice);
         setInputs({ text: mnfxPrice });
 
-        const doThis = () => {
-          // console.log('sessionStorage (mnfx) removed!');
+        const removeStorage = () => {
           setTimeout(() => sessionStorage.removeItem('mnfx'), 3000);
         };
-        doThis();
+        removeStorage();
       }
     }
   }, []);

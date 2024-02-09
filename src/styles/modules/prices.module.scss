@@ -104,6 +104,7 @@
     button {
       margin: auto auto 0;
       display: block;
+      
 
       @include tertiaryButton;
 
@@ -117,10 +118,18 @@
 .callme {
   color: #1ca111;
   font-weight: 500;
+  box-shadow: none;
 
   @include smoothTrans;
 
   &:hover {
     color: #187710;
   }
+}
+
+.contactus {
+  font-weight: 500;
+  box-shadow: none;
+
+  @include textLink;
 }

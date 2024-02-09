@@ -12,7 +12,7 @@ import * as callStyles from '../styles/modules/callForm.module.scss';
 // const hour = d.getHours();
 // console.log(hour);
 
-const Call = () => {
+const Call = ({ callRef }) => {
   const [inputs, setInputs] = useState({
     name: '',
     tel: '',
@@ -68,6 +68,7 @@ const Call = () => {
         id="call_name"
         value={inputs.name}
         onChange={handleChange}
+        ref={callRef}
         required
       />
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 
 import { Link, navigate } from 'gatsby';
 
@@ -7,37 +7,50 @@ import SEO from '../components/seo';
 
 import PriceTable from '../components/pricetable';
 import Notes from '../components/notes';
-import Call from '../components/callForm';
+import CallForm from '../components/callForm';
 
 import * as pricesStyles from '../styles/modules/prices.module.scss';
 
-const Prices = () => (
-  <Layout>
-    <h1 className="page-title">
-      Prijzen & tarieven<span>.</span>
-    </h1>
+const Prices = () => {
+  const callRef = useRef(null);
 
-    <p className="page-sub">
-      Hier ziet u een indicatie van onze scherpe prijzen. Heeft u liever een
-      georiënteerd gesprek, neem{' '}
-      <Link to="/contact/" style={{ fontWeight: '700' }}>
-        contact
-      </Link>{' '}
-      met ons op of vraag een{' '}
-      <a href="#callscroll" className={pricesStyles.callme}>
-        terugbelverzoek
-      </a>{' '}
-      aan.
-    </p>
+  const goToCallForm = (event) => {
+    event.preventDefault();
+    callRef.current.focus();
+  };
 
-    <PriceTable />
+  return (
+    <Layout>
+      <h1 className="page-title">
+        Prijzen & tarieven<span>.</span>
+      </h1>
 
-    <div className="notes-call">
-      <Notes />
-      <Call />
-    </div>
-  </Layout>
-);
+      <p className="page-sub">
+        Hier ziet u een indicatie van onze scherpe prijzen. Heeft u liever een
+        georiënteerd gesprek, neem{' '}
+        <Link to="/contact/" className={pricesStyles.contactus}>
+          contact
+        </Link>{' '}
+        met ons op of vraag een{' '}
+        <button
+          className={pricesStyles.callme}
+          onClick={goToCallForm}
+          tabIndex={0}
+        >
+          terugbelverzoek
+        </button>{' '}
+        aan.
+      </p>
+
+      <PriceTable />
+
+      <div className="notes-call">
+        <Notes />
+        <CallForm callRef={callRef} />
+      </div>
+    </Layout>
+  );
+};
 
 export default Prices;
 

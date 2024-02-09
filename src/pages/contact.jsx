@@ -3,7 +3,7 @@ import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-import Form from '../components/leadForm';
+import LeadForm from '../components/leadForm';
 import Info from '../components/info';
 import Maps from '../components/google/maps';
 
@@ -32,7 +32,7 @@ const ContactPage = () => (
     </div>
 
     <div className="form-info">
-      <Form />
+      <LeadForm />
       <Info />
     </div>
 

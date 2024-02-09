@@ -110,12 +110,6 @@
               border: 1px solid rgba($base-color, 0.75);
             }
 
-            .boldness {
-              // b
-              font-weight: 600;
-              opacity: 0.95;
-            }
-
             .headoneness {
               // h1
             }
@@ -231,6 +225,7 @@
 
             .author {
               text-align: right;
+              font-size: 0.85rem;
 
               > span {
                 display: block;
@@ -290,14 +285,17 @@
                     > {
                       h5 {
                         font-family: $poppins-font;
-                        font-size: 1rem;
+                        font-size: 0.95rem;
                         font-weight: 500;
-                        margin-bottom: 0.25em;
+
+                        @include clamp;
                       }
 
                       p {
-                        font-size: 0.9rem;
-                        margin: 0.25em 0;
+                        font-size: 0.85rem;
+                        margin: 0.5em 0;
+
+                        @include clamp;
                       }
 
                       span {

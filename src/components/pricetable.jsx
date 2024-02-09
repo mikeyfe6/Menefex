@@ -1,10 +1,12 @@
 import React from 'react';
 
+import { navigate } from 'gatsby';
+
 import * as pricesStyles from '../styles/modules/prices.module.scss';
 
 const PriceTable = () => {
-  const SalePrice = ({ indivPrice }) => {
-    const totalPrice = indivPrice - (indivPrice / 100) * 10;
+  const SalePrice = ({ ogPrice }) => {
+    const totalPrice = ogPrice - (ogPrice / 100) * 10;
     const endResult = totalPrice;
     const euroFormat = new Intl.NumberFormat('nl-NL', {
       style: 'currency',
@@ -14,13 +16,16 @@ const PriceTable = () => {
     return <data>{euroFormat}</data>;
   };
 
-  const handlePrice = (handelen) => {
+  const handlePrice = (handelen, inputId) => {
     sessionStorage.setItem('mnfx', handelen);
-    // console.log(
-    //   'SessionStorage (mnfx) aangemaakt!',
-    //   sessionStorage.getItem('mnfx'),
-    // );
     navigate('/contact/');
+    // Focus on the input field after a short delay to ensure the navigation has completed
+    setTimeout(() => {
+      const inputElement = document.getElementById(inputId);
+      if (inputElement) {
+        inputElement.focus();
+      }
+    }, 100);
   };
 
   return (
@@ -29,7 +34,7 @@ const PriceTable = () => {
         <li>
           <h4>BUDGET PLAN</h4>
           <p className={pricesStyles.price}>
-            <span>€ 295,-</span> <SalePrice indivPrice={295} />{' '}
+            <span>€ 295,-</span> <SalePrice ogPrice={295} />{' '}
             <sup>(excl. btw)</sup>
           </p>
           <p className={pricesStyles.priceAction}>*ACTIE: 10% korting</p>
@@ -58,6 +63,7 @@ const PriceTable = () => {
             onClick={() =>
               handlePrice(
                 'Hi Michael, ik wil graag een offerte aanvragen voor de Budget Plan...',
+                'lead_name',
               )
             }
           >
@@ -68,7 +74,7 @@ const PriceTable = () => {
         <li>
           <h4>STARTER PLAN</h4>
           <p className={pricesStyles.price}>
-            <span>€ 595,-</span> <SalePrice indivPrice={595} />{' '}
+            <span>€ 595,-</span> <SalePrice ogPrice={595} />{' '}
             <sup>(excl. btw)</sup>
           </p>
           <p className={pricesStyles.priceAction}>*ACTIE: 10% korting</p>
@@ -98,6 +104,7 @@ const PriceTable = () => {
             onClick={() =>
               handlePrice(
                 'Hi Michael, ik wil graag een offerte aanvragen voor de Starter Plan...',
+                'lead_name',
               )
             }
           >
@@ -108,7 +115,7 @@ const PriceTable = () => {
         <li>
           <h4>ESTABLISHED PLAN</h4>
           <p className={pricesStyles.price}>
-            <span>€ 1025,-</span> <SalePrice indivPrice={1025} />{' '}
+            <span>€ 1025,-</span> <SalePrice ogPrice={1025} />{' '}
             <sup>(excl. btw)</sup>
           </p>
           <p className={pricesStyles.priceAction}>*ACTIE: 10% korting</p>
@@ -139,6 +146,7 @@ const PriceTable = () => {
             onClick={() =>
               handlePrice(
                 'Hi Michael, ik wil graag een offerte aanvragen voor de Established Plan...',
+                'lead_name',
               )
             }
           >
@@ -149,7 +157,7 @@ const PriceTable = () => {
         <li>
           <h4>BUSINESS PLAN</h4>
           <p className={pricesStyles.price}>
-            <span>€ 1575,-</span> <SalePrice indivPrice={1575} />{' '}
+            <span>€ 1575,-</span> <SalePrice ogPrice={1575} />{' '}
             <sup>(excl. btw)</sup>
           </p>
           <p className={pricesStyles.priceAction}>*ACTIE: 10% korting</p>
@@ -183,6 +191,7 @@ const PriceTable = () => {
             onClick={() =>
               handlePrice(
                 'Hi Michael, ik wil graag een offerte aanvragen voor de Business Plan...',
+                'lead_name',
               )
             }
           >

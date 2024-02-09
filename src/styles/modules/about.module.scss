@@ -8,4 +8,10 @@
       margin-top: 1em;
     }
   }
+
+  a {
+    font-weight: 500;
+
+    @include textLink;
+  }
 }

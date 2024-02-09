@@ -75,9 +75,10 @@ const Blog = ({ pageContext }) => {
         <div>Im an embedded entry, {node}</div>
       ),
 
-      [BLOCKS.PARAGRAPH]: (node, children) => (
-        <p className={singlepostStyle.paragraphness}>{children}</p>
-      ),
+      [BLOCKS.PARAGRAPH]: (node, children) => {
+        console.log(node, children);
+        return <p className={singlepostStyle.paragraphness}>{children}</p>;
+      },
       [BLOCKS.HEADING_1]: (node, children) => (
         <h1 className={singlepostStyle.headoneness}>{children}</h1>
       ),
@@ -111,18 +112,28 @@ const Blog = ({ pageContext }) => {
         <hr className={singlepostStyle.horizontness} />
       ),
 
-      [INLINES.HYPERLINK]: ({ data }, children) => (
-        <a
-          className={singlepostStyle.hyperlinkness}
-          href={data.uri}
-          target={`${data.uri.startsWith(websiteUrl) ? '_self' : '_blank'}`}
-          rel={`${
-            data.uri.startsWith(websiteUrl) ? '' : 'noopener noreferrer'
-          }`}
-        >
-          {children}
-        </a>
-      ),
+      [INLINES.HYPERLINK]: ({ data }, children) => {
+        const isInternal = data.uri.startsWith(websiteUrl);
+
+        if (isInternal) {
+          return (
+            <Link className={singlepostStyle.hyperlinkness} to={data.uri}>
+              {children}
+            </Link>
+          );
+        } else {
+          return (
+            <a
+              className={singlepostStyle.hyperlinkness}
+              href={data.uri}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {children}
+            </a>
+          );
+        }
+      },
     },
   };
 
@@ -260,7 +271,9 @@ const Blog = ({ pageContext }) => {
                   <div className={singlepostStyle.related}>
                     {relatedPosts[0].length === 0 ? null : (
                       <div>
-                        <h6>Gerelateerde Artikelen</h6>
+                        <h6>
+                          <u>Gerelateerde Artikelen</u>
+                        </h6>
                       </div>
                     )}
 

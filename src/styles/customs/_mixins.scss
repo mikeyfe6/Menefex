@@ -1,3 +1,5 @@
+@use 'sass:color';
+
 @mixin smoothTrans($prop: all) {
   transition: $prop 0.3s ease-in-out;
 }
@@ -32,8 +34,15 @@
   @include smoothTrans;
 
   &:hover {
-    color: rgba($link-color, 0.875);
+    color: color.adjust($link-color, $lightness: -10%);
   }
+}
+
+@mixin clamp($lines: 2) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 @mixin primaryButton {
