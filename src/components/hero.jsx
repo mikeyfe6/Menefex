@@ -77,9 +77,13 @@ const Hero = () => {
       </div>
 
       <div className={heroStyles.heroCta}>
-        <div className={heroStyles.scrollDown} />
+        <div
+          className={heroStyles.scrollDown}
+          type="button"
+          onClick={() => scrollToSection('cta')}
+        />
 
-        <div className={heroStyles.heroButtons}>
+        <div className={heroStyles.heroButtons} id="cta" data-scroll-center>
           <button type="button" onClick={() => scrollToSection('biografie')}>
             biografie
           </button>

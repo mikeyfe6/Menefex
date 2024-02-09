@@ -99,24 +99,26 @@
   }
 
   &-cta {
-    margin: 2em auto 0;
+    margin: 2em auto;
 
     .scroll-down {
       position: relative;
-      bottom: 50px;
+
+      cursor: pointer;
+      bottom: 75px;
       margin: 0 auto;
       z-index: 0;
       text-decoration: none;
       text-shadow: 0;
-      width: 20px;
-      height: 20px;
+      width: 25px;
+      height: 25px;
       border-bottom: 5px solid $secondary-color;
       border-right: 5px solid $primary-color;
       transform: translate(-50%, 0) rotate(45deg);
       animation: fade-move-down 1.5s cubic-bezier(0.19, 1, 0.22, 1) infinite;
 
       @include mobile {
-        bottom: 25px;
+        bottom: 50px;
       }
     }
   }
