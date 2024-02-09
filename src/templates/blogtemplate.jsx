@@ -250,8 +250,6 @@ const Blog = ({ pageContext }) => {
                     >
                       {author}
                     </a>
-                    <br />
-                    <br />
                     <span>
                       <u>Laatst bijgewerkt</u>
                     </span>
