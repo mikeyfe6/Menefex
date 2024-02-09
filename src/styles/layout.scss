@@ -96,11 +96,11 @@ h2 {
 
 h3 {
   font-family: Righteous, cursive;
-  font-size: 1.75rem;
+  font-size: 1.675rem;
   letter-spacing: $medium-spacing;
 
   @include mobile {
-    font-size: 1.5rem;
+    font-size: 1.375rem;
   }
 }
 
