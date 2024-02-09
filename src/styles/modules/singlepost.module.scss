@@ -145,6 +145,7 @@
               font-size: 0.9em;
               margin-top: 1.5em;
               font-weight: 700;
+              display: block;
             }
 
             .headsixness {
@@ -154,21 +155,32 @@
             .orderedlistness {
               // ol
               text-decoration-color: $secondary-color;
-              text-decoration-thickness: 2px;
+              margin: 1.5em 0;
+              padding-left: 1em;
+              list-style-type: decimal;
+
+              .listitemness {
+                // li
+                font-weight: 500;
+              }
             }
 
             .unorderedlistness {
               // ul
               text-decoration-color: $secondary-color;
-              text-decoration-thickness: 2px;
               margin: 1.5em 0;
-            }
+              padding-left: 1.5em;
 
-            .listitemness {
-              // li
-
-              color: $primary-color;
-              font-weight: 500;
+              .listitemness {
+                // li
+                &::before {
+                  content: '\203B';
+                  color: $secondary-color;
+                  font-weight: bold;
+                  font-size: 1.25em;
+                  margin-right: 0.5em;
+                }
+              }
             }
 
             .hyperlinkness {
