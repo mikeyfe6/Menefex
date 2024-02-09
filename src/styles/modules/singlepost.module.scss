@@ -10,7 +10,7 @@
       @include primaryButton;
     }
 
-    > hr {
+    .thick-hr {
       margin: 2em 0 1em;
       border-radius: $low-radius;
       border: 2.5px solid $spec-color;
@@ -53,7 +53,7 @@
         }
       }
 
-      .thin {
+      .thin-hr {
         border: 5px solid $sixth-color;
         border-radius: $low-radius;
         margin: 1em 0 3em;

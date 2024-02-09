@@ -6,10 +6,6 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 import { Disqus } from 'gatsby-plugin-disqus';
 
-import {
-  useContentfulInspectorMode,
-  useContentfulLiveUpdates,
-} from '@contentful/live-preview/react';
 import { BLOCKS, INLINES, MARKS } from '@contentful/rich-text-types';
 import { renderRichText } from 'gatsby-source-contentful/rich-text';
 
@@ -40,12 +36,6 @@ const Blog = ({ pageContext }) => {
     updatedPost,
     author,
   } = pageContext;
-
-  const inspectorProps = useContentfulInspectorMode();
-  const livePreview = useContentfulLiveUpdates({
-    ...pageContext,
-    sys: { id: contentfulId },
-  });
 
   const options = {
     renderMark: {
@@ -169,59 +159,29 @@ const Blog = ({ pageContext }) => {
             <i className="fa-solid fa-angles-left" /> ALLE BLOGPOSTS
           </Link>
 
-          <hr className={singlepostStyle.thick} />
+          <hr className={singlepostStyle.thickHr} />
 
           <div>
             <div className={singlepostStyle.header}>
               <img src={mini} alt="Menefex Icon" />
               <div>
-                <h1
-                  className={singlepostStyle.title}
-                  {...inspectorProps({
-                    entryId: contentfulId,
-                    fieldId: 'title',
-                  })}
-                >
-                  {livePreview.title || title}
-                </h1>
+                <h1 className={singlepostStyle.title}>{title}</h1>
               </div>
             </div>
 
-            <hr className={singlepostStyle.thin} />
+            <hr className={singlepostStyle.thinHr} />
 
             <div className={singlepostStyle.main}>
               <section>
                 <img
-                  src={
-                    `https:${livePreview.image.file.url}` ||
-                    `https:${image.file.url}`
-                  }
+                  src={`https:${image.file.url}`}
                   alt={title}
                   className={singlepostStyle.image}
-                  {...inspectorProps({
-                    entryId: contentfulId,
-                    fieldId: 'image',
-                  })}
                 />
 
-                <h2
-                  className={singlepostStyle.subtitle}
-                  {...inspectorProps({
-                    entryId: contentfulId,
-                    fieldId: 'subtitle',
-                  })}
-                >
-                  {livePreview.subtitle || subtitle}
-                </h2>
-                <div
-                  className={singlepostStyle.content}
-                  {...inspectorProps({
-                    entryId: contentfulId,
-                    fieldId: 'body',
-                  })}
-                >
-                  {renderRichText(livePreview.body, options) ||
-                    renderRichText(body, options)}
+                <h2 className={singlepostStyle.subtitle}>{subtitle}</h2>
+                <div className={singlepostStyle.content}>
+                  {renderRichText(body, options)}
                 </div>
 
                 <div className={singlepostStyle.rss}>
@@ -281,13 +241,11 @@ const Blog = ({ pageContext }) => {
                       href="https://www.linkedin.com/in/michaelfransman/"
                       rel="noopener noreferrer"
                       target="_blank"
-                      {...inspectorProps({
-                        entryId: contentfulId,
-                        fieldId: 'author',
-                      })}
                     >
-                      {livePreview.author || author}
+                      {author}
                     </a>
+                    <br />
+                    <br />
                     <span>
                       <u>Laatst bijgewerkt</u>
                     </span>
@@ -322,12 +280,7 @@ const Blog = ({ pageContext }) => {
             </div>
 
             <div className={singlepostStyle.topics}>
-              <ul
-                {...inspectorProps({
-                  entryId: contentfulId,
-                  fieldId: 'topics',
-                })}
-              >
+              <ul>
                 {postTopic.map((relTopic) => (
                   <li
                     key={relTopic.id}
