@@ -110,9 +110,9 @@
               border: 1px solid rgba($base-color, 0.75);
             }
 
-            .headoneness {
-              // h1
-            }
+            // .headoneness {
+            //   // h1
+            // }
 
             .headtwoness {
               // h2
@@ -183,6 +183,60 @@
               margin: 2.5em 0;
 
               @include boxShadow;
+            }
+          }
+
+          .rss {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1em;
+            margin: 3em 0;
+
+            .feedly {
+              font-weight: 500;
+              font-size: 0.85rem;
+
+              > a {
+                color: #93be44;
+
+                display: flex;
+                align-items: center;
+
+                > img {
+                  width: 20px;
+                  margin-right: 0.5em;
+                }
+
+                @include smoothTrans;
+
+                &:hover {
+                  color: #1f57ad;
+                }
+              }
+            }
+
+            .feedburner {
+              font-weight: 500;
+              font-size: 0.85rem;
+
+              > a {
+                color: #fa9b3b;
+
+                display: flex;
+                align-items: center;
+
+                @include smoothTrans;
+
+                > img {
+                  width: 20px;
+                  margin-right: 0.5em;
+                }
+
+                &:hover {
+                  color: #1f57ad;
+                }
+              }
             }
           }
         }
@@ -435,40 +489,13 @@
         @include mobile {
           width: 100%;
         }
+
+        a {
+          color: $secondary-color;
+        }
       }
     }
   }
 }
 
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
-
-.feedlysub {
-  vertical-align: middle;
-  border: 0;
-  margin-top: -4.75%;
-  font-size: 0.85em;
-  font-weight: 700;
-
-  a {
-    color: #93be44;
-
-    &:hover {
-      color: #1f57ad;
-    }
-  }
-}
-
-.rsssub {
-  border: 0;
-  font-weight: 700;
-  font-size: 0.85em;
-  margin-top: 0.25%;
-
-  a {
-    color: #fa9b3b;
-
-    &:hover {
-      color: #1f57ad;
-    }
-  }
-}

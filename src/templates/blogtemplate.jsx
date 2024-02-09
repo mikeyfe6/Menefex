@@ -37,21 +37,6 @@ const Blog = ({ pageContext }) => {
     author,
   } = pageContext;
 
-  const postTopic = topics;
-  const relatedPosts = postTopic.map((topic) =>
-    topic.blogPost.filter((post) => post.contentfulId !== contentfulId),
-  );
-
-  const postsOneArray = relatedPosts.flat(Infinity);
-
-  const set = new Set();
-  const uniquePosts = postsOneArray.filter((item) => {
-    const alreadyHas = set.has(item.slug);
-    set.add(item.slug);
-
-    return !alreadyHas;
-  });
-
   const options = {
     renderMark: {
       [MARKS.BOLD]: (text) => <b>{text}</b>,
@@ -75,10 +60,9 @@ const Blog = ({ pageContext }) => {
         <div>Im an embedded entry, {node}</div>
       ),
 
-      [BLOCKS.PARAGRAPH]: (node, children) => {
-        console.log(node, children);
-        return <p className={singlepostStyle.paragraphness}>{children}</p>;
-      },
+      [BLOCKS.PARAGRAPH]: (node, children) => (
+        <p className={singlepostStyle.paragraphness}>{children}</p>
+      ),
       [BLOCKS.HEADING_1]: (node, children) => (
         <h1 className={singlepostStyle.headoneness}>{children}</h1>
       ),
@@ -137,8 +121,8 @@ const Blog = ({ pageContext }) => {
     },
   };
 
-  if (process.env.NODE_ENV !== 'development') {
-    useEffect(() => {
+  useEffect(() => {
+    if (process.env.NODE_ENV !== 'development') {
       const script = document.createElement('script');
 
       script.src =
@@ -152,8 +136,17 @@ const Blog = ({ pageContext }) => {
         document.body.removeChild(script);
         console.log('MFNXWMB: Google Adsense is gestopt!');
       };
-    }, []);
-  }
+    }
+  }, []);
+
+  const postTopic = topics;
+  const relatedPosts = postTopic
+    .flatMap((topic) =>
+      topic.blogPost.filter(
+        (post) => post.contentfulId !== contentfulId && post.slug !== slug,
+      ),
+    )
+    .slice(0, 3);
 
   return (
     <Layout>
@@ -188,6 +181,40 @@ const Blog = ({ pageContext }) => {
                   {renderRichText(body, options)}
                 </div>
 
+                <div className={singlepostStyle.rss}>
+                  <div className={singlepostStyle.feedly}>
+                    <a
+                      href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fmenefex.nl%2Frss.xml"
+                      title="Menefex WMB: RSS Feeds"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <img
+                        id="feedlyFollow"
+                        src="https://s3.feedly.com/img/follows/feedly-follow-circle-flat-green_2x.png"
+                        alt="Lees op Feedly"
+                        width="18"
+                        height="18"
+                      />{' '}
+                      Lees / Abonneer op Feedly
+                    </a>
+                  </div>
+                  <div className={singlepostStyle.feedburner}>
+                    <a
+                      href="https://feeds.feedburner.com/MenefexWMB"
+                      type="application/rss+xml"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <img
+                        src="https://feedburner.google.com/fb/images/pub/feed-icon32x32.png"
+                        alt="Abonneer via RSS Reader"
+                      />{' '}
+                      RAW data via Feedburner
+                    </a>
+                  </div>
+                </div>
+
                 <section className={singlepostStyle.disqus}>
                   <Disqus
                     config={{
@@ -197,56 +224,6 @@ const Blog = ({ pageContext }) => {
                     }}
                   />
                 </section>
-
-                <div className={singlepostStyle.feedlysub} hidden>
-                  <a
-                    href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fmenefex.nl%2Frss.xml"
-                    title="Menefex WMB: RSS Feeds"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    <img
-                      id="feedlyFollow"
-                      src="https://s3.feedly.com/img/follows/feedly-follow-circle-flat-green_2x.png"
-                      alt="Lees op Feedly"
-                      width="18"
-                      height="18"
-                      className={singlepostStyle.imagerss}
-                    />
-                  </a>
-                  &nbsp;
-                  <a
-                    href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fmenefex.nl%2Frss.xml"
-                    type="application/rss+xml"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    Lees / Abonneer op Feedly
-                  </a>
-                </div>
-                <div className={singlepostStyle.rsssub} hidden>
-                  <a
-                    href="https://feeds.feedburner.com/MenefexWMB"
-                    type="application/rss+xml"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    <img
-                      src="https://feedburner.google.com/fb/images/pub/feed-icon16x16.png"
-                      alt="Abonneer via RSS Reader"
-                      className={singlepostStyle.imagerss}
-                    />
-                  </a>
-                  &nbsp;
-                  <a
-                    href="https://feeds.feedburner.com/MenefexWMB"
-                    type="application/rss+xml"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    RAW data via Feedburner
-                  </a>
-                </div>
               </section>
               <aside>
                 <div className={singlepostStyle.gepost}>
@@ -266,10 +243,10 @@ const Blog = ({ pageContext }) => {
                     {updatedPost}
                   </div>
 
-                  <hr />
+                  {relatedPosts?.length === 0 ? null : <hr />}
 
                   <div className={singlepostStyle.related}>
-                    {relatedPosts[0].length === 0 ? null : (
+                    {relatedPosts?.length === 0 ? null : (
                       <div>
                         <h6>
                           <u>Gerelateerde Artikelen</u>
@@ -278,17 +255,15 @@ const Blog = ({ pageContext }) => {
                     )}
 
                     <ul>
-                      {uniquePosts.slice(0, 3).map((post) => {
-                        return (
-                          <li key={post.contentfulId}>
-                            <Link to={`/blog/${post.slug}/`}>
-                              <h5>{post.title}</h5>
-                              <p>{post.subtitle}</p>
-                              <span>Lees meer... </span>
-                            </Link>
-                          </li>
-                        );
-                      })}
+                      {relatedPosts?.map((post) => (
+                        <li key={post.contentfulId}>
+                          <Link to={`/blog/${post.slug}/`}>
+                            <h5>{post.title}</h5>
+                            <p>{post.subtitle}</p>
+                            <span>Lees meer... </span>
+                          </Link>
+                        </li>
+                      ))}
                     </ul>
                   </div>
                 </div>
@@ -315,24 +290,24 @@ const Blog = ({ pageContext }) => {
             </div>
 
             <section className={singlepostStyle.family}>
-              {relatedPosts[0].length === 0 ? null : (
+              {relatedPosts?.length === 0 ? null : (
                 <h6>Gerelateerde Artikelen</h6>
               )}
 
               <ul>
-                {uniquePosts.slice(0, 3).map((post) => {
-                  const projectImg = getImage(post.image.gatsbyImageData);
+                {relatedPosts?.slice(0, 3).map((post) => {
+                  const projectImg = getImage(post?.image?.gatsbyImageData);
 
                   return (
-                    <li key={post.contentfulId}>
-                      <Link to={`/blog/${post.slug}/`}>
+                    <li key={post?.contentfulId}>
+                      <Link to={`/blog/${post?.slug}/`}>
                         <GatsbyImage
                           image={projectImg}
-                          alt={post.image.title}
+                          alt={post?.image?.title}
                           // className={slideCont}
                         />
-                        <h5>{post.title}</h5>
-                        <p>{post.subtitle}</p>
+                        <h5>{post?.title}</h5>
+                        <p>{post?.subtitle}</p>
                         <span>Lees meer...</span>
                       </Link>
                     </li>

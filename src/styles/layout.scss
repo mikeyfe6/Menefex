@@ -238,6 +238,10 @@ textarea {
   font-size: 1.1rem;
   max-width: 50%;
 
+  @include phablet {
+    max-width: 100%;
+  }
+
   @include mobile {
     max-width: 100%;
     font-size: 1rem;
@@ -295,7 +299,11 @@ textarea {
   display: flex;
   gap: 3em;
 
-  @include mobile {
+  @include tablet {
+    gap: 1em;
+  }
+
+  @include phablet {
     flex-direction: column;
     gap: 0;
   }
@@ -314,7 +322,11 @@ textarea {
   align-items: center;
   gap: 5em;
 
-  @include mobile {
+  @include tablet {
+    gap: 2em;
+  }
+
+  @include phablet {
     flex-direction: column;
     gap: 0;
   }
@@ -322,7 +334,7 @@ textarea {
   > section {
     flex: 50%;
 
-    @include mobile {
+    @include phablet {
       width: 100%;
       flex: 100%;
     }
@@ -331,7 +343,7 @@ textarea {
   > form {
     flex: 50%;
 
-    @include mobile {
+    @include phablet {
       width: 100%;
       flex: 100%;
     }
@@ -356,14 +368,6 @@ textarea {
 }
 
 // DISQUS TWEAK
-
-#disqus_thread {
-  margin: 5em auto 0;
-
-  a {
-    color: $secondary-color;
-  }
-}
 
 span.speccol {
   color: $secondary-color;
