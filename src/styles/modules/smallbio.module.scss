@@ -3,7 +3,7 @@
 .smallbio {
   &-container {
     background: linear-gradient(145deg, $spec-color, $white-color);
-    opacity: 0.9;
+    opacity: 0.95;
 
     @include fullWidth;
   }
