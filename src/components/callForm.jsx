@@ -39,7 +39,6 @@ const Call = ({ callRef }) => {
       axios({
         url: '/.netlify/functions/sendmail',
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
         data: {
           ...inputs,
         },

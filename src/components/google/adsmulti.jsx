@@ -10,7 +10,7 @@ const GoogleAdsMulti = ({ slot }) => {
     <ins
       className="adsbygoogle"
       style={{ display: 'block' }}
-      data-ad-client="ca-pub-3158048130288702"
+      data-ad-client={process.env.GATSBY_GOOGLE_CA_PUB}
       data-ad-slot={slot}
       data-ad-format="autorelaxed"
     />

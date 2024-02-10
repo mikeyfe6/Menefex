@@ -5,6 +5,8 @@ import { Link } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
+import useSiteMetadata from '../hooks/use-site-metadata';
+
 import * as topicStyles from '../styles/modules/topics.module.scss';
 
 // TODO: images naar GatsbyImage verwerken
@@ -15,7 +17,6 @@ const DefaultInfo = ({ text }) => (
   </p>
 );
 
-// CONTENTFUL topics genereren
 const Topic = ({ pageContext: { name, topicPosts, bdcolor } }) => (
   <Layout>
     <h1 className="page-title">
@@ -66,6 +67,40 @@ const Topic = ({ pageContext: { name, topicPosts, bdcolor } }) => (
 );
 export default Topic;
 
-export const Head = ({ pageContext: { name, description, slug } }) => (
-  <SEO title={name} description={description} pathname={`/topics/${slug}/`} />
-);
+export const Head = ({ pageContext: { name, description, slug } }) => {
+  const { title, siteUrl } = useSiteMetadata();
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org/',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: title,
+        item: siteUrl,
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Topics',
+        item: siteUrl + '/topics/',
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: name,
+        item: siteUrl + '/topics/' + slug + '/',
+      },
+    ],
+  };
+
+  return (
+    <SEO
+      title={name}
+      description={description}
+      pathname={`/topics/${slug}/`}
+      schemaMarkup={breadcrumbSchema}
+    />
+  );
+};

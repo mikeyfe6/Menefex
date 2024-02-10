@@ -3,6 +3,8 @@ import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
+import useSiteMetadata from '../hooks/use-site-metadata';
+
 import About from '../components/about';
 import Spotify from '../components/spotify';
 
@@ -11,8 +13,6 @@ const AboutPage = () => (
     <h1 className="page-title">
       Over Menefex<span>.</span>
     </h1>
-
-    {/* <p className="page-sub">Kom meer te weten over ons...</p> */}
 
     <div className="about-spotify">
       <About />
@@ -23,11 +23,86 @@ const AboutPage = () => (
 
 export default AboutPage;
 
-export const Head = () => (
-  <SEO
-    title="Over Menefex"
-    description="Kom meer te weten over Menefex, de oprichter Michael Fransman, doelen & streven en meer..."
-    keywords="over menefex, doelen, biografie, motivatie, spotify playlist, stayvibin, gespecialiseerd, webmediabedrijf, michael fransman, verhaal, about"
-    pathname="/over/"
-  />
-);
+export const Head = () => {
+  const { siteUrl, bizTel, image, title, favicon, authorImage, author } =
+    useSiteMetadata();
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org/',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: title,
+        item: siteUrl,
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Over Ons',
+        item: siteUrl + '/over/',
+      },
+    ],
+  };
+
+  const personSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: author,
+    url: siteUrl,
+    image: siteUrl + authorImage,
+    sameAs: [
+      'https://www.facebook.com/michaelfransman',
+      'https://www.twitter.com/mikeyfe',
+      'https://www.instagram.com/mikeyfe6/',
+      'https://www.linkedin.com/in/michaelfransman/',
+      'https://github.com/mikeyfe6',
+      'https://open.spotify.com/playlist/08UGoWTjvpuooABCWyPx0m?si=5a3ca09f8cba4300',
+      'https://menefex.nl',
+    ],
+    jobTitle: 'Founder & Web Developer',
+    worksFor: {
+      '@type': 'Organization',
+      name: title,
+    },
+  };
+
+  const organizationSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: title,
+    url: siteUrl,
+    image: siteUrl + image,
+    logo: siteUrl + favicon,
+    contactPoint: {
+      '@type': 'ContactPoint',
+      telephone: bizTel,
+      areaServed: ['NL', 'BE', 'SR', 'GB'],
+      contactOption: 'TollFree',
+      contactType: 'customer service',
+      availableLanguage: ['Dutch', 'es', 'en'],
+    },
+    sameAs: [
+      'https://www.facebook.com/MenefexWMB',
+      'https://www.twitter.com/MenefexWMB',
+      'https://www.instagram.com/menefexwmb/',
+      'https://www.linkedin.com/company/menefexwmb/',
+      'https://github.com/mikeyfe6',
+      'https://www.patreon.com/menefexWMB',
+      'https://feeds.feedburner.com/MenefexWMB',
+      'https://wa.me/31611054318',
+      'https://open.spotify.com/playlist/08UGoWTjvpuooABCWyPx0m?si=5a3ca09f8cba4300',
+    ],
+  };
+
+  return (
+    <SEO
+      title="Over Ons"
+      description="Kom meer te weten over Menefex, de oprichter Michael Fransman, doelen & streven en meer..."
+      keywords="over menefex, doelen, biografie, motivatie, spotify playlist, stayvibin, gespecialiseerd, webmediabedrijf, michael fransman, verhaal, about"
+      pathname="/over/"
+      schemaMarkup={[breadcrumbSchema, personSchema, organizationSchema]}
+    />
+  );
+};

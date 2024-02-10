@@ -435,7 +435,7 @@ const TermsConditions = () => (
         </li>
         <li>
           De klant geeft daarbij een zo gedetailleerd mogelijke omschrijving van
-          de tekortkoming, zodat Menefex in staat is hierop adequaat te
+          de tekortkoming, zodat Menefex in staat is hierop adequaat te
           reageren.
         </li>
         <li>

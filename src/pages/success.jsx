@@ -9,7 +9,7 @@ const ThankYouPage = () => (
   <Layout>
     <section>
       <h1 className="page-title">
-        Bedankt voor u bericht<span className="speccol">..</span>
+        Bedankt voor u bericht<span className="lazy-color">..</span>
       </h1>
       <p className="page-sub">
         Wij nemen zo spoeding mogelijk contact met u op!

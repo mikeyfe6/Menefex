@@ -10,9 +10,9 @@ const NotFound = () => (
     <div>
       <div className="smallwhitespace" />
       <h3>
-        Ojee<span className="speccol">..</span> Pagina niet gevonden
-        <span className="speccol">.</span> Dat is nou jammer
-        <span className="speccol">..</span>
+        Ojee<span className="lazy-color">..</span> Pagina niet gevonden
+        <span className="lazy-color">.</span> Dat is nou jammer
+        <span className="lazy-color">..</span>
       </h3>
       <br />
       <Link to="/">Ga terug naar de hoofdpagina!</Link>

@@ -6,7 +6,7 @@ import mapsLogo from '../../logo/Menefex-icon.svg';
 
 import * as mapsStyles from '../../styles/modules/maps.module.scss';
 
-// TODO: Zorgen dat on click pop-up adresinformatie tevoren komt over Menefex
+import useSiteMetadata from '../../hooks/use-site-metadata';
 
 const defaultProps = {
   center: {
@@ -16,11 +16,15 @@ const defaultProps = {
   zoom: 15,
 };
 
-const Marker = ({ lat, lng }) => (
-  <div data-lat={lat} data-lng={lng} className={mapsStyles.marker}>
-    <img src={mapsLogo} alt="Menefex" />
-  </div>
-);
+const Marker = ({ lat, lng }) => {
+  const { title } = useSiteMetadata();
+
+  return (
+    <div data-lat={lat} data-lng={lng} className={mapsStyles.marker}>
+      <img src={mapsLogo} alt={title} />
+    </div>
+  );
+};
 
 const SimpleMap = () => (
   <div className={mapsStyles.maps}>
@@ -33,7 +37,7 @@ const SimpleMap = () => (
       defaultCenter={defaultProps.center}
       defaultZoom={defaultProps.zoom}
     >
-      <Marker lat={52.31050502595482} lng={4.973742313372159} />
+      <Marker lat={52.31049600748774} lng={4.973736770446289} />
     </GoogleMapReact>
   </div>
 );

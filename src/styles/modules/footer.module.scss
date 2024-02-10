@@ -9,6 +9,7 @@
     .sayin {
       text-align: end;
       padding-right: 2em;
+      font-size: 0.95rem;
 
       @include mobile {
         padding-right: 0;

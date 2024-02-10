@@ -5,6 +5,8 @@ import { StaticImage } from 'gatsby-plugin-image';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
+import useSiteMetadata from '../hooks/use-site-metadata';
+
 import * as portfolioStyles from '../styles/modules/portfolio.module.scss';
 
 const PortfolioPage = () => (
@@ -330,11 +332,35 @@ const PortfolioPage = () => (
 
 export default PortfolioPage;
 
-export const Head = () => (
-  <SEO
-    title="Portfolio"
-    description="Wij zijn trots op ons werk en showcasen dat ook graag! Neem een kijk in ons archief van recente projecten."
-    keywords="work, website, webapplicatie, projecten, eternity, black harmony, ds melodies, afrodiashpere, wordpress, reactjs, gatsby, elementor, github, portfolio, archief"
-    pathname="/portfolio/"
-  />
-);
+export const Head = () => {
+  const { title, siteUrl } = useSiteMetadata();
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org/',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: title,
+        item: siteUrl,
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Portfolio',
+        item: siteUrl + '/portfolio/',
+      },
+    ],
+  };
+
+  return (
+    <SEO
+      title="Portfolio"
+      description="Wij zijn trots op ons werk en showcasen dat ook graag! Neem een kijk in ons archief van recente projecten."
+      keywords="work, website, webapplicatie, projecten, eternity, black harmony, ds melodies, afrodiashpere, wordpress, reactjs, gatsby, elementor, github, portfolio, archief"
+      pathname="/portfolio/"
+      schemaMarkup={breadcrumbSchema}
+    />
+  );
+};

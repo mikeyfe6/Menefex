@@ -7,7 +7,6 @@
   for = "/*"
   [headers.values]
     X-Frame-Options = "SAMEORIGIN"
-    Referrer-Policy = "strict-origin-when-cross-origin"
     Access-Control-Allow-Origin = "https://facebook.com"
     Vary = "Origin"
 

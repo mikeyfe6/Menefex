@@ -16,20 +16,20 @@ const SEO = ({
     query {
       site {
         siteMetadata {
-          title
-          description
-          url
+          siteTitle: title
+          defaultDescription: description
+          url: siteUrl
           image
-          twitterUsername
+          socialHandle
         }
       }
     }
   `);
 
-  const { url, twitterUsername, image } = site.siteMetadata;
+  const { url, socialHandle, image, defaultDescription, siteTitle } =
+    site.siteMetadata;
 
-  const metaDescription = description || site.siteMetadata.description;
-  const siteTitle = site.siteMetadata?.title;
+  const pageDescription = description || defaultDescription;
   const pageImage = ogimage || `${url}${image}`;
   const siteUrl = `${url}${pathname || ''}`;
 
@@ -51,12 +51,7 @@ const SEO = ({
     <>
       <title>{siteTitle ? `${title} · ${siteTitle}` : title}</title>
 
-      {/* <meta
-             name="viewport"
-             content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
-          /> */}
-
-      <meta name="description" content={metaDescription} />
+      <meta name="description" content={pageDescription} />
       <meta name="image" content={pageImage} />
       <meta name="keywords" content={keywords} />
 
@@ -85,9 +80,9 @@ const SEO = ({
       {pageImage && <meta property="twitter:image" content={pageImage} />}
       <meta property="twitter:card" content="summary" />
       {siteUrl && <meta property="twitter:url" content={siteUrl} />}
-      <meta property="twitter:site" content={twitterUsername} />
-      {twitterUsername && (
-        <meta property="twitter:creator" content={twitterUsername} />
+      <meta property="twitter:site" content={socialHandle} />
+      {socialHandle && (
+        <meta property="twitter:creator" content={socialHandle} />
       )}
 
       {/* --- Link Tags ! --- */}

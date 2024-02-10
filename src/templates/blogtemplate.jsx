@@ -15,13 +15,11 @@ import SEO from '../components/seo';
 import GoogleAdsDisplay from '../components/google/adsdisp';
 import GoogleAdsMulti from '../components/google/adsmulti';
 
+import useSiteMetadata from '../hooks/use-site-metadata';
+
 import mini from '../logo/Menefex-icon.svg';
 
 import * as singlepostStyle from '../styles/modules/singlepost.module.scss';
-
-// TODO: google ads space ook conditional maken
-
-const websiteUrl = 'https://menefex.nl';
 
 const Blog = ({ pageContext }) => {
   const {
@@ -36,6 +34,8 @@ const Blog = ({ pageContext }) => {
     updatedPost,
     author,
   } = pageContext;
+
+  const { siteUrl } = useSiteMetadata();
 
   const options = {
     renderMark: {
@@ -97,9 +97,9 @@ const Blog = ({ pageContext }) => {
       ),
 
       [INLINES.HYPERLINK]: ({ data }, children) => {
-        const isInternal = data.uri.startsWith(websiteUrl);
+        const isInternal = data.uri.startsWith(siteUrl);
         const strippedUrl = isInternal
-          ? data.uri.replace(websiteUrl, '')
+          ? data.uri.replace(siteUrl, '')
           : data.uri;
 
         if (isInternal) {
@@ -128,8 +128,7 @@ const Blog = ({ pageContext }) => {
     if (process.env.NODE_ENV !== 'development') {
       const script = document.createElement('script');
 
-      script.src =
-        'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3158048130288702';
+      script.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.GATSBY_GOOGLE_CA_PUB}}`;
       script.async = true;
 
       document.body.appendChild(script);
@@ -318,7 +317,6 @@ const Blog = ({ pageContext }) => {
                         <GatsbyImage
                           image={projectImg}
                           alt={post?.image?.title}
-                          // className={slideCont}
                         />
                         <h5>{post?.title}</h5>
                         <p>{post?.subtitle}</p>
@@ -347,6 +345,8 @@ const Blog = ({ pageContext }) => {
 export default Blog;
 
 export const Head = ({ pageContext }) => {
+  const { title: siteTitle, siteUrl, favicon } = useSiteMetadata();
+
   const {
     title,
     subtitle,
@@ -358,26 +358,51 @@ export const Head = ({ pageContext }) => {
     keywords,
   } = pageContext;
 
-  const schema = {
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org/',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: siteTitle,
+        item: siteUrl,
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Blog',
+        item: siteUrl + '/blog/',
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: title,
+        item: siteUrl + '/blog/' + slug + '/',
+      },
+    ],
+  };
+
+  const blogPostingSchema = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `https://menefex.nl/blog/${slug}/`,
+      '@id': siteUrl + '/blog/' + slug + '/',
     },
     headline: title,
     description: subtitle,
-    image: `https:${image.file.url}`,
+    image: 'https:' + image.file.url,
     author: {
       '@type': 'Person',
       name: author,
     },
     publisher: {
       '@type': 'Organization',
-      name: 'Menefex',
+      name: siteTitle,
       logo: {
         '@type': 'ImageObject',
-        url: 'https://menefex.nl/Menefex-favi.png',
+        url: siteUrl + favicon,
       },
     },
     datePublished: publishedSchema,
@@ -391,7 +416,7 @@ export const Head = ({ pageContext }) => {
       keywords={keywords.join(', ')}
       pathname={`/blog/${slug}/`}
       ogimage={`https:${image.file.url}`}
-      schemaMarkup={schema}
+      schemaMarkup={[breadcrumbSchema, blogPostingSchema]}
       article
     />
   );

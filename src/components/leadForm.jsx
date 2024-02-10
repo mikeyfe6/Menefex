@@ -49,7 +49,6 @@ const Form = () => {
       axios({
         url: '/.netlify/functions/sendmail',
         method: 'POST',
-        // headers: { 'Content-Type': 'application/json' },
         data: inputs,
       })
         .then(() => navigate(form.getAttribute('action')))

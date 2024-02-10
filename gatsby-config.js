@@ -20,23 +20,25 @@ module.exports = {
   },
   siteMetadata: {
     siteUrl: 'https://menefex.nl',
-    url: 'https://menefex.nl',
-    tel: '+31611054318',
 
     title: 'Menefex',
+    company: 'Menefex Webmediabedrijf',
     description:
       'Bij Menefex bouwen wij websites, webshops & webapplicaties met oog voor detail.',
 
-    author: 'Michael Fransman',
-
-    twitterUsername: '@MenefexWMB',
-
+    bizTel: '+31611054318',
     bizEmail: 'info@menefex.nl',
+
+    author: 'Michael Fransman',
+    authorImage: '/MichaelFransman.jpeg',
     authorEmail: 'michaelfransman@menefex.nl',
+
+    socialHandle: '@MenefexWMB',
 
     image: '/Menefex-scl.png',
     favicon: '/Menefex-favi.png',
-    // titleTemplate: '%s · Menefex',
+
+    priceImage: '/Menefex-price.jpeg',
   },
   plugins: [
     {
@@ -269,7 +271,7 @@ module.exports = {
             }
           }
         `,
-        // resolveSiteUrl: ({ site }) => site.siteMetadata.siteUrl,
+
         resolveSiteUrl: () => superSiteUrl,
         resolvePages: ({ allSitePage }) => allSitePage.nodes,
         serialize: ({ path, pageContext }) => ({

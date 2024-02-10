@@ -1,9 +1,11 @@
 import React, { useRef } from 'react';
 
-import { Link, navigate } from 'gatsby';
+import { Link } from 'gatsby';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+
+import useSiteMetadata from '../hooks/use-site-metadata';
 
 import PriceTable from '../components/pricetable';
 import Notes from '../components/notes';
@@ -54,11 +56,125 @@ const Prices = () => {
 
 export default Prices;
 
-export const Head = () => (
-  <SEO
-    title="Prijzen & tarieven"
-    description="Hier ziet u een indicatie van onze scherpe prijzen. Heeft u liever een georiënteerd gesprek, neem contact met ons op of vraag een terugbelverzoek aan."
-    keywords="prijzen, tarieven, budget plan, starter plan, established plan, business plan, actie, terugbelverzoek, prijslijst, pakket, offerte, bel mij terug, prices"
-    pathname="/prijzen/"
-  />
-);
+export const Head = () => {
+  const { title, siteUrl, priceImage, description } = useSiteMetadata();
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org/',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: title,
+        item: siteUrl,
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Prijzen & tarieven',
+        item: siteUrl + '/prijzen/',
+      },
+    ],
+  };
+
+  const budgetPlanSchema = {
+    '@context': 'https://schema.org/',
+    '@type': 'Product',
+    name: 'Starter Plan',
+    image: siteUrl + priceImage,
+    description: description,
+    priceRange: '$$',
+    brand: {
+      '@type': 'Brand',
+      name: title,
+    },
+    offers: {
+      '@type': 'Offer',
+      url: siteUrl + '/prijzen/',
+      priceCurrency: 'EUR',
+      price: '295.00',
+      availability: 'https://schema.org/OnlineOnly',
+      itemCondition: 'https://schema.org/NewCondition',
+    },
+  };
+
+  const starterPlanSchema = {
+    '@context': 'https://schema.org/',
+    '@type': 'Product',
+    name: 'Starter Plan',
+    image: siteUrl + priceImage,
+    description: description,
+    priceRange: '$$',
+    brand: {
+      '@type': 'Brand',
+      name: title,
+    },
+    offers: {
+      '@type': 'Offer',
+      url: siteUrl + '/prijzen/',
+      priceCurrency: 'EUR',
+      price: '595.00',
+      availability: 'https://schema.org/OnlineOnly',
+      itemCondition: 'https://schema.org/NewCondition',
+    },
+  };
+
+  const establishedPlanSchema = {
+    '@context': 'https://schema.org/',
+    '@type': 'Product',
+    name: 'Established Plan',
+    image: siteUrl + priceImage,
+    description: description,
+    priceRange: '$$$',
+    brand: {
+      '@type': 'Brand',
+      name: title,
+    },
+    offers: {
+      '@type': 'Offer',
+      url: siteUrl + '/prijzen/',
+      priceCurrency: 'EUR',
+      price: '1025.00',
+      availability: 'https://schema.org/OnlineOnly',
+      itemCondition: 'https://schema.org/NewCondition',
+    },
+  };
+
+  const businessPlanSchema = {
+    '@context': 'https://schema.org/',
+    '@type': 'Product',
+    name: 'Business Plan',
+    image: `${siteUrl}${priceImage}`,
+    description: description,
+    priceRange: '$$$',
+    brand: {
+      '@type': 'Brand',
+      name: title,
+    },
+    offers: {
+      '@type': 'Offer',
+      url: siteUrl + '/prijzen/',
+      priceCurrency: 'EUR',
+      price: '1575.00',
+      availability: 'https://schema.org/OnlineOnly',
+      itemCondition: 'https://schema.org/NewCondition',
+    },
+  };
+
+  return (
+    <SEO
+      title="Prijzen & tarieven"
+      description="Hier ziet u een indicatie van onze scherpe prijzen. Heeft u liever een georiënteerd gesprek, neem contact met ons op of vraag een terugbelverzoek aan."
+      keywords="prijzen, tarieven, budget plan, starter plan, established plan, business plan, actie, terugbelverzoek, prijslijst, pakket, offerte, bel mij terug, prices"
+      pathname="/prijzen/"
+      schemaMarkup={[
+        breadcrumbSchema,
+        budgetPlanSchema,
+        starterPlanSchema,
+        establishedPlanSchema,
+        businessPlanSchema,
+      ]}
+    />
+  );
+};

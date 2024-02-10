@@ -5,11 +5,12 @@ import { Link, graphql, useStaticQuery } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
+import useSiteMetadata from '../hooks/use-site-metadata';
+
 import * as blogpostStyles from '../styles/modules/blog.module.scss';
 
 // TODO: images naar GatsbyImage verwerken
 
-// CONTENTFUL blogposts genereren
 const BlogPage = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -73,11 +74,35 @@ const BlogPage = () => {
 
 export default BlogPage;
 
-export const Head = () => (
-  <SEO
-    title="Blog"
-    description="What goes through our mind... Our views on life, technology, culture, the past, the future and more..."
-    keywords="blog, posts, views, nieuws, stories, nieuws, content, verhalen, news, mind, actualiteiten, actueel"
-    pathname="/blog/"
-  />
-);
+export const Head = () => {
+  const { title, siteUrl } = useSiteMetadata();
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org/',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: title,
+        item: siteUrl,
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Blog',
+        item: siteUrl + '/blog/',
+      },
+    ],
+  };
+
+  return (
+    <SEO
+      title="Blog"
+      description="What goes through our mind... Our views on life, technology, culture, the past, the future and more..."
+      keywords="blog, posts, views, nieuws, stories, nieuws, content, verhalen, news, mind, actualiteiten, actueel"
+      pathname="/blog/"
+      schemaMarkup={breadcrumbSchema}
+    />
+  );
+};

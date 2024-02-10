@@ -1,17 +1,15 @@
 import React from 'react';
 
-import { useStaticQuery, graphql } from 'gatsby';
-
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+
+import useSiteMetadata from '../hooks/use-site-metadata';
 
 import Hero from '../components/hero';
 import Service from '../components/services';
 import Projects from '../components/slider';
 import Smallbio from '../components/smallbio';
 import Actual from '../components/actual';
-
-// *GEFIXT TODO: pagina helemaal responsive maken
 
 const IndexPage = () => (
   <Layout>
@@ -54,61 +52,54 @@ const IndexPage = () => (
 export default IndexPage;
 
 export const Head = () => {
-  const { site } = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          description
-          favicon
-          siteUrl
-          tel
-          author
-          bizEmail
-          image
-        }
-      }
-    }
-  `);
+  const { title, company, siteUrl, image, favicon, bizTel } = useSiteMetadata();
 
-  const schema = {
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org/',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: title,
+        item: siteUrl,
+      },
+    ],
+  };
+
+  const websiteSchema = {
     '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
-    name: 'Menefex Webmediabedrijf',
-    founder: {
-      '@type': 'Person',
-      name: site.siteMetadata.author,
-    },
-    image: `${site.siteMetadata.siteUrl}${site.siteMetadata.image}`,
-    logo: `${site.siteMetadata.siteUrl}${site.siteMetadata.favicon}`,
-    '@id': `${site.siteMetadata.siteUrl}/#localbusiness`,
-    description: site.siteMetadata.description,
-    url: site.siteMetadata.siteUrl,
-    telephone: site.siteMetadata.tel,
-    email: site.siteMetadata.bizEmail,
-    hasMap: 'https://g.page/MenefexWMB?share',
-    areaServed: {
-      '@type': 'geoShape',
-      addressCountry: ['Netherlands', 'Belgium', 'Surinam'],
-    },
-    priceRange: '$$',
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: 'Kelbergen 192',
-      addressLocality: 'Amsterdam',
-      postalCode: '1104LJ',
-      addressCountry: 'NL',
-    },
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: '52.31049387419748',
-      longitude: '4.9737379576208856',
-    },
-    openingHoursSpecification: {
-      '@type': 'OpeningHoursSpecification',
-      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-      opens: '09:00',
-      closes: '19:00',
-    },
+    '@type': 'WebSite',
+    name: title,
+    url: siteUrl,
+  };
+
+  const organizationSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: title,
+    alternateName: company,
+    url: siteUrl,
+    image: siteUrl + image,
+    logo: siteUrl + favicon,
+    contactPoint: [
+      {
+        '@type': 'ContactPoint',
+        telephone: bizTel,
+        areaServed: ['NL', 'BE', 'SR', 'GB'],
+        contactOption: 'TollFree',
+        contactType: 'customer service',
+        availableLanguage: ['Dutch', 'es', 'en', 'German'],
+      },
+      {
+        '@type': 'ContactPoint',
+        telephone: bizTel,
+        areaServed: ['NL', 'BE', 'SR', 'GB'],
+        contactOption: 'TollFree',
+        contactType: 'technical support',
+        availableLanguage: ['Dutch', 'es', 'en', 'German'],
+      },
+    ],
     sameAs: [
       'https://www.facebook.com/MenefexWMB',
       'https://www.twitter.com/MenefexWMB',
@@ -121,12 +112,15 @@ export const Head = () => {
       'https://open.spotify.com/playlist/08UGoWTjvpuooABCWyPx0m?si=5a3ca09f8cba4300',
     ],
   };
+
   return (
-    <SEO
-      title="#1 Website Specialist"
-      description="Website, webshop of webapplicatie laten maken? Al vanaf €295,- | Menefex Webmediabedrijf uit Amsterdam staat garant voor al uw webgerelateerde wensen en ambities."
-      keywords="website, webapplicatie, webshop, wordpress, SEO, amsterdam, specialist, menefex, webmediabedrijf, modern, professioneel, ontwikkelen, bob, webbeheerder, webmaster, projecten, portfolio, services, diensten, biografie, web development, app development, jamstack, michael fransman, gatsby, laten bouwen"
-      schemaMarkup={schema}
-    />
+    <>
+      <SEO
+        title="#1 Website Specialist"
+        description="Website, webshop of webapplicatie laten maken? Al vanaf €295,- | Menefex Webmediabedrijf uit Amsterdam staat garant voor al uw webgerelateerde wensen en ambities."
+        keywords="website, webapplicatie, webshop, wordpress, SEO, amsterdam, specialist, menefex, webmediabedrijf, modern, professioneel, ontwikkelen, bob, webbeheerder, webmaster, projecten, portfolio, services, diensten, biografie, web development, app development, jamstack, michael fransman, gatsby, laten bouwen"
+        schemaMarkup={[breadcrumbSchema, websiteSchema, organizationSchema]}
+      />
+    </>
   );
 };

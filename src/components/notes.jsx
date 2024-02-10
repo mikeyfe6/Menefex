@@ -27,7 +27,7 @@ const Notes = () => (
     </p>
     <p>
       <a
-        href="https://menefex.nl/Menefex-PLIST.pdf"
+        href="https://menefex.nl/Menefex-prijslijst.pdf"
         rel="noopener noreferrer"
         target="_blank"
       >
