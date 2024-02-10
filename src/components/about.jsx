@@ -30,7 +30,7 @@ const About = () => (
       ultieme ervaring.
     </p>
 
-    <h3>Wat maakt ons als Menefex zo uniek?</h3>
+    <h3>Wat maakt Menefex zo uniek?</h3>
     <p>
       <b>Menefex</b> biedt de nodige hulp, service en communicatie vóór, tijdens
       en ná het bouwproces van uw product en heeft deze op een hoog plateau
