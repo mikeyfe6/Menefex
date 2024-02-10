@@ -229,6 +229,7 @@ const Blog = ({ pageContext }) => {
                     config={{
                       url: `https://menefex.nl/blog/${slug}/`,
                       identifier: contentfulId,
+                      language: 'nl_NL',
                       title,
                     }}
                   />

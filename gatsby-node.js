@@ -1,9 +1,9 @@
 const path = require('path');
 const fs = require('fs').promises;
 
-const { documentToHtmlString } = require('@contentful/rich-text-html-renderer');
-
 const puppeteer = require('puppeteer');
+
+const { documentToHtmlString } = require('@contentful/rich-text-html-renderer');
 
 const captureScreenshot = async (url, filename, delay) => {
   try {
