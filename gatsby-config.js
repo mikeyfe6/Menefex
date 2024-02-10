@@ -249,7 +249,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        sitemap: 'https://menefex.nl/sitemap-0.xml',
+        sitemap: 'https://menefex.nl/sitemap-index.xml',
         policy: [{ userAgent: '*', allow: '/' }],
       },
     },

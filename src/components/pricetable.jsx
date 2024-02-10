@@ -19,7 +19,7 @@ const PriceTable = () => {
   const handlePrice = (handelen, inputId) => {
     sessionStorage.setItem('mnfx', handelen);
     navigate('/contact/');
-    // Focus on the input field after a short delay to ensure the navigation has completed
+
     setTimeout(() => {
       const inputElement = document.getElementById(inputId);
       if (inputElement) {
