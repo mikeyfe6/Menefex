@@ -107,6 +107,10 @@
       padding: 0.375em 0;
       font-size: 1.1rem;
     }
+
+    @include mini {
+      font-size: 0.95rem;
+    }
   }
 
   &-cta {
