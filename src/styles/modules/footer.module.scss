@@ -4,10 +4,15 @@
   @include container;
 
   blockquote {
-    text-align: end;
     padding-right: 2em;
     font-size: 0.95rem;
     margin-bottom: 2em;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 1em 0.5em;
 
     @include mobile {
       padding-right: 0;
@@ -28,6 +33,7 @@
       background: $sixth-color;
       padding: 0.5em 1em;
       border-radius: $low-radius;
+      text-align: end;
     }
   }
 
@@ -90,6 +96,16 @@
     padding: 0 5em;
     margin: 5em 0;
     gap: 3em;
+
+    @include laptop {
+      padding: 0;
+    }
+
+    @include phablet {
+      margin: 4em 0 3em;
+      padding: 0;
+      flex-direction: column;
+    }
 
     @include mobile {
       margin: 3.5em 0 2.5em;

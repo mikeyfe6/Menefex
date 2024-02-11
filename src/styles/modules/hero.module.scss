@@ -80,14 +80,25 @@
 
     @include boxShadow;
 
-    @include mobile {
-      font-size: 1.375rem;
-      padding: 0.25em;
-      letter-spacing: 0.125rem;
+    @include tablet {
+      font-size: 2rem;
+    }
+
+    @include phablet {
+      font-size: 1.75rem;
+      padding: 0.1em 0.25em;
 
       border-left: none;
       border-right: none;
       border-radius: 0;
+
+      @include fullWidth;
+    }
+
+    @include mobile {
+      font-size: 1.375rem;
+      padding: 0.25em;
+      letter-spacing: 0.125rem;
 
       @include fullWidth;
     }
@@ -131,6 +142,10 @@
 
     > button {
       @include tertiaryButton;
+    }
+
+    @include mini {
+      gap: 0.125em;
     }
 
     > span {

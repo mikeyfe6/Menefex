@@ -191,6 +191,7 @@
             .hyperlinkness {
               // a
               font-weight: 500;
+              word-break: break-word;
 
               @include textLink;
             }
@@ -276,7 +277,6 @@
           .gepost {
             color: $secondary-color;
             font-style: italic;
-            white-space: nowrap;
             font-size: 0.75rem;
             background: linear-gradient(to right, $primary-color, $fifth-color);
             border: solid 1px $fifth-color;
@@ -406,6 +406,11 @@
 
         @include mobile {
           margin-top: 0;
+        }
+
+        @include mini {
+          flex-direction: column;
+          justify-content: flex-end;
         }
 
         > ul {

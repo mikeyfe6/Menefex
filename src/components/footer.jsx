@@ -32,7 +32,7 @@ const Footer = () => {
         <cite>
           &quot;Instead of thinking outside of the box, get rid of the box&quot;
         </cite>{' '}
-        <br />- Deepak Chopra
+        - Deepak Chopra
       </blockquote>
 
       <hr />

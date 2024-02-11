@@ -7,6 +7,11 @@
   border-radius: $low-radius;
   width: fit-content;
   height: 100%;
+  max-width: 500px;
+
+  @include tablet {
+    align-self: flex-end;
+  }
 
   @include mobile {
     padding: 1em;
@@ -26,6 +31,7 @@
     opacity: 0.9;
     height: 650px;
     width: 400px;
+
     border-radius: $high-radius;
 
     @include mobile {

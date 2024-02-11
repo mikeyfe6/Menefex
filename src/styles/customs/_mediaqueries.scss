@@ -53,7 +53,7 @@
 }
 
 @mixin landscape {
-  @media only screen and (width >= 480px) and (width <= 640px) and (orientation: landscape) {
+  @media only screen and (width >= 23em) and (width <= 64em) and (orientation: landscape) {
     @content;
   }
 }

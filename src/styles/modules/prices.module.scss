@@ -3,14 +3,31 @@
 .prices {
   display: flex;
   gap: 1.5em;
+  justify-content: space-evenly;
+
+  @include laptop {
+    flex-wrap: wrap;
+    row-gap: 3em;
+  }
+
+  @include mobile {
+    align-items: center;
+  }
+
+  > * {
+    @include laptop {
+      flex: 0 0 48%;
+    }
+
+    @include phablet {
+      flex: 0 0 46%;
+    }
+  }
 
   @include mobile {
     flex-direction: column;
     margin: 0 auto;
     width: 90%;
-  }
-
-  @include mobile {
     gap: 2.5em;
   }
 
@@ -19,6 +36,7 @@
     gap: 1em;
     display: flex;
     flex-direction: column;
+    max-width: 450px;
 
     background: linear-gradient(to bottom, $spec-color, $secondary-color);
     border-radius: 25px;

@@ -130,6 +130,15 @@
     padding: 1em 2em;
   }
 
+  @include compact {
+    font-size: 0.6rem;
+  }
+
+  @include mini {
+    font-size: 0.55rem;
+    padding: 1em 1.5em;
+  }
+
   @include smoothTrans;
   @include boxShadow;
 

@@ -286,10 +286,10 @@ textarea {
 
 .about-spotify {
   display: flex;
-  align-items: center;
   gap: 5em;
 
-  @include mobile {
+  @include tablet {
+    align-items: center;
     flex-direction: column;
     gap: 0;
   }
@@ -300,7 +300,7 @@ textarea {
   gap: 3em;
 
   @include tablet {
-    gap: 1em;
+    gap: 2em;
   }
 
   @include phablet {
@@ -310,10 +310,18 @@ textarea {
 
   > section {
     flex: 60%;
+
+    @include tablet {
+      flex: 50%;
+    }
   }
 
   > form {
     flex: 40%;
+
+    @include tablet {
+      flex: 50%;
+    }
   }
 }
 
