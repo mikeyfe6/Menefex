@@ -6,8 +6,6 @@ import axios from 'axios';
 
 import * as callStyles from '../styles/modules/callForm.module.scss';
 
-// TODO: change to callForm.scss
-
 // const d = new Date();
 // const hour = d.getHours();
 // console.log(hour);

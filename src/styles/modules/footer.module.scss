@@ -4,29 +4,30 @@
   @include container;
 
   blockquote {
+    text-align: end;
+    padding-right: 2em;
+    font-size: 0.95rem;
     margin-bottom: 2em;
 
-    .sayin {
-      text-align: end;
-      padding-right: 2em;
-      font-size: 0.95rem;
+    @include mobile {
+      padding-right: 0;
+    }
+
+    br {
+      display: none;
 
       @include mobile {
-        padding-right: 0;
+        display: block;
       }
+    }
 
-      br {
-        display: none;
-
-        @include mobile {
-          display: block;
-        }
-      }
-
-      i {
-        font-weight: 600;
-        font-style: italic;
-      }
+    cite {
+      display: inline-block;
+      font-weight: 500;
+      font-style: italic;
+      background: $sixth-color;
+      padding: 0.5em 1em;
+      border-radius: $low-radius;
     }
   }
 

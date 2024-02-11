@@ -29,14 +29,10 @@ const Footer = () => {
   return (
     <footer className={footerStyles.footer}>
       <blockquote>
-        <p className={footerStyles.sayin}>
-          <i>
-            &quot;Instead of thinking outside of the box, get rid of the
-            box&quot;
-          </i>{' '}
-          <br />
-          {/* CITE toevoegen */}- Deepak Chopra
-        </p>
+        <cite>
+          &quot;Instead of thinking outside of the box, get rid of the box&quot;
+        </cite>{' '}
+        <br />- Deepak Chopra
       </blockquote>
 
       <hr />

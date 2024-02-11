@@ -7,7 +7,9 @@ const Info = () => (
     <h5>
       <b>Menefex Webmediabedrijf</b>
     </h5>
-    <p>gevestigd in Amsterdam-Zuidoost</p>
+    <p>
+      gevestigd in <b>Amsterdam-Zuidoost</b>
+    </p>
 
     <br />
 
@@ -84,15 +86,13 @@ const Info = () => (
 
     <div className={infoStyles.socials}>
       <p>
-        <b>Volg</b> onze socials
-        <span>
-          <b> / </b>
-        </span>{' '}
-        <b>support</b> ons
-        <span>
-          <b> / </b>
-        </span>
-        kom in <b>contact</b>
+        <u>
+          <b>Volg</b>
+          <span>
+            <b> / </b>
+          </span>
+          <b>support</b> onze socials
+        </u>
       </p>
       <ul>
         <li>
