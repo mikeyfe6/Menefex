@@ -8,7 +8,6 @@ const { documentToHtmlString } = require('@contentful/rich-text-html-renderer');
 const captureScreenshot = async (url, filename, delay) => {
   try {
     const browser = await puppeteer.launch({
-      headless: 'new',
       args: [
         '--no-sandbox',
         '--disable-setuid-sandbox',
