@@ -150,6 +150,25 @@
   }
 }
 
+@mixin topicButton {
+  border-width: 2px;
+  border-style: solid;
+  border-radius: $low-radius;
+  overflow: hidden;
+  padding: 0.5em 1em;
+  color: $base-color;
+  font-weight: 500;
+  background: $white-color;
+  font-size: 0.75rem;
+
+  @include boxShadow;
+  @include smoothTrans;
+
+  &:hover {
+    background: $sixth-color;
+  }
+}
+
 @mixin footerDot {
   display: inline-block;
   content: '';

@@ -286,11 +286,12 @@ const Blog = ({ pageContext }) => {
             <div className={singlepostStyle.topics}>
               <ul>
                 {postTopic.map((relTopic) => (
-                  <li
-                    key={relTopic.id}
-                    style={{ borderColor: relTopic.bdcolor }}
-                  >
-                    <Link to={`/topics/${relTopic.slug}/`} key={relTopic.id}>
+                  <li key={relTopic.id}>
+                    <Link
+                      to={`/topics/${relTopic.slug}/`}
+                      key={relTopic.id}
+                      style={{ borderColor: relTopic.bdcolor }}
+                    >
                       {relTopic.name}
                     </Link>
                   </li>

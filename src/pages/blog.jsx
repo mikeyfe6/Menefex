@@ -67,6 +67,10 @@ const BlogPage = () => {
             </li>
           ))}
         </ul>
+
+        <Link to="/topics/" className={blogpostStyles.backBtn}>
+          &apos;Topics&apos; <i className="fa-solid fa-angles-right" />
+        </Link>
       </section>
     </Layout>
   );

@@ -12,8 +12,8 @@ import * as topicStyles from '../styles/modules/topics.module.scss';
 // TODO: images naar GatsbyImage verwerken
 
 const DefaultInfo = ({ text }) => (
-  <p className="page-sub">
-    <b>{text}</b>
+  <p>
+    <br /> <b>{text}</b>
   </p>
 );
 

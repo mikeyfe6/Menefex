@@ -13,6 +13,11 @@ const Actual = () => {
         title
         slug
         publishedDate
+        topics {
+          name
+          bdcolor
+          slug
+        }
         image {
           title
           gatsbyImageData(
@@ -46,6 +51,21 @@ const Actual = () => {
               <b>Lees meer...</b>
             </Link>
           </p>
+          <br />
+          <ul>
+            {data.contentfulBlogPost.topics.map((topic) => (
+              <li key={topic.slug}>
+                <Link
+                  to={`/topics/${topic.slug}/`}
+                  style={{
+                    borderColor: topic.bdcolor,
+                  }}
+                >
+                  {topic.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>

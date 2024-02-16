@@ -94,3 +94,20 @@
     }
   }
 }
+
+.back-btn {
+  margin: 3em 3em 0 auto;
+  margin-left: auto;
+  margin-right: 3em;
+
+  @include mobile {
+    max-width: 100%;
+    margin: 3em 0 0 auto;
+  }
+
+  i {
+    margin-right: 0.5em;
+  }
+
+  @include primaryButton;
+}

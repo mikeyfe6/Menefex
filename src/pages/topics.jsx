@@ -60,6 +60,10 @@ const TopicPage = () => {
             ),
           )}
         </ul>
+
+        <Link to="/blog/" className={topicStyles.backBtn}>
+          &apos;Blog&apos; <i className="fa-solid fa-angles-right" />
+        </Link>
       </section>
     </Layout>
   );
