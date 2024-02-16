@@ -17,6 +17,8 @@ const captureScreenshot = async (url, filename, delay) => {
     });
     const page = await browser.newPage();
 
+    await page.setCacheEnabled(false);
+
     await page.setViewport({
       width: 1920,
       height: 1080,
