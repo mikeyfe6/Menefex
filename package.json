@@ -15,7 +15,7 @@
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "prebuild": "yarn install --frozen-lockfile",
-    "postinstall": "node node_modules/puppeteer/install.mjs"
+    "postinstall": "if [ \"$NODE_ENV\" = \"production\" ]; then node node_modules/puppeteer/install.mjs; fi"
   },
   "dependencies": {
     "@contentful/live-preview": "^2.17.3",
@@ -47,7 +47,7 @@
     "react": "^18.2.0",
     "react-cookie-consent": "^9.0.0",
     "react-dom": "^18.2.0",
-    "sass": "^1.70.0",
+    "sass": "^1.71.0",
     "swiper": "^11.0.6"
   },
   "devDependencies": {
