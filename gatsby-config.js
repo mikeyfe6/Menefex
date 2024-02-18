@@ -267,19 +267,31 @@ module.exports = {
             allSitePage {
               nodes {
                 path
-                pageContext
+              }
+            }
+            allContentfulBlogPost(sort: { fields: updatedAt, order: DESC }) {
+              nodes {
+                slug
+                updatedAt
               }
             }
           }
         `,
-
         resolveSiteUrl: () => superSiteUrl,
-        resolvePages: ({ allSitePage }) => allSitePage.nodes,
-        serialize: ({ path, pageContext }) => ({
+        resolvePages: ({ allSitePage, allContentfulBlogPost }) => {
+          const blogPosts = allContentfulBlogPost.nodes.map(
+            ({ slug, updatedAt }) => ({
+              path: `/${slug}/`,
+              updatedAt,
+            }),
+          );
+          return [...allSitePage.nodes, ...blogPosts];
+        },
+        serialize: ({ path, updatedAt }) => ({
           url: path,
           changefreq: 'daily',
           priority: 0.7,
-          lastmod: pageContext?.updatedAt || null,
+          lastmod: updatedAt,
         }),
       },
     },
