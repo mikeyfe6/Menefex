@@ -15,7 +15,7 @@
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "prebuild": "yarn install --frozen-lockfile",
-    "postinstall": "if [ \"$NODE_ENV\" = \"production\" ]; then node node_modules/puppeteer/install.mjs; fi"
+    "postinstall": "if [ \"$NETLIFY\" = \"true\" ]; then node node_modules/puppeteer/install.mjs; fi"
   },
   "dependencies": {
     "@contentful/live-preview": "^2.17.3",
