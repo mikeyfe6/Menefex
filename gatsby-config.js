@@ -269,7 +269,7 @@ module.exports = {
                 path
               }
             }
-            allContentfulBlogPost(sort: { fields: updatedAt, order: DESC }) {
+            allContentfulBlogPost {
               nodes {
                 slug
                 updatedAt
@@ -279,13 +279,23 @@ module.exports = {
         `,
         resolveSiteUrl: () => superSiteUrl,
         resolvePages: ({ allSitePage, allContentfulBlogPost }) => {
-          const blogPosts = allContentfulBlogPost.nodes.map(
-            ({ slug, updatedAt }) => ({
-              path: `/${slug}/`,
-              updatedAt,
-            }),
+          const blogPostsMap = allContentfulBlogPost.nodes.reduce(
+            (acc, post) => {
+              const { slug, updatedAt } = post;
+              acc[`/blog/${slug}/`] = { path: `/blog/${slug}/`, updatedAt };
+              return acc;
+            },
+            {},
           );
-          return [...allSitePage.nodes, ...blogPosts];
+
+          const sitePagesMap = allSitePage.nodes.reduce((acc, page) => {
+            acc[page.path] = { path: page.path };
+            return acc;
+          }, {});
+
+          const pagesMap = { ...sitePagesMap, ...blogPostsMap };
+
+          return Object.values(pagesMap);
         },
         serialize: ({ path, updatedAt }) => ({
           url: path,
