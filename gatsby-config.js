@@ -251,7 +251,7 @@ module.exports = {
               }),
             query: `
               {
-                allContentfulBlogPost(sort: {publishedDate: DESC}) {
+                allContentfulBlogPost(sort: {createdAt: DESC}) {
                   edges {
                     node {
                       id

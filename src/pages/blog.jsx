@@ -14,7 +14,7 @@ import * as blogpostStyles from '../styles/modules/blog.module.scss';
 const BlogPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      allContentfulBlogPost(sort: { publishedDate: DESC }) {
+      allContentfulBlogPost(sort: { createdAt: DESC }) {
         edges {
           node {
             id
@@ -28,7 +28,7 @@ const BlogPage = () => {
                 url
               }
             }
-            publishedDate(formatString: "dddd D MMMM YYYY", locale: "nl")
+            createdAt(formatString: "dddd D MMMM YYYY", locale: "nl")
           }
         }
       }
@@ -52,7 +52,7 @@ const BlogPage = () => {
                   <h4>{edge.node.title}</h4>
                   <p>{edge.node.subtitle}</p>
                   <span>
-                    Gepost: <strong>{edge.node.publishedDate}</strong> ⌁ Auteur:{' '}
+                    Gepost: <strong>{edge.node.createdAt}</strong> ⌁ Auteur:{' '}
                     <strong>{edge.node.author}</strong>
                   </span>
                 </div>

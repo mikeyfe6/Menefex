@@ -56,9 +56,19 @@ const Blog = ({ pageContext }) => {
           <img alt={title} src={file.url} className={singlepostStyle.assets} />
         );
       },
-      [BLOCKS.EMBEDDED_ENTRY]: (node) => (
-        <div>Im an embedded entry, {node}</div>
-      ),
+
+      [BLOCKS.EMBEDDED_ENTRY]: (node) => {
+        // const {
+        //   data: {
+        //     target: { title, file },
+        //   },
+        // } = node;
+
+        console.log('huhhhh');
+        console.log('MFNXWMB: EMBEDDED_ENTRY', node); // Changed comma to semicolon
+
+        return <img alt="" src="" />;
+      },
 
       [BLOCKS.PARAGRAPH]: (node, children) => (
         <p className={singlepostStyle.paragraphness}>{children}</p>
@@ -96,6 +106,12 @@ const Blog = ({ pageContext }) => {
         <hr className={singlepostStyle.horizontness} />
       ),
 
+      [BLOCKS.QUOTE]: (node, children) => (
+        <blockquote className={singlepostStyle.quoteness}>
+          {children}
+        </blockquote>
+      ),
+
       [INLINES.HYPERLINK]: ({ data }, children) => {
         const isInternal = data.uri.startsWith(siteUrl);
         const strippedUrl = isInternal
@@ -120,6 +136,36 @@ const Blog = ({ pageContext }) => {
             </a>
           );
         }
+      },
+
+      [INLINES.ENTRY_HYPERLINK]: ({ data }, children) => {
+        const { slug } = data.target;
+
+        return (
+          <Link className={singlepostStyle.hyperlinkness} to={slug}>
+            {children}
+          </Link>
+        );
+      },
+
+      [INLINES.ASSET_HYPERLINK]: ({ data }, children) => {
+        const { slug } = data.target;
+
+        return (
+          <Link className={singlepostStyle.hyperlinkness} to={slug}>
+            {children}
+          </Link>
+        );
+      },
+
+      [INLINES.EMBEDDED_ENTRY]: ({ data }, children) => {
+        const { slug } = data.target;
+
+        return (
+          <Link className={singlepostStyle.hyperlinkness} to={slug}>
+            {children}
+          </Link>
+        );
       },
     },
   };

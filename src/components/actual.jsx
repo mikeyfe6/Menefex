@@ -12,7 +12,6 @@ const Actual = () => {
         subtitle
         title
         slug
-        publishedDate
         topics {
           name
           bdcolor
@@ -21,7 +20,7 @@ const Actual = () => {
         image {
           title
           gatsbyImageData(
-            width: 625
+            width: 550
             placeholder: BLURRED
             formats: [AUTO, WEBP, AVIF]
           )
@@ -36,11 +35,13 @@ const Actual = () => {
     <section className={actualStyles.actualContainer}>
       <div className={actualStyles.actualWrapper}>
         <div>
-          <GatsbyImage
-            image={frontImage}
-            alt={data.contentfulBlogPost.image.title}
-            style={{ borderRadius: '5px' }}
-          />
+          <Link to={`/blog/${data.contentfulBlogPost.slug}/`}>
+            <GatsbyImage
+              image={frontImage}
+              alt={data.contentfulBlogPost.image.title}
+              style={{ borderRadius: '5px' }}
+            />
+          </Link>
         </div>
         <div className={actualStyles.actualText}>
           <h4>{data.contentfulBlogPost.title}</h4>

@@ -37,7 +37,7 @@ const Topic = ({ pageContext: { name, topicPosts, bdcolor } }) => (
             contentful_id: contentfulId,
             title,
             subtitle,
-            publishedDate,
+            createdAt,
             author,
             image,
           }) => (
@@ -47,7 +47,7 @@ const Topic = ({ pageContext: { name, topicPosts, bdcolor } }) => (
                   <h4>{title}</h4>
                   <p> {subtitle}</p>
                   <span>
-                    Gepost: <strong>{publishedDate}</strong> ⌁ Auteur:{' '}
+                    Gepost: <strong>{createdAt}</strong> ⌁ Auteur:{' '}
                     <strong>{author}</strong>
                   </span>
                 </div>

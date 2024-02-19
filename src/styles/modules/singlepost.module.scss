@@ -293,7 +293,9 @@
             border-radius: $low-radius;
             color: $base-color;
             padding: 1em;
-            height: 100%;
+
+            max-height: calc(100vh - 15em);
+            overflow-y: auto;
 
             @include boxShadow;
 

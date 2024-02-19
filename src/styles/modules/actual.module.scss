@@ -21,8 +21,15 @@
       @include textLink;
     }
 
-    ul > li > a {
-      @include topicButton;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1em;
+
+      > li > a {
+        @include topicButton;
+      }
     }
   }
 }

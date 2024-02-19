@@ -118,6 +118,11 @@ module.exports.createPages = async ({ graphql, actions }) => {
                     fileName
                   }
                 }
+                ... on ContentfulBlogPost {
+                  contentful_id
+                  __typename
+                  slug
+                }
               }
             }
             topics {
