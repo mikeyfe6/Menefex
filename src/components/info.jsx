@@ -113,7 +113,7 @@ const Info = () => (
             target="_blank"
             className={infoStyles.ig}
           >
-            <i className="fa-brands fa-square-instagram" />
+            <i className="fa-brands fa-instagram" />
           </a>
         </li>
 
