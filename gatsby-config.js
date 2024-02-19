@@ -228,13 +228,12 @@ module.exports = {
                 const bodyHtml = documentToHtmlString(document, options);
 
                 return {
-                  guid: edge.node.id,
                   title: edge.node.title,
-                  author: site.siteMetadata.authorEmail,
                   description: edge.node.subtitle,
                   categories: edge.node.topics.map((topic) => topic.name),
-                  date: edge.node.updatedAt,
+                  date: edge.node.createdAt,
                   url: `${site.siteMetadata.siteUrl}/blog/${edge.node.slug}`,
+                  guid: `${site.siteMetadata.siteUrl}/blog/${edge.node.slug}`,
                   lat: 52.30994007862562,
                   long: 4.974422834381031,
                   enclosure: {
@@ -259,7 +258,7 @@ module.exports = {
                       title
                       subtitle
                       slug
-                      updatedAt
+                      createdAt
                       body {
                         raw
                         references {
