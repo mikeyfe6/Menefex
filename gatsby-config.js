@@ -208,7 +208,7 @@ module.exports = {
                 const document = JSON.parse(edge.node.body.raw);
                 const bodyHtml = documentToHtmlString(document);
 
-                console.log('bodyHtml', bodyHtml);
+                // console.log('bodyHtml', bodyHtml);
 
                 return {
                   guid: edge.node.id,
