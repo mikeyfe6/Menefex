@@ -9,6 +9,20 @@ require('dotenv').config({
   path: '.env',
 });
 
+// const options = {
+//   renderNode: {
+//     [BLOCKS.EMBEDDED_ASSET]: (node, next) => {
+//       const {
+//         data: {
+//           target: { sys },
+//         },
+//       } = node;
+
+//       console.log('node', node);
+//     },
+//   },
+// };
+
 module.exports = {
   flags: {
     DEV_SSR: true,
@@ -133,7 +147,6 @@ module.exports = {
             }
           }
         `,
-
         setup: ({ query: { site } }, options) => ({
           ...options,
           title: 'Menefex WMB: RSS Feeds',
@@ -175,33 +188,51 @@ module.exports = {
                 },
               },
             },
+            {
+              'webfeeds:analytics': {
+                _attr: {
+                  id: 'G-XWVP0BZJLR',
+                  engine: 'GoogleAnalytics',
+                },
+              },
+            },
+            {
+              'webfeeds:partial': 'true',
+            },
           ],
         }),
-
         feeds: [
           {
             serialize: ({ query: { site, allContentfulBlogPost } }) =>
-              allContentfulBlogPost.edges.map((edge) => ({
-                title: edge.node.title,
-                id: edge.node.id,
-                author: site.siteMetadata.authorEmail,
-                description: edge.node.subtitle,
-                date: edge.node.updatedAt,
-                url: `${site.siteMetadata.siteUrl}/blog/${edge.node.slug}`,
-                guid: edge.node.updatedAt,
-                enclosure: {
-                  url: `https:${edge.node.image.file.url}`,
-                },
-                custom_elements: [
-                  {
-                    'webfeeds:featuredImage': `https:${edge.node.image.file.url}`,
-                  },
-                  {
-                    'content:encoded': edge.node.body.rssHtml,
-                  },
-                ],
-              })),
+              allContentfulBlogPost.edges.map((edge) => {
+                const document = JSON.parse(edge.node.body.raw);
+                const bodyHtml = documentToHtmlString(document);
 
+                console.log('bodyHtml', bodyHtml);
+
+                return {
+                  guid: edge.node.id,
+                  title: edge.node.title,
+                  author: site.siteMetadata.authorEmail,
+                  description: edge.node.subtitle,
+                  categories: edge.node.topics.map((topic) => topic.name),
+                  date: edge.node.updatedAt,
+                  url: `${site.siteMetadata.siteUrl}/blog/${edge.node.slug}`,
+                  lat: 52.30994007862562,
+                  long: 4.974422834381031,
+                  enclosure: {
+                    url: `https:${edge.node.image.file.url}`,
+                  },
+                  custom_elements: [
+                    {
+                      'webfeeds:featuredImage': `https:${edge.node.image.file.url}`,
+                    },
+                    {
+                      'content:encoded': bodyHtml,
+                    },
+                  ],
+                };
+              }),
             query: `
               {
                 allContentfulBlogPost(sort: {publishedDate: DESC}) {
@@ -213,12 +244,23 @@ module.exports = {
                       slug
                       updatedAt
                       body {
-                        rssHtml
                         raw
                         references {
                           ... on ContentfulAsset {
                             contentful_id
                             __typename
+                            title
+                            file {
+                              url
+                              details {
+                                size
+                                image {
+                                  width
+                                  height
+                                }
+                              }
+                              fileName
+                            }
                           }
                         }
                       }
@@ -227,21 +269,19 @@ module.exports = {
                           url
                         }
                       }
+                      topics {
+                        name
+                      }
                     }
                   }
                 }
               }
             `,
-
             output: '/rss.xml',
             title: 'Menefex WMB: RSS Feeds',
-            // optional configuration to insert feed reference in pages:
-            // if `string` is used, it will be used to create RegExp and then test if pathname of
-            // current page satisfied this regular expression;
-            // if not provided or `undefined`, all pages will have feed reference inserted
             match: '^/blog/',
-            // optional configuration to specify external rss feed, such as feedburner
             link: 'https://feeds.feedburner.com/MenefexWMB',
+            language: 'nl-NL',
           },
         ],
       },
