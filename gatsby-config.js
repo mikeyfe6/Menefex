@@ -2,6 +2,9 @@
     https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
+const { documentToHtmlString } = require('@contentful/rich-text-html-renderer');
+const { BLOCKS } = require('@contentful/rich-text-types');
+
 const superSiteUrl = process.env.URL || 'https://menefex.nl';
 
 require('dotenv').config({
@@ -206,9 +209,23 @@ module.exports = {
             serialize: ({ query: { site, allContentfulBlogPost } }) =>
               allContentfulBlogPost.edges.map((edge) => {
                 const document = JSON.parse(edge.node.body.raw);
-                const bodyHtml = documentToHtmlString(document);
 
-                // console.log('bodyHtml', bodyHtml);
+                const options = {
+                  renderNode: {
+                    [BLOCKS.LIST_ITEM]: (node, children) => {
+                      if (
+                        node.content.length === 1 &&
+                        node.content[0].nodeType === BLOCKS.PARAGRAPH
+                      ) {
+                        return `<li>${node.content[0].content[0].value}</li>`;
+                      }
+
+                      return `<li>${children}</li>`;
+                    },
+                  },
+                };
+
+                const bodyHtml = documentToHtmlString(document, options);
 
                 return {
                   guid: edge.node.id,
