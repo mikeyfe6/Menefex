@@ -30,6 +30,7 @@ const Blog = ({ pageContext }) => {
     image,
     body,
     slug,
+    createdAt,
     publishedPost,
     updatedPost,
     author,
@@ -282,7 +283,7 @@ const Blog = ({ pageContext }) => {
               </section>
               <aside>
                 <div className={singlepostStyle.gepost}>
-                  Gepost op {publishedPost}
+                  Gepost op {createdAt}
                 </div>
                 <div className={singlepostStyle.sidebar}>
                   <div className={singlepostStyle.author}>

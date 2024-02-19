@@ -173,7 +173,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
                   url
                 }
               }
-              publishedDate(formatString: "dddd D MMMM YYYY", locale: "nl")
+              createdAt(formatString: "dddd D MMMM YYYY", locale: "nl")
             }
           }
         }
@@ -189,7 +189,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
       context: {
         slug: edge.node.slug,
         updatedAt: edge.node.updatedAt,
-        publishedDate: edge.node.publishedDate,
+        createdAt: edge.node.createdAt,
         title: edge.node.title,
         subtitle: edge.node.subtitle,
         keywords: edge.node.keywords,
