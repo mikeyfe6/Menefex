@@ -177,3 +177,104 @@
   width: 6px;
   margin-right: 5px;
 }
+
+@mixin blogCard {
+  background: linear-gradient(145deg, $fourth-color, #f2f2f2);
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+  border: 2px solid $fourth-color;
+  border-radius: $high-radius;
+  min-height: 175px;
+
+  @include phablet {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 1.5em;
+  }
+
+  @include mobile {
+    flex-direction: column-reverse;
+    gap: 1.5em;
+  }
+
+  @include smoothTrans;
+  @include boxShadow;
+
+  &:hover {
+    opacity: 0.7;
+    color: $link-color;
+    border-color: $link-color;
+    transform: scale(1.025);
+  }
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.75em;
+    width: 100%;
+
+    h4 {
+      font-size: 1.125rem;
+      font-weight: 600;
+    }
+
+    p {
+      color: $primary-color;
+      display: block;
+      max-width: 75ch;
+      font-weight: 300;
+      font-size: 0.9rem;
+    }
+
+    span {
+      color: $primary-color;
+      background: linear-gradient(145deg, $secondary-color, #e2e2e2);
+      border: 3px solid #e2e2e2;
+      border-radius: 5px;
+      font-size: 0.75rem;
+      padding: 0.5em;
+      font-style: italic;
+      display: inline;
+      width: fit-content;
+
+      @include phablet {
+        align-self: flex-end;
+        width: 100%;
+      }
+
+      @include mobile {
+        font-size: 0.675rem;
+      }
+
+      @include compact {
+        font-size: 0.6rem;
+      }
+    }
+  }
+
+  img {
+    min-width: 200px;
+    width: 200px;
+    max-height: 125px;
+    overflow: hidden;
+    outline: 3px solid $fourth-color;
+    border-radius: $low-radius;
+    object-fit: cover;
+
+    @include phablet {
+      width: 100%;
+      max-height: 225px;
+    }
+
+    @include mobile {
+      max-width: 100%;
+      max-height: 200px;
+    }
+
+    @include boxShadow;
+  }
+}
