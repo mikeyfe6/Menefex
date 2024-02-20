@@ -25,7 +25,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 0.5em;
+      gap: 0.75em;
 
       > li > a {
         @include topicButton;
