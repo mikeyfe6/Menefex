@@ -89,7 +89,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
                 url
               }
             }
-            createdAt(formatString: "dddd D MMMM YYYY", locale: "nl")
+            createdAt(formatString: "dddd D MMMM YYYY, HH:mm", locale: "nl")
             publishedPost: publishedDate(
               formatString: "dddd D MMMM YYYY, HH:mm"
               locale: "nl"
