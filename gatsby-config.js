@@ -208,7 +208,7 @@ module.exports = {
                       'webfeeds:featuredImage': `https:${edge.node.image.file.url}`,
                     },
                     {
-                      'content:encoded': rssHtml,
+                      'content:encoded': edge.node.rssHtml,
                     },
                   ],
                 };
