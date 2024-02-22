@@ -143,7 +143,7 @@ const Blog = ({ pageContext }) => {
         const { slug } = data.target;
 
         return (
-          <Link className={singlepostStyle.hyperlinkness} to={slug}>
+          <Link className={singlepostStyle.hyperlinkness} to={'/blog/' + slug}>
             {children}
           </Link>
         );
@@ -163,7 +163,7 @@ const Blog = ({ pageContext }) => {
         const { slug } = data.target;
 
         return (
-          <Link className={singlepostStyle.hyperlinkness} to={slug}>
+          <Link className={singlepostStyle.hyperlinkness} to={'/blog/' + slug}>
             {children}
           </Link>
         );

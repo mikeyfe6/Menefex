@@ -4,6 +4,85 @@ const fs = require('fs').promises;
 const puppeteer = require('puppeteer');
 
 const { documentToHtmlString } = require('@contentful/rich-text-html-renderer');
+const { BLOCKS, INLINES } = require('@contentful/rich-text-types');
+
+exports.createResolvers = ({ createResolvers }) => {
+  createResolvers({
+    ContentfulBlogPostBody: {
+      rssHtml: {
+        type: 'String',
+        resolve: (source) => {
+          const document = JSON.parse(source.raw);
+          const options = {
+            renderNode: {
+              [BLOCKS.EMBEDDED_ASSET]: (node) => {
+                const entryId = node.data.target.sys.id;
+
+                const menefexImages = [
+                  {
+                    id: '7mV6EvJJrv9UThjCKcOuou',
+                    url: '//images.ctfassets.net/nn38kx5zm1zj/2iIqFM7QetWndzLPyglJlu/ba6d761b45ea9cadb0408f686cb0c5f4/seomnfx.jpeg',
+                    alt: 'Call to action',
+                  },
+                  {
+                    id: '2iIqFM7QetWndzLPyglJlu',
+                    url: '//images.ctfassets.net/nn38kx5zm1zj/2iIqFM7QetWndzLPyglJlu/ba6d761b45ea9cadb0408f686cb0c5f4/seomnfx.jpeg',
+                    alt: 'SEO Beschrijving',
+                  },
+                  {
+                    id: '7AnjWCrI6e85kwDRPEIi8l',
+                    url: '//images.ctfassets.net/nn38kx5zm1zj/7AnjWCrI6e85kwDRPEIi8l/93811f33d083916a530e892e81574e66/Digital_Transformation.jpg',
+                    alt: 'SEO The Road 2 Digital Success',
+                  },
+                ];
+
+                const matchedAsset = menefexImages.find(
+                  (asset) => asset.id === entryId,
+                );
+
+                if (matchedAsset) {
+                  const url = matchedAsset.url;
+                  const alt = matchedAsset.alt;
+
+                  return `<img src="https:${url}" alt="${alt}">`;
+                } else {
+                  return '';
+                }
+              },
+              [INLINES.ENTRY_HYPERLINK]: (node) => {
+                const entryId = node.data.target.sys.id;
+                const siteUrl = 'https://www.menefex.nl';
+
+                const menefexFeeds = [
+                  { id: '5Tap9uH6wexAo43jcttwx8', slug: 'seo-onmisbare-tool' },
+                  {
+                    id: '19yMVb2hV6xPsivk9T3fQk',
+                    slug: 'verschillen-webapplicatie-en-website',
+                  },
+                ];
+
+                const matchedFeed = menefexFeeds.find(
+                  (feed) => feed.id === entryId,
+                );
+
+                if (matchedFeed) {
+                  const slug = matchedFeed.slug;
+                  const content = node.content
+                    .map((content) => content.value)
+                    .join('');
+                  return `<a href="${siteUrl}/blog/${slug}">${content}</a>`;
+                } else {
+                  return '';
+                }
+              },
+            },
+          };
+          return documentToHtmlString(document, options);
+        },
+      },
+    },
+  });
+};
 
 const captureScreenshot = async (url, filename, delay) => {
   try {
@@ -56,17 +135,6 @@ exports.onPreBootstrap = async () => {
   await captureScreenshot('https://kn-acdig.com', 'kn-acdig', 0);
   await captureScreenshot('https://dsmelodies.com', 'dsmelodies', 0);
   await captureScreenshot('https://afrodiasphere.com', 'afrodiasphere', 3000);
-};
-
-exports.createResolvers = ({ createResolvers }) => {
-  createResolvers({
-    ContentfulBlogPostBody: {
-      rssHtml: {
-        type: 'String',
-        resolve: (source) => documentToHtmlString(JSON.parse(source.raw)),
-      },
-    },
-  });
 };
 
 module.exports.createPages = async ({ graphql, actions }) => {

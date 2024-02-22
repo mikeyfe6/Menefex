@@ -2,29 +2,12 @@
     https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
-const { documentToHtmlString } = require('@contentful/rich-text-html-renderer');
-const { BLOCKS } = require('@contentful/rich-text-types');
-
 const superSiteUrl = process.env.URL || 'https://menefex.nl';
 
 require('dotenv').config({
   // path: `.env.${process.env.NODE_ENV}`,
   path: '.env',
 });
-
-// const options = {
-//   renderNode: {
-//     [BLOCKS.EMBEDDED_ASSET]: (node, next) => {
-//       const {
-//         data: {
-//           target: { sys },
-//         },
-//       } = node;
-
-//       console.log('node', node);
-//     },
-//   },
-// };
 
 module.exports = {
   flags: {
@@ -208,25 +191,6 @@ module.exports = {
           {
             serialize: ({ query: { site, allContentfulBlogPost } }) =>
               allContentfulBlogPost.edges.map((edge) => {
-                const document = JSON.parse(edge.node.body.raw);
-
-                const options = {
-                  renderNode: {
-                    [BLOCKS.LIST_ITEM]: (node, children) => {
-                      if (
-                        node.content.length === 1 &&
-                        node.content[0].nodeType === BLOCKS.PARAGRAPH
-                      ) {
-                        return `<li>${node.content[0].content[0].value}</li>`;
-                      }
-
-                      return `<li>${children}</li>`;
-                    },
-                  },
-                };
-
-                const bodyHtml = documentToHtmlString(document, options);
-
                 return {
                   title: edge.node.title,
                   description: edge.node.subtitle,
@@ -244,7 +208,7 @@ module.exports = {
                       'webfeeds:featuredImage': `https:${edge.node.image.file.url}`,
                     },
                     {
-                      'content:encoded': bodyHtml,
+                      'content:encoded': rssHtml,
                     },
                   ],
                 };
@@ -260,23 +224,15 @@ module.exports = {
                       slug
                       createdAt
                       body {
-                        raw
+                        rssHtml
                         references {
                           ... on ContentfulAsset {
                             contentful_id
                             __typename
-                            title
-                            file {
-                              url
-                              details {
-                                size
-                                image {
-                                  width
-                                  height
-                                }
-                              }
-                              fileName
-                            }
+                          }
+                          ... on ContentfulBlogPost {
+                            contentful_id
+                            __typename
                           }
                         }
                       }
