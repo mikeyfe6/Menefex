@@ -251,6 +251,7 @@ module.exports = {
             `,
             output: '/rss.xml',
             title: 'Menefex WMB: RSS Feeds',
+            link: 'https://feeds.feedburner.com/menefexwmb',
             match: '^/blog/',
             language: 'nl-NL',
           },
