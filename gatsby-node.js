@@ -1,5 +1,6 @@
 const path = require('path');
 const fs = require('fs').promises;
+const React = require('react');
 
 const puppeteer = require('puppeteer');
 
@@ -16,15 +17,6 @@ exports.createResolvers = ({ createResolvers }) => {
           const options = {
             preserveWhitespace: true,
             renderNode: {
-              [BLOCKS.LIST_ITEM]: (node, children) => {
-                return `<li>
-                    ${React.Children.map(
-                      children,
-                      (child) =>
-                        `<div style="display: inline-block">${child}</div>`,
-                    )}
-                  </li>`;
-              },
               [BLOCKS.EMBEDDED_ASSET]: (node) => {
                 const entryId = node.data.target.sys.id;
 
