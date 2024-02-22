@@ -14,6 +14,7 @@ exports.createResolvers = ({ createResolvers }) => {
         resolve: (source) => {
           const document = JSON.parse(source.raw);
           const options = {
+            preserveWhitespace: true,
             renderNode: {
               [BLOCKS.EMBEDDED_ASSET]: (node) => {
                 const entryId = node.data.target.sys.id;
@@ -147,7 +148,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
         edges {
           node {
             title
-            contentfulId: contentful_id
+            contentful_id
             subtitle
             slug
             keywords
@@ -157,8 +158,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
                 url
               }
             }
-            createdAt(formatString: "dddd D MMMM YYYY, HH:mm", locale: "nl")
-            publishedPost: publishedDate(
+            publishedPost: createdAt(
               formatString: "dddd D MMMM YYYY, HH:mm"
               locale: "nl"
             )
@@ -166,7 +166,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
               formatString: "dddd D MMMM YYYY, HH:mm"
               locale: "nl"
             )
-            publishedSchema: publishedDate
+            publishedSchema: createdAt
             updatedSchema: updatedAt
             body {
               raw
@@ -199,8 +199,8 @@ module.exports.createPages = async ({ graphql, actions }) => {
               name
               slug
               bdcolor
-              blogPost: blog_post {
-                contentfulId: contentful_id
+              blog_post {
+                contentful_id
                 title
                 subtitle
                 slug
@@ -257,8 +257,8 @@ module.exports.createPages = async ({ graphql, actions }) => {
       ownerNodeId: edge.node.contentful_id,
       context: {
         slug: edge.node.slug,
-        updatedAt: edge.node.updatedAt,
-        createdAt: edge.node.createdAt,
+        updatedPost: edge.node.updatedPost,
+        publishedPost: edge.node.publishedPost,
         title: edge.node.title,
         subtitle: edge.node.subtitle,
         keywords: edge.node.keywords,
@@ -266,9 +266,8 @@ module.exports.createPages = async ({ graphql, actions }) => {
         image: edge.node.image,
         body: edge.node.body,
         topics: edge.node.topics,
-        updatedPost: edge.node.updatedPost,
-        publishedPost: edge.node.publishedPost,
         updatedSchema: edge.node.updatedSchema,
+        publishedSchema: edge.node.publishedSchema,
       },
     });
   });

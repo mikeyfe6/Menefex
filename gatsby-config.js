@@ -128,7 +128,6 @@ module.exports = {
                 bizEmail
                 authorEmail
                 siteUrl
-                site_url: siteUrl
               }
             }
           }
@@ -191,24 +190,36 @@ module.exports = {
           {
             serialize: ({ query: { site, allContentfulBlogPost } }) =>
               allContentfulBlogPost.edges.map((edge) => {
+                const { siteUrl } = site.siteMetadata;
+                const {
+                  contentful_id,
+                  title,
+                  subtitle,
+                  slug,
+                  createdAt,
+                  body,
+                  image,
+                  topics,
+                } = edge.node;
+
                 return {
-                  title: edge.node.title,
-                  description: edge.node.subtitle,
-                  categories: edge.node.topics.map((topic) => topic.name),
-                  date: edge.node.createdAt,
-                  url: `${site.siteMetadata.siteUrl}/blog/${edge.node.slug}`,
-                  guid: `${site.siteMetadata.siteUrl}/blog/${edge.node.slug}`,
+                  title: title,
+                  description: subtitle,
+                  categories: topics.map((topic) => topic.name),
+                  date: createdAt,
+                  url: `${siteUrl}/blog/${slug}`,
+                  guid: contentful_id,
                   lat: 52.30994007862562,
                   long: 4.974422834381031,
                   enclosure: {
-                    url: `https:${edge.node.image.file.url}`,
+                    url: `https:${image.file.url}`,
                   },
                   custom_elements: [
                     {
-                      'webfeeds:featuredImage': `https:${edge.node.image.file.url}`,
+                      'webfeeds:featuredImage': `https:${image.file.url}`,
                     },
                     {
-                      'content:encoded': edge.node.body.rssHtml,
+                      'content:encoded': body.rssHtml,
                     },
                   ],
                 };
@@ -218,7 +229,7 @@ module.exports = {
                 allContentfulBlogPost(sort: {createdAt: DESC}) {
                   edges {
                     node {
-                      id
+                      contentful_id
                       title
                       subtitle
                       slug

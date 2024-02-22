@@ -30,15 +30,15 @@ const Blog = ({ pageContext }) => {
     image,
     body,
     slug,
-    createdAt,
-    publishedPost,
     updatedPost,
+    publishedPost,
     author,
   } = pageContext;
 
   const { siteUrl } = useSiteMetadata();
 
   const options = {
+    preserveWhitespace: true,
     renderMark: {
       [MARKS.BOLD]: (text) => <b>{text}</b>,
       [MARKS.CODE]: (text) => <code>{text}</code>,
@@ -71,43 +71,41 @@ const Blog = ({ pageContext }) => {
         return <img alt="" src="" />;
       },
 
-      [BLOCKS.PARAGRAPH]: (node, children) => (
+      [BLOCKS.PARAGRAPH]: (children) => (
         <p className={singlepostStyle.paragraphness}>{children}</p>
       ),
-      [BLOCKS.HEADING_1]: (node, children) => (
+      [BLOCKS.HEADING_1]: (children) => (
         <h1 className={singlepostStyle.headoneness}>{children}</h1>
       ),
-      [BLOCKS.HEADING_2]: (node, children) => (
+      [BLOCKS.HEADING_2]: (children) => (
         <h2 className={singlepostStyle.headtwoness}>{children}</h2>
       ),
-      [BLOCKS.HEADING_3]: (node, children) => (
+      [BLOCKS.HEADING_3]: (children) => (
         <h3 className={singlepostStyle.headthreeness}>{children}</h3>
       ),
-      [BLOCKS.HEADING_4]: (node, children) => (
+      [BLOCKS.HEADING_4]: (children) => (
         <h4 className={singlepostStyle.headfourness}>{children}</h4>
       ),
-      [BLOCKS.HEADING_5]: (node, children) => (
+      [BLOCKS.HEADING_5]: (children) => (
         <h5 className={singlepostStyle.headfiveness}>{children}</h5>
       ),
-      [BLOCKS.HEADING_6]: (node, children) => (
+      [BLOCKS.HEADING_6]: (children) => (
         <h6 className={singlepostStyle.headsixness}>{children}</h6>
       ),
 
-      [BLOCKS.UL_LIST]: (node, children) => (
+      [BLOCKS.UL_LIST]: (children) => (
         <ul className={singlepostStyle.unorderedlistness}>{children}</ul>
       ),
-      [BLOCKS.OL_LIST]: (node, children) => (
+      [BLOCKS.OL_LIST]: (children) => (
         <ol className={singlepostStyle.orderedlistness}>{children}</ol>
       ),
-      [BLOCKS.LIST_ITEM]: (node, children) => (
+      [BLOCKS.LIST_ITEM]: (children) => (
         <li className={singlepostStyle.listitemness}>{children}</li>
       ),
 
-      [BLOCKS.HR]: (node, children) => (
-        <hr className={singlepostStyle.horizontness} />
-      ),
+      [BLOCKS.HR]: () => <hr className={singlepostStyle.horizontness} />,
 
-      [BLOCKS.QUOTE]: (node, children) => (
+      [BLOCKS.QUOTE]: (children) => (
         <blockquote className={singlepostStyle.quoteness}>
           {children}
         </blockquote>
@@ -283,7 +281,7 @@ const Blog = ({ pageContext }) => {
               </section>
               <aside>
                 <div className={singlepostStyle.gepost}>
-                  Gepost op {createdAt}
+                  Gepost op {publishedPost}
                 </div>
                 <div className={singlepostStyle.sidebar}>
                   <div className={singlepostStyle.author}>
