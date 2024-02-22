@@ -23,7 +23,7 @@ import * as singlepostStyle from '../styles/modules/singlepost.module.scss';
 
 const Blog = ({ pageContext }) => {
   const {
-    contentfulId,
+    contentful_id,
     title,
     subtitle,
     topics,
@@ -38,7 +38,7 @@ const Blog = ({ pageContext }) => {
   const { siteUrl } = useSiteMetadata();
 
   const options = {
-    preserveWhitespace: true,
+    // preserveWhitespace: true,
     renderMark: {
       [MARKS.BOLD]: (text) => <b>{text}</b>,
       [MARKS.CODE]: (text) => <code>{text}</code>,
@@ -193,7 +193,7 @@ const Blog = ({ pageContext }) => {
   const currentPostSlug = slug;
 
   postTopic.forEach((topic) => {
-    topic.blogPost.forEach((post) => {
+    topic.blog_post.forEach((post) => {
       if (post.slug !== currentPostSlug && !relatedPostsSet.has(post.slug)) {
         relatedPostsSet.add(post.slug);
         relatedPosts.push(post);
@@ -272,7 +272,7 @@ const Blog = ({ pageContext }) => {
                   <Disqus
                     config={{
                       url: `https://menefex.nl/blog/${slug}/`,
-                      identifier: contentfulId,
+                      identifier: contentful_id,
                       language: 'nl_NL',
                       title,
                     }}
@@ -314,7 +314,7 @@ const Blog = ({ pageContext }) => {
 
                     <ul>
                       {relatedPosts?.slice(0, 3).map((post) => (
-                        <li key={post.contentfulId}>
+                        <li key={post.contentful_id}>
                           <Link to={`/blog/${post.slug}/`}>
                             <h5>{post.title}</h5>
                             <p>{post.subtitle}</p>
@@ -358,7 +358,7 @@ const Blog = ({ pageContext }) => {
                   const projectImg = getImage(post?.image?.gatsbyImageData);
 
                   return (
-                    <li key={post?.contentfulId}>
+                    <li key={post?.contentful_id}>
                       <Link to={`/blog/${post?.slug}/`}>
                         <GatsbyImage
                           image={projectImg}

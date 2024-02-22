@@ -34,14 +34,14 @@ const Topic = ({ pageContext: { name, topicPosts, bdcolor } }) => (
         topicPosts.map(
           ({
             slug,
-            contentful_id: contentfulId,
+            contentful_id,
             title,
             subtitle,
             createdAt,
             author,
             image,
           }) => (
-            <li key={contentfulId}>
+            <li key={contentful_id}>
               <Link to={`/blog/${slug}/`}>
                 <div>
                   <h4>{title}</h4>

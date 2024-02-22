@@ -40,16 +40,8 @@ const TopicPage = () => {
       <section>
         <ul className={topicStyles.topics}>
           {data.allContentfulTopic.edges.map(
-            ({
-              node: {
-                contentful_id: contentfulId,
-                slug,
-                bdcolor,
-                name,
-                description,
-              },
-            }) => (
-              <li key={contentfulId}>
+            ({ node: { contentful_id, slug, bdcolor, name, description } }) => (
+              <li key={contentful_id}>
                 <Link to={`/topics/${slug}/`} style={{ borderColor: bdcolor }}>
                   <h4>
                     <span style={{ color: bdcolor }}>#</span> {name}
