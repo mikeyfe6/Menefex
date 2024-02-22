@@ -45,7 +45,7 @@ exports.createResolvers = ({ createResolvers }) => {
                   const url = matchedAsset.url;
                   const alt = matchedAsset.alt;
 
-                  return `<img src="https:${url}" alt="${alt}">`;
+                  return `<img src="https:${url}" alt="${alt}" style="height: 100%; width: 100%;">`;
                 } else {
                   return '';
                 }
