@@ -181,9 +181,6 @@ module.exports = {
                 },
               },
             },
-            {
-              'webfeeds:partial': 'true',
-            },
           ],
         }),
         feeds: [
