@@ -38,7 +38,7 @@ const Blog = ({ pageContext }) => {
   const { siteUrl } = useSiteMetadata();
 
   const options = {
-    // preserveWhitespace: true,
+    preserveWhitespace: true,
     renderMark: {
       [MARKS.BOLD]: (text) => <b>{text}</b>,
       [MARKS.CODE]: (text) => <code>{text}</code>,
@@ -46,7 +46,7 @@ const Blog = ({ pageContext }) => {
       [MARKS.UNDERLINE]: (text) => <u>{text}</u>,
     },
     renderNode: {
-      [BLOCKS.EMBEDDED_ASSET]: (node) => {
+      [BLOCKS.EMBEDDED_ASSET]: (node, children) => {
         const {
           data: {
             target: { title, file },
@@ -58,54 +58,52 @@ const Blog = ({ pageContext }) => {
         );
       },
 
-      [BLOCKS.EMBEDDED_ENTRY]: (node) => {
-        // const {
-        //   data: {
-        //     target: { title, file },
-        //   },
-        // } = node;
-
-        console.log('huhhhh');
-        console.log('MFNXWMB: EMBEDDED_ENTRY', node); // Changed comma to semicolon
-
-        return <img alt="" src="" />;
+      [BLOCKS.EMBEDDED_ENTRY]: (node, children) => {
+        // // const {
+        // //   data: {
+        // //     target: { title, file },
+        // //   },
+        // // } = node;
+        // console.log('huhhhh');
+        // console.log('MFNXWMB: EMBEDDED_ENTRY', node); // Changed comma to semicolon
+        // return <img alt="" src="" />;
       },
 
-      [BLOCKS.PARAGRAPH]: (children) => (
+      [BLOCKS.PARAGRAPH]: (node, children) => (
         <p className={singlepostStyle.paragraphness}>{children}</p>
       ),
-      [BLOCKS.HEADING_1]: (children) => (
+      [BLOCKS.HEADING_1]: (node, children) => (
         <h1 className={singlepostStyle.headoneness}>{children}</h1>
       ),
-      [BLOCKS.HEADING_2]: (children) => (
+      [BLOCKS.HEADING_2]: (node, children) => (
         <h2 className={singlepostStyle.headtwoness}>{children}</h2>
       ),
-      [BLOCKS.HEADING_3]: (children) => (
+      [BLOCKS.HEADING_3]: (node, children) => (
         <h3 className={singlepostStyle.headthreeness}>{children}</h3>
       ),
-      [BLOCKS.HEADING_4]: (children) => (
+      [BLOCKS.HEADING_4]: (node, children) => (
         <h4 className={singlepostStyle.headfourness}>{children}</h4>
       ),
-      [BLOCKS.HEADING_5]: (children) => (
+      [BLOCKS.HEADING_5]: (node, children) => (
         <h5 className={singlepostStyle.headfiveness}>{children}</h5>
       ),
-      [BLOCKS.HEADING_6]: (children) => (
+      [BLOCKS.HEADING_6]: (node, children) => (
         <h6 className={singlepostStyle.headsixness}>{children}</h6>
       ),
 
-      [BLOCKS.UL_LIST]: (children) => (
+      [BLOCKS.UL_LIST]: (node, children) => (
         <ul className={singlepostStyle.unorderedlistness}>{children}</ul>
       ),
-      [BLOCKS.OL_LIST]: (children) => (
+      [BLOCKS.OL_LIST]: (node, children) => (
         <ol className={singlepostStyle.orderedlistness}>{children}</ol>
       ),
-      [BLOCKS.LIST_ITEM]: (children) => (
+      [BLOCKS.LIST_ITEM]: (node, children) => (
         <li className={singlepostStyle.listitemness}>{children}</li>
       ),
 
       [BLOCKS.HR]: () => <hr className={singlepostStyle.horizontness} />,
 
-      [BLOCKS.QUOTE]: (children) => (
+      [BLOCKS.QUOTE]: (node, children) => (
         <blockquote className={singlepostStyle.quoteness}>
           {children}
         </blockquote>
