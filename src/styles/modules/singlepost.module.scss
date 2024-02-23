@@ -418,7 +418,7 @@
         > ul {
           display: flex;
           flex-wrap: wrap;
-          gap: 0.25em 0.75em;
+          gap: 0.5em 0.75em;
 
           li > a {
             @include topicButton;
