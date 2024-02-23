@@ -159,6 +159,7 @@
   font-weight: 500;
   background: $white-color;
   font-size: 0.75rem;
+  width: fit-content;
 
   @include boxShadow;
   @include smoothTrans;
