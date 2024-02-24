@@ -41,7 +41,11 @@
     }
 
     > span {
-      font-size: 14px;
+      font-size: 0.9rem;
+
+      @include mobile {
+        font-size: 0.8rem;
+      }
     }
   }
 
