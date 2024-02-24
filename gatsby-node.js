@@ -15,7 +15,7 @@ exports.createResolvers = ({ createResolvers }) => {
         resolve: (source) => {
           const document = JSON.parse(source.raw);
           const options = {
-            preserveWhitespace: true,
+            preserveWhitespace: false,
             renderNode: {
               [BLOCKS.EMBEDDED_ASSET]: (node) => {
                 const entryId = node.data.target.sys.id;

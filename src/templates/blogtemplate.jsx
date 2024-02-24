@@ -38,7 +38,7 @@ const Blog = ({ pageContext }) => {
   const { siteUrl } = useSiteMetadata();
 
   const options = {
-    preserveWhitespace: true,
+    preserveWhitespace: false,
     renderMark: {
       [MARKS.BOLD]: (text) => <b>{text}</b>,
       [MARKS.CODE]: (text) => <code>{text}</code>,
