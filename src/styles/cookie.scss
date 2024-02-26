@@ -38,13 +38,13 @@
   &-content {
     > p {
       color: white;
-    }
 
-    > span {
-      font-size: 0.9rem;
+      > span {
+        font-size: 0.9rem;
 
-      @include mobile {
-        font-size: 0.8rem;
+        @include mobile {
+          font-size: 0.8rem;
+        }
       }
     }
   }
