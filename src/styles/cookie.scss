@@ -39,14 +39,21 @@
     > p {
       color: white;
       margin: 1em 0 1.5em;
+      font-size: 0.95rem;
+      width: 97.5%;
+
+      @include mobile {
+        font-size: 0.925rem;
+        width: 100%;
+      }
 
       > span {
-        font-size: 0.9rem;
+        font-size: 0.875rem;
         display: block;
         margin: 1em 0;
 
         @include mobile {
-          font-size: 0.8rem;
+          font-size: 0.825rem;
         }
       }
     }
