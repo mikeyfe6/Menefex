@@ -71,7 +71,6 @@ const Layout = ({ children }) => {
         overlay
       >
         <h3>Cookies</h3>
-        <br />
         <p>
           Deze site plaatst cookies op je computer om je websitebezoek te
           optimaliseren en gepersonaliseerde diensten aan te bieden, zowel hier
@@ -80,8 +79,6 @@ const Layout = ({ children }) => {
             Privacybeleid{' '}
           </Link>{' '}
           voor meer informatie over de gebruikte cookies.
-          <br />
-          <br />
           <span>
             We volgen je gegevens <b>niet</b> bij sitebezoeken, maar om aan je
             voorkeuren te voldoen, gebruiken we enkele cookies zodat je deze

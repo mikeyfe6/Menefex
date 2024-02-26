@@ -38,9 +38,12 @@
   &-content {
     > p {
       color: white;
+      margin: 1em 0 1.5em;
 
       > span {
         font-size: 0.9rem;
+        display: block;
+        margin: 1em 0;
 
         @include mobile {
           font-size: 0.8rem;
@@ -55,7 +58,6 @@
       justify-content: flex-end;
       gap: 1em;
       align-items: center;
-      margin-top: 1.5rem;
 
       @include mobile {
         justify-content: flex-start;
@@ -67,6 +69,10 @@
       background-color: $secondary-color;
       border-radius: $low-radius;
       padding: 0.5em 1em;
+
+      @include mobile {
+        font-size: 0.9rem;
+      }
     }
 
     &-decline {
@@ -76,6 +82,10 @@
       border-radius: $low-radius;
       padding: 0.5em 1em;
       color: $secondary-color;
+
+      @include mobile {
+        font-size: 0.9rem;
+      }
     }
   }
 }
