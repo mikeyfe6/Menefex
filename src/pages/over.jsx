@@ -30,6 +30,7 @@ export const Head = () => {
   const breadcrumbSchema = {
     '@context': 'https://schema.org/',
     '@type': 'BreadcrumbList',
+    '@id': siteUrl + '/#breadcrumb',
     itemListElement: [
       {
         '@type': 'ListItem',
@@ -49,6 +50,7 @@ export const Head = () => {
   const personSchema = {
     '@context': 'https://schema.org',
     '@type': 'Person',
+    '@id': siteUrl + '/#person',
     name: author,
     url: siteUrl,
     image: siteUrl + authorImage,
@@ -71,6 +73,7 @@ export const Head = () => {
   const organizationSchema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
+    '@id': siteUrl + '/#organization',
     name: title,
     url: siteUrl,
     image: siteUrl + image,

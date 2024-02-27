@@ -57,6 +57,7 @@ export const Head = () => {
   const breadcrumbSchema = {
     '@context': 'https://schema.org/',
     '@type': 'BreadcrumbList',
+    '@id': siteUrl + '/#breadcrumb',
     itemListElement: [
       {
         '@type': 'ListItem',
@@ -70,6 +71,7 @@ export const Head = () => {
   const websiteSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
+    '@id': siteUrl + '/#website',
     name: title,
     url: siteUrl,
   };
@@ -77,6 +79,7 @@ export const Head = () => {
   const organizationSchema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
+    '@id': siteUrl + '/#organization',
     name: title,
     alternateName: company,
     url: siteUrl,
@@ -85,6 +88,7 @@ export const Head = () => {
     contactPoint: [
       {
         '@type': 'ContactPoint',
+        '@id': siteUrl + '/#customerService',
         telephone: bizTel,
         areaServed: ['NL', 'BE', 'SR', 'GB'],
         contactOption: 'TollFree',
@@ -93,6 +97,7 @@ export const Head = () => {
       },
       {
         '@type': 'ContactPoint',
+        '@id': siteUrl + '/#technicalsupport',
         telephone: bizTel,
         areaServed: ['NL', 'BE', 'SR', 'GB'],
         contactOption: 'TollFree',

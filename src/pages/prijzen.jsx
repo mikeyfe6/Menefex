@@ -62,6 +62,7 @@ export const Head = () => {
   const breadcrumbSchema = {
     '@context': 'https://schema.org/',
     '@type': 'BreadcrumbList',
+    '@id': siteUrl + '/#breadcrumb',
     itemListElement: [
       {
         '@type': 'ListItem',
@@ -81,6 +82,7 @@ export const Head = () => {
   const budgetPlanSchema = {
     '@context': 'https://schema.org/',
     '@type': 'Product',
+    '@id': siteUrl + '/#budgetplan',
     name: 'Starter Plan',
     image: siteUrl + priceImage,
     description: description,
@@ -102,6 +104,7 @@ export const Head = () => {
   const starterPlanSchema = {
     '@context': 'https://schema.org/',
     '@type': 'Product',
+    '@id': siteUrl + '/#starterplan',
     name: 'Starter Plan',
     image: siteUrl + priceImage,
     description: description,
@@ -123,6 +126,7 @@ export const Head = () => {
   const establishedPlanSchema = {
     '@context': 'https://schema.org/',
     '@type': 'Product',
+    '@id': siteUrl + '/#establishedplan',
     name: 'Established Plan',
     image: siteUrl + priceImage,
     description: description,
@@ -144,6 +148,7 @@ export const Head = () => {
   const businessPlanSchema = {
     '@context': 'https://schema.org/',
     '@type': 'Product',
+    '@id': siteUrl + '/#businessplan',
     name: 'Business Plan',
     image: `${siteUrl}${priceImage}`,
     description: description,

@@ -73,6 +73,7 @@ export const Head = ({ pageContext: { name, description, slug } }) => {
   const breadcrumbSchema = {
     '@context': 'https://schema.org/',
     '@type': 'BreadcrumbList',
+    '@id': siteUrl + '/#breadcrumb',
     itemListElement: [
       {
         '@type': 'ListItem',

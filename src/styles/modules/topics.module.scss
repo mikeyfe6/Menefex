@@ -24,6 +24,10 @@
   margin-left: auto;
   margin-right: 3em;
 
+  @include tablet {
+    margin: 3em 2em 0 auto;
+  }
+
   @include mobile {
     max-width: 100%;
     margin: 3em 0 0 auto;
@@ -39,6 +43,10 @@
 .topics {
   width: 95%;
   margin: 0 auto;
+
+  @include mobile {
+    width: 100%;
+  }
 
   li {
     margin: 1em 0;

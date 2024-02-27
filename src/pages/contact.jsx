@@ -61,6 +61,7 @@ export const Head = () => {
   const breadcrumbSchema = {
     '@context': 'https://schema.org/',
     '@type': 'BreadcrumbList',
+    '@id': siteUrl + '/#breadcrumb',
     itemListElement: [
       {
         '@type': 'ListItem',
@@ -80,6 +81,7 @@ export const Head = () => {
   const localBusinessSchema = {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
+    '@id': siteUrl + '/#localbusiness',
     name: title,
     founder: {
       '@type': 'Person',
@@ -101,8 +103,9 @@ export const Head = () => {
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Kelbergen 192',
-      addressLocality: 'Amsterdam',
       postalCode: '1104LJ',
+      addressLocality: 'Amsterdam',
+      addressRegion: 'Noord-Holland',
       addressCountry: 'NL',
     },
     geo: {

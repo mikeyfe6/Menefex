@@ -195,11 +195,6 @@
     gap: 1.5em;
   }
 
-  @include mobile {
-    flex-direction: column-reverse;
-    gap: 1.5em;
-  }
-
   @include smoothTrans;
   @include boxShadow;
 
@@ -225,9 +220,13 @@
     p {
       color: $primary-color;
       display: block;
-      max-width: 75ch;
+      max-width: 87.5%;
       font-weight: 300;
       font-size: 0.9rem;
+
+      @include phablet {
+        max-width: 100%;
+      }
     }
 
     span {

@@ -405,6 +405,7 @@ export const Head = ({ pageContext }) => {
   const breadcrumbSchema = {
     '@context': 'https://schema.org/',
     '@type': 'BreadcrumbList',
+    '@id': siteUrl + '/#breadcrumb',
     itemListElement: [
       {
         '@type': 'ListItem',
@@ -430,6 +431,7 @@ export const Head = ({ pageContext }) => {
   const blogPostingSchema = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
+    '@id': siteUrl + '/#blogpost',
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': siteUrl + '/blog/' + slug + '/',

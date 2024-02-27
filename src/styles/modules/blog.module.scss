@@ -8,6 +8,10 @@
     flex-direction: column;
     gap: 1.25em;
 
+    @include phablet {
+      gap: 2.5em;
+    }
+
     @include mobile {
       width: 100%;
       gap: 2em;
@@ -25,6 +29,10 @@
   margin: 3em 3em 0 auto;
   margin-left: auto;
   margin-right: 3em;
+
+  @include tablet {
+    margin: 3em 2em 0 auto;
+  }
 
   @include mobile {
     max-width: 100%;
