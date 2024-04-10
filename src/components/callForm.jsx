@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 
 import { navigate } from 'gatsby';
 
@@ -11,12 +11,66 @@ import * as callStyles from '../styles/modules/callForm.module.scss';
 // console.log(hour);
 
 const Call = ({ callRef }) => {
+  const [options, setOptions] = useState([
+    {
+      display: 'tussen 10:00 - 10:30 uur',
+      hour: 10,
+    },
+    {
+      display: 'tussen 11:00 - 11:30 uur',
+      hour: 11,
+    },
+    {
+      display: 'tussen 12:00 - 12:30 uur',
+      hour: 12,
+    },
+    {
+      display: 'tussen 13:00 - 13:30 uur',
+      hour: 13,
+    },
+    {
+      display: 'tussen 14:00 - 14:30 uur',
+      hour: 14,
+    },
+    {
+      display: 'tussen 15:00 - 15:30 uur',
+      hour: 15,
+    },
+    {
+      display: 'tussen 16:00 - 16:30 uur',
+      hour: 16,
+    },
+    {
+      display: 'tussen 17:00 - 17:30 uur',
+      hour: 17,
+    },
+  ]);
+
   const [inputs, setInputs] = useState({
     name: '',
     tel: '',
-    tijdstip: 'tussen 10:00 - 10:30u',
+    tijdstip: '',
     text: '',
   });
+
+  useEffect(() => {
+    const now = new Date();
+    const currentHour = now.getHours();
+    const updatedOptions = options.map((slot) => {
+      if (currentHour >= slot.hour) {
+        return {
+          ...slot,
+          display: `Morgen ${slot.display}`,
+        };
+      } else {
+        return {
+          ...slot,
+          display: `Vandaag ${slot.display}`,
+        };
+      }
+    });
+    setOptions(updatedOptions);
+  }, []);
 
   const handleChange = useCallback(
     (event) => {
@@ -25,7 +79,7 @@ const Call = ({ callRef }) => {
         [event.target.name]: event.target.value,
       });
     },
-    [inputs],
+    [inputs]
   );
 
   const handleSubmit = useCallback(
@@ -44,7 +98,7 @@ const Call = ({ callRef }) => {
         .then(() => navigate(form.getAttribute('action')))
         .catch((error) => console.log('POST ERROR', error));
     },
-    [inputs],
+    [inputs]
   );
 
   return (
@@ -92,14 +146,14 @@ const Call = ({ callRef }) => {
         onChange={handleChange}
         multiple={false}
       >
-        <option value="tussen 10:00 - 10:30u">Tussen 10:00 - 10:30 uur</option>
-        <option value="tussen 11:00 - 11:30u">Tussen 11:00 - 10:30 uur</option>
-        <option value="tussen 12:00 - 12:30u">Tussen 12:00 - 12:30 uur</option>
-        <option value="tussen 13:00 - 13:30u">Tussen 14:00 - 14:30 uur</option>
-        <option value="tussen 14:00 - 14:30u">Tussen 15:00 - 15:30 uur</option>
-        <option value="tussen 15:00 - 15:30u">Tussen 16:00 - 16:30 uur</option>
-        <option value="tussen 16:00 - 16:30u">Tussen 17:00 - 17:30 uur</option>
-        <option value="tussen 17:00 - 17:30u">Tussen 18:00 - 18:30 uur</option>
+        <option value="" disabled>
+          Kies een dag en tijd
+        </option>
+        {options.map((option, index) => (
+          <option key={index} value={option.display}>
+            {option.display}
+          </option>
+        ))}
       </select>
 
       <label htmlFor="call_text">

@@ -42,9 +42,9 @@ const PriceTable = () => {
           <ul>
             <li className={pricesStyles.priceBold}>1 - 2 pagina&apos;s</li>
             <li>Maatwerk Design</li>
+            <li>Responsief voor alle toestellen</li>
             <li>CMS (Content Manager)</li>
             <li>Foto&apos;s, video&apos;s & andere media</li>
-            <li>Responsief voor alle toestellen</li>
             <li>Uitgebreide Formulieren</li>
             <li>Social Media Integratie</li>
             <li>Testimonials / Reviews</li>
@@ -63,7 +63,7 @@ const PriceTable = () => {
             onClick={() =>
               handlePrice(
                 'Hi Michael, ik wil graag een offerte aanvragen voor de Budget Plan...',
-                'lead_name',
+                'lead_name'
               )
             }
           >
@@ -82,10 +82,10 @@ const PriceTable = () => {
           <ul>
             <li className={pricesStyles.priceBold}>1 - 5 pagina&apos;s</li>
             <li>Maatwerk Design</li>
+            <li>Responsief voor alle toestellen</li>
             <li>CMS (Content Manager)</li>
             <li className={pricesStyles.priceBold}>Blog</li>
             <li>Foto&apos;s, video&apos;s & andere media</li>
-            <li>Responsief voor alle toestellen</li>
             <li>Uitgebreide Formulieren</li>
             <li>Social Media Integratie</li>
             <li>Testimonials / Reviews</li>
@@ -104,7 +104,7 @@ const PriceTable = () => {
             onClick={() =>
               handlePrice(
                 'Hi Michael, ik wil graag een offerte aanvragen voor de Starter Plan...',
-                'lead_name',
+                'lead_name'
               )
             }
           >
@@ -123,10 +123,10 @@ const PriceTable = () => {
           <ul>
             <li className={pricesStyles.priceBold}>± 10 pagina&apos;s</li>
             <li>Maatwerk Design</li>
+            <li>Responsief voor alle toestellen</li>
             <li>CMS (Content Manager)</li>
             <li className={pricesStyles.priceBold}>Blog</li>
             <li>Foto&apos;s, video&apos;s & andere media</li>
-            <li>Responsief voor alle toestellen</li>
             <li>Uitgebreide Formulieren</li>
             <li className={pricesStyles.priceBold}>Zoekmodule</li>
             <li>Social Media Integratie</li>
@@ -146,7 +146,7 @@ const PriceTable = () => {
             onClick={() =>
               handlePrice(
                 'Hi Michael, ik wil graag een offerte aanvragen voor de Established Plan...',
-                'lead_name',
+                'lead_name'
               )
             }
           >
@@ -165,22 +165,25 @@ const PriceTable = () => {
           <ul>
             <li className={pricesStyles.priceBold}>∞ pagina&apos;s</li>
             <li>Maatwerk Design</li>
+            <li>Responsief voor alle toestellen</li>
             <li>CMS (Content Manager)</li>
             <li className={pricesStyles.priceBold}>Blog</li>
             <li>Foto&apos;s, video&apos;s & andere media</li>
-            <li className={pricesStyles.priceBold}>
-              E-commerce (+Bank Integratie)
-            </li>
-            <li>Responsief voor alle toestellen</li>
-            <li>Uitgebreide Formulieren</li>
-            <li>Social Media Integratie</li>
-            <li className={pricesStyles.priceBold}>Zoekmodule</li>
-            <li>Testimonials / Reviews</li>
             <li className={pricesStyles.priceBold}>User Login / Register</li>
+            <li>Uitgebreide Formulieren</li>
+            <li className={pricesStyles.priceBold}>Zoekmodule</li>
+            <li>Social Media Integratie</li>
+            <li className={pricesStyles.priceBold}>
+              E-commerce (+ Bank Integratie)
+            </li>
+            <li>Testimonials / Reviews</li>
             <li>
               Statistieken; Google Analytics, Tag Manager & Search Console
             </li>
             <li>SSL Certificaat</li>
+            <li className={pricesStyles.priceFeat}>
+              extra features: € 45,- per uur
+            </li>
             <li className={pricesStyles.priceBold}>
               12 maanden gratis support
             </li>
@@ -191,7 +194,7 @@ const PriceTable = () => {
             onClick={() =>
               handlePrice(
                 'Hi Michael, ik wil graag een offerte aanvragen voor de Business Plan...',
-                'lead_name',
+                'lead_name'
               )
             }
           >
