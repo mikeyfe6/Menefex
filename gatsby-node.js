@@ -39,7 +39,7 @@ exports.createResolvers = ({ createResolvers }) => {
                 ];
 
                 const matchedAsset = menefexImages.find(
-                  (asset) => asset.id === entryId,
+                  (asset) => asset.id === entryId
                 );
 
                 if (matchedAsset) {
@@ -64,7 +64,7 @@ exports.createResolvers = ({ createResolvers }) => {
                 ];
 
                 const matchedFeed = menefexFeeds.find(
-                  (feed) => feed.id === entryId,
+                  (feed) => feed.id === entryId
                 );
 
                 if (matchedFeed) {
@@ -124,6 +124,7 @@ const captureScreenshot = async (url, filename, delay) => {
 };
 
 exports.onPostBuild = async () => {
+  await captureScreenshot('https://keeptreal.nl', 'keeptreal', 0);
   await captureScreenshot('https://blackharmony.nl', 'blackharmony', 0);
   await captureScreenshot('https://eternitydrum.com', 'eternitydrum', 0);
   await captureScreenshot('https://kn-acdig.com', 'kn-acdig', 0);
@@ -132,6 +133,7 @@ exports.onPostBuild = async () => {
 };
 
 exports.onPreBootstrap = async () => {
+  await captureScreenshot('https://keeptreal.nl', 'keeptreal', 0);
   await captureScreenshot('https://blackharmony.nl', 'blackharmony', 0);
   await captureScreenshot('https://eternitydrum.com', 'eternitydrum', 0);
   await captureScreenshot('https://kn-acdig.com', 'kn-acdig', 0);

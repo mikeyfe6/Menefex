@@ -26,6 +26,64 @@ const PortfolioPage = () => (
           // * AFRODIASPHERE !
           */}
 
+        <div id="#KIR">
+          <a
+            href="https://keeptreal.nl"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <StaticImage
+              src="../../public/project-images/keeptreal.png"
+              alt="Keep It Real"
+              className={portfolioStyles.portfolioImg}
+            />
+          </a>
+          <div className={portfolioStyles.portfolioInfo}>
+            <span>Project:</span>
+            <h5>Keep It Real</h5>
+            <p>
+              <strong>Keep It Real</strong> is een programma onder leiding van
+              cultureel professional Wenner Regales, dat jongeren helpt groeien
+              buiten de grenzen van traditioneel onderwijs. Het biedt een
+              platform voor het maken van positieve keuzes en het grijpen van
+              kansen, geworteld in Wenner's ervaring en netwerk.
+            </p>
+            <p>
+              * Deze website is gebouwd met oog naar snelheid, overzicht en
+              toegankelijkheid
+            </p>
+            <div className={portfolioStyles.tools}>
+              <span>Tools:</span>
+              <ul>
+                <li>GatsbyJS</li>
+                <li>ReactJS</li>
+                <li>Netlify</li>
+                <li>Contentful</li>
+              </ul>
+            </div>
+          </div>
+          <div className={portfolioStyles.portfolioBtns}>
+            <a
+              href="https://keeptreal.nl"
+              rel="noopener noreferrer"
+              target="_blank"
+              className={portfolioStyles.btnLight}
+            >
+              <i className="fa-solid fa-eye" />
+              Ga naar project
+            </a>
+            <a
+              href="https://github.com/mikeyfe6/keepitreal"
+              rel="noopener noreferrer"
+              target="_blank"
+              className={portfolioStyles.btnDark}
+            >
+              <i className="fa-brands fa-github" />
+              Github Repo
+            </a>
+          </div>
+        </div>
+
         <div id="#ADS">
           <a
             href="https://afrodiasphere.com"

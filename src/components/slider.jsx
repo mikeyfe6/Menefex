@@ -186,6 +186,35 @@ const Projects = () => {
     </div>
   );
 
+  const keepItReal = (
+    <div className={sliderStyles.sliderInfo}>
+      <div>
+        <a
+          href="https://keeptreal.nl"
+          // href="#!"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          bekijk website
+        </a>
+        <Link to="/portfolio/">
+          <h5>Keep It Real</h5>
+        </Link>
+      </div>
+
+      <p>
+        Deze website is gebouwd in opdracht van stichting Regalness.nl uit
+        Amsterdam
+      </p>
+      <ul>
+        <li>GatsbyJS</li>
+        <li>ReactJS</li>
+        <li>Netlify</li>
+        <li>Contentful</li>
+      </ul>
+    </div>
+  );
+
   return (
     <section id="portfolio" data-scroll-center>
       <Swiper
@@ -236,6 +265,8 @@ const Projects = () => {
                     return dsMelodies;
                   case 'kn-acdig':
                     return knAcdig;
+                  case 'keeptreal':
+                    return keepItReal;
                   default:
                     return null;
                 }
