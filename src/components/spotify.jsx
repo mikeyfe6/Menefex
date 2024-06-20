@@ -14,7 +14,6 @@ const Spotify = () => (
       src="https://open.spotify.com/embed/playlist/08UGoWTjvpuooABCWyPx0m?utm_source=generator&theme=0"
       allowFullScreen=""
       allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-      loading="lazy"
     />
   </section>
 );
