@@ -85,11 +85,11 @@
         text-shadow: -10px 0 $secondary-color, 0 10px $secondary-color,
           10px 0 $secondary-color, 0 -10px $secondary-color;
 
+        @include smoothTrans;
+
         .dots {
           color: $third-color;
         }
-
-        @include smoothTrans;
       }
     }
   }

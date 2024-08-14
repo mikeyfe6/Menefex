@@ -9,6 +9,8 @@
   height: 100%;
   max-width: 500px;
 
+  @include boxShadow;
+
   @include tablet {
     align-self: flex-end;
   }
@@ -24,8 +26,6 @@
     color: $textbase-color;
     opacity: 0.75;
   }
-
-  @include boxShadow;
 
   iframe {
     opacity: 0.9;

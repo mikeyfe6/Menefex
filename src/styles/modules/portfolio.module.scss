@@ -79,11 +79,11 @@
           font-size: 0.85em;
           white-space: nowrap;
 
+          @include boxShadow;
+
           @include mobile {
             font-size: 0.65rem;
           }
-
-          @include boxShadow;
         }
       }
     }

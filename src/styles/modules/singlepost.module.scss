@@ -3,11 +3,11 @@
 .singlepost {
   .view {
     .backbtn {
+      @include primaryButton;
+
       i {
         margin-right: 0.5em;
       }
-
-      @include primaryButton;
     }
 
     .thick-hr {
