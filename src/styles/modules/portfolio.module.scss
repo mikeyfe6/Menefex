@@ -95,21 +95,21 @@
 
     .btn {
       &-dark {
+        @include darkButton;
+
         i {
           margin-right: 0.5em;
           font-size: 1.125em;
         }
-
-        @include darkButton;
       }
 
       &-light {
+        @include lightButton;
+
         i {
           margin-right: 0.5em;
           font-size: 1.125em;
         }
-
-        @include lightButton;
       }
     }
   }

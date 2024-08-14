@@ -60,16 +60,16 @@
 
       li {
         a {
-          i {
-            font-size: 1.5em;
-          }
-
           display: block;
           background: transparent;
           border-radius: $medium-radius;
           padding: 0.25em 0.25em 0;
 
           @include smoothTrans;
+
+          i {
+            font-size: 1.5em;
+          }
 
           &:hover {
             background-color: $white-color;

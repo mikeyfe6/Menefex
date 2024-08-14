@@ -30,6 +30,8 @@
   margin-left: auto;
   margin-right: 3em;
 
+  @include primaryButton;
+
   @include tablet {
     margin: 3em 2em 0 auto;
   }
@@ -42,6 +44,4 @@
   i {
     margin-right: 0.5em;
   }
-
-  @include primaryButton;
 }
