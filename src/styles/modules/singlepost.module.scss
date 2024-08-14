@@ -224,12 +224,12 @@
                 display: flex;
                 align-items: center;
 
+                @include smoothTrans;
+
                 > img {
                   width: 20px;
                   margin-right: 0.5em;
                 }
-
-                @include smoothTrans;
 
                 &:hover {
                   color: #1f57ad;

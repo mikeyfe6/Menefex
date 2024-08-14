@@ -61,11 +61,10 @@
 
   &-logo {
     width: 75px;
-
-    @include smoothTrans;
-
     animation: roll 45s infinite;
     transform: rotate(30deg);
+
+    @include smoothTrans;
 
     @keyframes roll {
       0% {

@@ -74,10 +74,6 @@
 
     word-wrap: break-word;
 
-    > span {
-      color: $sixth-color;
-    }
-
     @include boxShadow;
 
     @include tablet {
@@ -110,6 +106,10 @@
 
     @include mini {
       font-size: 0.95rem;
+    }
+
+    > span {
+      color: $sixth-color;
     }
   }
 
