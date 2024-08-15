@@ -28,5 +28,5 @@ export default {
     moreButton: 'Meer over Menefex',
   },
 
-  
+  actualReadMore: 'Lees meer...',
 };

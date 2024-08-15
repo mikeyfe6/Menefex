@@ -2,59 +2,111 @@ import React from 'react';
 
 import { useStaticQuery, graphql, Link } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { useTranslation } from 'react-i18next';
 
 import * as actualStyles from '../styles/modules/actual.module.scss';
 
 const Actual = () => {
+  const { t, i18n } = useTranslation();
+  const currentLanguage = i18n.language;
+
   const data = useStaticQuery(graphql`
     query ActualQuery {
-      contentfulBlogPost {
-        subtitle
-        title
-        slug
-        topics {
-          name
-          bdcolor
-          slug
+      nlContent: allContentfulBlogPost(
+        limit: 1
+        sort: { publishedDate: DESC }
+        filter: { node_locale: { eq: "nl" } }
+      ) {
+        edges {
+          node {
+            subtitle
+            title
+            slug
+            topics {
+              name
+              bdcolor
+              slug
+            }
+            node_locale
+            publishedDate
+            image {
+              title
+              gatsbyImageData(
+                width: 550
+                placeholder: BLURRED
+                formats: [AUTO, WEBP, AVIF]
+              )
+            }
+          }
         }
-        image {
-          title
-          gatsbyImageData(
-            width: 550
-            placeholder: BLURRED
-            formats: [AUTO, WEBP, AVIF]
-          )
+      }
+
+      enContent: allContentfulBlogPost(
+        limit: 1
+        sort: { publishedDate: DESC }
+        filter: { node_locale: { eq: "en" } }
+      ) {
+        edges {
+          node {
+            subtitle
+            title
+            slug
+            topics {
+              name
+              bdcolor
+              slug
+            }
+            node_locale
+            publishedDate
+            image {
+              title
+              gatsbyImageData(
+                width: 550
+                placeholder: BLURRED
+                formats: [AUTO, WEBP, AVIF]
+              )
+            }
+          }
         }
       }
     }
   `);
 
-  const frontImage = getImage(data.contentfulBlogPost.image);
+  const currentContent =
+    currentLanguage === 'nl'
+      ? data.nlContent.edges[0]?.node
+      : data.enContent.edges[0]?.node;
+
+  if (!currentContent) {
+    return <p>Geen content beschikbaar / No content available.</p>;
+  }
+
+  const frontImage = getImage(currentContent.image);
 
   return (
     <section className={actualStyles.actualContainer}>
       <div className={actualStyles.actualWrapper}>
         <div>
-          <Link to={`/blog/${data.contentfulBlogPost.slug}/`}>
+          <Link to={`/blog/${currentContent.slug}/`}>
             <GatsbyImage
               image={frontImage}
-              alt={data.contentfulBlogPost.image.title}
+              alt={currentContent.image.title}
               style={{ borderRadius: '5px' }}
             />
           </Link>
         </div>
         <div className={actualStyles.actualText}>
-          <h4>{data.contentfulBlogPost.title}</h4>
+          <h4>{currentContent.title}</h4>
           <br />
           <p>
-            {data.contentfulBlogPost.subtitle}{' '}
-            <Link to={`/blog/${data.contentfulBlogPost.slug}/`}>
-              <b>Lees meer...</b>
+            {currentContent.subtitle}{' '}
+            <Link to={`/blog/${currentContent.slug}/`}>
+              <b>{t('actualReadMore')}</b>
             </Link>
           </p>
           <br />
           <ul>
-            {data.contentfulBlogPost.topics.map((topic) => (
+            {currentContent.topics.map((topic) => (
               <li key={topic.slug}>
                 <Link
                   to={`/topics/${topic.slug}/`}
