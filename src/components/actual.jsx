@@ -2,7 +2,8 @@ import React from 'react';
 
 import { useStaticQuery, graphql, Link } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-import { useTranslation } from 'react-i18next';
+
+import useTranslation from '../hooks/use-translation';
 
 import * as actualStyles from '../styles/modules/actual.module.scss';
 

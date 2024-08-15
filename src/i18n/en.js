@@ -29,4 +29,37 @@ export default {
   },
 
   actualReadMore: 'Read more...',
+
+  servicesTitleWebsites: 'Websites',
+  servicesContentWebsites:
+    'We build functional and efficient websites completely custom-made. In this we ensure that your website meets all current technical requirements and conditions.',
+  servicesFocusWebsitesOne: 'Loading speed',
+  servicesFocusWebsitesTwo: 'Custom Design',
+  servicesFocusWebsitesThree: 'User interface & user experience',
+  servicesFocusWebsitesFour: 'Web Cross-platform for all popular browsers',
+
+  servicesTitleWebshops: 'Webshops',
+  servicesContentWebshops:
+    'Webshops are indispensable for your local business these days and offer a wider network, better availability and of course more conversion and product appearance.',
+  servicesFocusWebshopsOne: 'Overview of assortment',
+  servicesFocusWebshopsTwo: 'Generate more leads',
+  servicesFocusWebshopsThree: 'Do business 24/7',
+  servicesFocusWebshopsFour: 'Automation processes',
+
+  servicesTitleWebapps: 'Webapplications',
+  servicesContentWebapps:
+    'With the rise of digitization & mobility, there is an increasing demand for (web) apps. Implementations of complex interactions make the difference between a web application and a website.',
+  servicesFocusWebappsOne: 'Offline possibilities',
+  servicesFocusWebappsTwo: 'Optimization for all devices',
+  servicesFocusWebappsThree:
+    'Links with built-in functions (e.g. camera, microphone & location use)',
+
+  servicesTitleSeo: 'Search Engine Optimization',
+  servicesContentSeo:
+    "With search engine optimization, or 'SEO', we ensure that your website is found at the top in Google, Bing, Yahoo, etc. Potential visitors will thus be able to discover your company more quickly.",
+  servicesFocusSeoOne: 'Findability in popular search engines',
+  servicesFocusSeoTwo: 'Significantly more (in)direct web visitors',
+  servicesFocusSeoThree: 'Charts, tactics and statistics',
+
+  servicesPricesButton: 'View our prices',
 };
