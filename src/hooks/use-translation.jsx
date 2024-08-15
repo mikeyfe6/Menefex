@@ -16,7 +16,7 @@ const useTranslationSetup = () => {
     }
   }, [i18n, isHydrated]);
 
-  return { t, isHydrated };
+  return { t, isHydrated, i18n };
 };
 
 export default useTranslationSetup;

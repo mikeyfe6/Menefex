@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+
+import useTranslation from '../hooks/use-translation';
 
 import heroLogo from '../logo/Menefex-icon.svg';
 
@@ -6,7 +8,11 @@ import * as heroStyles from '../styles/modules/hero.module.scss';
 import * as tpWriterStyles from '../styles/modules/typewriter.module.scss';
 
 const Hero = () => {
-  React.useEffect(() => {
+  const { t, i18n } = useTranslation();
+  const currentLanguage = i18n.language;
+  console.log(currentLanguage);
+
+  useEffect(() => {
     const updateVhVariable = () => {
       const vh = window.innerHeight * 0.01;
       document.documentElement.style.setProperty('--vh', `${vh}px`);
@@ -62,18 +68,24 @@ const Hero = () => {
       </div>
       <div>
         <h1
-          className={`${tpWriterStyles.tpwriter} ${tpWriterStyles.line} ${tpWriterStyles.animTypewriter}`}
+          className={`${tpWriterStyles.tpwriter} ${tpWriterStyles.line} ${
+            currentLanguage === 'nl'
+              ? tpWriterStyles.animTypewriterNl
+              : tpWriterStyles.animTypewriterEn
+          }`}
         >
-          <span className={tpWriterStyles.wmb}>Webmediabedrijf</span> <br />
-          <span className={tpWriterStyles.mnfx}>Menefex</span>
+          <span className={tpWriterStyles.wmb}>
+            {t('hero.webMediaCompany')}
+          </span>{' '}
+          <br />
+          <span className={tpWriterStyles.mnfx}>{t('hero.menefex')}</span>
           <span className={tpWriterStyles.dot}>.</span>{' '}
-          <span className={tpWriterStyles.welkom}>Welkom!</span>
+          <span className={tpWriterStyles.welkom}>{t('hero.welcome')}</span>
         </h1>
-        <h2 className={heroStyles.heroSlogan}>
-          <span>・</span>Web<span>sites</span>, web<span>applicaties</span> & SE
-          {''}
-          <span>O</span>・
-        </h2>
+        <h2
+          className={heroStyles.heroSlogan}
+          dangerouslySetInnerHTML={{ __html: t('hero.slogan') }}
+        />
       </div>
 
       <div className={heroStyles.heroCta}>
@@ -85,15 +97,15 @@ const Hero = () => {
 
         <div className={heroStyles.heroButtons} id="cta" data-scroll-center>
           <button type="button" onClick={() => scrollToSection('biografie')}>
-            biografie
+            {t('heroBiography')}
           </button>
           <span>|</span>
           <button type="button" onClick={() => scrollToSection('services')}>
-            services
+            {t('heroServices')}
           </button>
           <span>|</span>
           <button type="button" onClick={() => scrollToSection('portfolio')}>
-            portfolio
+            {t('heroPortfolio')}
           </button>
         </div>
       </div>

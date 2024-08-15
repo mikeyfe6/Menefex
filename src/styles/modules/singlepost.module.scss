@@ -112,9 +112,10 @@
               border: 1px solid rgba($base-color, 0.75);
             }
 
-            // .headoneness {
-            //   // h1
-            // }
+            .headoneness {
+              // h1
+              display: block;
+            }
 
             .headtwoness {
               // h2
@@ -149,6 +150,12 @@
 
             .headsixness {
               // h6
+              display: block;
+            }
+
+            .quoteness {
+              // blockquote
+              display: block;
             }
 
             .orderedlistness {
