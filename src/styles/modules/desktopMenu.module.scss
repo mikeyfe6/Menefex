@@ -84,6 +84,35 @@
             }
           }
         }
+
+        &.language {
+          background: linear-gradient(145deg, $primary-color, $button-hover);
+          border: 2px solid $primary-color;
+          color: #535252;
+          padding: 0.5em 0.675em;
+          border-radius: $low-radius;
+          margin-left: 1em;
+
+          > button {
+            padding: 0.125em 0.25em;
+            background: $white-color;
+            border-radius: $low-radius;
+            font-family: $right-font;
+
+            &:hover {
+              background: $secondary-color;
+            }
+
+            &.active {
+              background: $spec-color;
+            }
+          }
+
+          > span {
+            margin: 0 0.375em;
+            color: $secondary-color;
+          }
+        }
       }
     }
   }

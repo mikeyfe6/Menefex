@@ -1,5 +1,7 @@
 import React from 'react';
 
+import RootElement from './src/components/root-element';
+
 const HtmlAttributes = {
   lang: 'nl',
 };
@@ -35,4 +37,8 @@ export const onPreRenderHTML = ({
 }) => {
   const headComponents = getHeadComponents();
   replaceHeadComponents(headComponents);
+};
+
+export const wrapRootElement = ({ element }) => {
+  return <RootElement>{element}</RootElement>;
 };

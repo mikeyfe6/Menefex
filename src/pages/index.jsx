@@ -4,6 +4,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 import useSiteMetadata from '../hooks/use-site-metadata';
+import useTranslation from '../hooks/use-translation';
 
 import Hero from '../components/hero';
 import Service from '../components/services';
@@ -11,43 +12,49 @@ import Projects from '../components/slider';
 import Smallbio from '../components/smallbio';
 import Actual from '../components/actual';
 
-const IndexPage = () => (
-  <Layout>
-    <Hero />
+const IndexPage = () => {
+  const { t, isHydrated } = useTranslation();
 
-    <div className="vertical-line-long" />
+  if (!isHydrated) return null;
 
-    <div id="biografiescroll" />
+  return (
+    <Layout>
+      <Hero />
 
-    <h3 className="home-title">Biografie</h3>
+      <div className="vertical-line-long" />
 
-    <Smallbio />
+      <div id="biografiescroll" />
 
-    <div className="vertical-line-short" />
+      <h3 className="home-title">{t('homeBiographyTitle')}</h3>
 
-    <div id="actualscroll" />
+      <Smallbio />
 
-    <h3 className="home-title">Actueel</h3>
+      <div className="vertical-line-short" />
 
-    <Actual />
+      <div id="actualscroll" />
 
-    <div className="vertical-line-short" />
+      <h3 className="home-title">{t('homeActualTitle')}</h3>
 
-    <div id="servicescroll" />
+      <Actual />
 
-    <h3 className="home-title">Services & Diensten</h3>
+      <div className="vertical-line-short" />
 
-    <Service />
+      <div id="servicescroll" />
 
-    <div className="vertical-line-short" />
+      <h3 className="home-title">{t('homeServicesTitle')}</h3>
 
-    <div id="projectscroll" />
+      <Service />
 
-    <h3 className="home-title"> Recente Projecten</h3>
+      <div className="vertical-line-short" />
 
-    <Projects />
-  </Layout>
-);
+      <div id="projectscroll" />
+
+      <h3 className="home-title">{t('homeProjectsTitle')}</h3>
+
+      <Projects />
+    </Layout>
+  );
+};
 
 export default IndexPage;
 

@@ -384,14 +384,15 @@ span.lazy-color {
 
 .responsive-tag {
   position: fixed;
-  top: 0;
+  top: 1%;
   left: 50%;
   transform: translateX(-50%);
-  padding: 0.75em;
+  padding: 0.25em 0.75em;
   z-index: 1000;
   font-weight: bold;
   text-align: center;
-  background-color: #fff;
-  color: black;
-  outline: black 1px solid;
+  background: $white-color;
+  opacity: 0.5;
+  color: $textbase-color;
+  outline: $textbase-color 1px solid;
 }
