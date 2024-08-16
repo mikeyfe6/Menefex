@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 
-import { Link } from 'gatsby';
-
 import CookieConsent from 'react-cookie-consent';
 
 import useTranslation from '../hooks/use-translation';

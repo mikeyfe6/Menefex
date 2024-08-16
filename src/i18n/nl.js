@@ -15,6 +15,9 @@ export default {
   menuItemAbout: 'Over',
   menuItemContact: 'Contact',
 
+  footerText:
+    '<span>&copy;</span> 2019 - {{today}} · {{title}} <span>|</span> <a href="/privacy-policy/">privacybeleid</a> <span>|</span> <a href="/terms-conditions/">algemene voorwaarden</a> <span>|</span> alle rechten voorbehouden <span>|</span> KvK <span>#</span> 76045315 <span>|</span> Btw <span>#</span> NL003040579B17 <span>|</span> Bank <span>#</span> NL10 BUNQ 2038 8619 94',
+
   homeBiographyTitle: 'Biografie',
   homeActualTitle: 'Actueel',
   homeServicesTitle: 'Onze Diensten',

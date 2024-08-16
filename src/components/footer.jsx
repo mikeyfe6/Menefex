@@ -2,11 +2,15 @@ import React from 'react';
 
 import { graphql, useStaticQuery, Link } from 'gatsby';
 
+import useTranslation from '../hooks/use-translation';
+
 import minilogo from '../logo/Menefex-icon.svg';
 
 import * as footerStyles from '../styles/modules/footer.module.scss';
 
 const Footer = () => {
+  const { t, isHydrated } = useTranslation();
+
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -24,7 +28,13 @@ const Footer = () => {
     },
   } = data;
 
-  const today = new Date();
+  const today = new Date().getFullYear();
+
+  const footerText = t('footerText')
+    .replace('{{today}}', today)
+    .replace('{{title}}', title);
+
+  if (!isHydrated) return null;
 
   return (
     <footer className={footerStyles.footer}>
@@ -125,14 +135,10 @@ const Footer = () => {
         />
       </Link>
 
-      <p className={footerStyles.credits}>
-        <span>&copy;</span> 2019 - {today.getFullYear()} · {title}{' '}
-        <span>|</span> <Link to="/privacy-policy/">privacybeleid</Link>{' '}
-        <span>|</span> <Link to="/terms-conditions/">algemene voorwaarden</Link>{' '}
-        <span>|</span> alle rechten voorbehouden <span>|</span> KvK{' '}
-        <span>#</span> 76045315 <span>|</span> Btw <span>#</span> NL
-        003040579B17 <span>|</span> Bank <span>#</span> NL10 BUNQ 2038 8619 94
-      </p>
+      <p
+        className={footerStyles.credits}
+        dangerouslySetInnerHTML={{ __html: footerText }}
+      />
     </footer>
   );
 };
