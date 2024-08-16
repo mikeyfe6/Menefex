@@ -89,6 +89,41 @@ export default {
     'Deze website is gebouwd in opdracht van stichting KN-ACDiG uit Den-Haag',
   recentProjectsKIRbio:
     'Deze website is gebouwd in opdracht van stichting Regalness.nl uit Amsterdam',
-  recentProjectsEPbio:
-    'Deze website is gebouwd in opdracht van Stichting Eternity Percussion uit Amsterdam',
+
+  portfolioTitle: 'Recente Projecten',
+  portfolioIntro:
+    'Wij zijn trots op ons werk en showcasen dat ook graag! Neem een kijk in ons archief van recente projecten..',
+  portfolioGoToProject: 'Ga naar project',
+  portfolioGoToRepo: 'Github Repo',
+  portfolioNoRepo: 'Niet op Github',
+
+  portfolioKIRbio:
+    "<strong>Keep It Real</strong> is een programma onder leiding van cultureel professional Wenner Regales, dat jongeren helpt groeien buiten de grenzen van traditioneel onderwijs. Het biedt een platform voor het maken van positieve keuzes en het grijpen van kansen, geworteld in Wenner's ervaring en netwerk.",
+  portfolioKIRfocus:
+    '* Deze website is gebouwd met oog naar snelheid, overzicht en toegankelijkheid',
+
+  portfolioADSbio:
+    '<strong>Afrodiasphere</strong> is een project geheel op eigen initiatief opgezet, voornamelijk gericht op het makkelijker maken van het delen van informatie onder particulieren/bedrijven die zich willen voortmanifesteren. Maak je profiel aan & join the MOVEMENT!',
+  portfolioADSfocus:
+    '* Deze webapplicatie is vooral interactief, gericht op netwerken inclusief sociale media en veel meer toekomstige toepassingen',
+
+  portfolioEPbio:
+    '<strong>Eternity Percussion</strong> is een culturele instellingdie bijdrage levert aan talentontwikkeling, cultuurparticipatie en visieverbreding van jongeren. D.m.v. o.a. muziekeducatie en inzet van jongeren in eigen organisatie biedt Eternity jongeren de gelegenheid om cultureel te ondernemen en participeren binnen de Nederlandse samenleving.',
+  portfolioEPfocus:
+    '* Deze webapplicatie is vooral interactief, gericht op netwerken inclusief sociale media en veel meer toekomstige toepassingen',
+
+  portfolioKNbio:
+    '<strong>KN-ACDiG</strong> oftewel Kennis Netwerk Afrikaanse-Caribische Diaspora Gemeenschap is een stichting die zich richt op het werken aan de identiteitsversterking, het vergroten van de zichtbaarheid en het kennismanagement (advies tot monitoring) van de Afrikaanse-Caribische Diaspora Gemeenschap.',
+  portfolioKNfocus:
+    '* De speerpunten van deze website zijn het delen van informatie en netwerkverbreding',
+
+  portfolioDSbio:
+    '<strong>DS Melodies</strong> alias Derek Simpey is een professioneel Steeldrum-artiest uit Amsterdam Zuidoost. Met zijn unieke sound die gevormd is uit 18 jaar ervaring, creeeren hij en zijn steelpan-instrument, waar ie ook is, een waardig spectakel.',
+  portfolioDSfocus:
+    '* Deze website is gebouwd met oog naar snelheid, abstractie in design en toegankelijkheid',
+
+  portfolioBHbio:
+    '<strong>Black Harmony</strong> is een populaire en getalenteerde zanggroep uit Amsterdam. Deze muziekorganisatie wilt een bijdrage leveren aan de positionering van de traditionele muziek genaamd Apinti Kawina. Black harmony wilt fungeren als ambassadeur als het gaat om traditionele Afro-Surinaamse muziek.',
+  portfolioBHfocus:
+    '* Deze website bevat informatie, media en interactieve sociale media toepassingen',
 };
