@@ -6,15 +6,44 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 import useSiteMetadata from '../hooks/use-site-metadata';
+import useTranslation from '../hooks/use-translation';
 
 import * as blogpostStyles from '../styles/modules/blog.module.scss';
 
 // TODO: images naar GatsbyImage verwerken
 
 const BlogPage = () => {
+  const { i18n, isHydrated } = useTranslation();
+  const currentLanguage = i18n.language;
+
   const data = useStaticQuery(graphql`
-    query {
-      allContentfulBlogPost(sort: { createdAt: DESC }) {
+    query BlogQuery {
+      nlContent: allContentfulBlogPost(
+        sort: { createdAt: DESC }
+        filter: { node_locale: { eq: "nl" } }
+      ) {
+        edges {
+          node {
+            id
+            title
+            slug
+            subtitle
+            author
+            image {
+              title
+              file {
+                url
+              }
+            }
+            createdAt(formatString: "dddd D MMMM YYYY", locale: "nl")
+          }
+        }
+      }
+
+      enContent: allContentfulBlogPost(
+        sort: { createdAt: DESC }
+        filter: { node_locale: { eq: "en" } }
+      ) {
         edges {
           node {
             id
@@ -35,6 +64,15 @@ const BlogPage = () => {
     }
   `);
 
+  const currentContent =
+    currentLanguage === 'nl' ? data.nlContent.edges : data.enContent.edges;
+
+  if (!currentContent) {
+    return <p>Geen content beschikbaar / No content available.</p>;
+  }
+
+  if (!isHydrated) return null;
+
   return (
     <Layout>
       <h1 className="page-title">
@@ -45,7 +83,7 @@ const BlogPage = () => {
 
       <section>
         <ul className={blogpostStyles.blogposts}>
-          {data.allContentfulBlogPost.edges.map((edge) => (
+          {currentContent.map((edge) => (
             <li key={edge.node.id}>
               <Link to={`/blog/${edge.node.slug}/`}>
                 <div>
