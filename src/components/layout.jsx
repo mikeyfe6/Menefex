@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
+
 import { Link } from 'gatsby';
+
 import CookieConsent from 'react-cookie-consent';
+
+import useTranslation from '../hooks/use-translation';
 
 // components
 import DesktopMenu from './navbar/desktopMenu';
@@ -17,6 +21,7 @@ import '../styles/cookie.scss';
 import minilogo from '../logo/Menefex-icon.svg';
 
 const Layout = ({ children }) => {
+  const { t, isHydrated } = useTranslation();
   const [sideDrawerOpen, setSideDrawerOpen] = useState(false);
 
   const drawerToggleClickHandler = () => {
@@ -33,15 +38,14 @@ const Layout = ({ children }) => {
     backdrop = <MenuOverlay click={menuOverlayClickHandler} />;
   }
 
+  if (!isHydrated) return null;
+
   return (
     <>
       <div id="tosmallforyouscreen">
         <div className="container">
           <img src={minilogo} alt="Menefex Mini Logo" />
-          <p>
-            <strong>Sorry!</strong> De scherm van je toestel is te klein om de
-            website juist weer te geven...
-          </p>
+          <p dangerouslySetInnerHTML={{ __html: t('screenToSmallText') }} />
         </div>
       </div>
 
@@ -54,8 +58,8 @@ const Layout = ({ children }) => {
 
       <CookieConsent
         expires={60}
-        buttonText="Accepteer"
-        declineButtonText="Weiger"
+        buttonText={t('cookieAccept')}
+        declineButtonText={t('cookieDecline')}
         cookieName="menefex-cookie"
         extraCookieOptions={{ domain: '.menefex.nl' }}
         enableDeclineButton
@@ -71,20 +75,7 @@ const Layout = ({ children }) => {
         overlay
       >
         <h3>Cookies</h3>
-        <p>
-          Deze site plaatst cookies op je computer om je websitebezoek te
-          optimaliseren en gepersonaliseerde diensten aan te bieden, zowel hier
-          als via andere media. Raadpleeg ons{' '}
-          <Link to="/privacy-policy/" style={{ color: '#FFCC00' }}>
-            Privacybeleid{' '}
-          </Link>{' '}
-          voor meer informatie over de gebruikte cookies.
-          <span>
-            We volgen je gegevens <b>niet</b> bij sitebezoeken, maar om aan je
-            voorkeuren te voldoen, gebruiken we enkele cookies zodat je deze
-            keuze niet herhaaldelijk hoeft te maken.
-          </span>
-        </p>
+        <p dangerouslySetInnerHTML={{ __html: t('cookieText') }} />
       </CookieConsent>
 
       {backdrop}

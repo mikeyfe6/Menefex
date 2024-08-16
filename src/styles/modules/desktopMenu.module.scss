@@ -59,7 +59,7 @@
 
           &.whapp {
             font-size: 1.75em;
-            padding-left: 0.375em;
+            margin-left: 0.375em;
 
             @include smoothTrans;
 
@@ -95,6 +95,12 @@
     padding: 0.5em 0.675em;
     border-radius: $low-radius;
     margin-left: 1em;
+    display: flex;
+    gap: 0.375em;
+
+    @include mini {
+      transform: scale(0.825);
+    }
 
     > button {
       padding: 0.125em 0.25em;
@@ -114,7 +120,6 @@
     }
 
     > span {
-      margin: 0 0.375em;
       color: $secondary-color;
     }
   }
@@ -126,6 +131,10 @@
       display: flex;
       align-items: center;
       gap: 1.5em;
+    }
+
+    @include mini {
+      gap: 1em;
     }
   }
 }

@@ -1,4 +1,13 @@
 export default {
+  screenToSmallText:
+    '<strong>Sorry!</strong> The screen of your device is too small to display the website correctly...',
+
+  cookieText:
+    "This site places cookies on your computer to optimize your website visit and offer personalized services, both here and through other media. Consult our <a href='/privacy-policy/' style='color: #FFCC00;'> Privacy Policy </a> for more information about the cookies used. <span> We do not track your data <b>not</b> during site visits, but to meet your preferences, we use some cookies so that you do not have to make this choice repeatedly.</span>",
+
+  cookieAccept: 'Accept',
+  cookieDecline: 'Decline',
+
   menuItemHome: 'Home',
   menuItemPortfolio: 'Portfolio',
   menuItemBlog: 'Blog',

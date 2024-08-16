@@ -84,8 +84,6 @@ audio,
 video {
   font: inherit;
   font-size: 100%;
-  margin: 0;
-  padding: 0;
   border: 0;
   vertical-align: baseline;
 }
@@ -103,11 +101,6 @@ menu,
 nav,
 section {
   display: block;
-}
-
-body {
-  background: white;
-  color: black;
 }
 
 blockquote,
@@ -231,7 +224,6 @@ listing,
 xmp,
 plaintext {
   font: inherit;
-  font-size: 1em;
   white-space: normal;
 }
 
@@ -322,7 +314,6 @@ hr {
 
 pre {
   font-family: monospace;
-  font-size: 1em;
 }
 
 a {
@@ -344,7 +335,6 @@ code,
 kbd,
 samp {
   font-family: monospace;
-  font-size: 1em;
 }
 
 small {
