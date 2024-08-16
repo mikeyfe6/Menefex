@@ -7,7 +7,9 @@ import useTranslation from '../hooks/use-translation';
 import * as smallBioStyles from '../styles/modules/smallbio.module.scss';
 
 const Smallbio = () => {
-  const { t } = useTranslation();
+  const { t, isHydrated } = useTranslation();
+
+  if (!isHydrated) return null;
 
   return (
     <section

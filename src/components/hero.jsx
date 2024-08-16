@@ -10,7 +10,6 @@ import * as tpWriterStyles from '../styles/modules/typewriter.module.scss';
 const Hero = () => {
   const { t, i18n } = useTranslation();
   const currentLanguage = i18n.language;
-  console.log(currentLanguage);
 
   useEffect(() => {
     const updateVhVariable = () => {

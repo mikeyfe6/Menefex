@@ -21,6 +21,8 @@ import 'swiper/scss/scrollbar';
 import 'swiper/scss/parallax';
 import 'swiper/scss/autoplay';
 
+import useTranslation from '../hooks/use-translation';
+
 import * as sliderStyles from '../styles/modules/slider.module.scss';
 
 const Projects = () => {
@@ -47,6 +49,10 @@ const Projects = () => {
     }
   `);
 
+  const { t, isHydrated } = useTranslation();
+
+  if (!isHydrated) return null;
+
   const eternityDrum = (
     <div className={sliderStyles.sliderInfo}>
       <div>
@@ -55,17 +61,14 @@ const Projects = () => {
           rel="noopener noreferrer"
           target="_blank"
         >
-          bekijk website
+          {t('recentProjectsViewSiteButton')}
         </a>
         <Link to="/portfolio/">
           <h5>Eternity Drum</h5>
         </Link>
       </div>
 
-      <p>
-        Deze website is gebouwd in opdracht van Stichting Eternity Percussion
-        uit Amsterdam
-      </p>
+      <p>{t('recentProjectsEPbio')}</p>
       <ul>
         <li>GatsbyJS</li>
         <li>ReactJS</li>
@@ -83,17 +86,14 @@ const Projects = () => {
           rel="noopener noreferrer"
           target="_blank"
         >
-          bekijk website
+          {t('recentProjectsViewSiteButton')}
         </a>
         <Link to="/portfolio/">
           <h5>Black Harmony</h5>
         </Link>
       </div>
 
-      <p>
-        Deze website is gebouwd in opdracht van zanggroep Black Harmony uit
-        Amsterdam
-      </p>
+      <p>{t('recentProjectsBHbio')}</p>
       <ul>
         <li>Wordpress</li>
         <li>Advanced Custom Field Types</li>
@@ -111,17 +111,14 @@ const Projects = () => {
           rel="noopener noreferrer"
           target="_blank"
         >
-          bekijk webapp
+          {t('recentProjectsViewAppButton')}
         </a>
         <Link to="/portfolio/">
           <h5>Afrodiasphere</h5>
         </Link>
       </div>
 
-      <p>
-        Dit project is geheel op eigen initiatief opgezet, gericht op sociale
-        interacties
-      </p>
+      <p>{t('recentProjectsADSbio')}</p>
       <ul>
         <li>GatsbyJS</li>
         <li>Strapi</li>
@@ -140,17 +137,14 @@ const Projects = () => {
           rel="noopener noreferrer"
           target="_blank"
         >
-          bekijk website
+          {t('recentProjectsViewSiteButton')}
         </a>
         <Link to="/portfolio/">
           <h5>DS Melodies</h5>
         </Link>
       </div>
 
-      <p>
-        Deze website is gebouwd in opdracht van steelpannist Derek Simpey uit
-        Amsterdam
-      </p>
+      <p>{t('recentProjectsDSbio')}</p>
       <ul>
         <li>Wordpress</li>
         <li>Custom CSS</li>
@@ -164,20 +158,17 @@ const Projects = () => {
       <div>
         <a
           href="https://kn-acdig.com"
-          // href="#!"
           rel="noopener noreferrer"
           target="_blank"
         >
-          bekijk website
+          {t('recentProjectsViewSiteButton')}
         </a>
         <Link to="/portfolio/">
           <h5>KN-ACDiG</h5>
         </Link>
       </div>
 
-      <p>
-        Deze website is gebouwd in opdracht van stichting KN-ACDiG uit Den-Haag
-      </p>
+      <p>{t('recentProjectsKNbio')}</p>
       <ul>
         <li>Wordpress</li>
         <li>Custom CSS</li>
@@ -191,11 +182,10 @@ const Projects = () => {
       <div>
         <a
           href="https://keeptreal.nl"
-          // href="#!"
           rel="noopener noreferrer"
           target="_blank"
         >
-          bekijk website
+          {t('recentProjectsViewSiteButton')}
         </a>
         <Link to="/portfolio/">
           <h5>Keep It Real</h5>

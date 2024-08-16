@@ -6,7 +6,9 @@ import * as servicesStyles from '../styles/modules/services.module.scss';
 import useTranslation from '../hooks/use-translation';
 
 const Service = () => {
-  const { t } = useTranslation();
+  const { t, isHydrated } = useTranslation();
+
+  if (!isHydrated) return null;
 
   return (
     <section className={servicesStyles.serviceContainer} id="services">

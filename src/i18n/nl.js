@@ -61,4 +61,22 @@ export default {
   servicesFocusSeoTwo: 'Aanzienlijk meer (in)directe webbezoekers',
   servicesFocusSeoThree: 'Grafieken, tactieken en statistieken',
   servicesPricesButton: 'Bekijk de prijslijst',
+
+  recentProjectsViewSiteButton: 'Bekijk website',
+  recentProjectsViewAppButton: 'Bekijk webapp',
+
+  recentProjectsEPbio:
+    'Deze website is gebouwd in opdracht van Stichting Eternity Percussion uit Amsterdam',
+  recentProjectsBHbio:
+    'Deze website is gebouwd in opdracht van zanggroep Black Harmony uit Amsterdam',
+  recentProjectsADSbio:
+    'Dit project is geheel op eigen initiatief opgezet, gericht op sociale interacties',
+  recentProjectsDSbio:
+    'Deze website is gebouwd in opdracht van steelpannist Derek Simpey uit Amsterdam',
+  recentProjectsKNbio:
+    'Deze website is gebouwd in opdracht van stichting KN-ACDiG uit Den-Haag',
+  recentProjectsKIRbio:
+    'Deze website is gebouwd in opdracht van stichting Regalness.nl uit Amsterdam',
+  recentProjectsEPbio:
+    'Deze website is gebouwd in opdracht van Stichting Eternity Percussion uit Amsterdam',
 };

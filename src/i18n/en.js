@@ -60,6 +60,21 @@ export default {
   servicesFocusSeoOne: 'Findability in popular search engines',
   servicesFocusSeoTwo: 'Significantly more (in)direct web visitors',
   servicesFocusSeoThree: 'Charts, tactics and statistics',
-
   servicesPricesButton: 'View our prices',
+
+  recentProjectsViewSiteButton: 'View website',
+  recentProjectsViewAppButton: 'View webapp',
+
+  recentProjectsEPbio:
+    'This website was built on behalf of the Eternity Percussion Foundation from Amsterdam',
+  recentProjectsBHbio:
+    'This website was built on behalf of Black Harmony, a music group from Amsterdam',
+  recentProjectsADSbio:
+    'This project was set up entirely on our own initiative, focusing on social interactions',
+  recentProjectsDSbio:
+    'This website was built on behalf of steel pannist Derek Simpey from Amsterdam',
+  recentProjectsKNbio:
+    'This website was built on behalf of the KN-ACDiG foundation from The Hague',
+  recentProjectsKIRbio:
+    'This website was built on behalf of the Regalness.nl foundation from Amsterdam.',
 };

@@ -8,7 +8,7 @@ import useTranslation from '../hooks/use-translation';
 import * as actualStyles from '../styles/modules/actual.module.scss';
 
 const Actual = () => {
-  const { t, i18n } = useTranslation();
+  const { t, i18n, isHydrated } = useTranslation();
   const currentLanguage = i18n.language;
 
   const data = useStaticQuery(graphql`
@@ -83,6 +83,8 @@ const Actual = () => {
   }
 
   const frontImage = getImage(currentContent.image);
+
+  if (!isHydrated) return null;
 
   return (
     <section className={actualStyles.actualContainer}>
