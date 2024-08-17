@@ -194,4 +194,37 @@ export default {
 
   aboutSpotifyIntro:
     "<b>WE ❤︎ MUSIC !</b> That's why we share our <u>work, chill & vibe</u> - playlist. Enjoy and stay tuned for updates.",
+
+  contactIntro:
+    "<h5>Let's create something great! ✨</h5><br /><p class='page-sub'>Have your website, webshop or web app built by <b>Menefex</b>?</p><br /><p class='page-sub'>Request a quote! If you have a <u>question or comment</u>, please do not hesitate to leave a message below.</p><br /><p class='page-sub'><b>We will respond within one working day contact you.</b></p>",
+
+  contactFormName: 'Name',
+  contactFormCompany: 'Company name (optional)',
+  contactFormPhone: 'Telephone',
+  contactFormSubject: 'Select subject',
+  contactFormSubjectQuote: 'Request a quote',
+  contactFormSubjectCollab: 'Entering into a collaboration',
+  contactFormSubjectQuestion: 'Question / Comment',
+  contactFormSubjectComplaint: 'Complaint / Feedback',
+  contactFormSubjectHelp: 'Help & Troubleshooting',
+  contactFormMessage: 'Type your message below',
+  contactFormSend: 'Send',
+
+  contactInfoTitle: 'Menefex Web Media Company',
+  contactInfoLocation: 'located in <b>Amsterdam-Zuidoost</b>',
+  contactInfoAvaliable: 'We can be reached from:',
+  contactInfoMonday: 'monday',
+  contactInfoTuesday: 'tuesday',
+  contactInfoWednesday: 'wednesday',
+  contactInfoThursday: 'thursday',
+  contactInfoFriday: 'friday',
+  contactInfoSaturday: 'saturday',
+  contactInfoSunday: 'sunday',
+  contactInfoClosed: 'closed',
+
+  contactInfoDetails:
+    '<u>Chamber of Commerce-number</u><br /><b>76045315</b><br /><br /><u>VAT-number</u><br /><b>NL 003040579B17</b><br /><br /><u>BANK-number</u><br /><b>NL10 BUNQ 2038 8619 94</b>',
+
+  contactInfoFollowSocials:
+    '<u><b>Follow</b><span><b> / </b></span><b>support</b> our socials</u>',
 };

@@ -4,9 +4,13 @@ import { navigate } from 'gatsby';
 
 import axios from 'axios';
 
+import useTranslation from '../hooks/use-translation';
+
 import * as leadStyles from '../styles/modules/leadForm.module.scss';
 
 const Form = () => {
+  const { t, isHydrated } = useTranslation();
+
   const [inputs, setInputs] = useState({
     name: '',
     company: '',
@@ -37,7 +41,7 @@ const Form = () => {
         [event.target.name]: event.target.value,
       });
     },
-    [inputs],
+    [inputs]
   );
 
   const handleSubmit = useCallback(
@@ -55,8 +59,10 @@ const Form = () => {
         .catch((error) => console.log('POST ERROR', error));
     },
 
-    [inputs],
+    [inputs]
   );
+
+  if (!isHydrated) return null;
 
   return (
     <form
@@ -65,7 +71,7 @@ const Form = () => {
       action="/success/"
     >
       <label htmlFor="lead_name">
-        <span>*</span> Naam
+        <span>*</span> {t('contactFormName')}
       </label>
       <input
         type="text"
@@ -77,7 +83,7 @@ const Form = () => {
       />
 
       <label htmlFor="lead_company">
-        <span>*</span> Bedrijfsnaam (optioneel)
+        <span>*</span> {t('contactFormCompany')}
       </label>
       <input
         type="text"
@@ -101,7 +107,7 @@ const Form = () => {
       />
 
       <label htmlFor="lead_tel">
-        <span>*</span> Telefoon
+        <span>*</span> {t('contactFormPhone')}
       </label>
       <input
         type="tel"
@@ -114,7 +120,7 @@ const Form = () => {
       />
 
       <label htmlFor="lead_subject">
-        <span>*</span> Selecteer onderwerp
+        <span>*</span> {t('contactFormSubject')}
       </label>
       <select
         name="subject"
@@ -123,19 +129,25 @@ const Form = () => {
         onChange={handleChange}
         required
       >
-        <option value="Ik wil een offerte aanvragen">Offerte aanvragen</option>
-        <option value="Ik wil een samenwerking aangaan">
-          Samenwerking aangaan
+        <option value="Ik wil een offerte aanvragen">
+          {t('contactFormSubjectQuote')}
         </option>
-        <option value="Ik heb een vraag of opmerking">Vraag / Opmerking</option>
-        <option value="Ik wil graag feedback geven">Klacht / Feedback</option>
+        <option value="Ik wil een samenwerking aangaan">
+          {t('contactFormSubjectCollab')}
+        </option>
+        <option value="Ik heb een vraag of opmerking">
+          {t('contactFormSubjectQuestion')}
+        </option>
+        <option value="Ik wil graag feedback geven">
+          {t('contactFormSubjectComplaint')}
+        </option>
         <option value="Ik wil graag hulp of ondersteuning">
-          Hulp & Probleemoplossing
+          {t('contactFormSubjectHelp')}
         </option>
       </select>
 
       <label htmlFor="lead_text">
-        <span>*</span> Type uw bericht hieronder
+        <span>*</span> {t('contactFormMessage')}
       </label>
       <textarea
         type="text"
@@ -147,7 +159,7 @@ const Form = () => {
         required
       />
 
-      <button type="submit">Versturen</button>
+      <button type="submit">{t('contactFormSend')}</button>
     </form>
   );
 };

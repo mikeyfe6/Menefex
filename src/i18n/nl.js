@@ -195,4 +195,37 @@ export default {
 
   aboutSpotifyIntro:
     '<b>WE ❤︎ MUSIC !</b> Daarom delen we ons <u>work, chill & vibe</u> - playlist. Geniet ervan en blijf ons volgen voor updates.',
+
+  contactIntro:
+    '<h5>Laten wij iets geweldigs creëeren! ✨</h5><br /><p class="page-sub">Jouw website, webshop of webapp laten bouwen door <b>Menefex</b>?</p><br /><p class="page-sub">Vraag een offerte aan! Heb je anders een <u>vraag of opmerking</u>, aarzel niet een bericht hieronder achter te laten.</p><br /><p class="page-sub"><b>Binnen één werkdag nemen wij contact met u op.</b></p>',
+
+  contactFormName: 'Naam',
+  contactFormCompany: 'Bedrijfsnaam (optioneel)',
+  contactFormPhone: 'Telefoon',
+  contactFormSubject: 'Selecteer onderwerp',
+  contactFormSubjectQuote: 'Offerte aanvragen',
+  contactFormSubjectCollab: 'Samenwerking aangaan',
+  contactFormSubjectQuestion: 'Vraag / Opmerking',
+  contactFormSubjectComplaint: 'Klacht / Feedback',
+  contactFormSubjectHelp: 'Hulp & Probleemoplossing',
+  contactFormMessage: 'Type uw bericht hieronder',
+  contactFormSend: 'Versturen',
+
+  contactInfoTitle: 'Menefex Webmediabedrijf',
+  contactInfoLocation: 'gevestigd in <b>Amsterdam-Zuidoost</b>',
+  contactInfoAvaliable: 'Wij zijn bereikbaar van:',
+  contactInfoMonday: 'maandag',
+  contactInfoTuesday: 'dinsdag',
+  contactInfoWednesday: 'woensdag',
+  contactInfoThursday: 'donderdag',
+  contactInfoFriday: 'vrijdag',
+  contactInfoSaturday: 'zaterdag',
+  contactInfoSunday: 'zondag',
+  contactInfoClosed: 'gesloten',
+
+  contactInfoDetails:
+    '<u>Kamer van koophandel-nummer</u><br /><b>76045315</b><br /><br /><u>BTW-nummer</u><br /><b>NL 003040579B17</b><br /><br /><u>BANK-nummer</u><br /><b>NL10 BUNQ 2038 8619 94</b>',
+
+  contactInfoFollowSocials:
+    '<u><b>Volg</b><span><b> / </b></span><b>support</b> onze socials</u>',
 };

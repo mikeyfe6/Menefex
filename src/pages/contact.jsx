@@ -4,35 +4,24 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 import useSiteMetadata from '../hooks/use-site-metadata';
+import useTranslation from '../hooks/use-translation';
 
 import LeadForm from '../components/leadForm';
 import Info from '../components/info';
 import Maps from '../components/google/maps';
 
 const ContactPage = () => {
+  const { t, isHydrated } = useTranslation();
+
+  if (!isHydrated) return null;
+
   return (
     <Layout>
       <h1 className="page-title">
         Contact<span>.</span>
       </h1>
 
-      <div>
-        <h5>Laten wij iets geweldigs creëeren! ✨</h5>
-
-        <br />
-        <p className="page-sub">
-          Jouw website, webshop of webapp laten bouwen door <b>Menefex</b>?
-        </p>
-        <br />
-        <p className="page-sub">
-          Vraag een offerte aan! Heb je anders een <u>vraag of opmerking</u>,
-          aarzel niet een bericht hieronder achter te laten.
-        </p>
-        <br />
-        <p className="page-sub">
-          <b>Binnen één werkdag nemen wij contact met u op.</b>
-        </p>
-      </div>
+      <div dangerouslySetInnerHTML={{ __html: t('contactIntro') }} />
 
       <div className="form-info">
         <LeadForm />
