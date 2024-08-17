@@ -4,22 +4,30 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 import useSiteMetadata from '../hooks/use-site-metadata';
+import useTranslation from '../hooks/use-translation';
 
 import About from '../components/about';
 import Spotify from '../components/spotify';
 
-const AboutPage = () => (
-  <Layout>
-    <h1 className="page-title">
-      Over Menefex<span>.</span>
-    </h1>
+const AboutPage = () => {
+  const { t, isHydrated } = useTranslation();
 
-    <div className="about-spotify">
-      <About />
-      <Spotify />
-    </div>
-  </Layout>
-);
+  if (!isHydrated) return null;
+
+  return (
+    <Layout>
+      <h1 className="page-title">
+        {t('aboutTitle')}
+        <span>.</span>
+      </h1>
+
+      <div className="about-spotify">
+        <About />
+        <Spotify />
+      </div>
+    </Layout>
+  );
+};
 
 export default AboutPage;
 

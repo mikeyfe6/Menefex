@@ -158,7 +158,7 @@ export default {
   priceTableOneMonth: '1 month free support',
   priceTableThreeMonths: '3 months free support',
   priceTableSixMonths: '6 months free support',
-  priceTableSixMonths: '12 months free support',
+  priceTableTwelveMonths: '12 months free support',
   priceQuote: 'QUOTE',
 
   priceNotesTitle: 'Additional information:',
@@ -174,4 +174,24 @@ export default {
   pricesFormChooseDay: 'Choose a day and time',
   pricesFormComments: 'Do you have any comments? (optional)',
   pricesFormCallMeBack: 'Call me back',
+
+  aboutTitle: 'About Menefex',
+  aboutWhoAreWeTitle: 'Who are we?',
+  aboutWhoAreWeText:
+    "<p><b>Menefex</b> is a young and modern web media company, founded by <a href='https://www.linkedin.com/in/michaelfransman/' rel='noopener noreferrer' target='_blank'>Michael Fransman</a>, who is committed and specialized in designing and developing websites and web applications. We ensure that the customer's ambitions and the end product come together.</p>",
+
+  aboutWhatWeStandForTitle: 'What do we stand for?',
+  aboutWhatWeStandForText:
+    '<b>Menefex</b> stands for efficiency, innovation, user-friendliness and perhaps two of our most important aspects; the functionality and the modern design. We build our software products on a custom basis and ensure that the customer can relate to the end product as much as possible. We believe that functionality should be balanced with the visual aspects of the website/web application for an ultimate experience.',
+
+  aboutUniqueTitle: 'What makes Menefex so unique?',
+  aboutUniqueText:
+    '<b>Menefex</b> offers the necessary help, service and communication before, during and after the construction process of your product and has this on a high platform. We think along with the customer. We work with the latest and most stable software, so that your product remains safe and durable. At Menefex we respect essential details and nothing is impossible. When building, every last pixel is considered.',
+
+  aboutGoalsTitle: 'Our goals, aspiration and motivation?',
+  aboutGoalsText:
+    "<b>Menefex's</b> driving force is its interest in the diversity of software and the endless possibilities that technology offers these days. Moreover, it motivates us if we can offer our satisfied customers a digital bridge and put their ambitions packaged in a digital product on the map worldwide through a website or web application.",
+
+  aboutSpotifyIntro:
+    "<b>WE ❤︎ MUSIC !</b> That's why we share our <u>work, chill & vibe</u> - playlist. Enjoy and stay tuned for updates.",
 };
