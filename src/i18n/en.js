@@ -126,4 +126,52 @@ export default {
     '<strong>Black Harmony</strong> is a popular and talented singing group from Amsterdam. This music organization wants to contribute to the positioning of traditional music called Apinti Kawina. Black harmony wants to act as an ambassador when it comes to traditional Afro-Surinamese music.',
   portfolioBHfocus:
     '* This website contains information, media and interactive social media applications',
+
+  blogPostedOn: 'Posted on:',
+  blogAuthor: 'Author:',
+
+  pricesTitle: 'Prices & rates',
+  pricesIntroOne:
+    'Here you will see an indication of our competitive prices. If you prefer an oriented conversation, please',
+  pricesContact: 'contact us',
+  pricesIntroTwo: 'or request an',
+  pricesCallBack: 'callback request',
+
+  priceTableVat: 'excl. VAT',
+  priceTableDiscount: '*PROMO: 10% discount',
+  priceTableContains: '... contains:',
+  priceTablePages: 'pages',
+  priceTableCustomDesign: 'Custom Design',
+  priceTableResponsive: 'Responsive for all devices',
+  priceTableCms: 'CMS (Content Manager)',
+  priceTableMedia: 'Photos, videos & other media',
+  priceTableForms: 'Extensive Forms',
+  priceTableSocialMedia: 'Social Media Integration',
+  priceTableBank: 'E-commerce (+ Bank Integration)',
+  priceTableSearch: 'Search module',
+  priceTableReviews: 'Testimonials / Reviews',
+  priceTableStatistics:
+    'Statistics; Google Analytics, Tag Manager and Search Console',
+  priceTableSsl: 'SSL Certificate',
+  priceTableExtra: 'extra features: €45 per hour',
+
+  priceTableOneMonth: '1 month free support',
+  priceTableThreeMonths: '3 months free support',
+  priceTableSixMonths: '6 months free support',
+  priceTableSixMonths: '12 months free support',
+  priceQuote: 'QUOTE',
+
+  priceNotesTitle: 'Additional information:',
+  priceNotesText:
+    '<p>You have clearly also come to the right place for <b><u>smaller ones</u></b>, for example <b>maintenance</b>, a <b>new logo</b>, <b>extra additions</b> of <b>applications</b> on your website, web app or webshop, better <b>visibility</b> via the search results <b>(SEO)</b> on e.g. Google, Bing, Yahoo... You name it, make it as crazy as you want. <u>We fix it!</u></p><p>We also tackle <b>larger projects</b> that require more time, such as updating an existing website. All important services are priced at <b>€45 per hour (excl. VAT).</b></p><p>If you are unable to decide which <b>package</b> best suited to you... No problem! We are happy to help you. Request a <b>callback</b> request below, <b>call</b> or <b>email</b> us and everything will be discussed in detail. </p><p>* <a href="https://menefex.nl/Menefex-prijslijst.pdf" rel="noopener noreferrer" target="_blank"><b>Download here</b></a> an <u>overview</u> of our prices in <b>pdf</b> form.</p>',
+
+  pricesFormTitle: 'Callback request',
+  pricesFormName: 'Name',
+  pricesFormPhone: 'Telephone',
+  pricesFormSelectTime: 'Select a desired time',
+  pricesFormTomorrow: 'Tomorrow between',
+  pricesFormToday: 'Today between',
+  pricesFormChooseDay: 'Choose a day and time',
+  pricesFormComments: 'Do you have any comments? (optional)',
+  pricesFormCallMeBack: 'Call me back',
 };

@@ -4,44 +4,44 @@ import { navigate } from 'gatsby';
 
 import axios from 'axios';
 
+import useTranslation from '../hooks/use-translation';
+
 import * as callStyles from '../styles/modules/callForm.module.scss';
 
-// const d = new Date();
-// const hour = d.getHours();
-// console.log(hour);
-
 const Call = ({ callRef }) => {
+  const { t, isHydrated } = useTranslation();
+
   const [options, setOptions] = useState([
     {
-      display: 'tussen 10:00 - 10:30 uur',
+      display: `10:00 - 10:30`,
       hour: 10,
     },
     {
-      display: 'tussen 11:00 - 11:30 uur',
+      display: '11:00 - 11:30',
       hour: 11,
     },
     {
-      display: 'tussen 12:00 - 12:30 uur',
+      display: '12:00 - 12:30',
       hour: 12,
     },
     {
-      display: 'tussen 13:00 - 13:30 uur',
+      display: '13:00 - 13:30',
       hour: 13,
     },
     {
-      display: 'tussen 14:00 - 14:30 uur',
+      display: '14:00 - 14:30',
       hour: 14,
     },
     {
-      display: 'tussen 15:00 - 15:30 uur',
+      display: '15:00 - 15:30',
       hour: 15,
     },
     {
-      display: 'tussen 16:00 - 16:30 uur',
+      display: '16:00 - 16:30',
       hour: 16,
     },
     {
-      display: 'tussen 17:00 - 17:30 uur',
+      display: '17:00 - 17:30',
       hour: 17,
     },
   ]);
@@ -54,23 +54,30 @@ const Call = ({ callRef }) => {
   });
 
   useEffect(() => {
+    if (!isHydrated) return;
+
     const now = new Date();
     const currentHour = now.getHours();
+
     const updatedOptions = options.map((slot) => {
-      if (currentHour >= slot.hour) {
-        return {
-          ...slot,
-          display: `Morgen ${slot.display}`,
-        };
-      } else {
-        return {
-          ...slot,
-          display: `Vandaag ${slot.display}`,
-        };
-      }
+      const timePart = slot.display.replace(
+        /^(Vandaag tussen|Morgen tussen|Today between|Tomorrow between)\s*/,
+        ''
+      );
+
+      const dayPrefix =
+        currentHour >= slot.hour
+          ? t('pricesFormTomorrow')
+          : t('pricesFormToday');
+
+      return {
+        ...slot,
+        display: `${dayPrefix} ${timePart}`,
+      };
     });
+
     setOptions(updatedOptions);
-  }, []);
+  }, [isHydrated, t]);
 
   const handleChange = useCallback(
     (event) => {
@@ -101,17 +108,19 @@ const Call = ({ callRef }) => {
     [inputs]
   );
 
+  if (!isHydrated) return null;
+
   return (
     <form
       onSubmit={handleSubmit}
       className={callStyles.callForm}
       action="/success/"
     >
-      <h5>Terugbelverzoek</h5>
+      <h5>{t('pricesFormTitle')}</h5>
       <hr />
 
       <label htmlFor="call_name">
-        <span>*</span> Naam
+        <span>*</span> {t('pricesFormName')}
       </label>
       <input
         type="text"
@@ -124,7 +133,7 @@ const Call = ({ callRef }) => {
       />
 
       <label htmlFor="call_tel">
-        <span>*</span> Telefoon
+        <span>*</span> {t('pricesFormPhone')}
       </label>
       <input
         type="tel"
@@ -136,7 +145,7 @@ const Call = ({ callRef }) => {
       />
 
       <label htmlFor="call_time">
-        <span>*</span> Selecteer een gewenst tijdstip
+        <span>*</span> {t('pricesFormSelectTime')}
       </label>
       <select
         required
@@ -147,7 +156,7 @@ const Call = ({ callRef }) => {
         multiple={false}
       >
         <option value="" disabled>
-          Kies een dag en tijd
+          {t('pricesFormChooseDay')}
         </option>
         {options.map((option, index) => (
           <option key={index} value={option.display}>
@@ -157,7 +166,7 @@ const Call = ({ callRef }) => {
       </select>
 
       <label htmlFor="call_text">
-        <span>*</span> Heeft u nog opmerkingen? (optioneel)
+        <span>*</span> {t('pricesFormComments')}
       </label>
       <textarea
         type="text"
@@ -168,7 +177,7 @@ const Call = ({ callRef }) => {
         onChange={handleChange}
       />
 
-      <button type="submit">Bel mij terug</button>
+      <button type="submit">{t('pricesFormCallMeBack')}</button>
     </form>
   );
 };

@@ -13,7 +13,7 @@ import * as blogpostStyles from '../styles/modules/blog.module.scss';
 // TODO: images naar GatsbyImage verwerken
 
 const BlogPage = () => {
-  const { i18n, isHydrated } = useTranslation();
+  const { t, i18n, isHydrated } = useTranslation();
   const currentLanguage = i18n.language;
 
   const data = useStaticQuery(graphql`
@@ -57,7 +57,7 @@ const BlogPage = () => {
                 url
               }
             }
-            createdAt(formatString: "dddd D MMMM YYYY", locale: "nl")
+            createdAt(formatString: "dddd D MMMM YYYY", locale: "en")
           }
         }
       }
@@ -90,8 +90,8 @@ const BlogPage = () => {
                   <h4>{edge.node.title}</h4>
                   <p>{edge.node.subtitle}</p>
                   <span>
-                    Gepost: <strong>{edge.node.createdAt}</strong> ⌁ Auteur:{' '}
-                    <strong>{edge.node.author}</strong>
+                    {t('blogPostedOn')} <strong>{edge.node.createdAt}</strong> ⌁
+                    {t('blogAuthor')} <strong>{edge.node.author}</strong>
                   </span>
                 </div>
 

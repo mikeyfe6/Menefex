@@ -126,4 +126,53 @@ export default {
     '<strong>Black Harmony</strong> is een populaire en getalenteerde zanggroep uit Amsterdam. Deze muziekorganisatie wilt een bijdrage leveren aan de positionering van de traditionele muziek genaamd Apinti Kawina. Black harmony wilt fungeren als ambassadeur als het gaat om traditionele Afro-Surinaamse muziek.',
   portfolioBHfocus:
     '* Deze website bevat informatie, media en interactieve sociale media toepassingen',
+
+  blogPostedOn: 'Gepost:',
+  blogAuthor: 'Auteur:',
+
+  pricesTitle: 'Prijzen & tarieven',
+  pricesIntroOne:
+    'Hier ziet u een indicatie van onze scherpe prijzen. Heeft u liever een georiënteerd gesprek,',
+  pricesContact: 'neem contact',
+  pricesIntroTwo: 'met ons op of vraag om een',
+  pricesCallBack: 'terugbelverzoek',
+
+  priceTableVat: '(excl. btw)',
+  priceTableDiscount: '*ACTIE: 10% korting',
+  priceTableContains: '... bevat:',
+  priceTablePages: "pagina's",
+  priceTableCustomDesign: 'Maatwerk Design',
+  priceTableResponsive: 'Responsief voor alle toestellen',
+  priceTableCms: 'CMS (Contentbeheer)',
+  priceTableMedia: "Foto's, video's & andere media",
+  priceTableForms: 'Uitgebreide Formulieren',
+  priceTableSocialMedia: 'Social Media Integratie',
+  priceTableBank: 'E-commerce (+ Bank Integratie)',
+  priceTableSearch: 'Zoekmodule',
+  priceTableReviews: 'Testimonials / Reviews',
+  priceTableStatistics:
+    'Statistieken; Google Analytics, Tagmanager en Zoekconsole',
+
+  priceTableSsl: 'SSL Certificaat',
+  priceTableExtra: 'extra features: € 45,- per uur',
+
+  priceTableOneMonth: '1 maand gratis support',
+  priceTableThreeMonths: '3 maanden gratis support',
+  priceTableSixMonths: '6 maanden gratis support',
+  priceTableTwelveMonths: '12 maanden gratis support',
+  priceQuote: 'OFFERTE',
+
+  priceNotesTitle: 'Aanvullende informatie:',
+  priceNotesText:
+    '<p>U bent uiteraard ook voor de <b><u>kleinere taken</u></b> bij het juiste adres, denk bijvoorbeeld aan <b>onderhoud</b>, een <b>nieuw logo</b>, <b>extra toevoegingen</b> of <b>toepassingen</b> op uw website, webapp of webshop, beter <b>zichtbaarheid</b> via de zoekresultaten <b>(SEO)</b> op bijv. Google, Bing, Yahoo... Noem maar op, maak het zo gek als u wilt. <u>Wij fixen het!</u></p><p>Ook de <b>grotere projecten</b> die meer tijd vergen, zoals het vernieuwen van een bestaande website pakken we met beide handen aan. Alle genoemde services & diensten vallen onder een prijs van <b>€ 45,- per uur (excl. BTW).</b></p><p>Mocht u er niet uitkomen welk <b>pakket</b> u het beste schikt... Geen probleem! Wij helpen u graag verder. Vraag een <b>terugbelverzoek</b> hieronder aan, <b>bel</b> of <b>mail</b> ons en alles wordt u uitgebreid geïnformeerd. </p><p>* <a href="https://menefex.nl/Menefex-prijslijst.pdf" rel="noopener noreferrer" target="_blank"><b>Download hier</b></a> een <u>overzicht</u> van onze prijzen in <b>pdf</b>-vorm.</p>',
+
+  pricesFormTitle: 'Terugbelverzoek',
+  pricesFormName: 'Naam',
+  pricesFormPhone: 'Telefoon',
+  pricesFormSelectTime: 'Selecteer een gewenst tijdstip',
+  pricesFormTomorrow: 'Morgen tussen',
+  pricesFormToday: 'Vandaag tussen',
+  pricesFormChooseDay: 'Kies een dag en tijd',
+  pricesFormComments: 'Heeft u nog opmerkingen? (optioneel)',
+  pricesFormCallMeBack: 'Bel mij terug',
 };

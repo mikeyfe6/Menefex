@@ -44,7 +44,7 @@
     "gatsby-source-filesystem": "^5.13.1",
     "gatsby-transformer-sharp": "^5.13.1",
     "google-map-react": "^2.2.1",
-    "i18next": "^23.12.7",
+    "i18next": "^23.13.0",
     "i18next-browser-languagedetector": "^8.0.0",
     "i18next-http-backend": "^2.5.2",
     "puppeteer": "^23.1.0",

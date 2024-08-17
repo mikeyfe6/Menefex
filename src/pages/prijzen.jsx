@@ -6,6 +6,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 import useSiteMetadata from '../hooks/use-site-metadata';
+import useTranslation from '../hooks/use-translation';
 
 import PriceTable from '../components/pricetable';
 import Notes from '../components/notes';
@@ -26,12 +27,17 @@ const dateReview = new Date('2024-01-01').toLocaleDateString('nl-NL', {
 });
 
 const Prices = () => {
+  const { t, isHydrated } = useTranslation();
   const callRef = useRef(null);
 
   const goToCallForm = (event) => {
-    event.preventDefault();
-    callRef.current.focus();
+    if (callRef.current) {
+      event.preventDefault();
+      callRef.current.focus();
+    }
   };
+
+  if (!isHydrated) return null;
 
   return (
     <Layout>
@@ -40,20 +46,19 @@ const Prices = () => {
       </h1>
 
       <p className="page-sub">
-        Hier ziet u een indicatie van onze scherpe prijzen. Heeft u liever een
-        georiënteerd gesprek, neem{' '}
+        {t('pricesIntroOne')}{' '}
         <Link to="/contact/" className={pricesStyles.contactus}>
-          contact
+          {t('pricesContact')}
         </Link>{' '}
-        met ons op of vraag een{' '}
+        {t('pricesIntroTwo')}{' '}
         <button
           className={pricesStyles.callme}
           onClick={goToCallForm}
           tabIndex={0}
         >
-          terugbelverzoek
-        </button>{' '}
-        aan.
+          {t('pricesCallBack')}
+        </button>
+        .
       </p>
 
       <PriceTable />

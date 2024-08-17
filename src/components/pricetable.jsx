@@ -2,9 +2,13 @@ import React from 'react';
 
 import { navigate } from 'gatsby';
 
+import useTranslation from '../hooks/use-translation';
+
 import * as pricesStyles from '../styles/modules/prices.module.scss';
 
 const PriceTable = () => {
+  const { t, isHydrated } = useTranslation();
+
   const SalePrice = ({ ogPrice }) => {
     const totalPrice = ogPrice - (ogPrice / 100) * 10;
     const endResult = totalPrice;
@@ -28,6 +32,8 @@ const PriceTable = () => {
     }, 100);
   };
 
+  if (!isHydrated) return null;
+
   return (
     <section>
       <ul className={pricesStyles.prices}>
@@ -35,27 +41,29 @@ const PriceTable = () => {
           <h4>BUDGET PLAN</h4>
           <p className={pricesStyles.price}>
             <span>€ 295,-</span> <SalePrice ogPrice={295} />{' '}
-            <sup>(excl. btw)</sup>
+            <sup>{t('priceTableVat')}</sup>
           </p>
-          <p className={pricesStyles.priceAction}>*ACTIE: 10% korting</p>
-          <p className={pricesStyles.priceContains}>... bevat:</p>
+          <p className={pricesStyles.priceAction}>{t('priceTableDiscount')}</p>
+          <p className={pricesStyles.priceContains}>
+            {t('priceTableContains')}
+          </p>
           <ul>
-            <li className={pricesStyles.priceBold}>1 - 2 pagina&apos;s</li>
-            <li>Maatwerk Design</li>
-            <li>Responsief voor alle toestellen</li>
-            <li>CMS (Content Manager)</li>
-            <li>Foto&apos;s, video&apos;s & andere media</li>
-            <li>Uitgebreide Formulieren</li>
-            <li>Social Media Integratie</li>
-            <li>Testimonials / Reviews</li>
-            <li>
-              Statistieken; Google Analytics, Tag Manager & Search Console
+            <li className={pricesStyles.priceBold}>
+              1 - 2 {t('priceTablePages')}
             </li>
-            <li>SSL Certificaat</li>
-            <li className={pricesStyles.priceFeat}>
-              extra features: € 45,- per uur
+            <li>{t('priceTableCustomDesign')}</li>
+            <li>{t('priceTableResponsive')}</li>
+            <li>{t('priceTableCms')}</li>
+            <li>{t('priceTableMedia')}</li>
+            <li>{t('priceTableForms')}</li>
+            <li>{t('priceTableSocialMedia')}</li>
+            <li>{t('priceTableReviews')}</li>
+            <li>{t('priceTableStatistics')}</li>
+            <li>{t('priceTableSsl')}</li>
+            <li className={pricesStyles.priceFeat}>{t('priceTableExtra')}</li>
+            <li className={pricesStyles.priceBold}>
+              {t('priceTableOneMonth')}
             </li>
-            <li className={pricesStyles.priceBold}>1 maand gratis support</li>
           </ul>
           <button
             type="button"
@@ -67,7 +75,7 @@ const PriceTable = () => {
               )
             }
           >
-            OFFERTE
+            {t('priceQuote')}
           </button>
         </li>
 
@@ -75,28 +83,30 @@ const PriceTable = () => {
           <h4>STARTER PLAN</h4>
           <p className={pricesStyles.price}>
             <span>€ 595,-</span> <SalePrice ogPrice={595} />{' '}
-            <sup>(excl. btw)</sup>
+            <sup>{t('priceTableVat')}</sup>
           </p>
-          <p className={pricesStyles.priceAction}>*ACTIE: 10% korting</p>
-          <p className={pricesStyles.priceContains}>... bevat:</p>
+          <p className={pricesStyles.priceAction}>{t('priceTableDiscount')}</p>
+          <p className={pricesStyles.priceContains}>
+            {t('priceTableContains')}
+          </p>
           <ul>
-            <li className={pricesStyles.priceBold}>1 - 5 pagina&apos;s</li>
-            <li>Maatwerk Design</li>
-            <li>Responsief voor alle toestellen</li>
-            <li>CMS (Content Manager)</li>
+            <li className={pricesStyles.priceBold}>
+              1 - 5 {t('priceTablePages')}
+            </li>
+            <li>{t('priceTableCustomDesign')}</li>
+            <li>{t('priceTableResponsive')}</li>
+            <li>{t('priceTableCms')}</li>
             <li className={pricesStyles.priceBold}>Blog</li>
-            <li>Foto&apos;s, video&apos;s & andere media</li>
-            <li>Uitgebreide Formulieren</li>
-            <li>Social Media Integratie</li>
-            <li>Testimonials / Reviews</li>
-            <li>
-              Statistieken; Google Analytics, Tag Manager & Search Console
+            <li>{t('priceTableSocialMedia')}</li>
+            <li>{t('priceTableForms')}</li>
+            <li>{t('priceTableSocialMedia')}</li>
+            <li>{t('priceTableReviews')}</li>
+            <li>{t('priceTableStatistics')}</li>
+            <li>{t('priceTableSsl')}</li>
+            <li className={pricesStyles.priceFeat}>{t('priceTableExtra')}</li>
+            <li className={pricesStyles.priceBold}>
+              {t('priceTableThreeMonths')}
             </li>
-            <li>SSL Certificaat</li>
-            <li className={pricesStyles.priceFeat}>
-              extra features: € 45,- per uur
-            </li>
-            <li className={pricesStyles.priceBold}>3 maanden gratis support</li>
           </ul>
           <button
             type="button"
@@ -108,7 +118,7 @@ const PriceTable = () => {
               )
             }
           >
-            OFFERTE
+            {t('priceQuote')}
           </button>
         </li>
 
@@ -116,29 +126,31 @@ const PriceTable = () => {
           <h4>ESTABLISHED PLAN</h4>
           <p className={pricesStyles.price}>
             <span>€ 1025,-</span> <SalePrice ogPrice={1025} />{' '}
-            <sup>(excl. btw)</sup>
+            <sup>{t('priceTableVat')}</sup>
           </p>
-          <p className={pricesStyles.priceAction}>*ACTIE: 10% korting</p>
-          <p className={pricesStyles.priceContains}>... bevat:</p>
+          <p className={pricesStyles.priceAction}>{t('priceTableDiscount')}</p>
+          <p className={pricesStyles.priceContains}>
+            {t('priceTableContains')}
+          </p>
           <ul>
-            <li className={pricesStyles.priceBold}>± 10 pagina&apos;s</li>
-            <li>Maatwerk Design</li>
-            <li>Responsief voor alle toestellen</li>
-            <li>CMS (Content Manager)</li>
+            <li className={pricesStyles.priceBold}>
+              ± 10 {t('priceTablePages')}
+            </li>
+            <li>{t('priceTableCustomDesign')}</li>
+            <li>{t('priceTableResponsive')}</li>
+            <li>{t('priceTableCms')}</li>
             <li className={pricesStyles.priceBold}>Blog</li>
-            <li>Foto&apos;s, video&apos;s & andere media</li>
-            <li>Uitgebreide Formulieren</li>
-            <li className={pricesStyles.priceBold}>Zoekmodule</li>
-            <li>Social Media Integratie</li>
-            <li>Testimonials / Reviews</li>
-            <li>
-              Statistieken; Google Analytics, Tag Manager & Search Console
+            <li>{t('priceTableSocialMedia')}</li>
+            <li>{t('priceTableForms')}</li>
+            <li className={pricesStyles.priceBold}>{t('priceTableSearch')}</li>
+            <li>{t('priceTableSocialMedia')}</li>
+            <li>{t('priceTableReviews')}</li>
+            <li>{t('priceTableStatistics')}</li>
+            <li>{t('priceTableSsl')}</li>
+            <li className={pricesStyles.priceFeat}>{t('priceTableExtra')}</li>
+            <li className={pricesStyles.priceBold}>
+              {t('priceTableSixMonths')}
             </li>
-            <li>SSL Certificaat</li>
-            <li className={pricesStyles.priceFeat}>
-              extra features: € 45,- per uur
-            </li>
-            <li className={pricesStyles.priceBold}>6 maanden gratis support</li>
           </ul>
           <button
             type="button"
@@ -150,7 +162,7 @@ const PriceTable = () => {
               )
             }
           >
-            offerte
+            {t('priceQuote')}
           </button>
         </li>
 
@@ -158,34 +170,30 @@ const PriceTable = () => {
           <h4>BUSINESS PLAN</h4>
           <p className={pricesStyles.price}>
             <span>€ 1575,-</span> <SalePrice ogPrice={1575} />{' '}
-            <sup>(excl. btw)</sup>
+            <sup>{t('priceTableVat')}</sup>
           </p>
-          <p className={pricesStyles.priceAction}>*ACTIE: 10% korting</p>
-          <p className={pricesStyles.priceContains}>... bevat:</p>
+          <p className={pricesStyles.priceAction}>{t('priceTableDiscount')}</p>{' '}
+          <p className={pricesStyles.priceContains}>
+            {t('priceTableContains')}
+          </p>
           <ul>
-            <li className={pricesStyles.priceBold}>∞ pagina&apos;s</li>
-            <li>Maatwerk Design</li>
-            <li>Responsief voor alle toestellen</li>
-            <li>CMS (Content Manager)</li>
+            <li className={pricesStyles.priceBold}>∞ {t('priceTablePages')}</li>
+            <li>{t('priceTableCustomDesign')}</li>
+            <li>{t('priceTableResponsive')}</li>
+            <li>{t('priceTableCms')}</li>
             <li className={pricesStyles.priceBold}>Blog</li>
-            <li>Foto&apos;s, video&apos;s & andere media</li>
+            <li>{t('priceTableSocialMedia')}</li>
             <li className={pricesStyles.priceBold}>User Login / Register</li>
-            <li>Uitgebreide Formulieren</li>
-            <li className={pricesStyles.priceBold}>Zoekmodule</li>
-            <li>Social Media Integratie</li>
+            <li>{t('priceTableForms')}</li>
+            <li className={pricesStyles.priceBold}>{t('priceTableSearch')}</li>
+            <li>{t('priceTableSocialMedia')}</li>
+            <li className={pricesStyles.priceBold}>{t('priceTableBank')}</li>
+            <li>{t('priceTableReviews')}</li>
+            <li>{t('priceTableStatistics')}</li>
+            <li>{t('priceTableSsl')}</li>
+            <li className={pricesStyles.priceFeat}>{t('priceTableExtra')}</li>
             <li className={pricesStyles.priceBold}>
-              E-commerce (+ Bank Integratie)
-            </li>
-            <li>Testimonials / Reviews</li>
-            <li>
-              Statistieken; Google Analytics, Tag Manager & Search Console
-            </li>
-            <li>SSL Certificaat</li>
-            <li className={pricesStyles.priceFeat}>
-              extra features: € 45,- per uur
-            </li>
-            <li className={pricesStyles.priceBold}>
-              12 maanden gratis support
+              {t('priceTableTwelveMonths')}
             </li>
           </ul>
           <button
@@ -198,7 +206,7 @@ const PriceTable = () => {
               )
             }
           >
-            offerte
+            {t('priceQuote')}
           </button>
         </li>
       </ul>
