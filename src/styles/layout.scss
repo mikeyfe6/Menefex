@@ -367,12 +367,30 @@ textarea {
     margin-bottom: 1em;
   }
 
+  h5 {
+    margin-top: 2em;
+  }
+
   p {
-    margin-bottom: 1em;
+    margin: 1em 0;
   }
 
   a {
     color: $link-color;
+  }
+
+  ol,
+  ul {
+    margin: 1em 0;
+    padding-left: 1.5em;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+
+  ul {
+    list-style-type: disc;
   }
 }
 

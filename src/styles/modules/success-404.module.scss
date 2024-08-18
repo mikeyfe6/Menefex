@@ -1,0 +1,5 @@
+@import '../configs/globals';
+
+.goback {
+  @include textLink;
+}

@@ -2,23 +2,34 @@ import React from 'react';
 
 import { Link } from 'gatsby';
 
+import useTranslation from '../hooks/use-translation';
+
 import SEO from '../components/seo';
 import Layout from '../components/layout';
 
-const ThankYouPage = () => (
-  <Layout>
-    <section>
-      <h1 className="page-title">
-        Bedankt voor u bericht<span className="lazy-color">..</span>
-      </h1>
-      <p className="page-sub">
-        Wij nemen zo spoeding mogelijk contact met u op!
-      </p>
-      <br />
-      <Link to="/">Ga terug naar de hoofdpagina!</Link>
-    </section>
-  </Layout>
-);
+import * as successAndNotFoundStyles from '../styles/modules/success-404.module.scss';
+
+const ThankYouPage = () => {
+  const { t, isHydrated } = useTranslation();
+
+  if (!isHydrated) return null;
+
+  return (
+    <Layout>
+      <section>
+        <h1 className="page-title">
+          {t('successTitle')}
+          <span className="lazy-color">..</span>
+        </h1>
+        <p className="page-sub">{t('successMessage')}</p>
+        <br />
+        <Link to="/" className={successAndNotFoundStyles.goback}>
+          {t('successGoBack')}
+        </Link>
+      </section>
+    </Layout>
+  );
+};
 
 export default ThankYouPage;
 
