@@ -1,5 +1,5 @@
 [build.environment]
-NODE_VERSION = "20.15.1" # - latest NODE version
+NODE_VERSION = "20.16.0" # - latest NODE version
 NPM_VERSION = "10.8.2"   # - latest NPM version
 YARN_VERSION = "1.22.22" # - latest YARN version
 
