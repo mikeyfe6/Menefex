@@ -14,6 +14,7 @@ export default {
   menuItemPrices: 'Prices',
   menuItemAbout: 'About',
   menuItemContact: 'Contact',
+  menuItemWhatsapp: 'Stuur een WhatsApp bericht',
 
   footerText:
     '<span>&copy;</span> 2019 - {{today}} · ${{title}} <span>|</span> <a href="/privacy-policy/">privacy policy</a> <span>|</span> <a href="/terms-conditions/">terms & conditions</a> <span>|</span> all rights reserved <span>|</span> CoC <span>#</span> 76045315 <span>|</span> VAT <span>#</span> NL003040579B17 <span>|</span> Bank <span>#</span> NL10 BUNQ 2038 8619 94',

@@ -2,26 +2,32 @@ import React from 'react';
 
 import { Link } from 'gatsby';
 
+import useTranslation from '../../hooks/use-translation';
+
 import * as mobileMenuStyles from '../../styles/modules/mobileMenu.module.scss';
 
 const MobileMenu = ({ show }) => {
+  const { t, isHydrated } = useTranslation();
+
   let drawerClasses = mobileMenuStyles.mobileMenu;
   if (show) {
     drawerClasses = `${mobileMenuStyles.mobileMenu} ${mobileMenuStyles.open}`;
   }
+
+  if (!isHydrated) return null;
 
   return (
     <nav className={drawerClasses}>
       <ul>
         <li>
           <Link to="/" activeClassName={mobileMenuStyles.activePage}>
-            home
+            {t('menuItemHome').toLowerCase()}
             <span className={mobileMenuStyles.dots}>.</span>
           </Link>
         </li>
         <li>
           <Link to="/portfolio/" activeClassName={mobileMenuStyles.activePage}>
-            portfolio
+            {t('menuItemPortfolio').toLowerCase()}
             <span className={mobileMenuStyles.dots}>.</span>
           </Link>
         </li>
@@ -31,25 +37,25 @@ const MobileMenu = ({ show }) => {
             activeClassName={mobileMenuStyles.activePage}
             partiallyActive
           >
-            blog
+            {t('menuItemBlog').toLowerCase()}
             <span className={mobileMenuStyles.dots}>.</span>
           </Link>
         </li>
         <li>
           <Link to="/prijzen/" activeClassName={mobileMenuStyles.activePage}>
-            prijzen
+            {t('menuItemPrices').toLowerCase()}
             <span className={mobileMenuStyles.dots}>.</span>
           </Link>
         </li>
         <li>
           <Link to="/over/" activeClassName={mobileMenuStyles.activePage}>
-            over
+            {t('menuItemAbout').toLowerCase()}
             <span className={mobileMenuStyles.dots}>.</span>
           </Link>
         </li>
         <li>
           <Link to="/contact/" activeClassName={mobileMenuStyles.activePage}>
-            contact
+            {t('menuItemContact').toLowerCase()}
             <span className={mobileMenuStyles.dots}>.</span>
           </Link>
         </li>
@@ -64,7 +70,7 @@ const MobileMenu = ({ show }) => {
             className={mobileMenuStyles.whapp}
           >
             <i className="fa-brands fa-whatsapp" />
-            Stuur een whatsapp&apos; bericht
+            {t('menuItemWhatsapp')}
             <span className={mobileMenuStyles.dots}>.</span>
           </a>
         </li>
