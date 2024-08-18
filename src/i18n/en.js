@@ -129,6 +129,16 @@ export default {
 
   blogPostedOn: 'Posted on:',
   blogAuthor: 'Author:',
+  blogBackToAll: 'All Blogposts',
+  blogPostedOn: 'Posted on',
+  blogFeedly: 'Read on Feedly',
+  blogFeedburner: 'Subscribe via Feedburner',
+  blogLastUpdated: 'Last updated on',
+  blogRelatedPosts: 'Related posts',
+  blogReadMore: 'Read more',
+
+  topicsIntro: 'All our blog topics at a glance..',
+  topicsBackToAll: "All 'Topics'",
 
   pricesTitle: 'Prices & rates',
   pricesIntroOne:

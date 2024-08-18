@@ -129,6 +129,16 @@ export default {
 
   blogPostedOn: 'Gepost:',
   blogAuthor: 'Auteur:',
+  blogBackToAll: 'Alle Blogposts',
+  blogPostedOn: 'Gepost op',
+  blogFeedly: 'Lees op Feedly',
+  blogFeedburner: 'Aboneer via Feedburner',
+  blogLastUpdated: 'Laatst bijgewerkt',
+  blogRelatedPosts: 'Gerelateerde Artikelen',
+  blogReadMore: 'Lees meer',
+
+  topicsIntro: 'Al onze blog onderwerpen op een rijtje..',
+  topicsBackToAll: "Alle 'Topics'",
 
   pricesTitle: 'Prijzen & tarieven',
   pricesIntroOne:

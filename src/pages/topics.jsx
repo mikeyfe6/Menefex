@@ -2,6 +2,8 @@ import React from 'react';
 
 import { Link, graphql, useStaticQuery } from 'gatsby';
 
+import useTranslation from '../hooks/use-translation';
+
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
@@ -11,9 +13,31 @@ import * as topicStyles from '../styles/modules/topics.module.scss';
 
 // CONTENTFUL blogposts genereren
 const TopicPage = () => {
+  const { t, i18n, isHydrated } = useTranslation();
+  const currentLanguage = i18n.language;
+
   const data = useStaticQuery(graphql`
-    query {
-      allContentfulTopic(sort: { name: ASC }) {
+    query TopicQuery {
+      nlContent: allContentfulTopic(
+        sort: { name: ASC }
+        filter: { node_locale: { eq: "nl" } }
+      ) {
+        edges {
+          node {
+            contentful_id
+            name
+            slug
+            bdcolor
+            description {
+              description
+            }
+          }
+        }
+      }
+      enContent: allContentfulTopic(
+        sort: { name: ASC }
+        filter: { node_locale: { eq: "en" } }
+      ) {
         edges {
           node {
             contentful_id
@@ -29,17 +53,26 @@ const TopicPage = () => {
     }
   `);
 
+  const currentContent =
+    currentLanguage === 'nl' ? data.nlContent.edges : data.enContent.edges;
+
+  if (!currentContent) {
+    return <p>Geen content beschikbaar / No content available.</p>;
+  }
+
+  if (!isHydrated) return null;
+
   return (
     <Layout>
       <h1 className="page-title">
         Topics<span>.</span>
       </h1>
 
-      <p className="page-sub">Al onze blog onderwerpen op een rijtje..</p>
+      <p className="page-sub">{t('topicsIntro')}</p>
 
       <section>
         <ul className={topicStyles.topics}>
-          {data.allContentfulTopic.edges.map(
+          {currentContent.map(
             ({ node: { contentful_id, slug, bdcolor, name, description } }) => (
               <li key={contentful_id}>
                 <Link to={`/topics/${slug}/`} style={{ borderColor: bdcolor }}>
@@ -49,7 +82,7 @@ const TopicPage = () => {
                   <p>{description.description}</p>
                 </Link>
               </li>
-            ),
+            )
           )}
         </ul>
 

@@ -2,11 +2,11 @@ import React from 'react';
 
 import { StaticImage } from 'gatsby-plugin-image';
 
-import Layout from '../components/layout';
-import SEO from '../components/seo';
-
 import useSiteMetadata from '../hooks/use-site-metadata';
 import useTranslation from '../hooks/use-translation';
+
+import Layout from '../components/layout';
+import SEO from '../components/seo';
 
 import * as portfolioStyles from '../styles/modules/portfolio.module.scss';
 

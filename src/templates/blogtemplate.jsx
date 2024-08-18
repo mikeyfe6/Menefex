@@ -9,33 +9,34 @@ import { Disqus } from 'gatsby-plugin-disqus';
 import { BLOCKS, INLINES, MARKS } from '@contentful/rich-text-types';
 import { renderRichText } from 'gatsby-source-contentful/rich-text';
 
+import { format, parseISO } from 'date-fns';
+import { nl, enUS } from 'date-fns/locale';
+
+import useSiteMetadata from '../hooks/use-site-metadata';
+import useTranslation from '../hooks/use-translation';
+
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 import GoogleAdsDisplay from '../components/google/adsdisp';
 import GoogleAdsMulti from '../components/google/adsmulti';
 
-import useSiteMetadata from '../hooks/use-site-metadata';
-
 import mini from '../logo/Menefex-icon.svg';
 
 import * as singlepostStyle from '../styles/modules/singlepost.module.scss';
 
-const Blog = ({ pageContext }) => {
-  const {
-    contentful_id,
-    title,
-    subtitle,
-    topics,
-    image,
-    body,
-    slug,
-    updatedPost,
-    publishedPost,
-    author,
-  } = pageContext;
-
+const Blog = ({ pageContext: { nlContent, enContent } }) => {
+  const { t, i18n, isHydrated } = useTranslation();
   const { siteUrl } = useSiteMetadata();
+
+  const currentLanguage = i18n.language;
+  const content = currentLanguage === 'nl' ? nlContent : enContent;
+
+  const locale = currentLanguage === 'nl' ? nl : enUS;
+
+  const formatDate = (date) => {
+    return format(parseISO(date), 'eeee d MMMM yyyy', { locale });
+  };
 
   const options = {
     preserveWhitespace: false,
@@ -90,7 +91,6 @@ const Blog = ({ pageContext }) => {
       [BLOCKS.HEADING_6]: (node, children) => (
         <h6 className={singlepostStyle.headsixness}>{children}</h6>
       ),
-
       [BLOCKS.UL_LIST]: (node, children) => (
         <ul className={singlepostStyle.unorderedlistness}>{children}</ul>
       ),
@@ -167,11 +167,25 @@ const Blog = ({ pageContext }) => {
     },
   };
 
+  const postTopic = content.topics;
+  const relatedPostsSet = new Set();
+  const relatedPosts = [];
+
+  const currentPostSlug = content.slug;
+
+  postTopic.forEach((topic) => {
+    topic.blog_post.forEach((post) => {
+      if (post.slug !== currentPostSlug && !relatedPostsSet.has(post.slug)) {
+        relatedPostsSet.add(post.slug);
+        relatedPosts.push(post);
+      }
+    });
+  });
+
   useEffect(() => {
     if (process.env.NODE_ENV !== 'development') {
       const script = document.createElement('script');
-
-      script.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.GATSBY_GOOGLE_CA_PUB}}`;
+      script.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.GATSBY_GOOGLE_CA_PUB}`;
       script.async = true;
 
       document.body.appendChild(script);
@@ -184,27 +198,14 @@ const Blog = ({ pageContext }) => {
     }
   }, []);
 
-  const postTopic = topics;
-  const relatedPostsSet = new Set();
-  const relatedPosts = [];
-
-  const currentPostSlug = slug;
-
-  postTopic.forEach((topic) => {
-    topic.blog_post.forEach((post) => {
-      if (post.slug !== currentPostSlug && !relatedPostsSet.has(post.slug)) {
-        relatedPostsSet.add(post.slug);
-        relatedPosts.push(post);
-      }
-    });
-  });
+  if (!isHydrated) return null;
 
   return (
     <Layout>
       <div className={singlepostStyle.singlepost}>
         <section className={singlepostStyle.view}>
           <Link to="/blog/" className={singlepostStyle.backbtn}>
-            <i className="fa-solid fa-angles-left" /> ALLE BLOGPOSTS
+            <i className="fa-solid fa-angles-left" /> {t('blogBackToAll')}
           </Link>
 
           <hr className={singlepostStyle.thickHr} />
@@ -213,7 +214,7 @@ const Blog = ({ pageContext }) => {
             <div className={singlepostStyle.header}>
               <img src={mini} alt="Menefex Icon" />
               <div>
-                <h1 className={singlepostStyle.title}>{title}</h1>
+                <h1 className={singlepostStyle.title}>{content.title}</h1>
               </div>
             </div>
 
@@ -222,14 +223,14 @@ const Blog = ({ pageContext }) => {
             <div className={singlepostStyle.main}>
               <section>
                 <img
-                  src={`https:${image.file.url}`}
-                  alt={title}
+                  src={`https:${content.image.file.url}`}
+                  alt={content.title}
                   className={singlepostStyle.image}
                 />
 
-                <h2 className={singlepostStyle.subtitle}>{subtitle}</h2>
+                <h2 className={singlepostStyle.subtitle}>{content.subtitle}</h2>
                 <div className={singlepostStyle.content}>
-                  {renderRichText(body, options)}
+                  {renderRichText(content.body, options)}
                 </div>
 
                 <div className={singlepostStyle.rss}>
@@ -243,11 +244,11 @@ const Blog = ({ pageContext }) => {
                       <img
                         id="feedlyFollow"
                         src="https://s3.feedly.com/img/follows/feedly-follow-circle-flat-green_2x.png"
-                        alt="Lees op Feedly"
+                        alt={t('blogFeedly')}
                         width="18"
                         height="18"
                       />{' '}
-                      Lees / Abonneer op Feedly
+                      <span>{t('blogFeedly')}</span>
                     </a>
                   </div>
                   <div className={singlepostStyle.feedburner}>
@@ -257,11 +258,8 @@ const Blog = ({ pageContext }) => {
                       rel="noopener noreferrer"
                       target="_blank"
                     >
-                      <img
-                        src="https://feedburner.google.com/fb/images/pub/feed-icon32x32.png"
-                        alt="Abonneer via RSS Reader"
-                      />{' '}
-                      RAW data via Feedburner
+                      <i className="fa-solid fa-rss fa-lg" />
+                      <span>{t('blogFeedburner')}</span>
                     </a>
                   </div>
                 </div>
@@ -269,34 +267,34 @@ const Blog = ({ pageContext }) => {
                 <section className={singlepostStyle.disqus}>
                   <Disqus
                     config={{
-                      url: `https://menefex.nl/blog/${slug}/`,
-                      identifier: contentful_id,
-                      language: 'nl_NL',
-                      title,
+                      url: `https://menefex.nl/blog/${content.slug}/`,
+                      identifier: content.contentful_id,
+                      language: currentLanguage,
+                      title: content.title,
                     }}
                   />
                 </section>
               </section>
               <aside>
                 <div className={singlepostStyle.gepost}>
-                  Gepost op {publishedPost}
+                  {t('blogPostedOn')} {formatDate(content.publishedPost)}
                 </div>
                 <div className={singlepostStyle.sidebar}>
                   <div className={singlepostStyle.author}>
                     <span>
-                      <u>Auteur</u>
+                      <u>{t('blogAuthor')}</u>
                     </span>
                     <a
                       href="https://www.linkedin.com/in/michaelfransman/"
                       rel="noopener noreferrer"
                       target="_blank"
                     >
-                      {author}
+                      {content.author}
                     </a>
                     <span>
-                      <u>Laatst bijgewerkt</u>
+                      <u>{t('blogLastUpdated')}</u>
                     </span>
-                    {updatedPost}
+                    {formatDate(content.updatedPost)}
                   </div>
 
                   {relatedPosts?.length === 0 ? null : <hr />}
@@ -305,7 +303,7 @@ const Blog = ({ pageContext }) => {
                     {relatedPosts?.length === 0 ? null : (
                       <div>
                         <h6>
-                          <u>Gerelateerde Artikelen</u>
+                          <u>{t('blogRelatedPosts')}</u>
                         </h6>
                       </div>
                     )}
@@ -316,7 +314,7 @@ const Blog = ({ pageContext }) => {
                           <Link to={`/blog/${post.slug}/`}>
                             <h5>{post.title}</h5>
                             <p>{post.subtitle}</p>
-                            <span>Lees meer... </span>
+                            <span>{t('blogReadMore')}</span>
                           </Link>
                         </li>
                       ))}
@@ -342,13 +340,13 @@ const Blog = ({ pageContext }) => {
               </ul>
 
               <Link to="/blog/" className={singlepostStyle.backbtn}>
-                <i className="fa-solid fa-angles-left" /> ALLE BLOGPOSTS
+                <i className="fa-solid fa-angles-left" /> {t('blogBackToAll')}
               </Link>
             </div>
 
             <section className={singlepostStyle.family}>
               {relatedPosts?.length === 0 ? null : (
-                <h6>Gerelateerde Artikelen</h6>
+                <h6>{t('blogRelatedPosts')}</h6>
               )}
 
               <ul>
@@ -364,7 +362,7 @@ const Blog = ({ pageContext }) => {
                         />
                         <h5>{post?.title}</h5>
                         <p>{post?.subtitle}</p>
-                        <span>Lees meer...</span>
+                        <span>{t('blogReadMore')}</span>
                       </Link>
                     </li>
                   );
@@ -388,19 +386,8 @@ const Blog = ({ pageContext }) => {
 
 export default Blog;
 
-export const Head = ({ pageContext }) => {
+export const Head = ({ pageContext: { nlContent } }) => {
   const { title: siteTitle, siteUrl, favicon } = useSiteMetadata();
-
-  const {
-    title,
-    subtitle,
-    author,
-    image,
-    slug,
-    publishedSchema,
-    updatedSchema,
-    keywords,
-  } = pageContext;
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org/',
@@ -422,8 +409,8 @@ export const Head = ({ pageContext }) => {
       {
         '@type': 'ListItem',
         position: 3,
-        name: title,
-        item: siteUrl + '/blog/' + slug + '/',
+        name: nlContent.title,
+        item: siteUrl + '/blog/' + nlContent.slug + '/',
       },
     ],
   };
@@ -434,14 +421,14 @@ export const Head = ({ pageContext }) => {
     '@id': siteUrl + '/#blogpost',
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': siteUrl + '/blog/' + slug + '/',
+      '@id': siteUrl + '/blog/' + nlContent.slug + '/',
     },
-    headline: title,
-    description: subtitle,
-    image: 'https:' + image.file.url,
+    headline: nlContent.title,
+    description: nlContent.subtitle,
+    image: 'https:' + nlContent.image.file.url,
     author: {
       '@type': 'Person',
-      name: author,
+      name: nlContent.author,
     },
     publisher: {
       '@type': 'Organization',
@@ -451,17 +438,17 @@ export const Head = ({ pageContext }) => {
         url: siteUrl + favicon,
       },
     },
-    datePublished: publishedSchema,
-    dateModified: updatedSchema,
+    datePublished: nlContent.publishedPost,
+    dateModified: nlContent.updatedPost,
   };
 
   return (
     <SEO
-      title={title}
-      description={subtitle}
-      keywords={keywords.join(', ')}
-      pathname={`/blog/${slug}/`}
-      ogimage={`https:${image.file.url}`}
+      title={nlContent.title}
+      description={nlContent.subtitle}
+      keywords={nlContent.keywords.join(', ')}
+      pathname={`/blog/${nlContent.slug}/`}
+      ogimage={`https:${nlContent.image.file.url}`}
       schemaMarkup={[breadcrumbSchema, blogPostingSchema]}
       article
     />

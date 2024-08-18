@@ -1,10 +1,10 @@
 import React from 'react';
 
-import Layout from '../components/layout';
-import SEO from '../components/seo';
-
 import useSiteMetadata from '../hooks/use-site-metadata';
 import useTranslation from '../hooks/use-translation';
+
+import Layout from '../components/layout';
+import SEO from '../components/seo';
 
 import LeadForm from '../components/leadForm';
 import Info from '../components/info';

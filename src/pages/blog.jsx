@@ -2,11 +2,11 @@ import React from 'react';
 
 import { Link, graphql, useStaticQuery } from 'gatsby';
 
-import Layout from '../components/layout';
-import SEO from '../components/seo';
-
 import useSiteMetadata from '../hooks/use-site-metadata';
 import useTranslation from '../hooks/use-translation';
+
+import Layout from '../components/layout';
+import SEO from '../components/seo';
 
 import * as blogpostStyles from '../styles/modules/blog.module.scss';
 

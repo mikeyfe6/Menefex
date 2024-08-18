@@ -144,6 +144,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
   const blogTemplate = path.resolve('./src/templates/blogtemplate.jsx');
   const topicTemplate = path.resolve('./src/templates/topictemplate.jsx');
+
   const res = await graphql(`
     query {
       allContentfulBlogPost {
@@ -160,16 +161,8 @@ module.exports.createPages = async ({ graphql, actions }) => {
                 url
               }
             }
-            publishedPost: createdAt(
-              formatString: "dddd D MMMM YYYY, HH:mm"
-              locale: "nl"
-            )
-            updatedPost: updatedAt(
-              formatString: "dddd D MMMM YYYY, HH:mm"
-              locale: "nl"
-            )
-            publishedSchema: createdAt
-            updatedSchema: updatedAt
+            createdAt
+            updatedAt
             body {
               raw
               references {
@@ -217,6 +210,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
                 }
               }
             }
+            node_locale
           }
         }
       }
@@ -244,48 +238,123 @@ module.exports.createPages = async ({ graphql, actions }) => {
                   url
                 }
               }
-              createdAt(formatString: "dddd D MMMM YYYY", locale: "nl")
+              createdAt
             }
+            node_locale
           }
         }
       }
     }
   `);
 
-  res.data.allContentfulBlogPost.edges.forEach((edge) => {
+  const blogPostsByLanguage = res.data.allContentfulBlogPost.edges.reduce(
+    (acc, edge) => {
+      const { node } = edge;
+      const lang = node.node_locale;
+
+      if (!acc[node.slug]) {
+        acc[node.slug] = {
+          nlContent: null,
+          enContent: null,
+        };
+      }
+
+      if (lang === 'nl') {
+        acc[node.slug].nlContent = node;
+      } else if (lang === 'en') {
+        acc[node.slug].enContent = node;
+      }
+
+      return acc;
+    },
+    {}
+  );
+
+  Object.keys(blogPostsByLanguage).forEach((slug) => {
+    const { nlContent, enContent } = blogPostsByLanguage[slug];
+
     createPage({
       component: blogTemplate,
-      path: `/blog/${edge.node.slug}/`,
-      ownerNodeId: edge.node.contentful_id,
+      path: `/blog/${slug}/`,
       context: {
-        slug: edge.node.slug,
-        updatedPost: edge.node.updatedPost,
-        publishedPost: edge.node.publishedPost,
-        title: edge.node.title,
-        subtitle: edge.node.subtitle,
-        keywords: edge.node.keywords,
-        author: edge.node.author,
-        image: edge.node.image,
-        body: edge.node.body,
-        topics: edge.node.topics,
-        updatedSchema: edge.node.updatedSchema,
-        publishedSchema: edge.node.publishedSchema,
+        nlContent: {
+          contentful_id: nlContent ? nlContent.contentful_id : '',
+          title: nlContent ? nlContent.title : '',
+          subtitle: nlContent ? nlContent.subtitle : '',
+          image: nlContent ? nlContent.image : {},
+          body: nlContent ? nlContent.body : {},
+          slug: nlContent ? nlContent.slug : '',
+          updatedPost: nlContent ? nlContent.updatedAt : '',
+          publishedPost: nlContent ? nlContent.createdAt : '',
+          author: nlContent ? nlContent.author : '',
+          topics: nlContent ? nlContent.topics : [],
+          keywords: nlContent ? nlContent.keywords : [],
+          subtitle: nlContent ? nlContent.subtitle : '',
+        },
+        enContent: {
+          contentful_id: enContent ? enContent.contentful_id : '',
+          title: enContent ? enContent.title : '',
+          subtitle: enContent ? enContent.subtitle : '',
+          image: enContent ? enContent.image : {},
+          body: enContent ? enContent.body : {},
+          slug: enContent ? enContent.slug : '',
+          updatedPost: enContent ? enContent.updatedAt : '',
+          publishedPost: enContent ? enContent.createdAt : '',
+          author: enContent ? enContent.author : '',
+          topics: enContent ? enContent.topics : [],
+          keywords: enContent ? enContent.keywords : [],
+          subtitle: enContent ? enContent.subtitle : '',
+        },
       },
     });
   });
 
-  res.data.allContentfulTopic.edges.forEach((edge) => {
+  const topicsByLanguage = res.data.allContentfulTopic.edges.reduce(
+    (acc, edge) => {
+      const { node } = edge;
+      const lang = node.node_locale;
+
+      if (!acc[node.slug]) {
+        acc[node.slug] = {
+          nlContent: null,
+          enContent: null,
+        };
+      }
+
+      if (lang === 'nl') {
+        acc[node.slug].nlContent = node;
+      } else if (lang === 'en') {
+        acc[node.slug].enContent = node;
+      }
+
+      return acc;
+    },
+    {}
+  );
+
+  Object.keys(topicsByLanguage).forEach((slug) => {
+    const { nlContent, enContent } = topicsByLanguage[slug];
+
     createPage({
       component: topicTemplate,
-      path: `/topics/${edge.node.slug}/`,
-      ownerNodeId: edge.node.contentful_id,
+      path: `/topics/${slug}/`,
       context: {
-        topicPosts: edge.node.blog_post,
-        name: edge.node.name,
-        bdcolor: edge.node.bdcolor,
-        description: edge.node.description.description,
-        slug: edge.node.slug,
-        title: edge.node.title,
+        nlContent: {
+          topicPosts: nlContent ? nlContent.blog_post : [],
+          name: nlContent ? nlContent.name : '',
+          bdcolor: nlContent ? nlContent.bdcolor : '',
+          description: nlContent ? nlContent.description.description : '',
+          slug: nlContent ? nlContent.slug : '',
+          title: nlContent ? nlContent.title : '',
+        },
+        enContent: {
+          topicPosts: enContent ? enContent.blog_post : [],
+          name: enContent ? enContent.name : '',
+          bdcolor: enContent ? enContent.bdcolor : '',
+          description: enContent ? enContent.description.description : '',
+          slug: enContent ? enContent.slug : '',
+          title: enContent ? enContent.title : '',
+        },
       },
     });
   });

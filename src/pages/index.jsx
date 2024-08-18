@@ -1,10 +1,10 @@
 import React from 'react';
 
-import Layout from '../components/layout';
-import SEO from '../components/seo';
-
 import useSiteMetadata from '../hooks/use-site-metadata';
 import useTranslation from '../hooks/use-translation';
+
+import Layout from '../components/layout';
+import SEO from '../components/seo';
 
 import Hero from '../components/hero';
 import Service from '../components/services';

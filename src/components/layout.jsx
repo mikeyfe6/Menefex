@@ -4,7 +4,6 @@ import CookieConsent from 'react-cookie-consent';
 
 import useTranslation from '../hooks/use-translation';
 
-// components
 import DesktopMenu from './navbar/desktopMenu';
 import MobileMenu from './navbar/mobileMenu';
 import MenuOverlay from './navbar/menuOverlay';
@@ -12,7 +11,6 @@ import Footer from './footer';
 
 import ResponsiveTag from './helpers/responsiveTag';
 
-// styles
 import '../styles/layout.scss';
 import '../styles/cookie.scss';
 

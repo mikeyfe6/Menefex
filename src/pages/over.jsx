@@ -1,10 +1,10 @@
 import React from 'react';
 
-import Layout from '../components/layout';
-import SEO from '../components/seo';
-
 import useSiteMetadata from '../hooks/use-site-metadata';
 import useTranslation from '../hooks/use-translation';
+
+import Layout from '../components/layout';
+import SEO from '../components/seo';
 
 import About from '../components/about';
 import Spotify from '../components/spotify';

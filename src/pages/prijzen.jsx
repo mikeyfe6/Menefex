@@ -2,11 +2,11 @@ import React, { useRef } from 'react';
 
 import { Link } from 'gatsby';
 
-import Layout from '../components/layout';
-import SEO from '../components/seo';
-
 import useSiteMetadata from '../hooks/use-site-metadata';
 import useTranslation from '../hooks/use-translation';
+
+import Layout from '../components/layout';
+import SEO from '../components/seo';
 
 import PriceTable from '../components/pricetable';
 import Notes from '../components/notes';
@@ -42,7 +42,8 @@ const Prices = () => {
   return (
     <Layout>
       <h1 className="page-title">
-        Prijzen & tarieven<span>.</span>
+        {t('pricesTitle')}
+        <span>.</span>
       </h1>
 
       <p className="page-sub">

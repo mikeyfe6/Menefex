@@ -2,10 +2,14 @@ import React from 'react';
 
 import { Link } from 'gatsby';
 
+import { format, parseISO } from 'date-fns';
+import { nl, enUS } from 'date-fns/locale';
+
+import useTranslation from '../hooks/use-translation';
+import useSiteMetadata from '../hooks/use-site-metadata';
+
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-
-import useSiteMetadata from '../hooks/use-site-metadata';
 
 import * as topicStyles from '../styles/modules/topics.module.scss';
 
@@ -17,57 +21,79 @@ const DefaultInfo = ({ text }) => (
   </p>
 );
 
-const Topic = ({ pageContext: { name, topicPosts, bdcolor } }) => (
-  <Layout>
-    <h1 className="page-title">
-      Topics<span>.</span>
-    </h1>
+const Topic = ({ pageContext: { nlContent, enContent } }) => {
+  const { t, i18n, isHydrated } = useTranslation();
 
-    <p className="page-sub">
-      <span style={{ color: bdcolor, fontWeight: 'bold' }}>#</span> {name}
-    </p>
+  const currentLanguage = i18n.language;
+  const content = currentLanguage === 'nl' ? nlContent : enContent;
 
-    <ul className={topicStyles.posts}>
-      {topicPosts === null ? (
-        <DefaultInfo text="* Oeps! Nog geen blogposts..." />
-      ) : (
-        topicPosts.map(
-          ({
-            slug,
-            contentful_id,
-            title,
-            subtitle,
-            createdAt,
-            author,
-            image,
-          }) => (
-            <li key={contentful_id}>
-              <Link to={`/blog/${slug}/`}>
-                <div>
-                  <h4>{title}</h4>
-                  <p> {subtitle}</p>
-                  <span>
-                    Gepost: <strong>{createdAt}</strong> ⌁ Auteur:{' '}
-                    <strong>{author}</strong>
-                  </span>
-                </div>
+  const locale = currentLanguage === 'nl' ? nl : enUS;
 
-                <img src={image.file.url} alt={image.title} />
-              </Link>
-            </li>
-          ),
-        )
-      )}
-    </ul>
+  const formatDate = (date) => {
+    return format(parseISO(date), 'eeee d MMMM yyyy', { locale });
+  };
 
-    <Link to="/topics/" className={topicStyles.backBtn}>
-      <i className="fa-solid fa-angles-left" /> Alle &apos;Topics&apos;
-    </Link>
-  </Layout>
-);
+  if (!content) {
+    return <DefaultInfo text={t('noContentAvailable')} />;
+  }
+
+  if (!isHydrated) return null;
+
+  return (
+    <Layout>
+      <h1 className="page-title">
+        Topics
+        <span>.</span>
+      </h1>
+
+      <p className="page-sub">
+        <span style={{ color: content.bdcolor, fontWeight: 'bold' }}>#</span>{' '}
+        {content.name}
+      </p>
+
+      <ul className={topicStyles.posts}>
+        {content.topicPosts.length === 0 ? (
+          <DefaultInfo text={t('noBlogPosts')} />
+        ) : (
+          content.topicPosts.map(
+            ({
+              slug,
+              contentful_id,
+              title,
+              subtitle,
+              createdAt,
+              author,
+              image,
+            }) => (
+              <li key={contentful_id}>
+                <Link to={`/blog/${slug}/`}>
+                  <div>
+                    <h4>{title}</h4>
+                    <p>{subtitle}</p>
+                    <span>
+                      {t('blogPostedOn')}{' '}
+                      <strong>{formatDate(createdAt)}</strong> ⌁{' '}
+                      {t('blogAuthor')} <strong>{author}</strong>
+                    </span>
+                  </div>
+                  <img src={image.file.url} alt={image.title} />
+                </Link>
+              </li>
+            )
+          )
+        )}
+      </ul>
+
+      <Link to="/topics/" className={topicStyles.backBtn}>
+        <i className="fa-solid fa-angles-left" /> {t('topicsBackToAll')}
+      </Link>
+    </Layout>
+  );
+};
+
 export default Topic;
 
-export const Head = ({ pageContext: { name, description, slug } }) => {
+export const Head = ({ pageContext: { nlContent } }) => {
   const { title, siteUrl } = useSiteMetadata();
 
   const breadcrumbSchema = {
@@ -90,17 +116,17 @@ export const Head = ({ pageContext: { name, description, slug } }) => {
       {
         '@type': 'ListItem',
         position: 3,
-        name: name,
-        item: siteUrl + '/topics/' + slug + '/',
+        name: nlContent.name,
+        item: siteUrl + '/topics/' + nlContent.slug + '/',
       },
     ],
   };
 
   return (
     <SEO
-      title={name}
-      description={description}
-      pathname={`/topics/${slug}/`}
+      title={nlContent.name}
+      description={nlContent.description}
+      pathname={`/topics/${nlContent.slug}/`}
       schemaMarkup={breadcrumbSchema}
     />
   );

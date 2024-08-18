@@ -1,4 +1,3 @@
-// src/context/hydration-context.js
 import React, { createContext, useEffect, useState } from 'react';
 
 export const HydrationContext = createContext();
