@@ -122,10 +122,7 @@ export const Head = () => {
       hasMerchantReturnPolicy: {
         '@type': 'MerchantReturnPolicy',
         returnPolicyCategory: 'https://schema.org/NoReturnsAccepted',
-        applicableCountry: {
-          '@type': 'Country',
-          name: 'Netherlands',
-        },
+        applicableCountry: 'NL',
       },
       shippingDetails: {
         '@type': 'OfferShippingDetails',
@@ -136,7 +133,9 @@ export const Head = () => {
         },
         shippingDestination: {
           '@type': 'DefinedRegion',
-          name: 'Worldwide',
+          addressCountry: 'NL',
+          addressRegion: ['Noord-Holland'],
+          addressLocality: ['Amsterdam'],
         },
         deliveryTime: {
           '@type': 'DeliveryTime',
@@ -201,10 +200,7 @@ export const Head = () => {
       hasMerchantReturnPolicy: {
         '@type': 'MerchantReturnPolicy',
         returnPolicyCategory: 'https://schema.org/NoReturnsAccepted',
-        applicableCountry: {
-          '@type': 'Country',
-          name: 'Netherlands',
-        },
+        applicableCountry: 'NL',
       },
       shippingDetails: {
         '@type': 'OfferShippingDetails',
@@ -215,7 +211,9 @@ export const Head = () => {
         },
         shippingDestination: {
           '@type': 'DefinedRegion',
-          name: 'Worldwide',
+          addressCountry: 'NL',
+          addressRegion: ['Noord-Holland'],
+          addressLocality: ['Amsterdam'],
         },
         deliveryTime: {
           '@type': 'DeliveryTime',
@@ -280,10 +278,7 @@ export const Head = () => {
       hasMerchantReturnPolicy: {
         '@type': 'MerchantReturnPolicy',
         returnPolicyCategory: 'https://schema.org/NoReturnsAccepted',
-        applicableCountry: {
-          '@type': 'Country',
-          name: 'Netherlands',
-        },
+        applicableCountry: 'NL',
       },
       shippingDetails: {
         '@type': 'OfferShippingDetails',
@@ -294,7 +289,9 @@ export const Head = () => {
         },
         shippingDestination: {
           '@type': 'DefinedRegion',
-          name: 'Worldwide',
+          addressCountry: 'NL',
+          addressRegion: ['Noord-Holland'],
+          addressLocality: ['Amsterdam'],
         },
         deliveryTime: {
           '@type': 'DeliveryTime',
@@ -359,10 +356,7 @@ export const Head = () => {
       hasMerchantReturnPolicy: {
         '@type': 'MerchantReturnPolicy',
         returnPolicyCategory: 'https://schema.org/NoReturnsAccepted',
-        applicableCountry: {
-          '@type': 'Country',
-          name: 'Netherlands',
-        },
+        applicableCountry: 'NL',
       },
       shippingDetails: {
         '@type': 'OfferShippingDetails',
@@ -373,7 +367,9 @@ export const Head = () => {
         },
         shippingDestination: {
           '@type': 'DefinedRegion',
-          name: 'Worldwide',
+          addressCountry: 'NL',
+          addressRegion: ['Noord-Holland'],
+          addressLocality: ['Amsterdam'],
         },
         deliveryTime: {
           '@type': 'DeliveryTime',
