@@ -349,7 +349,7 @@ export const Head = () => {
       priceValidUntil: discountUntil,
       hasMerchantReturnPolicy: {
         '@type': 'MerchantReturnPolicy',
-        returnPolicyCategory: 'https://schema.org/NoReturnsAccepted',
+        returnPolicyCategory: 'https://schema.org/MerchantReturnNotPermitted',
         applicableCountry: 'NL',
       },
       shippingDetails: {
