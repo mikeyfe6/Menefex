@@ -134,8 +134,6 @@ export const Head = () => {
         shippingDestination: {
           '@type': 'DefinedRegion',
           addressCountry: 'NL',
-          addressRegion: ['Noord-Holland'],
-          addressLocality: ['Amsterdam'],
         },
         deliveryTime: {
           '@type': 'DeliveryTime',
@@ -212,8 +210,6 @@ export const Head = () => {
         shippingDestination: {
           '@type': 'DefinedRegion',
           addressCountry: 'NL',
-          addressRegion: ['Noord-Holland'],
-          addressLocality: ['Amsterdam'],
         },
         deliveryTime: {
           '@type': 'DeliveryTime',
@@ -290,8 +286,6 @@ export const Head = () => {
         shippingDestination: {
           '@type': 'DefinedRegion',
           addressCountry: 'NL',
-          addressRegion: ['Noord-Holland'],
-          addressLocality: ['Amsterdam'],
         },
         deliveryTime: {
           '@type': 'DeliveryTime',
@@ -368,8 +362,6 @@ export const Head = () => {
         shippingDestination: {
           '@type': 'DefinedRegion',
           addressCountry: 'NL',
-          addressRegion: ['Noord-Holland'],
-          addressLocality: ['Amsterdam'],
         },
         deliveryTime: {
           '@type': 'DeliveryTime',
