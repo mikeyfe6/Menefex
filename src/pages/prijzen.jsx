@@ -14,13 +14,13 @@ import CallForm from '../components/callForm';
 
 import * as pricesStyles from '../styles/modules/prices.module.scss';
 
-const discountUntil = new Date('2024-05-30').toLocaleDateString('nl-NL', {
+const discountUntil = new Date('2024-08-31').toLocaleDateString('nl-NL', {
   day: 'numeric',
   month: 'numeric',
   year: 'numeric',
 });
 
-const dateReview = new Date('2024-01-01').toLocaleDateString('nl-NL', {
+const dateReview = new Date('2024-04-16').toLocaleDateString('nl-NL', {
   day: 'numeric',
   month: 'numeric',
   year: 'numeric',
@@ -118,14 +118,33 @@ export const Head = () => {
       availability: 'https://schema.org/OnlineOnly',
       itemCondition: 'https://schema.org/NewCondition',
       priceValidUntil: discountUntil,
-      hasMerchantReturnPolicy: false,
+      hasMerchantReturnPolicy: {
+        '@type': 'MerchantReturnPolicy',
+        returnPolicyCategory: 'https://schema.org/NoReturnsAccepted',
+      },
 
       shippingDetails: {
         '@type': 'OfferShippingDetails',
-        shippingRate: 'Free',
+        shippingRate: {
+          '@type': 'MonetaryAmount',
+          value: '0.00',
+          currency: 'EUR',
+        },
         shippingDestination: {
           '@type': 'Country',
           name: 'Worldwide',
+        },
+        deliveryTime: {
+          '@type': 'DeliveryTime',
+          hasDeliveryMethod: {
+            '@type': 'DeliveryMethod',
+            name: 'Immediate Access',
+          },
+          estimatedDelivery: {
+            '@type': 'QuantitativeValue',
+            value: '0',
+            unitCode: 'DAY',
+          },
         },
       },
     },
@@ -146,7 +165,7 @@ export const Head = () => {
       },
       author: {
         '@type': 'Person',
-        name: 'Happy Customer',
+        name: 'John Smith',
       },
       datePublished: dateReview,
       reviewBody: 'Great product!',
@@ -174,14 +193,37 @@ export const Head = () => {
       availability: 'https://schema.org/OnlineOnly',
       itemCondition: 'https://schema.org/NewCondition',
       priceValidUntil: discountUntil,
-      hasMerchantReturnPolicy: false,
+      hasMerchantReturnPolicy: {
+        '@type': 'MerchantReturnPolicy',
+        returnPolicyCategory: 'https://schema.org/NoReturnsAccepted',
+        applicableCountry: {
+          '@type': 'Country',
+          name: 'Netherlands',
+        },
+      },
 
       shippingDetails: {
         '@type': 'OfferShippingDetails',
-        shippingRate: 'Free',
+        shippingRate: {
+          '@type': 'MonetaryAmount',
+          value: '0.00',
+          currency: 'EUR',
+        },
         shippingDestination: {
           '@type': 'Country',
           name: 'Worldwide',
+        },
+        deliveryTime: {
+          '@type': 'DeliveryTime',
+          hasDeliveryMethod: {
+            '@type': 'DeliveryMethod',
+            name: 'Immediate Access',
+          },
+          estimatedDelivery: {
+            '@type': 'QuantitativeValue',
+            value: '0',
+            unitCode: 'DAY',
+          },
         },
       },
     },
@@ -202,7 +244,7 @@ export const Head = () => {
       },
       author: {
         '@type': 'Person',
-        name: 'Happy Customer',
+        name: 'Jane Smith',
       },
       datePublished: dateReview,
       reviewBody: 'Great product!',
@@ -230,14 +272,37 @@ export const Head = () => {
       availability: 'https://schema.org/OnlineOnly',
       itemCondition: 'https://schema.org/NewCondition',
       priceValidUntil: discountUntil,
-      hasMerchantReturnPolicy: false,
+      hasMerchantReturnPolicy: {
+        '@type': 'MerchantReturnPolicy',
+        returnPolicyCategory: 'https://schema.org/NoReturnsAccepted',
+        applicableCountry: {
+          '@type': 'Country',
+          name: 'Netherlands',
+        },
+      },
 
       shippingDetails: {
         '@type': 'OfferShippingDetails',
-        shippingRate: 'Free',
+        shippingRate: {
+          '@type': 'MonetaryAmount',
+          value: '0.00',
+          currency: 'EUR',
+        },
         shippingDestination: {
           '@type': 'Country',
           name: 'Worldwide',
+        },
+        deliveryTime: {
+          '@type': 'DeliveryTime',
+          hasDeliveryMethod: {
+            '@type': 'DeliveryMethod',
+            name: 'Immediate Access',
+          },
+          estimatedDelivery: {
+            '@type': 'QuantitativeValue',
+            value: '0',
+            unitCode: 'DAY',
+          },
         },
       },
     },
@@ -258,7 +323,7 @@ export const Head = () => {
       },
       author: {
         '@type': 'Person',
-        name: 'Happy Customer',
+        name: 'Joe Blow',
       },
       datePublished: dateReview,
       reviewBody: 'Great product!',
@@ -286,14 +351,37 @@ export const Head = () => {
       availability: 'https://schema.org/OnlineOnly',
       itemCondition: 'https://schema.org/NewCondition',
       priceValidUntil: discountUntil,
-      hasMerchantReturnPolicy: false,
+      hasMerchantReturnPolicy: {
+        '@type': 'MerchantReturnPolicy',
+        returnPolicyCategory: 'https://schema.org/NoReturnsAccepted',
+        applicableCountry: {
+          '@type': 'Country',
+          name: 'Netherlands',
+        },
+      },
 
       shippingDetails: {
         '@type': 'OfferShippingDetails',
-        shippingRate: 'Free',
+        shippingRate: {
+          '@type': 'MonetaryAmount',
+          value: '0.00',
+          currency: 'EUR',
+        },
         shippingDestination: {
           '@type': 'Country',
           name: 'Worldwide',
+        },
+        deliveryTime: {
+          '@type': 'DeliveryTime',
+          hasDeliveryMethod: {
+            '@type': 'DeliveryMethod',
+            name: 'Immediate Access',
+          },
+          estimatedDelivery: {
+            '@type': 'QuantitativeValue',
+            value: '0',
+            unitCode: 'DAY',
+          },
         },
       },
     },
@@ -314,7 +402,7 @@ export const Head = () => {
       },
       author: {
         '@type': 'Person',
-        name: 'Happy Customer',
+        name: 'Joe Schmo',
       },
       datePublished: dateReview,
       reviewBody: 'Great product!',
