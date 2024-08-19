@@ -121,6 +121,10 @@ export const Head = () => {
       hasMerchantReturnPolicy: {
         '@type': 'MerchantReturnPolicy',
         returnPolicyCategory: 'https://schema.org/NoReturnsAccepted',
+        applicableCountry: {
+          '@type': 'Country',
+          name: 'Netherlands',
+        },
       },
 
       shippingDetails: {
