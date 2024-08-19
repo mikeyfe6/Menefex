@@ -110,6 +110,7 @@ export const Head = () => {
       '@type': 'Brand',
       name: title,
     },
+
     offers: {
       '@type': 'Offer',
       url: siteUrl + '/prijzen/',
@@ -126,7 +127,6 @@ export const Head = () => {
           name: 'Netherlands',
         },
       },
-
       shippingDetails: {
         '@type': 'OfferShippingDetails',
         shippingRate: {
@@ -135,7 +135,7 @@ export const Head = () => {
           currency: 'EUR',
         },
         shippingDestination: {
-          '@type': 'Country',
+          '@type': 'DefinedRegion',
           name: 'Worldwide',
         },
         deliveryTime: {
@@ -166,10 +166,10 @@ export const Head = () => {
         ratingValue: '5',
         bestRating: '5',
         worstRating: '1',
-      },
-      author: {
-        '@type': 'Person',
-        name: 'John Smith',
+        author: {
+          '@type': 'Person',
+          name: 'Happy Customer',
+        },
       },
       datePublished: dateReview,
       reviewBody: 'Great product!',
@@ -189,6 +189,7 @@ export const Head = () => {
       '@type': 'Brand',
       name: title,
     },
+
     offers: {
       '@type': 'Offer',
       url: siteUrl + '/prijzen/',
@@ -205,7 +206,6 @@ export const Head = () => {
           name: 'Netherlands',
         },
       },
-
       shippingDetails: {
         '@type': 'OfferShippingDetails',
         shippingRate: {
@@ -214,7 +214,7 @@ export const Head = () => {
           currency: 'EUR',
         },
         shippingDestination: {
-          '@type': 'Country',
+          '@type': 'DefinedRegion',
           name: 'Worldwide',
         },
         deliveryTime: {
@@ -245,10 +245,10 @@ export const Head = () => {
         ratingValue: '5',
         bestRating: '5',
         worstRating: '1',
-      },
-      author: {
-        '@type': 'Person',
-        name: 'Jane Smith',
+        author: {
+          '@type': 'Person',
+          name: 'Jane Smith',
+        },
       },
       datePublished: dateReview,
       reviewBody: 'Great product!',
@@ -268,6 +268,7 @@ export const Head = () => {
       '@type': 'Brand',
       name: title,
     },
+
     offers: {
       '@type': 'Offer',
       url: siteUrl + '/prijzen/',
@@ -284,7 +285,6 @@ export const Head = () => {
           name: 'Netherlands',
         },
       },
-
       shippingDetails: {
         '@type': 'OfferShippingDetails',
         shippingRate: {
@@ -293,7 +293,7 @@ export const Head = () => {
           currency: 'EUR',
         },
         shippingDestination: {
-          '@type': 'Country',
+          '@type': 'DefinedRegion',
           name: 'Worldwide',
         },
         deliveryTime: {
@@ -324,10 +324,10 @@ export const Head = () => {
         ratingValue: '5',
         bestRating: '5',
         worstRating: '1',
-      },
-      author: {
-        '@type': 'Person',
-        name: 'Joe Blow',
+        author: {
+          '@type': 'Person',
+          name: 'Joe Blow',
+        },
       },
       datePublished: dateReview,
       reviewBody: 'Great product!',
@@ -339,7 +339,7 @@ export const Head = () => {
     '@type': 'Product',
     '@id': siteUrl + '/#businessplan',
     name: 'Business Plan',
-    image: `${siteUrl}${priceImage}`,
+    image: siteUrl + priceImage,
     description:
       "Het Business Plan is ontworpen voor grote bedrijven of e-commerce, met onbeperkte pagina's, e-commercefunctionaliteit en een jaar gratis ondersteuning.",
     priceRange: '$$$',
@@ -347,6 +347,7 @@ export const Head = () => {
       '@type': 'Brand',
       name: title,
     },
+
     offers: {
       '@type': 'Offer',
       url: siteUrl + '/prijzen/',
@@ -363,7 +364,6 @@ export const Head = () => {
           name: 'Netherlands',
         },
       },
-
       shippingDetails: {
         '@type': 'OfferShippingDetails',
         shippingRate: {
@@ -372,7 +372,7 @@ export const Head = () => {
           currency: 'EUR',
         },
         shippingDestination: {
-          '@type': 'Country',
+          '@type': 'DefinedRegion',
           name: 'Worldwide',
         },
         deliveryTime: {
@@ -403,10 +403,10 @@ export const Head = () => {
         ratingValue: '5',
         bestRating: '5',
         worstRating: '1',
-      },
-      author: {
-        '@type': 'Person',
-        name: 'Joe Schmo',
+        author: {
+          '@type': 'Person',
+          name: 'Joe Schmo',
+        },
       },
       datePublished: dateReview,
       reviewBody: 'Great product!',
