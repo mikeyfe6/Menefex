@@ -9,11 +9,9 @@ const useTranslationSetup = () => {
 
   useEffect(() => {
     if (isHydrated) {
-      const storedLanguage = window.localStorage.getItem('i18nextLng') || 'nl';
-      console.log('Stored Language:', storedLanguage);
+      const storedLanguage = window.localStorage.getItem('i18nextLng');
       i18n.changeLanguage(storedLanguage);
     } else {
-      console.log('Not hydrated, setting language to nl');
       i18n.changeLanguage('nl');
     }
   }, [i18n, isHydrated]);
