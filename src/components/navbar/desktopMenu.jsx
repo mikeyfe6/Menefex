@@ -103,6 +103,7 @@ const DesktopMenu = ({ drawerClickHandler }) => {
         </ul>
 
         <div className={desktopMenuStyles.langAndHamburger}>
+          {currentLanguage === 'nl' ? 'nl' : 'en' ? 'en' : 'nothing'}
           <div className={desktopMenuStyles.language}>
             <button
               onClick={() => switchLanguage('nl')}
