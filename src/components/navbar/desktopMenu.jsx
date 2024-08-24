@@ -10,7 +10,7 @@ import * as desktopMenuStyles from '../../styles/modules/desktopMenu.module.scss
 
 const DesktopMenu = ({ drawerClickHandler }) => {
   const { t, i18n } = useTranslation();
-  const currentLanguage = i18n.language;
+  const currentLanguage = i18n.language || 'nl';
 
   const switchLanguage = (lang) => {
     i18n.changeLanguage(lang);
