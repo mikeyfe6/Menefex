@@ -12,6 +12,7 @@ const useTranslationSetup = () => {
       const storedLanguage = window.localStorage.getItem('i18nextLng');
       if (!storedLanguage) {
         i18n.changeLanguage('nl');
+        window.localStorage.setItem('i18nextLng', 'nl');
       }
     }
   }, [i18n, isHydrated]);
