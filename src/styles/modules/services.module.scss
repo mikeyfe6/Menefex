@@ -17,7 +17,7 @@
     > div:nth-child(1) {
       display: flex;
       justify-content: space-between;
-      gap: 2em;
+      gap: 2em 1.5em;
 
       @include laptop {
         flex-wrap: wrap;
@@ -30,15 +30,21 @@
       > div {
         flex: 1;
 
+        &:not(:last-of-type) {
+          padding-right: 0.5em;
+          border-right: 2px solid rgba($white-color, 1);
+        }
+
         @include laptop {
           flex: 0 0 45%;
+          border-right: none !important;
         }
 
         @include mobile {
           flex: 1;
 
           &:not(:first-of-type) {
-            border-top: 5px solid $spectext-color;
+            border-top: 5px solid rgba($white-color, 1);
             padding-top: 3em;
             margin-top: 2em;
           }
