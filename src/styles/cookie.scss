@@ -73,8 +73,14 @@
       border-radius: $low-radius;
       padding: 0.5em 1em;
 
+      @include smoothTrans;
+
       @include mobile {
         font-size: 0.9rem;
+      }
+
+      &:hover {
+        background-color: $super-color;
       }
     }
 
@@ -86,8 +92,14 @@
       padding: 0.5em 1em;
       color: $secondary-color;
 
+      @include smoothTrans;
+
       @include mobile {
         font-size: 0.9rem;
+      }
+
+      &:hover {
+        border: 1px solid $white-color;
       }
     }
   }
