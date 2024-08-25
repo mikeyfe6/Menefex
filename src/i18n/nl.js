@@ -109,7 +109,7 @@ export default {
     '* Deze webapplicatie is vooral interactief, gericht op netwerken inclusief sociale media en veel meer toekomstige toepassingen',
 
   portfolioEPbio:
-    '<strong>Eternity Percussion</strong> is een culturele instellingdie bijdrage levert aan talentontwikkeling, cultuurparticipatie en visieverbreding van jongeren. D.m.v. o.a. muziekeducatie en inzet van jongeren in eigen organisatie biedt Eternity jongeren de gelegenheid om cultureel te ondernemen en participeren binnen de Nederlandse samenleving.',
+    '<strong>Eternity Percussion</strong> is een culturele instelling die bijdrage levert aan talentontwikkeling, cultuurparticipatie en visieverbreding van jongeren. D.m.v. o.a. muziekeducatie en inzet van jongeren in eigen organisatie biedt Eternity jongeren de gelegenheid om cultureel te ondernemen en participeren binnen de Nederlandse samenleving.',
   portfolioEPfocus:
     '* Deze webapplicatie is vooral interactief, gericht op netwerken inclusief sociale media en veel meer toekomstige toepassingen',
 
