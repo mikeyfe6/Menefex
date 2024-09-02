@@ -37,7 +37,7 @@ export default {
 
   smallbio: {
     intro:
-      "<b>Menefex</b> is a young & modern web media company, founded by <b><a href='https://www.linkedin.com/in/michaelfransman' rel='noopener noreferrer' target='_blank'>Michael Fransman</a></b>, who is committed to and specializes in thinking through & developing websites & web applications, for both young startups and established companies. We ensure that your digital ambitions and wishes come together. We build our software products custom-made so you can relate as much as possible to your end product.",
+      "<b>Menefex</b> is a modern web media company founded by <b><a href='https://www.linkedin.com/in/michaelfransman' rel='noopener noreferrer' target='_blank'>Michael Fransman</a></b>. We specialize in designing, developing, and optimizing websites and web applications for both startups and established companies. Our focus is on realizing digital ambitions and creating custom software solutions tailored to your business goals. With <b>Menefex</b>, you gain a reliable partner dedicated to elevating your online presence.",
     moreButton: 'More about Menefex',
   },
 
@@ -45,34 +45,35 @@ export default {
 
   servicesTitleWebsites: 'Websites',
   servicesContentWebsites:
-    'We build functional and efficient websites completely custom-made. In this we ensure that your website meets all current technical requirements and conditions.',
-  servicesFocusWebsitesOne: 'Loading speed',
-  servicesFocusWebsitesTwo: 'Custom Design',
-  servicesFocusWebsitesThree: 'User interface & user experience',
-  servicesFocusWebsitesFour: 'Web Cross-platform for all popular browsers',
+    'We create functional and efficient websites that are fully customized to meet your needs. Our websites adhere to all modern technical standards, ensuring a future-proof online presence.',
+  servicesFocusWebsitesOne: 'Fast loading times',
+  servicesFocusWebsitesTwo: 'Unique custom design',
+  servicesFocusWebsitesThree: 'User-friendly interface and experience',
+  servicesFocusWebsitesFour:
+    'Cross-platform compatibility with all popular browsers',
 
   servicesTitleWebshops: 'Webshops',
   servicesContentWebshops:
-    'Webshops are indispensable for your local business these days and offer a wider network, better availability and of course more conversion and product appearance.',
-  servicesFocusWebshopsOne: 'Overview of assortment',
+    'Webshops are essential for local businesses today. They provide access to a wider network, greater availability, and boost both conversion rates and product visibility.',
+  servicesFocusWebshopsOne: 'Clear overview of your product range',
   servicesFocusWebshopsTwo: 'Generate more leads',
-  servicesFocusWebshopsThree: 'Do business 24/7',
-  servicesFocusWebshopsFour: 'Automation processes',
+  servicesFocusWebshopsThree: '24/7 trading opportunities',
+  servicesFocusWebshopsFour: 'Automated processes',
 
   servicesTitleWebapps: 'Webapplications',
   servicesContentWebapps:
-    'With the rise of digitization & mobility, there is an increasing demand for (web) apps. Implementations of complex interactions make the difference between a web application and a website.',
-  servicesFocusWebappsOne: 'Offline possibilities',
-  servicesFocusWebappsTwo: 'Optimization for all devices',
+    'As digitalization and mobility grow, the demand for web and mobile apps is rising. Web applications stand out from websites by incorporating complex interactions that offer a seamless user experience.',
+  servicesFocusWebappsOne: 'Offline functionality',
+  servicesFocusWebappsTwo: 'Optimized for all devices',
   servicesFocusWebappsThree:
-    'Links with built-in functions (e.g. camera, microphone & location use)',
+    'Integration with built-in features (e.g., camera, microphone, location)',
 
   servicesTitleSeo: 'Search Engine Optimization',
   servicesContentSeo:
-    "With search engine optimization, or 'SEO', we ensure that your website is found at the top in Google, Bing, Yahoo, etc. Potential visitors will thus be able to discover your company more quickly.",
-  servicesFocusSeoOne: 'Findability in popular search engines',
-  servicesFocusSeoTwo: 'Significantly more (in)direct web visitors',
-  servicesFocusSeoThree: 'Charts, tactics and statistics',
+    'With our search engine optimization services, we ensure your website ranks high on search engines like Google, Bing, and Yahoo. This increases your business’s visibility and helps potential customers discover you faster.',
+  servicesFocusSeoOne: 'Enhanced visibility in popular search engines',
+  servicesFocusSeoTwo: 'Significantly more direct and indirect web traffic',
+  servicesFocusSeoThree: 'Use of data analysis, strategies, and statistics',
   servicesPricesButton: 'View our prices',
 
   recentProjectsViewSiteButton: 'View website',

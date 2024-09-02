@@ -11,30 +11,36 @@
     @include container(0, 4em);
 
     @include laptop {
-      @include container(0, 3em);
+      @include container(0, 2.5em);
+    }
+
+    @include mobile {
+      @include container(0, 1.5em);
     }
 
     > div:nth-child(1) {
       display: flex;
       justify-content: space-between;
-      gap: 2.5em 1.5em;
 
       @include laptop {
         flex-wrap: wrap;
+        gap: 2.5em 1.5em;
       }
 
       @include phablet {
         flex-direction: column;
+        gap: 1.5em;
       }
 
       > div {
         flex: 1;
-        padding: 2.5em 0;
+        padding: 1.5em 2em;
+        border-left: 5px groove rgba($white-color, 0.125);
 
         @include laptop {
           flex: 0 0 47.5%;
           border-left: none !important;
-          padding: 1em 0 2em;
+          padding: 0;
 
           &:nth-child(3),
           &:nth-child(4) {
@@ -48,13 +54,10 @@
 
           &:not(:first-of-type) {
             border-top: 5px solid rgba($white-color, 1);
-            padding-top: 3em;
+            padding-top: 2em;
             margin-top: 2em;
           }
         }
-
-        padding-left: 2.5em;
-        border-left: 5px groove rgba($white-color, 0.125);
 
         &:last-of-type {
           border-right: 5px groove rgba($white-color, 0.125);
@@ -72,20 +75,29 @@
         }
 
         p {
-          min-height: 200px;
+          min-height: 325px;
           max-width: 95%;
           margin: 2.5em 0 2em;
 
           @include desktop {
-            min-height: 250px;
+            min-height: 375px;
           }
 
           @include laptop {
-            min-height: 150px;
+            min-height: 175px;
+          }
+
+          @include tablet {
+            min-height: 200px;
           }
 
           @include phablet {
             min-height: fit-content;
+            margin-bottom: 2em;
+          }
+
+          @include mobile {
+            margin-bottom: 2.5em;
           }
         }
 
@@ -96,7 +108,9 @@
           font-weight: 400;
 
           li {
-            font-size: 0.875rem;
+            @include mobile {
+              font-size: 0.9rem;
+            }
 
             &::before {
               content: '\203B';
@@ -148,12 +162,12 @@
     margin-bottom: 1em;
 
     i {
-      font-size: 1.75em;
+      font-size: 2em;
       color: $secondary-color;
     }
 
     h4 {
-      font-size: 1.25rem;
+      font-size: 1.375rem;
       font-weight: 600;
     }
   }

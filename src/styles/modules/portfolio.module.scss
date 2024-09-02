@@ -5,7 +5,7 @@
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 3rem;
 
-  @include phablet {
+  @include tablet {
     grid-template-columns: 1fr;
   }
 
@@ -33,9 +33,19 @@
     margin: 2em 0;
     border-bottom: none;
     border-top: none;
-    min-height: 300px;
+    min-height: 325px;
+    display: flex;
+    flex-direction: column;
 
-    @include phablet {
+    @include desktop {
+      min-height: 350px;
+    }
+
+    @include laptop {
+      min-height: 400px;
+    }
+
+    @include tablet {
       min-height: auto;
     }
 
@@ -43,7 +53,7 @@
       font-family: $right-font;
       margin-right: 1em;
       color: $secondary-color;
-      font-size: 0.9rem;
+      font-size: 1rem;
       display: inline;
     }
 
@@ -53,13 +63,16 @@
 
     p {
       font-weight: 300;
-      font-size: 0.9rem;
+      font-size: 1rem;
       margin: 1.5em 0 1em;
     }
 
     p:nth-of-type(2) {
       font-weight: 500;
+      font-size: 0.9rem;
       margin: 0 0 2em;
+
+      margin-top: auto;
     }
 
     .tools {

@@ -37,7 +37,7 @@ export default {
 
   smallbio: {
     intro:
-      "<b>Menefex</b> is een jong & modern webmediabedrijf, opgericht door <b><a href='https://www.linkedin.com/in/michaelfransman' rel='noopener noreferrer' target='_blank'>Michael Fransman</a></b>, die zich inzet en gespecialiseerd is in het in- en uitdenken & ontwikkelen van websites & webapplicaties, voor zowel jonge startups als gevestigde bedrijven. Wij zorgen dat uw digitale ambities en wensen tot één komen. Wij bouwen onze softwareproducten op maatwerk zodat u zich zoveel mogelijk kan relativeren met uw eindproduct.",
+      "<b>Menefex</b> is een modern webmediabedrijf, opgericht door <b><a href='https://www.linkedin.com/in/michaelfransman' rel='noopener noreferrer' target='_blank'>Michael Fransman</a></b>. Wij zijn gespecialiseerd in het ontwerpen, ontwikkelen en optimaliseren van websites en webapplicaties voor zowel startups als gevestigde bedrijven. Onze focus ligt op het realiseren van digitale ambities en het creëren van op maat gemaakte softwareoplossingen die perfect aansluiten bij uw bedrijfsdoelen. Met <b>Menefex</b> haalt u een betrouwbare partner in huis die uw online aanwezigheid naar een hoger niveau tilt",
     moreButton: 'Meer over Menefex',
   },
 
@@ -45,35 +45,35 @@ export default {
 
   servicesTitleWebsites: 'Websites',
   servicesContentWebsites:
-    'Wij bouwen functionele en efficiënte websites volledig op maat. Daarin zorgen wij dat uw website aan alle actuele technische wensen en voorwaarden voldoet.',
-  servicesFocusWebsitesOne: 'Laadsnelheid',
-  servicesFocusWebsitesTwo: 'Maatwerk Design',
-  servicesFocusWebsitesThree: 'Gebruikersinterface & gebruikservaring',
-  servicesFocusWebsitesFour: 'Web Cross-platform voor alle populaire browsers',
+    'Wij bouwen functionele en efficiënte websites die volledig op maat zijn gemaakt. Onze websites voldoen aan alle moderne technische eisen en voorwaarden, zodat u verzekerd bent van een toekomstbestendige online aanwezigheid.',
+  servicesFocusWebsitesOne: 'Snelle laadtijden',
+  servicesFocusWebsitesTwo: 'Uniek maatwerkdesign',
+  servicesFocusWebsitesThree: 'Gebruiksvriendelijke interface en ervaring',
+  servicesFocusWebsitesFour: 'Compatibiliteit met alle populaire browsers',
 
   servicesTitleWebshops: 'Webshops',
   servicesContentWebshops:
-    'Webshops zijn deze tijd onmisbaar voor uw lokale onderneming en bieden een bredere netwerk, beter beschikbaarheid en uiteraard meer conversie en productaanzien.',
-  servicesFocusWebshopsOne: 'Overzicht assortiment',
-  servicesFocusWebshopsTwo: 'Meer leads generen',
-  servicesFocusWebshopsThree: '24/7 Handel drijven',
-  servicesFocusWebshopsFour: 'Automatiseringsprocessen',
+    'In deze tijd zijn webshops onmisbaar voor lokale ondernemingen. Ze bieden toegang tot een breder netwerk, een hogere beschikbaarheid, en verhogen de conversie en zichtbaarheid van uw producten.',
+  servicesFocusWebshopsOne: 'Duidelijk overzicht van het assortiment',
+  servicesFocusWebshopsTwo: 'Meer leads genereren',
+  servicesFocusWebshopsThree: '24/7 verkoopmogelijkheden',
+  servicesFocusWebshopsFour: 'Geautomatiseerde processen',
 
   servicesTitleWebapps: 'Webapplicaties',
   servicesContentWebapps:
-    'Met de opkomst van digitalisering & mobiliteit is er steeds meer vraag naar (web)apps. Implementaties van complexe interacties maken het verschil tussen een webapplicatie en een website.',
-  servicesFocusWebappsOne: 'Offline-mogelijkheden',
-  servicesFocusWebappsTwo: 'Optimalisatie voor alle apparaten',
+    'Met de groei van digitalisering en mobiliteit stijgt de vraag naar (web)apps. Webapplicaties onderscheiden zich van websites door de implementatie van complexe interacties die zorgen voor een naadloze gebruikerservaring.',
+  servicesFocusWebappsOne: 'Offline gebruiksmogelijkheden',
+  servicesFocusWebappsTwo: 'Geoptimaliseerd voor alle apparaten',
   servicesFocusWebappsThree:
-    'Koppelingen met ingebouwde functies (bijv. camera-, microfoon- & locatiegebruik)',
+    'Integratie met ingebouwde functies (bijv. camera, microfoon, locatie)',
 
   servicesTitleSeo: 'Zoekmachine Optimalisatie',
   servicesContentSeo:
-    "Met zoekmachine optimalisatie, oftewel 'SEO' zorgen wij dat uw website bovenaan te vinden is in Google, Bing, Yahoo, etc. Potentiele bezoekers zullen zo in staat zijn uw onderneming sneller te ontdekken.",
-  servicesFocusSeoOne: 'Vindbaarheid in populaire zoekmachines',
-  servicesFocusSeoTwo: 'Aanzienlijk meer (in)directe webbezoekers',
-  servicesFocusSeoThree: 'Grafieken, tactieken en statistieken',
-  servicesPricesButton: 'Bekijk de prijslijst',
+    'Met zoekmachine optimalisatie zorgen wij ervoor dat uw website hoog scoort in zoekmachines zoals Google, Bing en Yahoo. Zo wordt uw bedrijf sneller gevonden door potentiële klanten.',
+  servicesFocusSeoOne: 'Verbeterde vindbaarheid in populaire zoekmachines',
+  servicesFocusSeoTwo: 'Aanzienlijk meer directe en indirecte webbezoekers',
+  servicesFocusSeoThree: 'Gebruik van analyses, strategieën en statistieken',
+  servicesPricesButton: 'Bekijk onze prijzen',
 
   recentProjectsViewSiteButton: 'Bekijk website',
   recentProjectsViewAppButton: 'Bekijk webapp',

@@ -43,8 +43,9 @@ const PortfolioPage = () => {
               />
             </a>
             <div className={portfolioStyles.portfolioInfo}>
-              <span>Project:</span>
-              <h5>Keep It Real</h5>
+              <h5>
+                <span>Client:</span>Keep It Real
+              </h5>
               <p dangerouslySetInnerHTML={{ __html: t('portfolioKIRbio') }} />
               <p>{t('portfolioKIRfocus')}</p>
               <div className={portfolioStyles.tools}>
@@ -92,8 +93,9 @@ const PortfolioPage = () => {
               />
             </a>
             <div className={portfolioStyles.portfolioInfo}>
-              <span>Project:</span>
-              <h5>Afrodiasphere</h5>
+              <h5>
+                <span>Project:</span>Afrodiasphere
+              </h5>
               <p dangerouslySetInnerHTML={{ __html: t('portfolioADSbio') }} />
               <p>{t('portfolioADSfocus')}</p>
               <div className={portfolioStyles.tools}>
@@ -147,8 +149,9 @@ const PortfolioPage = () => {
               />
             </a>
             <div className={portfolioStyles.portfolioInfo}>
-              <span>Client:</span>
-              <h5>Eternity Percussion</h5>
+              <h5>
+                <span>Client:</span>Eternity Percussion
+              </h5>
               <p dangerouslySetInnerHTML={{ __html: t('portfolioEPbio') }} />
               <p>{t('portfolioEPfocus')}</p>
               <div className={portfolioStyles.tools}>
@@ -201,8 +204,9 @@ const PortfolioPage = () => {
               />
             </a>
             <div className={portfolioStyles.portfolioInfo}>
-              <span>Client:</span>
-              <h5>KennisNetwerk ACDiG</h5>
+              <h5>
+                <span>Client:</span>KennisNetwerk ACDiG
+              </h5>
               <p dangerouslySetInnerHTML={{ __html: t('portfolioKNbio') }} />
               <p>{t('portfolioKNfocus')}</p>
               <div className={portfolioStyles.tools}>
@@ -248,8 +252,9 @@ const PortfolioPage = () => {
               />
             </a>
             <div className={portfolioStyles.portfolioInfo}>
-              <span>Client:</span>
-              <h5>DS Melodies</h5>
+              <h5>
+                <span>Client:</span>DS Melodies
+              </h5>
               <p dangerouslySetInnerHTML={{ __html: t('portfolioDSbio') }} />
               <p>{t('portfolioDSfocus')}</p>
               <div className={portfolioStyles.tools}>
@@ -296,8 +301,9 @@ const PortfolioPage = () => {
               />
             </a>
             <div className={portfolioStyles.portfolioInfo}>
-              <span>Client:</span>
-              <h5>Black Harmony</h5>
+              <h5>
+                <span>Client:</span>Black Harmony
+              </h5>
               <p dangerouslySetInnerHTML={{ __html: t('portfolioBHbio') }} />
               <p>{t('portfolioBHfocus')}</p>
               <div className={portfolioStyles.tools}>
