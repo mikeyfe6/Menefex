@@ -192,10 +192,32 @@ const Projects = () => {
         </Link>
       </div>
 
-      <p>
-        Deze website is gebouwd in opdracht van stichting Regalness.nl uit
-        Amsterdam
-      </p>
+      <p>{t('recentProjectsKIRbio')}</p>
+      <ul>
+        <li>GatsbyJS</li>
+        <li>ReactJS</li>
+        <li>Netlify</li>
+        <li>Contentful</li>
+      </ul>
+    </div>
+  );
+
+  const prioZorg = (
+    <div className={sliderStyles.sliderInfo}>
+      <div>
+        <a
+          href="https://prio-zorg.nl"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          {t('recentProjectsViewSiteButton')}
+        </a>
+        <Link to="/portfolio/">
+          <h5>Prio Zorg</h5>
+        </Link>
+      </div>
+
+      <p>{t('recentProjectsPZbio')}</p>
       <ul>
         <li>GatsbyJS</li>
         <li>ReactJS</li>
@@ -257,6 +279,8 @@ const Projects = () => {
                     return knAcdig;
                   case 'keeptreal':
                     return keepItReal;
+                  case 'priozorg':
+                    return prioZorg;
                   default:
                     return null;
                 }

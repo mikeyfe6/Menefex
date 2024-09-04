@@ -90,6 +90,8 @@ export default {
     'Deze website is gebouwd in opdracht van stichting KN-ACDiG uit Den-Haag',
   recentProjectsKIRbio:
     'Deze website is gebouwd in opdracht van stichting Regalness.nl uit Amsterdam',
+  recentProjectsPZbio:
+    'Deze website is gebouwd in opdracht van hulpverleningsorganisatie Prio Zorg uit Amsterdam',
 
   portfolioTitle: 'Recente Projecten',
   portfolioIntro:
@@ -127,6 +129,11 @@ export default {
     '<strong>Black Harmony</strong> is een populaire en getalenteerde zanggroep uit Amsterdam. Deze muziekorganisatie wilt een bijdrage leveren aan de positionering van de traditionele muziek genaamd Apinti Kawina. Black harmony wilt fungeren als ambassadeur als het gaat om traditionele Afro-Surinaamse muziek.',
   portfolioBHfocus:
     '* Deze website bevat informatie, media en interactieve sociale media toepassingen',
+
+  portfolioPZbio:
+    '<strong>Prio Zorg</strong> is een dynamische hulpverleningsorganisatie die jongeren begeleidt op weg naar zelfredzaamheid en een betekenisvol leven. Voor jongvolwassenen die vastlopen en de controle over hun leven verliezen, biedt Priozorg deskundige ondersteuning in de vorm van coaching, mentoring, en opvoedkundige begeleiding.',
+  portfolioPZfocus:
+    '* De speerpunten van deze website zijn het delen van informatie en netwerkverbreding',
 
   blogPostedOn: 'Gepost:',
   blogAuthor: 'Auteur:',

@@ -30,6 +30,56 @@ const PortfolioPage = () => {
           // * AFRODIASPHERE !
           */}
 
+          <div id="#PZ">
+            <a
+              href="https://prio-zorg.nl"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <StaticImage
+                src="../../public/project-images/priozorg.png"
+                alt="Prio Zorg"
+                className={portfolioStyles.portfolioImg}
+              />
+            </a>
+            <div className={portfolioStyles.portfolioInfo}>
+              <h5>
+                <span>Client:</span>Prio Zorg
+              </h5>
+              <p dangerouslySetInnerHTML={{ __html: t('portfolioPZbio') }} />
+              <p>{t('portfolioPZfocus')}</p>
+              <div className={portfolioStyles.tools}>
+                <span>Tools:</span>
+                <ul>
+                  <li>GatsbyJS</li>
+                  <li>ReactJS</li>
+                  <li>Netlify</li>
+                  <li>Contentful</li>
+                </ul>
+              </div>
+            </div>
+            <div className={portfolioStyles.portfolioBtns}>
+              <a
+                href="https://prio-zorg.nl"
+                rel="noopener noreferrer"
+                target="_blank"
+                className={portfolioStyles.btnLight}
+              >
+                <i className="fa-solid fa-eye" />
+                {t('portfolioGoToProject')}
+              </a>
+              <a
+                href="https://github.com/mikeyfe6/prio-zorg"
+                rel="noopener noreferrer"
+                target="_blank"
+                className={portfolioStyles.btnDark}
+              >
+                <i className="fa-brands fa-github" />
+                {t('portfolioGoToRepo')}
+              </a>
+            </div>
+          </div>
+
           <div id="#KIR">
             <a
               href="https://keeptreal.nl"

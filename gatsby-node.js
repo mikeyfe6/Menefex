@@ -123,6 +123,7 @@ const captureScreenshot = async (url, filename, delay) => {
 };
 
 exports.onPostBuild = async () => {
+  await captureScreenshot('https://prio-zorg.nl', 'priozorg', 3000);
   await captureScreenshot('https://keeptreal.nl', 'keeptreal', 0);
   await captureScreenshot('https://blackharmony.nl', 'blackharmony', 0);
   await captureScreenshot('https://eternitydrum.com', 'eternitydrum', 0);
@@ -132,6 +133,7 @@ exports.onPostBuild = async () => {
 };
 
 exports.onPreBootstrap = async () => {
+  await captureScreenshot('https://prio-zorg.nl', 'priozorg', 3000);
   await captureScreenshot('https://keeptreal.nl', 'keeptreal', 0);
   await captureScreenshot('https://blackharmony.nl', 'blackharmony', 0);
   await captureScreenshot('https://eternitydrum.com', 'eternitydrum', 0);
