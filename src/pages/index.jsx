@@ -129,7 +129,7 @@ export const Head = () => {
     <>
       <SEO
         title="#1 Website Specialist"
-        description="Menefex: Innovatief webmediabedrijf in Amsterdam. Wij ontwerpen, ontwikkelen en optimaliseren op maat gemaakte websites, webshops en webapplicaties. Vanaf €295,- uw digitale ambities waarmaken. Neem vandaag nog contact op!"
+        description="Menefex is een vooraanstaand & innovatief webmediabedrijf in Amsterdam. Wij ontwerpen, ontwikkelen en optimaliseren op maat gemaakte websites, webshops en webapplicaties. Vanaf €295,- uw digitale ambities waarmaken. Neem vandaag nog contact op!"
         keywords="website, webapplicatie, webshop, wordpress, SEO, amsterdam, specialist, menefex, webmediabedrijf, modern, professioneel, ontwikkelen, bob, webbeheerder, webmaster, projecten, portfolio, services, diensten, biografie, web development, app development, jamstack, michael fransman, gatsby, laten bouwen"
         schemaMarkup={[breadcrumbSchema, websiteSchema, organizationSchema]}
       />
