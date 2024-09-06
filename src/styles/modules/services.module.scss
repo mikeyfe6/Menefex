@@ -15,7 +15,7 @@
     }
 
     @include mobile {
-      @include container(0, 1.5em);
+      @include container(0, 2em);
     }
 
     > div:nth-child(1) {
