@@ -124,7 +124,7 @@ export const Head = () => {
   return (
     <SEO
       title="Contact"
-      description="Offerte aanvragen? Samenwerking of gewoon gedag zeggen. Neem contact met ons op!"
+      description="Contacteer Menefex voor een offerte, samenwerking of algemene vragen. Wij staan klaar om samen iets geweldigs te creëren! Binnen één werkdag reactie."
       keywords="contact, menefex, michael fransman, mikeyfe6, offerte, openingstijden, vraag, opmerking, klacht, feedback, hulp, probleemoplossing, bericht, social media"
       pathname="/contact/"
       schemaMarkup={[breadcrumbSchema, localBusinessSchema]}

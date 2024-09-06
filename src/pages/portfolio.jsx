@@ -420,7 +420,7 @@ export const Head = () => {
   return (
     <SEO
       title="Portfolio"
-      description="Wij zijn trots op ons werk en showcasen dat ook graag! Neem een kijk in ons archief van recente projecten."
+      description="Ontdek de recente projecten van Menefex: van webdesign en webontwikkeling tot op maat gemaakte digitale oplossingen voor klanten. Bekijk ons portfolio en laat u inspireren door onze succesvolle samenwerkingen!"
       keywords="work, website, webapplicatie, projecten, eternity, black harmony, ds melodies, afrodiashpere, wordpress, reactjs, gatsby, elementor, github, portfolio, archief"
       pathname="/portfolio/"
       schemaMarkup={breadcrumbSchema}

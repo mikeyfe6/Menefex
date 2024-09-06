@@ -37,7 +37,7 @@ export default {
 
   smallbio: {
     intro:
-      "<b>Menefex</b> is een modern webmediabedrijf, opgericht door <b><a href='https://www.linkedin.com/in/michaelfransman' rel='noopener noreferrer' target='_blank'>Michael Fransman</a></b>. Wij zijn gespecialiseerd in het ontwerpen, ontwikkelen en optimaliseren van websites en webapplicaties voor zowel startups als gevestigde bedrijven. Onze focus ligt op het realiseren van digitale ambities en het creëren van op maat gemaakte softwareoplossingen die perfect aansluiten bij uw bedrijfsdoelen. Met <b>Menefex</b> haalt u een betrouwbare partner in huis die uw online aanwezigheid naar een hoger niveau tilt",
+      "<b>Menefex</b> is een modern webmediabedrijf, opgericht door <b><a href='https://www.linkedin.com/in/michaelfransman' rel='noopener noreferrer' target='_blank'>Michael Fransman</a></b>. Wij zijn gespecialiseerd in het ontwerpen, ontwikkelen en optimaliseren van websites en webapplicaties voor zowel startups als gevestigde bedrijven. Onze focus ligt op het realiseren van digitale ambities en het creëren van op maat gemaakte softwareoplossingen die perfect aansluiten bij uw bedrijfsdoelen. Met <b>Menefex</b> haalt u een betrouwbare partner in huis die uw online aanwezigheid naar een hoger niveau tilt.",
     moreButton: 'Meer over Menefex',
   },
 

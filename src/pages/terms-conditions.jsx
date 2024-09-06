@@ -25,7 +25,7 @@ export default TermsConditions;
 export const Head = () => (
   <SEO
     title="Terms & Conditions"
-    description="Bekijk hier de algemene voorwaarden die wij als Menefex nastreven."
+    description="Bekijk de algemene voorwaarden van Menefex. Deze voorwaarden zijn van toepassing op alle offertes, aanbiedingen, werkzaamheden, en diensten van Menefex, en omvatten informatie over prijzen, betaling, levering, garanties, en meer."
     pathname="/terms-conditions/"
   />
 );

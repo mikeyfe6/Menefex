@@ -119,15 +119,23 @@
     h5 {
       color: $fifth-color;
       font-family: $poppins-font;
-      font-size: 1rem;
+      font-size: 1.25rem;
       margin-bottom: 0.5em;
+
+      @include mobile {
+        font-size: 1rem;
+      }
     }
 
     a {
       color: $primary-color;
-      font-size: 1.1rem;
+      font-size: 1.125rem;
 
       @include smoothTrans;
+
+      @include mobile {
+        font-size: 1rem;
+      }
 
       &:hover {
         color: $link-color;
@@ -155,6 +163,7 @@
         justify-content: center;
         align-items: center;
         gap: 1em;
+        padding-top: 0.125em;
 
         li {
           &.fb::before {
@@ -195,7 +204,11 @@
       font-family: $right-font;
 
       p {
-        font-size: 1.1rem;
+        font-size: 1.125rem;
+
+        @include mobile {
+          font-size: 1rem;
+        }
       }
 
       .amsterdam {

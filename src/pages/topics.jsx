@@ -99,7 +99,7 @@ export default TopicPage;
 export const Head = () => (
   <SEO
     title="Topics"
-    description="Waar gaan onze blog onderwerpen allemaal over? Hier vindt je een overzicht!"
+    description="Ontdek onze diverse blogcategorieën van doe-het-zelf tips tot SEO-gidsen, informatieve artikelen, nieuws, en meer. Vind hier het volledige overzicht van onderwerpen!"
     keywords="onderwerpen, posts, topics, views, nieuws, stories, content, news, mind, actualiteiten, actueel"
     pathname="/topics/"
   />
