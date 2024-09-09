@@ -60,12 +60,17 @@
       border-radius: 0;
       border: none;
       padding: 1.5em 1.5em 2.5em;
+      gap: 1em;
     }
 
     > div {
       display: flex;
       justify-content: space-between;
       gap: 2em;
+
+      @include phablet {
+        gap: 1em;
+      }
 
       > a[target='_blank'] {
         @include primaryButton;
@@ -76,6 +81,11 @@
       font-size: x-large;
       text-decoration: underline;
       text-decoration-color: $secondary-color;
+      text-align: right;
+
+      @include phablet {
+        font-size: large;
+      }
     }
 
     > p {

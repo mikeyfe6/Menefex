@@ -59,6 +59,7 @@
   outline: 3px solid $secondary-color;
   color: $sixth-color;
   font-family: $alata-font;
+  white-space: nowrap;
 
   @include smoothTrans;
   @include boxShadow;
@@ -75,6 +76,7 @@
   width: 100%;
   border-radius: $low-radius;
   font-size: 0.9rem;
+  white-space: nowrap;
 
   @include smoothTrans;
   @include boxShadow;
@@ -89,6 +91,7 @@
   color: $sixth-color;
   text-align: center;
   outline: 2px solid $base-color;
+  white-space: nowrap;
 
   @include secondaryButton;
 
@@ -104,6 +107,7 @@
   color: $primary-color;
   text-align: center;
   outline: 2px solid $fourth-color;
+  white-space: nowrap;
 
   @include secondaryButton;
 
@@ -160,6 +164,7 @@
   background: $white-color;
   font-size: 0.75rem;
   width: fit-content;
+  white-space: nowrap;
 
   @include boxShadow;
   @include smoothTrans;
