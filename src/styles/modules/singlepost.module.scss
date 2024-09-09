@@ -20,20 +20,22 @@
       max-width: 80%;
       margin: 0 auto;
 
-      @include mobile {
+      @include phablet {
         max-width: 100%;
       }
 
       .header {
         display: flex;
         align-items: center;
-        gap: 1em;
+        gap: 2em;
+        padding: 0.5em;
+
+        @include mobile {
+          gap: 1em;
+        }
 
         > img {
           max-height: 75px;
-          border-right: 2px solid $fourth-color;
-          padding-right: 1em;
-          margin: 1em;
 
           @include mobile {
             max-height: 50px;

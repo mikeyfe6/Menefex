@@ -219,12 +219,11 @@
     font-size: 0.825rem;
     color: $fifth-color;
     padding-bottom: 1.75em;
-    max-width: 57.5%;
+    max-width: 100ch;
     margin: 0 auto;
 
     @include mobile {
       font-size: 0.65rem;
-      max-width: 100%;
       line-height: 1.3rem;
       letter-spacing: $low-spacing;
     }
