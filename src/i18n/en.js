@@ -20,7 +20,7 @@ export default {
     '<span>&copy;</span> 2019 - {{today}} · ${{title}} <span>|</span> <a href="/privacy-policy/">privacy policy</a> <span>|</span> <a href="/terms-conditions/">terms & conditions</a> <span>|</span> all rights reserved <span>|</span> CoC <span>#</span> 76045315 <span>|</span> VAT <span>#</span> NL003040579B17 <span>|</span> Bank <span>#</span> NL10 BUNQ 2038 8619 94',
 
   homeBiographyTitle: 'Biography',
-  homeActualTitle: 'Actual',
+  homeActualTitle: 'Blog',
   homeServicesTitle: 'Our Services',
   homeProjectsTitle: 'Recent Projects',
 
@@ -79,20 +79,15 @@ export default {
   recentProjectsViewSiteButton: 'View website',
   recentProjectsViewAppButton: 'View webapp',
 
-  recentProjectsEPbio:
-    'This website was built on behalf of the Eternity Percussion Foundation from Amsterdam',
-  recentProjectsBHbio:
-    'This website was built on behalf of Black Harmony, a music group from Amsterdam',
+  recentProjectsEPbio: 'Eternity Percussion Foundation from Amsterdam',
+  recentProjectsBHbio: 'Singing group Black Harmony from Amsterdam',
   recentProjectsADSbio:
-    'This project was set up entirely on our own initiative, focusing on social interactions',
-  recentProjectsDSbio:
-    'This website was built on behalf of steel pannist Derek Simpey from Amsterdam',
+    'Our very own initiative set up, mainly focused on social interactions',
+  recentProjectsDSbio: 'Steelpan player Derek Simpey from Amsterdam',
   recentProjectsKNbio:
-    'This website was built on behalf of the KN-ACDiG foundation from The Hague',
-  recentProjectsKIRbio:
-    'This website was built on behalf of the Regalness.nl foundation from Amsterdam.',
-  recentProjectsPZbio:
-    'This website was built on behalf of the aid organization Prio Zorg from Amsterdam',
+    'Knowledge Network Afro Caribbean Diaspora Community Foundation from The Hague',
+  recentProjectsKIRbio: 'Regalness.nl Foundation from Amsterdam',
+  recentProjectsPZbio: 'Aid organization Prio Zorg from Amsterdam',
 
   portfolioTitle: 'Recent Projects',
   portfolioIntro:
@@ -103,38 +98,18 @@ export default {
 
   portfolioKIRbio:
     "<strong>Keep It Real</strong> is a program led by cultural professional Wenner Regales, which helps young people grow beyond the boundaries of traditional education. It provides a platform for making positive choices and seizing opportunities, rooted in Wenner's experience and network.",
-  portfolioKIRfocus:
-    '* This website was built with speed, overview and accessibility in mind',
-
   portfolioADSbio:
     '<strong>Afrodiasphere</strong> is a project set up entirely on our own initiative, mainly aimed at making it easier to share information among private individuals/companies that want to develop themselves. Create your profile & join the MOVEMENT!',
-  portfolioADSfocus:
-    '* This web application is mainly interactive, aimed at networks including social media and many more future applications',
-
   portfolioEPbio:
     '<strong>Eternity Percussion</strong> is a cultural institution that contributes to talent development, cultural participation and broadening the vision of young people. By means of including music education and the deployment of young people in their own organization, Eternity offers young people the opportunity to undertake cultural activities and participate within Dutch society.',
-  portfolioEPfocus:
-    '* This web application is mainly interactive, aimed at networks including social media and many more future applications',
-
   portfolioKNbio:
     '<strong>KN-ACDiG</strong> or Knowledge Network African-Caribbean Diaspora Community is a foundation that focuses on working on strengthening the identity, increasing visibility and knowledge management (advice to monitoring) of the African-Caribbean Diaspora Community.',
-  portfolioKNfocus:
-    '* The spearheads of this website are sharing information and expanding the network',
-
   portfolioDSbio:
     '<strong>DS Melodies</strong> alias Derek Simpey is a professional Steeldrum artist from Amsterdam South East. With his unique sound, formed from 18 years of experience, he and his steelpan instrument create a worthy spectacle wherever he is.',
-  portfolioDSfocus:
-    '* This website was built with speed, abstraction in design and accessibility in mind',
-
   portfolioBHbio:
     '<strong>Black Harmony</strong> is a popular and talented singing group from Amsterdam. This music organization wants to contribute to the positioning of traditional music called Apinti Kawina. Black harmony wants to act as an ambassador when it comes to traditional Afro-Surinamese music.',
-  portfolioBHfocus:
-    '* This website contains information, media and interactive social media applications',
-
   portfolioPZbio:
     '<strong>Prio Zorg</strong> is a dynamic care organization that guides young people on their way to self-reliance and a meaningful life. For young adults who get stuck and lose control of their lives, Priozorg offers expert support in the form of coaching, mentoring and educational guidance.',
-  portfolioPZfocus:
-    '* The spearheads of this website are sharing information and expanding the network',
 
   blogPostedOn: 'Posted on:',
   blogAuthor: 'Author:',
@@ -215,7 +190,7 @@ export default {
     "<b>WE ❤︎ MUSIC !</b> That's why we share our <u>work, chill & vibe</u> - playlist. Enjoy and stay tuned for updates.",
 
   contactIntro:
-    "<h5>Let's create something great! ✨</h5><br /><p class='page-sub'>Have your website, webshop or web app built by <b>Menefex</b>?</p><br /><p class='page-sub'>Request a quote! If you have a <u>question or comment</u>, please do not hesitate to leave a message below.</p><br /><p class='page-sub'><b>We will respond within one working day contact you.</b></p>",
+    "<p class='page-sub'>Have your website, webshop or web app built by <b>Menefex</b>?</p><br /><p class='page-sub'>Request a quote! If you have a <u>question or comment</u>, please do not hesitate to leave a message below.</p><br /><p class='page-sub'><b>We will send you a respond within one working day.</b></p>",
 
   contactFormName: 'Name',
   contactFormCompany: 'Company name (optional)',

@@ -405,7 +405,7 @@ export const Head = () => {
     <SEO
       title="Prijzen & tarieven"
       description="Bekijk de scherpe tarieven van Menefex voor webdesign, webontwikkeling en op maat gemaakte digitale oplossingen. Kies uit onze flexibele pakketten vanaf €265,50 (excl btw) en realiseer uw online ambities. Vraag een offerte of terugbelverzoek aan!"
-      keywords="prijzen, tarieven, budget plan, starter plan, established plan, business plan, actie, terugbelverzoek, prijslijst, pakket, offerte, bel mij terug, prices"
+      keywords="prijzen, tarieven, webdesign, webontwikkeling, digitale oplossingen, online ambities, offerte, terugbelverzoek"
       pathname="/prijzen/"
       schemaMarkup={[
         breadcrumbSchema,

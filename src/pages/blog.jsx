@@ -143,7 +143,7 @@ export const Head = () => {
     <SEO
       title="Blog"
       description="Lees de nieuwste inzichten van Menefex over webontwikkeling, digitalisering, SEO, technologie, en meer. Ontdek tips, trends en verhalen die jouw digitale strategie versterken!"
-      keywords="blog, posts, views, nieuws, stories, nieuws, content, verhalen, news, mind, actualiteiten, actueel"
+      keywords="blog, webontwikkeling, digitalisering, SEO, technologie, tips, trends, verhalen, digitale strategie"
       pathname="/blog/"
       schemaMarkup={breadcrumbSchema}
     />

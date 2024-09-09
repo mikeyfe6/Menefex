@@ -33,16 +33,12 @@
     margin: 2em 0;
     border-bottom: none;
     border-top: none;
-    min-height: 325px;
+    min-height: 250px;
     display: flex;
     flex-direction: column;
 
-    @include desktop {
-      min-height: 350px;
-    }
-
     @include laptop {
-      min-height: 400px;
+      min-height: 300px;
     }
 
     @include tablet {
@@ -78,6 +74,7 @@
     .tools {
       display: flex;
       align-items: center;
+      margin-top: auto;
 
       ul {
         display: flex;

@@ -9,7 +9,7 @@
     --swiper-navigation-size: 30px;
     --swiper-theme-color: #008cd2;
 
-    @include mobile {
+    @include phablet {
       border-radius: 0;
 
       --swiper-navigation-size: 25px;
@@ -28,7 +28,7 @@
 
     max-height: 700px;
 
-    @include mobile {
+    @include phablet {
       border-radius: 0;
       border-right: none;
       border-left: none;
@@ -49,10 +49,12 @@
     max-width: 500px;
     border: 2.5px solid $fifth-color;
     border-radius: 7px;
-
+    display: flex;
+    flex-direction: column;
     padding: 1em;
+    gap: 1.5em;
 
-    @include mobile {
+    @include phablet {
       position: static;
       max-width: 100%;
       border-radius: 0;
@@ -63,23 +65,25 @@
     > div {
       display: flex;
       justify-content: space-between;
+      gap: 2em;
 
       > a[target='_blank'] {
         @include primaryButton;
       }
     }
 
-    > h5 {
-      color: $primary-color;
-      font-size: 1.2rem;
-      text-align: right;
+    a > h5 {
+      font-size: x-large;
+      text-decoration: underline;
+      text-decoration-color: $secondary-color;
     }
 
     > p {
       color: $primary-color;
       text-align: right;
       font-size: 0.9rem;
-      margin: 1em 0;
+      max-width: 375px;
+      margin-left: auto;
     }
 
     > ul {

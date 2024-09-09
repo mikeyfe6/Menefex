@@ -20,7 +20,7 @@ export default {
     '<span>&copy;</span> 2019 - {{today}} · {{title}} <span>|</span> <a href="/privacy-policy/">privacybeleid</a> <span>|</span> <a href="/terms-conditions/">algemene voorwaarden</a> <span>|</span> alle rechten voorbehouden <span>|</span> KvK <span>#</span> 76045315 <span>|</span> Btw <span>#</span> NL003040579B17 <span>|</span> Bank <span>#</span> NL10 BUNQ 2038 8619 94',
 
   homeBiographyTitle: 'Biografie',
-  homeActualTitle: 'Actueel',
+  homeActualTitle: 'Blog',
   homeServicesTitle: 'Onze Diensten',
   homeProjectsTitle: 'Recente Projecten',
 
@@ -78,20 +78,15 @@ export default {
   recentProjectsViewSiteButton: 'Bekijk website',
   recentProjectsViewAppButton: 'Bekijk webapp',
 
-  recentProjectsEPbio:
-    'Deze website is gebouwd in opdracht van Stichting Eternity Percussion uit Amsterdam',
-  recentProjectsBHbio:
-    'Deze website is gebouwd in opdracht van zanggroep Black Harmony uit Amsterdam',
+  recentProjectsEPbio: 'Stichting Eternity Percussion uit Amsterdam',
+  recentProjectsBHbio: 'Zanggroep Black Harmony uit Amsterdam',
   recentProjectsADSbio:
-    'Dit project is geheel op eigen initiatief opgezet, gericht op sociale interacties',
-  recentProjectsDSbio:
-    'Deze website is gebouwd in opdracht van steelpannist Derek Simpey uit Amsterdam',
+    'Ons eigen initiatief opgezet, vooral gericht op sociale interacties',
+  recentProjectsDSbio: 'Steelpannist Derek Simpey uit Amsterdam',
   recentProjectsKNbio:
-    'Deze website is gebouwd in opdracht van stichting KN-ACDiG uit Den-Haag',
-  recentProjectsKIRbio:
-    'Deze website is gebouwd in opdracht van stichting Regalness.nl uit Amsterdam',
-  recentProjectsPZbio:
-    'Deze website is gebouwd in opdracht van hulpverleningsorganisatie Prio Zorg uit Amsterdam',
+    'Stichting Kennis Netwerk Afro Caribische Diaspora Gemeenschap uit Den-Haag',
+  recentProjectsKIRbio: 'Stichting Regalness.nl uit Amsterdam',
+  recentProjectsPZbio: 'Hulpverleningsorganisatie Prio Zorg uit Amsterdam',
 
   portfolioTitle: 'Recente Projecten',
   portfolioIntro:
@@ -102,38 +97,18 @@ export default {
 
   portfolioKIRbio:
     "<strong>Keep It Real</strong> is een programma onder leiding van cultureel professional Wenner Regales, dat jongeren helpt groeien buiten de grenzen van traditioneel onderwijs. Het biedt een platform voor het maken van positieve keuzes en het grijpen van kansen, geworteld in Wenner's ervaring en netwerk.",
-  portfolioKIRfocus:
-    '* Deze website is gebouwd met oog naar snelheid, overzicht en toegankelijkheid',
-
   portfolioADSbio:
     '<strong>Afrodiasphere</strong> is een project geheel op eigen initiatief opgezet, voornamelijk gericht op het makkelijker maken van het delen van informatie onder particulieren / bedrijven die zich willen voortmanifesteren. Maak je profiel aan & join the MOVEMENT!',
-  portfolioADSfocus:
-    '* Deze webapplicatie is vooral interactief, gericht op netwerken inclusief sociale media en veel meer toekomstige toepassingen',
-
   portfolioEPbio:
     '<strong>Eternity Percussion</strong> is een culturele instelling die bijdrage levert aan talentontwikkeling, cultuurparticipatie en visieverbreding van jongeren. D.m.v. o.a. muziekeducatie en inzet van jongeren in eigen organisatie biedt Eternity jongeren de gelegenheid om cultureel te ondernemen en participeren binnen de Nederlandse samenleving.',
-  portfolioEPfocus:
-    '* Deze webapplicatie is vooral interactief, gericht op netwerken inclusief sociale media en veel meer toekomstige toepassingen',
-
   portfolioKNbio:
     '<strong>KN-ACDiG</strong> oftewel Kennis Netwerk Afrikaanse-Caribische Diaspora Gemeenschap is een stichting die zich richt op het werken aan de identiteitsversterking, het vergroten van de zichtbaarheid en het kennismanagement (advies tot monitoring) van de Afrikaanse-Caribische Diaspora Gemeenschap.',
-  portfolioKNfocus:
-    '* De speerpunten van deze website zijn het delen van informatie en netwerkverbreding',
-
   portfolioDSbio:
     '<strong>DS Melodies</strong> alias Derek Simpey is een professioneel Steeldrum-artiest uit Amsterdam Zuidoost. Met zijn unieke sound die gevormd is uit 18 jaar ervaring, creeeren hij en zijn steelpan-instrument, waar ie ook is, een waardig spectakel.',
-  portfolioDSfocus:
-    '* Deze website is gebouwd met oog naar snelheid, abstractie in design en toegankelijkheid',
-
   portfolioBHbio:
     '<strong>Black Harmony</strong> is een populaire en getalenteerde zanggroep uit Amsterdam. Deze muziekorganisatie wilt een bijdrage leveren aan de positionering van de traditionele muziek genaamd Apinti Kawina. Black harmony wilt fungeren als ambassadeur als het gaat om traditionele Afro-Surinaamse muziek.',
-  portfolioBHfocus:
-    '* Deze website bevat informatie, media en interactieve sociale media toepassingen',
-
   portfolioPZbio:
     '<strong>Prio Zorg</strong> is een dynamische hulpverleningsorganisatie die jongeren begeleidt op weg naar zelfredzaamheid en een betekenisvol leven. Voor jongvolwassenen die vastlopen en de controle over hun leven verliezen, biedt Priozorg deskundige ondersteuning in de vorm van coaching, mentoring, en opvoedkundige begeleiding.',
-  portfolioPZfocus:
-    '* De speerpunten van deze website zijn het delen van informatie en netwerkverbreding',
 
   blogPostedOn: 'Gepost:',
   blogAuthor: 'Auteur:',
@@ -215,7 +190,7 @@ export default {
     '<b>WE ❤︎ MUSIC !</b> Daarom delen we ons <u>work, chill & vibe</u> - playlist. Geniet ervan en blijf ons volgen voor updates.',
 
   contactIntro:
-    '<h5>Laten wij iets geweldigs creëeren! ✨</h5><br /><p class="page-sub">Jouw website, webshop of webapp laten bouwen door <b>Menefex</b>?</p><br /><p class="page-sub">Vraag een offerte aan! Heb je anders een <u>vraag of opmerking</u>, aarzel niet een bericht hieronder achter te laten.</p><br /><p class="page-sub"><b>Binnen één werkdag nemen wij contact met u op.</b></p>',
+    '<p class="page-sub">Jouw website, webshop of webapp laten bouwen door <b>Menefex</b>?</p><br /><p class="page-sub">Vraag een offerte aan! Heb je anders een <u>vraag of opmerking</u>, aarzel niet een bericht achter te laten.</p><br /><p class="page-sub"><b>Binnen één werkdag nemen wij contact met je op.</b></p>',
 
   contactFormName: 'Naam',
   contactFormCompany: 'Bedrijfsnaam (optioneel)',

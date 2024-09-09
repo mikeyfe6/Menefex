@@ -64,7 +64,7 @@ const Projects = () => {
           {t('recentProjectsViewSiteButton')}
         </a>
         <Link to="/portfolio/">
-          <h5>Eternity Drum</h5>
+          <h5>Eternity Percussion</h5>
         </Link>
       </div>
 
@@ -230,7 +230,7 @@ const Projects = () => {
   return (
     <section id="portfolio" data-scroll-center>
       <Swiper
-        modules={[Navigation, Pagination, Scrollbar, A11y, Parallax, Autoplay]}
+        modules={[Navigation, Pagination, Scrollbar, A11y, Parallax]}
         spaceBetween={10}
         slidesPerView={1}
         centeredSlides

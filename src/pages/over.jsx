@@ -111,7 +111,7 @@ export const Head = () => {
     <SEO
       title="Over Ons"
       description="Ontdek Menefex, het innovatieve webmediabedrijf onder leiding van Michael Fransman. Leer meer over onze missie, waarden, en unieke aanpak voor op maat gemaakte digitale oplossingen en webontwikkeling."
-      keywords="over menefex, doelen, biografie, motivatie, spotify playlist, stayvibin, gespecialiseerd, webmediabedrijf, michael fransman, verhaal, about"
+      keywords="Menefex, Michael Fransman, webmediabedrijf, webontwikkeling, digitale oplossingen, innovatie, missie, waarden, aanpak"
       pathname="/over/"
       schemaMarkup={[breadcrumbSchema, personSchema, organizationSchema]}
     />
