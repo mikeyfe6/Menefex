@@ -53,7 +53,7 @@ export default {
 
   servicesTitleWebshops: 'Webshops',
   servicesContentWebshops:
-    'In deze tijd zijn webshops onmisbaar voor lokale ondernemingen. Ze bieden toegang tot een breder netwerk, een hogere beschikbaarheid, en verhogen de conversie en zichtbaarheid van uw producten.',
+    'In deze tijd zijn webshops onmisbaar voor lokale ondernemingen. Ze bieden toegang tot een breder netwerk, een hogere beschikbaarheid en verhogen de conversie en zichtbaarheid van uw producten.',
   servicesFocusWebshopsOne: 'Duidelijk overzicht van het assortiment',
   servicesFocusWebshopsTwo: 'Meer leads genereren',
   servicesFocusWebshopsThree: '24/7 verkoopmogelijkheden',
