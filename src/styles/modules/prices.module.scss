@@ -137,16 +137,11 @@
   color: #1ca111;
   font-weight: 500;
   box-shadow: none;
-  font-size: 1.1rem;
 
   @include smoothTrans;
 
   &:hover {
     color: #187710;
-  }
-
-  @include mobile {
-    font-size: 1rem;
   }
 }
 

@@ -234,21 +234,11 @@ textarea {
 
 .page-sub {
   font-weight: 300;
-
   opacity: 0.9;
   font-size: 1.2rem;
-  max-width: 50%;
-
-  @include tablet {
-    max-width: 75%;
-  }
-
-  @include phablet {
-    max-width: 100%;
-  }
+  max-width: 75ch;
 
   @include mobile {
-    max-width: 100%;
     font-size: 1rem;
   }
 }
