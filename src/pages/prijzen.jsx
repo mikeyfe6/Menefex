@@ -403,7 +403,7 @@ export const Head = () => {
 
   return (
     <SEO
-      title="Prijzen & tarieven"
+      title="Prijzen & Tarieven"
       description="Bekijk de scherpe tarieven van Menefex voor webdesign, webontwikkeling en op maat gemaakte digitale oplossingen. Kies uit onze flexibele pakketten vanaf €265,50 (excl btw) en realiseer uw online ambities. Vraag een offerte of terugbelverzoek aan!"
       keywords="prijzen, tarieven, webdesign, webontwikkeling, digitale oplossingen, online ambities, offerte, terugbelverzoek"
       pathname="/prijzen/"

@@ -24,7 +24,7 @@ export default PrivacyPolicy;
 
 export const Head = () => (
   <SEO
-    title="Privacy Policy"
+    title="Privacybeleid"
     description="Ontdek hoe Menefex uw gegevens beschermt en verwerkt. Bekijk ons privacybeleid voor volledige informatie over ons gebruik van cookies, gegevensbeheer en uw rechten."
     keywords="privacy policy, privacybeleid, cookies, gegevensbeheer, gegevensbescherming, GDPR, AVG"
     pathname="/privacy-policy/"
