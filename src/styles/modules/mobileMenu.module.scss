@@ -12,12 +12,6 @@
   transform: translateY(100%);
   transition: transform 0.5s ease-in-out;
 
-  hr {
-    margin: 0;
-    width: 50%;
-    border: 1px solid $secondary-color;
-  }
-
   &.open {
     transform: translateY(0);
   }
@@ -37,6 +31,11 @@
     }
 
     li {
+      &:last-of-type {
+        border-top: 3px solid $third-color;
+        padding-top: 1em;
+      }
+
       a {
         font-size: 1.5rem;
         letter-spacing: $high-spacing;

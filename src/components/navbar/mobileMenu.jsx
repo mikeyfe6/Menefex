@@ -59,9 +59,6 @@ const MobileMenu = ({ show }) => {
             <span className={mobileMenuStyles.dots}>.</span>
           </Link>
         </li>
-
-        <hr />
-
         <li>
           <a
             href="https://wa.me/31611054318"
