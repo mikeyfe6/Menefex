@@ -230,7 +230,7 @@ const Projects = () => {
   return (
     <section id="portfolio" data-scroll-center>
       <Swiper
-        modules={[Navigation, Pagination, Scrollbar, A11y, Parallax]}
+        modules={[Navigation, Pagination, Scrollbar, A11y, Parallax, Autoplay]}
         spaceBetween={10}
         slidesPerView={1}
         centeredSlides
@@ -258,12 +258,6 @@ const Projects = () => {
                 image={projectImg}
                 alt={node.name}
                 className={sliderStyles.sliderContainer}
-                style={{
-                  width: '100%',
-                  overflow: 'hidden',
-                  objectPosition: 'top',
-                }}
-                loading="eager"
               />
               {(() => {
                 switch (node.name) {
