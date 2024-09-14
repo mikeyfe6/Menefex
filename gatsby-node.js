@@ -123,23 +123,23 @@ const captureScreenshot = async (url, filename, delay) => {
 };
 
 exports.onPostBuild = async () => {
-  await captureScreenshot('https://prio-zorg.nl', 'priozorg', 3000);
-  await captureScreenshot('https://keeptreal.nl', 'keeptreal', 0);
+  await captureScreenshot('https://prio-zorg.nl', 'priozorg', 2000);
+  await captureScreenshot('https://keeptreal.nl', 'keeptreal', 2000);
   await captureScreenshot('https://blackharmony.nl', 'blackharmony', 0);
   await captureScreenshot('https://eternitydrum.com', 'eternitydrum', 0);
   await captureScreenshot('https://kn-acdig.com', 'kn-acdig', 0);
   await captureScreenshot('https://dsmelodies.com', 'dsmelodies', 0);
-  await captureScreenshot('https://afrodiasphere.com', 'afrodiasphere', 3000);
+  await captureScreenshot('https://afrodiasphere.com', 'afrodiasphere', 2000);
 };
 
 exports.onPreBootstrap = async () => {
-  await captureScreenshot('https://prio-zorg.nl', 'priozorg', 3000);
-  await captureScreenshot('https://keeptreal.nl', 'keeptreal', 0);
+  await captureScreenshot('https://prio-zorg.nl', 'priozorg', 2000);
+  await captureScreenshot('https://keeptreal.nl', 'keeptreal', 2000);
   await captureScreenshot('https://blackharmony.nl', 'blackharmony', 0);
   await captureScreenshot('https://eternitydrum.com', 'eternitydrum', 0);
   await captureScreenshot('https://kn-acdig.com', 'kn-acdig', 0);
   await captureScreenshot('https://dsmelodies.com', 'dsmelodies', 0);
-  await captureScreenshot('https://afrodiasphere.com', 'afrodiasphere', 3000);
+  await captureScreenshot('https://afrodiasphere.com', 'afrodiasphere', 2000);
 };
 
 module.exports.createPages = async ({ graphql, actions }) => {
