@@ -136,14 +136,17 @@ export const Head = () => {
           addressCountry: 'NL',
         },
         deliveryTime: {
-          '@type': 'DeliveryTime',
-          hasDeliveryMethod: {
-            '@type': 'DeliveryMethod',
-            name: 'Immediate Access',
-          },
-          estimatedDelivery: {
+          '@type': 'ShippingDeliveryTime',
+          handlingTime: {
             '@type': 'QuantitativeValue',
-            value: '0',
+            minValue: 0,
+            maxValue: 1,
+            unitCode: 'DAY',
+          },
+          transitTime: {
+            '@type': 'QuantitativeValue',
+            minValue: 1,
+            maxValue: 5,
             unitCode: 'DAY',
           },
         },
@@ -163,10 +166,10 @@ export const Head = () => {
         ratingValue: '5',
         bestRating: '5',
         worstRating: '1',
-        author: {
-          '@type': 'Person',
-          name: 'Happy Customer',
-        },
+      },
+      author: {
+        '@type': 'Person',
+        name: 'John Doe',
       },
       datePublished: dateReview,
       reviewBody: 'Great product!',
@@ -212,14 +215,17 @@ export const Head = () => {
           addressCountry: 'NL',
         },
         deliveryTime: {
-          '@type': 'DeliveryTime',
-          hasDeliveryMethod: {
-            '@type': 'DeliveryMethod',
-            name: 'Immediate Access',
-          },
-          estimatedDelivery: {
+          '@type': 'ShippingDeliveryTime',
+          handlingTime: {
             '@type': 'QuantitativeValue',
-            value: '0',
+            minValue: 0,
+            maxValue: 1,
+            unitCode: 'DAY',
+          },
+          transitTime: {
+            '@type': 'QuantitativeValue',
+            minValue: 1,
+            maxValue: 5,
             unitCode: 'DAY',
           },
         },
@@ -239,10 +245,10 @@ export const Head = () => {
         ratingValue: '5',
         bestRating: '5',
         worstRating: '1',
-        author: {
-          '@type': 'Person',
-          name: 'Jane Smith',
-        },
+      },
+      author: {
+        '@type': 'Person',
+        name: 'Jane Smith',
       },
       datePublished: dateReview,
       reviewBody: 'Great product!',
@@ -288,14 +294,17 @@ export const Head = () => {
           addressCountry: 'NL',
         },
         deliveryTime: {
-          '@type': 'DeliveryTime',
-          hasDeliveryMethod: {
-            '@type': 'DeliveryMethod',
-            name: 'Immediate Access',
-          },
-          estimatedDelivery: {
+          '@type': 'ShippingDeliveryTime',
+          handlingTime: {
             '@type': 'QuantitativeValue',
-            value: '0',
+            minValue: 0,
+            maxValue: 1,
+            unitCode: 'DAY',
+          },
+          transitTime: {
+            '@type': 'QuantitativeValue',
+            minValue: 1,
+            maxValue: 5,
             unitCode: 'DAY',
           },
         },
@@ -315,10 +324,10 @@ export const Head = () => {
         ratingValue: '5',
         bestRating: '5',
         worstRating: '1',
-        author: {
-          '@type': 'Person',
-          name: 'Joe Blow',
-        },
+      },
+      author: {
+        '@type': 'Person',
+        name: 'Joe Blow',
       },
       datePublished: dateReview,
       reviewBody: 'Great product!',
@@ -364,14 +373,17 @@ export const Head = () => {
           addressCountry: 'NL',
         },
         deliveryTime: {
-          '@type': 'DeliveryTime',
-          hasDeliveryMethod: {
-            '@type': 'DeliveryMethod',
-            name: 'Immediate Access',
-          },
-          estimatedDelivery: {
+          '@type': 'ShippingDeliveryTime',
+          handlingTime: {
             '@type': 'QuantitativeValue',
-            value: '0',
+            minValue: 0,
+            maxValue: 1,
+            unitCode: 'DAY',
+          },
+          transitTime: {
+            '@type': 'QuantitativeValue',
+            minValue: 1,
+            maxValue: 5,
             unitCode: 'DAY',
           },
         },
@@ -391,10 +403,10 @@ export const Head = () => {
         ratingValue: '5',
         bestRating: '5',
         worstRating: '1',
-        author: {
-          '@type': 'Person',
-          name: 'Joe Schmo',
-        },
+      },
+      author: {
+        '@type': 'Person',
+        name: 'Joe Schmo',
       },
       datePublished: dateReview,
       reviewBody: 'Great product!',
