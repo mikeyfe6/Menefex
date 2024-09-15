@@ -28,6 +28,7 @@ const Smallbio = () => {
             href="https://open.spotify.com/playlist/08UGoWTjvpuooABCWyPx0m?si=5a3ca09f8cba4300"
             rel="noopener noreferrer"
             target="_blank"
+            aria-label="Luister naar onze #STAYVIBIN'-playlist op Spotify"
           >
             <i className="fa-brands fa-spotify" />
           </a>
