@@ -68,7 +68,15 @@ module.exports = {
         host: process.env.CONTENTFUL_HOST,
       },
     },
-    'gatsby-plugin-sass',
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        implementation: require('sass'),
+        sassOptions: {
+          silenceDeprecations: ['legacy-js-api'],
+        },
+      },
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -305,7 +313,7 @@ module.exports = {
               acc[`/blog/${slug}/`] = { path: `/blog/${slug}/`, updatedAt };
               return acc;
             },
-            {},
+            {}
           );
 
           const sitePagesMap = allSitePage.nodes.reduce((acc, page) => {
