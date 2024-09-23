@@ -196,7 +196,7 @@
   @include boxShadow;
   @include smoothTrans;
 
-  @include fluidTyping(14, 16);
+  @include fluidTyping(12, 14);
 
   &:hover {
     background: $sixth-color;

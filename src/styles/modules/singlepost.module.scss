@@ -451,7 +451,7 @@
         > ul {
           display: flex;
           flex-wrap: wrap;
-          gap: 1.5em 0.75em;
+          gap: 1.25em 0.75em;
 
           li > a {
             @include topicButton;
@@ -536,8 +536,6 @@
       }
 
       .disqus {
-        width: 87.5%;
-        margin: 0 auto;
         color: $base-color;
 
         @include mobile {
