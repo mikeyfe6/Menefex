@@ -262,7 +262,7 @@
       display: inline;
       width: fit-content;
 
-      @include fluidTyping(10, 12);
+      @include fluidTyping(9, 12);
 
       @include phablet {
         align-self: flex-end;
