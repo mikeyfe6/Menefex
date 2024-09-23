@@ -117,6 +117,8 @@
 
   @include smoothTrans;
   @include boxShadow;
+
+  @include fluidTyping(14, 16);
 }
 
 @mixin tertiaryButton {
