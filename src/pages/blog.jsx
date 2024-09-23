@@ -79,7 +79,7 @@ const BlogPage = () => {
         Blog<span>.</span>
       </h1>
 
-      <p className="page-sub">What goes through our mind..</p>
+      <h2 className="page-sub">What goes through our mind..</h2>
 
       <section>
         <ul className={blogpostStyles.blogposts}>
@@ -87,7 +87,7 @@ const BlogPage = () => {
             <li key={edge.node.id}>
               <Link to={`/blog/${edge.node.slug}/`}>
                 <div>
-                  <h4>{edge.node.title}</h4>
+                  <h3>{edge.node.title}</h3>
                   <p>{edge.node.subtitle}</p>
                   <span>
                     {t('blogPostedOn')} <strong>{edge.node.createdAt}</strong> ⌁

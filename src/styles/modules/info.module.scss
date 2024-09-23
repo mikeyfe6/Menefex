@@ -14,6 +14,10 @@
     padding: 1.5em;
   }
 
+  > h3 {
+    font-family: $right-font;
+  }
+
   > span {
     margin-bottom: 1em;
     display: block;
@@ -26,7 +30,7 @@
   }
 
   .details {
-    font-size: 0.9rem;
+    @include fluidTyping(14, 16);
   }
 
   .communication {
@@ -133,7 +137,6 @@
 
     a {
       color: #2b9d53;
-      font-size: 1rem;
 
       @include smoothTrans;
 
@@ -155,7 +158,6 @@
     }
 
     a {
-      font-size: 1rem;
       color: #84bcde;
 
       @include smoothTrans;

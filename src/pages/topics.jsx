@@ -68,7 +68,7 @@ const TopicPage = () => {
         Topics<span>.</span>
       </h1>
 
-      <p className="page-sub">{t('topicsIntro')}</p>
+      <h2 className="page-sub">{t('topicsIntro')}</h2>
 
       <section>
         <ul className={topicStyles.topics}>

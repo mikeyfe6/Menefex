@@ -11,7 +11,7 @@ const Notes = () => {
 
   return (
     <section className={notesStyles.notes}>
-      <h4>{t('priceNotesTitle')}</h4>
+      <h3>{t('priceNotesTitle')}</h3>
       <p dangerouslySetInnerHTML={{ __html: t('priceNotesText') }} />
     </section>
   );

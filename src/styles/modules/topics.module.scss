@@ -67,7 +67,6 @@
       @include boxShadow;
 
       h4 {
-        font-size: 1.125rem;
         font-weight: 600;
 
         span {
@@ -79,7 +78,8 @@
         color: $primary-color;
         display: block;
         font-weight: 300;
-        font-size: 0.9rem;
+
+        @include fluidTyping(15, 17);
       }
 
       &:hover {

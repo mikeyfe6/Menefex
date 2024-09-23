@@ -1,10 +1,10 @@
 @import '../configs/globals';
 
 .tpwriter {
+  font-family: $poppins-font;
   margin: 0 auto;
   letter-spacing: -0.5px;
   font-size: 2rem;
-  font-family: $poppins-font;
   font-weight: 600;
 
   @include phablet {
@@ -16,8 +16,6 @@
   }
 
   @include compact {
-    line-height: 1.1;
-
     br {
       display: block !important;
     }

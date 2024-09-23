@@ -49,26 +49,21 @@
       font-family: $right-font;
       margin-right: 1em;
       color: $secondary-color;
-      font-size: 1rem;
       display: inline;
     }
 
-    h5 {
+    h3 {
+      font-family: $right-font;
       display: inline;
+
+      @include fluidTyping(18, 22);
     }
 
     p {
       font-weight: 300;
-      font-size: 1rem;
-      margin: 1.5em 0 1em;
-    }
+      margin: 1em 0;
 
-    p:nth-of-type(2) {
-      font-weight: 500;
-      font-size: 0.9rem;
-      margin: 0 0 2em;
-
-      margin-top: auto;
+      @include fluidTyping(14, 16);
     }
 
     .tools {
@@ -84,16 +79,13 @@
         li {
           background: linear-gradient(145deg, $primary-color, $button-hover);
           border-radius: $low-radius;
-          padding: 0 0.5em;
+          padding: 0 0.75em;
           color: $sixth-color;
-          font-size: 0.85em;
           white-space: nowrap;
 
           @include boxShadow;
 
-          @include mobile {
-            font-size: 0.65rem;
-          }
+          @include fluidTyping(10, 12);
         }
       }
     }

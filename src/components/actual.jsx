@@ -100,14 +100,12 @@ const Actual = () => {
         </div>
         <div className={actualStyles.actualText}>
           <h4>{currentContent.title}</h4>
-          <br />
           <p>
             {currentContent.subtitle}{' '}
             <Link to={`/blog/${currentContent.slug}/`}>
               <b>{t('actualReadMore')}</b>
             </Link>
           </p>
-          <br />
           <ul>
             {currentContent.topics.map((topic) => (
               <li key={topic.slug}>

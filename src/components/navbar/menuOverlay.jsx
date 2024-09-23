@@ -6,6 +6,7 @@ const MenuOverlay = ({ click }) => (
   <div
     className={backDropStyles.backdrop}
     onClick={click}
+    id="backdrop"
     role="presentation"
   />
 );

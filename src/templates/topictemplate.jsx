@@ -46,10 +46,10 @@ const Topic = ({ pageContext: { nlContent, enContent } }) => {
         <span>.</span>
       </h1>
 
-      <p className="page-sub">
+      <h2 className="page-sub">
         <span style={{ color: content.bdcolor, fontWeight: 'bold' }}>#</span>{' '}
         {content.name}
-      </p>
+      </h2>
 
       <ul className={topicStyles.posts}>
         {content.topicPosts.length === 0 ? (

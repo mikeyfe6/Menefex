@@ -41,12 +41,12 @@
     @include smoothTrans;
     @include boxShadow;
 
-    h4 {
+    h3 {
+      font-family: $right-font;
       text-align: center;
       text-decoration: underline;
       text-decoration-color: $super-color;
       font-weight: 700;
-      font-family: $right-font;
     }
 
     &:hover {
@@ -55,11 +55,12 @@
     }
 
     .price {
-      font-size: 1.6rem;
       text-align: center;
       font-weight: 700;
       opacity: 0.8;
       margin: 0 0 0.5em;
+
+      @include fluidTyping(24, 26);
 
       > data {
         color: $primary-color;
@@ -67,43 +68,48 @@
 
       > span {
         text-decoration: line-through;
-        font-size: 0.75rem;
+
+        @include fluidTyping(13, 14);
       }
 
       > sup {
-        font-size: 0.7rem;
         font-weight: 500;
         display: block;
         top: 0.5em;
+
+        @include fluidTyping(12, 13);
       }
 
       &-action {
         text-align: center;
-        font-size: 0.75em;
         font-weight: bolder;
         opacity: 0.5;
+
+        @include fluidTyping(12, 13);
       }
 
       &-contains {
         text-align: center;
-        font-size: 0.75em;
         font-weight: bold;
         margin: 0.25em 0 1em;
         text-decoration: underline;
         text-decoration-color: $super-color;
+
+        @include fluidTyping(12, 13);
       }
 
       &-feat {
-        font-size: 0.9rem;
         font-style: italic;
         font-weight: bold;
         color: white;
+
+        @include fluidTyping(12, 13);
       }
 
       &-bold {
         font-weight: 700;
         font-style: oblique;
-        background: rgba(245, 245, 245, 0.375);
+        background: rgba(245 245 245 / 37.5%);
         border-radius: 2.5px;
       }
     }
@@ -116,7 +122,8 @@
         text-align: center;
         border-bottom: 1px $spec-color solid;
         padding: 0.875em 0.5em;
-        font-size: 0.9em;
+
+        @include fluidTyping(14, 16);
       }
     }
 

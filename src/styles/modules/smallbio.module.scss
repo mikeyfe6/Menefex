@@ -18,12 +18,11 @@
     .thick-hr {
       margin: 0;
       width: 15%;
-      border: 3px solid $sixth-color;
-      opacity: 0.5;
+      border: 3px solid $white-color;
     }
 
     .thin-hr {
-      border: 1px solid $super-color;
+      border: 2px solid $white-color;
     }
 
     > div {
@@ -47,8 +46,6 @@
 
   &-text {
     margin: 2em 0;
-    opacity: 0.75;
-    color: $textbase-color;
     max-width: 87.5%;
 
     a {

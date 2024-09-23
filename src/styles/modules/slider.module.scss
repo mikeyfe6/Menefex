@@ -79,22 +79,21 @@
     }
 
     a > h5 {
-      font-size: x-large;
+      font-family: $right-font;
       text-decoration: underline;
       text-decoration-color: $secondary-color;
       text-align: right;
 
-      @include phablet {
-        font-size: large;
-      }
+      @include fluidTyping(20, 24);
     }
 
     > p {
       color: $primary-color;
       text-align: right;
-      font-size: 0.9rem;
-      max-width: 375px;
+      max-width: 70ch;
       margin-left: auto;
+
+      @include fluidTyping(15, 16);
     }
 
     > ul {
@@ -104,14 +103,15 @@
 
       > li {
         background: linear-gradient(145deg, $primary-color, $button-hover);
-        border-radius: 3px;
-        padding: 0.125em 0.5em;
+        border-radius: $low-radius;
+        padding: 0 0.75em;
         width: fit-content;
-        color: white;
+        color: $sixth-color;
         white-space: nowrap;
-        font-size: 0.6rem;
 
         @include boxShadow;
+
+        @include fluidTyping(10, 12);
       }
     }
   }

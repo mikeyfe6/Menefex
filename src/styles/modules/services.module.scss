@@ -71,7 +71,8 @@
 
         span {
           font-weight: 700;
-          font-size: 1rem;
+
+          @include fluidTyping(17, 18);
         }
 
         p {
@@ -108,9 +109,7 @@
           font-weight: 400;
 
           li {
-            @include mobile {
-              font-size: 0.9rem;
-            }
+            @include fluidTyping(15, 16);
 
             &::before {
               content: '\203B';
@@ -161,14 +160,19 @@
     min-height: 75px;
     margin-bottom: 1em;
 
+    @include mobile {
+      min-height: 50px;
+    }
+
     i {
       font-size: 2em;
       color: $secondary-color;
     }
 
     h4 {
-      font-size: 1.375rem;
       font-weight: 600;
+
+      @include fluidTyping(20, 22);
     }
   }
 }

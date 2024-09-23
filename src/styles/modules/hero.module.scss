@@ -6,8 +6,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  gap: 1em;
-  margin-bottom: -2em;
+  gap: 2.5em;
+  margin: 0;
+
+  @include landscape {
+    height: 100%;
+  }
 
   &-image {
     margin: 0 auto;
@@ -56,11 +60,10 @@
   }
 
   &-slogan {
+    font-family: $right-font;
     color: $secondary-color;
 
-    font-family: $right-font;
     font-size: 2.25rem;
-
     letter-spacing: 0.25rem;
 
     background: linear-gradient(145deg, $primary-color, $button-hover);
@@ -139,6 +142,10 @@
         height: 22.5px;
       }
 
+      @include landscape {
+        bottom: 25px;
+      }
+
       @keyframes fade-move-down {
         0% {
           transform: translate(0, -20px) rotate(45deg);
@@ -160,15 +167,19 @@
   &-buttons {
     display: flex;
     align-items: center;
-    gap: 0.5em;
+    gap: 0.75em;
     margin: 2em 0;
 
-    > button {
-      @include tertiaryButton;
+    @include laptop {
+      gap: 0.5em;
     }
 
     @include mini {
-      gap: 0.125em;
+      gap: 0.25em;
+    }
+
+    > button {
+      @include tertiaryButton;
     }
 
     > span {

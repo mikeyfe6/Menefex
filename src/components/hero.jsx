@@ -95,15 +95,27 @@ const Hero = () => {
         />
 
         <div className={heroStyles.heroButtons} id="cta" data-scroll-center>
-          <button type="button" onClick={() => scrollToSection('biografie')}>
+          <button
+            type="button"
+            name="cta"
+            onClick={() => scrollToSection('biografie')}
+          >
             {t('heroBiography')}
           </button>
           <span>|</span>
-          <button type="button" onClick={() => scrollToSection('services')}>
+          <button
+            type="button"
+            name="cta"
+            onClick={() => scrollToSection('services')}
+          >
             {t('heroServices')}
           </button>
           <span>|</span>
-          <button type="button" onClick={() => scrollToSection('portfolio')}>
+          <button
+            type="button"
+            name="cta"
+            onClick={() => scrollToSection('portfolio')}
+          >
             {t('heroPortfolio')}
           </button>
         </div>

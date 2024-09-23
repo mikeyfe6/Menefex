@@ -116,7 +116,7 @@ const Call = ({ callRef }) => {
       className={callStyles.callForm}
       action="/success/"
     >
-      <h5>{t('pricesFormTitle')}</h5>
+      <h3>{t('pricesFormTitle')}</h3>
       <hr />
 
       <label htmlFor="call_name">

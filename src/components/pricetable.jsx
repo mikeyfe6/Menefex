@@ -38,7 +38,7 @@ const PriceTable = () => {
     <section>
       <ul className={pricesStyles.prices}>
         <li>
-          <h4>BUDGET PLAN</h4>
+          <h3>BUDGET PLAN</h3>
           <p className={pricesStyles.price}>
             <span>€ 295,-</span> <SalePrice ogPrice={295} />{' '}
             <sup>{t('priceTableVat')}</sup>
@@ -80,7 +80,7 @@ const PriceTable = () => {
         </li>
 
         <li>
-          <h4>STARTER PLAN</h4>
+          <h3>STARTER PLAN</h3>
           <p className={pricesStyles.price}>
             <span>€ 595,-</span> <SalePrice ogPrice={595} />{' '}
             <sup>{t('priceTableVat')}</sup>
@@ -123,7 +123,7 @@ const PriceTable = () => {
         </li>
 
         <li>
-          <h4>ESTABLISHED PLAN</h4>
+          <h3>ESTABLISHED PLAN</h3>
           <p className={pricesStyles.price}>
             <span>€ 1025,-</span> <SalePrice ogPrice={1025} />{' '}
             <sup>{t('priceTableVat')}</sup>
@@ -167,7 +167,7 @@ const PriceTable = () => {
         </li>
 
         <li>
-          <h4>BUSINESS PLAN</h4>
+          <h3>BUSINESS PLAN</h3>
           <p className={pricesStyles.price}>
             <span>€ 1575,-</span> <SalePrice ogPrice={1575} />{' '}
             <sup>{t('priceTableVat')}</sup>

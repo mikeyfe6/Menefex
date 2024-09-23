@@ -5,7 +5,7 @@
   width: 100%;
   height: 100%;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0 0 0 / 50%);
   z-index: 10;
 
   &-container {
@@ -25,32 +25,23 @@
     transform: translate(-50%, -12.5%);
     border-radius: $low-radius;
 
+    @include laptop {
+      max-width: 95%;
+    }
+
     @include mobile {
       transform: translate(-50%, -7.5%);
-      max-width: 95%;
     }
   }
 
   &-content {
     > p {
-      color: white;
+      color: $white-color;
       margin: 1em 0 1.5em;
-      font-size: 0.95rem;
-      width: 97.5%;
 
-      @include mobile {
-        font-size: 0.925rem;
-        width: 100%;
-      }
-
-      > span {
-        font-size: 0.875rem;
+      > small {
         display: block;
         margin: 1em 0;
-
-        @include mobile {
-          font-size: 0.825rem;
-        }
       }
     }
   }
@@ -75,10 +66,6 @@
 
       @include smoothTrans;
 
-      @include mobile {
-        font-size: 0.9rem;
-      }
-
       &:hover {
         background-color: $super-color;
       }
@@ -93,10 +80,6 @@
       color: $secondary-color;
 
       @include smoothTrans;
-
-      @include mobile {
-        font-size: 0.9rem;
-      }
 
       &:hover {
         border: 1px solid $white-color;

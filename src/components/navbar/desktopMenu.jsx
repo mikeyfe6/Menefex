@@ -45,6 +45,15 @@ const DesktopMenu = ({ drawerClickHandler }) => {
           </li>
           <li>
             <Link
+              to="/diensten/"
+              activeClassName={desktopMenuStyles.activePage}
+            >
+              {t('menuItemServices').toLowerCase()}
+              <span>.</span>
+            </Link>
+          </li>
+          <li>
+            <Link
               to="/blog/"
               activeClassName={desktopMenuStyles.activePage}
               partiallyActive
@@ -56,6 +65,12 @@ const DesktopMenu = ({ drawerClickHandler }) => {
           <li>
             <Link to="/prijzen/" activeClassName={desktopMenuStyles.activePage}>
               {t('menuItemPrices').toLowerCase()}
+              <span>.</span>
+            </Link>
+          </li>
+          <li>
+            <Link to="/faq/" activeClassName={desktopMenuStyles.activePage}>
+              {t('menuItemFaq').toLowerCase()}
               <span>.</span>
             </Link>
           </li>

@@ -46,7 +46,7 @@ const Prices = () => {
         <span>.</span>
       </h1>
 
-      <p className="page-sub">
+      <h2 className="page-sub">
         {t('pricesIntroOne')}{' '}
         <Link to="/contact/" className={pricesStyles.contactus}>
           {t('pricesContact')}
@@ -60,7 +60,7 @@ const Prices = () => {
           {t('pricesCallBack')}
         </button>
         .
-      </p>
+      </h2>
 
       <PriceTable />
 

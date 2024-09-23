@@ -1,11 +1,27 @@
 @use 'sass:color';
+@use 'sass:math';
+
+@mixin fluidTyping($font-min, $font-max, $screen-min: 320, $screen-max: 1400) {
+  font-size: #{$font-min}px;
+
+  @media only screen and (min-width: #{$screen-min}px) {
+    font-size: calc(
+      #{$font-min}px + #{($font-max - $font-min)} * (100vw - #{$screen-min}px) /
+        (#{$screen-max} - #{$screen-min})
+    );
+  }
+
+  @media only screen and (min-width: #{$screen-max}px) {
+    font-size: #{$font-max}px;
+  }
+}
 
 @mixin smoothTrans($prop: all) {
   transition: $prop 0.1s ease-in-out;
 }
 
 @mixin boxShadow {
-  box-shadow: 1px 3px 7px rgba(66, 66, 66, 0.25);
+  box-shadow: 1px 3px 7px rgba(66 66 66 / 25%);
 }
 
 @mixin container($my: 0, $py: 0) {
@@ -19,15 +35,6 @@
   }
 }
 
-@mixin fullWidth {
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-}
-
 @mixin textLink {
   color: $link-color;
 
@@ -38,6 +45,26 @@
   }
 }
 
+@mixin footerDot {
+  display: inline-block;
+  content: '';
+  border-radius: 100%;
+  height: 6px;
+  width: 6px;
+  margin-right: 5px;
+}
+
+// Functions --------------------------------------------
+
+@mixin fullWidth {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
 @mixin clamp($lines: 2) {
   display: -webkit-box;
   -webkit-line-clamp: $lines;
@@ -45,24 +72,33 @@
   overflow: hidden;
 }
 
+@mixin ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// Buttons --------------------------------------------
+
 @mixin primaryButton {
+  font-family: $alata-font;
   display: block;
   text-transform: uppercase;
   border-radius: $low-radius;
   width: fit-content;
+  height: fit-content;
   padding: 1em 2em;
-  background: transparent;
   font-weight: 500;
-  font-size: 0.875rem;
   letter-spacing: 2.5px;
-  background-color: $primary-color;
   outline: 3px solid $secondary-color;
+  background-color: $primary-color;
   color: $sixth-color;
-  font-family: $alata-font;
   white-space: nowrap;
 
   @include smoothTrans;
   @include boxShadow;
+
+  @include fluidTyping(12, 14);
 
   &:hover {
     background-color: $textbase-color;
@@ -75,14 +111,39 @@
   padding: 0.7em 1em;
   width: 100%;
   border-radius: $low-radius;
-  font-size: 0.9rem;
   white-space: nowrap;
 
   @include smoothTrans;
   @include boxShadow;
+}
 
-  @include mobile {
-    font-size: 0.8rem;
+@mixin tertiaryButton {
+  text-transform: uppercase;
+  padding: 1em 2.5em;
+  background: transparent;
+  color: $primary-color !important;
+  background-color: #f2f2f2;
+  font-weight: 700;
+  letter-spacing: $high-spacing;
+  border: 3px solid $spec-color;
+  border-radius: $low-radius;
+
+  @include smoothTrans;
+  @include boxShadow;
+
+  &[name='cta'] {
+    @include fluidTyping(8, 14);
+  }
+
+  &[name='offerte'] {
+    @include fluidTyping(12, 14);
+  }
+
+  &:hover {
+    color: $link-color;
+    border-color: $link-color;
+    background-color: #e9e9e9;
+    transform: scale(1.05);
   }
 }
 
@@ -117,43 +178,6 @@
   }
 }
 
-@mixin tertiaryButton {
-  text-transform: uppercase;
-  padding: 1em 2.5em;
-  background: transparent;
-  color: $primary-color !important;
-  background-color: #f2f2f2;
-  font-weight: 700;
-  font-size: 0.8rem;
-  letter-spacing: $high-spacing;
-  border: 3px solid $spec-color;
-  border-radius: $low-radius;
-
-  @include smoothTrans;
-  @include boxShadow;
-
-  @include mobile {
-    font-size: 0.7rem;
-    padding: 1em 2em;
-  }
-
-  @include compact {
-    font-size: 0.6rem;
-  }
-
-  @include mini {
-    font-size: 0.55rem;
-    padding: 1em 1.5em;
-  }
-
-  &:hover {
-    color: $link-color;
-    border-color: $link-color;
-    background-color: #e9e9e9;
-    transform: scale(1.05);
-  }
-}
-
 @mixin topicButton {
   border-width: 2px;
   border-style: solid;
@@ -162,26 +186,20 @@
   color: $base-color;
   font-weight: 500;
   background: $white-color;
-  font-size: 0.75rem;
   width: fit-content;
   white-space: nowrap;
 
   @include boxShadow;
   @include smoothTrans;
 
+  @include fluidTyping(14, 16);
+
   &:hover {
     background: $sixth-color;
   }
 }
 
-@mixin footerDot {
-  display: inline-block;
-  content: '';
-  border-radius: 100%;
-  height: 6px;
-  width: 6px;
-  margin-right: 5px;
-}
+// Components --------------------------------------------
 
 @mixin blogCard {
   background: linear-gradient(145deg, $fourth-color, #f2f2f2);
@@ -217,45 +235,32 @@
     gap: 0.75em;
     width: 100%;
 
-    h4 {
-      font-size: 1.125rem;
+    h3 {
       font-weight: 600;
+
+      @include fluidTyping(16, 20);
     }
 
     p {
-      color: $primary-color;
-      display: block;
-      max-width: 87.5%;
-      font-weight: 300;
-      font-size: 0.9rem;
-
-      @include phablet {
-        max-width: 100%;
-      }
+      @include clamp(2);
+      @include fluidTyping(14, 16);
     }
 
     span {
       color: $primary-color;
       background: linear-gradient(145deg, $secondary-color, #e2e2e2);
       border: 3px solid #e2e2e2;
-      border-radius: 5px;
-      font-size: 0.75rem;
+      border-radius: $medium-radius;
       padding: 0.5em;
       font-style: italic;
       display: inline;
       width: fit-content;
 
+      @include fluidTyping(10, 12);
+
       @include phablet {
         align-self: flex-end;
         width: 100%;
-      }
-
-      @include mobile {
-        font-size: 0.675rem;
-      }
-
-      @include compact {
-        font-size: 0.6rem;
       }
     }
   }

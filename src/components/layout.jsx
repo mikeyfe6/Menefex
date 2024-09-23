@@ -45,34 +45,36 @@ const Layout = ({ children }) => {
         </div>
       </div>
 
-      <DesktopMenu drawerClickHandler={drawerToggleClickHandler} />
-      <MobileMenu show={sideDrawerOpen} />
+      <div className="menefex">
+        <DesktopMenu drawerClickHandler={drawerToggleClickHandler} />
+        <MobileMenu show={sideDrawerOpen} />
 
-      <main>{children}</main>
+        <main>{children}</main>
 
-      <Footer />
+        <Footer />
 
-      <CookieConsent
-        expires={60}
-        buttonText={t('cookieAccept')}
-        declineButtonText={t('cookieDecline')}
-        cookieName="menefex-cookie"
-        extraCookieOptions={{ domain: '.menefex.nl' }}
-        enableDeclineButton
-        sameSite="strict"
-        overlayClasses="cookie"
-        containerClasses="cookie-container"
-        contentClasses="cookie-content"
-        buttonWrapperClasses="cookie-btn-wrapper"
-        buttonClasses="cookie-btn-accept"
-        declineButtonClasses="cookie-btn-decline"
-        disableStyles
-        flipButtons
-        overlay
-      >
-        <h3>Cookies</h3>
-        <p dangerouslySetInnerHTML={{ __html: t('cookieText') }} />
-      </CookieConsent>
+        <CookieConsent
+          expires={60}
+          buttonText={t('cookieAccept')}
+          declineButtonText={t('cookieDecline')}
+          cookieName="menefex-cookie"
+          extraCookieOptions={{ domain: '.menefex.nl' }}
+          enableDeclineButton
+          sameSite="strict"
+          overlayClasses="cookie"
+          containerClasses="cookie-container"
+          contentClasses="cookie-content"
+          buttonWrapperClasses="cookie-btn-wrapper"
+          buttonClasses="cookie-btn-accept"
+          declineButtonClasses="cookie-btn-decline"
+          disableStyles
+          flipButtons
+          overlay
+        >
+          <h3>Cookies</h3>
+          <p dangerouslySetInnerHTML={{ __html: t('cookieText') }} />
+        </CookieConsent>
+      </div>
 
       {backdrop}
 

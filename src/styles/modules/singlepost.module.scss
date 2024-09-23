@@ -43,13 +43,12 @@
         }
 
         .title {
-          font-size: 1.5rem;
           font-weight: 500;
           letter-spacing: $medium-spacing;
 
+          @include fluidTyping(20, 26);
+
           @include mobile {
-            font-size: 1.3rem;
-            line-height: 1.5rem;
             text-align: right;
           }
         }
@@ -87,19 +86,25 @@
           }
 
           .subtitle {
-            font-size: 1.375rem;
             font-weight: 600;
-            line-height: 1.6rem;
             margin: 2em 0 1em;
+            line-height: 2.2rem;
+
+            @include fluidTyping(20, 26);
+
+            @include phablet {
+              line-height: 2rem;
+            }
 
             @include mobile {
-              font-size: 1.175rem;
+              line-height: 1.8rem;
             }
 
             &::first-letter {
-              font-size: 2.5rem;
               color: $secondary-color;
               margin-right: 0.025em;
+
+              @include fluidTyping(32, 42);
             }
           }
 
@@ -132,31 +137,33 @@
               // h3
               font-family: $poppins-font;
               margin-bottom: 0.25em;
-              font-size: 1.2rem;
-              font-weight: 500;
+              font-weight: 600;
 
-              @include mobile {
-                font-size: 1.125rem;
-              }
+              @include fluidTyping(20, 22);
             }
 
             .headfourness {
               // h4
               margin-top: 1.5em;
-              font-size: 1.025rem;
+              margin-bottom: 0.5em;
               font-weight: 600;
+
+              @include fluidTyping(18, 20);
             }
 
             .headfiveness {
               // h5
-              font-size: 0.9em;
               margin-top: 1.5em;
               font-weight: 700;
+
+              @include fluidTyping(16, 18);
             }
 
             .headsixness {
               // h6
               display: block;
+
+              @include fluidTyping(14, 16);
             }
 
             .quoteness {
@@ -216,6 +223,7 @@
               overflow: hidden;
               border: 1.5px solid #e9e9e9;
               margin: 2.5em 0;
+              width: 100%;
 
               @include boxShadow;
             }
@@ -230,7 +238,8 @@
 
             .feedly {
               font-weight: 500;
-              font-size: 0.85rem;
+
+              @include fluidTyping(12, 14);
 
               > a {
                 color: #93be44;
@@ -253,7 +262,8 @@
 
             .feedburner {
               font-weight: 500;
-              font-size: 0.85rem;
+
+              @include fluidTyping(12, 14);
 
               > a {
                 color: #fa9b3b;
@@ -293,7 +303,6 @@
           .gepost {
             color: $secondary-color;
             font-style: italic;
-            font-size: 0.75rem;
             background: linear-gradient(to right, $primary-color, $fifth-color);
             border: solid 1px $fifth-color;
             border-radius: $low-radius;
@@ -301,6 +310,8 @@
             margin-bottom: 1em;
             text-align: center;
             letter-spacing: $low-spacing;
+
+            @include fluidTyping(12, 14);
           }
 
           .sidebar {
@@ -317,7 +328,8 @@
 
             .author {
               text-align: right;
-              font-size: 0.85rem;
+
+              @include fluidTyping(14, 16);
 
               a {
                 @include textLink;
@@ -347,9 +359,10 @@
             .related {
               h6 {
                 font-family: $right-font;
-                font-size: 1.125rem;
                 text-align: center;
                 margin: 2em 0 1em;
+
+                @include fluidTyping(18, 20);
               }
 
               @include tablet {
@@ -368,6 +381,7 @@
                   }
 
                   > a {
+                    display: block;
                     padding: 0.25em;
                     border-radius: $low-radius;
 
@@ -385,22 +399,25 @@
                     > {
                       h5 {
                         font-family: $poppins-font;
-                        font-size: 0.95rem;
                         font-weight: 500;
 
                         @include clamp;
+
+                        @include fluidTyping(14, 16);
                       }
 
                       p {
-                        font-size: 0.85rem;
                         margin: 0.5em 0;
 
                         @include clamp;
+
+                        @include fluidTyping(12, 14);
                       }
 
                       span {
-                        font-size: 0.9rem;
                         color: $link-color;
+
+                        @include fluidTyping(13, 15);
                       }
                     }
                   }
@@ -434,7 +451,7 @@
         > ul {
           display: flex;
           flex-wrap: wrap;
-          gap: 0.5em 0.75em;
+          gap: 1.5em 0.75em;
 
           li > a {
             @include topicButton;
@@ -451,11 +468,12 @@
 
         > h6 {
           font-family: $right-font;
-          font-size: 1.75rem;
           text-align: center;
           text-decoration: underline;
           text-decoration-color: $secondary-color;
           margin: 4rem 0 2rem 0.25rem;
+
+          @include fluidTyping(24, 28);
         }
 
         > ul {
@@ -484,23 +502,26 @@
 
               h5 {
                 font-family: $poppins-font;
-                font-size: 1rem;
                 font-weight: 600;
                 margin: 1em 1em 0;
+
+                @include fluidTyping(16, 18);
               }
 
               p {
-                margin: 1em 1em 2em;
-                font-size: 0.9rem;
+                margin: 1em 1em 1.5em;
                 font-weight: 400;
                 color: $base-color;
+
+                @include fluidTyping(14, 16);
               }
 
               span {
                 margin: 0 1em 1em;
-                font-size: 0.9rem;
                 font-weight: 500;
                 margin-top: auto;
+
+                @include fluidTyping(14, 16);
               }
 
               &:hover {

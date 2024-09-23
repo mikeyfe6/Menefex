@@ -11,9 +11,7 @@ const Info = () => {
 
   return (
     <section className={infoStyles.info}>
-      <h5>
-        <b>{t('contactInfoTitle')}</b>
-      </h5>
+      <h3>{t('contactInfoTitle')}</h3>
       <p
         dangerouslySetInnerHTML={{
           __html: t('contactInfoLocation'),

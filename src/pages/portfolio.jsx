@@ -22,7 +22,7 @@ const PortfolioPage = () => {
         <span>.</span>
       </h1>
 
-      <p className="page-sub">{t('portfolioIntro')}</p>
+      <h2 className="page-sub">{t('portfolioIntro')}</h2>
 
       <section>
         <div className={portfolioStyles.portfolio}>
@@ -43,9 +43,9 @@ const PortfolioPage = () => {
               />
             </a>
             <div className={portfolioStyles.portfolioInfo}>
-              <h5>
+              <h3>
                 <span>Client:</span>Prio Zorg
-              </h5>
+              </h3>
               <p dangerouslySetInnerHTML={{ __html: t('portfolioPZbio') }} />
               <div className={portfolioStyles.tools}>
                 <span>Tools:</span>
@@ -92,9 +92,9 @@ const PortfolioPage = () => {
               />
             </a>
             <div className={portfolioStyles.portfolioInfo}>
-              <h5>
+              <h3>
                 <span>Client:</span>Keep It Real
-              </h5>
+              </h3>
               <p dangerouslySetInnerHTML={{ __html: t('portfolioKIRbio') }} />
               <div className={portfolioStyles.tools}>
                 <span>Tools:</span>
@@ -141,9 +141,9 @@ const PortfolioPage = () => {
               />
             </a>
             <div className={portfolioStyles.portfolioInfo}>
-              <h5>
+              <h3>
                 <span>Project:</span>Afrodiasphere
-              </h5>
+              </h3>
               <p dangerouslySetInnerHTML={{ __html: t('portfolioADSbio') }} />
               <div className={portfolioStyles.tools}>
                 <span>Tools:</span>
@@ -196,9 +196,9 @@ const PortfolioPage = () => {
               />
             </a>
             <div className={portfolioStyles.portfolioInfo}>
-              <h5>
+              <h3>
                 <span>Client:</span>Eternity Percussion
-              </h5>
+              </h3>
               <p dangerouslySetInnerHTML={{ __html: t('portfolioEPbio') }} />
               <div className={portfolioStyles.tools}>
                 <span>Tools:</span>
@@ -250,9 +250,9 @@ const PortfolioPage = () => {
               />
             </a>
             <div className={portfolioStyles.portfolioInfo}>
-              <h5>
+              <h3>
                 <span>Client:</span>KennisNetwerk ACDiG
-              </h5>
+              </h3>
               <p dangerouslySetInnerHTML={{ __html: t('portfolioKNbio') }} />
               <div className={portfolioStyles.tools}>
                 <span>Tools:</span>
@@ -297,9 +297,9 @@ const PortfolioPage = () => {
               />
             </a>
             <div className={portfolioStyles.portfolioInfo}>
-              <h5>
+              <h3>
                 <span>Client:</span>DS Melodies
-              </h5>
+              </h3>
               <p dangerouslySetInnerHTML={{ __html: t('portfolioDSbio') }} />
               <div className={portfolioStyles.tools}>
                 <span>Tools:</span>
@@ -345,9 +345,9 @@ const PortfolioPage = () => {
               />
             </a>
             <div className={portfolioStyles.portfolioInfo}>
-              <h5>
+              <h3>
                 <span>Client:</span>Black Harmony
-              </h5>
+              </h3>
               <p dangerouslySetInnerHTML={{ __html: t('portfolioBHbio') }} />
               <div className={portfolioStyles.tools}>
                 <span>Tools:</span>

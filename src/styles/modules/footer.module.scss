@@ -5,14 +5,14 @@
 
   blockquote {
     padding-right: 2em;
-    font-size: 0.95rem;
     margin-bottom: 2em;
-
     display: flex;
     align-items: center;
     justify-content: flex-end;
     flex-wrap: wrap;
-    gap: 1em 0.5em;
+    gap: 0.75em 0.5em;
+
+    @include fluidTyping(16, 18);
 
     @include mobile {
       padding-right: 0;
@@ -113,34 +113,33 @@
       flex: 1;
     }
 
-    h5 {
-      color: $fifth-color;
+    h4 {
       font-family: $poppins-font;
-      font-size: 1.25rem;
-      margin-bottom: 0.5em;
-
-      @include mobile {
-        font-size: 1rem;
-      }
+      color: $fifth-color;
     }
 
     a {
       color: $primary-color;
-      font-size: 1.125rem;
 
       @include smoothTrans;
-
-      @include mobile {
-        font-size: 1rem;
-      }
 
       &:hover {
         color: $link-color;
       }
     }
 
+    a,
+    p {
+      @include fluidTyping(17, 19);
+    }
+
     .personal {
       font-family: $right-font;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 0.5em;
 
       .mailfoot {
         color: #74aece;
@@ -152,15 +151,18 @@
     }
 
     .media {
-      text-align: center;
       font-family: $right-font;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5em;
 
       ul {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 1em;
-        padding-top: 0.125em;
 
         li {
           &.fb::before {
@@ -197,16 +199,12 @@
     }
 
     .address {
-      text-align: right;
       font-family: $right-font;
-
-      p {
-        font-size: 1.125rem;
-
-        @include mobile {
-          font-size: 1rem;
-        }
-      }
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+      gap: 0.5em;
 
       .amsterdam {
         color: red;
@@ -215,21 +213,17 @@
   }
 
   .credits {
+    display: block;
     text-align: center;
-    font-size: 0.825rem;
     color: $fifth-color;
     padding-bottom: 1.75em;
     max-width: 100ch;
     margin: 0 auto;
 
-    @include mobile {
-      font-size: 0.65rem;
-      line-height: 1.3rem;
-      letter-spacing: $low-spacing;
-    }
+    @include fluidTyping(12, 14);
 
     a {
-      color: $link-color;
+      @include textLink;
     }
 
     span {

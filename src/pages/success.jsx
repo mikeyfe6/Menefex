@@ -21,7 +21,7 @@ const ThankYouPage = () => {
           {t('successTitle')}
           <span className="lazy-color">..</span>
         </h1>
-        <p className="page-sub">{t('successMessage')}</p>
+        <h2 className="page-sub">{t('successMessage')}</h2>
         <br />
         <Link to="/" className={successAndNotFoundStyles.goback}>
           {t('successGoBack')}

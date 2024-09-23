@@ -23,6 +23,7 @@ const Smallbio = () => {
           className={smallBioStyles.smallbioText}
           dangerouslySetInnerHTML={{ __html: t('smallbio.intro') }}
         />
+
         <div>
           <a
             href="https://open.spotify.com/playlist/08UGoWTjvpuooABCWyPx0m?si=5a3ca09f8cba4300"

@@ -8,8 +8,8 @@
 
   @include boxShadow;
 
-  > h5 {
-    font-size: 1.25rem;
+  > h3 {
+    font-family: $right-font;
     color: $primary-color;
   }
 
@@ -23,7 +23,6 @@
   > label {
     display: block;
     color: rgba($primary-color, 75%);
-    font-size: 0.9rem;
     font-weight: 500;
     margin-bottom: 0.5em;
 
