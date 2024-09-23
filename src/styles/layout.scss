@@ -78,6 +78,13 @@ section,
 form {
   margin: 2em 0;
 
+  &#biografie,
+  &#services,
+  &#actual,
+  &#portfolio {
+    margin-top: 1em;
+  }
+
   @include mobile {
     margin: 2em 0 1em;
   }

@@ -87,7 +87,7 @@ const Actual = () => {
   if (!isHydrated) return null;
 
   return (
-    <section className={actualStyles.actualContainer}>
+    <section className={actualStyles.actualContainer} id="actual">
       <div className={actualStyles.actualWrapper}>
         <div>
           <Link to={`/blog/${currentContent.slug}/`}>
