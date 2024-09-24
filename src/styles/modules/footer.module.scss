@@ -12,7 +12,7 @@
     flex-wrap: wrap;
     gap: 0.75em 0.5em;
 
-    @include fluidTyping(16, 18);
+    @include fluidTyping(14, 18);
 
     @include mobile {
       padding-right: 0;
