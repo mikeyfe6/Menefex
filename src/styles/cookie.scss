@@ -35,6 +35,12 @@
   }
 
   &-content {
+    > h3 {
+      font-family: $right-font;
+
+      @include fluidTyping(28, 32);
+    }
+
     > p {
       color: $white-color;
       margin: 1em 0 1.5em;
