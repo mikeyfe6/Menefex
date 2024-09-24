@@ -110,12 +110,12 @@
       @include smoothTrans;
 
       &:hover {
-        background: $secondary-color;
+        background: $spec-color;
         color: #535252;
       }
 
       &.active {
-        background: $spec-color;
+        background: $secondary-color;
         color: #535252;
       }
     }
