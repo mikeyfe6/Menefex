@@ -8,15 +8,9 @@ const useTranslationSetup = () => {
   const { isHydrated } = useContext(HydrationContext);
 
   useEffect(() => {
-    const isMobile = /Mobi|Android/i.test(navigator.userAgent);
-    if (isMobile) {
+    if (isHydrated) {
       const storedLanguage = window.localStorage.getItem('i18nextLng');
       i18n.changeLanguage(storedLanguage);
-    } else {
-      if (isHydrated) {
-        const storedLanguage = window.localStorage.getItem('i18nextLng');
-        i18n.changeLanguage(storedLanguage);
-      }
     }
   }, [i18n, isHydrated]);
 
