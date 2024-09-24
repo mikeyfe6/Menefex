@@ -105,11 +105,13 @@
 
     > button {
       font-family: $right-font;
-      padding: 0.125em 0.25em;
+      padding: 0 0.475em;
       background: $white-color;
       border-radius: $low-radius;
 
       @include smoothTrans;
+
+      @include fluidTyping(14, 16);
 
       &:hover {
         background: $secondary-color;

@@ -3,7 +3,7 @@ export default {
     '<strong>Sorry!</strong> De scherm van je toestel is te klein om de website juist weer te geven...',
 
   cookieText:
-    "Deze site plaatst cookies op je computer om je websitebezoek te optimaliseren en gepersonaliseerde diensten aan te bieden, zowel hier als via andere media. Raadpleeg ons <a href='/privacy-policy/' style='color: #FFCC00;'> Privacybeleid </a> voor meer informatie over de gebruikte cookies. <small> We volgen je gegevens <b>niet</b> bij sitebezoeken, maar om aan je voorkeuren te voldoen, gebruiken we enkele cookies zodat je deze keuze niet herhaaldelijk hoeft te maken.</small>",
+    "Deze site plaatst cookies op je computer om je websitebezoek te optimaliseren en gepersonaliseerde diensten aan te bieden, zowel hier als via andere media. Raadpleeg ons <a href='/privacy-policy/' style='color: #FFCC00;'> Privacybeleid </a> voor meer informatie over de gebruikte cookies. <span> We volgen je gegevens <b>niet</b> bij sitebezoeken, maar om aan je voorkeuren te voldoen, gebruiken we enkele cookies zodat je deze keuze niet herhaaldelijk hoeft te maken.</span>",
 
   cookieAccept: 'Accepteer',
   cookieDecline: 'Weiger',

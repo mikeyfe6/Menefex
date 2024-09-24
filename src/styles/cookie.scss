@@ -39,9 +39,13 @@
       color: $white-color;
       margin: 1em 0 1.5em;
 
-      > small {
+      @include fluidTyping(16, 18);
+
+      > span {
         display: block;
         margin: 1em 0;
+
+        @include fluidTyping(15, 17);
       }
     }
   }
