@@ -107,8 +107,6 @@
 
       @include smoothTrans;
 
-      @include fluidTyping(14, 16);
-
       &:hover {
         background: $secondary-color;
         color: #535252;
