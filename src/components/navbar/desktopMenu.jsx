@@ -14,6 +14,7 @@ const DesktopMenu = ({ drawerClickHandler }) => {
 
   const switchLanguage = (lang) => {
     i18n.changeLanguage(lang);
+    window.localStorage.setItem('i18nextLng', lang);
   };
 
   return (
