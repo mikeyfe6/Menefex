@@ -105,7 +105,7 @@ const DesktopMenu = ({ drawerClickHandler }) => {
             >
               nl
             </button>
-            <span>/</span>
+            <span>|</span>
             <button
               onClick={() => switchLanguage('en')}
               className={
@@ -127,7 +127,7 @@ const DesktopMenu = ({ drawerClickHandler }) => {
             >
               nl
             </button>
-            <span>/</span>
+            <span>-</span>
             <button
               onClick={() => switchLanguage('en')}
               className={

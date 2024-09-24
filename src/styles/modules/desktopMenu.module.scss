@@ -90,11 +90,6 @@
   }
 
   .language {
-    background: linear-gradient(145deg, $primary-color, $button-hover);
-    border: 2px solid $primary-color;
-    color: #535252;
-    padding: 0.5em 0.675em;
-    border-radius: $low-radius;
     margin-left: 1em;
     display: flex;
     gap: 0.375em;
@@ -105,9 +100,10 @@
 
     > button {
       font-family: $right-font;
-      padding: 0 0.45em;
-      background: $white-color;
+      padding: 0.125em 0.425em;
       border-radius: $low-radius;
+      background: linear-gradient(145deg, $sixth-color, $third-color);
+      aspect-ratio: 1;
 
       @include smoothTrans;
 
@@ -115,15 +111,17 @@
 
       &:hover {
         background: $secondary-color;
+        color: #535252;
       }
 
       &.active {
         background: $spec-color;
+        color: #535252;
       }
     }
 
     > span {
-      color: $secondary-color;
+      color: #535252;
     }
   }
 
