@@ -124,9 +124,9 @@
 @mixin tertiaryButton {
   min-height: 44px;
   text-transform: uppercase;
-  padding: 1em 2em;
+  padding: 0.75em 1.5em;
   background: transparent;
-  color: $primary-color !important;
+  color: $primary-color;
   background-color: #f2f2f2;
   font-weight: 700;
   letter-spacing: $high-spacing;
@@ -141,6 +141,10 @@
   }
 
   &[name='offerte'] {
+    @include fluidTyping(12, 14);
+  }
+
+  &[name='service'] {
     @include fluidTyping(12, 14);
   }
 
