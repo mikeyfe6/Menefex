@@ -37,12 +37,13 @@
     }
 
     span {
-      color: $secondary-color;
+      color: $white-color;
     }
 
     > h3 {
       margin-bottom: 0.5em;
       font-weight: 600;
+      color: $spec-color;
 
       @include fluidTyping(16, 20);
     }
