@@ -160,9 +160,9 @@
     min-height: 75px;
     margin-bottom: 1em;
 
-    @include mobile {
-      min-height: 50px;
-    }
+    // @include mobile {
+    //   min-height: 50px;
+    // }
 
     i {
       display: flex;
