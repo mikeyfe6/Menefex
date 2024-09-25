@@ -3,6 +3,7 @@ import React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 
 import useTranslation from '../hooks/use-translation';
+import useSiteMetadata from '../hooks/use-site-metadata';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -96,11 +97,36 @@ const TopicPage = () => {
 
 export default TopicPage;
 
-export const Head = () => (
-  <SEO
-    title="Topics"
-    description="Ontdek onze diverse blogcategorieën van doe-het-zelf tips tot SEO-gidsen, informatieve artikelen, nieuws, en meer. Vind hier het volledige overzicht van onderwerpen!"
-    keywords="onderwerpen, posts, topics, views, nieuws, stories, content, news, mind, actualiteiten, artikelen, blog, blogposts, categorieën, categorie, categorieën, categorie, doe-het-zelf, DIY, SEO, gidsen, informatief"
-    pathname="/topics/"
-  />
-);
+export const Head = () => {
+  const { title, siteUrl } = useSiteMetadata();
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org/',
+    '@type': 'BreadcrumbList',
+    '@id': siteUrl + '/#breadcrumb',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: title,
+        item: siteUrl,
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Topics',
+        item: siteUrl + '/topics/',
+      },
+    ],
+  };
+
+  return (
+    <SEO
+      title="Topics"
+      description="Ontdek onze diverse blogcategorieën van doe-het-zelf tips tot SEO-gidsen, informatieve artikelen, nieuws, en meer. Vind hier het volledige overzicht van onderwerpen!"
+      keywords="onderwerpen, posts, topics, views, nieuws, stories, content, news, mind, actualiteiten, artikelen, blog, blogposts, categorieën, categorie, categorieën, categorie, doe-het-zelf, DIY, SEO, gidsen, informatief"
+      pathname="/topics/"
+      schemaMarkup={breadcrumbSchema}
+    />
+  );
+};

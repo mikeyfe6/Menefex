@@ -126,10 +126,16 @@
     > div:nth-child(2) {
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
       margin-top: 5em;
+      gap: 2em;
 
       > a {
         @include primaryButton;
+
+        &:nth-of-type(2) {
+          @include primaryButton(2);
+        }
       }
     }
 

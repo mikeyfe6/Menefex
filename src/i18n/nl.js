@@ -76,6 +76,7 @@ export default {
   servicesFocusSeoTwo: 'Aanzienlijk meer directe en indirecte webbezoekers',
   servicesFocusSeoThree: 'Gebruik van analyses, strategieën en statistieken',
   servicesPricesButton: 'Bekijk onze prijzen',
+  servicesPricesButtonTwo: 'Alle diensten',
 
   recentProjectsViewSiteButton: 'Bekijk website',
   recentProjectsViewAppButton: 'Bekijk webapp',

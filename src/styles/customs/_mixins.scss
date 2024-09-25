@@ -80,7 +80,7 @@
 
 // Buttons --------------------------------------------
 
-@mixin primaryButton {
+@mixin primaryButton($type: 1) {
   font-family: $alata-font;
   display: block;
   text-transform: uppercase;
@@ -89,11 +89,8 @@
   height: fit-content;
   min-height: 44px;
   padding: 1em 2em;
-  font-weight: 500;
   letter-spacing: 2.5px;
   outline: 3px solid $secondary-color;
-  background-color: $primary-color;
-  color: $sixth-color;
   white-space: nowrap;
 
   @include smoothTrans;
@@ -101,9 +98,21 @@
 
   @include fluidTyping(12, 14);
 
-  &:hover {
-    background-color: $textbase-color;
-    outline-color: $link-color;
+  @if $type == 1 {
+    color: $sixth-color;
+    background-color: $primary-color;
+
+    &:hover {
+      background-color: $textbase-color;
+      outline-color: $link-color;
+    }
+  } @else if $type == 2 {
+    background-color: $sixth-color;
+    color: $primary-color;
+
+    &:hover {
+      outline-color: $link-color;
+    }
   }
 }
 

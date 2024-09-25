@@ -1,7 +1,7 @@
 import React from 'react';
 
-import useSiteMetadata from '../hooks/use-site-metadata';
 import useTranslation from '../hooks/use-translation';
+import useSiteMetadata from '../hooks/use-site-metadata';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';

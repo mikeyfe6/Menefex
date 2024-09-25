@@ -2,20 +2,18 @@ import React from 'react';
 
 import { Link } from 'gatsby';
 
-import useTranslation from '../hooks/use-translation';
+// import useTranslation from '../hooks/use-translation';
+import useSiteMetadata from '../hooks/use-site-metadata';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 import * as superPowersStyles from '../styles/modules/superpowers.module.scss';
 
-// TODO: images naar GatsbyImage verwerken
-
-// CONTENTFUL blogposts genereren
 const SuperPowersPage = () => {
-  const { t, isHydrated } = useTranslation();
+  // const { t, isHydrated } = useTranslation();
 
-  if (!isHydrated) return null;
+  // if (!isHydrated) return null;
 
   return (
     <Layout>
@@ -113,6 +111,36 @@ const SuperPowersPage = () => {
 
 export default SuperPowersPage;
 
-export const Head = () => (
-  <SEO title="Diensten" description="" keywords="" pathname="/diensten/" />
-);
+export const Head = () => {
+  const { title, siteUrl } = useSiteMetadata();
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org/',
+    '@type': 'BreadcrumbList',
+    '@id': siteUrl + '/#breadcrumb',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: title,
+        item: siteUrl,
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Diensten',
+        item: siteUrl + '/diensten/',
+      },
+    ],
+  };
+
+  return (
+    <SEO
+      title="Diensten"
+      description=""
+      keywords=""
+      pathname="/diensten/"
+      schemaMarkup={breadcrumbSchema}
+    />
+  );
+};

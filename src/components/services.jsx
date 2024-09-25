@@ -83,6 +83,7 @@ const Service = () => {
         </div>
         <div>
           <Link to="/prijzen/">{t('servicesPricesButton')}</Link>
+          <Link to="/diensten/">{t('servicesPricesButtonTwo')}</Link>
         </div>
       </div>
     </section>

@@ -1,22 +1,20 @@
 import React from 'react';
 
-import { Link, graphql, useStaticQuery } from 'gatsby';
+// import { Link, graphql, useStaticQuery } from 'gatsby';
 
-import useTranslation from '../hooks/use-translation';
+// import useTranslation from '../hooks/use-translation';
+import useSiteMetadata from '../hooks/use-site-metadata';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 // import * as topicStyles from '../styles/modules/topics.module.scss';
 
-// TODO: images naar GatsbyImage verwerken
-
-// CONTENTFUL blogposts genereren
 const FaqPage = () => {
-  const { t, i18n, isHydrated } = useTranslation();
-  const currentLanguage = i18n.language;
+  // const { t, i18n, isHydrated } = useTranslation();
+  // const currentLanguage = i18n.language;
 
-  if (!isHydrated) return null;
+  // if (!isHydrated) return null;
 
   return (
     <Layout>
@@ -31,6 +29,36 @@ const FaqPage = () => {
 
 export default FaqPage;
 
-export const Head = () => (
-  <SEO title="FAQ" description="" keywords="" pathname="/faq/" />
-);
+export const Head = () => {
+  const { title, siteUrl } = useSiteMetadata();
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org/',
+    '@type': 'BreadcrumbList',
+    '@id': siteUrl + '/#breadcrumb',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: title,
+        item: siteUrl,
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'FAQ (Veelgestelde vragen)',
+        item: siteUrl + '/faq/',
+      },
+    ],
+  };
+
+  return (
+    <SEO
+      title="FAQ"
+      description=""
+      keywords=""
+      pathname="/faq/"
+      schemaMarkup={breadcrumbSchema}
+    />
+  );
+};
