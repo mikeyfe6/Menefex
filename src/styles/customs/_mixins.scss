@@ -96,8 +96,6 @@
   @include smoothTrans;
   @include boxShadow;
 
-  @include fluidTyping(12, 14);
-
   @if $type == 1 {
     color: $sixth-color;
     background-color: $primary-color;
@@ -114,6 +112,8 @@
       outline-color: $link-color;
     }
   }
+
+  @include fluidTyping(12, 14);
 }
 
 @mixin secondaryButton {
