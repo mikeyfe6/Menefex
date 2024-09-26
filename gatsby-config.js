@@ -303,6 +303,13 @@ module.exports = {
                 updatedAt
               }
             }
+
+           allContentfulTopic {
+              nodes {
+                slug
+                updatedAt
+              }
+            }
           }
         `,
         resolveSiteUrl: () => superSiteUrl,
@@ -316,12 +323,18 @@ module.exports = {
             {}
           );
 
+          const topicsMap = allContentfulTopic.nodes.reduce((acc, post) => {
+            const { slug, updatedAt } = post;
+            acc[`/topics/${slug}/`] = { path: `/topics/${slug}/`, updatedAt };
+            return acc;
+          }, {});
+
           const sitePagesMap = allSitePage.nodes.reduce((acc, page) => {
             acc[page.path] = { path: page.path };
             return acc;
           }, {});
 
-          const pagesMap = { ...sitePagesMap, ...blogPostsMap };
+          const pagesMap = { ...sitePagesMap, ...blogPostsMap, ...topicsMap };
 
           return Object.values(pagesMap);
         },
