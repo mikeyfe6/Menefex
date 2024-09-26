@@ -48,6 +48,7 @@ const DesktopMenu = ({ drawerClickHandler }) => {
             <Link
               to="/diensten/"
               activeClassName={desktopMenuStyles.activePage}
+              partiallyActive
             >
               {t('menuItemServices').toLowerCase()}
               <span>.</span>

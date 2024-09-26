@@ -32,8 +32,13 @@ const MobileMenu = ({ show }) => {
           </Link>
         </li>
         <li>
-          <Link to="/diensten/" activeClassName={mobileMenuStyles.activePage}>
+          <Link
+            to="/diensten/"
+            activeClassName={mobileMenuStyles.activePage}
+            partiallyActive
+          >
             {t('menuItemServices').toLowerCase()}
+
             <span className={mobileMenuStyles.dots}>.</span>
           </Link>
         </li>
