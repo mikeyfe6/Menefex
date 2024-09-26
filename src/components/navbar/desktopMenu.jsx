@@ -17,6 +17,15 @@ const DesktopMenu = ({ drawerClickHandler }) => {
     window.localStorage.setItem('i18nextLng', lang);
   };
 
+  const checkIfPartiallyActive = ({ isPartiallyCurrent, location }) => {
+    return location.pathname.includes('/blog') ||
+      location.pathname.includes('/topics')
+      ? { className: desktopMenuStyles.activePage }
+      : isPartiallyCurrent
+      ? { className: desktopMenuStyles.activePage }
+      : null;
+  };
+
   return (
     <header className={desktopMenuStyles.desktopMenu}>
       <nav>
@@ -58,7 +67,7 @@ const DesktopMenu = ({ drawerClickHandler }) => {
             <Link
               to="/blog/"
               activeClassName={desktopMenuStyles.activePage}
-              partiallyActive
+              getProps={checkIfPartiallyActive}
             >
               {t('menuItemBlog').toLowerCase()}
               <span>.</span>

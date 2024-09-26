@@ -16,6 +16,15 @@ const MobileMenu = ({ show }) => {
 
   if (!isHydrated) return null;
 
+  const checkIfPartiallyActive = ({ isPartiallyCurrent, location }) => {
+    return location.pathname.includes('/blog') ||
+      location.pathname.includes('/topics')
+      ? { className: mobileMenuStyles.activePage }
+      : isPartiallyCurrent
+      ? { className: mobileMenuStyles.activePage }
+      : null;
+  };
+
   return (
     <nav className={drawerClasses}>
       <ul>
@@ -46,7 +55,7 @@ const MobileMenu = ({ show }) => {
           <Link
             to="/blog/"
             activeClassName={mobileMenuStyles.activePage}
-            partiallyActive
+            getProps={checkIfPartiallyActive}
           >
             {t('menuItemBlog').toLowerCase()}
             <span className={mobileMenuStyles.dots}>.</span>
