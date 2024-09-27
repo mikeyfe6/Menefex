@@ -292,19 +292,21 @@ module.exports = {
                 siteUrl
               }
             }
+
             allSitePage {
               nodes {
                 path
               }
             }
+
             allContentfulBlogPost {
               nodes {
                 slug
                 updatedAt
               }
             }
-
-           allContentfulTopic {
+              
+            allContentfulTopic {
               nodes {
                 slug
                 updatedAt
@@ -313,7 +315,11 @@ module.exports = {
           }
         `,
         resolveSiteUrl: () => superSiteUrl,
-        resolvePages: ({ allSitePage, allContentfulBlogPost }) => {
+        resolvePages: ({
+          allSitePage,
+          allContentfulBlogPost,
+          allContentfulTopic,
+        }) => {
           const blogPostsMap = allContentfulBlogPost.nodes.reduce(
             (acc, post) => {
               const { slug, updatedAt } = post;
