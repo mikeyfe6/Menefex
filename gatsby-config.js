@@ -2,7 +2,7 @@
     https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
-const fetchLastCommitDate = require('./src/utils/fetchLastCommitDate');
+const fetchLastCommitDate = require('./src/utils/fetchLastCommitDate.jsx');
 
 const superSiteUrl = process.env.URL || 'https://menefex.nl';
 
