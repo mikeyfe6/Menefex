@@ -287,6 +287,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-sitemap',
       options: {
+        excludes: ['/success/'],
         query: `
           {
             site {
