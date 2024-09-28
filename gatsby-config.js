@@ -2,6 +2,8 @@
     https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
+const fetchLastCommitDate = require('./src/utils/fetchLastCommitDate');
+
 const superSiteUrl = process.env.URL || 'https://menefex.nl';
 
 require('dotenv').config({
@@ -292,20 +294,20 @@ module.exports = {
                 siteUrl
               }
             }
-
+    
             allSitePage {
               nodes {
                 path
               }
             }
-
+    
             allContentfulBlogPost {
               nodes {
                 slug
                 updatedAt
               }
             }
-              
+    
             allContentfulTopic {
               nodes {
                 slug
@@ -315,7 +317,7 @@ module.exports = {
           }
         `,
         resolveSiteUrl: () => superSiteUrl,
-        resolvePages: ({
+        resolvePages: async ({
           allSitePage,
           allContentfulBlogPost,
           allContentfulTopic,
@@ -335,10 +337,17 @@ module.exports = {
             return acc;
           }, {});
 
-          const sitePagesMap = allSitePage.nodes.reduce((acc, page) => {
-            acc[page.path] = { path: page.path };
-            return acc;
-          }, {});
+          const sitePagesMap = {};
+          for (const page of allSitePage.nodes) {
+            const { path } = page;
+
+            const filePath = `src/pages${
+              path === '/' ? '/index' : path.replace(/\/$/, '')
+            }.jsx`;
+
+            const lastmod = await fetchLastCommitDate(filePath);
+            sitePagesMap[path] = { path, updatedAt: lastmod };
+          }
 
           const pagesMap = { ...sitePagesMap, ...blogPostsMap, ...topicsMap };
 
