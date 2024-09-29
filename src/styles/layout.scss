@@ -11,6 +11,7 @@ body {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 
   &:has(#backdrop),
   &:has(.cookie) {
@@ -404,4 +405,11 @@ span.lazy-color {
   opacity: 0.5;
   color: $textbase-color;
   outline: $textbase-color 1px solid;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  @include mobile {
+    display: none !important;
+  }
 }

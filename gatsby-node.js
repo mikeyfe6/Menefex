@@ -92,7 +92,11 @@ exports.createResolvers = ({ createResolvers }) => {
           filePath: 'String!',
         },
         resolve: async (_, { filePath }) => {
-          return await fetchLastCommitDate(filePath);
+          if (process.env.NODE_ENV === 'production') {
+            return await fetchLastCommitDate(filePath);
+          } else {
+            return null;
+          }
         },
       },
     },
@@ -165,6 +169,8 @@ module.exports.createPages = async ({ graphql, actions }) => {
             keywords
             author
             image {
+              title
+              gatsbyImageData
               file {
                 url
               }
@@ -178,6 +184,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
                   contentful_id
                   __typename
                   title
+                  gatsbyImageData(layout: FULL_WIDTH)
                   file {
                     url
                     details {
@@ -193,6 +200,10 @@ module.exports.createPages = async ({ graphql, actions }) => {
                 ... on ContentfulBlogPost {
                   contentful_id
                   __typename
+                  image {
+                    title
+                    gatsbyImageData
+                  }
                   slug
                 }
               }
@@ -209,12 +220,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
                 slug
                 image {
                   title
-                  gatsbyImageData(
-                    width: 300
-                    height: 225
-                    placeholder: BLURRED
-                    formats: [AUTO, WEBP]
-                  )
+                  gatsbyImageData
                 }
               }
             }
@@ -242,9 +248,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
               author
               image {
                 title
-                file {
-                  url
-                }
+                gatsbyImageData
               }
               createdAt
             }

@@ -117,17 +117,26 @@
 }
 
 @mixin secondaryButton {
-  display: inline-block;
   padding: 0.7em 1em;
   width: 100%;
   min-height: 44px;
   border-radius: $low-radius;
   white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @include smoothTrans;
   @include boxShadow;
 
   @include fluidTyping(14, 16);
+
+  &:not([href]) {
+    &:hover {
+      cursor: not-allowed;
+      background-color: $fifth-color;
+    }
+  }
 }
 
 @mixin tertiaryButton {
@@ -247,7 +256,7 @@
     transform: scale(1.025);
   }
 
-  > div {
+  > div:first-of-type {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -284,25 +293,37 @@
     }
   }
 
-  img {
-    min-width: 200px;
-    width: 200px;
-    max-height: 125px;
-    overflow: hidden;
+  > div:nth-of-type(2) {
     outline: 3px solid $fourth-color;
     border-radius: $low-radius;
-    object-fit: cover;
+    overflow: hidden;
+    max-width: 250px;
+    width: 100%;
 
     @include boxShadow;
 
-    @include phablet {
-      width: 100%;
-      max-height: 225px;
+    @include tablet {
+      max-width: 200px;
     }
 
-    @include mobile {
+    @include phablet {
       max-width: 100%;
-      max-height: 200px;
+    }
+
+    > [data-gatsby-image-wrapper] {
+      max-height: 175px;
+
+      @include phablet {
+        max-height: 300px;
+      }
+
+      @include mobile {
+        max-height: 250px;
+      }
+
+      @include mobile {
+        max-height: 200px;
+      }
     }
   }
 }

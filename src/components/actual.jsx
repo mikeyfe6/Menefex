@@ -32,11 +32,7 @@ const Actual = () => {
             publishedDate
             image {
               title
-              gatsbyImageData(
-                width: 550
-                placeholder: BLURRED
-                formats: [AUTO, WEBP, AVIF]
-              )
+              gatsbyImageData(width: 550)
             }
           }
         }
@@ -61,11 +57,7 @@ const Actual = () => {
             publishedDate
             image {
               title
-              gatsbyImageData(
-                width: 550
-                placeholder: BLURRED
-                formats: [AUTO, WEBP, AVIF]
-              )
+              gatsbyImageData(width: 550)
             }
           }
         }

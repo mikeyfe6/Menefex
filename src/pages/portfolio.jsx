@@ -273,7 +273,7 @@ const PortfolioPage = () => {
                 <i className="fa-solid fa-eye" />
                 {t('portfolioGoToProject')}
               </a>
-              <a href="#!" className={portfolioStyles.btnDark}>
+              <a className={portfolioStyles.btnDark}>
                 <i className="fa-brands fa-github" />
                 <strike>{t('portfolioNoRepo')}</strike>
               </a>
@@ -321,7 +321,7 @@ const PortfolioPage = () => {
                 {t('portfolioGoToProject')}
                 {/* Komt Binnenkort */}
               </a>
-              <a href="#!" className={portfolioStyles.btnDark}>
+              <a className={portfolioStyles.btnDark}>
                 <i className="fa-brands fa-github" />
                 <strike>{t('portfolioNoRepo')}</strike>
               </a>
@@ -369,7 +369,7 @@ const PortfolioPage = () => {
                 <i className="fa-solid fa-eye" />
                 {t('portfolioGoToProject')}
               </a>
-              <a href="#!" className={portfolioStyles.btnDark}>
+              <a className={portfolioStyles.btnDark}>
                 <i className="fa-brands fa-github" />
                 <strike>{t('portfolioNoRepo')}</strike>
               </a>

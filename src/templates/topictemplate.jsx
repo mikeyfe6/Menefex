@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Link } from 'gatsby';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 import { format, parseISO } from 'date-fns';
 import { nl, enUS } from 'date-fns/locale';
@@ -16,9 +17,11 @@ import * as topicStyles from '../styles/modules/topics.module.scss';
 // TODO: images naar GatsbyImage verwerken
 
 const DefaultInfo = ({ text }) => (
-  <p>
-    <br /> <b>{text}</b>
-  </p>
+  <li>
+    <p>
+      <b>{text}</b>
+    </p>
+  </li>
 );
 
 const Topic = ({ pageContext: { nlContent, enContent } }) => {
@@ -52,7 +55,7 @@ const Topic = ({ pageContext: { nlContent, enContent } }) => {
       </h2>
 
       <ul className={topicStyles.posts}>
-        {content.topicPosts.length === 0 ? (
+        {!content.topicPosts || content.topicPosts.length === 0 ? (
           <DefaultInfo text={t('noBlogPosts')} />
         ) : (
           content.topicPosts.map(
@@ -64,22 +67,28 @@ const Topic = ({ pageContext: { nlContent, enContent } }) => {
               createdAt,
               author,
               image,
-            }) => (
-              <li key={contentful_id}>
-                <Link to={`/blog/${slug}/`}>
-                  <div>
-                    <h4>{title}</h4>
-                    <p>{subtitle}</p>
-                    <span>
-                      {t('blogPostedOn')}{' '}
-                      <strong>{formatDate(createdAt)}</strong> ⌁{' '}
-                      {t('blogAuthor')} <strong>{author}</strong>
-                    </span>
-                  </div>
-                  <img src={image.file.url} alt={image.title} />
-                </Link>
-              </li>
-            )
+            }) => {
+              const topcImage = getImage(image.gatsbyImageData);
+
+              return (
+                <li key={contentful_id}>
+                  <Link to={`/blog/${slug}/`}>
+                    <div>
+                      <h4>{title}</h4>
+                      <p>{subtitle}</p>
+                      <span>
+                        {t('blogPostedOn')}{' '}
+                        <strong>{formatDate(createdAt)}</strong> ⌁{' '}
+                        {t('blogAuthor')} <strong>{author}</strong>
+                      </span>
+                    </div>
+                    <div>
+                      <GatsbyImage image={topcImage} alt={image.title} />
+                    </div>
+                  </Link>
+                </li>
+              );
+            }
           )
         )}
       </ul>

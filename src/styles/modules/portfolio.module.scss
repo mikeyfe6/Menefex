@@ -14,6 +14,7 @@
     max-width: 100%;
     border: 2px $fourth-color solid;
     border-radius: 10px;
+    margin-bottom: 2em;
     z-index: 1;
 
     @include smoothTrans;
@@ -30,12 +31,12 @@
   &-info {
     padding: 0.5rem 1rem;
     border: 0.5px solid $third-color;
-    margin: 2em 0;
     border-bottom: none;
     border-top: none;
     min-height: 250px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 2em;
 
     @include laptop {
       min-height: 300px;

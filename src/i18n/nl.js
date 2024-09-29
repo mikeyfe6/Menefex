@@ -125,6 +125,8 @@ export default {
 
   topicsIntro: 'Al onze blog onderwerpen op een rijtje..',
   topicsBackToAll: "Alle 'Topics'",
+  noContentAvailable: 'Geen content beschikbaar',
+  noBlogPosts: '* Nog geen blogposts betreft deze topic ..',
 
   pricesTitle: 'Prijzen & tarieven',
   pricesIntroOne:

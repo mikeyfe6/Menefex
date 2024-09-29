@@ -50,12 +50,16 @@ const Blog = ({ pageContext: { nlContent, enContent } }) => {
       [BLOCKS.EMBEDDED_ASSET]: (node, children) => {
         const {
           data: {
-            target: { title, file },
+            target: { title, gatsbyImageData },
           },
         } = node;
 
+        const image = getImage(gatsbyImageData);
+
         return (
-          <img alt={title} src={file.url} className={singlepostStyle.assets} />
+          <div className={singlepostStyle.assets}>
+            <GatsbyImage image={image} alt={title} />
+          </div>
         );
       },
 
@@ -200,6 +204,8 @@ const Blog = ({ pageContext: { nlContent, enContent } }) => {
 
   if (!isHydrated) return null;
 
+  const image = getImage(content.image.gatsbyImageData);
+
   return (
     <Layout>
       <div className={singlepostStyle.singlepost}>
@@ -222,11 +228,13 @@ const Blog = ({ pageContext: { nlContent, enContent } }) => {
 
             <div className={singlepostStyle.main}>
               <section>
-                <img
-                  src={`https:${content.image.file.url}`}
-                  alt={content.title}
-                  className={singlepostStyle.image}
-                />
+                <div>
+                  <GatsbyImage
+                    image={image}
+                    alt={content.image.title}
+                    className={singlepostStyle.image}
+                  />
+                </div>
 
                 <h2 className={singlepostStyle.subtitle}>{content.subtitle}</h2>
                 <div className={singlepostStyle.content}>

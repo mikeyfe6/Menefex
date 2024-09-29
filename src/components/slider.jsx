@@ -38,10 +38,7 @@ const Projects = () => {
             base
             name
             childImageSharp {
-              gatsbyImageData(
-                transformOptions: { cropFocus: NORTH, fit: COVER }
-                blurredOptions: { width: 100 }
-              )
+              gatsbyImageData
             }
           }
         }

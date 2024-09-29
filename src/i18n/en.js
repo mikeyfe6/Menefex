@@ -126,6 +126,8 @@ export default {
 
   topicsIntro: 'All our blog topics at a glance..',
   topicsBackToAll: "All 'Topics'",
+  noContentAvailable: 'No content available..',
+  noBlogPosts: '* No blog posts yet regarding this topic ..',
 
   pricesTitle: 'Prices & rates',
   pricesIntroOne:

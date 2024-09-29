@@ -7,16 +7,12 @@
   border-radius: $low-radius;
   width: fit-content;
   height: 100%;
-  max-width: 500px;
+  max-width: 450px;
 
   @include boxShadow;
 
   @include tablet {
     align-self: flex-end;
-  }
-
-  @include mobile {
-    padding: 1em;
   }
 
   p {
@@ -29,7 +25,9 @@
   iframe {
     opacity: 0.9;
     height: 650px;
-    width: 400px;
+    width: 100%;
+
+    outline: 3px solid $fifth-color;
 
     border-radius: $high-radius;
 

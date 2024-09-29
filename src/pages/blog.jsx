@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Link, graphql, useStaticQuery } from 'gatsby';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 import useTranslation from '../hooks/use-translation';
 import useSiteMetadata from '../hooks/use-site-metadata';
@@ -31,9 +32,7 @@ const BlogPage = () => {
             author
             image {
               title
-              file {
-                url
-              }
+              gatsbyImageData
             }
             createdAt(formatString: "dddd D MMMM YYYY", locale: "nl")
           }
@@ -53,9 +52,7 @@ const BlogPage = () => {
             author
             image {
               title
-              file {
-                url
-              }
+              gatsbyImageData
             }
             createdAt(formatString: "dddd D MMMM YYYY", locale: "en")
           }
@@ -83,27 +80,27 @@ const BlogPage = () => {
 
       <section>
         <ul className={blogpostStyles.blogposts}>
-          {currentContent.map((edge) => (
-            <li key={edge.node.id}>
-              <Link to={`/blog/${edge.node.slug}/`}>
-                <div>
-                  <h3>{edge.node.title}</h3>
-                  <p>{edge.node.subtitle}</p>
-                  <span>
-                    {t('blogPostedOn')} <strong>{edge.node.createdAt}</strong> ⌁
-                    {t('blogAuthor')} <strong>{edge.node.author}</strong>
-                  </span>
-                </div>
+          {currentContent.map((edge) => {
+            const image = getImage(edge.node.image.gatsbyImageData);
+            return (
+              <li key={edge.node.id}>
+                <Link to={`/blog/${edge.node.slug}/`}>
+                  <div>
+                    <h3>{edge.node.title}</h3>
+                    <p>{edge.node.subtitle}</p>
+                    <span>
+                      {t('blogPostedOn')} <strong>{edge.node.createdAt}</strong>{' '}
+                      ⌁{t('blogAuthor')} <strong>{edge.node.author}</strong>
+                    </span>
+                  </div>
 
-                {/* TODO: image naar GatsbyImage */}
-
-                <img
-                  src={edge.node.image.file.url}
-                  alt={edge.node.image.title}
-                />
-              </Link>
-            </li>
-          ))}
+                  <div>
+                    <GatsbyImage image={image} alt={edge.node.image.title} />
+                  </div>
+                </Link>
+              </li>
+            );
+          })}
         </ul>
 
         <Link to="/topics/" className={blogpostStyles.backBtn}>
