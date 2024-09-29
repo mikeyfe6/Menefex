@@ -21,7 +21,7 @@ const Marker = ({ lat, lng }) => {
 
   return (
     <div data-lat={lat} data-lng={lng} className={mapsStyles.marker}>
-      <img src={mapsLogo} alt={title} />
+      <img src={mapsLogo} alt={title} width={50} height={50} />
     </div>
   );
 };

@@ -218,7 +218,7 @@ const Blog = ({ pageContext: { nlContent, enContent } }) => {
 
           <div>
             <div className={singlepostStyle.header}>
-              <img src={mini} alt="Menefex Icon" />
+              <img src={mini} alt="Menefex Icon" width={75} height={75} />
               <div>
                 <h1 className={singlepostStyle.title}>{content.title}</h1>
               </div>

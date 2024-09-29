@@ -63,6 +63,8 @@ const Hero = () => {
           className={heroStyles.heroLogo}
           src={heroLogo}
           alt="Menefex Logo"
+          width={320}
+          height={320}
         />
       </div>
       <div>

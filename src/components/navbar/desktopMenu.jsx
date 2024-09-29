@@ -34,6 +34,8 @@ const DesktopMenu = ({ drawerClickHandler }) => {
             className={desktopMenuStyles.logo}
             src={logo}
             alt="Menefex Logo"
+            width={225}
+            height={60}
           />
         </Link>
 

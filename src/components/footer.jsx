@@ -132,6 +132,8 @@ const Footer = () => {
           className={footerStyles.footerLogo}
           src={minilogo}
           alt="Menefex Mini Logo"
+          width={110}
+          height={110}
         />
       </Link>
 

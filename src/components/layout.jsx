@@ -40,7 +40,12 @@ const Layout = ({ children }) => {
     <>
       <div id="tosmallforyouscreen">
         <div className="container">
-          <img src={minilogo} alt="Menefex Mini Logo" />
+          <img
+            src={minilogo}
+            alt="Menefex Mini Logo"
+            width={120}
+            height={120}
+          />
           <p dangerouslySetInnerHTML={{ __html: t('screenToSmallText') }} />
         </div>
       </div>
