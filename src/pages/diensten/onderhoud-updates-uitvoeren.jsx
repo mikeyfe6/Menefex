@@ -17,10 +17,10 @@ const MaintenancePage = () => {
 
   return (
     <Layout>
-      <h1
-        className="page-title"
-        dangerouslySetInnerHTML={{ __html: t('superPowersMaintenance') }}
-      />
+      <h1 className="page-title">
+        {t('superPowersMaintenance')}
+        <span>.</span>
+      </h1>
       <h2 className="page-sub">{t('superPowersMaintenanceInfo')}</h2>
 
       <section className={superPowersStyles.powers}>
@@ -63,13 +63,15 @@ export const Head = () => {
     ],
   };
 
-  <SEO
-    title="Onderhoud en/of updates uitvoeren"
-    description="Regelmatig onderhoud en updates om de optimale prestaties en veiligheid
+  return (
+    <SEO
+      title="Onderhoud en/of updates uitvoeren"
+      description="Regelmatig onderhoud en updates om de optimale prestaties en veiligheid
         van je website of webapplicatie te garanderen. Wij zorgen ervoor dat
         alles up-to-date blijft en probleemloos"
-    keywords=""
-    pathname="/diensten/onderhoud-updates-uitvoeren/"
-    schemaMarkup={breadcrumbSchema}
-  />;
+      keywords=""
+      pathname="/diensten/onderhoud-updates-uitvoeren/"
+      schemaMarkup={breadcrumbSchema}
+    />
+  );
 };

@@ -129,8 +129,7 @@ export default {
   superPowersEmail: 'Have an email template created',
   superPowersEmailInfo:
     'Customized email templates that match your branding and ensure a consistent and professional look in all your email communications.',
-  superPowersMaintenance:
-    'Perform maintenance and <span>/</span> or updates<span>.</span>',
+  superPowersMaintenance: 'Perform maintenance and / or updates',
   superPowersMaintenanceInfo:
     'Regular maintenance and updates to ensure the optimal performance and security of your website or web application. We ensure that everything stays up to date and functions smoothly.',
   superPowersSeo: 'Search Engine Optimization (SEO)',

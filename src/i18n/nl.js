@@ -128,8 +128,7 @@ export default {
   superPowersEmail: 'E-mail template laten maken',
   superPowersEmailInfo:
     'Op maat gemaakte e-mail templates die passen bij jouw branding en zorgen voor een consistente en professionele uitstraling in al je e-mailcommunicatie.',
-  superPowersMaintenance:
-    'Onderhoud en <span>/</span> of updates uitvoeren<span>.</span>',
+  superPowersMaintenance: 'Onderhoud en / of updates uitvoeren',
   superPowersMaintenanceInfo:
     'Regelmatig onderhoud en updates om de optimale prestaties en veiligheid van je website of webapplicatie te garanderen. Wij zorgen ervoor dat alles up-to-date blijft en probleemloos functioneert.',
   superPowersSeo: 'Zoekmachine Optimalisatie (SEO)',
