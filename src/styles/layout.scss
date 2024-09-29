@@ -1,6 +1,16 @@
 @import './configs/globals';
 @import './configs/resets';
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $poppins-font;
+  color: $body-color;
+  line-height: 1.6;
+}
+
 html,
 body {
   height: 100%;
@@ -8,21 +18,11 @@ body {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
-}
-
-html {
-  scroll-behavior: smooth;
 
   &:has(#backdrop),
   &:has(.cookie) {
     overflow: hidden;
   }
-}
-
-body {
-  font-family: $poppins-font;
-  color: $body-color;
-  line-height: 1.6;
 }
 
 .menefex {
