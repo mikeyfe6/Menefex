@@ -7,11 +7,11 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
 
   &:has(#backdrop),
   &:has(.cookie) {
