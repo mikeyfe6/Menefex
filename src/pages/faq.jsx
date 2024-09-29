@@ -1,8 +1,6 @@
 import React from 'react';
 
-// import { Link, graphql, useStaticQuery } from 'gatsby';
-
-// import useTranslation from '../hooks/use-translation';
+import useTranslation from '../hooks/use-translation';
 import useSiteMetadata from '../hooks/use-site-metadata';
 
 import Layout from '../components/layout';
@@ -11,18 +9,18 @@ import SEO from '../components/seo';
 // import * as topicStyles from '../styles/modules/topics.module.scss';
 
 const FaqPage = () => {
-  // const { t, i18n, isHydrated } = useTranslation();
-  // const currentLanguage = i18n.language;
+  const { t, isHydrated } = useTranslation();
 
-  // if (!isHydrated) return null;
+  if (!isHydrated) return null;
 
   return (
     <Layout>
       <h1 className="page-title">
-        FAQ (Veelgestelde vragen)<span>.</span>
+        {t('faqTitle')}
+        <span>.</span>
       </h1>
 
-      <h2 className="page-sub">Pagina komt binnenkort!</h2>
+      <h2 className="page-sub">{t('faqIntro')}</h2>
     </Layout>
   );
 };

@@ -114,6 +114,30 @@ export default {
   portfolioPZbio:
     '<strong>Prio Zorg</strong> is a dynamic care organization that guides young people on their way to self-reliance and a meaningful life. For young adults who get stuck and lose control of their lives, Priozorg offers expert support in the form of coaching, mentoring and educational guidance.',
 
+  superPowersTitle: 'Services',
+  superPowersIntro:
+    'Here you will find an overview of the different services we offer. These services are designed to help businesses with their online presence and efficiency.',
+  superPowersWebsite: 'Have a website created',
+  superPowersWebsiteInfo:
+    'Customized websites that perfectly match your branding and objectives. We design professional, user-friendly websites that ensure a strong online presence and optimal user experience.',
+  superPowersWebapp: 'Have a webapplication created',
+  superPowersWebappInfo:
+    'Professionally customized web applications that fully meet your business needs. Our web applications are user-friendly and designed to optimize your processes and increase efficiency.',
+  superPowersWebshop: 'Have a webshop created',
+  superPowersWebshopInfo:
+    'Professionally designed web shops that are fully tailored to your products and target group. Our tailor-made web shops offer a user-friendly interface and optimal functionality to maximize your online sales.',
+  superPowersEmail: 'Have an email template created',
+  superPowersEmailInfo:
+    'Customized email templates that match your branding and ensure a consistent and professional look in all your email communications.',
+  superPowersMaintenance:
+    'Perform maintenance and <span>/</span> or updates<span>.</span>',
+  superPowersMaintenanceInfo:
+    'Regular maintenance and updates to ensure the optimal performance and security of your website or web application. We ensure that everything stays up to date and functions smoothly.',
+  superPowersSeo: 'Search Engine Optimization (SEO)',
+  superPowersSeoInfo:
+    'Improve the findability of your website in search engines with targeted SEO strategies. We optimize your website to achieve higher positions in search results, so that you attract more traffic and customers.',
+  superPowersMoreInfo: 'More info',
+
   blogPostedOn: 'Posted on:',
   blogAuthor: 'Author:',
   blogBackToAll: 'All Blogposts',
@@ -173,6 +197,9 @@ export default {
   pricesFormChooseDay: 'Choose a day and time',
   pricesFormComments: 'Do you have any comments? (optional)',
   pricesFormCallMeBack: 'Call me back',
+
+  faqTitle: 'FAQ (Frequently Asked Questions)',
+  faqIntro: 'Page coming soon!',
 
   aboutTitle: 'About Menefex',
   aboutWhoAreWeTitle: 'Who are we?',

@@ -113,6 +113,30 @@ export default {
   portfolioPZbio:
     '<strong>Prio Zorg</strong> is een dynamische hulpverleningsorganisatie die jongeren begeleidt op weg naar zelfredzaamheid en een betekenisvol leven. Voor jongvolwassenen die vastlopen en de controle over hun leven verliezen, biedt Priozorg deskundige ondersteuning in de vorm van coaching, mentoring, en opvoedkundige begeleiding.',
 
+  superPowersTitle: 'Diensten',
+  superPowersIntro:
+    'Hier een overzicht van de verschillende diensten die wij aanbieden. Deze diensten zijn ontworpen om bedrijven te helpen met hun online aanwezigheid en efficiëntie.',
+  superPowersWebsite: 'Website laten maken',
+  superPowersWebsiteInfo:
+    'Op maat gemaakte websites die perfect aansluiten bij jouw branding en doelstellingen. Wij ontwerpen professionele, gebruiksvriendelijke websites die zorgen voor een sterke online aanwezigheid en optimale gebruikerservaring.',
+  superPowersWebapp: 'Webapplicatie laten maken',
+  superPowersWebappInfo:
+    'Professioneel op maat gemaakte webapplicaties die volledig aansluiten op jouw bedrijfsbehoeften. Onze webapplicaties zijn gebruiksvriendelijk en ontworpen om jouw processen te optimaliseren en de efficiëntie te verhogen.',
+  superPowersWebshop: 'Webshop laten maken',
+  superPowersWebshopInfo:
+    'Professioneel ontworpen webshops die volledig zijn afgestemd op jouw producten en doelgroep. Onze op maat gemaakte webshops bieden een gebruiksvriendelijke interface en optimale functionaliteit om jouw online verkoop te maximaliseren.',
+  superPowersEmail: 'E-mail template laten maken',
+  superPowersEmailInfo:
+    'Op maat gemaakte e-mail templates die passen bij jouw branding en zorgen voor een consistente en professionele uitstraling in al je e-mailcommunicatie.',
+  superPowersMaintenance:
+    'Onderhoud en <span>/</span> of updates uitvoeren<span>.</span>',
+  superPowersMaintenanceInfo:
+    'Regelmatig onderhoud en updates om de optimale prestaties en veiligheid van je website of webapplicatie te garanderen. Wij zorgen ervoor dat alles up-to-date blijft en probleemloos functioneert.',
+  superPowersSeo: 'Zoekmachine Optimalisatie (SEO)',
+  superPowersSeoInfo:
+    'Verbeter de vindbaarheid van je website in zoekmachines met gerichte SEO-strategieën. Wij optimaliseren je website om hogere posities te behalen in zoekresultaten, zodat je meer verkeer en klanten aantrekt.',
+  superPowersMoreInfo: 'Meer info',
+
   blogPostedOn: 'Gepost:',
   blogAuthor: 'Auteur:',
   blogBackToAll: 'Alle Blogposts',
@@ -173,6 +197,9 @@ export default {
   pricesFormChooseDay: 'Kies een dag en tijd',
   pricesFormComments: 'Heeft u nog opmerkingen? (optioneel)',
   pricesFormCallMeBack: 'Bel mij terug',
+
+  faqTitle: 'FAQ (Veelgestelde vragen)',
+  faqIntro: 'Pagina komt binnenkort!',
 
   aboutTitle: 'Over Menefex',
   aboutWhoAreWeTitle: 'Wie zijn wij?',
