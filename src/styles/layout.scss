@@ -1,28 +1,28 @@
 @import './configs/globals';
 @import './configs/resets';
 
-html,
-body {
-  height: 100%;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-}
-
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
-
-  &:has(#backdrop),
-  &:has(.cookie) {
-    overflow: hidden;
-  }
 }
 
 body {
   font-family: $poppins-font;
   color: $body-color;
   line-height: 1.6;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+
+  &:has(#backdrop),
+  &:has(.cookie) {
+    overflow: hidden;
+  }
 }
 
 .menefex {
