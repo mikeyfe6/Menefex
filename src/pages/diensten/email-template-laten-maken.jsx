@@ -66,7 +66,7 @@ export const Head = () => {
   return (
     <SEO
       title="E-mailtemplate laten maken"
-      description=" Op maat gemaakte e-mail templates die passen bij jouw branding en zorgen
+      description="Op maat gemaakte e-mail templates die passen bij jouw branding en zorgen
         voor een consistente en professionele uitstraling in al je
         e-mailcommunicatie."
       keywords=""

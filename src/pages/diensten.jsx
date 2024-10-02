@@ -106,7 +106,7 @@ export const Head = () => {
   return (
     <SEO
       title="Diensten"
-      description=""
+      description="Hier een overzicht van de verschillende diensten die wij aanbieden. Deze diensten zijn ontworpen om bedrijven te helpen met hun online aanwezigheid en efficiëntie."
       keywords=""
       pathname="/diensten/"
       schemaMarkup={breadcrumbSchema}
