@@ -138,7 +138,7 @@ export default {
   superPowersMoreInfo: 'More info',
 
   blogPostedOn: 'Posted on:',
-  blogAuthor: 'Author:',
+  blogAuthor: 'Author',
   blogBackToAll: 'All Blogposts',
   blogPostedOn: 'Posted on',
   blogFeedly: 'Read on Feedly',

@@ -137,7 +137,7 @@ export default {
   superPowersMoreInfo: 'Meer info',
 
   blogPostedOn: 'Gepost:',
-  blogAuthor: 'Auteur:',
+  blogAuthor: 'Auteur',
   blogBackToAll: 'Alle Blogposts',
   blogPostedOn: 'Gepost op',
   blogFeedly: 'Lees op Feedly',
