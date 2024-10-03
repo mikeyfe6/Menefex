@@ -76,7 +76,7 @@ export default {
   servicesFocusSeoOne: 'Enhanced visibility in popular search engines',
   servicesFocusSeoTwo: 'Significantly more direct and indirect web traffic',
   servicesFocusSeoThree: 'Use of data analysis, strategies, and statistics',
-  servicesPricesButton: 'View our prices',
+  servicesPricesButton: 'Our prices',
   servicesPricesButtonTwo: 'All services',
 
   recentProjectsViewSiteButton: 'View website',

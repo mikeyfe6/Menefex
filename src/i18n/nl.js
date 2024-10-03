@@ -75,7 +75,7 @@ export default {
   servicesFocusSeoOne: 'Verbeterde vindbaarheid in populaire zoekmachines',
   servicesFocusSeoTwo: 'Aanzienlijk meer directe en indirecte webbezoekers',
   servicesFocusSeoThree: 'Gebruik van analyses, strategieën en statistieken',
-  servicesPricesButton: 'Bekijk onze prijzen',
+  servicesPricesButton: 'Onze prijzen',
   servicesPricesButtonTwo: 'Alle diensten',
 
   recentProjectsViewSiteButton: 'Bekijk website',
