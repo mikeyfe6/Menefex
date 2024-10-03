@@ -430,6 +430,7 @@
       .topics {
         margin-top: 3em;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
         gap: 2em;
@@ -459,6 +460,7 @@
 
         > a {
           white-space: nowrap;
+          margin-left: auto;
         }
       }
 
@@ -500,7 +502,7 @@
               @include smoothTrans;
 
               > [data-gatsby-image-wrapper] {
-                height: 200px;
+                height: 215px;
               }
 
               h5 {
