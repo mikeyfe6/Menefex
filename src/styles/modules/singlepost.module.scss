@@ -45,6 +45,7 @@
         .title {
           font-weight: 500;
           letter-spacing: $medium-spacing;
+          line-height: 1.4;
 
           @include fluidTyping(20, 26);
 
@@ -497,6 +498,10 @@
               flex-direction: column;
 
               @include smoothTrans;
+
+              > [data-gatsby-image-wrapper] {
+                height: 200px;
+              }
 
               h5 {
                 font-family: $poppins-font;
