@@ -23,9 +23,9 @@ const WebappPage = () => {
       </h1>
       <h2 className="page-sub">{t('superPowersWebappInfo')}</h2>
 
-      <section className={superPowersStyles.powers}>
+      <section className={superPowersStyles.buttons}>
         <Link to="/diensten/">
-          <i className="fa-solid fa-angles-left" /> {t('superPowersTitle')}
+          <i className="fa-solid fa-angles-left" /> {t('superPowersServices')}
         </Link>
       </section>
     </Layout>

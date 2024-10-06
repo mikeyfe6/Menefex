@@ -241,6 +241,41 @@ textarea {
   @include fluidTyping(18, 20);
 }
 
+.page-content {
+  h3 {
+    margin-bottom: 0.75em;
+  }
+
+  ol {
+    text-decoration-color: $secondary-color;
+    list-style-type: decimal;
+    margin-inline-start: 1em;
+
+    li {
+      padding-left: 0.5em;
+      margin-bottom: 0.75em;
+    }
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      margin-bottom: 0.75em;
+      display: flex;
+
+      &::before {
+        content: '\203B';
+        margin-top: -5px;
+        color: $secondary-color;
+        font-weight: bold;
+        font-size: 1.25em;
+        margin-right: 0.5em;
+      }
+    }
+  }
+}
+
 .thick-hr {
   border-radius: $low-radius;
   border: 2.5px solid $spec-color;

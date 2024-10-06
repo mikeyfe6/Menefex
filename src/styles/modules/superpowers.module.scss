@@ -50,8 +50,17 @@
   }
 }
 
-.powers {
-  a {
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3em;
+  gap: 1.5em;
+
+  > a {
     @include primaryButton;
+
+    &:nth-of-type(1) {
+      @include primaryButton(2);
+    }
   }
 }

@@ -114,6 +114,8 @@ export default {
     '<strong>Prio Zorg</strong> is een dynamische hulpverleningsorganisatie die jongeren begeleidt op weg naar zelfredzaamheid en een betekenisvol leven. Voor jongvolwassenen die vastlopen en de controle over hun leven verliezen, biedt Priozorg deskundige ondersteuning in de vorm van coaching, mentoring, en opvoedkundige begeleiding.',
 
   superPowersTitle: 'Diensten',
+  superPowersServices: 'Diensten',
+  superPowersPrices: 'Prijzen',
   superPowersIntro:
     'Hier een overzicht van de verschillende diensten die wij aanbieden. Deze diensten zijn ontworpen om bedrijven te helpen met hun online aanwezigheid en efficiëntie.',
   superPowersWebsite: 'Website laten maken',

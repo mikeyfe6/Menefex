@@ -115,6 +115,8 @@ export default {
     '<strong>Prio Zorg</strong> is a dynamic care organization that guides young people on their way to self-reliance and a meaningful life. For young adults who get stuck and lose control of their lives, Priozorg offers expert support in the form of coaching, mentoring and educational guidance.',
 
   superPowersTitle: 'Services',
+  superPowersServices: 'Services',
+  superPowersPrices: 'Prices',
   superPowersIntro:
     'Here you will find an overview of the different services we offer. These services are designed to help businesses with their online presence and efficiency.',
   superPowersWebsite: 'Have a website created',
