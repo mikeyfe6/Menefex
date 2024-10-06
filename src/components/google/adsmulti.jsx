@@ -10,9 +10,9 @@ const GoogleAdsMulti = ({ slot }) => {
     <ins
       className="adsbygoogle"
       style={{ display: 'block' }}
+      data-ad-format="autorelaxed"
       data-ad-client={process.env.GATSBY_GOOGLE_CA_PUB}
       data-ad-slot={slot}
-      data-ad-format="autorelaxed"
     />
   );
 };

@@ -190,6 +190,7 @@ const Blog = ({ pageContext: { nlContent, enContent } }) => {
     if (process.env.NODE_ENV !== 'development') {
       const script = document.createElement('script');
       script.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.GATSBY_GOOGLE_CA_PUB}`;
+      script.crossOrigin = 'anonymous';
       script.async = true;
 
       document.body.appendChild(script);
