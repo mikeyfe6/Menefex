@@ -48,15 +48,6 @@ const DesktopMenu = ({ drawerClickHandler }) => {
           </li>
           <li>
             <Link
-              to="/portfolio/"
-              activeClassName={desktopMenuStyles.activePage}
-            >
-              {t('menuItemPortfolio').toLowerCase()}
-              <span>.</span>
-            </Link>
-          </li>
-          <li>
-            <Link
               to="/diensten/"
               activeClassName={desktopMenuStyles.activePage}
               partiallyActive
@@ -67,17 +58,26 @@ const DesktopMenu = ({ drawerClickHandler }) => {
           </li>
           <li>
             <Link
-              to="/blog/"
+              to="/portfolio/"
               activeClassName={desktopMenuStyles.activePage}
-              getProps={checkIfPartiallyActive}
             >
-              {t('menuItemBlog').toLowerCase()}
+              {t('menuItemPortfolio').toLowerCase()}
               <span>.</span>
             </Link>
           </li>
           <li>
             <Link to="/prijzen/" activeClassName={desktopMenuStyles.activePage}>
               {t('menuItemPrices').toLowerCase()}
+              <span>.</span>
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/blog/"
+              activeClassName={desktopMenuStyles.activePage}
+              getProps={checkIfPartiallyActive}
+            >
+              {t('menuItemBlog').toLowerCase()}
               <span>.</span>
             </Link>
           </li>
