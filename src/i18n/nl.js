@@ -113,34 +113,46 @@ export default {
   portfolioPZbio:
     '<strong>Prio Zorg</strong> is een dynamische hulpverleningsorganisatie die jongeren begeleidt op weg naar zelfredzaamheid en een betekenisvol leven. Voor jongvolwassenen die vastlopen en de controle over hun leven verliezen, biedt Priozorg deskundige ondersteuning in de vorm van coaching, mentoring, en opvoedkundige begeleiding.',
 
-  superPowersTitle: 'Diensten',
-  superPowersServices: 'Diensten',
-  superPowersPrices: 'Prijzen',
-  superPowersIntro:
+  powersTitle: 'Diensten',
+  powersServices: 'Diensten',
+  powersPrices: 'Prijzen',
+  powersIntro:
     'Hier een overzicht van de verschillende diensten die wij aanbieden. Deze diensten zijn ontworpen om bedrijven te helpen met hun online aanwezigheid en efficiëntie.',
-  superPowersWebsite: 'Website laten maken',
-  superPowersWebsiteInfo:
+  powersWebsite: 'Website <small>laten maken</small>',
+  powersWebsiteTitle: 'Website laten maken: Op maat en professioneel',
+  powersWebsiteInfo:
     'Op maat gemaakte websites die perfect aansluiten bij jouw branding en doelstellingen. Wij ontwerpen professionele, gebruiksvriendelijke websites die zorgen voor een sterke online aanwezigheid en optimale gebruikerservaring.',
-  superPowersWebsiteIntro:
+  powersWebsiteIntro:
     'Bij Menefex bieden we op maat gemaakte websites die perfect aansluiten bij jouw merk, doelen en doelgroep. Onze focus ligt op het ontwerpen van websites die zowel visueel aantrekkelijk als functioneel zijn. Of je nu een start-up bent of een gevestigde onderneming, wij zorgen ervoor dat jouw online aanwezigheid krachtig, modern en gebruiksvriendelijk is.',
-  superPowersWebsiteDetail:
+  powersWebsiteDetail:
     '<h3><strong>Wat je van ons kunt verwachten:</strong></h3><ol><li><h4>Uniek Maatwerkdesign</h4><p>Elke website die wij ontwerpen, is uniek. We nemen jouw wensen en branding als uitgangspunt om een visueel aantrekkelijk ontwerp te creëren dat zich onderscheidt van de concurrentie. Geen standaardtemplates, maar een website die jouw verhaal vertelt.</p></li><li><h4>Snelle Laadtijden</h4><p>Wij begrijpen hoe belangrijk snelheid is voor zowel gebruikers als zoekmachines. Daarom optimaliseren we jouw website voor snelle laadtijden, zodat bezoekers niet afhaken en zoekmachines jouw website hoger waarderen.</p></li><li><h4>Gebruiksvriendelijke Interface en Ervaring</h4><p>Een goede website is eenvoudig te navigeren. Wij zorgen voor een intuïtieve gebruikerservaring, waarbij bezoekers snel en gemakkelijk de informatie vinden die ze zoeken. Dit verbetert niet alleen de gebruikerstevredenheid, maar verhoogt ook de kans op conversies.</p></li><li><h4>Toekomstbestendig en Compatibel</h4><p>Onze websites voldoen aan alle moderne technische eisen en zijn compatibel met alle populaire browsers en apparaten. Dit betekent dat jouw website overal en altijd toegankelijk is, of het nu op desktop, tablet of mobiel is.</p></li></ol><br /><h3><strong>Voordelen van een website op maat:</strong></h3><ul><li><p><strong>SEO-vriendelijk:</strong> Onze websites zijn volledig geoptimaliseerd voor zoekmachines, wat betekent dat je online beter gevonden wordt.</p></li><li><p><strong>Flexibiliteit:</strong> De website kan meegroeien met je bedrijf. Of je nu op zoek bent naar een webshop, blog of portfolio, wij integreren naadloos alle functionaliteiten.</p></li><li><p><strong>Beveiliging:</strong> Jouw website is veilig en voldoet aan alle moderne beveiligingsstandaarden, zoals SSL-certificaten.</p></li></ul></div>',
-  superPowersWebapp: 'Webapplicatie laten maken',
-  superPowersWebappInfo:
+  powersWebapp: 'Webapplicatie <small>laten maken</small>',
+  powersWebappTitle:
+    'Webapplicatie Laten Maken: Efficiëntie en Innovatie op Maat',
+  powersWebappInfo:
     'Professioneel op maat gemaakte webapplicaties die volledig aansluiten op jouw bedrijfsbehoeften. Onze webapplicaties zijn gebruiksvriendelijk en ontworpen om jouw processen te optimaliseren en de efficiëntie te verhogen.',
-  superPowersWebshop: 'Webshop laten maken',
-  superPowersWebshopInfo:
+  powersWebappIntro:
+    'Bij Menefex creëren we professioneel op maat gemaakte webapplicaties die naadloos aansluiten op de specifieke behoeften van jouw bedrijf. Onze applicaties zijn ontworpen met het oog op gebruiksvriendelijkheid en efficiëntie, zodat ze je dagelijkse processen optimaliseren en de productiviteit binnen je organisatie verhogen. Of je nu een klein bedrijf of een grote onderneming bent, wij ontwikkelen webapplicaties die perfect passen bij jouw unieke doelen.',
+  powersWebappDetail:
+    '<h3><strong>Wat Je Van Ons Kunt Verwachten:</strong></h3><ol><li><h4>Volledig Maatwerk en Functionaliteit</h4><p>Elke webapplicatie die we ontwikkelen, is volledig afgestemd op jouw bedrijfsprocessen en wensen. Geen generieke oplossingen, maar een webapp die is gebouwd om jouw workflows te stroomlijnen, tijd te besparen en de bedrijfsvoering efficiënter te maken. Van projectmanagementtools tot klantportalen en boekhoudsystemen: wij bouwen het voor je.</p></li><li><h4>Gebruiksvriendelijk en Intuïtief Ontwerp</h4><p>Een goede webapplicatie moet eenvoudig te gebruiken zijn, zonder in te leveren op functionaliteit. We ontwerpen een interface die voor iedereen intuïtief aanvoelt, ongeacht technische ervaring. Dit zorgt voor een soepele gebruikservaring en verhoogt de productiviteit van je team.</p></li><li><h4>Optimale Prestaties, Altijd en Overal</h4><p>Onze webapplicaties zijn geoptimaliseerd voor gebruik op alle apparaten en in alle omstandigheden. Of je medewerkers nu op kantoor werken, thuis, of onderweg zijn: de applicatie functioneert overal even goed. Bovendien bieden we offline gebruiksmogelijkheden, zodat je applicatie altijd beschikbaar is, zelfs zonder internetverbinding.</p></li><li><h4>Integratie van Geavanceerde Functionaliteiten</h4><p>Moderne webapplicaties vragen om meer dan alleen basisfunctionaliteit. Daarom integreren we geavanceerde functies zoals toegang tot de camera, microfoon, GPS en andere hardware van apparaten. Dit zorgt ervoor dat je webapp niet alleen functioneel, maar ook innovatief en toekomstbestendig is.</p></li></ol><br /><h3><strong>Voordelen Van Een Op Maat Gemaakte Webapplicatie:</strong></h3><ul><li><p><strong>Procesoptimalisatie:</strong> Door je bedrijfsprocessen te digitaliseren en automatiseren, bespaar je tijd en geld. Onze webapps zijn erop gericht om je werkstromen te vereenvoudigen en de efficiëntie te verhogen.</p></li><li><p><strong>Toekomstbestendig:</strong> De applicaties zijn gebouwd met moderne technologieën, wat betekent dat ze gemakkelijk schaalbaar en uitbreidbaar zijn naarmate je bedrijf groeit.</p></li><li><p><strong>Veiligheid en Betrouwbaarheid:</strong> Veiligheid staat voorop bij ons. Onze webapplicaties zijn voorzien van de laatste beveiligingsprotocollen en voldoen aan alle relevante privacy- en veiligheidsnormen, zodat je data altijd veilig is.</p></li><li><p><strong>SEO-vriendelijk:</strong> Hoewel webapplicaties vaak gericht zijn op specifieke processen binnen een bedrijf, zorgen wij ervoor dat ze, indien relevant, geoptimaliseerd zijn voor zoekmachines om zo zichtbaar mogelijk te zijn.</p></li></ul>',
+  powersWebshop: 'Webshop <small>laten maken</small>',
+  powersWebshopTitle: 'Webshop laten maken',
+  powersWebshopInfo:
     'Professioneel ontworpen webshops die volledig zijn afgestemd op jouw producten en doelgroep. Onze op maat gemaakte webshops bieden een gebruiksvriendelijke interface en optimale functionaliteit om jouw online verkoop te maximaliseren.',
-  superPowersEmail: 'E-mail template laten maken',
-  superPowersEmailInfo:
+  powersEmail: 'E-mail template <small>laten maken</small>',
+  powersEmailTitle: 'E-mail template laten maken',
+  powersEmailInfo:
     'Op maat gemaakte e-mail templates die passen bij jouw branding en zorgen voor een consistente en professionele uitstraling in al je e-mailcommunicatie.',
-  superPowersMaintenance: 'Onderhoud en / of updates uitvoeren',
-  superPowersMaintenanceInfo:
+  powersMaintenance:
+    'Onderhoud <small>en / of</small> updates <small>uit laten voeren</small>',
+  powersMaintenanceTitle: 'Onderhoud en / of updates uit laten voeren',
+  powersMaintenanceInfo:
     'Regelmatig onderhoud en updates om de optimale prestaties en veiligheid van je website of webapplicatie te garanderen. Wij zorgen ervoor dat alles up-to-date blijft en probleemloos functioneert.',
-  superPowersSeo: 'Zoekmachine Optimalisatie (SEO)',
-  superPowersSeoInfo:
+  powersSeo: 'Zoekmachine Optimalisatie <small>(SEO)</small>',
+  powersSeoTitle: 'Zoekmachine Optimalisatie (SEO)',
+  powersSeoInfo:
     'Verbeter de vindbaarheid van je website in zoekmachines met gerichte SEO-strategieën. Wij optimaliseren je website om hogere posities te behalen in zoekresultaten, zodat je meer verkeer en klanten aantrekt.',
-  superPowersMoreInfo: 'Meer info',
+  powersMoreInfo: 'Meer info',
 
   blogPostedOn: 'Gepost:',
   blogAuthor: 'Auteur',

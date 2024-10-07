@@ -8,7 +8,7 @@ import useSiteMetadata from '../../hooks/use-site-metadata';
 import Layout from '../../components/layout';
 import SEO from '../../components/seo';
 
-import * as superPowersStyles from '../../styles/modules/superpowers.module.scss';
+import * as powersStyles from '../../styles/modules/powers.module.scss';
 
 const WebsitePage = () => {
   const { t, isHydrated } = useTranslation();
@@ -18,27 +18,27 @@ const WebsitePage = () => {
   return (
     <Layout>
       <h1 className="page-title">
-        {t('superPowersWebsite')}
+        {t('powersWebsiteTitle')}
         <span>.</span>
       </h1>
 
-      <h2 className="page-sub">{t('superPowersWebsiteIntro')}</h2>
+      <h2 className="page-sub">{t('powersWebsiteIntro')}</h2>
 
       <br />
 
       <div
-        dangerouslySetInnerHTML={{ __html: t('superPowersWebsiteDetail') }}
+        dangerouslySetInnerHTML={{ __html: t('powersWebsiteDetail') }}
         className="page-content"
       />
 
-      <section className={superPowersStyles.buttons}>
+      <div className={powersStyles.buttons}>
         <Link to="/diensten/">
-          <i className="fa-solid fa-angles-left" /> {t('superPowersServices')}
+          <i className="fa-solid fa-angles-left" /> {t('powersServices')}
         </Link>
         <Link to="/prijzen/">
-          {t('superPowersPrices')} <i className="fa-solid fa-angles-right" />
+          {t('powersPrices')} <i className="fa-solid fa-angles-right" />
         </Link>
-      </section>
+      </div>
     </Layout>
   );
 };

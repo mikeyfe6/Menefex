@@ -1,6 +1,6 @@
 @import '../configs/globals';
 
-.super-powers {
+.powers {
   display: flex;
   flex-wrap: wrap;
   gap: 1em;
@@ -22,11 +22,11 @@
       border: 2px solid $primary-color;
       border-radius: 5px;
       width: 100%;
-      margin: 0.75em 0 1.25em;
+      margin: 1em 0 2em;
     }
 
     > p {
-      margin: 0 0 1.5em;
+      margin: 0 0 3em;
     }
 
     > a {
@@ -45,7 +45,12 @@
       font-weight: 600;
       color: $spec-color;
 
-      @include fluidTyping(20, 22);
+      small {
+        font-size: 75%;
+        color: white;
+      }
+
+      @include fluidTyping(22, 20);
     }
   }
 }

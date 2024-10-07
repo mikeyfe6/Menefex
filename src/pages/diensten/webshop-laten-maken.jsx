@@ -8,7 +8,7 @@ import useSiteMetadata from '../../hooks/use-site-metadata';
 import Layout from '../../components/layout';
 import SEO from '../../components/seo';
 
-import * as superPowersStyles from '../../styles/modules/superpowers.module.scss';
+import * as powersStyles from '../../styles/modules/powers.module.scss';
 
 const WebshopPage = () => {
   const { t, isHydrated } = useTranslation();
@@ -18,16 +18,19 @@ const WebshopPage = () => {
   return (
     <Layout>
       <h1 className="page-title">
-        {t('superPowersWebshop')}
+        {t('powersWebshopTitle')}
         <span>.</span>
       </h1>
-      <h2 className="page-sub">{t('superPowersWebshopInfo')}</h2>
+      <h2 className="page-sub">{t('powersWebshopInfo')}</h2>
 
-      <section className={superPowersStyles.buttons}>
+      <div className={powersStyles.buttons}>
         <Link to="/diensten/">
-          <i className="fa-solid fa-angles-left" /> {t('superPowersServices')}
+          <i className="fa-solid fa-angles-left" /> {t('powersServices')}
         </Link>
-      </section>
+        <Link to="/prijzen/">
+          {t('powersPrices')} <i className="fa-solid fa-angles-right" />
+        </Link>
+      </div>
     </Layout>
   );
 };

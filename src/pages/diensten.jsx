@@ -8,9 +8,9 @@ import useSiteMetadata from '../hooks/use-site-metadata';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-import * as superPowersStyles from '../styles/modules/superpowers.module.scss';
+import * as powersStyles from '../styles/modules/powers.module.scss';
 
-const SuperPowersPage = () => {
+const powersPage = () => {
   const { t, isHydrated } = useTranslation();
 
   if (!isHydrated) return null;
@@ -18,59 +18,57 @@ const SuperPowersPage = () => {
   return (
     <Layout>
       <h1 className="page-title">
-        {t('superPowersTitle')}
+        {t('powersTitle')}
         <span>.</span>
       </h1>
-      <h2 className="page-sub">{t('superPowersIntro')}</h2>
-      <section className={superPowersStyles.superPowers}>
+      <h2 className="page-sub">{t('powersIntro')}</h2>
+      <section className={powersStyles.powers}>
         <div>
-          <h3>{t('superPowersWebsite')}</h3>
+          <h3 dangerouslySetInnerHTML={{ __html: t('powersWebsite') }} />
           <hr />
-          <p>{t('superPowersWebsiteInfo')}</p>
+          <p>{t('powersWebsiteInfo')}</p>
           <Link to="/diensten/website-laten-maken/" name="service">
-            {t('superPowersMoreInfo')}
+            {t('powersMoreInfo')}
           </Link>
         </div>
         <div>
-          <h3>{t('superPowersWebapp')}</h3>
+          <h3 dangerouslySetInnerHTML={{ __html: t('powersWebapp') }} />
           <hr />
-          <p>{t('superPowersWebappInfo')}</p>
+          <p>{t('powersWebappInfo')}</p>
           <Link to="/diensten/webapplicatie-laten-maken/" name="service">
-            {t('superPowersMoreInfo')}
+            {t('powersMoreInfo')}
           </Link>
         </div>
         <div>
-          <h3>{t('superPowersWebshop')}</h3>
+          <h3 dangerouslySetInnerHTML={{ __html: t('powersWebshop') }} />
           <hr />
-          <p>{t('superPowersWebshopInfo')}</p>
+          <p>{t('powersWebshopInfo')}</p>
           <Link to="/diensten/webshop-laten-maken/" name="service">
-            {t('superPowersMoreInfo')}
+            {t('powersMoreInfo')}
           </Link>
         </div>
         <div>
-          <h3>{t('superPowersEmail')}</h3>
+          <h3 dangerouslySetInnerHTML={{ __html: t('powersEmail') }} />
           <hr />
-          <p>{t('superPowersEmailInfo')}</p>
+          <p>{t('powersEmailInfo')}</p>
           <Link to="/diensten/email-template-laten-maken/" name="service">
-            {t('superPowersMoreInfo')}
+            {t('powersMoreInfo')}
           </Link>
         </div>
         <div>
-          <h3
-            dangerouslySetInnerHTML={{ __html: t('superPowersMaintenance') }}
-          />
+          <h3 dangerouslySetInnerHTML={{ __html: t('powersMaintenance') }} />
           <hr />
-          <p>{t('superPowersMaintenanceInfo')}</p>
+          <p>{t('powersMaintenanceInfo')}</p>
           <Link to="/diensten/onderhoud-updates-uitvoeren/" name="service">
-            {t('superPowersMoreInfo')}
+            {t('powersMoreInfo')}
           </Link>
         </div>
         <div>
-          <h3>{t('superPowersSeo')}</h3>
+          <h3 dangerouslySetInnerHTML={{ __html: t('powersSeo') }} />
           <hr />
-          <p>{t('superPowersSeoInfo')}</p>
+          <p>{t('powersSeoInfo')}</p>
           <Link to="/diensten/zoekmachine-optimalisatie/" name="service">
-            {t('superPowersMoreInfo')}
+            {t('powersMoreInfo')}
           </Link>
         </div>
       </section>
@@ -78,7 +76,7 @@ const SuperPowersPage = () => {
   );
 };
 
-export default SuperPowersPage;
+export default powersPage;
 
 export const Head = () => {
   const { title, siteUrl } = useSiteMetadata();
