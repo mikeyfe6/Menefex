@@ -40,20 +40,15 @@ const Hero = () => {
         inline: 'nearest',
       };
       section.scrollIntoView(scrollOptions);
-      return;
+    } else {
+      const offset = 175;
+      const scrollOptions = {
+        top: section.offsetTop - offset,
+        behavior: 'smooth',
+      };
+
+      window.scrollTo(scrollOptions);
     }
-
-    const offset = 175;
-    const scrollOptions = {
-      behavior: 'smooth',
-      block: 'start',
-      inline: 'nearest',
-    };
-
-    window.scrollTo({
-      top: section.offsetTop - offset,
-      ...scrollOptions,
-    });
   };
 
   return (

@@ -23,15 +23,11 @@ const IndexPage = () => {
 
       <div className="vertical-line-long" />
 
-      <div id="biografiescroll" />
-
       <h3 className="home-title">{t('homeBiographyTitle')}</h3>
 
       <Smallbio />
 
       <div className="vertical-line-short" />
-
-      <div id="actualscroll" />
 
       <h3 className="home-title">{t('homeActualTitle')}</h3>
 
@@ -39,15 +35,11 @@ const IndexPage = () => {
 
       <div className="vertical-line-short" />
 
-      <div id="servicescroll" />
-
       <h3 className="home-title">{t('homeServicesTitle')}</h3>
 
       <Service />
 
       <div className="vertical-line-short" />
-
-      <div id="projectscroll" />
 
       <h3 className="home-title">{t('homeProjectsTitle')}</h3>
 
