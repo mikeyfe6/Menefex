@@ -9,6 +9,12 @@ body {
   font-family: $poppins-font;
   color: $body-color;
   line-height: 1.6;
+  overflow-x: hidden;
+
+  &:has(#backdrop),
+  &:has(.cookie) {
+    overflow: hidden;
+  }
 }
 
 html,
@@ -17,12 +23,6 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
-
-  &:has(#backdrop),
-  &:has(.cookie) {
-    overflow: hidden;
-  }
 }
 
 .menefex {
@@ -231,6 +231,10 @@ textarea {
 .page-title {
   font-family: $right-font;
   margin-bottom: 0.375em;
+
+  small {
+    font-size: 75%;
+  }
 }
 
 .page-sub {

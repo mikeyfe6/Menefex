@@ -61,6 +61,10 @@
   margin-top: 3em;
   gap: 1.5em;
 
+  @include mobile {
+    justify-content: center;
+  }
+
   > a {
     @include primaryButton;
 
