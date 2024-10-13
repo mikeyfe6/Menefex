@@ -454,7 +454,8 @@ span.lazy-color {
 }
 
 #hubspot-messages-iframe-container {
-  .kplHMR {
+  /* stylelint-disable-next-line selector-class-pattern */
+  [class*='WidgetWrapper__Wrapper'] {
     padding: 20px !important;
   }
 }
