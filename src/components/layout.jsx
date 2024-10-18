@@ -12,7 +12,6 @@ import Footer from './footer';
 import ResponsiveTag from './helpers/responsiveTag';
 
 import '../styles/layout.scss';
-import '../styles/cookie.scss';
 
 import minilogo from '../logo/Menefex-icon.svg';
 

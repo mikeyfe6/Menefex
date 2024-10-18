@@ -1,5 +1,6 @@
-@import './configs/globals';
-@import './configs/resets';
+@use './customs' as *;
+@use 'resets';
+@use 'cookie';
 
 html {
   scroll-behavior: smooth;

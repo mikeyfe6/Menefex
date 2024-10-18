@@ -1,4 +1,4 @@
-@import '../configs/globals';
+@use '../customs' as *;
 
 .prices {
   display: flex;

@@ -1,6 +1,6 @@
 @use 'sass:color';
 
-@import '../configs/globals';
+@use '../customs' as *;
 
 .info {
   padding: 2.5em;

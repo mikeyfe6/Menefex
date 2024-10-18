@@ -1,4 +1,4 @@
-@import '../configs/globals';
+@use '../customs' as *;
 
 .notes {
   background: linear-gradient(145deg, $spec-color, $very-color);

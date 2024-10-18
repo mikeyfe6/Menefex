@@ -1,6 +1,11 @@
 @use 'sass:color';
 @use 'sass:math';
 
+@use 'colors' as *;
+@use 'variables' as *;
+@use 'mediaqueries' as *;
+@use 'fonts' as *;
+
 @mixin fluidTyping($font-min, $font-max, $screen-min: 320, $screen-max: 1400) {
   font-size: #{$font-min}px;
 

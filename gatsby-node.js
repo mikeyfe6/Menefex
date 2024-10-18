@@ -104,6 +104,10 @@ exports.createResolvers = ({ createResolvers }) => {
 };
 
 const captureScreenshot = async (url, filename, delay) => {
+  const screenshotDir = path.resolve(__dirname, 'public/project-images');
+  const screenshotPath = `${screenshotDir}/${filename}.png`;
+  const backupScreenshotPath = `${screenshotDir}/${filename}-backup.png`;
+
   try {
     const browser = await puppeteer.launch({
       args: [
@@ -111,10 +115,11 @@ const captureScreenshot = async (url, filename, delay) => {
         '--disable-setuid-sandbox',
         '--disable-web-security',
         '--disable-features=IsolateOrigins,site-per-process',
+        '--ignore-certificate-errors',
       ],
     });
-    const page = await browser.newPage();
 
+    const page = await browser.newPage();
     await page.setCacheEnabled(false);
     await page.setViewport({
       width: 1920,
@@ -122,21 +127,30 @@ const captureScreenshot = async (url, filename, delay) => {
       deviceScaleFactor: 1,
     });
 
-    await page.goto(url);
+    await page.goto(url, { waitUntil: 'networkidle2' });
     await new Promise((resolve) => setTimeout(resolve, delay));
-
-    const screenshotDir = path.resolve(__dirname, 'public/project-images');
 
     await fs.mkdir(screenshotDir, { recursive: true });
 
     await page.screenshot({
-      path: `${screenshotDir}/${filename}.png`,
+      path: screenshotPath,
     });
 
-    console.log(`Screenshot captured for ${url}`);
+    await fs.copyFile(screenshotPath, backupScreenshotPath);
+    console.log(`Screenshot captured and backed up for ${url}`);
+
     await browser.close();
   } catch (error) {
     console.error(`Error capturing screenshot for ${url}:`, error);
+
+    try {
+      await fs.access(backupScreenshotPath);
+      console.log(`Using backup screenshot for ${url}`);
+
+      await fs.copyFile(backupScreenshotPath, screenshotPath);
+    } catch (backupError) {
+      console.error(`No backup screenshot available for ${url}:`, backupError);
+    }
   }
 };
 

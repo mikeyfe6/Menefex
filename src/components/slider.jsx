@@ -14,12 +14,12 @@ import {
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import 'swiper/scss';
-import 'swiper/scss/navigation';
-import 'swiper/scss/pagination';
-import 'swiper/scss/scrollbar';
-import 'swiper/scss/parallax';
-import 'swiper/scss/autoplay';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import 'swiper/css/parallax';
+import 'swiper/css/autoplay';
 
 import useTranslation from '../hooks/use-translation';
 
@@ -29,7 +29,10 @@ const Projects = () => {
   const data = useStaticQuery(graphql`
     query {
       slideShow: allFile(
-        filter: { sourceInstanceName: { eq: "project-images" } }
+        filter: {
+          sourceInstanceName: { eq: "project-images" }
+          name: { regex: "/^(?!.*-backup).*$/i" }
+        }
         sort: { base: ASC }
       ) {
         edges {
