@@ -19,7 +19,7 @@
     "postinstall": "if [ \"$NETLIFY\" = \"true\" ]; then node node_modules/puppeteer/install.mjs; fi"
   },
   "dependencies": {
-    "@contentful/live-preview": "^4.5.11",
+    "@contentful/live-preview": "^4.5.13",
     "@contentful/rich-text-html-renderer": "^16.6.10",
     "@contentful/rich-text-types": "^16.8.5",
     "@sendgrid/mail": "^8.1.4",
@@ -44,7 +44,7 @@
     "gatsby-source-filesystem": "^5.13.1",
     "gatsby-transformer-sharp": "^5.13.1",
     "google-map-react": "^2.2.1",
-    "i18next": "^23.16.0",
+    "i18next": "^23.16.2",
     "i18next-browser-languagedetector": "^8.0.0",
     "i18next-http-backend": "^2.6.2",
     "puppeteer": "^23.6.0",
@@ -52,12 +52,12 @@
     "react-cookie-consent": "^9.0.0",
     "react-dom": "^18.3.1",
     "react-i18next": "^15.0.3",
-    "sass": "^1.80.2",
+    "sass": "^1.80.3",
     "swiper": "^11.1.14"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.25.8",
-    "eslint": "^9.12.0",
+    "eslint": "^9.13.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-import": "^2.31.0",

@@ -118,8 +118,9 @@ export default {
   powersPrices: 'Prijzen',
   powersIntro:
     'Hier een overzicht van de verschillende diensten die wij aanbieden. Deze diensten zijn ontworpen om bedrijven te helpen met hun online aanwezigheid en efficiëntie.',
-  powersWebsite: 'Website <small>laten maken</small>',
-  powersWebsiteTitle: 'Website laten maken: Op maat en professioneel',
+  powersWebsite: `Website <small>laten maken</small>`,
+  powersWebsiteTitle:
+    'Website laten maken: <small>Op maat en professioneel</small><span>.</span>',
   powersWebsiteInfo:
     'Op maat gemaakte websites die perfect aansluiten bij jouw branding en doelstellingen. Wij ontwerpen professionele, gebruiksvriendelijke websites die zorgen voor een sterke online aanwezigheid en optimale gebruikerservaring.',
   powersWebsiteIntro:
@@ -128,7 +129,7 @@ export default {
     '<h3><strong>Wat je van ons kunt verwachten:</strong></h3><ol><li><h4>Uniek Maatwerkdesign</h4><p>Elke website die wij ontwerpen, is uniek. We nemen jouw wensen en branding als uitgangspunt om een visueel aantrekkelijk ontwerp te creëren dat zich onderscheidt van de concurrentie. Geen standaardtemplates, maar een website die jouw verhaal vertelt.</p></li><li><h4>Snelle Laadtijden</h4><p>Wij begrijpen hoe belangrijk snelheid is voor zowel gebruikers als zoekmachines. Daarom optimaliseren we jouw website voor snelle laadtijden, zodat bezoekers niet afhaken en zoekmachines jouw website hoger waarderen.</p></li><li><h4>Gebruiksvriendelijke Interface en Ervaring</h4><p>Een goede website is eenvoudig te navigeren. Wij zorgen voor een intuïtieve gebruikerservaring, waarbij bezoekers snel en gemakkelijk de informatie vinden die ze zoeken. Dit verbetert niet alleen de gebruikerstevredenheid, maar verhoogt ook de kans op conversies.</p></li><li><h4>Toekomstbestendig en Compatibel</h4><p>Onze websites voldoen aan alle moderne technische eisen en zijn compatibel met alle populaire browsers en apparaten. Dit betekent dat jouw website overal en altijd toegankelijk is, of het nu op desktop, tablet of mobiel is.</p></li></ol><br /><h3><strong>Voordelen van een website op maat:</strong></h3><ul><li><p><strong>SEO-vriendelijk:</strong> Onze websites zijn volledig geoptimaliseerd voor zoekmachines, wat betekent dat je online beter gevonden wordt.</p></li><li><p><strong>Flexibiliteit:</strong> De website kan meegroeien met je bedrijf. Of je nu op zoek bent naar een webshop, blog of portfolio, wij integreren naadloos alle functionaliteiten.</p></li><li><p><strong>Beveiliging:</strong> Jouw website is veilig en voldoet aan alle moderne beveiligingsstandaarden, zoals SSL-certificaten.</p></li></ul></div>',
   powersWebapp: 'Webapplicatie <small>laten maken</small>',
   powersWebappTitle:
-    'Webapplicatie Laten Maken: Efficiëntie en Innovatie op Maat',
+    'Webapplicatie Laten Maken: <small>Efficiëntie en Innovatie op Maat</small><span>.</span>',
   powersWebappInfo:
     'Professioneel op maat gemaakte webapplicaties die volledig aansluiten op jouw bedrijfsbehoeften. Onze webapplicaties zijn gebruiksvriendelijk en ontworpen om jouw processen te optimaliseren en de efficiëntie te verhogen.',
   powersWebappIntro:

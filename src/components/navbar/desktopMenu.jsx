@@ -3,8 +3,9 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { useTranslation } from 'react-i18next';
 
-import logo from '../../logo/Menefex-logo.svg';
 import HamburgerBtn from './hamburgerBtn';
+
+import logo from '../../logo/Menefex-logo.svg';
 
 import * as desktopMenuStyles from '../../styles/modules/desktopMenu.module.scss';
 

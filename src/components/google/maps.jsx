@@ -2,11 +2,11 @@ import React from 'react';
 
 import GoogleMapReact from 'google-map-react';
 
+import useSiteMetadata from '../../hooks/use-site-metadata';
+
 import mapsLogo from '../../logo/Menefex-icon.svg';
 
 import * as mapsStyles from '../../styles/modules/maps.module.scss';
-
-import useSiteMetadata from '../../hooks/use-site-metadata';
 
 const defaultProps = {
   center: {

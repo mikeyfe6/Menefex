@@ -17,10 +17,10 @@ const WebappPage = () => {
 
   return (
     <Layout>
-      <h1 className="page-title">
-        {t('powersWebappTitle')}
-        <span>.</span>
-      </h1>
+      <h1
+        dangerouslySetInnerHTML={{ __html: t('powersWebappTitle') }}
+        className="page-title"
+      />
 
       <h2 className="page-sub">{t('powersWebappIntro')}</h2>
 

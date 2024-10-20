@@ -1,6 +1,7 @@
 import { useEffect, useContext } from 'react';
 
 import { useTranslation } from 'react-i18next';
+
 import { HydrationContext } from '../context/hydration-context';
 
 const useTranslationSetup = () => {

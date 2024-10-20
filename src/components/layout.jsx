@@ -11,9 +11,9 @@ import Footer from './footer';
 
 import ResponsiveTag from './helpers/responsiveTag';
 
-import '../styles/layout.scss';
-
 import minilogo from '../logo/Menefex-icon.svg';
+
+import '../styles/layout.scss';
 
 const Layout = ({ children }) => {
   const { t, isHydrated } = useTranslation();

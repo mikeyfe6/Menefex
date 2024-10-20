@@ -17,10 +17,10 @@ const WebsitePage = () => {
 
   return (
     <Layout>
-      <h1 className="page-title">
-        {t('powersWebsiteTitle')}
-        <span>.</span>
-      </h1>
+      <h1
+        dangerouslySetInnerHTML={{ __html: t('powersWebsiteTitle') }}
+        className="page-title"
+      />
 
       <h2 className="page-sub">{t('powersWebsiteIntro')}</h2>
 
