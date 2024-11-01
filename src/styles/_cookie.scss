@@ -12,14 +12,12 @@
     background: linear-gradient(145deg, $primary-color, $button-hover);
     opacity: 0.95;
     color: $fourth-color;
-
     border-bottom: 7.5px solid $secondary-color;
     border-top: 7.5px solid $primary-color;
     width: 100%;
     max-width: 1100px;
     margin: 0 auto;
     padding: 1.5rem;
-
     position: absolute;
     left: 50%;
     transform: translate(-50%, -12.5%);

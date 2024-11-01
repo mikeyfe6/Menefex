@@ -42,7 +42,6 @@
         > a {
           font-family: $right-font;
           color: #535252;
-
           opacity: 0.75;
 
           @include smoothTrans;
@@ -50,8 +49,9 @@
           @include fluidTyping(20, 24);
 
           &:hover {
-            @include smoothTrans;
             color: $textbase-color;
+
+            @include smoothTrans;
           }
 
           > span {

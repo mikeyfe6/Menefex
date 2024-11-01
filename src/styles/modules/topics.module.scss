@@ -54,11 +54,9 @@
     a {
       background: linear-gradient(to right, $fourth-color, #f2f2f2);
       padding: 1em;
-
       display: flex;
       flex-direction: column;
       gap: 0.5em;
-
       border-width: 2px;
       border-style: solid;
       border-radius: $medium-radius;

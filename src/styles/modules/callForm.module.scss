@@ -38,10 +38,8 @@
   input,
   textarea {
     padding: 0.375em 0.675em;
-
     background: transparent;
     color: $primary-color;
-
     border-bottom: 1.5px solid $spec-color;
 
     @include smoothTrans;
