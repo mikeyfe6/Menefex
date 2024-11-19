@@ -47,17 +47,17 @@
     "i18next": "^23.16.5",
     "i18next-browser-languagedetector": "^8.0.0",
     "i18next-http-backend": "^2.6.2",
-    "puppeteer": "^23.7.1",
+    "puppeteer": "^23.8.0",
     "react": "^18.3.1",
     "react-cookie-consent": "^9.0.0",
     "react-dom": "^18.3.1",
     "react-i18next": "^15.1.1",
-    "sass": "^1.80.6",
-    "swiper": "^11.1.14"
+    "sass": "^1.81.0",
+    "swiper": "^11.1.15"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.25.9",
-    "eslint": "^9.14.0",
+    "eslint": "^9.15.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-import": "^2.31.0",
