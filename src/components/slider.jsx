@@ -226,6 +226,8 @@ const Projects = () => {
     </div>
   );
 
+  // TODO: swiper met thumbnails fixen
+
   return (
     <section id="portfolio" data-scroll-center>
       <Swiper
