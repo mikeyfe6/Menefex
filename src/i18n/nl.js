@@ -178,7 +178,7 @@ export default {
   pricesCallBack: 'terugbelverzoek',
 
   priceTableVat: '(excl. btw)',
-  priceTableDiscount: '*ACTIE: 10% korting',
+  priceTableDiscount: '*ACTIE: 5% korting',
   priceTableContains: '... bevat:',
   priceTablePages: "pagina's",
   priceTableCustomDesign: 'Maatwerk Design',

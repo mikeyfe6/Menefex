@@ -10,7 +10,7 @@ const PriceTable = () => {
   const { t, isHydrated } = useTranslation();
 
   const SalePrice = ({ ogPrice }) => {
-    const totalPrice = ogPrice - (ogPrice / 100) * 10;
+    const totalPrice = ogPrice - (ogPrice / 100) * 5;
     const endResult = totalPrice;
     const euroFormat = new Intl.NumberFormat('nl-NL', {
       style: 'currency',

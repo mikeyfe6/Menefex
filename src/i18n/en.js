@@ -178,7 +178,7 @@ export default {
   pricesCallBack: 'callback request',
 
   priceTableVat: 'excl. VAT',
-  priceTableDiscount: '*PROMO: 10% discount',
+  priceTableDiscount: '*PROMO: 5% discount',
   priceTableContains: '... contains:',
   priceTablePages: 'pages',
   priceTableCustomDesign: 'Custom Design',
