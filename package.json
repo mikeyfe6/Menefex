@@ -19,7 +19,7 @@
     "postinstall": "if [ \"$NETLIFY\" = \"true\" ]; then node node_modules/puppeteer/install.mjs; fi"
   },
   "dependencies": {
-    "@contentful/live-preview": "^4.6.3",
+    "@contentful/live-preview": "^4.6.5",
     "@contentful/rich-text-html-renderer": "^17.0.0",
     "@contentful/rich-text-types": "^17.0.0",
     "@sendgrid/mail": "^8.1.4",
@@ -46,13 +46,13 @@
     "google-map-react": "^2.2.1",
     "i18next": "^24.2.1",
     "i18next-browser-languagedetector": "^8.0.2",
-    "i18next-http-backend": "^3.0.1",
-    "puppeteer": "^24.0.0",
+    "i18next-http-backend": "^3.0.2",
+    "puppeteer": "^24.1.1",
     "react": "^18.3.1",
     "react-cookie-consent": "^9.0.0",
     "react-dom": "^18.3.1",
     "react-i18next": "^15.4.0",
-    "sass": "^1.83.1",
+    "sass": "^1.83.4",
     "swiper": "^11.2.1"
   },
   "devDependencies": {
@@ -63,10 +63,10 @@
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-react": "^7.37.3",
+    "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-webpack-plugin": "^4.2.0",
-    "stylelint": "^16.13.0",
+    "stylelint": "^16.13.2",
     "stylelint-config-prettier-scss": "^1.0.0",
     "stylelint-config-standard-scss": "^14.0.0"
   },
