@@ -1,18 +1,18 @@
-const path = require('path');
-const fs = require('fs').promises;
+const path = require("path");
+const fs = require("fs").promises;
 
-const puppeteer = require('puppeteer');
+const puppeteer = require("puppeteer");
 
-const { documentToHtmlString } = require('@contentful/rich-text-html-renderer');
-const { BLOCKS, INLINES } = require('@contentful/rich-text-types');
+const { documentToHtmlString } = require("@contentful/rich-text-html-renderer");
+const { BLOCKS, INLINES } = require("@contentful/rich-text-types");
 
-const fetchLastCommitDate = require('./src/utils/fetchLastCommitDate');
+const fetchLastCommitDate = require("./src/utils/fetchLastCommitDate");
 
 exports.createResolvers = ({ createResolvers }) => {
   createResolvers({
     ContentfulBlogPostBody: {
       rssHtml: {
-        type: 'String',
+        type: "String",
         resolve: (source) => {
           const document = JSON.parse(source.raw);
           const options = {
@@ -23,19 +23,19 @@ exports.createResolvers = ({ createResolvers }) => {
 
                 const menefexImages = [
                   {
-                    id: '7mV6EvJJrv9UThjCKcOuou',
-                    url: '//images.ctfassets.net/nn38kx5zm1zj/2iIqFM7QetWndzLPyglJlu/ba6d761b45ea9cadb0408f686cb0c5f4/seomnfx.jpeg',
-                    alt: 'Call to action',
+                    id: "7mV6EvJJrv9UThjCKcOuou",
+                    url: "//images.ctfassets.net/nn38kx5zm1zj/2iIqFM7QetWndzLPyglJlu/ba6d761b45ea9cadb0408f686cb0c5f4/seomnfx.jpeg",
+                    alt: "Call to action",
                   },
                   {
-                    id: '2iIqFM7QetWndzLPyglJlu',
-                    url: '//images.ctfassets.net/nn38kx5zm1zj/2iIqFM7QetWndzLPyglJlu/ba6d761b45ea9cadb0408f686cb0c5f4/seomnfx.jpeg',
-                    alt: 'SEO Beschrijving',
+                    id: "2iIqFM7QetWndzLPyglJlu",
+                    url: "//images.ctfassets.net/nn38kx5zm1zj/2iIqFM7QetWndzLPyglJlu/ba6d761b45ea9cadb0408f686cb0c5f4/seomnfx.jpeg",
+                    alt: "SEO Beschrijving",
                   },
                   {
-                    id: '7AnjWCrI6e85kwDRPEIi8l',
-                    url: '//images.ctfassets.net/nn38kx5zm1zj/7AnjWCrI6e85kwDRPEIi8l/93811f33d083916a530e892e81574e66/Digital_Transformation.jpg',
-                    alt: 'SEO The Road 2 Digital Success',
+                    id: "7AnjWCrI6e85kwDRPEIi8l",
+                    url: "//images.ctfassets.net/nn38kx5zm1zj/7AnjWCrI6e85kwDRPEIi8l/93811f33d083916a530e892e81574e66/Digital_Transformation.jpg",
+                    alt: "SEO The Road 2 Digital Success",
                   },
                 ];
 
@@ -49,18 +49,21 @@ exports.createResolvers = ({ createResolvers }) => {
 
                   return `<img src="https:${url}" alt="${alt}" style="height: 100%; width: 100%;">`;
                 } else {
-                  return '';
+                  return "";
                 }
               },
               [INLINES.ENTRY_HYPERLINK]: (node) => {
                 const entryId = node.data.target.sys.id;
-                const siteUrl = 'https://www.menefex.nl';
+                const siteUrl = "https://www.menefex.nl";
 
                 const menefexFeeds = [
-                  { id: '5Tap9uH6wexAo43jcttwx8', slug: 'seo-onmisbare-tool' },
                   {
-                    id: '19yMVb2hV6xPsivk9T3fQk',
-                    slug: 'verschillen-webapplicatie-en-website',
+                    id: "5Tap9uH6wexAo43jcttwx8",
+                    slug: "seo-onmisbare-tool",
+                  },
+                  {
+                    id: "19yMVb2hV6xPsivk9T3fQk",
+                    slug: "verschillen-webapplicatie-en-website",
                   },
                 ];
 
@@ -72,10 +75,10 @@ exports.createResolvers = ({ createResolvers }) => {
                   const slug = matchedFeed.slug;
                   const content = node.content
                     .map((content) => content.value)
-                    .join('');
+                    .join("");
                   return `<a href="${siteUrl}/blog/${slug}">${content}</a>`;
                 } else {
-                  return '';
+                  return "";
                 }
               },
             },
@@ -87,12 +90,12 @@ exports.createResolvers = ({ createResolvers }) => {
 
     Query: {
       getLastModifiedDate: {
-        type: 'String',
+        type: "String",
         args: {
-          filePath: 'String!',
+          filePath: "String!",
         },
         resolve: async (_, { filePath }) => {
-          if (process.env.NODE_ENV === 'production') {
+          if (process.env.NODE_ENV === "production") {
             return await fetchLastCommitDate(filePath);
           } else {
             return null;
@@ -104,18 +107,18 @@ exports.createResolvers = ({ createResolvers }) => {
 };
 
 const captureScreenshot = async (url, filename, delay) => {
-  const screenshotDir = path.resolve(__dirname, 'public/project-images');
+  const screenshotDir = path.resolve(__dirname, "public/project-images");
   const screenshotPath = `${screenshotDir}/${filename}.png`;
   const backupScreenshotPath = `${screenshotDir}/${filename}-backup.png`;
 
   try {
     const browser = await puppeteer.launch({
       args: [
-        '--no-sandbox',
-        '--disable-setuid-sandbox',
-        '--disable-web-security',
-        '--disable-features=IsolateOrigins,site-per-process',
-        '--ignore-certificate-errors',
+        "--no-sandbox",
+        "--disable-setuid-sandbox",
+        "--disable-web-security",
+        "--disable-features=IsolateOrigins,site-per-process",
+        "--ignore-certificate-errors",
       ],
     });
 
@@ -127,7 +130,7 @@ const captureScreenshot = async (url, filename, delay) => {
       deviceScaleFactor: 1,
     });
 
-    await page.goto(url, { waitUntil: 'networkidle2' });
+    await page.goto(url, { waitUntil: "networkidle2" });
     await new Promise((resolve) => setTimeout(resolve, delay));
 
     await fs.mkdir(screenshotDir, { recursive: true });
@@ -155,21 +158,21 @@ const captureScreenshot = async (url, filename, delay) => {
 };
 
 exports.onPostBuild = async () => {
-  await captureScreenshot('https://prio-zorg.nl', 'priozorg', 2000);
-  await captureScreenshot('https://keeptreal.nl', 'keeptreal', 2000);
-  await captureScreenshot('https://blackharmony.nl', 'blackharmony', 0);
-  await captureScreenshot('https://eternitydrum.com', 'eternitydrum', 2000);
-  await captureScreenshot('https://kn-acdig.com', 'kn-acdig', 0);
-  await captureScreenshot('https://dsmelodies.com', 'dsmelodies', 0);
-  await captureScreenshot('https://afrodiasphere.com', 'afrodiasphere', 2000);
+  await captureScreenshot("https://prio-zorg.nl", "priozorg", 2000);
+  await captureScreenshot("https://keeptreal.nl", "keeptreal", 2000);
+  await captureScreenshot("https://blackharmony.nl", "blackharmony", 0);
+  await captureScreenshot("https://eternitydrum.com", "eternitydrum", 2000);
+  await captureScreenshot("https://kn-acdig.com", "kn-acdig", 0);
+  await captureScreenshot("https://dsmelodies.com", "dsmelodies", 0);
+  await captureScreenshot("https://afrodiasphere.com", "afrodiasphere", 2000);
 };
 
 exports.onPreBootstrap = exports.onPostBuild;
 
 module.exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
-  const blogTemplate = path.resolve('./src/templates/blogtemplate.jsx');
-  const topicTemplate = path.resolve('./src/templates/topictemplate.jsx');
+  const blogTemplate = path.resolve("./src/templates/blogtemplate.jsx");
+  const topicTemplate = path.resolve("./src/templates/topictemplate.jsx");
 
   const res = await graphql(`
     query {
@@ -285,9 +288,9 @@ module.exports.createPages = async ({ graphql, actions }) => {
         };
       }
 
-      if (lang === 'nl') {
+      if (lang === "nl") {
         acc[node.slug].nlContent = node;
-      } else if (lang === 'en') {
+      } else if (lang === "en") {
         acc[node.slug].enContent = node;
       }
 
@@ -304,32 +307,32 @@ module.exports.createPages = async ({ graphql, actions }) => {
       path: `/blog/${slug}/`,
       context: {
         nlContent: {
-          contentful_id: nlContent ? nlContent.contentful_id : '',
-          title: nlContent ? nlContent.title : '',
-          subtitle: nlContent ? nlContent.subtitle : '',
+          contentful_id: nlContent ? nlContent.contentful_id : "",
+          title: nlContent ? nlContent.title : "",
+          subtitle: nlContent ? nlContent.subtitle : "",
           image: nlContent ? nlContent.image : {},
           body: nlContent ? nlContent.body : {},
-          slug: nlContent ? nlContent.slug : '',
-          updatedPost: nlContent ? nlContent.updatedAt : '',
-          publishedPost: nlContent ? nlContent.createdAt : '',
-          author: nlContent ? nlContent.author : '',
+          slug: nlContent ? nlContent.slug : "",
+          updatedPost: nlContent ? nlContent.updatedAt : "",
+          publishedPost: nlContent ? nlContent.createdAt : "",
+          author: nlContent ? nlContent.author : "",
           topics: nlContent ? nlContent.topics : [],
           keywords: nlContent ? nlContent.keywords : [],
-          subtitle: nlContent ? nlContent.subtitle : '',
+          subtitle: nlContent ? nlContent.subtitle : "",
         },
         enContent: {
-          contentful_id: enContent ? enContent.contentful_id : '',
-          title: enContent ? enContent.title : '',
-          subtitle: enContent ? enContent.subtitle : '',
+          contentful_id: enContent ? enContent.contentful_id : "",
+          title: enContent ? enContent.title : "",
+          subtitle: enContent ? enContent.subtitle : "",
           image: enContent ? enContent.image : {},
           body: enContent ? enContent.body : {},
-          slug: enContent ? enContent.slug : '',
-          updatedPost: enContent ? enContent.updatedAt : '',
-          publishedPost: enContent ? enContent.createdAt : '',
-          author: enContent ? enContent.author : '',
+          slug: enContent ? enContent.slug : "",
+          updatedPost: enContent ? enContent.updatedAt : "",
+          publishedPost: enContent ? enContent.createdAt : "",
+          author: enContent ? enContent.author : "",
           topics: enContent ? enContent.topics : [],
           keywords: enContent ? enContent.keywords : [],
-          subtitle: enContent ? enContent.subtitle : '',
+          subtitle: enContent ? enContent.subtitle : "",
         },
       },
     });
@@ -347,9 +350,9 @@ module.exports.createPages = async ({ graphql, actions }) => {
         };
       }
 
-      if (lang === 'nl') {
+      if (lang === "nl") {
         acc[node.slug].nlContent = node;
-      } else if (lang === 'en') {
+      } else if (lang === "en") {
         acc[node.slug].enContent = node;
       }
 
@@ -367,19 +370,19 @@ module.exports.createPages = async ({ graphql, actions }) => {
       context: {
         nlContent: {
           topicPosts: nlContent ? nlContent.blog_post : [],
-          name: nlContent ? nlContent.name : '',
-          bdcolor: nlContent ? nlContent.bdcolor : '',
-          description: nlContent ? nlContent.description.description : '',
-          slug: nlContent ? nlContent.slug : '',
-          title: nlContent ? nlContent.title : '',
+          name: nlContent ? nlContent.name : "",
+          bdcolor: nlContent ? nlContent.bdcolor : "",
+          description: nlContent ? nlContent.description.description : "",
+          slug: nlContent ? nlContent.slug : "",
+          title: nlContent ? nlContent.title : "",
         },
         enContent: {
           topicPosts: enContent ? enContent.blog_post : [],
-          name: enContent ? enContent.name : '',
-          bdcolor: enContent ? enContent.bdcolor : '',
-          description: enContent ? enContent.description.description : '',
-          slug: enContent ? enContent.slug : '',
-          title: enContent ? enContent.title : '',
+          name: enContent ? enContent.name : "",
+          bdcolor: enContent ? enContent.bdcolor : "",
+          description: enContent ? enContent.description.description : "",
+          slug: enContent ? enContent.slug : "",
+          title: enContent ? enContent.title : "",
         },
       },
     });
